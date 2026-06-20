@@ -191,3 +191,26 @@ The Xi'an Hi-tech case is now strong enough to use as the first human-validated
 `nominal_exit` pilot, while recording that the official exit event is supported
 by issuer disclosures and still lacks a directly retrieved government exit-list
 document.
+
+## 2026-06-20, Guangzhou City Investment second-case search
+
+A second pilot search compared Chengdu City Investment, Hangzhou City
+Investment, and Guangzhou City Construction Investment Group. Chengdu has rich
+disclosure materials but appears to combine compliance language with legacy
+government代建/BT evidence. Hangzhou has strong reorganization evidence,
+including the integration of Qiantou Group and the creation of Hangzhou Anju
+Group, making it a future functional-transfer/consolidation candidate.
+
+Guangzhou City Construction Investment Group is the strongest immediate second
+case candidate because the 2026 fourth MTN prospectus directly states that the
+issuer does not undertake government financing functions and that since 2014 it
+has not participated in new government-project investment and financing. The
+same document describes the remaining role as fiscal-funded `代建代管`, with
+public-welfare project funds coming from municipal fiscal funds and the company
+receiving capped project-management fees.
+
+This case should be treated as a `substantive_exit_candidate` rather than a
+final label until an older reform-era source is collected. It is especially
+useful as a contrast with Xi'an Hi-tech because it tests whether the codebook can
+distinguish continuing public-project management from continuing off-budget
+government financing.
