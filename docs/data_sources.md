@@ -32,6 +32,11 @@ Recommended public portals include:
 
 - ChinaBond (`www.chinabond.com.cn`) for bond disclosure documents and local
   government bond information.
+- NAFMII (`www.nafmii.org.cn`) for debt financing instrument disclosures,
+  including issuance disclosures, credit ratings, financial reports, and major
+  event disclosures.
+- ChinaMoney (`www.chinamoney.com.cn`) for interbank market bond information
+  and disclosure search.
 - Shanghai Stock Exchange bond announcements (`www.sse.com.cn`) for exchange
   bond disclosures.
 - Shenzhen Stock Exchange bond announcements (`www.szse.cn`) for exchange bond
@@ -40,6 +45,12 @@ Recommended public portals include:
   for business registration and deregistration evidence.
 - China Local Government Bond Information Disclosure Platform
   (`www.celma.org.cn`) for local government bond documents.
+
+At this stage, the project should not assume that a complete public national
+list of LGFV exit types exists. Public sources are more likely to reveal
+official exit events, market-oriented transformation language, bond issuer
+behavior, and post-exit functions. The dependent variable should therefore be
+constructed from documents rather than downloaded as a finished variable.
 
 Commercial databases can be used if available:
 
@@ -152,3 +163,17 @@ measure can be used first, with alternative measures added later for robustness.
 
 The fourth priority is full city-year controls. These matter for the empirical
 analysis, but they should not delay the first pilot classification.
+
+## Recommended Collection Sequence
+
+The first round of collection should proceed case by case.
+
+First, identify the main platform company in a city using bond issuer lists,
+city SOE websites, local SASAC pages, and commercial databases if available.
+Second, search ChinaBond, NAFMII, ChinaMoney, SSE, and SZSE for the company's
+bond prospectuses, rating reports, annual reports, and major event
+announcements. Third, search local government, finance bureau, NDRC, and SASAC
+websites for official exit or transformation language. Fourth, check business
+registration records for mergers, deregistration, business scope changes, and
+legal successor entities. Finally, enter the documents into the source
+inventory before running any LLM classification.
