@@ -106,3 +106,33 @@ original issuance documents, follow-up rating reports, annual reports, and major
 event announcements. Bond metadata alone is not enough to classify exit type,
 but it gives stable issuer names, bond abbreviations, and bond codes for source
 collection.
+
+## 2026-06-20, Shanghai Clearing document source
+
+The fourth search pass found the first complete issuer document set for the
+pilot. Shanghai Clearing House has a disclosure page titled `广州地铁集团有限公司2025年度第一期中期票据发行文件(更新)`,
+dated 2025-05-23. The page lists ten
+downloadable documents for Guangzhou Metro Group: an updated renewal
+prospectus, a base prospectus, two rating reports, three audited annual
+financial reports, one quarterly financial statement, one legal opinion, and
+one issuance plan or commitment document.
+
+This source set changes the Guangzhou Metro case from bond-metadata discovery
+to full-text source collection. The documents are recorded in
+`data/document_inventory.csv`. They should be used before any final exit-type
+label is assigned. The first documents to read are the prospectuses and rating
+reports, because they are most likely to discuss current business functions,
+government support, public project obligations, debt use, and whether the
+issuer continues to perform quasi-fiscal infrastructure financing functions.
+
+No final exit label is assigned at this stage. The current status is
+`documents_found`, not `labeled`.
+
+Local extraction was attempted after downloading the ten PDFs listed in
+`data/document_inventory.csv`. Six documents produced usable text: the updated
+renewal prospectus, legal opinion, two rating reports, base prospectus, and
+issuance plan. Four accounting documents produced no text through `pypdf`: the
+2024 audited report, 2023 audited report, 2025 first-quarter statements, and
+2022 audited report. Those documents may require OCR if they become important
+for balance-sheet evidence. For the first labeling pass, the prospectuses and
+rating reports should be treated as the main machine-readable documents.

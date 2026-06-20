@@ -37,6 +37,9 @@ Recommended public portals include:
   event disclosures.
 - ChinaMoney (`www.chinamoney.com.cn`) for interbank market bond information
   and disclosure search.
+- Shanghai Clearing House (`www.shclearing.com.cn`) for interbank market
+  issuance disclosures, rating reports, financial reports, and downloadable
+  issuer documents.
 - Shanghai Stock Exchange bond announcements (`www.sse.com.cn`) for exchange
   bond disclosures.
 - Shenzhen Stock Exchange bond announcements (`www.szse.cn`) for exchange bond
