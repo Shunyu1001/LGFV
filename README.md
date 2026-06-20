@@ -16,7 +16,8 @@ exit, functional transfer, or liquidation.
 - `data/labeling_template.csv`: case-level LLM and human-validated labels.
 - `data/raw/`: original source materials, such as announcements, bond
   prospectuses, rating reports, and registration records.
-- `data/processed/`: coded datasets and cleaned variables.
+- `data/processed/`: coded datasets and cleaned variables, including
+  `human_validated_labels.csv`.
 - `scripts/`: workflow notes and future scripts for extraction, labeling, and
   validation.
 - `docs/`: notes, memos, and project documentation.
@@ -39,6 +40,7 @@ labels are assigned after human review of the original source documents.
 
 The first empirical step is a 20-30 case pilot. The pilot starts from
 `data/candidate_city_plan.csv`, records documents in
-`data/source_inventory_template.csv`, and stores preliminary and final labels in
-`data/labeling_template.csv`. The goal is to validate the coding categories and
-source hierarchy before scaling the project to a larger sample.
+`data/source_inventory_template.csv`, stores LLM-assisted preliminary labels in
+`data/labeling_template.csv`, and stores final human-reviewed labels in
+`data/processed/human_validated_labels.csv`. Run
+`python3 scripts/validate_labels.py` after editing the final label file.

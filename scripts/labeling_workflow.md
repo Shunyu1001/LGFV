@@ -66,6 +66,20 @@ Review all cases with:
 The final label should be assigned by the researcher after reviewing the
 original documents.
 
+Record human-validated labels in
+`data/processed/human_validated_labels.csv`. This file is the authoritative
+case-level label file for analysis. It should contain only labels that have
+been checked against original or near-original source documents.
+
+After editing the file, run:
+
+```bash
+python3 scripts/validate_labels.py
+```
+
+The validator checks category names, confidence levels, case uniqueness,
+evidence document IDs, supplementary source IDs, and evidence-line syntax.
+
 ## Step 6: Reliability Checks
 
 For the paper, report at least one reliability check:
@@ -77,5 +91,5 @@ For the paper, report at least one reliability check:
 
 ## Step 7: Analysis Dataset
 
-After final labels are validated, export a cleaned dataset to
-`data/processed/lgfv_exit_types.csv`.
+After enough final labels are validated, export or derive a cleaned analysis
+dataset from `data/processed/human_validated_labels.csv`.
