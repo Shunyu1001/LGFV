@@ -15,6 +15,10 @@ import sys
 from pypdf import PdfReader
 
 
+def default_path(row: dict[str, str]) -> pathlib.Path:
+    return pathlib.Path("data/raw") / row["case_id"] / f"{row['document_id']}.pdf"
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--inventory", default="data/document_inventory.csv")
@@ -29,10 +33,7 @@ def main() -> int:
         if args.case_id and row["case_id"] != args.case_id:
             continue
         local = row.get("local_file_path", "")
-        if not local:
-            print(f"{row['document_id']},0,0,missing_local_path")
-            continue
-        pdf_path = pathlib.Path(local)
+        pdf_path = pathlib.Path(local) if local else default_path(row)
         if not pdf_path.exists():
             print(f"{row['document_id']},0,0,missing_pdf")
             continue

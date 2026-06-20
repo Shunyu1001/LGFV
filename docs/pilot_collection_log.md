@@ -136,3 +136,31 @@ issuance plan. Four accounting documents produced no text through `pypdf`: the
 2022 audited report. Those documents may require OCR if they become important
 for balance-sheet evidence. For the first labeling pass, the prospectuses and
 rating reports should be treated as the main machine-readable documents.
+
+## 2026-06-20, Xi'an Hi-tech external validation case
+
+The next search pass looked for a case with explicit platform-exit language.
+Shanghai Clearing's public disclosure interface returned an issuer record for
+`西安高新控股有限公司` and a 2026 sixth MTN disclosure page. The page lists ten
+issuer documents, including a prospectus and a 2025 issuer rating report.
+
+This case is useful because the prospectus states that the issuer exited the
+financing-platform list in 2012, while the same source and the rating report
+show continuing infrastructure construction, BT and entrusted-construction
+arrangements, project repurchase by the High-tech Zone Management Committee,
+and ongoing fiscal or shareholder support. This is the clearest source pattern
+found so far for distinguishing official exit from substantive exit.
+
+The case has been added as `pilot_sn_xian_hightech`, with source row
+`src_sn_xa_001`. It is outside the initial eight-province pilot, so it should
+be treated as an external validation case rather than part of the initial
+province-stratified sample. The preliminary coding implication is
+`nominal_exit`, subject to human validation and ideally one additional official
+source confirming the 2012 exit event.
+
+All ten PDFs for this disclosure page were downloaded locally. Eight produced
+machine-readable text through `pypdf`: the issuance plans, legal opinion, 2025
+issuer rating report, 2024 audited report, 2025 audited report, and 2026 sixth
+MTN prospectus. Two accounting documents produced no text: the 2026
+first-quarter statements and the 2023 audited report. The main coding evidence
+comes from the 2026 prospectus and the 2025 rating report.
