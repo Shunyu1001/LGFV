@@ -1,27 +1,36 @@
 # Labeling Workflow
 
-## Step 1: Build the Case List
+## Step 1: Build the Pilot Case Plan
 
-Create one row per platform company or city-platform case in
-`data/labeling_template.csv`.
+Start from `data/pilot_case_plan.csv`. The first case plan is intentionally
+designed for variation rather than representativeness. It includes high-capacity
+coastal cities, inland debt-pressure cases, provincial capitals, and non-capital
+prefecture-level cities.
 
-Minimum fields:
+For each city, identify one major platform company or platform-like local SOE.
+Useful search terms include:
 
-- Province
-- City
-- Company name
-- Official exit year
-- Source documents
+- `城市名 + 城投`
+- `城市名 + 城市建设投资`
+- `城市名 + 融资平台退出`
+- `城市名 + 市场化转型`
+- `公司名 + 政府融资职能`
+- `公司名 + 募集说明书`
+- `公司名 + 跟踪评级报告`
 
-## Step 2: Collect Source Documents
+## Step 2: Build the Source Inventory
 
-For each case, collect documents in `data/raw/` or store stable URLs:
+Record each document in `data/source_inventory_template.csv`. The preferred
+source types are:
 
 - Government announcements
 - Company announcements
 - Bond prospectuses
 - Credit rating reports
 - Business registration records
+
+For each case, try to collect at least one official or company document and one
+financial-market document before labeling.
 
 ## Step 3: Run LLM-Assisted Preliminary Coding
 
@@ -31,7 +40,8 @@ setup:
 - Model 1: Claude
 - Model 2: ChatGPT
 
-Record both outputs in the template. Keep the raw model outputs if possible.
+Record both outputs in `data/labeling_template.csv`. Keep the raw model outputs
+as separate text files when possible.
 
 ## Step 4: Compare Model Labels
 
@@ -53,7 +63,7 @@ original documents.
 
 ## Step 6: Reliability Checks
 
-For a writing sample, report at least one reliability check:
+For the paper, report at least one reliability check:
 
 - Share of model agreement
 - Accuracy of LLM preliminary labels in a human-reviewed sample
@@ -64,4 +74,3 @@ For a writing sample, report at least one reliability check:
 
 After final labels are validated, export a cleaned dataset to
 `data/processed/lgfv_exit_types.csv`.
-

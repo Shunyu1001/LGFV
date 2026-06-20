@@ -9,6 +9,11 @@ exit, functional transfer, or liquidation.
 
 - `paper/`: LaTeX paper draft.
 - `coding/`: coding protocol and LLM-assisted labeling prompts.
+- `data/pilot_case_plan.csv`: first-stage pilot city list for source
+  collection.
+- `data/source_inventory_template.csv`: document-level source tracking
+  template.
+- `data/labeling_template.csv`: case-level LLM and human-validated labels.
 - `data/raw/`: original source materials, such as announcements, bond
   prospectuses, rating reports, and registration records.
 - `data/processed/`: coded datasets and cleaned variables.
@@ -30,3 +35,10 @@ The coding workflow is designed as LLM-assisted, human-validated coding. Large
 language models can generate preliminary labels using a fixed codebook, but final
 labels are assigned after human review of the original source documents.
 
+## Pilot Workflow
+
+The first empirical step is a 20-30 case pilot. The pilot starts from
+`data/pilot_case_plan.csv`, records documents in
+`data/source_inventory_template.csv`, and stores preliminary and final labels in
+`data/labeling_template.csv`. The goal is to validate the coding categories and
+source hierarchy before scaling the project to a larger sample.
