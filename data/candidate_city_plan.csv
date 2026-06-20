@@ -4,7 +4,8 @@ pilot_zj_002,1,Zhejiang,Ningbo,,high_capacity_coastal,Research-design candidate 
 pilot_zj_003,2,Zhejiang,Wenzhou,,private_economy_coastal,Research-design candidate chosen for within-province variation,candidate_only,not_started,
 pilot_zj_004,2,Zhejiang,Jinhua,,within_province_variation,Research-design candidate chosen for within-province variation,candidate_only,not_started,
 pilot_js_001,1,Jiangsu,Nanjing,,high_capacity_coastal,Research-design candidate chosen for provincial-capital and fiscal-capacity variation,candidate_only,not_started,
-pilot_js_002,1,Jiangsu,Suzhou,,high_capacity_coastal,Research-design candidate chosen for high fiscal capacity and local state-sector comparison,candidate_only,not_started,
+pilot_js_001_alt_metro,1,Jiangsu,Nanjing,南京地铁集团有限公司,alternative_platform_candidate,Alternative municipal infrastructure SOE found during bond search; useful if core city-investment case lacks disclosure documents,source_started,source_started,ChinaBond query found 6 local enterprise bonds under 南京地铁
+pilot_js_002,1,Jiangsu,Suzhou,苏州城市建设投资发展集团有限公司,high_capacity_coastal,Research-design candidate chosen for high fiscal capacity and local state-sector comparison,source_started,source_started,ChinaBond query found 2 bond records under 苏州城投
 pilot_js_003,2,Jiangsu,Yancheng,,within_province_variation,Research-design candidate chosen for within-province comparison,candidate_only,not_started,
 pilot_js_004,2,Jiangsu,Xuzhou,,within_province_variation,Research-design candidate chosen for northern Jiangsu comparison,candidate_only,not_started,
 pilot_sd_001,1,Shandong,Jinan,,mixed_capacity_north,Research-design candidate chosen for provincial-capital comparison,candidate_only,not_started,
@@ -16,7 +17,7 @@ pilot_hn_002,1,Hunan,Zhuzhou,,central_industrial_city,Research-design candidate 
 pilot_hn_003,2,Hunan,Yueyang,,central_prefecture_variation,Research-design candidate chosen for within-province variation,candidate_only,not_started,
 pilot_hn_004,2,Hunan,Hengyang,,central_prefecture_variation,Research-design candidate chosen for non-capital comparison,candidate_only,not_started,
 pilot_gz_001,1,Guizhou,Guiyang,,debt_pressure_inland,Research-design candidate chosen for inland debt-pressure comparison,candidate_only,not_started,
-pilot_gz_002,1,Guizhou,Zunyi,,debt_pressure_inland,Research-design candidate chosen for inland debt-pressure comparison,candidate_only,not_started,
+pilot_gz_002,1,Guizhou,Zunyi,遵义道桥建设集团有限公司,debt_pressure_inland,Research-design candidate chosen for inland debt-pressure comparison,source_started,source_started,ChinaBond query found 2 local enterprise bonds under 遵义道桥
 pilot_gz_003,2,Guizhou,Liupanshui,,debt_pressure_inland,Research-design candidate chosen for resource-linked and debt-pressure variation,candidate_only,not_started,
 pilot_gz_004,2,Guizhou,Bijie,,debt_pressure_inland,Research-design candidate chosen for inland prefecture-level comparison,candidate_only,not_started,
 pilot_yn_001,1,Yunnan,Kunming,,debt_pressure_inland,Research-design candidate chosen for inland provincial-capital comparison,candidate_only,not_started,
@@ -27,7 +28,8 @@ pilot_sc_001,1,Sichuan,Chengdu,成都城建投资管理集团有限责任公司,
 pilot_sc_002,1,Sichuan,Mianyang,,western_prefecture_variation,Research-design candidate chosen for industrial non-capital comparison,candidate_only,not_started,
 pilot_sc_003,2,Sichuan,Luzhou,,western_prefecture_variation,Research-design candidate chosen for prefecture-level fiscal variation,candidate_only,not_started,
 pilot_sc_004,2,Sichuan,Nanchong,,western_prefecture_variation,Research-design candidate chosen for non-capital comparison,candidate_only,not_started,
-pilot_gd_001,1,Guangdong,Guangzhou,广州市城市建设投资集团有限公司,high_capacity_coastal,Research-design candidate chosen for high-capacity provincial-capital comparison,source_started,source_started,Official company profile found; needs bond prospectus or rating report
+pilot_gd_001,1,Guangdong,Guangzhou,广州市城市建设投资集团有限公司,high_capacity_coastal,Research-design candidate chosen for high-capacity provincial-capital comparison,source_started,source_started,Official company profile found; no ChinaBond/SSE bond hit yet under Guangzhou City Investment keywords
+pilot_gd_001_alt_metro,1,Guangdong,Guangzhou,广州地铁集团有限公司,alternative_platform_candidate,Alternative municipal infrastructure SOE found during bond search; useful if the original Guangzhou City Investment case lacks disclosure documents,source_started,source_started,ChinaBond query found 8 local enterprise bonds under 广州地铁
 pilot_gd_002,1,Guangdong,Shenzhen,深圳市特区建设发展集团有限公司,high_capacity_coastal,Research-design candidate chosen for high-capacity and distinctive local-state comparison,source_started,source_started,Shenzhen SASAC profile found; needs bond prospectus or rating report
 pilot_gd_003,2,Guangdong,Foshan,,manufacturing_coastal,Research-design candidate chosen for manufacturing-city comparison,candidate_only,not_started,
 pilot_gd_004,2,Guangdong,Zhanjiang,,within_province_variation,Research-design candidate chosen for non-core Guangdong comparison,candidate_only,not_started,
