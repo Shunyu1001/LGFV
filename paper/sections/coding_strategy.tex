@@ -1,0 +1,24 @@
+\section{Coding Strategy}
+
+The measurement contribution of the paper is a new coding scheme for LGFV exit
+types. For each platform, I collect original materials including local
+government announcements, platform company disclosures, bond prospectuses,
+credit rating reports, business registration records, and relevant public
+documents. The coding process evaluates whether the company continues to perform
+government financing functions, infrastructure construction, land development,
+public project financing, debt rollover, or other quasi-fiscal activities after
+its official exit or transformation.
+
+The coding workflow is LLM-assisted and human-validated. First, I define all
+exit types in a fixed codebook and specify observable decision rules. Second, I
+ask large language models to generate preliminary classifications using the same
+codebook and source excerpts. Third, the models must provide textual evidence
+for each classification. Fourth, cases with model disagreement, low confidence,
+or insufficient evidence are manually reviewed. The final label is assigned by
+the researcher based on the original documents, not by the model output alone.
+
+This design treats large language models as auxiliary coding tools rather than
+as final decision makers. The purpose is to increase coding efficiency and
+transparency while preserving the interpretive judgment required for historical
+and institutional classification.
+
