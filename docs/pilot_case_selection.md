@@ -9,7 +9,8 @@ exit, functional transfer, liquidation, and unclear cases.
 
 The pilot should not be treated as the final sample. It is a design stage that
 allows the coding rules, source hierarchy, and empirical strategy to be revised
-before the project scales up.
+before the project scales up. The candidate city list is not data. It is a
+sampling plan that records where source collection should begin.
 
 ## Target Size
 
@@ -65,7 +66,10 @@ are a practical starting point for source collection.
 - Sichuan: large western province with a strong provincial capital and
   substantial prefecture-level variation.
 
-The initial candidate list is stored in `data/pilot_case_plan.csv`.
+The initial candidate list is stored in `data/candidate_city_plan.csv`. Every
+row in that file has `evidence_status = candidate_only` until a specific
+platform company and source documents have been identified. Candidate-only rows
+must not be used in analysis.
 
 ## Case Selection Procedure
 
@@ -126,4 +130,3 @@ were found, which were dropped, and why. Second, it should produce a source
 inventory with stable links or local file references. Third, it should produce
 preliminary LLM labels and final human-validated labels. Fourth, it should
 produce a memo summarizing the main ambiguities discovered during coding.
-

@@ -2,10 +2,15 @@
 
 ## Step 1: Build the Pilot Case Plan
 
-Start from `data/pilot_case_plan.csv`. The first case plan is intentionally
-designed for variation rather than representativeness. It includes high-capacity
-coastal cities, inland debt-pressure cases, provincial capitals, and non-capital
-prefecture-level cities.
+Start from `data/candidate_city_plan.csv`. This file is a candidate sampling
+plan, not an empirical dataset. A city enters the labeled sample only after a
+specific platform company has been identified and source documents have been
+recorded.
+
+The first case plan is intentionally designed for variation rather than
+representativeness. It includes high-capacity coastal cities, inland
+debt-pressure cases, provincial capitals, and non-capital prefecture-level
+cities.
 
 For each city, identify one major platform company or platform-like local SOE.
 Useful search terms include:
