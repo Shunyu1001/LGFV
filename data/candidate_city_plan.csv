@@ -23,11 +23,11 @@ pilot_yn_001,1,Yunnan,Kunming,,debt_pressure_inland,Research-design candidate ch
 pilot_yn_002,1,Yunnan,Qujing,,inland_prefecture_variation,Research-design candidate chosen for non-capital comparison,candidate_only,not_started,
 pilot_yn_003,2,Yunnan,Yuxi,,inland_prefecture_variation,Research-design candidate chosen for within-province variation,candidate_only,not_started,
 pilot_yn_004,2,Yunnan,Honghe,,inland_prefecture_variation,Research-design candidate chosen for institutional and prefecture-level variation,candidate_only,not_started,
-pilot_sc_001,1,Sichuan,Chengdu,,western_capital,Research-design candidate chosen for large western provincial-capital comparison,candidate_only,not_started,
+pilot_sc_001,1,Sichuan,Chengdu,成都城建投资管理集团有限责任公司,western_capital,Research-design candidate chosen for large western provincial-capital comparison,source_started,source_started,Official company profile found; needs bond prospectus or rating report
 pilot_sc_002,1,Sichuan,Mianyang,,western_prefecture_variation,Research-design candidate chosen for industrial non-capital comparison,candidate_only,not_started,
 pilot_sc_003,2,Sichuan,Luzhou,,western_prefecture_variation,Research-design candidate chosen for prefecture-level fiscal variation,candidate_only,not_started,
 pilot_sc_004,2,Sichuan,Nanchong,,western_prefecture_variation,Research-design candidate chosen for non-capital comparison,candidate_only,not_started,
-pilot_gd_001,1,Guangdong,Guangzhou,,high_capacity_coastal,Research-design candidate chosen for high-capacity provincial-capital comparison,candidate_only,not_started,
-pilot_gd_002,1,Guangdong,Shenzhen,,high_capacity_coastal,Research-design candidate chosen for high-capacity and distinctive local-state comparison,candidate_only,not_started,
+pilot_gd_001,1,Guangdong,Guangzhou,广州市城市建设投资集团有限公司,high_capacity_coastal,Research-design candidate chosen for high-capacity provincial-capital comparison,source_started,source_started,Official company profile found; needs bond prospectus or rating report
+pilot_gd_002,1,Guangdong,Shenzhen,深圳市特区建设发展集团有限公司,high_capacity_coastal,Research-design candidate chosen for high-capacity and distinctive local-state comparison,source_started,source_started,Shenzhen SASAC profile found; needs bond prospectus or rating report
 pilot_gd_003,2,Guangdong,Foshan,,manufacturing_coastal,Research-design candidate chosen for manufacturing-city comparison,candidate_only,not_started,
 pilot_gd_004,2,Guangdong,Zhanjiang,,within_province_variation,Research-design candidate chosen for non-core Guangdong comparison,candidate_only,not_started,
