@@ -1,24 +1,90 @@
 \section{Coding Strategy}
 
-The measurement contribution of the paper is a new coding scheme for LGFV exit
-types. For each platform, I collect original materials including local
-government announcements, platform company disclosures, bond prospectuses,
-credit rating reports, business registration records, and relevant public
-documents. The coding process evaluates whether the company continues to perform
-government financing functions, infrastructure construction, land development,
-public project financing, debt rollover, or other quasi-fiscal activities after
-its official exit or transformation.
+The previous section defined the case-level research design. This section
+describes how the main outcome is measured. The coding strategy begins from a
+simple premise: official exit language is evidence about regulatory status, not
+by itself evidence about the disappearance of a government financing function.
+For each platform, I therefore code both the formal exit event and the
+post-exit location of the relevant function.
 
-The coding workflow is LLM-assisted and human-validated. First, I define all
-exit types in a fixed codebook and specify observable decision rules. Second, I
-ask large language models to generate preliminary classifications using the same
-codebook and source excerpts. Third, the models must provide textual evidence
-for each classification. Fourth, cases with model disagreement, low confidence,
-or insufficient evidence are manually reviewed. The final label is assigned by
-the researcher based on the original documents, not by the model output alone.
+The source hierarchy has three levels. First, I use government documents,
+finance-bureau notices, state-owned asset supervision documents, and company
+announcements when they are available. These sources are most useful for
+identifying official exit, restructuring, asset transfers, debt replacement, or
+liquidation. Second, I use bond prospectuses, credit rating reports, legal
+opinions, and annual reports. These sources are often more informative about
+continuing project functions, repayment arrangements, fiscal support, and
+changes in the issuer's role. Third, I use credible financial news and company
+profiles as supplementary sources. These materials can help locate events and
+entities, but they do not by themselves determine the final label.
 
-This design treats large language models as auxiliary coding tools rather than
-as final decision makers. The purpose is to increase coding efficiency and
-transparency while preserving the interpretive judgment required for historical
-and institutional classification.
+The coding decision has three steps. First, I identify the relevant official
+event: exit from a platform list, market-oriented transformation,
+reorganization, merger, debt replacement, or dissolution. Second, I identify
+the post-event location of the function. This requires evidence on whether the
+same company still finances or implements public projects, whether the function
+has been absorbed by budgetary instruments, whether another local SOE has
+assumed the function, or whether the original entity has ceased operations.
+Third, I assign the exit type using the fixed codebook. Substantive exit
+requires evidence that the platform no longer performs government financing or
+quasi-fiscal functions. Nominal exit requires formal exit language combined
+with continuing functional evidence in the same platform. Functional transfer
+requires evidence that the function moved to another state entity, merged
+group, subsidiary, or newly established platform. Liquidation requires evidence
+of dissolution, deregistration, bankruptcy, or termination.
 
+Table~\ref{tab:pilot_cases} summarizes the first three human-validated pilot
+cases. The table is not an empirical result. Its purpose is to show how the
+same coding rule operates across different documentary patterns.
+
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}p{0.18\textwidth}p{0.22\textwidth}p{0.34\textwidth}p{0.13\textwidth}@{}}
+\toprule
+Case & Source basis & Key evidence & Final label \\
+\midrule
+Xi'an Hi-tech Holding & 2020 and 2026 bond prospectuses, rating report, and
+supplementary financial news & The issuer reports a 2012 exit from the
+financing-platform list, while later documents continue to describe
+infrastructure investment, BT, entrusted-construction, and government-linked
+project repayment. & Nominal exit \\
+Guangzhou City Construction Investment & 2018 tracking rating report, 2018
+debt-replacement announcement, and 2026 bond prospectus & The company reports
+that it stopped new government-project investment and financing after 2014,
+shifted to fiscal-funded entrusted management, and had part of a 2014 MTN
+included in the fiscal budget for debt replacement. & Substantive exit \\
+Hangzhou City Investment & 2024 bond prospectus and issuer rating report &
+Qiantou Group was folded into Hangzhou City Investment, Hangzhou City
+Investment succeeded Qiantou debt instruments, and Anju Group was created as a
+housing-security investment, construction, and operation platform. &
+Functional transfer \\
+\bottomrule
+\end{tabular}
+\caption{Pilot coding examples}
+\label{tab:pilot_cases}
+\end{table}
+
+These cases illustrate three distinctions that are central to the measurement
+strategy. First, formal compliance language must be separated from functional
+evidence. A prospectus may state that new debt does not constitute local
+government debt, while other sections describe continuing public project
+obligations. Second, continuing public project management is not always
+evidence of nominal exit. In Guangzhou, the relevant distinction is that
+government projects were funded through municipal fiscal funds and the company
+received a management fee, rather than using the platform as an off-budget
+financing arm. Third, functional transfer is not merely a name change. In
+Hangzhou, the classification rests on equity transfer, debt succession, and the
+creation of a specialized housing-security group within a reorganized municipal
+platform system.
+
+The workflow is LLM-assisted and human-validated. Large language models are
+used to produce preliminary labels from the same codebook and source excerpts.
+They must return a label, a confidence level, a rationale, and the specific
+textual evidence for the classification. The final label is assigned only after
+human review of the original documents. This procedure has two advantages.
+First, it makes the coding process more scalable once the source inventory
+expands beyond the pilot cases. Second, it preserves an audit trail linking
+each final label to document identifiers, line references, confidence levels,
+alternative plausible labels, and remaining caveats.
