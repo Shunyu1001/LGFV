@@ -164,3 +164,30 @@ issuer rating report, 2024 audited report, 2025 audited report, and 2026 sixth
 MTN prospectus. Two accounting documents produced no text: the 2026
 first-quarter statements and the 2023 audited report. The main coding evidence
 comes from the 2026 prospectus and the 2025 rating report.
+
+## 2026-06-20, Xi'an Hi-tech validation source
+
+A follow-up search found an older Shanghai Clearing disclosure page for
+`西安高新控股有限公司2020年度第一期中期票据发行披露材料`, dated 2020-03-18.
+The 2020 prospectus repeats the key official-exit language: the issuer had
+exited the financing-platform list in 2012 and its bank loans were converted to
+ordinary issuer loans. This gives the case a second disclosure source across
+time, rather than relying only on the 2026 prospectus.
+
+The 2020 rating report also reinforces the functional evidence. It describes
+the company as the key infrastructure construction body in Xi'an High-tech Zone
+and states that the Management Committee authorized the company as the
+financing, investment, and construction body for infrastructure projects under
+BT arrangements, with project repurchase payments by the Management Committee.
+
+A 2018 New Beijing News report, reposted by Sina, was recorded as a
+supplementary source. It describes the company's infrastructure role, BT
+zero-cost repurchase arrangement, government subsidies, and dependence on
+public backing. Because it is a media source, it should not replace disclosure
+documents for final coding, but it is useful external corroboration of the
+functional interpretation.
+
+The Xi'an Hi-tech case is now strong enough to use as the first human-validated
+`nominal_exit` pilot, while recording that the official exit event is supported
+by issuer disclosures and still lacks a directly retrieved government exit-list
+document.
