@@ -4,11 +4,12 @@
 
 - Case ID: `pilot_gd_001`
 - Company: Guangzhou City Construction Investment Group Co., Ltd. (`广州市城市建设投资集团有限公司`)
-- Status: strong candidate for second pilot case
-- Preliminary label direction: `substantive_exit_candidate`
+- Status: second human-validated pilot label
+- Final label: `substantive_exit`
+- Confidence: medium
 - Main source page: Shanghai Clearing House, `广州市城市建设投资集团有限公司2026年度第四期中期票据发行文件`, 2026-04-07
 - Company profile source: Guangzhou City Construction Investment Group official website
-- Source inventory rows: `src_gd_gz_001`, `src_gd_gz_004`
+- Source inventory rows: `src_gd_gz_001`, `src_gd_gz_004`, `src_gd_gz_005`, `src_gd_gz_006`, `src_gd_gz_007`
 
 ## Why This Case Matters
 
@@ -32,10 +33,19 @@ financing.
 
 ## Machine-Readable Documents
 
-One key document has been downloaded locally and extracted:
+Four key documents have been downloaded locally. Three produced usable text:
 
 - `doc_gd_gz_chengtou_2026_mtn4_004`: 2026 fourth MTN prospectus, 342 pages,
   340,331 extracted characters
+- `doc_gd_gz_chengtou_2018_tracking_rating`: 2018 tracking rating report, 22
+  pages, 30,962 extracted characters
+- `doc_gd_gz_chengtou_2018_swap_plan`: 2018 planned debt-replacement
+  announcement for `14粤城建MTN001`, 3 pages, 961 extracted characters
+
+One scanned announcement produced no local text:
+
+- `doc_gd_gz_chengtou_2018_swap_special`: 2018 special announcement on local
+  government debt replacement for `14粤城建MTN001`
 
 The downloaded PDF and extracted text are stored under ignored local data
 directories. The tracked inventory records the source URL and local path.
@@ -72,6 +82,7 @@ government-project investment and financing. Instead, it shifted to a
 Relevant extracted-text location:
 
 - `doc_gd_gz_chengtou_2026_mtn4_004.txt`, lines 6537-6544
+- `doc_gd_gz_chengtou_2018_tracking_rating.txt`, lines 657-668
 
 ### Fiscal Funding of Public-Welfare Projects
 
@@ -83,16 +94,34 @@ Relevant extracted-text locations:
 
 - `doc_gd_gz_chengtou_2026_mtn4_004.txt`, lines 6545-6548
 - `doc_gd_gz_chengtou_2026_mtn4_004.txt`, lines 6756-6761
+- `doc_gd_gz_chengtou_2018_tracking_rating.txt`, lines 657-668
+
+### Debt Replacement as Fiscal Substitution
+
+The 2018 announcement on the planned partial replacement of the 2014 MTN states
+that 1.141 billion yuan of `14粤城建MTN001` was recognized as debt for which the
+government bore repayment responsibility and included in the 2018 fiscal budget.
+It also cites a Guangzhou Finance Bureau notice requiring replacement of
+non-government-bond-form government debt by the end of August 2018.
+
+Relevant extracted-text location:
+
+- `doc_gd_gz_chengtou_2018_swap_plan.txt`, lines 14-27
 
 ### Remaining Ambiguities
 
-The case should not yet be treated as a final `substantive_exit` label. The
-company profile still describes the group as engaged in city infrastructure
-investment, financing, construction, and operation. The prospectus also records
-large public-welfare assets and ongoing public-project management. The coding
-question is therefore whether these remaining public functions are budgetary
-and managerial rather than off-budget financing.
+The case is coded as `substantive_exit` with medium confidence. The reason is
+that both 2018 and 2026 documents describe a post-2014 shift away from new
+government-project investment and financing toward fiscal-funded project
+management, while the 2018 debt-replacement announcement shows that part of an
+older 2014 MTN was absorbed into the formal fiscal budget.
 
-Before final labeling, the next validation step should collect an older
-pre-2014 or around-2014 document and, if possible, an official Guangzhou reform
-document or government announcement confirming the functional shift.
+The main caveat is that this is not an exit-list case. The company profile still
+describes the group as engaged in city infrastructure investment, financing,
+construction, and operation. The prospectus also records large public-welfare
+assets and ongoing public-project management. The coding claim therefore turns
+on the distinction between budgetary project management and off-budget
+government financing.
+
+Before raising confidence to high, the next validation step should collect the
+original Guangzhou 2008 reform document or additional 2014 issuance materials.

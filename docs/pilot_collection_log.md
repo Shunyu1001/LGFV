@@ -209,8 +209,19 @@ same document describes the remaining role as fiscal-funded `代建代管`, with
 public-welfare project funds coming from municipal fiscal funds and the company
 receiving capped project-management fees.
 
-This case should be treated as a `substantive_exit_candidate` rather than a
-final label until an older reform-era source is collected. It is especially
-useful as a contrast with Xi'an Hi-tech because it tests whether the codebook can
-distinguish continuing public-project management from continuing off-budget
+Follow-up collection located three older documents: a 2018 tracking rating
+report, a July 2018 planned partial debt-replacement announcement for
+`14粤城建MTN001`, and an August 2018 special announcement on local government
+debt replacement. The 2018 rating report already states that since 2014 the
+company no longer participated in new government-project investment and
+financing and instead shifted to fiscal-funded `代建代管`. The July 2018
+announcement states that 1.141 billion yuan of the 2014 MTN was recognized as
+government-repayment-responsibility debt and included in the 2018 fiscal budget
+for replacement.
+
+Based on these old and current sources, Guangzhou City Construction Investment
+Group has been entered into `data/processed/human_validated_labels.csv` as a
+medium-confidence `substantive_exit` case. It is especially useful as a contrast
+with Xi'an Hi-tech because it tests whether the codebook can distinguish
+continuing budgetary public-project management from continuing off-budget
 government financing.
