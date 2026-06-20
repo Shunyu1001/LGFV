@@ -225,3 +225,25 @@ medium-confidence `substantive_exit` case. It is especially useful as a contrast
 with Xi'an Hi-tech because it tests whether the codebook can distinguish
 continuing budgetary public-project management from continuing off-budget
 government financing.
+
+## 2026-06-20, Hangzhou functional-transfer case
+
+The third pilot case focuses on Hangzhou City Investment Group. Shanghai
+Clearing materials for the 2024 first MTN include a prospectus and issuer rating
+report. The prospectus records the 2022 municipal decision to integrate
+Hangzhou City Investment and Qiantou Group into a new city-investment group and
+to form a `1+4+X` structure with water, bus, energy, Anju, and other specialized
+groups.
+
+The key transfer evidence is threefold. First, Hangzhou SASAC transferred 90
+percent of Qiantou Group equity to Hangzhou City Investment as government
+capital contribution. Second, Hangzhou City Investment succeeded Qiantou
+Group's existing corporate bonds, enterprise bonds, and private-placement
+instruments. Third, Hangzhou Anju Group was created as the citywide
+housing-security investment, construction, and operation platform.
+
+This case has been entered into `data/processed/human_validated_labels.csv` as a
+medium-confidence `functional_transfer` case. More precisely, it is a
+functional-consolidation case within the functional-transfer family: the
+public-project and debt functions did not disappear, but were reorganized into a
+larger and more specialized municipal platform system.
