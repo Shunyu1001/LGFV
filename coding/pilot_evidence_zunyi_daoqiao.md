@@ -22,11 +22,14 @@ The first ChinaBond source is the 2015 enterprise-bond issuance disclosure page 
 
 The second ChinaBond source is the rating-disclosure set for Zunyi Daoqiao. It includes the 2022 tracking rating report and the 2023 rating attention notice on bank-loan restructuring. The relevant source row is `src_gz_zy_003`.
 
-Four PDFs have been downloaded and extracted:
+Seven PDFs have been downloaded. Five produced machine-readable text, while the two 2017 restructuring documents appear to be scanned or otherwise not extractable through the current `pypdf` workflow:
 
 - `doc_gz_zy_daoqiao_2015_bond_prospectus`
 - `doc_gz_zy_daoqiao_2015_bond_rating`
+- `doc_gz_zy_daoqiao_2017_restructuring_notice`
+- `doc_gz_zy_daoqiao_2017_asset_restructuring_special_rating`
 - `doc_gz_zy_daoqiao_2022_tracking_rating`
+- `doc_gz_zy_daoqiao_2022_debt_restructuring_media_notice`
 - `doc_gz_zy_daoqiao_2023_bank_restructuring_notice`
 
 ## Baseline Platform Function
@@ -51,6 +54,8 @@ The 2022 report also records continued public support. It says the company remai
 
 The 2022 tracking rating report records severe financial stress. It notes that by June 27, 2022, the company had 119 enforcement records, most added since 2021, with an executed amount of RMB 5.236 billion, or 52.36 yi yuan. It also states that the rating outlook remained negative. Relevant passages appear at lines 62 and 131-132.
 
+The July 2022 rating attention notice is especially important because it uses the language of government-financing-platform debt resolution rather than clean market exit. Citing public news reports, it says that Zunyi Daoqiao had signed a debt-restructuring agreement with banking creditors, with principal extension and repayment delayed to 20 years. It then states that, under the guidance of State Council Document No. 2 of 2022, Zunyi Daoqiao was one of Guizhou's city- and county-level government financing platform company debt-resolution pilot enterprises. This evidence appears in `doc_gz_zy_daoqiao_2022_debt_restructuring_media_notice.txt`, lines 22-34.
+
 The 2023 rating attention notice records a bank-loan restructuring. It states that the company had basically clarified restructuring arrangements with banking financial institutions and signed related supplementary agreements. The restructuring involved RMB 15.594 billion, or 155.94 yi yuan, of debt. After restructuring, the bank-loan term was adjusted to 20 years, with rates of 3.00 percent to 4.50 percent per year, interest-only payments in the first 10 years, and amortizing principal repayment in the final 10 years. This evidence appears in `doc_gz_zy_daoqiao_2023_bank_restructuring_notice.txt`, lines 23-28.
 
 The same attention notice records ongoing liquidity pressure. It states that as of January 13, 2023, the company had 158 enforcement records; as of the end of June 2022, total debt was RMB 45.754 billion, or 457.54 yi yuan, short-term debt was RMB 14.141 billion, or 141.41 yi yuan, and the cash-to-short-term-debt ratio was 0.04. It also records RMB 15.146 billion, or 151.46 yi yuan, in external guarantees and says that some nonstandard debt had already become overdue. These passages appear at lines 42-50.
@@ -66,5 +71,7 @@ First, Zunyi Daoqiao was clearly a platform-like entity before the current refor
 Second, by 2022, the company still carried out entrusted-construction and land-consolidation functions tied to local government arrangements. This is inconsistent with a clean disappearance of public-project functions.
 
 Third, the 2023 bank-loan restructuring suggests that in a weak-capacity, high-debt setting, formal adjustment may take the form of debt maturity extension, fiscal coordination, and continued public-sector support rather than immediate substantive exit.
+
+Fourth, the July 2022 attention notice directly places Zunyi Daoqiao inside a government-financing-platform debt-resolution pilot. This makes the case useful for the paper even before a formal exit document is found, because it shows that a weak-capacity locality can be observed through debt-resolution and restructuring documents rather than through the clean compliance language found in stronger cases.
 
 The remaining missing source is a direct formal-exit or compliance document. The next search should look for documents using the following terms: `遵义道桥 退出融资平台`, `遵义道桥 政府融资职能`, `遵义道桥 不承担政府融资职能`, `遵义道桥 市场化转型`, `遵义道桥 隐性债务 化解`, and `遵义道桥 债务重组 公告`. A final label should be assigned only after this source is found or after the absence of such a source is recorded systematically.

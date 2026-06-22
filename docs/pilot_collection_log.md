@@ -257,16 +257,23 @@ ChinaBond disclosure search located the 2015 issuance-document page for the
 issuer's older name, `遵义市道路桥梁工程有限责任公司`, and a set of rating
 files and attention notices under the later group name.
 
-Four documents were downloaded and extracted: the 2015 enterprise-bond
-prospectus, the 2015 initial rating report, the 2022 tracking rating report,
-and a 2023 rating attention notice on bank-loan restructuring. The 2015
-prospectus identifies the issuer and its subsidiary as infrastructure,
+Seven documents were downloaded. Five produced machine-readable text: the 2015
+enterprise-bond prospectus, the 2015 initial rating report, the 2022 tracking
+rating report, a July 2022 rating attention notice on debt-restructuring news,
+and a 2023 rating attention notice on bank-loan restructuring. Two 2017
+restructuring documents were downloaded but did not produce text through the
+current extraction workflow.
+
+The 2015 prospectus identifies the issuer and its subsidiary as infrastructure,
 land-development, and investment-financing bodies for New Pu New Area. The 2022
 tracking rating report shows that entrusted construction, land consolidation,
-and government support were still central to the company. The 2023 attention
-notice reports a RMB 15.594 billion, or 155.94 yi yuan, bank-loan restructuring
-with a 20-year post-restructuring maturity profile and continued reliance on
-provincial, municipal, and financial-institution support.
+and government support were still central to the company. The July 2022
+attention notice is especially useful because it describes Zunyi Daoqiao as one
+of Guizhou's city- and county-level government financing platform company
+debt-resolution pilot enterprises. The 2023 attention notice then reports a RMB
+15.594 billion, or 155.94 yi yuan, bank-loan restructuring with a 20-year
+post-restructuring maturity profile and continued reliance on provincial,
+municipal, and financial-institution support.
 
 This is not yet a human-validated exit-type case. The current evidence is
 strong for baseline platform function, continuing public-project function, and

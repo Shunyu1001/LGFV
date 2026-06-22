@@ -146,7 +146,8 @@ pilot needs weak-capacity cases where debt pressure and fiscal dependence make
 substantive exit harder to observe. Zunyi Daoqiao is the first such candidate.
 Its 2015 ChinaBond documents establish baseline platform function, its 2022
 tracking rating report shows continuing entrusted-construction and
-land-consolidation functions, and its 2023 rating attention notice records a
-large bank-loan restructuring. Because no direct formal-exit or
+land-consolidation functions, and its July 2022 and January 2023 rating
+attention notices place the company in a government-financing-platform
+debt-resolution and bank-loan restructuring process. Because no direct formal-exit or
 no-government-financing source has yet been found, the case should remain a
 candidate evidence packet rather than a final label.
