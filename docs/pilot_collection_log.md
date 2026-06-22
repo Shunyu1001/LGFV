@@ -247,3 +247,33 @@ medium-confidence `functional_transfer` case. More precisely, it is a
 functional-consolidation case within the functional-transfer family: the
 public-project and debt functions did not disappear, but were reorganized into a
 larger and more specialized municipal platform system.
+
+## 2026-06-22, Zunyi weak-capacity candidate
+
+The next collection pass returned to the Guizhou weak-capacity side of the
+pilot. ChinaBond metadata had already identified two local enterprise bonds for
+`遵义道桥建设集团有限公司`: `12遵义道桥债` and `15遵义道桥债`. A follow-up
+ChinaBond disclosure search located the 2015 issuance-document page for the
+issuer's older name, `遵义市道路桥梁工程有限责任公司`, and a set of rating
+files and attention notices under the later group name.
+
+Four documents were downloaded and extracted: the 2015 enterprise-bond
+prospectus, the 2015 initial rating report, the 2022 tracking rating report,
+and a 2023 rating attention notice on bank-loan restructuring. The 2015
+prospectus identifies the issuer and its subsidiary as infrastructure,
+land-development, and investment-financing bodies for New Pu New Area. The 2022
+tracking rating report shows that entrusted construction, land consolidation,
+and government support were still central to the company. The 2023 attention
+notice reports a RMB 15.594 billion, or 155.94 yi yuan, bank-loan restructuring
+with a 20-year post-restructuring maturity profile and continued reliance on
+provincial, municipal, and financial-institution support.
+
+This is not yet a human-validated exit-type case. The current evidence is
+strong for baseline platform function, continuing public-project function, and
+debt-continuity pressure, but it does not yet contain a direct formal-exit or
+no-government-financing statement. The case has therefore been recorded as
+`pilot_gz_002` with a separate evidence packet in
+`coding/pilot_evidence_zunyi_daoqiao.md`. It should be used as a candidate weak
+capacity case and should not be added to
+`data/processed/human_validated_labels.csv` until a direct exit or compliance
+source is collected.

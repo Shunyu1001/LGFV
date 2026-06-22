@@ -130,3 +130,23 @@ were found, which were dropped, and why. Second, it should produce a source
 inventory with stable links or local file references. Third, it should produce
 preliminary LLM labels and final human-validated labels. Fourth, it should
 produce a memo summarizing the main ambiguities discovered during coding.
+
+## Current Candidate Balance
+
+The first validated cases now cover three exit-type patterns. Xi'an Hi-tech is a
+nominal-exit case, Guangzhou City Construction Investment Group is a
+substantive-exit case, and Hangzhou City Investment Group is a
+functional-transfer case. Chengdu City Construction Investment Management Group
+adds a second nominal-exit case with a different source pattern: compliance
+language coexists with continuing infrastructure investment, BT, fiscal-payment,
+and debt-replacement evidence.
+
+The next useful addition is not simply another high-capacity coastal case. The
+pilot needs weak-capacity cases where debt pressure and fiscal dependence make
+substantive exit harder to observe. Zunyi Daoqiao is the first such candidate.
+Its 2015 ChinaBond documents establish baseline platform function, its 2022
+tracking rating report shows continuing entrusted-construction and
+land-consolidation functions, and its 2023 rating attention notice records a
+large bank-loan restructuring. Because no direct formal-exit or
+no-government-financing source has yet been found, the case should remain a
+candidate evidence packet rather than a final label.
