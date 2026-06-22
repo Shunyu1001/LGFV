@@ -364,3 +364,34 @@ preferably through CHGIS place identifiers or coordinates. A separate script,
 `scripts/inspect_chgis_archives.py`, has been added for CHGIS field inspection,
 but the CHGIS 1820 and 1911 time-slice zip files still need to be downloaded
 manually because Dataverse blocked automated API access during this run.
+
+## 2026-06-22, CBDB-GADM prefecture match
+
+The first modern-boundary match for the historical elite-density variable has
+been implemented in `scripts/match_cbdb_to_gadm_prefectures.py`. The script
+uses GADM 4.1 China ADM2 boundaries as a local modern prefecture-level
+boundary file. The raw GADM zip is stored under `data/raw/` and is not tracked
+because GADM allows academic and other non-commercial use but does not allow
+redistribution of raw boundary data.
+
+The script matches CBDB historical places to GADM ADM2 polygons by longitude
+and latitude, then aggregates Ming-Qing jinshi and juren counts to the modern
+prefecture. It writes a place-to-prefecture crosswalk, a prefecture-level count
+and density file, a GADM metadata file, a match-coverage diagnostic, and an
+unmatched-place diagnostic. The main output is
+`data/analysis_inputs/cbdb_mingqing_elite_gadm_prefecture_counts.csv`.
+
+The first match assigns 3,356 of 3,514 CBDB historical places to GADM ADM2
+units. These matched places account for 89,433 of the 91,241 examination-elite
+persons with preferred addresses. The unmatched places account for 1,808
+persons and are mostly banner categories, broad historical regions, missing
+coordinate records, Taiwan, and other places outside the mainland China GADM
+polygon set. The resulting prefecture table contains 286 GADM ADM2 units with
+at least one matched CBDB historical place.
+
+The pilot-city values are substantively plausible. Hangzhou has 2,716 matched
+elite persons, Guangzhou 1,524, Chengdu 861, Xi'an 536, Kunming 437, Zunyi 222,
+and Liupanshui 6. After scaling by approximate area, Liupanshui remains very
+low, while Hangzhou and Guangzhou remain high. These values should be treated
+as an exploratory first pass until the boundary source and area calculations
+are finalized.

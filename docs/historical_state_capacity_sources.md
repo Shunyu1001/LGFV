@@ -120,6 +120,35 @@ CBDB historical place, not a contemporary prefecture-level city. The next step
 is to join the CBDB place identifiers or coordinates to CHGIS and then to a
 stable contemporary prefecture boundary file.
 
+The first contemporary-boundary match has now been implemented in
+`scripts/match_cbdb_to_gadm_prefectures.py`. The script uses GADM 4.1 China
+ADM2 boundaries as a local modern prefecture-level boundary source. GADM's
+China ADM2 file contains 368 administrative units and includes province and
+prefecture names, Chinese names, and prefecture type fields. Because GADM
+allows academic and other non-commercial use but does not allow redistribution
+of the raw boundary data, the boundary zip is stored only in `data/raw/` and is
+not committed to the repository.
+
+The matching script assigns CBDB historical places to GADM ADM2 polygons using
+their longitude and latitude, then aggregates jinshi and juren counts to the
+modern prefecture. It writes:
+
+- `data/analysis_inputs/cbdb_place_to_gadm_prefecture_crosswalk.csv`
+- `data/analysis_inputs/cbdb_mingqing_elite_gadm_prefecture_counts.csv`
+- `data/diagnostics/cbdb_gadm_match_coverage.csv`
+- `data/diagnostics/cbdb_gadm_unmatched_places.csv`
+- `data/diagnostics/gadm_china_adm2_metadata.csv`
+
+The first match assigns 3,356 of 3,514 CBDB historical places to a GADM ADM2
+unit. These matched places account for 89,433 of the 91,241 examination-elite
+persons with preferred addresses. The unmatched cases account for 1,808 persons
+and are concentrated among banner categories, broad historical regions, missing
+coordinates, Taiwan, and other places that do not fall cleanly inside the
+mainland China GADM boundary. The resulting prefecture table covers 286
+contemporary GADM ADM2 units with at least one matched CBDB place. The table
+also reports approximate prefecture area and elite, jinshi, and juren counts
+per 1,000 square kilometers.
+
 The CHGIS construction pass has been started with
 `scripts/inspect_chgis_archives.py`. This script reads locally downloaded CHGIS
 zip files and writes archive and DBF-field inventories without requiring

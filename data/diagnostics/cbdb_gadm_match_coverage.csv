@@ -1,0 +1,2 @@
+cbdb_place_rows,matched_place_rows,unmatched_place_rows,gadm_prefecture_rows,matched_gadm_prefecture_rows,elite_persons_in_input,elite_persons_matched,elite_persons_unmatched,boundary_source,boundary_url,license_note
+3514,3356,158,368,286,91241,89433,1808,GADM 4.1 China ADM2,https://geodata.ucdavis.edu/gadm/gadm4.1/json/gadm41_CHN_2.json.zip,GADM is free for academic and other non-commercial use; raw boundary redistribution is not allowed.

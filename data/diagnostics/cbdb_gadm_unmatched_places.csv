@@ -1,0 +1,159 @@
+c_addr_id,addr_name,addr_name_chn,x_coord,y_coord,elite_persons,jinshi_persons,juren_persons,ming_persons,qing_persons
+20054,Manchu Bordered Yellow Banner,滿洲鑲黃旗,,,130,129,3,0,130
+20052,Manchu Plain White Banner,滿洲正白旗,,,112,112,2,0,112
+20051,Manchu Plain Blue Banner,滿洲正藍旗,,,95,92,3,1,94
+20050,Manchu Plain Yellow Banner,滿洲正黃旗,,,94,94,3,0,94
+20056,Manchu Bordered White Banner,滿洲鑲白旗,,,86,85,3,0,86
+20068,Han Army Plain White Banner,漢軍正白旗,,,71,71,1,0,71
+20078,Plain Blue Banner,正藍旗,,,70,70,4,0,70
+20055,Manchu Bordered Blue Banner,滿洲鑲藍旗,,,68,67,3,0,68
+20070,Han Army Bordered Yellow Banner,漢軍鑲黃旗,,,56,56,2,0,56
+20057,Manchu Bordered Red Banner,滿洲鑲紅旗,,,51,51,0,0,51
+20082,Bordered Blue Banner,鑲藍旗,,,47,47,2,1,46
+20053,Manchu Plain Red Banner,滿洲正紅旗,,,46,46,0,0,46
+20066,Han Army Plain Yellow Banner,漢軍正黃旗,,,42,42,1,0,42
+20655,Zunhua zhou,遵化州,,,38,10,28,0,38
+20212,Jiangnan Dao,江南道,,,36,36,1,0,36
+20242,Huguang Dao,湖廣道,,,33,33,0,0,33
+20058,Mongol Plain Yellow Banner,蒙古正黃旗,,,33,33,0,0,33
+20067,Han Army Plain Blue Banner,漢軍正藍旗,,,32,32,1,0,32
+20073,Han Army Bordered Red Banner,漢軍鑲紅旗,,,30,29,2,0,30
+20077,Plain Yellow Banner,正黃旗,,,29,29,2,0,29
+20084,Bordered Red Banner,鑲紅旗,,,28,28,0,0,28
+20072,Han Army Bordered White Banner,漢軍鑲白旗,,,27,27,0,0,27
+20079,Plain White Banner,正白旗,,,26,26,1,0,26
+20064,Mongol Bordered White Banner,蒙古鑲白旗,,,26,26,0,0,26
+20085,Manchu bannerman,滿洲八旗,,,24,23,1,0,24
+20316,Taiwan,臺灣,120.200264,23.00415,24,7,17,0,24
+20071,Han Army Bordered Blue Banner,漢軍鑲藍旗,,,23,23,1,0,23
+20062,Mongol Bordered Yellow Banner,蒙古鑲黃旗,,,23,23,0,0,23
+20060,Mongol Plain White Banner,蒙古正白旗,,,22,22,0,0,22
+20083,Bordered White Banner,鑲白旗,,,21,21,1,0,21
+20081,Bordered Yellow Banner,鑲黃旗,,,19,19,1,0,19
+6925,Jingjiang,靖江,,,18,18,1,0,18
+20069,Han Army Plain Red Banner,漢軍正紅旗,,,18,17,2,0,18
+20080,Plain Red Banner,正紅旗,,,16,16,1,0,16
+20061,Mongol Plain Red Banner,蒙古正紅旗,,,15,15,0,0,15
+20065,Mongol Bordered Red Banner,蒙古鑲紅旗,,,15,15,0,0,15
+20059,Mongol Plain Blue Banner,蒙古正藍旗,,,14,14,0,0,14
+20016,Taiwan Fu,臺灣府,120.20026398,23.004150391,11,0,11,0,11
+300346,Suiyang wei,睢陽衛,0.0,0.0,10,10,3,10,0
+20063,Mongol Bordered Blue Mongol Banner,蒙古鑲藍旗,,,10,10,0,0,10
+4965,Liaodong Duzhihuishisi,遼東都指揮使司,,,10,2,8,0,10
+5976,Fujian Buzhengsi,福建布政司,,,9,8,6,9,0
+20018,Zhanghua,彰化,120.53527069,24.07657814,8,7,1,0,8
+300183,Chengdu zuo huwei,成都左護衛,0.0,0.0,7,7,5,7,0
+300068,Fuzhou wei,州衛,,,7,6,7,7,0
+5331,Zhejiang Buzhengsi,浙江布政司,,,7,6,5,7,0
+303429,Jinwuyou Wei,金吾右衛,,,5,5,3,5,0
+5520,Huguang Buzhengsi,湖廣布政司,,,5,3,3,5,0
+20659,Dihua Zhilizhou,迪化直隸州,,,5,0,5,0,5
+20096,Jiayi,嘉義,120.4359,23.48334,4,4,0,0,4
+300451,Datong zhong tunwei,大同中屯衛,0.0,0.0,4,4,3,4,0
+5428,Jiangxi Buzhengsi,江西布政司,,,4,4,1,4,0
+5158,Shaanxi Buzhengsi,陝西布政司,,,4,4,2,4,0
+4839,Shandong Buzhengsi,山東布政司,,,4,3,2,4,0
+5021,He'nan Buzhengsi,河南布政司,,,3,3,0,3,0
+20305,Danshui,淡水,121.4497,25.1777,3,3,0,0,3
+302147,Puzhou shouyu qianhusuo,蒲州守禦千戶所,,,3,3,0,3,0
+5752,Qiong Xian,邛縣,,,3,3,1,3,0
+4609,Qingpu,清浦,,,3,1,2,3,0
+500005,Jiaozhi (Northern Vietnam),交趾,,,2,2,2,2,0
+300196,Baoning shouyu qianhusuo,保寧守禦千戶所,,,2,2,0,2,0
+4753,Piantouguan shouyu Qianhusuo,偏頭守禦千戶所,,,2,2,1,2,0
+300491,Daning Duzhihuishisi,大寧都指揮使司,,,2,2,0,2,0
+300509,Ninghua shouyu qianhusuo,寧化守禦千戶所,,,2,2,0,1,1
+5947,Pingyi Zhangguansi,平夷長官司,,,2,2,1,2,0
+5521,Pingxi Wei,平溪衛,0.0,0.0,2,2,1,2,0
+300200,Guang'an shouyu qianhusuo,廣安守禦千戶所,,,2,2,1,2,0
+6060,Guangdong Buzhengsi,廣東布政司,,,2,2,1,2,0
+300389,Chengtian wei,承天衛,0.0,0.0,2,2,2,2,0
+302132,Shuozhou wei,朔州衛,,,2,2,0,2,0
+302255,Songjiang shouyu qianhusuo,松江守禦千戶所,,,2,2,2,2,0
+303394,Wugongzhong Wei,武功中衛,,,2,2,2,2,0
+303395,Wugongzuo Wei,武功左衛,,,2,2,2,2,0
+300284,Wuding shouyu qianhusuo,武定守禦千戶所,,,2,2,1,2,0
+4348,Wanquan Duzhihuishisi,萬全都指揮使司,,,2,2,2,1,1
+302083,Mayi shouyu Qianhusuo,馬邑守禦千戶所,,,2,2,1,2,0
+20315,Fengshan,鳳山,120.285419,22.692129,2,2,0,0,2
+303489,Yingyang Wei,鷹揚衛,,,2,2,0,2,0
+20207,Jiangnansusongchangzhentai Dao,江南蘇松常鎮太道,,,2,1,1,0,2
+20017,Zhuluo,諸羅,120.4358902,23.483335495,2,1,1,0,2
+20303,Taibei Fu,臺北府,121.564558,25.03746,2,0,2,0,2
+23050,Jiaozhi buzhengsi,交趾布政司,,,1,1,1,1,0
+300474,Baoan wei,保安衛,0.0,0.0,1,1,0,1,0
+303358,Nanjing Qishou Wei,南京旗手衛,,,1,1,0,1,0
+302254,Nanhuizui shouyu qianhusuo,南匯嘴守禦千戶所,,,1,1,0,1,0
+701683,nan hu zui du,南湖嘴渡,,,1,1,0,0,1
+300501,Nan zhili,南直隸,,,1,1,0,1,0
+20152,Taiwan Dao,台灣道,,,1,1,0,0,1
+20664,Jilin fudutong xiaqu,吉林副都統轄區,,,1,1,0,0,1
+5731,Sichuan Buzhengsi,四川布政司,,,1,1,1,1,0
+300207,Shoufu Yiweisi,壽府儀衛司,,,1,1,0,1,0
+303375,Daningzhong Wei,大寧中衛,,,1,1,1,1,0
+1494,Taicang,太倉,,,1,1,1,0,1
+302085,Taiyuan duwei,太原都衛,,,1,1,0,1,0
+700009,an ping,安平,120.20026,23.00415,1,1,0,0,1
+300487,Andong zhong tunwei,安東中屯衛,0.0,0.0,1,1,1,1,0
+303566,Anfu Shouyuqianhusuo,安福守禦千戶所,,,1,1,0,1,0
+667,Xuanhua,宣化,,,1,1,0,1,0
+300431,Miyun hou wei,密雲後衛,0.0,0.0,1,1,0,1,0
+300503,Shanxi Duzhihuishisi,山西都指揮使司,,,1,1,1,1,0
+9313,Emei,峨眉,,,1,1,1,0,1
+303403,Chongfu Yiwei si,崇府儀衛司,,,1,1,1,1,0
+302093,Pingdingzhou shouyu qianhusuo,平定州守禦千戶所,,,1,1,0,1,0
+300438,Yanqing wei,延慶衛,0.0,0.0,1,1,0,1,0
+302114,Pengcheng Wei,彭城衛,,,1,1,1,1,0
+1687,Deqing,德清,,,1,1,0,1,0
+20308,Xinzhu,新竹,121.01298,24.826961,1,1,0,0,1
+2101,Xindu,新都,,,1,1,0,1,0
+303635,Changping Zhou,昌平州,,,1,1,0,1,0
+303379,Jinfu Yiwei si,晉府儀衛司,,,1,1,1,1,0
+303513,Jingling Wei,景陵衛,,,1,1,0,1,0
+5784,Yongning Xuanfusi,永寧宣撫司,,,1,1,1,1,0
+302237,Yongchang junminfu,永昌軍民府,,,1,1,0,1,0
+1131,Fenyang,汾陽,,,1,1,0,1,0
+302145,Qinzhou shouyu qianhusuo,沁州守禦千戶所,,,1,1,1,1,0
+5949,Muchuan Zhangguansi,沐川長官司,,,1,1,0,1,0
+300460,Hejian wei,河間衛,0.0,0.0,1,1,0,1,0
+5945,Nixi Zhangguansi,泥溪長官司,,,1,1,0,1,0
+302247,Taizhou shouyu qianhusuo,泰州守禦千戶所,,,1,1,1,1,0
+6756,Qing Dynasty,清朝,,,1,1,1,0,1
+2404,Zhangpu,漳浦,,,1,1,0,1,0
+20313,Penghu ting,澎湖廳,119.577072,23.571344,1,1,0,0,1
+500014,Germania,熱爾瑪尼亞國(日耳曼),,,1,1,0,0,1
+303416,Liushouqian Wei,留守前衛,,,1,1,0,1,0
+302222,Dengzhou shouyu qian qianhusuo,登州守禦前千戶所,,,1,1,0,1,0
+872,Suining,睢寧,,,1,1,0,1,0
+302272,Chengxiang shouyu qianhusuo,程鄉守禦千戶所,,,1,1,1,1,0
+2697,Luoping,羅平,,,1,1,1,0,1
+303421,Yiyongzhong Wei,義勇中衛,,,1,1,1,1,0
+5773,Mangbu Junminfu,芒部軍民府,,,1,1,0,1,0
+378,Xiangfan,襄樊,,,1,1,0,0,1
+300380,Xiangyang huwei,襄陽護衛,0.0,0.0,1,1,0,1,0
+6639,Guizhou Xuanweishisi,貴州宣慰使司,,,1,1,1,1,0
+300496,Guizhou Duzhihuishisi,貴州都指揮使司,,,1,1,1,1,0
+220008,Liaodong xingzhongshusheng,遼東行中書省,,,1,1,0,1,0
+303400,Zhengfu Yiwei si,鄭府儀衛司,,,1,1,1,1,0
+303448,Jinwuhou Wei,金吾後衛,,,1,1,0,1,0
+5328,Zhenyi Shouyuqianhusuo,鎮夷守禦千戶所,,,1,1,0,1,0
+303413,Changning shouyuqianhusuo,長寧守禦千戶所,,,1,1,1,1,0
+303414,Changsha Yiwei si,長沙儀衛司,,,1,1,1,1,0
+4375,Kaiping Wei,開平衛,0.0,0.0,1,1,0,1,0
+300507,Yunnan Duzhihuishisi,雲南都指揮使司,,,1,1,1,1,0
+7120,Lingwu Yi,靈武驛,,,1,1,0,0,1
+303398,Raozhou Shouyuqianhusuo,饒州守禦千戶所,,,1,1,1,1,0
+303442,Xiaojiyou Wei,驍騎右衛,,,1,1,1,1,0
+500004,Koryo,高麗,,,1,1,1,1,0
+303486,Longxiang Wei,龍驤衛,,,1,1,0,1,0
+300034,Zhapu shouyu qianhusuo,乍浦守禦千戶所,,,1,0,1,1,0
+300232,Wuzhou shouyu qianhusuo,梧州守禦千戶所,,,1,0,1,1,0
+20167,Runan Dao,汝南道,,,1,0,1,0,1
+20650,luoyang,漯陽,,,1,0,1,0,1
+300148,Ganzhou zhong huwei,甘州中護衛,0.0,0.0,1,0,1,0,1
+10001,Zhangqiu,章丘,,,1,0,1,0,1
+20304,Tainan Fu,臺南府,120.20026398,23.004150391,1,0,1,0,1
+500034,Britain,英國,,,1,0,1,0,1
+500028,Menggu (Mongolia),蒙古,,,1,0,1,1,0
+6567,Guizhou Buzhengsi,貴州布政司,,,1,0,1,1,0
+300043,Longshan shouyu qianhusuo,龍山守禦千戶所,,,1,0,1,1,0
