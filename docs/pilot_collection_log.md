@@ -333,3 +333,34 @@ The current recommendation is to build the main historical state-capacity
 measure from Qing administrative density using CHGIS, then use Ming-Qing
 high-degree-holder density from CBDB as an alternative measure. The source memo
 is stored in `docs/historical_state_capacity_sources.md`.
+
+## 2026-06-22, CBDB elite-density construction pass
+
+The first historical elite-density script has been implemented. The script
+`scripts/prepare_cbdb_elite_counts.py` reads the local CBDB SQLite release and
+writes a place-level Ming-Qing examination-elite count file to
+`data/analysis_inputs/cbdb_mingqing_elite_place_counts.csv`. It also writes
+diagnostic files for the release metadata, schema summary, examination entry
+codes, and address coverage.
+
+The downloaded Hugging Face zip contains `cbdb_20260620.sqlite3`, with metadata
+generated on 2026-06-20. This differs from the GitHub `latest.json` file that
+was initially retrieved, which still reported a 2026-03-14 SQLite filename. The
+script therefore records the metadata stored inside the downloaded zip and
+checks the SQLite SHA-256 hash against that internal metadata.
+
+The first pass uses CBDB entry types `040101` for jinshi and `040102` for
+juren, restricts biography dynasties to Ming, Qing, and Southern Ming, and
+assigns each person to a preferred address using basic affiliation first,
+followed by Ming household address, actual residence, household registration
+address, and alternate basic affiliation. The resulting file contains 3,514
+historical places with non-missing preferred addresses. Among 98,880
+Ming-Qing examination-elite persons, 91,241 have a preferred address and 7,639
+do not.
+
+This output is an intermediate input rather than the final treatment variable.
+The next step is to join CBDB places to contemporary prefecture-level units,
+preferably through CHGIS place identifiers or coordinates. A separate script,
+`scripts/inspect_chgis_archives.py`, has been added for CHGIS field inspection,
+but the CHGIS 1820 and 1911 time-slice zip files still need to be downloaded
+manually because Dataverse blocked automated API access during this run.

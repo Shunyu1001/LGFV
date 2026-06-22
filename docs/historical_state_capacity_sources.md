@@ -91,6 +91,43 @@ Fourth, download the CBDB SQLite release and inspect tables related to persons, 
 
 Fifth, add courier-route or courier-station proximity only after the two main measures work.
 
+## Current Construction Status
+
+The first CBDB construction pass has been implemented in
+`scripts/prepare_cbdb_elite_counts.py`. The script downloads or reads the local
+CBDB SQLite release, records the release metadata, extracts the entry codes
+linked to jinshi and juren examination categories, and writes a place-level
+count file:
+
+- `data/analysis_inputs/cbdb_mingqing_elite_place_counts.csv`
+- `data/diagnostics/cbdb_release_metadata.csv`
+- `data/diagnostics/cbdb_exam_entry_codes.csv`
+- `data/diagnostics/cbdb_elite_address_coverage.csv`
+- `data/diagnostics/cbdb_schema_summary.csv`
+
+The current local CBDB file is `cbdb_20260620.sqlite3`. The SQLite checksum
+matches the metadata stored inside the downloaded Hugging Face zip. The first
+pass uses Ming, Qing, and Southern Ming biography dynasties; entry types
+`040101` and `040102`; and preferred address types for basic affiliation,
+Ming household address, actual residence, household registration address, and
+alternate basic affiliation. The script produces 3,514 historical places with
+non-missing preferred addresses. It identifies 98,880 Ming-Qing examination
+elite persons in total, of whom 91,241 have a preferred address and 7,639 do
+not.
+
+This output is not yet the final historical-capacity measure. Its unit is a
+CBDB historical place, not a contemporary prefecture-level city. The next step
+is to join the CBDB place identifiers or coordinates to CHGIS and then to a
+stable contemporary prefecture boundary file.
+
+The CHGIS construction pass has been started with
+`scripts/inspect_chgis_archives.py`. This script reads locally downloaded CHGIS
+zip files and writes archive and DBF-field inventories without requiring
+geopandas. Harvard Dataverse blocked automated API access during the current
+run, so the 1820 and 1911 CHGIS V6 time-slice zip files still need to be
+downloaded manually into `data/raw/historical/chgis/` before the field
+inspection can proceed.
+
 ## How This Changes The Paper
 
 The paper should not present historical state capacity as a vague old variable. It should define it as a set of persistent institutional resources with observable historical proxies.

@@ -1,0 +1,12 @@
+c_entry_code,c_entry_desc,c_entry_desc_chn,entry_types
+34,examination: fiscal intendent exam (caoshi),科舉: 漕試舉人,040102
+36,examination: jinshi (general),科舉: 進士(籠統),040101
+37,examination: jinshi (eight conducts),科舉: 進士(八行科),040101
+39,examination: juren (prefect or provincial graduates),科舉: 鄉貢舉人,040102
+46,examination: military juren (wuju),科舉: 武舉人,040102
+124,examination: jinshi (from Imperial Academy graduates),科舉: 國子監進士,040101
+179,provincial graduate by special examination,恩科鄉試舉人,040102
+185,Provincial Graduate by Imperial Grace,欽賜舉人,040102
+186,Provincial Graduate in Translation,繙譯舉人,040102
+187,Metropolitan Graduate in Translation,繙譯進士,040101
+334,Examination: Jinshi (Law And Administration),法政科進士,040101

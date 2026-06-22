@@ -14,6 +14,10 @@ exit, functional transfer, or liquidation.
 - `data/source_inventory_template.csv`: document-level source tracking
   template.
 - `data/labeling_template.csv`: case-level LLM and human-validated labels.
+- `data/analysis_inputs/`: small tracked intermediate datasets used for
+  empirical construction.
+- `data/diagnostics/`: small tracked reports about downloaded source data,
+  schemas, and coverage.
 - `data/raw/`: original source materials, such as announcements, bond
   prospectuses, rating reports, and registration records.
 - `data/processed/`: coded datasets and cleaned variables, including
