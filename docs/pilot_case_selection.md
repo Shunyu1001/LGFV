@@ -151,3 +151,14 @@ attention notices place the company in a government-financing-platform
 debt-resolution and bank-loan restructuring process. Because no direct formal-exit or
 no-government-financing source has yet been found, the case should remain a
 candidate evidence packet rather than a final label.
+
+Liupanshui Kaitou is the second Guizhou weak-capacity candidate. Its 2016
+ChinaBond prospectus establishes the company as a municipal platform engaged in
+project investment and financing, entrusted construction, asset management, and
+land development. Its 2022 tracking rating report shows that infrastructure
+construction still dominated revenue, that the business model remained mainly
+entrusted construction, and that the company continued to receive asset
+injections and government subsidies while facing weak local fiscal
+self-sufficiency, short-term debt pressure, guarantee risk, and rating-watch
+status. Like Zunyi, it should remain a candidate evidence packet until a direct
+formal-exit or no-government-financing source is found.

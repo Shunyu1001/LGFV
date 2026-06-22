@@ -284,3 +284,52 @@ no-government-financing statement. The case has therefore been recorded as
 capacity case and should not be added to
 `data/processed/human_validated_labels.csv` until a direct exit or compliance
 source is collected.
+
+## 2026-06-22, Liupanshui weak-capacity candidate
+
+The next Guizhou search pass found a second weak-capacity candidate. ChinaBond
+metadata returned three local enterprise bonds under `六盘水开投`: `12六盘水开投债`,
+`14六盘水开投债`, and `16六盘水开投债`. The issuer is
+`六盘水市开发投资有限公司`. ChinaBond disclosure search then located the 2016
+issuance-document page, the 2022 tracking rating report, a 2021 attention
+notice on enforcement-list inclusion, and a 2023 attention notice that kept the
+company on the rating watch list.
+
+Five documents were downloaded. Three produced machine-readable text: the 2016
+prospectus, the 2016 initial rating report, and the 2022 tracking rating report.
+The two one-page attention notices were downloaded but did not produce text
+through the current extraction workflow.
+
+The 2016 prospectus identifies Liupanshui Kaitou as a wholly state-owned
+company established by the municipal government, with a business scope covering
+project development, project investment and financing, entrusted project
+construction, asset management, and land development. It also describes the
+company's infrastructure business as an entrusted-construction and repurchase
+arrangement with the municipal government. The 2022 tracking rating report
+shows that the company still derived most of its revenue from infrastructure
+construction, continued to undertake roads, environmental governance, water
+projects, sewage-treatment projects, and shantytown redevelopment, and still
+received asset injections and fiscal subsidies.
+
+This case is not yet a human-validated exit-type case. Like Zunyi, it is strong
+for baseline platform function, continued public-project function, weak fiscal
+self-sufficiency, and debt pressure, but it lacks direct formal-exit or
+no-government-financing language. The case has therefore been recorded as
+`pilot_gz_003` with a separate evidence packet in
+`coding/pilot_evidence_liupanshui_kaitou.md`.
+
+## 2026-06-22, historical state-capacity sources
+
+A parallel search identified three historical data sources for the explanatory
+variable. CHGIS V6 is the strongest starting point for historical
+administrative density because it provides historical administrative units and
+time slices for 1820 and 1911. CBDB is the strongest source for historical
+elite density because it provides biographical records, including civil-service
+degree holders, with downloadable SQLite data. CHGIS also lists a Ming courier
+routes and stations shapefile that can be used later as a communication and
+transport-infrastructure robustness measure.
+
+The current recommendation is to build the main historical state-capacity
+measure from Qing administrative density using CHGIS, then use Ming-Qing
+high-degree-holder density from CBDB as an alternative measure. The source memo
+is stored in `docs/historical_state_capacity_sources.md`.

@@ -21,7 +21,7 @@ pilot_gz_001,1,Guizhou,Guiyang,,debt_pressure_inland,Research-design candidate c
 pilot_gz_001_alt_chengfa,1,Guizhou,Guiyang,贵阳市城市发展投资集团股份有限公司,alternative_platform_candidate,Alternative municipal development platform found during bond search,source_started,source_started,ChinaBond query found 13贵阳城发债 under 贵阳城发
 pilot_gz_001_alt_rail,1,Guizhou,Guiyang,贵阳市交通运营集团有限公司,alternative_platform_candidate,Alternative municipal transit platform found during bond search,source_started,source_started,ChinaBond query found 15贵阳轨道可续期债 under 贵阳轨道
 pilot_gz_002,1,Guizhou,Zunyi,遵义道桥建设集团有限公司,debt_pressure_inland,Research-design candidate chosen for inland debt-pressure comparison,source_started,source_started,ChinaBond query found 2 local enterprise bonds under 遵义道桥
-pilot_gz_003,2,Guizhou,Liupanshui,,debt_pressure_inland,Research-design candidate chosen for resource-linked and debt-pressure variation,candidate_only,not_started,
+pilot_gz_003,2,Guizhou,Liupanshui,六盘水市开发投资有限公司,debt_pressure_inland,Research-design candidate chosen for resource-linked and debt-pressure variation,documents_found,documents_found,ChinaBond query found 12六盘水开投债 14六盘水开投债 and 16六盘水开投债; 2016 issuance files and 2021-2023 rating attention documents downloaded for weak-capacity evidence packet
 pilot_gz_004,2,Guizhou,Bijie,,debt_pressure_inland,Research-design candidate chosen for inland prefecture-level comparison,candidate_only,not_started,
 pilot_yn_001,1,Yunnan,Kunming,,debt_pressure_inland,Research-design candidate chosen for inland provincial-capital comparison,candidate_only,not_started,
 pilot_yn_002,1,Yunnan,Qujing,,inland_prefecture_variation,Research-design candidate chosen for non-capital comparison,candidate_only,not_started,
