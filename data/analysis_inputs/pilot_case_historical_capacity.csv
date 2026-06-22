@@ -1,0 +1,7 @@
+case_id,province,city,company_name,case_status,exit_type_or_status,final_confidence,display_city,display_case_status,display_exit_type_or_status,gadm_gid,prefecture_name,prefecture_name_chn,matched_cbdb_places,area_sqkm_approx,elite_persons,jinshi_persons,juren_persons,elite_per_1000_sqkm,jinshi_per_1000_sqkm,juren_per_1000_sqkm
+pilot_gd_001,Guangdong,Guangzhou,广州市城市建设投资集团有限公司,human_validated,substantive_exit,medium,Guangzhou,Human-validated,Substantive exit,CHN.6.4_1,Guangzhou,广州市,13,7156.715,1524,611,1093,212.95,85.37,152.72
+pilot_zj_001,Zhejiang,Hangzhou,杭州市城市建设投资集团有限公司,human_validated,functional_transfer,medium,Hangzhou,Human-validated,Functional transfer,CHN.31.1_1,Hangzhou,杭州市,38,17088.894,2716,1618,1500,158.93,94.68,87.78
+pilot_sc_001,Sichuan,Chengdu,成都城建投资管理集团有限责任公司,human_validated,nominal_exit,medium,Chengdu,Human-validated,Nominal exit,CHN.26.2_1,Chengdu,成都市,40,10874.266,861,302,632,79.18,27.77,58.12
+pilot_sn_xian_hightech,Shaanxi,Xian,西安高新控股有限公司,human_validated,nominal_exit,high,Xi'an,Human-validated,Nominal exit,CHN.22.7_1,Xi'an,西安市,22,10194.044,536,440,226,52.58,43.16,22.17
+pilot_gz_002,Guizhou,Zunyi,遵义道桥建设集团有限公司,weak_capacity_candidate,source_started,,Zunyi,Weak-capacity candidate,Source started,CHN.8.9_1,Zunyi,遵义市,12,30811.013,222,76,153,7.21,2.47,4.97
+pilot_gz_003,Guizhou,Liupanshui,六盘水市开发投资有限公司,weak_capacity_candidate,documents_found,,Liupanshui,Weak-capacity candidate,Documents found,CHN.8.4_1,Liupanshui,六盘水市,4,9993.113,6,5,1,0.60,0.50,0.10

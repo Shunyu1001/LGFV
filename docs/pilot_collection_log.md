@@ -395,3 +395,25 @@ and Liupanshui 6. After scaling by approximate area, Liupanshui remains very
 low, while Hangzhou and Guangzhou remain high. These values should be treated
 as an exploratory first pass until the boundary source and area calculations
 are finalized.
+
+## 2026-06-22, pilot historical-capacity validation table and figure
+
+The first paper-facing historical-capacity artifact has been added. The script
+`scripts/build_pilot_capacity_summary.py` combines the four human-validated
+pilot labels with the two Guizhou weak-capacity candidate cases, then matches
+them to `data/analysis_inputs/cbdb_mingqing_elite_gadm_prefecture_counts.csv`.
+It writes a case-level summary file, an auto-generated LaTeX table, and a PNG
+figure:
+
+- `data/analysis_inputs/pilot_case_historical_capacity.csv`
+- `paper/tables/pilot_case_historical_capacity.tex`
+- `paper/figures/pilot_case_historical_capacity.png`
+
+The figure and table have been included in the empirical-strategy section as a
+pilot validation exercise. The text explicitly states that this is not a test
+of the main hypothesis because the cases were selected for coding development,
+not as a representative sample. The purpose is to check whether the historical
+elite-density measure captures meaningful variation across the pilot cases.
+The resulting pattern is substantively coherent: Guangzhou and Hangzhou have
+high elite density; Chengdu and Xi'an occupy an intermediate position; Zunyi and
+Liupanshui are much lower.
