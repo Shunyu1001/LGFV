@@ -14,11 +14,11 @@ The next collection round should keep one high-capacity search, one low-capacity
 
 ### High historical capacity
 
-- Jiangsu Nanjing (南京地铁集团有限公司): elite density 101.55 per 1,000 sq. km; source started.
 - Guizhou Guiyang (贵阳市城市发展投资集团股份有限公司): elite density 81.16 per 1,000 sq. km; source started.
 - Sichuan Chengdu (成都城建投资管理集团有限责任公司): elite density 79.18 per 1,000 sq. km; source started.
 - Zhejiang Ningbo (platform not yet selected): elite density 196.82 per 1,000 sq. km; candidate only.
 - Shandong Jinan (platform not yet selected): elite density 116.10 per 1,000 sq. km; candidate only.
+- Jiangsu Nanjing (platform not yet selected): elite density 101.55 per 1,000 sq. km; candidate only.
 
 ### Low historical capacity
 

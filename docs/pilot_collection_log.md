@@ -473,3 +473,31 @@ city-investment financial-services group. The key validation question is whether
 the delegated project and city-investment financial-service activities are
 formal operating businesses or preserve quasi-fiscal financing functions in a
 new form.
+
+## 2026-06-24, Nanjing Metro boundary case
+
+The next high historical-capacity pass completed the source trail for the
+Nanjing Metro alternative platform case. Shanghai Clearing's disclosure page for
+`南京地铁集团有限公司2025年度第二期中期票据发行文件`, published on 2025-06-17,
+lists seven downloadable issuer documents. These have been added to
+`data/document_inventory.csv`, and the main source has been added to
+`data/source_inventory.csv` as `src_js_nj_002`.
+
+The most important readable document is the 2025 second MTN prospectus,
+`doc_js_nj_metro_2025_mtn2_004`, with 257 pages and 261,169 extracted
+characters. The legal opinion, issuance plan, and 2024 audited financial report
+also produced readable text. The 2025 first-quarter statement and 2022 audited
+financial report downloaded successfully but did not produce machine-readable
+text. The 2023 audited financial report produced only 130 extracted characters
+and should be treated as not usable without OCR.
+
+The evidence packet is stored at
+`coding/pilot_evidence_nanjing_metro.md`. This case should remain a candidate
+rather than a final human-validated label. The current interpretation is
+`formal_fiscal_substitution_candidate`: the documents show an ongoing
+rail-transit infrastructure SOE with explicit municipal fiscal support, project
+capital, subsidies, PPP arrangements, and corporate-debt disclosure, while also
+stating that the issuer does not undertake government financing functions and
+that new debt after January 1, 2015 is not local government debt. The case is
+therefore useful as a boundary case that separates formal fiscal substitution
+from a direct LGFV exit-type label.
