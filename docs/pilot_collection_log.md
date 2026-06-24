@@ -417,3 +417,30 @@ elite-density measure captures meaningful variation across the pilot cases.
 The resulting pattern is substantively coherent: Guangzhou and Hangzhou have
 high elite density; Chengdu and Xi'an occupy an intermediate position; Zunyi and
 Liupanshui are much lower.
+
+## 2026-06-24, candidate historical-capacity screen
+
+The CBDB-GADM historical elite-density measure has now been attached to the full
+candidate city plan. The script
+`scripts/build_candidate_capacity_summary.py` combines
+`data/candidate_city_plan.csv` with
+`data/analysis_inputs/cbdb_mingqing_elite_gadm_prefecture_counts.csv`, applies a
+small city-name crosswalk for Xi'an and Honghe Hani and Yi Autonomous
+Prefecture, and writes:
+
+- `data/analysis_inputs/candidate_city_historical_capacity.csv`
+- `data/diagnostics/candidate_capacity_unmatched.csv`
+- `docs/candidate_capacity_prioritization.md`
+
+All 37 candidate platform rows match to a GADM ADM2 unit, covering 33 unique
+province-city pairs. The unmatched diagnostic file is empty apart from the
+header. The candidate cities divide evenly into 11 high-density, 11
+middle-density, and 11 low-density cases when cut by candidate-list terciles.
+
+The collection implication is to keep one high-density search, one low-density
+search, and one middle-density search active at the same time. This keeps the
+pilot from drifting toward either document-rich coastal cities or debt-stress
+inland cases alone. The current high-density completion candidates are Suzhou,
+Nanjing, Guiyang, Chengdu, and Ningbo. The low-density follow-ups are Zunyi,
+Shenzhen, Zhuzhou, Qujing, and Luzhou. The middle-density pool is Kunming,
+Qingdao, Mianyang, Jinhua, and Wenzhou.

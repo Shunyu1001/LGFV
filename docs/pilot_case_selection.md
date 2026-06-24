@@ -162,3 +162,25 @@ injections and government subsidies while facing weak local fiscal
 self-sufficiency, short-term debt pressure, guarantee risk, and rating-watch
 status. Like Zunyi, it should remain a candidate evidence packet until a direct
 formal-exit or no-government-financing source is found.
+
+## Candidate Historical-Capacity Screen
+
+The full candidate list has now been matched to the CBDB-GADM Ming-Qing
+elite-density measure. The matched file is
+`data/analysis_inputs/candidate_city_historical_capacity.csv`, and the
+collection memo is `docs/candidate_capacity_prioritization.md`. This step does
+not turn the candidate file into a representative sample. It makes the next
+round of source collection more disciplined by showing which cases provide high,
+middle, and low historical-capacity variation before new documents are selected.
+
+The immediate implication is that the next search round should keep three
+tracks open. First, Suzhou, Nanjing, Chengdu, Ningbo, and Guiyang are useful
+high-density searches. Suzhou, Nanjing, Guiyang, and Chengdu already have
+started source trails, so they are efficient candidates for completion rather
+than entirely new searches. Second, Zunyi should remain the main low-density
+debt-pressure follow-up because its source trail has already begun, while
+Shenzhen, Zhuzhou, Qujing, and Luzhou provide low-density alternatives if the
+project needs a non-Guizhou comparison. Third, Kunming, Qingdao, Mianyang,
+Jinhua, and Wenzhou are middle-density candidates that can prevent the pilot
+from becoming a simple contrast between wealthy coastal cases and distressed
+inland cases.
