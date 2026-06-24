@@ -564,3 +564,37 @@ fiscal-settlement functions. The key validation question is whether the formal
 exit is mostly nominal or whether the post-2020 service-contract and fiscal
 settlement arrangement represents functional transfer with formal fiscal
 substitution.
+
+## 2026-06-24, Shenzhen low-historical high-contemporary boundary case
+
+The next collection pass completed the source trail for the Shenzhen Special
+Zone Development case. Shenzhen is in the low historical-capacity bin, but it
+has very strong contemporary fiscal and administrative capacity. This makes the
+case useful as a boundary case rather than a standard weak-capacity case.
+
+ChinaBond did not return bond metadata for `深圳特区建发`, `特区建发`, or
+`深圳市特区建设发展`. Shanghai Clearing returned issuer records for
+`深圳市特区建设发展集团有限公司` and a long disclosure history from 2014 to 2025.
+The main source selected for the current packet is
+`深圳市特区建设发展集团有限公司2025年度第四期中期票据发行文件`, published on
+2025-11-12. The page lists eight downloadable documents, including a
+continuation prospectus, issuer rating report, issuance plan, legal opinion,
+2025 third-quarter statement, and 2022-2024 audited financial reports.
+
+All eight PDFs downloaded successfully. Six produced useful machine-readable
+text: the continuation prospectus, with 62 pages and 58,020 extracted
+characters; the issuer rating report, with 39,523 extracted characters; the
+2022, 2023, and 2024 audited financial reports, with more than 100,000
+characters each; and the issuance plan and commitment letter, with 15,337
+characters. The 2025 third-quarter financial statement did not produce text, and
+the legal opinion produced only 21 characters.
+
+The evidence packet is stored at
+`coding/pilot_evidence_shenzhen_tqjf.md`. This case should remain a boundary
+case rather than a final human-validated label. The current interpretation is
+`formal_fiscal_substitution_boundary_candidate`: the issuer operates as a
+municipal state-owned platform-like company with infrastructure, technology
+park, transport, marine-development, PPP, government assistance, and fiscal
+funding-channel functions, while the bond documents frame current financing as
+corporate debt and deny new government or hidden debt. The case helps separate
+historically low administrative density from contemporary fiscal strength.
