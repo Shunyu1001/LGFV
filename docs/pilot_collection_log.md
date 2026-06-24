@@ -531,3 +531,36 @@ documents continuing land-development, urban-renewal, infrastructure, delegated
 project-management, fiscal-settlement, and policy-loan channels. The key
 validation question is whether the issuer's 2014 market-oriented reform
 corresponds to a formal LGFV exit event or only to a broader SOE transformation.
+
+## 2026-06-24, Zhuzhou low-capacity non-Guizhou candidate
+
+The next collection pass moved to the low historical-capacity pool outside
+Guizhou. ChinaBond metadata returned three local enterprise bonds and one
+offshore bond under `株洲国投`, issued by `株洲市国有资产投资`. Shanghai
+Clearing then returned issuer records for `株洲市国有资产投资控股集团有限公司`
+and a disclosure page for
+`株洲市国有资产投资控股集团有限公司2026年度第一期超短期融资券发行文件`,
+published on 2026-03-25. The page lists six downloadable documents, including a
+prospectus, legal opinion, issuance plan, 2025 third-quarter financial
+statement, and 2021-2024 audited financial reports.
+
+All six PDFs downloaded successfully. Five produced useful machine-readable
+text: the 2026 first SCP prospectus, with 334 pages and 340,492 extracted
+characters; the 2021-2023 audited financial report, with 175,321 extracted
+characters; the 2024 audited financial report, with 109,696 extracted
+characters; the legal opinion, with 67,635 extracted characters; and the
+issuance plan and commitment letter, with 9,878 extracted characters. The 2025
+third-quarter financial statement did not produce text with the current
+extractor.
+
+The evidence packet is stored at
+`coding/pilot_evidence_zhuzhou_guotou.md`. This case should remain a candidate
+rather than a final human-validated label. The current interpretation is
+`nominal_exit_or_functional_transfer_candidate`: the prospectus explicitly says
+the issuer exited the government financing platform list in March 2013 and
+does not currently undertake government financing functions, but it also
+documents continuing land-preparation, major-project, government-entrusted, and
+fiscal-settlement functions. The key validation question is whether the formal
+exit is mostly nominal or whether the post-2020 service-contract and fiscal
+settlement arrangement represents functional transfer with formal fiscal
+substitution.
