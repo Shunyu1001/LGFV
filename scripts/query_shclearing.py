@@ -18,6 +18,24 @@ APP_ROOT = "https://www.shclearing.com.cn/shchapp/web/"
 OUT = csv.writer(sys.stdout)
 
 
+def join_values(values: object) -> str:
+    if not values:
+        return ""
+    if isinstance(values, str):
+        return values
+    if isinstance(values, list):
+        out: list[str] = []
+        for value in values:
+            if isinstance(value, str):
+                out.append(value)
+            elif isinstance(value, dict):
+                out.extend(str(item) for item in value.values() if item)
+            elif value:
+                out.append(str(value))
+        return ";".join(out)
+    return str(values)
+
+
 def post_json(endpoint: str, data: dict[str, object]) -> dict:
     payload = urllib.parse.urlencode(data, doseq=True).encode("utf-8")
     req = urllib.request.Request(
@@ -39,8 +57,8 @@ def org_search(name: str, limit: int) -> None:
     )
     OUT.writerow(["org_name", "org_id", "org_type", "used_name"])
     for item in result.get("root", []):
-        org_type = ";".join(item.get("orgType") or [])
-        used_name = ";".join(item.get("usedName") or [])
+        org_type = join_values(item.get("orgType"))
+        used_name = join_values(item.get("usedName"))
         OUT.writerow([item.get("orgFullName") or "", item.get("id") or "", org_type, used_name])
 
 

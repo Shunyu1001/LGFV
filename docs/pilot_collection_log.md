@@ -444,3 +444,32 @@ inland cases alone. The current high-density completion candidates are Suzhou,
 Nanjing, Guiyang, Chengdu, and Ningbo. The low-density follow-ups are Zunyi,
 Shenzhen, Zhuzhou, Qujing, and Luzhou. The middle-density pool is Kunming,
 Qingdao, Mianyang, Jinhua, and Wenzhou.
+
+## 2026-06-24, Suzhou high-capacity candidate
+
+The next high historical-capacity search completed the source trail for Suzhou
+City Construction Investment Development Group. Shanghai Clearing's disclosure
+page for
+`苏州城市建设投资发展(集团)有限公司2026年度第一期中期票据发行文件`,
+published on 2026-03-02, lists eleven downloadable issuer documents. These have
+been added to `data/document_inventory.csv`, and the main source has been added
+to `data/source_inventory.csv` as `src_js_sz_002`.
+
+The most important readable document is the 2026 first MTN prospectus,
+`doc_js_sz_chengtou_2026_mtn1_009`, with 306 pages and 314,243 extracted
+characters. The legal opinion and 2023 audited financial report also produced
+readable text. The 2022 and 2024 audited financial reports and the 2025
+third-quarter financial statement downloaded successfully but did not produce
+machine-readable text with the current extractor.
+
+The evidence packet is stored at
+`coding/pilot_evidence_suzhou_chengtou.md`. The case should remain a candidate
+rather than a final human-validated label. The current interpretation is
+`substantive_exit_or_functional_transfer`: the documents contain strong
+no-government-financing and no-new-hidden-debt compliance language, but they
+also describe a transformation from an earlier investment-financing platform
+toward a broader city construction, city operation, industrial development, and
+city-investment financial-services group. The key validation question is whether
+the delegated project and city-investment financial-service activities are
+formal operating businesses or preserve quasi-fiscal financing functions in a
+new form.
