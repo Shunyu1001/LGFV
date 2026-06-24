@@ -31,10 +31,10 @@ The next collection round should keep one high-capacity search, one low-capacity
 ### Middle historical capacity
 
 - Yunnan Kunming (platform not yet selected): elite density 20.74 per 1,000 sq. km; candidate only.
-- Shandong Qingdao (platform not yet selected): elite density 18.12 per 1,000 sq. km; candidate only.
 - Sichuan Mianyang (platform not yet selected): elite density 13.26 per 1,000 sq. km; candidate only.
 - Zhejiang Jinhua (platform not yet selected): elite density 44.36 per 1,000 sq. km; candidate only.
 - Zhejiang Wenzhou (platform not yet selected): elite density 30.20 per 1,000 sq. km; candidate only.
+- Sichuan Nanchong (platform not yet selected): elite density 28.44 per 1,000 sq. km; candidate only.
 
 ## Files
 

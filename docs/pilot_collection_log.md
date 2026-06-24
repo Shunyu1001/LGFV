@@ -501,3 +501,33 @@ stating that the issuer does not undertake government financing functions and
 that new debt after January 1, 2015 is not local government debt. The case is
 therefore useful as a boundary case that separates formal fiscal substitution
 from a direct LGFV exit-type label.
+
+## 2026-06-24, Qingdao middle-capacity candidate
+
+The next collection pass moved to the middle historical-capacity pool. ChinaBond
+metadata returned two local enterprise bonds under `青岛城投`: `12青岛城投债01`
+and `12青岛城投债02`. Shanghai Clearing then returned issuer records for
+`青岛城市建设投资(集团)有限责任公司` and a disclosure page for
+`青岛城市建设投资(集团)有限责任公司2026年度第二期中期票据发行文件`, published on
+2026-02-02. The page lists seven downloadable documents, including a prospectus,
+legal opinion, issuance plan, 2025 third-quarter financial statement, and
+2022-2024 audited financial reports.
+
+All seven PDFs downloaded successfully. Three produced useful machine-readable
+text: the 2026 second MTN prospectus, with 356 pages and 408,048 extracted
+characters; the issuance plan and commitment letter, with 15,616 extracted
+characters; and the 2024 audited financial report, with 134,130 extracted
+characters. The 2025 third-quarter statement, 2023 audited financial report,
+legal opinion, and 2022 audited financial report did not produce text with the
+current extractor.
+
+The evidence packet is stored at
+`coding/pilot_evidence_qingdao_chengtou.md`. This case should remain a candidate
+rather than a final human-validated label. The current interpretation is
+`formal_fiscal_substitution_or_functional_transfer_candidate`: the prospectus
+states that the issuer does not undertake government financing functions and
+that new debt after January 1, 2015 is not local government debt, but it also
+documents continuing land-development, urban-renewal, infrastructure, delegated
+project-management, fiscal-settlement, and policy-loan channels. The key
+validation question is whether the issuer's 2014 market-oriented reform
+corresponds to a formal LGFV exit event or only to a broader SOE transformation.

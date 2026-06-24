@@ -10,7 +10,7 @@ pilot_js_002,1,Jiangsu,Suzhou,苏州城市建设投资发展集团有限公司,h
 pilot_js_003,2,Jiangsu,Yancheng,,within_province_variation,Research-design candidate chosen for within-province comparison,candidate_only,not_started,
 pilot_js_004,2,Jiangsu,Xuzhou,,within_province_variation,Research-design candidate chosen for northern Jiangsu comparison,candidate_only,not_started,
 pilot_sd_001,1,Shandong,Jinan,,mixed_capacity_north,Research-design candidate chosen for provincial-capital comparison,candidate_only,not_started,
-pilot_sd_002,1,Shandong,Qingdao,,coastal_municipal_economy,Research-design candidate chosen for coastal municipal comparison,candidate_only,not_started,
+pilot_sd_002,1,Shandong,Qingdao,青岛城市建设投资(集团)有限责任公司,coastal_municipal_economy,Research-design candidate chosen for coastal municipal comparison,documents_found,documents_found,ChinaBond query found 2 local enterprise bonds under 青岛城投; Shanghai Clearing 2026 second MTN disclosure page found prospectus legal opinion issuance plan and financial reports; use as middle historical-capacity city-investment candidate pending evidence review
 pilot_sd_003,2,Shandong,Weifang,,mixed_capacity_north,Research-design candidate chosen for industrial-city comparison,candidate_only,not_started,
 pilot_sd_004,2,Shandong,Linyi,,mixed_capacity_north,Research-design candidate chosen for prefecture-level variation,candidate_only,not_started,
 pilot_hn_001,1,Hunan,Changsha,,central_province_capital,Research-design candidate chosen for central provincial-capital comparison,candidate_only,not_started,
