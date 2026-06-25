@@ -598,3 +598,48 @@ park, transport, marine-development, PPP, government assistance, and fiscal
 funding-channel functions, while the bond documents frame current financing as
 corporate debt and deny new government or hidden debt. The case helps separate
 historically low administrative density from contemporary fiscal strength.
+
+## 2026-06-25, Luzhou Xinglu low-capacity western prefecture case
+
+The next collection pass added a western prefecture case outside Guizhou.
+The candidate-capacity table places Luzhou in the low historical-capacity bin,
+but the city is less dominated by the acute debt-resolution setting that shapes
+Zunyi and Liupanshui. This makes it a useful comparison case for assessing
+whether weak historical capacity is associated with formal compliance language
+coexisting with continuing platform functions.
+
+Shanghai Clearing's disclosure interface returned a 2023 first MTN issuance
+page for `泸州市兴泸投资集团有限公司`, dated 2023-01-09. The page lists eight
+downloadable documents: the prospectus, tracking rating report, legal opinion,
+issuance plan, three audited financial reports, and a 2022 third-quarter
+financial statement. All eight PDFs were downloaded. Seven produced
+machine-readable text through the local extractor; the 2022 third-quarter
+financial statement produced no text and may require OCR if it becomes
+important.
+
+The strongest current source is the 2023 MTN prospectus. It identifies Xinglu
+as the Luzhou government's operating body for urban infrastructure investment
+and financing, construction management, and state-asset operation. The same
+document states that the issuer does not undertake government financing
+functions and that new debt after January 1, 2015 is not local government debt.
+It also describes continuing entrusted-construction arrangements: the company
+serves as project owner for government-designated infrastructure projects,
+raises funds through self-owned and external financing, and is compensated by
+government payments that cover financing principal, interest, investment
+returns, subsidies, or project repurchase.
+
+The 2022 tracking rating report corroborates this interpretation. It describes
+Xinglu as Luzhou's most important urban infrastructure construction and
+state-asset management operating body, notes continuing government support,
+and states that projects not owned by the company are recorded as long-term
+receivables because the company is responsible for the financing function.
+The rating report also records a relatively low fiscal self-sufficiency rate
+for Luzhou, while the prospectus reports fiscal subsidies, financing-interest
+subsidies, large interest-bearing debt, and entrusted-construction receivables.
+
+The case has been added as `pilot_sc_003`, with source row
+`src_sc_lz_xinglu_001` and evidence packet
+`coding/pilot_evidence_luzhou_xinglu.md`. No final exit label is assigned.
+The preliminary interpretation is
+`nominal_exit_or_functional_persistence_candidate`, pending a direct formal
+exit-list source or another local debt-resolution source.

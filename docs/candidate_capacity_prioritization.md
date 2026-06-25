@@ -24,9 +24,9 @@ The next collection round should keep one high-capacity search, one low-capacity
 
 - Guizhou Zunyi (遵义道桥建设集团有限公司): elite density 7.21 per 1,000 sq. km; source started.
 - Yunnan Qujing (platform not yet selected): elite density 7.13 per 1,000 sq. km; candidate only.
-- Sichuan Luzhou (platform not yet selected): elite density 11.36 per 1,000 sq. km; candidate only.
 - Yunnan Honghe (platform not yet selected): elite density 7.87 per 1,000 sq. km; candidate only.
 - Guizhou Bijie (platform not yet selected): elite density 7.79 per 1,000 sq. km; candidate only.
+- Jiangsu Xuzhou (platform not yet selected): elite density 5.52 per 1,000 sq. km; candidate only.
 
 ### Middle historical capacity
 
