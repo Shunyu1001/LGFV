@@ -12,7 +12,8 @@
 - Main source page: Shanghai Clearing House,
   `泸州市兴泸投资集团有限公司2023年度第一期中期票据发行文件`,
   2023-01-09
-- Source inventory row: `src_sc_lz_xinglu_001`
+- Source inventory rows: `src_sc_lz_xinglu_000`, `src_sc_lz_xinglu_001`,
+  `src_sc_lz_xinglu_002`
 
 ## Why This Case Matters
 
@@ -56,6 +57,14 @@ Seven produced machine-readable text:
 The 2022 third-quarter financial statement downloaded successfully but produced
 no machine-readable text with the current extractor.
 
+The 2018 Shanghai Clearing disclosure page adds an older cross-time source.
+Two documents have been downloaded and extracted:
+
+- `doc_sc_lz_xinglu_2018_mtn1_rating`: 2018 first MTN credit rating report,
+  35 pages, 52,629 extracted characters
+- `doc_sc_lz_xinglu_2018_mtn1_prospectus`: 2018 first MTN prospectus, 198
+  pages, 231,723 extracted characters
+
 ## Evidence Themes
 
 ### Municipal Infrastructure Role
@@ -70,6 +79,16 @@ Relevant extracted-text location:
 
 - `doc_sc_lz_xinglu_2023_mtn1_007.txt`, lines 858-862
 
+The 2018 prospectus uses the same institutional definition. It states that the
+firm was founded by the Luzhou Finance Bureau and became a Luzhou SASAC firm in
+2006. It then describes Xinglu as the Luzhou government's operating body for
+urban infrastructure investment and financing, construction management, and
+state-asset operation.
+
+Relevant extracted-text location:
+
+- `doc_sc_lz_xinglu_2018_mtn1_prospectus.txt`, lines 2888-2906
+
 The tracking rating report uses a similar formulation. It describes Xinglu as
 Luzhou's most important urban infrastructure construction and state-asset
 management operating body, and it says that the company continued to receive
@@ -79,6 +98,7 @@ Relevant extracted-text locations:
 
 - `doc_sc_lz_xinglu_2023_mtn1_003.txt`, lines 83-110
 - `doc_sc_lz_xinglu_2023_mtn1_003.txt`, lines 817-824
+- `doc_sc_lz_xinglu_2018_mtn1_rating.txt`, lines 700-735
 
 ### Compliance Language
 
@@ -105,6 +125,16 @@ Relevant extracted-text location:
 
 - `doc_sc_lz_xinglu_2023_mtn1_007.txt`, lines 902-908
 
+The 2018 prospectus already used the same post-2015 formulation. It states
+that the issuer does not undertake government financing functions, that new
+debt after January 1, 2015 is not local government debt, that the debt will not
+increase the scale of government debt, and that the government will not repay
+the debt directly with fiscal funds.
+
+Relevant extracted-text location:
+
+- `doc_sc_lz_xinglu_2018_mtn1_prospectus.txt`, lines 2770-2817
+
 ### Continuing Project Finance Function
 
 The prospectus states that Xinglu is the investment body for municipal
@@ -128,6 +158,20 @@ repurchase payments during construction or after final settlement.
 Relevant extracted-text location:
 
 - `doc_sc_lz_xinglu_2023_mtn1_007.txt`, lines 2404-2414
+
+The 2018 prospectus contains an earlier version of the same project-finance
+arrangement. It states that Xinglu is the municipal infrastructure investment
+body, that its infrastructure operation model is government entrusted
+construction, that it invests in government-designated infrastructure projects
+with self-owned and external financing, and that the government compensates
+construction financing principal, interest, and investment returns through
+entrusted-construction agreements. It further states that project repurchase
+payments and project subsidies are used in settlement, and that some entrusted
+projects without investment returns receive fiscal subsidies.
+
+Relevant extracted-text location:
+
+- `doc_sc_lz_xinglu_2018_mtn1_prospectus.txt`, lines 9984-10094
 
 ### Entrusted Construction and Receivables
 
@@ -187,6 +231,19 @@ Relevant extracted-text location:
 
 - `doc_sc_lz_xinglu_2023_mtn1_003.txt`, lines 804-815
 
+The 2018 rating report shows that this fiscal linkage was not new in 2023. It
+states that Xinglu was Luzhou's largest platform company, that its main
+business and revenue depended on the local government, and that it received
+support through asset injections and fiscal subsidies. It reports that from
+2015 to 2017 the Luzhou government injected RMB 5.998 billion for subsidiaries
+and entrusted-construction project subsidies, transferred major assets to the
+firm, and provided annual fiscal subsidies including bond issuance-fee and
+interest subsidies.
+
+Relevant extracted-text location:
+
+- `doc_sc_lz_xinglu_2018_mtn1_rating.txt`, lines 756-803
+
 ## Coding Implication
 
 The case should remain a candidate evidence packet rather than a final
@@ -202,6 +259,13 @@ continuing public-project and project-finance functions: Xinglu raises funds
 for government-designated infrastructure projects, receives fiscal subsidies
 and financing-interest subsidies, records entrusted-construction receivables,
 and participates in shantytown and infrastructure projects.
+
+The 2018 source set strengthens the case because it shows that this combination
+of claims predates the 2023 issuance. In 2018, the issuer already stated that it
+did not undertake government financing functions after 2015, while the same
+source set described Xinglu as the city's largest platform company and as a
+government-designated infrastructure investment body supported through asset
+injections, project subsidies, and financing-interest subsidies.
 
 The strongest current interpretation is
 `nominal_exit_or_functional_persistence_candidate`. The case is weaker than

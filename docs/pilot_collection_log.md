@@ -643,3 +643,39 @@ The case has been added as `pilot_sc_003`, with source row
 The preliminary interpretation is
 `nominal_exit_or_functional_persistence_candidate`, pending a direct formal
 exit-list source or another local debt-resolution source.
+
+## 2026-06-25, Luzhou Xinglu cross-time validation
+
+A follow-up search tried to find a direct formal exit-list source for Xinglu.
+General web search did not return a reliable official `退出融资平台` document.
+The collection therefore shifted to cross-time disclosure validation.
+
+ChinaBond's public bond metadata endpoint returned four historical Xinglu
+bonds: `08兴泸债`, `11兴泸债`, `12兴泸集MTN1`, and `15兴泸债`. These records
+show that Xinglu had been a recurring bond-market financing entity before the
+2023 source set. They were added to `data/bond_inventory.csv` and recorded as
+source row `src_sc_lz_xinglu_000`.
+
+Shanghai Clearing's 2018 first MTN disclosure page for Xinglu was then added
+as source row `src_sc_lz_xinglu_002`. Two documents were downloaded and
+extracted: the 2018 first MTN prospectus, with 198 pages and 231,723 extracted
+characters, and the 2018 first MTN credit rating report, with 35 pages and
+52,629 extracted characters.
+
+The 2018 documents strengthen the Luzhou evidence packet. The prospectus
+already states that Xinglu does not undertake government financing functions
+and that new debt after January 1, 2015 is not local government debt. At the
+same time, the same prospectus describes Xinglu as the Luzhou government's
+urban infrastructure investment-financing, construction-management, and
+state-asset operation body. It also describes government-entrusted
+construction, self-owned and external financing for government-designated
+projects, and compensation through fiscal payments, project repurchase, and
+project subsidies. The 2018 rating report further calls Xinglu Luzhou's largest
+platform company and records support through asset injections and fiscal
+subsidies.
+
+This does not convert the case into a final human-validated label, because no
+direct exit-list source has been found. It does make the preliminary
+interpretation stronger: the formal no-government-financing language and the
+continuing platform-like project-finance role coexist across time, not only in
+the 2023 prospectus.
