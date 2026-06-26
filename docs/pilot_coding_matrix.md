@@ -71,3 +71,8 @@ This is a scope decision rather than a simple coding decision. Third, add only
 one new high-capacity case and one new low-capacity case after these reviews are
 complete. Otherwise, the pilot will accumulate source packets faster than it
 accumulates validated labels.
+
+The first review memo for this step is
+`docs/validation_memo_zhuzhou_luzhou.md`. It recommends treating Zhuzhou as
+close to promotion as a `nominal_exit` case, while keeping Luzhou as a strong
+candidate until a direct formal-exit or debt-resolution source is found.
