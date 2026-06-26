@@ -15,7 +15,7 @@ exit, functional transfer, or liquidation.
   template.
 - `data/labeling_template.csv`: case-level LLM and human-validated labels.
 - `data/analysis_inputs/`: small tracked intermediate datasets used for
-  empirical construction.
+  empirical construction, including the pilot coding matrix.
 - `data/diagnostics/`: small tracked reports about downloaded source data,
   schemas, and coverage.
 - `data/raw/`: original source materials, such as announcements, bond
@@ -48,3 +48,8 @@ The first empirical step is a 20-30 case pilot. The pilot starts from
 `data/labeling_template.csv`, and stores final human-reviewed labels in
 `data/processed/human_validated_labels.csv`. Run
 `python3 scripts/validate_labels.py` after editing the final label file.
+The current case-level synthesis is stored in
+`data/analysis_inputs/pilot_coding_matrix.csv`, with a short interpretation
+memo in `docs/pilot_coding_matrix.md`. Rows in that matrix distinguish
+human-validated labels from strong candidates, boundary cases, and source-only
+candidates.

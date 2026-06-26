@@ -184,3 +184,13 @@ project needs a non-Guizhou comparison. Third, Kunming, Qingdao, Mianyang,
 Jinhua, and Wenzhou are middle-density candidates that can prevent the pilot
 from becoming a simple contrast between wealthy coastal cases and distressed
 inland cases.
+
+## Current Coding Matrix
+
+The current synthesis of collected evidence packets is stored in
+`data/analysis_inputs/pilot_coding_matrix.csv`, with an accompanying memo in
+`docs/pilot_coding_matrix.md`. The matrix should be treated as a coding log
+rather than a finished dataset. It separates four validation tiers:
+human-validated labels, strong candidates, boundary candidates, and source-only
+candidates. This separation allows the next coding round to focus on promotion
+and scope decisions before adding many new cases.
