@@ -13,7 +13,7 @@
   `泸州市兴泸投资集团有限公司2023年度第一期中期票据发行文件`,
   2023-01-09
 - Source inventory rows: `src_sc_lz_xinglu_000`, `src_sc_lz_xinglu_001`,
-  `src_sc_lz_xinglu_002`
+  `src_sc_lz_xinglu_002`, `src_sc_lz_xinglu_003`
 
 ## Why This Case Matters
 
@@ -65,9 +65,31 @@ Two documents have been downloaded and extracted:
 - `doc_sc_lz_xinglu_2018_mtn1_prospectus`: 2018 first MTN prospectus, 198
   pages, 231,723 extracted characters
 
+The 2015 ChinaBond enterprise-bond disclosure page adds an earlier source
+close to the post-2014 local-debt reform period:
+
+- `doc_sc_lz_xinglu_2015_bond_prospectus`: 2015 enterprise-bond prospectus,
+  117 pages, 84,388 extracted characters
+
+The remaining 2015 ChinaBond attachments are recorded in
+`data/document_inventory.csv`, but only the full prospectus has been downloaded
+and extracted so far.
+
 ## Evidence Themes
 
 ### Municipal Infrastructure Role
+
+The 2015 enterprise-bond prospectus states that Xinglu's business included
+investment in energy, transportation, infrastructure, pillar industries, and
+high-technology industries; investment and financing; and information
+consulting and entrusted agency services for development construction and
+investment management. It also states that the firm was created by the Luzhou
+municipal government, initially funded by the Luzhou Finance Bureau, and later
+placed under Luzhou SASAC.
+
+Relevant extracted-text location:
+
+- `doc_sc_lz_xinglu_2015_bond_prospectus.txt`, lines 579-604
 
 The prospectus states that Xinglu was approved by the Luzhou municipal
 government, initially funded by the Luzhou Finance Bureau, and later placed
@@ -99,6 +121,62 @@ Relevant extracted-text locations:
 - `doc_sc_lz_xinglu_2023_mtn1_003.txt`, lines 83-110
 - `doc_sc_lz_xinglu_2023_mtn1_003.txt`, lines 817-824
 - `doc_sc_lz_xinglu_2018_mtn1_rating.txt`, lines 700-735
+
+### 2015 Platform-Function Baseline
+
+The 2015 enterprise-bond prospectus gives a clear pre-2018 baseline. It states
+that Xinglu was the main investment and financing body and construction body
+for Luzhou infrastructure projects. It reports that the company undertook a
+large number of urban infrastructure, affordable-housing, and municipal public
+facility projects, and that these projects mainly obtained returns through
+government subsidies and project operations.
+
+Relevant extracted-text location:
+
+- `doc_sc_lz_xinglu_2015_bond_prospectus.txt`, lines 1503-1508
+
+The same prospectus states that Xinglu pursued a `投、融、建、管` operating
+mechanism and should give full play to government investment-financing,
+construction-management, and state-asset-management functions.
+
+Relevant extracted-text location:
+
+- `doc_sc_lz_xinglu_2015_bond_prospectus.txt`, lines 1525-1530
+
+The 2015 balance-sheet evidence is also important. The prospectus reports that
+other receivables were mainly infrastructure entrusted-construction payments
+owed by the Luzhou Finance Bureau. It then lists large receivables from the
+finance bureau for project principal and interest, district construction
+projects, infrastructure development funds, bank-loan principal, policy-bank
+loan interest, fiscal temporary borrowing, and treasury-bond on-lending
+principal and interest.
+
+Relevant extracted-text location:
+
+- `doc_sc_lz_xinglu_2015_bond_prospectus.txt`, lines 1695-1731
+
+For public-welfare projects, the prospectus states that financing principal,
+interest, and investment returns were to be repaid through annual subsidies
+from the Luzhou government. For the central-city shantytown redevelopment
+project, Xinglu's subsidiary signed a BT agreement with the Luzhou municipal
+government using an enterprise-investment and government-repurchase model, with
+repurchase payments planned from 2015 through 2024.
+
+Relevant extracted-text locations:
+
+- `doc_sc_lz_xinglu_2015_bond_prospectus.txt`, lines 1899-1904
+- `doc_sc_lz_xinglu_2015_bond_prospectus.txt`, lines 2601-2608
+- `doc_sc_lz_xinglu_2015_bond_prospectus.txt`, lines 3120-3134
+
+Finally, the 2015 prospectus incorporates a rating conclusion that calls Xinglu
+an important Luzhou investment-financing platform that undertook major project
+development, construction, operation, and service responsibilities. This is
+useful because it gives a market-facing description of the issuer before the
+2018 and 2023 compliance-language sources.
+
+Relevant extracted-text location:
+
+- `doc_sc_lz_xinglu_2015_bond_prospectus.txt`, lines 3385-3389
 
 ### Compliance Language
 
@@ -134,6 +212,12 @@ the debt directly with fiscal funds.
 Relevant extracted-text location:
 
 - `doc_sc_lz_xinglu_2018_mtn1_prospectus.txt`, lines 2770-2817
+
+Keyword search in the extracted 2015 prospectus did not find direct language
+that Xinglu had exited a financing-platform list or had been approved to leave
+platform management. The 2015 source therefore strengthens the baseline
+platform-function evidence but does not by itself solve the formal-exit-event
+problem.
 
 ### Continuing Project Finance Function
 
@@ -267,12 +351,20 @@ source set described Xinglu as the city's largest platform company and as a
 government-designated infrastructure investment body supported through asset
 injections, project subsidies, and financing-interest subsidies.
 
+The 2015 ChinaBond source set pushes the functional baseline further back. The
+2015 prospectus identifies Xinglu as Luzhou's infrastructure project
+investment-financing and construction body, records infrastructure
+entrusted-construction receivables from the Luzhou Finance Bureau, describes
+public-welfare project financing as repaid through annual government subsidies,
+and documents a shantytown BT project with planned government repurchase
+payments. It does not contain direct `退出融资平台` or `退出平台名单` language.
+
 The strongest current interpretation is
 `nominal_exit_or_functional_persistence_candidate`. The case is weaker than
-Xi'an or Zhuzhou for final labeling because the current source set does not
-contain direct formal exit-list language. It is stronger than a mere source
+Xi'an or Zhuzhou for final labeling because the current source set still does
+not contain direct formal exit-list language. It is stronger than a mere source
 discovery case because the documents contain both sides of the classification:
 formal separation from government debt and continuing local public-project
 finance. The next validation step should search for a direct `退出融资平台`,
-`不承担政府融资职能`, or local debt-resolution source for Xinglu or for the
-Luzhou municipal platform cluster.
+`退出平台名单`, `不承担政府融资职能`, or local debt-resolution source for Xinglu
+or for the Luzhou municipal platform cluster.

@@ -679,3 +679,29 @@ direct exit-list source has been found. It does make the preliminary
 interpretation stronger: the formal no-government-financing language and the
 continuing platform-like project-finance role coexist across time, not only in
 the 2023 prospectus.
+
+## 2026-06-26, Luzhou Xinglu 2015 ChinaBond source
+
+ChinaBond's public disclosure search endpoint returned the 2015 enterprise-bond
+issuance page for `2015年泸州市兴泸投资集团有限公司公司债券发行文件`, dated
+2015-04-15. The page lists nine attachments, including the full prospectus,
+prospectus summary, rating report, legal opinion, 2014 third-quarter financial
+statement, 2011-2013 audit report, issuer statements, and the NDRC approval.
+The disclosure page has been added as source row `src_sc_lz_xinglu_003`.
+
+The full 2015 prospectus was downloaded and extracted as
+`doc_sc_lz_xinglu_2015_bond_prospectus`. It produced 117 pages and 84,388
+extracted characters. Keyword search did not find direct `退出融资平台`,
+`退出平台名单`, or platform-list-exit language. The document is therefore not
+a formal-exit source.
+
+The 2015 prospectus is still important because it strengthens the functional
+baseline. It identifies Xinglu as Luzhou's infrastructure project
+investment-financing and construction body, reports infrastructure
+entrusted-construction receivables from the Luzhou Finance Bureau, states that
+public-welfare project financing principal and interest were repaid through
+annual government subsidies, and documents a shantytown BT project with planned
+government repurchase payments from 2015 through 2024. The current conclusion
+is unchanged: Luzhou remains a strong `nominal_exit_or_functional_persistence`
+candidate, but it should not be promoted to a final exit-type label until a
+direct formal-exit or debt-resolution source is found.
