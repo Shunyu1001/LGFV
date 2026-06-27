@@ -53,9 +53,11 @@ case rather than as evidence for the low-capacity mechanism.
 The matrix should be used in three ways. First, it provides a compact case map
 for the paper's empirical-design section. It shows that the pilot contains
 variation in historical capacity, document quality, and exit-type candidates.
-Second, it identifies the next validation targets. The most useful promotions
-are Zhuzhou and Luzhou, because both have low historical capacity and relatively
-strong evidence of functional persistence after formal compliance language.
+Second, it identifies the next validation targets. Zhuzhou has now been
+promoted to a validated low historical-capacity `nominal_exit` case, while
+Luzhou remains the most useful low-capacity promotion target because it has
+strong evidence of functional persistence but still lacks direct formal-exit
+evidence.
 Third, it separates inclusion questions from labeling questions. Metro
 companies and Shenzhen-type cases may be analytically useful, but their status
 as core LGFV cases should be decided before their labels are used in any count
@@ -63,9 +65,9 @@ or comparison.
 
 ## Next validation sequence
 
-The next coding round has three steps. First, review Zhuzhou and Luzhou against
-the codebook and decide whether each is best coded as `nominal_exit` or
-`functional_transfer`. Second, resolve the boundary status of Nanjing Metro,
+The next coding round has three steps. First, continue targeted source search
+for Luzhou and promote it only if a direct formal-exit or debt-resolution
+source is found. Second, resolve the boundary status of Nanjing Metro,
 Guangzhou Metro, and Shenzhen Special Zone Construction and Development Group.
 This is a scope decision rather than a simple coding decision. Third, add only
 one new high-capacity case and one new low-capacity case after these reviews are
@@ -73,6 +75,6 @@ complete. Otherwise, the pilot will accumulate source packets faster than it
 accumulates validated labels.
 
 The first review memo for this step is
-`docs/validation_memo_zhuzhou_luzhou.md`. It recommends treating Zhuzhou as
-close to promotion as a `nominal_exit` case, while keeping Luzhou as a strong
+`docs/validation_memo_zhuzhou_luzhou.md`. It records the promotion of Zhuzhou
+to a medium-confidence `nominal_exit` label, while keeping Luzhou as a strong
 candidate until a direct formal-exit or debt-resolution source is found.

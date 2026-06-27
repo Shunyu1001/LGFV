@@ -705,3 +705,29 @@ government repurchase payments from 2015 through 2024. The current conclusion
 is unchanged: Luzhou remains a strong `nominal_exit_or_functional_persistence`
 candidate, but it should not be promoted to a final exit-type label until a
 direct formal-exit or debt-resolution source is found.
+
+## 2026-06-27, Zhuzhou Guotou validation
+
+The Zhuzhou evidence packet was reviewed against the exit-type codebook and
+promoted from `strong_candidate` to a final `nominal_exit` row. The formal-exit
+side of the label rests on the 2026 prospectus statement that the issuer exited
+local government financing platform management in March 2013 after Hunan
+banking-regulator approval, and that it is no longer on the banking-regulator
+financing-platform list.
+
+The reason the case is coded as nominal rather than substantive is that the
+same source set documents continuing public-project functions after formal
+exit. The prospectus describes land preparation, major project construction,
+government-entrusted work, fiscal settlement with the municipal finance bureau,
+fiscal subsidies, policy support, and project-acquisition support. The legal
+opinion adds that receivables and prepayments involving government departments
+mainly arose from entrusted-construction and land-preparation businesses, while
+framing these receivables as operating-background claims rather than government
+financing debt.
+
+The case is assigned medium confidence. It has stronger formal-exit evidence
+than Luzhou because it names a March 2013 platform-list exit, but it still
+relies on a later issuer prospectus and legal opinion rather than the original
+2013 Hunan banking-regulator approval or local exit-list notice. The next
+source target is therefore narrow: collect the original 2013 approval or a
+contemporaneous local debt-resolution document that names Zhuzhou Guotou.

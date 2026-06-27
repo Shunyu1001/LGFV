@@ -3,14 +3,14 @@
 ## Purpose
 
 This memo reviews two low historical-capacity cases against the exit-type
-codebook. The goal is not to add new human-validated labels automatically. The
-goal is to state what a human reviewer would need to decide before the cases
-can be promoted from `strong_candidate` to a final coding row.
+codebook. It records why Zhuzhou can be promoted from `strong_candidate` to a
+final `nominal_exit` row, while Luzhou should remain a strong candidate until a
+direct formal-exit source is found.
 
 ## Zhuzhou Guotou
 
-The recommended label for Zhuzhou Guotou is `nominal_exit`, with medium
-confidence. This recommendation rests on three pieces of evidence. First, the
+The validated label for Zhuzhou Guotou is `nominal_exit`, with medium
+confidence. This classification rests on three pieces of evidence. First, the
 case has direct formal-exit evidence: the 2026 prospectus states that the
 issuer exited the banking regulator's local government financing platform list
 in March 2013 after repaying policy-bank loans and satisfying market-oriented
@@ -30,13 +30,13 @@ activity. The current evidence does not yet establish that interpretation. It
 shows a reframing of the function, but not a clear relocation of the function
 to another formal budgetary channel or another local SOE.
 
-For the next review, the key question is therefore narrow. The reviewer should
-decide whether land preparation and entrusted construction with fiscal
-settlement count as continuing government financing or quasi-fiscal activity
-under the codebook. If they do, Zhuzhou should be promoted to `nominal_exit`.
-If they do not, the case should remain a `functional_transfer` or formal fiscal
-substitution candidate until a source identifies where the financing function
-went after 2013.
+The promotion decision turns on a narrow coding judgment. Land preparation and
+entrusted construction with fiscal settlement are treated here as continuing
+quasi-fiscal platform functions because the issuer remained a public-project
+vehicle that received fiscal settlement, subsidies, policy support, and project
+acquisition support after the formal platform-list exit. The label remains
+medium-confidence rather than high-confidence because the original 2013 Hunan
+banking-regulator approval has not yet been collected independently.
 
 ## Luzhou Xinglu
 
@@ -87,8 +87,8 @@ source packet for functional persistence rather than a final coded exit case.
 ## Implication for the matrix
 
 The two cases should be treated differently in the pilot coding matrix. Zhuzhou
-is close to promotion because it has both a formal exit event and evidence of
-continuing public-project functions. Luzhou is analytically important but still
-needs a formal-exit source. In the next source-collection round, Zhuzhou should
-receive human review first, while Luzhou should receive targeted source search
-before human review.
+is now a validated `nominal_exit` case because it has both a formal exit event
+and evidence of continuing public-project functions. Luzhou is analytically
+important but still needs a formal-exit source. In the next source-collection
+round, Luzhou should receive targeted source search before it enters the final
+human-validated label table.
