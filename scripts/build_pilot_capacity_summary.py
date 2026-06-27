@@ -20,18 +20,21 @@ OUT_CSV = ROOT / "data" / "analysis_inputs" / "pilot_case_historical_capacity.cs
 OUT_TEX = ROOT / "paper" / "tables" / "pilot_case_historical_capacity.tex"
 OUT_FIG = ROOT / "paper" / "figures" / "pilot_case_historical_capacity.png"
 
+STRONG_CANDIDATE_IDS = {"pilot_sc_003"}
 WEAK_CANDIDATE_IDS = {"pilot_gz_002", "pilot_gz_003"}
 CITY_NAME_FIXES = {
     "Xian": "Xi'an",
 }
 CASE_STATUS_LABELS = {
     "human_validated": "Human-validated",
+    "strong_candidate": "Strong candidate",
     "weak_capacity_candidate": "Weak-capacity candidate",
 }
 EXIT_STATUS_LABELS = {
     "substantive_exit": "Substantive exit",
     "nominal_exit": "Nominal exit",
     "functional_transfer": "Functional transfer",
+    "nominal_exit_or_functional_persistence": "Near-miss functional persistence",
     "documents_found": "Documents found",
     "source_started": "Source started",
 }
@@ -45,7 +48,7 @@ def read_csv(path: Path) -> list[dict]:
 def write_csv(path: Path, fieldnames: list[str], rows: list[dict]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -96,6 +99,18 @@ def build_rows() -> list[dict]:
         )
 
     for row in read_csv(CANDIDATES):
+        if row["case_id"] in STRONG_CANDIDATE_IDS:
+            cases.append(
+                {
+                    "case_id": row["case_id"],
+                    "province": row["province"],
+                    "city": row["city"],
+                    "company_name": row["target_platform"],
+                    "case_status": "strong_candidate",
+                    "exit_type_or_status": "nominal_exit_or_functional_persistence",
+                    "final_confidence": "",
+                }
+            )
         if row["case_id"] in WEAK_CANDIDATE_IDS:
             cases.append(
                 {
@@ -167,8 +182,10 @@ def write_latex(rows: list[dict]) -> None:
             "\\vspace{0.5em}\\footnotesize Notes: Elite density is the number "
             "of Ming-Qing jinshi and juren records matched from CBDB to GADM "
             "4.1 China ADM2 boundaries, scaled per 1,000 square kilometers. "
-            "Zunyi and Liupanshui are weak-capacity candidate cases rather "
-            "than human-validated exit-type cases.\n"
+            "Luzhou is a strong near-miss candidate rather than a final "
+            "human-validated label because a direct platform-list exit source "
+            "has not yet been found. Zunyi and Liupanshui are weak-capacity "
+            "candidate cases rather than human-validated exit-type cases.\n"
             "\\end{minipage}\n"
         )
         handle.write("\\end{table}\n")
@@ -178,7 +195,11 @@ def write_figure(rows: list[dict]) -> None:
     OUT_FIG.parent.mkdir(parents=True, exist_ok=True)
     plot_rows = sorted(rows, key=lambda row: float(row["elite_per_1000_sqkm"]))
     colors = [
-        "#8c3b3b" if row["case_status"] == "weak_capacity_candidate" else "#2f6f8f"
+        "#8c3b3b"
+        if row["case_status"] == "weak_capacity_candidate"
+        else "#b06a2c"
+        if row["case_status"] == "strong_candidate"
+        else "#2f6f8f"
         for row in plot_rows
     ]
     labels = [row["display_city"] for row in plot_rows]
