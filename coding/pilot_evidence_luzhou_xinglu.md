@@ -13,7 +13,8 @@
   `泸州市兴泸投资集团有限公司2023年度第一期中期票据发行文件`,
   2023-01-09
 - Source inventory rows: `src_sc_lz_xinglu_000`, `src_sc_lz_xinglu_001`,
-  `src_sc_lz_xinglu_002`, `src_sc_lz_xinglu_003`
+  `src_sc_lz_xinglu_002`, `src_sc_lz_xinglu_003`,
+  `src_sc_lz_xinglu_004`, `src_sc_lz_xinglu_005`
 
 ## Why This Case Matters
 
@@ -70,10 +71,22 @@ close to the post-2014 local-debt reform period:
 
 - `doc_sc_lz_xinglu_2015_bond_prospectus`: 2015 enterprise-bond prospectus,
   117 pages, 84,388 extracted characters
+- `doc_sc_lz_xinglu_2015_bond_prospectus_summary`: 2015 enterprise-bond
+  prospectus summary, 90 pages, 59,453 extracted characters
 
 The remaining 2015 ChinaBond attachments are recorded in
-`data/document_inventory.csv`, but only the full prospectus has been downloaded
-and extracted so far.
+`data/document_inventory.csv`, but the current coding evidence relies on the
+full prospectus and the prospectus summary.
+
+The 2017 Shanghai Clearing disclosure page and 2021 tracking-rating disclosure
+add two intermediate source points:
+
+- `doc_sc_lz_xinglu_2017_mtn1_prospectus`: 2017 first MTN prospectus, 204
+  pages, 231,866 extracted characters
+- `doc_sc_lz_xinglu_2017_mtn1_rating`: 2017 first MTN credit rating report,
+  37 pages, 54,977 extracted characters
+- `doc_sc_lz_xinglu_2021_tracking_rating`: 2021 tracking rating report, 31
+  pages, 44,323 extracted characters
 
 ## Evidence Themes
 
@@ -121,6 +134,19 @@ Relevant extracted-text locations:
 - `doc_sc_lz_xinglu_2023_mtn1_003.txt`, lines 83-110
 - `doc_sc_lz_xinglu_2023_mtn1_003.txt`, lines 817-824
 - `doc_sc_lz_xinglu_2018_mtn1_rating.txt`, lines 700-735
+
+The 2017 prospectus and rating report show that this institutional role
+predates the 2018 no-government-financing language. The 2017 prospectus
+describes Xinglu as the Luzhou government's operating body for urban
+infrastructure investment and financing, construction management, and
+state-asset operation. The 2017 rating report likewise describes the company
+as the municipal government's infrastructure investment-financing,
+construction-management, and state-asset operating body.
+
+Relevant extracted-text locations:
+
+- `doc_sc_lz_xinglu_2017_mtn1_prospectus.txt`, lines 3776-3795
+- `doc_sc_lz_xinglu_2017_mtn1_rating.txt`, lines 742-760
 
 ### 2015 Platform-Function Baseline
 
@@ -257,6 +283,18 @@ Relevant extracted-text location:
 
 - `doc_sc_lz_xinglu_2018_mtn1_prospectus.txt`, lines 9984-10094
 
+The 2017 prospectus provides an even earlier version of the same mechanism.
+It records large fiscal and project-linked liabilities and receivables,
+including treasury-bond on-lending funds from the Luzhou Finance Bureau,
+policy-finance and fund investments in shantytown and infrastructure projects,
+and government commitments to arrange fiscal-budget funds for repurchase of
+development-fund equity.
+
+Relevant extracted-text locations:
+
+- `doc_sc_lz_xinglu_2017_mtn1_prospectus.txt`, lines 5880-5940
+- `doc_sc_lz_xinglu_2017_mtn1_prospectus.txt`, lines 7018-7036
+
 ### Entrusted Construction and Receivables
 
 The prospectus states that some entrusted projects are owned by Xinglu and
@@ -281,6 +319,23 @@ function.
 Relevant extracted-text location:
 
 - `doc_sc_lz_xinglu_2023_mtn1_003.txt`, lines 900-930
+
+The 2021 tracking rating report confirms that the same accounting and
+functional pattern existed between the 2018 and 2023 source sets. It states
+that Xinglu's infrastructure construction business used government-entrusted
+construction, that projects for which the company was not the owner were
+recorded as long-term receivables because the company was responsible for the
+financing function, and that completed projects had received only partial
+repayment. The report also states that 2020 other receivables mainly consisted
+of receivables from government agencies and related parties, and that long-term
+receivables mainly reflected infrastructure projects for which the company was
+not the owner, relocation-poverty-alleviation projects, and shantytown
+redevelopment investment.
+
+Relevant extracted-text locations:
+
+- `doc_sc_lz_xinglu_2021_tracking_rating.txt`, lines 884-928
+- `doc_sc_lz_xinglu_2021_tracking_rating.txt`, lines 1332-1382
 
 ### Fiscal Dependence and Debt Pressure
 
@@ -350,6 +405,15 @@ did not undertake government financing functions after 2015, while the same
 source set described Xinglu as the city's largest platform company and as a
 government-designated infrastructure investment body supported through asset
 injections, project subsidies, and financing-interest subsidies.
+
+The 2017 and 2021 source sets make the cross-time pattern more continuous. In
+2017, the issuer was still described as a municipal infrastructure
+investment-financing and construction-management body, with fiscal receivables,
+project-fund repayment, and government-backed repurchase arrangements. In 2021,
+the rating report still described government-entrusted infrastructure
+construction, long-term receivables for projects where the issuer performed
+the financing function, and continuing government support. Neither source
+contains direct `退出融资平台` or `退出平台名单` language.
 
 The 2015 ChinaBond source set pushes the functional baseline further back. The
 2015 prospectus identifies Xinglu as Luzhou's infrastructure project

@@ -69,6 +69,17 @@ planned government repurchase payments from 2015 through 2024. A keyword search
 of this extracted 2015 prospectus did not find direct language that Xinglu had
 exited a financing-platform list.
 
+The newly added 2017 and 2021 sources reinforce the same conclusion. The 2017
+prospectus and rating report describe Xinglu as a municipal infrastructure
+investment-financing, construction-management, and state-asset operating body,
+and record fiscal receivables, development-fund repayment, and
+government-backed repurchase arrangements. The 2021 tracking rating report
+shows that the infrastructure construction business still operated through
+government-entrusted construction, long-term receivables, and partial project
+repayment. These sources strengthen functional persistence, but they do not
+solve the formal-exit problem because neither source contains direct
+platform-list exit language.
+
 The main alternative label is `unclear`, not `functional_transfer`. There is
 little current evidence that Xinglu's function was transferred to another local
 SOE or to a specific formal budgetary instrument. The current documents instead
@@ -78,8 +89,9 @@ direction of the evidence, but the missing formal-exit event.
 For the next review, the search target should be precise. The project should
 look for a Luzhou source that uses language such as `退出融资平台`, `退出平台名单`,
 `不再承担政府融资职能`, `政府融资职能剥离`, or a municipal debt-resolution document
-that names Xinglu or the Luzhou platform cluster. The 2015 prospectus should
-not be treated as that source. It is a strong functional baseline source. If a
+that names Xinglu or the Luzhou platform cluster. The 2015, 2017, 2018, 2021,
+and 2023 documents should not be treated as that source. They form a strong
+functional-persistence packet rather than a direct formal-exit packet. If a
 direct formal-exit source is found, Luzhou can likely be promoted to
 `nominal_exit`. If no such source is found, the case should remain a strong
 source packet for functional persistence rather than a final coded exit case.

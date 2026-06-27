@@ -731,3 +731,38 @@ relies on a later issuer prospectus and legal opinion rather than the original
 2013 Hunan banking-regulator approval or local exit-list notice. The next
 source target is therefore narrow: collect the original 2013 approval or a
 contemporaneous local debt-resolution document that names Zhuzhou Guotou.
+
+## 2026-06-27, Luzhou Xinglu targeted formal-exit search
+
+A targeted search was conducted for a direct Luzhou Xinglu formal-exit source.
+Exact web searches for `泸州市兴泸投资集团有限公司 退出融资平台`,
+`兴泸投资 退出融资平台`, `泸州市兴泸投资集团有限公司 不再承担政府融资职能`,
+and related `平台名单` phrases did not return a reliable government or issuer
+source. Local full-text search across the existing 2015, 2018, and 2023
+extracted documents also found no `退出融资平台`, `退出平台名单`, or
+platform-list-exit event.
+
+The search then used Shanghai Clearing's public disclosure endpoint. The issuer
+record for `泸州市兴泸投资集团有限公司` returned the issuer ID
+`389EF1CD200714B6E0530100007F0F06` and listed MTN disclosure histories for
+2017, 2018, 2021, 2022, and 2023. The project added the 2017 first MTN
+disclosure page as `src_sc_lz_xinglu_004` and the 2021 tracking-rating page as
+`src_sc_lz_xinglu_005`. Three documents were downloaded and extracted:
+`doc_sc_lz_xinglu_2017_mtn1_prospectus` with 204 pages and 231,866 extracted
+characters, `doc_sc_lz_xinglu_2017_mtn1_rating` with 37 pages and 54,977
+extracted characters, and `doc_sc_lz_xinglu_2021_tracking_rating` with 31 pages
+and 44,323 extracted characters.
+
+The new documents strengthen the functional-persistence interpretation rather
+than solving the formal-exit problem. The 2017 prospectus and rating report
+describe Xinglu as the Luzhou government's infrastructure investment-financing,
+construction-management, and state-asset operating body. They also record
+fiscal receivables, policy-finance and fund repayment, and government-backed
+repurchase arrangements. The 2021 tracking rating report states that Xinglu's
+infrastructure construction business used government-entrusted construction,
+that projects where the company was not the owner were recorded as long-term
+receivables because the company performed the financing function, and that the
+company continued to receive government support. None of the new documents
+contains direct `退出融资平台` or `退出平台名单` language. Luzhou should therefore
+remain a strong `nominal_exit_or_functional_persistence` candidate rather than
+a final human-validated label.
