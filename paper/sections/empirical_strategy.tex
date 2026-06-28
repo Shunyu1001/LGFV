@@ -1,5 +1,7 @@
 \section{Empirical Strategy}
 
+\subsection{Main specifications}
+
 The baseline empirical analysis estimates whether historical state capacity
 predicts the probability of substantive exit. A simple specification is:
 
@@ -28,23 +30,58 @@ administrative human capital and elite formation. A third measure, based on
 Ming courier routes and stations, can be used as a robustness check for
 historical communication and transport infrastructure.
 
-As a pilot validation exercise, I match the current human-validated cases and
-three candidate cases to the CBDB-GADM elite-density measure
-\citep{cbdb2024,gadm2022}. This exercise does not estimate the main hypothesis,
-because the pilot cases were chosen to develop and probe the coding
-procedure rather than to form a representative sample. It is nevertheless
-useful as a check on whether the historical measure captures substantively
-meaningful variation across the kinds of cities that appear in the
-source-collection process. Table
+A second specification uses exit type as a multinomial outcome:
+
+\begin{equation}
+Pr(ExitType_i = k) = f(HistoricalCapacity_i, X_i),
+\end{equation}
+
+where $k$ indexes substantive exit, nominal exit, functional transfer, and
+liquidation. This specification evaluates whether historical state capacity is
+associated with different institutional responses to the same central reform.
+
+\subsection{Pilot evidence}
+
+The first empirical step is a small pilot sample. The purpose of the pilot is
+not to estimate the main effect. The purpose is to show that the exit-type
+categories can be assigned from original documents, that the categories
+distinguish different institutional outcomes, and that the cases span
+meaningful variation in historical state capacity. For this reason, I separate
+human-validated labels from candidate cases throughout the analysis.
+
+Table \ref{tab:pilot-validated-labels} reports the current human-validated
+labels. The five validated cases already recover three exit types. Guangzhou
+City Construction Investment Group is coded as substantive exit because the
+available disclosures indicate a shift away from new government-project
+investment and financing toward fiscal-funded project management. Hangzhou City
+Investment Group is coded as functional transfer because the relevant public
+investment and debt functions were consolidated inside a larger municipal
+platform system. Xi'an Hi-tech Holding, Chengdu City Construction Investment
+Management Group, and Zhuzhou State-owned Assets Investment Holding Group are
+coded as nominal exit because formal exit or no-government-financing language
+coexists with continuing evidence of infrastructure investment, entrusted
+construction, fiscal payment arrangements, land preparation, major project
+construction, or government-linked repayment.
+
+\input{tables/pilot_validated_exit_types}
+
+I then match the validated cases and three candidate cases to the CBDB-GADM
+elite-density measure \citep{cbdb2024,gadm2022}. Table
 \ref{tab:pilot-historical-capacity} and Figure
-\ref{fig:pilot-historical-capacity} show the resulting values. Guangzhou and
-Hangzhou have high historical elite density, Chengdu and Xi'an occupy an
-intermediate position, and the low-capacity cases---Luzhou, Zhuzhou, Zunyi,
-and Liupanshui---have much lower values. The key point is not that the pilot
-already estimates an effect. Rather, the pilot shows that the coding scheme is
-being applied to cases that vary sharply in historical administrative human
-capital, including a validated low-capacity nominal-exit case in Zhuzhou and a
-near-miss low-capacity functional-persistence case in Luzhou.
+\ref{fig:pilot-historical-capacity} show the resulting values. The descriptive
+pattern has three parts. First, the high-capacity cases are not all coded the
+same way. Guangzhou appears as substantive exit, while Hangzhou appears as
+functional transfer, which suggests that historical capacity should be linked
+to a set of institutional responses rather than to a simple binary distinction.
+Second, the validated low-capacity case, Zhuzhou, is coded as nominal exit:
+direct formal exit from the financing-platform list is documented, but the same
+issuer continued to perform land preparation, major project construction,
+government-entrusted work, and fiscal-settlement functions. Third, Luzhou,
+Zunyi, and Liupanshui remain candidate cases rather than final labels, but
+their source packets show why weak-capacity localities are central to the next
+round of data collection: the documentary trail is often dominated by
+debt-resolution pressure, fiscal support, and continuing public-project
+functions rather than by clean exit-list documents.
 
 \input{tables/pilot_case_historical_capacity}
 
@@ -55,15 +92,12 @@ near-miss low-capacity functional-persistence case in Luzhou.
 \label{fig:pilot-historical-capacity}
 \end{figure}
 
-A second specification uses exit type as a multinomial outcome:
-
-\begin{equation}
-Pr(ExitType_i = k) = f(HistoricalCapacity_i, X_i),
-\end{equation}
-
-where $k$ indexes substantive exit, nominal exit, functional transfer, and
-liquidation. This specification evaluates whether historical state capacity is
-associated with different institutional responses to the same central reform.
+The pilot therefore makes a limited but useful empirical contribution. It does
+not yet support a regression estimate, and it should not be read as a
+representative distribution of LGFV exit types. It does show that the proposed
+coding rule separates substantive exit, nominal exit, and functional transfer
+in real documents, and that the next stage of the project can target cases that
+vary sharply in historical administrative human capital.
 
 \subsection{Inference with surrogate labels}
 
@@ -97,6 +131,8 @@ relationship, with uncertainty that reflects both sampling variation and label
 uncertainty. The human-validated label file remains the authoritative source
 for final case labels; the DSL procedure provides a way to use the larger
 LLM-coded candidate set without treating surrogate labels as error-free.
+
+\subsection{Mechanism analyses}
 
 Mechanism analyses examine whether stronger historical state capacity is
 associated with greater formal fiscal substitution after exit. Relevant
