@@ -3,35 +3,76 @@
 The previous section defined the case-level research design. This section
 describes how the main outcome is measured. The coding strategy begins from a
 simple premise: official exit language is evidence about regulatory status, not
-by itself evidence about the disappearance of a government financing function.
-For each platform, I therefore code both the formal exit event and the
-post-exit location of the relevant function.
+by itself evidence that a government financing function disappeared. For each
+platform, I therefore code both the formal event and the post-event location of
+the relevant function.
+
+\subsection{Source hierarchy}
 
 The source hierarchy has three levels. First, I use government documents,
-finance-bureau notices, state-owned asset supervision documents, and company
-announcements when they are available. These sources are most useful for
-identifying official exit, restructuring, asset transfers, debt replacement, or
-liquidation. Second, I use bond prospectuses, credit rating reports, legal
-opinions, and annual reports. These sources are often more informative about
-continuing project functions, repayment arrangements, fiscal support, and
-changes in the issuer's role. Third, I use credible financial news and company
-profiles as supplementary sources. These materials can help locate events and
+finance-bureau notices, state-owned asset supervision documents, exchange
+disclosures, and company announcements when they are available. These sources
+are most useful for identifying official exit, market-oriented transformation,
+asset transfer, debt replacement, restructuring, and liquidation. Second, I use
+bond prospectuses, credit rating reports, legal opinions, annual reports, and
+audited financial statements. These sources are often more informative about
+continuing public-project functions, repayment arrangements, fiscal support,
+issuer guarantees, related-party transfers, and changes in the role of the
+company after exit. Third, I use credible financial news and company profiles
+as supplementary sources. These materials can help locate events and identify
 entities, but they do not by themselves determine the final label.
 
-The coding decision has three steps. First, I identify the relevant official
-event: exit from a platform list, market-oriented transformation,
-reorganization, merger, debt replacement, or dissolution. Second, I identify
-the post-event location of the function. This requires evidence on whether the
-same company still finances or implements public projects, whether the function
-has been absorbed by budgetary instruments, whether another local SOE has
-assumed the function, or whether the original entity has ceased operations.
-Third, I assign the exit type using the fixed codebook. Substantive exit
-requires evidence that the platform no longer performs government financing or
-quasi-fiscal functions. Nominal exit requires formal exit language combined
-with continuing functional evidence in the same platform. Functional transfer
-requires evidence that the function moved to another state entity, merged
-group, subsidiary, or newly established platform. Liquidation requires evidence
-of dissolution, deregistration, bankruptcy, or termination.
+This hierarchy matters because the most authoritative source for the formal
+event is not always the most informative source for the post-event function. A
+government notice may state that a platform exited a list, while a later
+prospectus may show that the same issuer still carries out infrastructure
+investment, entrusted construction, land preparation, or project repayment on
+behalf of the local state. Conversely, a prospectus may contain
+no-government-financing language, while the underlying fiscal-substitution
+arrangement appears only in a debt-replacement announcement or a municipal
+budget document. The coding rule therefore treats each source as evidence for
+a specific component of the case rather than as a global statement about the
+whole outcome.
+
+\subsection{Coding rule}
+
+The coding decision has four steps. First, I identify the baseline platform
+function. The relevant evidence includes infrastructure investment and
+financing, land development, construction entrusted by government, public
+utility operation, policy-driven housing or urban renewal, and repayment
+arrangements tied to local fiscal resources. Second, I identify the formal event. The event
+may be exit from a financing-platform list, a no-government-financing
+statement, market-oriented transformation, merger, asset transfer, debt
+replacement, debt restructuring, or dissolution. Third, I identify the
+post-event location of the function. The same company may continue the
+function, the function may move into the budget, the function may be assigned
+to another local state-owned entity, or the original function may terminate.
+Fourth, I assign the exit type using the fixed codebook.
+
+Substantive exit requires evidence that the platform no longer performs
+government financing or quasi-fiscal financing functions after the relevant
+event. This label does not require the company to stop all public-sector
+activity. A company may still manage public projects if the financing has moved
+inside formal fiscal channels and the issuer receives management fees rather
+than using its balance sheet as an off-budget financing device. Nominal exit
+requires formal exit or no-government-financing language combined with evidence
+that the same platform continues the relevant government financing function.
+Functional transfer requires evidence that the function moved to another
+state-owned entity, merged group, subsidiary, or newly established platform.
+Liquidation requires evidence of dissolution, deregistration, bankruptcy, or
+termination.
+
+The main ambiguity concerns the boundary between substantive exit and
+functional transfer. Both can involve a decline in the old platform's financing
+role. The difference is where the function goes. If the function is absorbed
+into formal fiscal instruments, budgetary management, or fee-based project
+management without a new platform taking over the quasi-fiscal role, the case
+is closer to substantive exit. If the function is reassigned to another
+state-owned entity or consolidated into a new platform group, the case is
+closer to functional transfer. A second ambiguity concerns nominal exit. Legal
+language stating that new debt does not constitute local government debt is not
+sufficient for substantive exit if the same document shows continuing public
+project financing, fiscal repayment, or government-entrusted construction.
 
 Table~\ref{tab:pilot_cases} summarizes the five human-validated pilot cases.
 The table is not an empirical result. Its purpose is to show how the same
@@ -93,28 +134,50 @@ Hangzhou, the classification rests on equity transfer, debt succession, and the
 creation of a specialized housing-security group within a reorganized municipal
 platform system.
 
-Candidate cases are kept separate from final labels. This distinction matters
-most for weak-capacity localities, where the most visible documents may be
-debt-resolution notices, bank-loan restructuring announcements, rating
-attention notices, and reports of continued public support. Luzhou Xinglu is a
-useful near-miss case. The source packet strongly rejects a substantive-exit
+\subsection{LLM-assisted labeling}
+
+Large language models are used to produce preliminary labels from the same
+codebook and source excerpts. They do not assign final labels. The purpose of
+using LLMs is to make the source review more scalable and to force each case to
+be evaluated under a common decision rule. The model prompt asks for five
+items: (1) a proposed label, (2) a confidence level, (3) a short rationale, (4)
+the exact pieces of evidence used for the classification, and (5) the most
+plausible alternative label. The prompt also requires the model to return
+\texttt{unclear} when the source packet lacks a formal event or lacks evidence
+about the post-event function.
+
+The human validation step has three tasks. First, I compare the model's
+evidence claims with the original documents and remove claims that are not
+supported by the source text. Second, I evaluate whether the model has confused
+legal compliance language with functional change. This error is especially
+likely in bond prospectuses because issuers often state that new debt is not
+local government debt while also describing public-project obligations and
+fiscal payment arrangements. Third, I record the final label, alternative
+label, confidence level, source coverage score, key evidence, and remaining
+caveat in the human-validated label file. The final dataset is therefore not a
+set of model outputs. It is a set of human-reviewed case labels whose
+preliminary coding was assisted by LLMs.
+
+The audit trail is part of the measurement contribution. Each final label is
+linked to a case identifier, document identifiers, source types, line
+references where available, model rationales, human rationale, alternative
+label, ambiguity note, and source coverage score. This structure makes it
+possible to revise a label when new documents are found without changing the
+codebook. It also makes disagreement informative. When an LLM proposes
+substantive exit because a prospectus contains compliance language, while human
+review identifies continuing government-entrusted construction in the same
+document, the disagreement identifies exactly the distinction the paper seeks
+to measure.
+
+Candidate cases are kept separate from final labels. Luzhou Xinglu is a useful
+near-miss case. The source packet strongly rejects a substantive-exit
 interpretation: it shows infrastructure investment-financing,
-government-entrusted construction, fiscal receivables, project repayment, and government
-support across 2015, 2017, 2018, 2021, and 2023. The case nevertheless remains
-outside the final label table because the project has not found a direct
-platform-list exit source. Zunyi Daoqiao is treated similarly. Its documents
-strongly indicate continuing platform status and debt-resolution pressure,
-including a rating notice that places the company inside Guizhou's
+government-entrusted construction, fiscal receivables, project repayment, and
+government support across 2015, 2017, 2018, 2021, and 2023. The case
+nevertheless remains outside the final label table because the project has not
+found a direct platform-list exit source. Zunyi Daoqiao is treated similarly.
+Its documents strongly indicate continuing platform status and debt-resolution
+pressure, including a rating notice that places the company inside Guizhou's
 government-financing-platform debt-resolution pilot, but the case remains
 outside the final label table until a direct formal-exit or
 no-government-financing source is collected.
-
-The workflow is LLM-assisted and human-validated. Large language models are
-used to produce preliminary labels from the same codebook and source excerpts.
-They must return a label, a confidence level, a rationale, and the specific
-textual evidence for the classification. The final label is assigned only after
-human review of the original documents. This procedure has two advantages.
-First, it makes the coding process more scalable once the source inventory
-expands beyond the pilot cases. Second, it preserves an audit trail linking
-each final label to document identifiers, line references, confidence levels,
-alternative plausible labels, and remaining caveats.
