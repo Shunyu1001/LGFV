@@ -1,5 +1,5 @@
 validation_tier,display_tier,analytic_use,total,substantive_exit,nominal_exit,functional_transfer,unclear
-human_validated,Human-validated,Used as final pilot labels,5,1,3,1,0
+human_validated,Human-validated,Used as final pilot labels,12,2,7,3,0
 strong_candidate,Strong candidate,Used for provisional patterns and next validation,4,2,1,1,0
 boundary_candidate,Boundary case,Used to define scope conditions,1,0,0,0,1
 source_only_candidate,Source-only candidate,Used to guide source collection,3,0,0,0,3

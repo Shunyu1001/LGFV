@@ -1,9 +1,16 @@
 case_id,province,city,company_name,case_status,exit_type_or_status,final_confidence,display_city,display_case_status,display_exit_type_or_status,gadm_gid,prefecture_name,prefecture_name_chn,matched_cbdb_places,area_sqkm_approx,elite_persons,jinshi_persons,juren_persons,elite_per_1000_sqkm,jinshi_per_1000_sqkm,juren_per_1000_sqkm
 pilot_gd_001,Guangdong,Guangzhou,广州市城市建设投资集团有限公司,human_validated,substantive_exit,medium,Guangzhou,Human-validated,Substantive exit,CHN.6.4_1,Guangzhou,广州市,13,7156.715,1524,611,1093,212.95,85.37,152.72
+pilot_zj_002,Zhejiang,Ningbo,宁波开发投资集团有限公司,human_validated,substantive_exit,medium,Ningbo,Human-validated,Substantive exit,CHN.31.6_1,Ningbo,宁波市,21,8942.193,1760,1339,1025,196.82,149.74,114.63
 pilot_zj_001,Zhejiang,Hangzhou,杭州市城市建设投资集团有限公司,human_validated,functional_transfer,medium,Hangzhou,Human-validated,Functional transfer,CHN.31.1_1,Hangzhou,杭州市,38,17088.894,2716,1618,1500,158.93,94.68,87.78
+pilot_sd_001,Shandong,Jinan,济南城市投资集团有限公司,human_validated,nominal_exit,medium,Jinan,Human-validated,Nominal exit,CHN.23.5_1,Jinan,济南市,18,8130.954,944,541,519,116.10,66.54,63.83
+pilot_gd_003,Guangdong,Foshan,佛山市建设发展集团有限公司,human_validated,functional_transfer,medium,Foshan,Human-validated,Functional transfer,CHN.6.3_1,Foshan,佛山市,6,3892.144,392,278,186,100.72,71.43,47.79
 pilot_sc_001,Sichuan,Chengdu,成都城建投资管理集团有限责任公司,human_validated,nominal_exit,medium,Chengdu,Human-validated,Nominal exit,CHN.26.2_1,Chengdu,成都市,40,10874.266,861,302,632,79.18,27.77,58.12
 pilot_sn_xian_hightech,Shaanxi,Xian,西安高新控股有限公司,human_validated,nominal_exit,high,Xi'an,Human-validated,Nominal exit,CHN.22.7_1,Xi'an,西安市,22,10194.044,536,440,226,52.58,43.16,22.17
+pilot_zj_003,Zhejiang,Wenzhou,温州市名城建设投资集团有限公司,human_validated,functional_transfer,medium,Wenzhou,Human-validated,Functional transfer,CHN.31.10_1,Wenzhou,温州市,12,11424.895,345,181,234,30.20,15.84,20.48
+pilot_hn_004,Hunan,Hengyang,衡阳市城市建设投资有限公司,human_validated,nominal_exit,high,Hengyang,Human-validated,Nominal exit,CHN.14.4_1,Hengyang,衡阳市|衡陽市,11,15392.780,286,112,201,18.58,7.28,13.06
 pilot_sc_003,Sichuan,Luzhou,泸州市兴泸投资集团有限公司,strong_candidate,nominal_exit_or_functional_persistence,,Luzhou,Strong candidate,Near-miss functional persistence,CHN.26.10_1,Luzhou,泸州市,12,12240.993,139,81,104,11.36,6.62,8.50
 pilot_hn_002,Hunan,Zhuzhou,株洲市国有资产投资控股集团有限公司,human_validated,nominal_exit,medium,Zhuzhou,Human-validated,Nominal exit,CHN.14.14_1,Zhuzhou,株洲市|株洲市,9,11310.860,104,76,56,9.19,6.72,4.95
 pilot_gz_002,Guizhou,Zunyi,遵义道桥建设集团有限公司,weak_capacity_candidate,source_started,,Zunyi,Weak-capacity candidate,Source started,CHN.8.9_1,Zunyi,遵义市,12,30811.013,222,76,153,7.21,2.47,4.97
+pilot_js_004,Jiangsu,Xuzhou,徐州市新盛投资控股集团有限公司,human_validated,nominal_exit,medium,Xuzhou,Human-validated,Nominal exit,CHN.15.10_1,Xuzhou,徐州市,13,11229.972,62,37,41,5.52,3.29,3.65
+pilot_js_003,Jiangsu,Yancheng,盐城市城市资产投资集团有限公司,human_validated,nominal_exit,medium,Yancheng,Human-validated,Nominal exit,CHN.15.11_1,Yancheng,盐城市,3,15378.447,34,28,10,2.21,1.82,0.65
 pilot_gz_003,Guizhou,Liupanshui,六盘水市开发投资有限公司,weak_capacity_candidate,documents_found,,Liupanshui,Weak-capacity candidate,Documents found,CHN.8.4_1,Liupanshui,六盘水市,4,9993.113,6,5,1,0.60,0.50,0.10

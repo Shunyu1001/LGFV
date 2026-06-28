@@ -88,6 +88,13 @@ VALIDATED_EVENT_LABELS = {
     "pilot_sc_001": "2015 no-government-financing language",
     "pilot_sn_xian_hightech": "2012 platform-list exit disclosure",
     "pilot_hn_002": "2013 banking-regulator platform-list exit",
+    "pilot_zj_002": "2015 no-government-financing and negative platform-function evidence",
+    "pilot_zj_003": "2015 no-government-financing with group-level public functions",
+    "pilot_js_004": "2015 no-government-financing with project-repayment exposure",
+    "pilot_hn_004": "2020 transfer out of CBIRC platform management",
+    "pilot_sd_001": "2015 no-government-financing and non-platform-list disclosure",
+    "pilot_js_003": "2015 no-government-financing with entrusted construction",
+    "pilot_gd_003": "2018 non-platform-list disclosure with fiscal-settlement projects",
 }
 
 
@@ -359,7 +366,7 @@ def distribution_cells(row: dict) -> str:
         if family == "unclear":
             cells.append(
                 "\\fcolorbox{black!50}{white}"
-                f"{{\\rule{{{width:.3f}\\linewidth}}{{1.25ex}}}}"
+                f"{{\\color{{white}}\\rule{{{width:.3f}\\linewidth}}{{1.25ex}}}}"
             )
         else:
             cells.append(

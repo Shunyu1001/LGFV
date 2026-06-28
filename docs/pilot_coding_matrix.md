@@ -35,30 +35,31 @@ being mistaken for validated data.
 ## Initial patterns
 
 The matrix suggests three patterns that are worth retaining in the research
-design. First, high-capacity cases are more likely to contain evidence of formal
-fiscal substitution or organizational consolidation. Guangzhou City Construction
-Investment Group is the cleanest current example, while Hangzhou shows a
-related but different pattern in which public functions continue inside a
-reorganized city investment system. Second, low-capacity cases more often show
-compliance language alongside continuing public-project financing, fiscal
-settlements, receivables, subsidies, or debt-resolution pressure. Zhuzhou and
-Luzhou are the most useful non-Guizhou cases for this pattern. Third, Shenzhen
-shows why the historical-capacity measure cannot be used mechanically. Its
-imperial-era elite density is low, but its contemporary administrative and
-fiscal capacity is unusually high, so the case should be treated as a boundary
-case rather than as evidence for the low-capacity mechanism.
+design. First, high-capacity cases are not homogeneous. Guangzhou and Ningbo
+currently supply substantive-exit evidence, while Hangzhou and Foshan show
+functional transfer or formalized public-project work inside municipal
+state-owned systems. Second, lower-capacity cases more often show compliance
+language alongside continuing public-project financing, fiscal settlements,
+receivables, subsidies, or debt-resolution pressure. Xuzhou and Yancheng add
+low historical-capacity nominal-exit labels, while Zhuzhou and Hengyang provide
+central-province cases with direct platform-list or regulator-transfer
+language. Third, Shenzhen shows why the historical-capacity measure cannot be
+used mechanically. Its imperial-era elite density is low, but its contemporary
+administrative and fiscal capacity is unusually high, so the case should be
+treated as a boundary case rather than as evidence for the low-capacity
+mechanism.
 
 ## Coding use
 
 The matrix should be used in three ways. First, it provides a compact case map
 for the paper's empirical-design section. It shows that the pilot contains
 variation in historical capacity, document quality, and exit-type candidates.
-Second, it identifies the next validation targets. Zhuzhou has now been
-promoted to a validated low historical-capacity `nominal_exit` case, while
-Luzhou remains the most useful low-capacity promotion target because it has
-strong evidence of functional persistence but still lacks direct formal-exit
-evidence.
-Third, it separates inclusion questions from labeling questions. Metro
+Second, it identifies the next validation targets. The June 28 expansion
+promoted seven additional cases into the human-validated file: Ningbo, Wenzhou,
+Xuzhou, Hengyang, Jinan, Yancheng, and Foshan. Luzhou remains the most useful
+low-capacity promotion target because it has strong evidence of functional
+persistence but still lacks direct formal-exit evidence. Third, it separates
+inclusion questions from labeling questions. Metro
 companies and Shenzhen-type cases may be analytically useful, but their status
 as core LGFV cases should be decided before their labels are used in any count
 or comparison.
@@ -69,10 +70,11 @@ The next coding round has three steps. First, continue targeted source search
 for Luzhou and promote it only if a direct formal-exit or debt-resolution
 source is found. Second, resolve the boundary status of Nanjing Metro,
 Guangzhou Metro, and Shenzhen Special Zone Construction and Development Group.
-This is a scope decision rather than a simple coding decision. Third, add only
-one new high-capacity case and one new low-capacity case after these reviews are
-complete. Otherwise, the pilot will accumulate source packets faster than it
-accumulates validated labels.
+This is a scope decision rather than a simple coding decision. Third, begin a
+small reliability check: draw a second reviewer sample from the twelve
+validated cases and the four strong candidates, then compare whether the same
+source excerpts lead to the same final label, alternative label, and confidence
+level.
 
 The first review memo for this step is
 `docs/validation_memo_zhuzhou_luzhou.md`. It records the promotion of Zhuzhou
