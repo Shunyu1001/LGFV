@@ -65,6 +65,39 @@ where $k$ indexes substantive exit, nominal exit, functional transfer, and
 liquidation. This specification evaluates whether historical state capacity is
 associated with different institutional responses to the same central reform.
 
+\subsection{Inference with surrogate labels}
+
+The large-sample version of the project will use LLM-assisted labels before all
+candidate cases can be fully human-validated. Directly using these labels as if
+they were true outcomes would create a measurement problem, because LLM errors
+may be correlated with source quality, city capacity, document type, or the
+visibility of formal compliance language. I therefore treat LLM labels as
+imperfect surrogate labels and use human-validated labels as gold-standard
+outcomes for inference.
+
+The main inferential strategy will follow the design-based supervised learning
+approach proposed by \citet{egami2023dsl}. The procedure has three steps.
+First, I draw a validation sample of city-platform cases for human labeling
+with known sampling probabilities. This sampling design is part of the
+estimator rather than an after-the-fact quality check. Second, I use the LLM
+labels, source metadata, and case covariates to predict the gold-standard
+labels in the larger candidate sample. Third, I combine the prediction model
+with the validation sample through a doubly robust correction, so that the
+downstream regression or descriptive estimand is adjusted for surrogate-label
+error.
+
+This approach is useful because the quantities of interest are not the
+prediction accuracy of the LLM labels. They are downstream relationships, such
+as the association between historical state capacity and substantive exit, or
+the distribution of exit types across historical-capacity groups. For the
+binary specification, the DSL estimator can be applied directly to
+$SubstantiveExit_i$. For the multinomial specification, I can construct one
+indicator for each exit type and estimate the corresponding type-specific
+relationship, with uncertainty that reflects both sampling variation and label
+uncertainty. The human-validated label file remains the authoritative source
+for final case labels; the DSL procedure provides a way to use the larger
+LLM-coded candidate set without treating surrogate labels as error-free.
+
 Mechanism analyses examine whether stronger historical state capacity is
 associated with greater formal fiscal substitution after exit. Relevant
 outcomes include special-purpose bond use, on-budget infrastructure spending, project
