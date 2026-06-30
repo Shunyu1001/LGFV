@@ -209,6 +209,62 @@ confidence level, source coverage score, key evidence, and remaining caveat.
 The final dataset is therefore not a set of model outputs. It is a set of
 human-reviewed case labels whose preliminary coding was assisted by LLMs.
 
+\subsection{Validation protocol}
+
+The scaled dataset will be built in two layers. The first layer is a candidate
+pool of at least 200 LLM-coded city-platform cases. A case enters this pool
+only after the source packet identifies the company, city, source type, source
+date, baseline platform function, formal event, and post-event functional
+evidence when such evidence is available. The second layer is a
+human-validated sample of at least 50 cases. These cases form the gold-standard
+label file used to evaluate measurement quality, estimate LLM error, and
+support the supervised-learning correction described in the empirical section.
+
+The validation sample is drawn before the final outcome analysis. I first take
+a random sample from the LLM-coded candidate pool. I then add a stratified
+oversample of cases from low historical-capacity cities and high-debt cities.
+The stratification is necessary because measurement errors are unlikely to be
+evenly distributed. Low-capacity and high-debt localities often have weaker
+source coverage, more debt-resolution language, and more ambiguous relations
+between formal compliance and continuing platform functions. If these cases
+were left to proportional sampling alone, the validation sample would be most
+precise for the easiest documents and least informative for the cases where
+measurement risk is highest. The sampling probabilities are recorded so that
+the validation design can later be used in design-based adjustment rather than
+treated as an informal audit.
+
+Human validation follows pre-registered coding rules. Before cases are opened,
+the codebook freezes the inclusion rules, exclusion rules, exit-type
+definitions, edge-case rules, and scoring scales. Any later change to the
+rules must be versioned and applied either to all relevant cases or to none of
+them. Validators review original documents rather than model summaries. For
+each case, they record the formal event, baseline platform function,
+post-event function, final label, most plausible alternative label, confidence
+score, source coverage score, continued-function evidence score, key source
+references, and remaining caveat. Low-confidence cases remain in the candidate
+file and do not enter the gold-standard label file.
+
+Inter-coder agreement is assessed on an overlapping validation subset. Two
+coders independently label the same cases using the frozen codebook. Agreement
+is calculated for the four-category exit type and for the binary distinction
+between substantive exit and non-substantive outcomes. Disagreements are not
+resolved by majority vote. They are adjudicated by returning to the original
+documents and recording which part of the rule produced the conflict: formal
+event, post-event function, related-entity scope, source hierarchy, or
+edge-case treatment. This procedure turns disagreement into information about
+where the codebook is fragile.
+
+The source coverage score is part of the validation protocol rather than a
+descriptive afterthought. A score of 0 means that no usable original or
+near-original source is available. A score of 1 covers either the formal event
+or the post-event function, but not both. A score of 2 covers both elements
+with limited source type, date range, or issuer scope. A score of 3 requires
+multiple source types and at least one original or near-original document. A
+score of 4 requires a rich source packet with clear dates, issuer scope, and
+references for both the formal event and the post-event function. The final
+analysis can therefore report not only the distribution of exit types, but also
+the quality of the evidence supporting those labels.
+
 The audit trail is part of the measurement contribution. Each final label is
 linked to a case identifier, document identifiers, source types, line
 references where available, model rationales, human rationale, alternative
