@@ -1,0 +1,4 @@
+historical_capacity_bin,display_bin,total,substantive_exit,nominal_exit,functional_transfer
+high,High historical capacity,6,2,2,2
+middle,Middle historical capacity,3,0,2,1
+low,Low historical capacity,3,0,3,0
