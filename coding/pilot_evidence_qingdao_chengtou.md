@@ -5,10 +5,9 @@
 - Case ID: `pilot_sd_002`
 - Company: Qingdao City Construction Investment Group Co., Ltd.
   (`青岛城市建设投资(集团)有限责任公司`)
-- Status: middle historical-capacity city-investment evidence packet
-- Preliminary coding implication:
-  `formal_fiscal_substitution_or_functional_transfer_candidate`
-- Confidence: candidate only
+- Status: human-validated evidence packet
+- Final coding: `nominal_exit`
+- Confidence: medium
 - Main source page: Shanghai Clearing House,
   `青岛城市建设投资(集团)有限责任公司2026年度第二期中期票据发行文件`,
   2026-02-02
@@ -24,17 +23,14 @@ looks like a city-investment group that has been pushed toward marketized
 operation and formal debt compliance while continuing to hold public project
 functions.
 
-The current evidence should not be treated as a final exit-type label. The
-documents do not yet show that Qingdao City Construction Investment was
-officially removed from an LGFV list or that a specific formal exit event
-occurred. They do show three facts that make the case valuable for coding
-development. First, the issuer states that local government does not bear
-responsibility for its debt and that new debt after January 1, 2015 is not local
-government debt. Second, the issuer describes a 2014 market-oriented reform and
-SOE transformation. Third, the issuer continues to conduct land-development,
-urban-renewal, and infrastructure-construction functions, often through formally
-specified project-management, fiscal-settlement, or project-company
-arrangements.
+The case is now treated as a medium-confidence validated label. The formal
+event is not an independent exit-list notice, but the prospectus contains direct
+no-government-financing language and states that new debt after January 1, 2015
+is not local government debt. The same document also describes a 2014
+market-oriented reform and SOE transformation. The post-event evidence points
+away from substantive exit because the same issuer continues land-development,
+urban-renewal, infrastructure-construction, delegated project-management,
+fiscal-settlement, and policy-loan-administration functions.
 
 ## Machine-Readable Documents
 
@@ -153,25 +149,34 @@ Relevant extracted-text locations:
 - `doc_sd_qd_chengtou_2026_mtn2_001.txt`, lines 7065-7073
 - `doc_sd_qd_chengtou_2026_mtn2_001.txt`, lines 10216-10220
 
-## Coding Implication
+## Validation Decision
 
-The case should remain a candidate evidence packet rather than a final label.
+The case is coded as `nominal_exit` at medium confidence.
 
-The strongest current interpretation is that Qingdao is a middle-capacity
-formalization case. It has stronger compliance language than a nominal-exit
-case because the prospectus repeatedly distinguishes the issuer's corporate debt
-from local government debt, denies government financing functions, and describes
-delegated project management as fiscal-funded rather than platform-financed. At
-the same time, the company continues to perform land-development,
-urban-renewal, infrastructure-construction, and policy-loan-administration
-functions that remain closely connected to municipal fiscal and development
-tasks.
+The formal-event evidence comes from the 2026 prospectus. It states that the
+issuer does not undertake government financing functions and that new debt after
+January 1, 2015 is not local government debt. It also states that the issuer was
+initially responsible for infrastructure construction and primary land
+development and began market-oriented reform and SOE transformation in 2014.
 
-For now, code this as
-`formal_fiscal_substitution_or_functional_transfer_candidate` pending manual
-validation. The key validation question is whether the 2014 market-oriented
-reform corresponds to a formal LGFV exit or only to a broader SOE
-transformation. If a direct exit source is later found, the case may become a
-candidate for functional transfer or substantive exit with formal fiscal
-substitution. Without that source, it should be used as a boundary case rather
-than as a labeled outcome.
+The continued-function evidence is extensive. The same prospectus describes the
+issuer as the front-end operator or implementation body for land-development
+projects, including Huanle Binhecheng, Hongdao, and Qinggang. It also describes
+the issuer as Qingdao's urban infrastructure investment and operation body and
+as the project-management unit for major municipal roads and public service
+projects. The policy-loan passage shows that, for some municipal infrastructure
+projects, the issuer applies for China Development Bank loans and Qingdao
+finance allocates funds quarterly to repay principal and interest.
+
+The main alternative label is `substantive_exit`. The case has strong formal
+compliance language: the prospectus says that delegated project management is
+fiscal-funded rather than platform-financed, that the issuer has no PPP, BT,
+project repurchase, government purchase service, or advance financing for
+government projects, and that government receivables have operating backgrounds.
+The final label remains nominal exit because the same issuer continues to carry
+core public development functions after the formal compliance point.
+
+Source coverage score: 4. The packet contains a prospectus, financial report,
+and issuance documents from the Shanghai Clearing disclosure page. Confidence
+should rise only if an independent government, regulator, or SASAC document
+confirms the platform-list status or the 2014 transformation event.

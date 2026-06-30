@@ -5,10 +5,9 @@
 - Case ID: `pilot_sc_003`
 - Company: Luzhou Xinglu Investment Group Co., Ltd.
   (`泸州市兴泸投资集团有限公司`)
-- Status: low historical-capacity western prefecture evidence packet
-- Preliminary coding implication:
-  `nominal_exit_or_functional_persistence_candidate`
-- Confidence: candidate only
+- Status: human-validated evidence packet
+- Final coding: `nominal_exit`
+- Confidence: medium
 - Main source page: Shanghai Clearing House,
   `泸州市兴泸投资集团有限公司2023年度第一期中期票据发行文件`,
   2023-01-09
@@ -24,16 +23,16 @@ outside the most severe debt-resolution examples. The case therefore helps
 separate weak-capacity platform persistence from the more extreme Zunyi and
 Liupanshui cases.
 
-The current documents do not show a formal exit-list event. They do, however,
-show the classification problem that the paper is designed to study. The same
-issuer states that it does not undertake government financing functions and
-that post-2015 new debt is not local government debt, while also reporting that
-it remains the city's infrastructure investment body, uses self-raised and
+The case is now treated as a medium-confidence validated label. The source
+packet does not contain an independent exit-list notice, but the 2018 and 2023
+prospectuses both state that the issuer does not undertake government financing
+functions and that post-2015 new debt is not local government debt. These
+formal compliance statements coexist with a long record showing that the same
+issuer remains the city's infrastructure investment body, uses self-raised and
 external financing for government-designated projects, receives fiscal
 subsidies and financing-interest subsidies, and carries large project
-receivables from entrusted construction. This combination should be treated as
-a candidate for nominal exit or functional persistence rather than as a
-substantive exit.
+receivables from entrusted construction. This combination is coded as nominal
+exit rather than substantive exit.
 
 ## Machine-Readable Documents
 
@@ -383,21 +382,20 @@ Relevant extracted-text location:
 
 - `doc_sc_lz_xinglu_2018_mtn1_rating.txt`, lines 756-803
 
-## Coding Implication
+## Validation Decision
 
-The case should remain a candidate evidence packet rather than a final
-human-validated label.
+The case is coded as `nominal_exit` at medium confidence.
 
 The evidence supports three claims. First, Xinglu is a platform-like municipal
 entity: both the prospectus and the tracking rating report define it as a key
 Luzhou infrastructure and state-asset operating body. Second, the issuer uses
-formal compliance language: the documents state that the bond does not add
-local government debt or hidden debt and that the company does not undertake
-government financing functions after 2015. Third, the same documents show
-continuing public-project and project-finance functions: Xinglu raises funds
-for government-designated infrastructure projects, receives fiscal subsidies
-and financing-interest subsidies, records entrusted-construction receivables,
-and participates in shantytown and infrastructure projects.
+formal compliance language: the 2018 and 2023 prospectuses state that the bond
+does not add local government debt or hidden debt and that the company does not
+undertake government financing functions after 2015. Third, the same documents
+show continuing public-project and project-finance functions: Xinglu raises
+funds for government-designated infrastructure projects, receives fiscal
+subsidies and financing-interest subsidies, records entrusted-construction
+receivables, and participates in shantytown and infrastructure projects.
 
 The 2018 source set strengthens the case because it shows that this combination
 of claims predates the 2023 issuance. In 2018, the issuer already stated that it
@@ -423,12 +421,18 @@ public-welfare project financing as repaid through annual government subsidies,
 and documents a shantytown BT project with planned government repurchase
 payments. It does not contain direct `退出融资平台` or `退出平台名单` language.
 
-The strongest current interpretation is
-`nominal_exit_or_functional_persistence_candidate`. The case is weaker than
-Xi'an or Zhuzhou for final labeling because the current source set still does
-not contain direct formal exit-list language. It is stronger than a mere source
-discovery case because the documents contain both sides of the classification:
-formal separation from government debt and continuing local public-project
-finance. The next validation step should search for a direct `退出融资平台`,
-`退出平台名单`, `不承担政府融资职能`, or local debt-resolution source for Xinglu
-or for the Luzhou municipal platform cluster.
+The main alternative label is `substantive_exit`. The issuer repeatedly states
+that new debt is not local government debt and that the bond proceeds do not
+add hidden debt. The final label remains nominal exit because the same source
+packet documents continued project-finance functions after the compliance
+point. The 2023 prospectus says that Xinglu serves as project owner for
+government-designated infrastructure projects, raises funds through its own
+resources and external financing, and receives compensation through entrusted
+construction agreements. The rating evidence also states that, for projects
+not owned by the firm, Xinglu is responsible for the financing function and
+records project spending as long-term receivables.
+
+Source coverage score: 4. The packet contains cross-time prospectuses, rating
+reports, and financial reports from 2015, 2017, 2018, 2021, and 2023. Confidence
+should rise only if a government or regulator document directly confirms an
+exit-list event or a local platform-management decision.
