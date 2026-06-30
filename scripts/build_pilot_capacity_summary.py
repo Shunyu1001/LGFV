@@ -23,10 +23,14 @@ CAPACITY = ROOT / "data" / "analysis_inputs" / "cbdb_mingqing_elite_gadm_prefect
 OUT_CSV = ROOT / "data" / "analysis_inputs" / "pilot_case_historical_capacity.csv"
 OUT_DISTRIBUTION_CSV = ROOT / "data" / "analysis_inputs" / "pilot_exit_type_distribution.csv"
 OUT_BIN_CSV = ROOT / "data" / "analysis_inputs" / "pilot_capacity_bin_exit_type.csv"
+OUT_SOURCE_AUDIT_CSV = ROOT / "data" / "analysis_inputs" / "pilot_source_audit.csv"
+OUT_MECHANISM_CSV = ROOT / "data" / "analysis_inputs" / "pilot_mechanism_evidence.csv"
 OUT_TEX = ROOT / "paper" / "tables" / "pilot_case_historical_capacity.tex"
 OUT_VALIDATED_TEX = ROOT / "paper" / "tables" / "pilot_validated_exit_types.tex"
 OUT_TIER_TEX = ROOT / "paper" / "tables" / "pilot_validation_tiers.tex"
 OUT_BIN_TEX = ROOT / "paper" / "tables" / "pilot_capacity_bin_exit_type.tex"
+OUT_SOURCE_AUDIT_TEX = ROOT / "paper" / "tables" / "pilot_source_audit.tex"
+OUT_MECHANISM_TEX = ROOT / "paper" / "tables" / "pilot_mechanism_evidence.tex"
 OUT_DISTRIBUTION_TEX = ROOT / "paper" / "figures" / "pilot_exit_type_distribution.tex"
 OUT_FIG = ROOT / "paper" / "figures" / "pilot_case_historical_capacity.png"
 
@@ -104,6 +108,82 @@ VALIDATED_EVENT_LABELS = {
     "pilot_js_003": "2015 no-government-financing with entrusted construction",
     "pilot_gd_003": "2018 non-platform-list disclosure with fiscal-settlement projects",
 }
+MECHANISM_EVIDENCE = {
+    "pilot_gd_001": {
+        "fiscal_absorption": "Budget-funded project management and 2018 fiscal debt replacement.",
+        "coordination": "Post-2014 role shift appears across issuer, rating, and debt-replacement documents.",
+        "project_asset_governance": "Public projects remain as management tasks rather than new platform financing.",
+    },
+    "pilot_zj_001": {
+        "fiscal_absorption": "Debt succession and asset transfer occurred through formal reorganization.",
+        "coordination": "Qiantou transfer, city-investment consolidation, and Anju creation link multiple municipal entities.",
+        "project_asset_governance": "Public project and housing functions moved within the municipal platform system.",
+    },
+    "pilot_sc_001": {
+        "fiscal_absorption": "Debt replacement and government-bond pass-through coexist with fiscal-payment chains.",
+        "coordination": "Issuer compliance language is present, but an independent exit-list source is still missing.",
+        "project_asset_governance": "The same issuer continues infrastructure investment and financing functions.",
+    },
+    "pilot_sn_xian_hightech": {
+        "fiscal_absorption": "Direct fiscal-substitution evidence remains limited.",
+        "coordination": "The 2012 platform-list exit is issuer-disclosed; later business-module transfers appear partial.",
+        "project_asset_governance": "The issuer retains BT, entrusted-construction, and government-repurchase exposure.",
+    },
+    "pilot_hn_002": {
+        "fiscal_absorption": "Service-contract and fiscal-settlement evidence appears after formal exit.",
+        "coordination": "Hunan banking-regulator exit is reported in issuer and legal documents.",
+        "project_asset_governance": "Land preparation, major projects, fiscal settlement, and government support continue.",
+    },
+    "pilot_zj_002": {
+        "fiscal_absorption": "Negative evidence shows no government purchase service, BT, PPP, land preparation, or fiscal repayment.",
+        "coordination": "Issuer-level compliance evidence is strong; an independent list source is still missing.",
+        "project_asset_governance": "No major continuing platform function is found; a residual receivable is treated as engineering background.",
+    },
+    "pilot_zj_003": {
+        "fiscal_absorption": "Fiscal construction payments and fiscal compensation remain visible.",
+        "coordination": "Issuer-level compliance is paired with group-level relocation of public functions.",
+        "project_asset_governance": "The municipal group continues land preparation, affordable housing, and public-utility functions.",
+    },
+    "pilot_js_004": {
+        "fiscal_absorption": "Budgeted government-purchase payments, fiscal subsidies, and project-repurchase support remain visible.",
+        "coordination": "Issuer no-government-financing language is present; a direct government list source is still missing.",
+        "project_asset_governance": "Shantytown redevelopment, water infrastructure, land preparation, and entrusted construction continue.",
+    },
+    "pilot_hn_004": {
+        "fiscal_absorption": "Annual government payments for entrusted construction and fiscal subsidies remain visible.",
+        "coordination": "Exit, re-entry, and 2020 CBIRC transfer-out language give the formal event unusual clarity.",
+        "project_asset_governance": "The same issuer continues entrusted construction, land preparation, infrastructure, and affordable housing.",
+    },
+    "pilot_sd_001": {
+        "fiscal_absorption": "Land-preparation gains and fiscal subsidies compensate the issuer.",
+        "coordination": "Non-platform-list disclosure is present; the original list basis has not yet been collected.",
+        "project_asset_governance": "Land preparation, government authorization, infrastructure, affordable housing, and entrusted assets continue.",
+    },
+    "pilot_js_003": {
+        "fiscal_absorption": "Government-supported affordable housing and real-business-background government receivables remain visible.",
+        "coordination": "Issuer compliance language is present; a separate platform-list source is still missing.",
+        "project_asset_governance": "Land preparation, infrastructure entrusted construction, and affordable housing continue.",
+    },
+    "pilot_gd_003": {
+        "fiscal_absorption": "Fiscal settlement for entrusted construction and contract-based payments are documented.",
+        "coordination": "SASAC-entrusted land preparation coexists with disclosure that the issuer was outside the 2018 platform directory.",
+        "project_asset_governance": "Public project tasks are formalized through SASAC-owned land and contract settlement.",
+    },
+}
+LATEX_TEXT_REPLACEMENTS = {
+    "棚户区改造": "shantytown redevelopment",
+    "市政水利设施配套": "municipal water facilities",
+    "政府购买服务": "government purchase service",
+    "财政性资金": "fiscal funds",
+    "委托建设": "entrusted construction",
+    "委托代建": "entrusted construction",
+    "代建": "entrusted construction",
+    "保障性安居": "affordable housing",
+    "保障房": "affordable housing",
+    "土地整理": "land preparation",
+    "工程款": "project payments",
+    "回购": "repurchase",
+}
 
 
 def read_csv(path: Path) -> list[dict]:
@@ -136,6 +216,31 @@ def tex_escape(value: str) -> str:
         .replace("{", "\\{")
         .replace("}", "\\}")
     )
+
+
+def tex_clean(value: str) -> str:
+    for source, replacement in LATEX_TEXT_REPLACEMENTS.items():
+        value = value.replace(source, f" {replacement} ")
+    value = "".join(char if ord(char) < 128 else " " for char in value)
+    return " ".join(value.split())
+
+
+def source_label(doc_id: str, lines: str) -> str:
+    year = next((part for part in doc_id.split("_") if part.isdigit() and len(part) == 4), "")
+    if "prospectus" in doc_id:
+        source_type = "prospectus"
+    elif "rating" in doc_id:
+        source_type = "rating report"
+    elif "legal" in doc_id:
+        source_type = "legal opinion"
+    elif "mtn" in doc_id:
+        source_type = "MTN disclosure"
+    elif "scp" in doc_id:
+        source_type = "SCP disclosure"
+    else:
+        source_type = "source document"
+    prefix = f"{year} {source_type}".strip()
+    return f"{prefix}, lines {lines}"
 
 
 def capacity_key(row: dict) -> tuple[str, str]:
@@ -350,6 +455,79 @@ def build_capacity_bin_rows() -> list[dict]:
     return [grouped[bin_name] for bin_name in CAPACITY_BIN_ORDER]
 
 
+def validated_display_rows() -> list[dict]:
+    built_rows = [row for row in build_rows() if row["case_status"] == "human_validated"]
+    labels_by_id = {row["case_id"]: row for row in read_csv(LABELS)}
+    matrix_by_id = {row["case_id"]: row for row in read_csv(PILOT_MATRIX)}
+    rows: list[dict] = []
+    for row in built_rows:
+        case_id = row["case_id"]
+        label_row = labels_by_id[case_id]
+        matrix_row = matrix_by_id[case_id]
+        rows.append(
+            {
+                **row,
+                "official_exit_event": label_row["official_exit_event"],
+                "primary_source": (
+                    f"{label_row['primary_evidence_doc']} lines "
+                    f"{label_row['primary_evidence_lines']}"
+                ),
+                "primary_source_short": source_label(
+                    label_row["primary_evidence_doc"],
+                    label_row["primary_evidence_lines"],
+                ),
+                "secondary_source": (
+                    f"{label_row['secondary_evidence_doc']} lines "
+                    f"{label_row['secondary_evidence_lines']}"
+                ),
+                "formal_exit_evidence": matrix_row["formal_exit_evidence"],
+                "continued_function_evidence": matrix_row[
+                    "continued_function_evidence"
+                ],
+                "fiscal_substitution_evidence": matrix_row[
+                    "fiscal_substitution_evidence"
+                ],
+                "fiscal_absorption": MECHANISM_EVIDENCE[case_id][
+                    "fiscal_absorption"
+                ],
+                "coordination": MECHANISM_EVIDENCE[case_id]["coordination"],
+                "project_asset_governance": MECHANISM_EVIDENCE[case_id][
+                    "project_asset_governance"
+                ],
+            }
+        )
+    return rows
+
+
+def build_source_audit_rows() -> list[dict]:
+    return [
+        {
+            "case_id": row["case_id"],
+            "city": row["display_city"],
+            "primary_source": row["primary_source"],
+            "primary_source_short": row["primary_source_short"],
+            "formal_event": row["formal_exit_evidence"],
+            "post_event_function": row["continued_function_evidence"],
+            "final_label": row["display_exit_type_or_status"],
+        }
+        for row in validated_display_rows()
+    ]
+
+
+def build_mechanism_rows() -> list[dict]:
+    return [
+        {
+            "case_id": row["case_id"],
+            "city": row["display_city"],
+            "final_label": row["display_exit_type_or_status"],
+            "fiscal_absorption": row["fiscal_absorption"],
+            "coordination": row["coordination"],
+            "project_asset_governance": row["project_asset_governance"],
+        }
+        for row in validated_display_rows()
+    ]
+
+
 def write_distribution_csv(rows: list[dict]) -> None:
     fieldnames = [
         "validation_tier",
@@ -373,6 +551,31 @@ def write_capacity_bin_csv(rows: list[dict]) -> None:
     write_csv(OUT_BIN_CSV, fieldnames, rows)
 
 
+def write_source_audit_csv(rows: list[dict]) -> None:
+    fieldnames = [
+        "case_id",
+        "city",
+        "primary_source",
+        "primary_source_short",
+        "formal_event",
+        "post_event_function",
+        "final_label",
+    ]
+    write_csv(OUT_SOURCE_AUDIT_CSV, fieldnames, rows)
+
+
+def write_mechanism_csv(rows: list[dict]) -> None:
+    fieldnames = [
+        "case_id",
+        "city",
+        "final_label",
+        "fiscal_absorption",
+        "coordination",
+        "project_asset_governance",
+    ]
+    write_csv(OUT_MECHANISM_CSV, fieldnames, rows)
+
+
 def write_tier_latex(rows: list[dict]) -> None:
     OUT_TIER_TEX.parent.mkdir(parents=True, exist_ok=True)
     with OUT_TIER_TEX.open("w", encoding="utf-8") as handle:
@@ -393,6 +596,79 @@ def write_tier_latex(rows: list[dict]) -> None:
             )
         handle.write("\\bottomrule\n")
         handle.write("\\end{tabular}\n")
+        handle.write("\\end{table}\n")
+
+
+def write_source_audit_latex(rows: list[dict]) -> None:
+    OUT_SOURCE_AUDIT_TEX.parent.mkdir(parents=True, exist_ok=True)
+    with OUT_SOURCE_AUDIT_TEX.open("w", encoding="utf-8") as handle:
+        handle.write("% Auto-generated by scripts/build_pilot_capacity_summary.py\n")
+        handle.write("\\begin{table}[p]\n")
+        handle.write("\\centering\n")
+        handle.write("\\caption{Source audit for human-validated pilot labels}\n")
+        handle.write("\\label{tab:pilot-source-audit}\n")
+        handle.write("\\begingroup\n")
+        handle.write("\\tiny\n")
+        handle.write("\\renewcommand{\\arraystretch}{0.92}\n")
+        handle.write("\\setlength{\\tabcolsep}{2pt}\n")
+        handle.write("\\begin{tabular}{@{}"
+                     ">{\\raggedright\\arraybackslash}p{0.10\\linewidth}"
+                     ">{\\raggedright\\arraybackslash}p{0.17\\linewidth}"
+                     ">{\\raggedright\\arraybackslash}p{0.23\\linewidth}"
+                     ">{\\raggedright\\arraybackslash}p{0.34\\linewidth}"
+                     ">{\\raggedright\\arraybackslash}p{0.10\\linewidth}@{}}\n")
+        handle.write("\\toprule\n")
+        handle.write("City & Primary source & Formal event & Post-event function & Label \\\\\n")
+        handle.write("\\midrule\n")
+        for row in rows:
+            handle.write(
+                f"{tex_escape(tex_clean(row['city']))} & "
+                f"{tex_escape(tex_clean(row['primary_source_short']))} & "
+                f"{tex_escape(tex_clean(row['formal_event']))} & "
+                f"{tex_escape(tex_clean(row['post_event_function']))} & "
+                f"{tex_escape(tex_clean(row['final_label']))} \\\\\n"
+            )
+        handle.write("\\bottomrule\n")
+        handle.write("\\end{tabular}\n")
+        handle.write("\\endgroup\n")
+        handle.write("\\end{table}\n")
+
+
+def write_mechanism_latex(rows: list[dict]) -> None:
+    OUT_MECHANISM_TEX.parent.mkdir(parents=True, exist_ok=True)
+    with OUT_MECHANISM_TEX.open("w", encoding="utf-8") as handle:
+        handle.write("% Auto-generated by scripts/build_pilot_capacity_summary.py\n")
+        handle.write("\\begin{table}[p]\n")
+        handle.write("\\centering\n")
+        handle.write("\\caption{Mechanism evidence in human-validated pilot cases}\n")
+        handle.write("\\label{tab:pilot-mechanism-evidence}\n")
+        handle.write("\\begingroup\n")
+        handle.write("\\scriptsize\n")
+        handle.write("\\renewcommand{\\arraystretch}{0.92}\n")
+        handle.write("\\setlength{\\tabcolsep}{2pt}\n")
+        handle.write("\\begin{tabular}{@{}"
+                     ">{\\raggedright\\arraybackslash}p{0.10\\linewidth}"
+                     ">{\\raggedright\\arraybackslash}p{0.12\\linewidth}"
+                     ">{\\raggedright\\arraybackslash}p{0.23\\linewidth}"
+                     ">{\\raggedright\\arraybackslash}p{0.25\\linewidth}"
+                     ">{\\raggedright\\arraybackslash}p{0.25\\linewidth}@{}}\n")
+        handle.write("\\toprule\n")
+        handle.write(
+            "City & Label & Fiscal absorption & Bureaucratic coordination & "
+            "Project and asset governance \\\\\n"
+        )
+        handle.write("\\midrule\n")
+        for row in rows:
+            handle.write(
+                f"{tex_escape(tex_clean(row['city']))} & "
+                f"{tex_escape(tex_clean(row['final_label']))} & "
+                f"{tex_escape(tex_clean(row['fiscal_absorption']))} & "
+                f"{tex_escape(tex_clean(row['coordination']))} & "
+                f"{tex_escape(tex_clean(row['project_asset_governance']))} \\\\\n"
+            )
+        handle.write("\\bottomrule\n")
+        handle.write("\\end{tabular}\n")
+        handle.write("\\endgroup\n")
         handle.write("\\end{table}\n")
 
 
@@ -540,26 +816,38 @@ def main() -> int:
     rows = build_rows()
     distribution_rows = build_distribution_rows()
     capacity_bin_rows = build_capacity_bin_rows()
+    source_audit_rows = build_source_audit_rows()
+    mechanism_rows = build_mechanism_rows()
     fieldnames = list(rows[0].keys())
     write_csv(OUT_CSV, fieldnames, rows)
     write_distribution_csv(distribution_rows)
     write_capacity_bin_csv(capacity_bin_rows)
+    write_source_audit_csv(source_audit_rows)
+    write_mechanism_csv(mechanism_rows)
     write_latex(rows)
     write_validated_latex(rows)
     write_tier_latex(distribution_rows)
     write_capacity_bin_latex(capacity_bin_rows)
+    write_source_audit_latex(source_audit_rows)
+    write_mechanism_latex(mechanism_rows)
     write_distribution_figure(distribution_rows)
     write_figure(rows)
     print(f"rows={len(rows)}")
     print(f"distribution_rows={len(distribution_rows)}")
     print(f"capacity_bin_rows={len(capacity_bin_rows)}")
+    print(f"source_audit_rows={len(source_audit_rows)}")
+    print(f"mechanism_rows={len(mechanism_rows)}")
     print(f"csv={OUT_CSV}")
     print(f"distribution_csv={OUT_DISTRIBUTION_CSV}")
     print(f"capacity_bin_csv={OUT_BIN_CSV}")
+    print(f"source_audit_csv={OUT_SOURCE_AUDIT_CSV}")
+    print(f"mechanism_csv={OUT_MECHANISM_CSV}")
     print(f"tex={OUT_TEX}")
     print(f"validated_tex={OUT_VALIDATED_TEX}")
     print(f"tier_tex={OUT_TIER_TEX}")
     print(f"capacity_bin_tex={OUT_BIN_TEX}")
+    print(f"source_audit_tex={OUT_SOURCE_AUDIT_TEX}")
+    print(f"mechanism_tex={OUT_MECHANISM_TEX}")
     print(f"distribution_tex={OUT_DISTRIBUTION_TEX}")
     print(f"figure={OUT_FIG}")
     return 0
