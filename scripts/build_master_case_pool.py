@@ -95,7 +95,12 @@ def write_csv(path: pathlib.Path, rows: list[dict[str, str]]) -> None:
         writer = csv.DictWriter(f, fieldnames=OUTPUT_COLUMNS, lineterminator="\n")
         writer.writeheader()
         for row in rows:
-            writer.writerow({column: row.get(column, "") for column in OUTPUT_COLUMNS})
+            writer.writerow(
+                {
+                    column: "" if row.get(column, "") is None else row.get(column, "")
+                    for column in OUTPUT_COLUMNS
+                }
+            )
 
 
 def split_values(value: str) -> list[str]:
