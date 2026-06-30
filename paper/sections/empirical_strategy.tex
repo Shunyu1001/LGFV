@@ -127,22 +127,21 @@ I then match the validated cases and three candidate cases to the CBDB-GADM
 elite-density measure \citep{cbdb2024,gadm2022}. Table
 \ref{tab:pilot-historical-capacity} and Figure
 \ref{fig:pilot-historical-capacity} show the resulting values. The descriptive
-pattern has three parts. First, the high-capacity cases are not all coded the
-same way. Guangzhou and Ningbo appear as substantive exit, while Hangzhou and
-Foshan appear as functional transfer, and Jinan and Chengdu appear as nominal
-exit. This variation is consistent with the argument that historical capacity
-changes the feasible menu of institutional responses rather than mechanically
-determining one outcome. Second, the validated low-capacity cases, Zhuzhou,
-Xuzhou, and Yancheng, are coded as nominal exit: the documents contain formal
-exit or no-government-financing language, but the same issuers continued to
-perform land preparation, major project construction, shantytown redevelopment,
+pattern is not a simple high-versus-low split. Guangzhou and Ningbo appear as
+substantive exit, while Hangzhou and Foshan appear as functional transfer, and
+Jinan and Chengdu appear as nominal exit. This variation is consistent with the
+argument that historical capacity changes the feasible menu of institutional
+responses rather than mechanically determining one outcome. At the lower end of
+the historical-capacity distribution, the validated cases of Zhuzhou, Xuzhou,
+and Yancheng are all coded as nominal exit. Their documents contain formal exit
+or no-government-financing language, but the same issuers continued to perform
+land preparation, major project construction, shantytown redevelopment,
 infrastructure construction, entrusted construction, affordable housing, or
-fiscal-support functions. Third,
-Luzhou, Zunyi, and Liupanshui remain candidate cases rather than final labels,
-but their source packets show why weak-capacity localities are central to the
-next round of data collection: the documentary trail is often dominated by
-debt-resolution pressure, fiscal support, and continuing public-project
-functions rather than by clean exit-list documents.
+fiscal-support functions. Luzhou, Zunyi, and Liupanshui remain candidate cases
+rather than final labels, but their source packets show why weak-capacity
+localities are central to the next round of data collection. The documentary
+trail is often dominated by debt-resolution pressure, fiscal support, and
+continuing public-project functions rather than by clean exit-list documents.
 
 \input{tables/pilot_case_historical_capacity}
 
@@ -171,21 +170,20 @@ imperfect surrogate labels and use human-validated labels as gold-standard
 outcomes for inference.
 
 The main inferential strategy will follow the design-based supervised learning
-approach proposed by \citet{egami2023dsl}. The procedure has three steps.
-First, I draw a validation sample of city-platform cases for human labeling
-with known sampling probabilities. This sampling design is part of the
-estimator rather than an after-the-fact quality check. Second, I use the LLM
-labels, source metadata, and case covariates to predict the gold-standard
-labels in the larger candidate sample. Third, I combine the prediction model
-with the validation sample through a doubly robust correction, so that the
-downstream regression or descriptive estimand is adjusted for surrogate-label
-error.
+approach proposed by \citet{egami2023dsl}. I draw a validation sample of
+city-platform cases for human labeling with known sampling probabilities, so
+that the validation design becomes part of the estimator rather than an
+after-the-fact quality check. The LLM labels, source metadata, and case
+covariates are then used to predict gold-standard labels in the larger
+candidate sample. The prediction model is combined with the validation sample
+through a doubly robust correction, so that the downstream regression or
+descriptive estimand is adjusted for surrogate-label error.
 
-This approach is useful because the quantities of interest are not the
-prediction accuracy of the LLM labels. They are downstream relationships, such
-as the association between historical state capacity and substantive exit, or
-the distribution of exit types across historical-capacity groups. For the
-binary specification, the DSL estimator can be applied directly to
+The quantities of interest are downstream relationships rather than the
+prediction accuracy of the LLM labels. These include the association between
+historical state capacity and substantive exit, as well as the distribution of
+exit types across historical-capacity groups. For the binary specification, the
+DSL estimator can be applied directly to
 $SubstantiveExit_i$. For the multinomial specification, I can construct one
 indicator for each exit type and estimate the corresponding type-specific
 relationship, with uncertainty that reflects both sampling variation and label
