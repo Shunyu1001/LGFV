@@ -41,3 +41,5 @@ pilot_gd_002,1,Guangdong,Shenzhen,深圳市特区建设发展集团有限公司,
 pilot_gz_003,2,Guizhou,Liupanshui,六盘水市开发投资有限公司,debt_pressure_inland,documents_found,documents_found,CHN.8.4_1,Liupanshui,六盘水市,4,9993.113,6,5,1,0.60,0.50,0.10,33,0.000,low,Low historical elite density,already_documented
 expand_zj_yuyao_chengtou,3,Zhejiang,Yuyao,余姚市城市建设投资发展有限公司,additional_county_level_coastal,documents_found,complete,,,,,,,,,,,,,,,,validated_expansion_case_pending_capacity_merge
 expand_js_taizhou_jindong,3,Jiangsu,Taizhou,泰州市金东城市建设投资集团有限公司,additional_prefecture_case,documents_found,complete,,,,,,,,,,,,,,,,validated_expansion_case_pending_capacity_merge
+expand_hlj_harbin_chengtou,3,Heilongjiang,Harbin,哈尔滨市城市建设投资集团有限公司,additional_northeast_capital,documents_found,complete,,,,,,,,,,,,,,,,validated_expansion_case_pending_capacity_merge
+expand_hb_xiaogan_chengtou,3,Hubei,Xiaogan,孝感市城市建设投资公司,additional_central_prefecture,documents_found,complete,,,,,,,,,,,,,,,,validated_expansion_case_pending_capacity_merge
