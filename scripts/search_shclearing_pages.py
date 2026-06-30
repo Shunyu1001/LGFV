@@ -43,12 +43,18 @@ def normalize(text: str) -> str:
 
 
 def iter_items(category: str, pages: int, sleep: float, timeout: float):
+    consecutive_404 = 0
     for page_index in range(pages):
         url = page_url(category, page_index)
         try:
             text = fetch(url, timeout)
+            consecutive_404 = 0
         except Exception as exc:  # pragma: no cover - network helper
             print(f"warning: failed {url}: {exc}", file=sys.stderr)
+            if "HTTP Error 404" in str(exc):
+                consecutive_404 += 1
+                if consecutive_404 >= 3:
+                    break
             continue
         for match in ITEM_RE.finditer(text):
             title = normalize(match.group("title"))
