@@ -92,7 +92,7 @@ def read_csv(path: pathlib.Path) -> list[dict[str, str]]:
 def write_csv(path: pathlib.Path, rows: list[dict[str, str]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=OUTPUT_COLUMNS)
+        writer = csv.DictWriter(f, fieldnames=OUTPUT_COLUMNS, lineterminator="\n")
         writer.writeheader()
         for row in rows:
             writer.writerow({column: row.get(column, "") for column in OUTPUT_COLUMNS})
@@ -281,7 +281,7 @@ def build_rows(
             "llm_model": "",
             "human_reviewer": (label or {}).get("human_reviewer", ""),
             "validation_date": (label or {}).get("validation_date", ""),
-            "notes": candidate.get("notes", ""),
+            "notes": (label or {}).get("notes", "") or candidate.get("notes", ""),
         }
         rows.append(row)
 
@@ -319,6 +319,7 @@ def build_rows(
                 "land_finance_dependence_status": "not_collected",
                 "human_reviewer": label.get("human_reviewer", ""),
                 "validation_date": label.get("validation_date", ""),
+                "notes": label.get("notes", ""),
             }
         )
 

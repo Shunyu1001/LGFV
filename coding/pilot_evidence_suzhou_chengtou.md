@@ -5,9 +5,9 @@
 - Case ID: `pilot_js_002`
 - Company: Suzhou City Construction Investment Development Group Co., Ltd.
   (`苏州城市建设投资发展（集团）有限公司`)
-- Status: high historical-capacity candidate evidence packet
-- Preliminary coding implication: `substantive_exit_or_functional_transfer`
-- Confidence: candidate only
+- Status: human-validated evidence packet
+- Final coding: `nominal_exit`
+- Confidence: medium
 - Main source page: Shanghai Clearing House,
   `苏州城市建设投资发展(集团)有限公司2026年度第一期中期票据发行文件`,
   2026-03-02
@@ -31,8 +31,11 @@ having transformed toward an operating entity with city construction, city
 operations, industrial development, and city-investment financial services.
 
 This makes Suzhou useful for distinguishing two high-capacity outcomes:
-substantive exit from government financing, and functional transfer into a more
-marketized or operating-oriented municipal state-owned group.
+substantive exit from government financing and nominal exit through formal
+compliance. The final coding is nominal exit because the same issuer reports
+formal no-government-financing compliance while continuing to occupy a central
+position in urban infrastructure, public-utility investment, project funding,
+debt repayment, and delegated project management.
 
 ## Machine-Readable Documents
 
@@ -137,20 +140,41 @@ Relevant extracted-text locations:
 - `doc_js_sz_chengtou_2026_mtn1_006.txt`, lines 2252-2258
 - `doc_js_sz_chengtou_2026_mtn1_006.txt`, lines 3671-3691
 
-## Coding Implication
+## Validation Decision
 
-The case should remain a candidate evidence packet rather than a final label.
+The case is coded as `nominal_exit` at medium confidence.
 
-The strongest current interpretation is that Suzhou is a high-capacity
-transformation case. It has stronger substantive-exit evidence than Xi'an
-because the 2026 documents contain repeated no-government-financing,
-no-hidden-debt, no-BT, and no-government-project-advance-financing language. Yet
-the case should not be treated as pure disappearance of public functions. The
-issuer continues to hold city construction, city operation, public utility,
-delegated project, and city-investment financial functions.
+The formal event is the 2015 compliance claim in the 2026 prospectus. The
+prospectus states that the company does not undertake government financing
+functions and that new debt after January 1, 2015 is not local government debt.
+It also states that the 2026 MTN proceeds will not increase government debt,
+will not create or falsely resolve hidden debt, will not be transferred to
+government or fiscal use, and will not be directly repaid by fiscal funds. The
+legal opinion strengthens this compliance evidence by stating that the issuer
+has no PPP projects, government investment funds, BT projects, project
+repurchase arrangements, government purchase-of-service arrangements, or
+advance financing for government projects.
 
-For now, code this as `substantive_exit_or_functional_transfer` pending manual
-validation. The key validation question is whether the delegated project and
-city-investment financial-service activities are mainly formal operating
-businesses under marketized or fiscal-management rules, or whether they preserve
-quasi-fiscal financing functions in a new form.
+The post-event function evidence points away from substantive exit. The same
+prospectus describes Suzhou City Investment as Suzhou's main urban
+infrastructure and public-utility investment, construction, and operation body.
+It states that the company is responsible for funding and debt repayment related
+to urban infrastructure construction projects and remains important in roads,
+railway-station construction, urban renewal, gas, water, and other public
+utility fields. The prospectus and 2023 financial report also show delegated
+project-management accounts, delegated project assets, fiscal special funds,
+and government-directed stakes in new-town and logistics projects.
+
+The main alternative label is `substantive_exit`. The reason is that the legal
+opinion is unusually explicit about the absence of PPP, BT, government purchase
+service, project repurchase, land-reserve, and advance-financing functions. The
+case therefore sits near the boundary between nominal exit and formal fiscal
+substitution. The final label remains nominal exit because the same issuer
+continues to be described as a project-funding and debt-repayment body for
+urban infrastructure, and because delegated project accounts and fiscal special
+funds keep the public-project function inside the same corporate group.
+
+Source coverage score: 4. The packet contains a prospectus, legal opinion, and
+financial report from the same Shanghai Clearing issuance disclosure page. The
+confidence should rise only if an independent government or regulator source
+confirms the original platform-list status or the 2015 transformation event.
