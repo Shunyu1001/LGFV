@@ -183,35 +183,52 @@ vary sharply in historical administrative human capital.
 
 \subsection{Inference with surrogate labels}
 
-The large-sample version of the project will use LLM-assisted labels before all
-candidate cases can be fully human-validated. Directly using these labels as if
-they were true outcomes would create a measurement problem, because LLM errors
-may be correlated with source quality, city capacity, document type, or the
-visibility of formal compliance language. I therefore treat LLM labels as
-imperfect surrogate labels and use human-validated labels as gold-standard
-outcomes for inference.
+The scaled version of the project separates three objects that are often
+collapsed in text-as-data applications. The first is the human-validated label,
+which is the gold-standard outcome. The second is the Codex or LLM-generated
+label, which is an imperfect surrogate for that outcome. The third is the
+source-packet status, which records whether a candidate disclosure contains
+enough source text to support any label at all. This distinction is important
+because measurement error is not likely to be random. A model may overread
+formal no-government-financing language as substantive exit, miss continuing
+public-project functions buried in bond documents, or produce no useful label
+when the candidate file contains only a disclosure-page title.
 
-The main inferential strategy will follow the design-based supervised learning
-approach proposed by \citet{egami2023dsl}. I draw a validation sample of
-city-platform cases for human labeling with known sampling probabilities, so
-that the validation design becomes part of the estimator rather than an
-after-the-fact quality check. The LLM labels, source metadata, and case
-covariates are then used to predict gold-standard labels in the larger
-candidate sample. The prediction model is combined with the validation sample
-through a doubly robust correction, so that the downstream regression or
-descriptive estimand is adjusted for surrogate-label error.
+The current screening file makes this separation explicit. It contains fifty
+human-validated gold-standard cases and 197 pending candidate cases. Applying
+the frozen codebook through a conservative Codex screening pass produces two
+surrogate labels and 195 unresolved candidates. The two surrogate labels are
+medium-confidence nominal-exit cases because the source packets contain direct
+no-government-financing language together with continuing urban infrastructure
+functions. The unresolved cases remain unresolved for two different reasons:
+some have source packets but no direct formal exit or compliance event, while
+most Shanghai Clearing harvest rows still contain only a title and URL. These
+rows are retained for source collection but are not treated as outcomes.
 
-The quantities of interest are downstream relationships rather than the
-prediction accuracy of the LLM labels. These include the association between
-historical state capacity and substantive exit, as well as the distribution of
-exit types across historical-capacity groups. For the binary specification, the
-DSL estimator can be applied directly to
-$SubstantiveExit_i$. For the multinomial specification, I can construct one
-indicator for each exit type and estimate the corresponding type-specific
-relationship, with uncertainty that reflects both sampling variation and label
-uncertainty. The human-validated label file remains the authoritative source
-for final case labels; the DSL procedure provides a way to use the larger
-LLM-coded candidate set without treating surrogate labels as error-free.
+For inference, I follow the design-based supervised learning logic of
+\citet{egami2023dsl}. Let $Y_i$ denote the unobserved gold-standard exit label,
+$S_i$ the LLM surrogate label, and $V_i$ an indicator for whether case $i$ is
+human validated. The validation sample is drawn with known sampling
+probabilities and oversamples low-capacity and high-debt localities, where
+measurement risk is greatest. A prediction model uses $S_i$, source coverage,
+document type, candidate priority, historical capacity, debt pressure, land
+finance dependence, and platform characteristics to estimate the gold-standard
+outcome. The downstream estimand, such as the association between historical
+capacity and substantive exit, is then estimated with a validation-adjusted or
+doubly robust correction rather than with raw surrogate labels.
+
+This procedure changes the role of the model. The LLM is not the final coder,
+and its accuracy is not the main quantity of interest. The model helps expand
+the candidate pool and provides auxiliary information for prediction. Human
+labels identify the outcome scale and estimate the error structure. Cases
+without usable source packets enter the workflow as missing-label candidates
+rather than as negative outcomes. For the binary specification, the corrected
+estimand is the relationship between historical capacity and
+$SubstantiveExit_i$. For the multinomial specification, I estimate
+type-specific indicators for substantive exit, nominal exit, functional
+transfer, and liquidation. In both cases, uncertainty must reflect the
+validation design and the fact that the large candidate pool is measured
+through imperfect surrogates.
 
 \subsection{Mechanism analyses}
 

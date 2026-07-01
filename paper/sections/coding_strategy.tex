@@ -198,6 +198,15 @@ for the classification, and the most plausible alternative label. The prompt
 also requires the model to return \texttt{unclear} when the source packet lacks
 a formal event or lacks evidence about the post-event function.
 
+The first Codex screening pass follows this rule conservatively. It keeps the
+fifty human-validated labels as gold-standard observations and applies the
+codebook only to pending candidates. Among 197 pending cases, the pass produces
+two medium-confidence surrogate labels and leaves the remaining cases
+unresolved because they either lack source-packet text or lack direct formal
+exit or compliance evidence. This is a feature of the design rather than a
+failure of automation: the model is allowed to identify source gaps instead of
+guessing institutional outcomes from titles or generic disclosure language.
+
 Human validation compares the model's evidence claims with the original
 documents and removes claims that are not supported by the source text. It also
 evaluates whether the model has confused legal compliance language with
