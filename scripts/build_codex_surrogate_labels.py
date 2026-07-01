@@ -349,15 +349,6 @@ def main() -> int:
         if row.get("llm_label_status") == "gold_standard":
             output.append(human_row(row, human_by_case))
             continue
-        if row.get("pool_source") == "shclearing_harvest_broad":
-            output.append(
-                unresolved(
-                    row,
-                    "Shanghai Clearing harvest row has only a disclosure-page title and URL in the seed file. A source packet must be downloaded and extracted before Codex can classify exit type.",
-                    "1",
-                )
-            )
-            continue
         master = master_by_case.get(row.get("source_row_id", ""), {})
         output.append(surrogate_row(row, master, docs, sources_by_case))
 

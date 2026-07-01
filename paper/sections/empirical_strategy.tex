@@ -196,13 +196,17 @@ when the candidate file contains only a disclosure-page title.
 
 The current screening file makes this separation explicit. It contains fifty
 human-validated gold-standard cases and 197 pending candidate cases. Applying
-the frozen codebook through a conservative Codex screening pass produces two
-surrogate labels and 195 unresolved candidates. The two surrogate labels are
+the frozen codebook through a conservative Codex screening pass produces 49
+surrogate labels and 148 unresolved candidates. The surrogate labels are
 medium-confidence nominal-exit cases because the source packets contain direct
-no-government-financing language together with continuing urban infrastructure
-functions. The unresolved cases remain unresolved for two different reasons:
-some have source packets but no direct formal exit or compliance event, while
-most Shanghai Clearing harvest rows still contain only a title and URL. These
+no-government-financing language together with continuing public-project,
+infrastructure, entrusted-construction, land-development, fiscal-support, or
+state-asset functions. They correspond to 32 unique issuers because repeated
+bond disclosures often describe the same platform. The analysis therefore
+treats them as disclosure-level surrogate labels until they are deduplicated
+or aggregated to the city-platform level. The unresolved cases remain
+unresolved for two reasons: some have source packets but no direct formal exit
+or compliance event, while others still need source-packet collection. These
 rows are retained for source collection but are not treated as outcomes.
 
 For inference, I follow the design-based supervised learning logic of

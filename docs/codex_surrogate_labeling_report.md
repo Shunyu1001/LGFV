@@ -2,8 +2,8 @@
 
 Date: 2026-07-01
 
-This note records the first Codex-based surrogate labeling pass for the LGFV
-exit project. The output is a screening file, not a human-validated label file.
+This note records the Codex-based surrogate labeling passes for the LGFV exit
+project. The output is a screening file, not a human-validated label file.
 
 ## Inputs
 
@@ -16,19 +16,30 @@ exit project. The output is a screening file, not a human-validated label file.
 ## Output
 
 - `data/analysis_inputs/codex_surrogate_labels_2026_07_01.csv`
+- `data/analysis_inputs/codex_surrogate_issuer_summary_2026_07_01.csv`
 
 The output contains 247 rows:
 
 - 50 human gold-standard labels
 - 197 pending candidate cases screened by Codex
-- 2 Codex surrogate labels
-- 195 unresolved candidate cases
+- 49 Codex surrogate labels
+- 148 unresolved candidate cases
 
-The two Codex surrogate labels are medium-confidence `nominal_exit` labels for
-Guangzhou Metro and Nanjing Metro. In both cases, the source packets contain
-direct no-government-financing language together with continuing urban
-infrastructure functions. These remain surrogate labels and require human
-validation before entering the gold-standard label file.
+The first pass produced two medium-confidence `nominal_exit` labels for
+Guangzhou Metro and Nanjing Metro. The Shanghai Clearing source-packet passes
+added source packets for 56 high- and medium-priority harvest rows and produced
+47 additional medium-confidence `nominal_exit` surrogate labels. These cases contain direct
+no-government-financing language together with continuing urban infrastructure,
+entrusted construction, land-development, fiscal-support, or public-project
+functions. They remain surrogate labels and require human validation before
+entering the gold-standard label file.
+
+The 49 surrogate labels correspond to 32 unique issuers because several
+Shanghai Clearing rows are repeated bond disclosures for the same platform. The
+analysis file therefore preserves the disclosure-level labels, while the next
+statistical step must aggregate or deduplicate them at the issuer or
+city-platform level. The issuer-level summary file performs this preliminary
+collapse and keeps evidence snippets for later human review.
 
 ## Conservative Rule
 
@@ -36,7 +47,8 @@ Codex only produces an exit-type surrogate when the source packet contains
 direct formal exit, no-government-financing, or market-oriented transformation
 language. Ordinary historical equity transfers, generic debt-restructuring
 discussion, subsidiary changes, and Shanghai Clearing disclosure titles do not
-create a surrogate outcome.
+create a surrogate outcome. Shanghai Clearing rows are classified only after
+their attached PDF source packets have been downloaded and converted to text.
 
 This conservative rule is intentional. The purpose of the first pass is to
 separate usable surrogate labels from cases that still need source-packet
@@ -57,9 +69,10 @@ substantive exit.
 
 ## Next Step
 
-The main bottleneck is source-packet construction for the 175 Shanghai
-Clearing harvest rows. Each row currently has a disclosure-page title and URL,
-but most do not yet have downloaded and extracted prospectuses, rating reports,
-legal opinions, or financial statements. The next collection task is to
-download and extract source packets for high-priority harvest rows before
-running a second Codex labeling pass.
+The high- and medium-priority Shanghai Clearing source-packet workflow is now
+functional. It added 56 disclosure pages and 456 attached documents to the
+inventory, downloaded the PDF packets, and extracted usable text from all 56
+case directories. Across these packets, 323 extracted text files contain at
+least 200 characters, with about 28.7 million usable characters. The next
+collection task is to deduplicate repeated issuer disclosures and select the
+strongest packets for human validation.
