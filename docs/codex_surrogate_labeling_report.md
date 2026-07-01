@@ -17,6 +17,7 @@ project. The output is a screening file, not a human-validated label file.
 
 - `data/analysis_inputs/codex_surrogate_labels_2026_07_01.csv`
 - `data/analysis_inputs/codex_surrogate_issuer_summary_2026_07_01.csv`
+- `data/analysis_inputs/surrogate_validation_queue_2026_07_01.csv`
 
 The output contains 247 rows:
 
@@ -35,7 +36,11 @@ functions. They remain surrogate labels and require human validation before
 entering the gold-standard label file.
 
 The 49 surrogate labels correspond to 32 unique issuers because several
-Shanghai Clearing rows are repeated bond disclosures for the same platform. The
+Shanghai Clearing rows are repeated bond disclosures for the same platform. Of
+these 32 issuers, 20 exactly match issuers that already appear in the
+gold-standard human-validated label file under different case IDs. This overlap
+is useful as a consistency check, but it should not be counted as new sample
+expansion. The remaining 12 issuers form the current validation queue. The
 analysis file therefore preserves the disclosure-level labels, while the next
 statistical step must aggregate or deduplicate them at the issuer or
 city-platform level. The issuer-level summary file performs this preliminary
@@ -74,5 +79,7 @@ functional. It added 56 disclosure pages and 456 attached documents to the
 inventory, downloaded the PDF packets, and extracted usable text from all 56
 case directories. Across these packets, 323 extracted text files contain at
 least 200 characters, with about 28.7 million usable characters. The next
-collection task is to deduplicate repeated issuer disclosures and select the
-strongest packets for human validation.
+collection task is to review the 12 queued non-overlap issuers and decide
+whether to promote them to gold-standard labels, reject them as boundary cases,
+or retain them as surrogate-only observations for validation-adjusted
+inference.

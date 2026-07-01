@@ -6,12 +6,14 @@ from __future__ import annotations
 import argparse
 import csv
 import pathlib
+import re
 from collections import Counter, defaultdict
 from datetime import date
 
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DEFAULT_INPUT = ROOT / "data" / "analysis_inputs" / f"codex_surrogate_labels_{date.today():%Y_%m_%d}.csv"
+DEFAULT_HUMAN = ROOT / "data" / "processed" / "human_validated_labels.csv"
 DEFAULT_OUTPUT = ROOT / "data" / "analysis_inputs" / f"codex_surrogate_issuer_summary_{date.today():%Y_%m_%d}.csv"
 
 FIELDS = [
@@ -26,6 +28,9 @@ FIELDS = [
     "max_continued_function_evidence_score",
     "formal_event_examples",
     "continued_function_examples",
+    "gold_standard_overlap",
+    "gold_case_id",
+    "gold_final_label",
     "needs_human_review",
 ]
 
@@ -35,6 +40,10 @@ CONFIDENCE_ORDER = {"low": 1, "medium": 2, "high": 3}
 def read_csv(path: pathlib.Path) -> list[dict[str, str]]:
     with path.open(newline="", encoding="utf-8") as handle:
         return list(csv.DictReader(handle))
+
+
+def compact_name(value: str) -> str:
+    return re.sub(r"[^\w\u4e00-\u9fff]", "", (value or "").lower())
 
 
 def max_by_order(values: list[str], order: dict[str, int]) -> str:
@@ -69,6 +78,7 @@ def compact_examples(values: list[str], limit: int = 2) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", type=pathlib.Path, default=DEFAULT_INPUT)
+    parser.add_argument("--human", type=pathlib.Path, default=DEFAULT_HUMAN)
     parser.add_argument("--output", type=pathlib.Path, default=DEFAULT_OUTPUT)
     args = parser.parse_args()
 
@@ -80,10 +90,16 @@ def main() -> int:
     groups: dict[str, list[dict[str, str]]] = defaultdict(list)
     for row in rows:
         groups[row.get("issuer_name", "")].append(row)
+    human_by_issuer = {
+        compact_name(row.get("company_name", "")): row
+        for row in read_csv(args.human)
+        if row.get("company_name")
+    }
 
     output: list[dict[str, str]] = []
     for issuer, issuer_rows in sorted(groups.items()):
         label_counts = Counter(row.get("exit_type", "") for row in issuer_rows)
+        human = human_by_issuer.get(compact_name(issuer), {})
         if len(label_counts) == 1:
             exit_type = next(iter(label_counts))
         else:
@@ -105,6 +121,9 @@ def main() -> int:
                 "continued_function_examples": compact_examples(
                     [row.get("continued_function_summary", "") for row in issuer_rows]
                 ),
+                "gold_standard_overlap": "true" if human else "false",
+                "gold_case_id": human.get("case_id", ""),
+                "gold_final_label": human.get("final_label", ""),
                 "needs_human_review": "true",
             }
         )

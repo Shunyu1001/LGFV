@@ -204,7 +204,12 @@ infrastructure, entrusted-construction, land-development, fiscal-support, or
 state-asset functions. They correspond to 32 unique issuers because repeated
 bond disclosures often describe the same platform. The analysis therefore
 treats them as disclosure-level surrogate labels until they are deduplicated
-or aggregated to the city-platform level. The unresolved cases remain
+or aggregated to the city-platform level. At the issuer level, 20 of these
+issuers exactly match platforms already present in the gold-standard file under
+different case IDs. This overlap is useful for checking whether the surrogate
+procedure recovers already validated nominal-exit cases, but it is not counted
+as new validation expansion. The remaining 12 non-overlap issuers form the next
+human-review queue. The unresolved cases remain
 unresolved for two reasons: some have source packets but no direct formal exit
 or compliance event, while others still need source-packet collection. These
 rows are retained for source collection but are not treated as outcomes.
