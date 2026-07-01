@@ -127,7 +127,7 @@ mechanically imply nominal exit because the continued function may be located
 in a successor entity rather than the same issuer.
 
 Table~\ref{tab:pilot_cases} summarizes five illustrative human-validated pilot
-cases. The full label file now contains fifty validated labels; this
+cases. The full label file now contains fifty-one validated labels; this
 table is not an empirical result or an exhaustive case list. Its purpose is to
 show how the same coding rule operates across different documentary patterns.
 
@@ -198,20 +198,20 @@ for the classification, and the most plausible alternative label. The prompt
 also requires the model to return \texttt{unclear} when the source packet lacks
 a formal event or lacks evidence about the post-event function.
 
-The Codex screening pass follows this rule conservatively. It keeps the fifty
-human-validated labels as gold-standard observations and applies the codebook
-only to pending candidates. Among 197 pending cases, the current pass produces
-49 medium-confidence surrogate labels and leaves 148 cases unresolved. The
+The Codex screening pass follows this rule conservatively. It keeps the
+fifty-one human-validated labels as gold-standard observations and applies the codebook
+only to pending candidates. Among 196 pending cases, the current pass produces
+48 medium-confidence surrogate labels and leaves 148 cases unresolved. The
 surrogate labels are nominal-exit cases. They contain direct
 no-government-financing language together with continuing evidence of urban
 infrastructure, entrusted construction, land development, fiscal support, or
 public-project functions. They correspond to 32 unique issuers because several
 labels come from repeated bond disclosures for the same platform. The
 statistical analysis will therefore aggregate or deduplicate them at the issuer
-or city-platform level. Twenty of the 32 issuers exactly match issuers that
+or city-platform level. Twenty-one of the 32 issuers exactly match issuers that
 already appear in the gold-standard label file under different case IDs. These
 overlaps are treated as consistency checks rather than new observations. The
-remaining 12 issuers form the next validation queue. The unresolved cases are
+remaining 11 issuers form the next validation queue. The unresolved cases are
 not negative outcomes. They either lack source-packet text or lack direct
 formal exit or compliance evidence. This is a feature of the design rather than
 a failure of automation: the model is allowed to identify source gaps instead

@@ -21,26 +21,28 @@ project. The output is a screening file, not a human-validated label file.
 
 The output contains 247 rows:
 
-- 50 human gold-standard labels
-- 197 pending candidate cases screened by Codex
-- 49 Codex surrogate labels
+- 51 human gold-standard labels
+- 196 pending candidate cases screened by Codex
+- 48 Codex surrogate labels
 - 148 unresolved candidate cases
 
 The first pass produced two medium-confidence `nominal_exit` labels for
 Guangzhou Metro and Nanjing Metro. The Shanghai Clearing source-packet passes
-added source packets for 56 high- and medium-priority harvest rows and produced
-47 additional medium-confidence `nominal_exit` surrogate labels. These cases contain direct
+added source packets for 56 high- and medium-priority harvest rows. After
+promoting Kunming Transportation Investment Group from the review queue into
+the gold-standard file, the screening file contains 46 additional
+medium-confidence `nominal_exit` surrogate labels from these packets. These cases contain direct
 no-government-financing language together with continuing urban infrastructure,
 entrusted construction, land-development, fiscal-support, or public-project
 functions. They remain surrogate labels and require human validation before
 entering the gold-standard label file.
 
-The 49 surrogate labels correspond to 32 unique issuers because several
+The 48 surrogate labels correspond to 32 unique issuers because several
 Shanghai Clearing rows are repeated bond disclosures for the same platform. Of
-these 32 issuers, 20 exactly match issuers that already appear in the
+these 32 issuers, 21 exactly match issuers that already appear in the
 gold-standard human-validated label file under different case IDs. This overlap
 is useful as a consistency check, but it should not be counted as new sample
-expansion. The remaining 12 issuers form the current validation queue. The
+expansion. The remaining 11 issuers form the current validation queue. The
 analysis file therefore preserves the disclosure-level labels, while the next
 statistical step must aggregate or deduplicate them at the issuer or
 city-platform level. The issuer-level summary file performs this preliminary
@@ -79,7 +81,7 @@ functional. It added 56 disclosure pages and 456 attached documents to the
 inventory, downloaded the PDF packets, and extracted usable text from all 56
 case directories. Across these packets, 323 extracted text files contain at
 least 200 characters, with about 28.7 million usable characters. The next
-collection task is to review the 12 queued non-overlap issuers and decide
+collection task is to review the 11 queued non-overlap issuers and decide
 whether to promote them to gold-standard labels, reject them as boundary cases,
 or retain them as surrogate-only observations for validation-adjusted
 inference.
