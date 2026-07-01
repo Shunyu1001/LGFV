@@ -26,7 +26,7 @@ def read_csv(path: pathlib.Path) -> list[dict[str, str]]:
 
 def write_csv(path: pathlib.Path, rows: list[dict[str, str]], fields: list[str]) -> None:
     with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
