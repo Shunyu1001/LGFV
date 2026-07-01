@@ -3,9 +3,9 @@
 Date: 2026-07-01
 
 This note summarizes the current human-review queue generated from the Codex
-surrogate-labeling pass. The queue starts from 47 disclosure-level Codex
-surrogate labels, collapses them to 32 unique issuers, flags 22 issuers that
-already overlap with the gold-standard label file, and retains 10 non-overlap
+surrogate-labeling pass. The queue starts from 45 disclosure-level Codex
+surrogate labels, collapses them to 30 unique issuers, flags 22 issuers that
+already overlap with the gold-standard label file, and retains 8 non-overlap
 issuers for review.
 
 The queue is stored in
@@ -16,16 +16,14 @@ any case is promoted to `data/processed/human_validated_labels.csv`.
 
 | Queue ID | Priority | Issuer | Source row | Docs | Usable text docs | Surrogate label |
 | --- | --- | --- | --- | ---: | ---: | --- |
-| svq_001 | B | 建安投资控股集团有限公司 | sch_20260630_0027 | 9 | 7 | nominal_exit |
-| svq_002 | B | 上饶创新发展产业投资集团有限公司 | sch_20260630_0055 | 7 | 6 | nominal_exit |
-| svq_003 | B | 广州地铁集团有限公司 | pilot_gd_001_alt_metro | 10 | 6 | nominal_exit |
-| svq_004 | B | 南京地铁集团有限公司 | pilot_js_001_alt_metro | 7 | 5 | nominal_exit |
-| svq_005 | B | 石家庄市交通投资开发有限公司 | sch_20260630_0151 | 7 | 3 | nominal_exit |
-| svq_006 | C | 浙江省交通投资集团有限公司 | sch_20260630_0083 | 10 | 9 | nominal_exit |
-| svq_007 | C | 南京市交通建设投资控股(集团)有限责任公司 | sch_20260630_0052 | 9 | 8 | nominal_exit |
-| svq_008 | C | 江苏腾海投资控股集团有限公司 | sch_20260630_0019 | 7 | 6 | nominal_exit |
-| svq_009 | C | 江苏高淳国际慢城文化旅游产业投资集团有限公司 | sch_20260630_0142 | 7 | 5 | nominal_exit |
-| svq_010 | C | 嘉兴市嘉秀发展投资控股集团有限公司 | sch_20260630_0068 | 5 | 4 | nominal_exit |
+| svq_001 | B | 广州地铁集团有限公司 | pilot_gd_001_alt_metro | 10 | 6 | nominal_exit |
+| svq_002 | B | 南京地铁集团有限公司 | pilot_js_001_alt_metro | 7 | 5 | nominal_exit |
+| svq_003 | B | 石家庄市交通投资开发有限公司 | sch_20260630_0151 | 7 | 3 | nominal_exit |
+| svq_004 | C | 浙江省交通投资集团有限公司 | sch_20260630_0083 | 10 | 9 | nominal_exit |
+| svq_005 | C | 南京市交通建设投资控股(集团)有限责任公司 | sch_20260630_0052 | 9 | 8 | nominal_exit |
+| svq_006 | C | 江苏腾海投资控股集团有限公司 | sch_20260630_0019 | 7 | 6 | nominal_exit |
+| svq_007 | C | 江苏高淳国际慢城文化旅游产业投资集团有限公司 | sch_20260630_0142 | 7 | 5 | nominal_exit |
+| svq_008 | C | 嘉兴市嘉秀发展投资控股集团有限公司 | sch_20260630_0068 | 5 | 4 | nominal_exit |
 
 Priority A rows have repeated disclosures and strong source/function scores.
 Priority B rows have strong source/function scores but fewer repeated

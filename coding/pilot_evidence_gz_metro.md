@@ -66,6 +66,14 @@ Relevant extracted-text locations:
 
 ## Coding Implication
 
+Reviewed again on 2026-07-01. This case should not be promoted to the
+gold-standard label file yet. The packet contains strong evidence of continuing
+public infrastructure investment, financing, construction, operation, land
+development, fiscal support, and standard no-hidden-debt compliance language.
+It still lacks a direct official exit, transfer-out, marketization, or platform
+list removal event for Guangzhou Metro. Under the codebook, standard debt
+compliance language alone is not enough to define a validated exit case.
+
 For the first LLM-assisted coding pass, this case should be treated as a strong test of the difference between regulatory compliance language and actual functional role. The strongest current interpretation is:
 
 - If an official exit or transformation document is later found for Guangzhou Metro, these sources would be strong evidence against `substantive_exit`.
