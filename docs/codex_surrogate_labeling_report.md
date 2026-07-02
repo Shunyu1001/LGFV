@@ -23,8 +23,8 @@ The output contains 257 rows:
 
 - 62 human gold-standard labels
 - 193 pending candidate disclosures screened by Codex
-- 62 Codex surrogate disclosure-level labels
-- 131 unresolved candidate disclosures
+- 79 Codex surrogate disclosure-level labels
+- 114 unresolved candidate disclosures
 
 The first pass produced two medium-confidence `nominal_exit` labels for
 Guangzhou Metro and Nanjing Metro. Later source-packet review showed that both
@@ -32,18 +32,18 @@ metro packets are better treated as boundary evidence than as gold-standard
 city-platform exit cases. The Shanghai Clearing source-packet passes added
 source packets for the full priority range in the harvest file. After promoting
 validated packets into the gold-standard file and marking boundary packets as
-out of frame, the screening file contains 62 surrogate `nominal_exit` labels.
+out of frame, the screening file contains 79 surrogate `nominal_exit` labels.
 These cases contain direct no-government-financing language together with
 continuing urban infrastructure, entrusted construction, land-development,
 fiscal-support, or public-project functions. They remain surrogate labels and
 require human validation before entering the gold-standard label file.
 
-The 62 surrogate labels correspond to 46 unique issuers because several
+The 79 surrogate labels correspond to 56 unique issuers because several
 Shanghai Clearing rows are repeated bond disclosures for the same platform. Of
-these 46 issuers, 29 exactly match issuers that already appear in the
+these 56 issuers, 29 exactly match issuers that already appear in the
 gold-standard human-validated label file under different case IDs. This overlap
 is useful as a consistency check, but it should not be counted as new sample
-expansion. The remaining 17 issuers form the current validation queue. The
+expansion. The remaining 27 issuers form the current validation queue. The
 analysis file therefore preserves the disclosure-level labels, while the next
 statistical step must aggregate or deduplicate them at the issuer or
 city-platform level. The issuer-level summary file performs this preliminary
@@ -81,9 +81,9 @@ The broad Shanghai Clearing source-packet workflow is now functional. The
 latest inventory expansion added 119 disclosure pages and 996 attached
 documents to the tracked source and document inventories. Local raw PDFs and
 extracted texts are ignored by git, but the current working collection contains
-1,070 downloaded PDFs and 958 extracted text files. Among the 193 pending
-candidate disclosures, 87 now have usable extracted text, 88 have document
+1,170 downloaded PDFs and 1,058 extracted text files. Among the 193 pending
+candidate disclosures, 108 now have usable extracted text, 67 have document
 records but still need PDF downloads, 17 have no collected document packet, and
 1 has a downloaded PDF without usable text. The next collection task is to
-review the 17 queued non-overlap issuers and to continue a resumable download
-and extraction pass for the 88 document-record cases that still lack PDFs.
+review the 27 queued non-overlap issuers and to continue a resumable download
+and extraction pass for the 67 document-record cases that still lack PDFs.

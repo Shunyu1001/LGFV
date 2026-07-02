@@ -118,7 +118,8 @@ def main() -> int:
             writer.writerow([row["document_id"], pages, len(output), status])
             sys.stdout.flush()
         except Exception as exc:
-            writer.writerow([row["document_id"], 0, 0, f"error:{exc}"])
+            message = " ".join(str(exc).split())
+            writer.writerow([row["document_id"], 0, 0, f"error:{message}"])
             sys.stdout.flush()
 
     return 0
