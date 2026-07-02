@@ -118,6 +118,11 @@ MECHANISM_EVIDENCE = {
         "coordination": "Post-2014 role shift appears across issuer, rating, and debt-replacement documents.",
         "project_asset_governance": "Public projects remain as management tasks rather than new platform financing.",
     },
+    "pilot_gd_001_alt_metro": {
+        "fiscal_absorption": "Municipal and district fiscal capital contributions fund rail construction, while the company still raises remaining project funds through debt financing.",
+        "coordination": "The Guangzhou government, finance bureau, metro issuer, and rail-construction subsidiary are linked through municipal rail planning, fiscal contributions, and state ownership.",
+        "project_asset_governance": "Urban rail construction, operation, property development around stations, land-reserve proceeds, subsidies, and injected assets remain inside the metro group.",
+    },
     "pilot_zj_001": {
         "fiscal_absorption": "Debt succession and asset transfer occurred through formal reorganization.",
         "coordination": "Qiantou transfer, city-investment consolidation, and Anju creation link multiple municipal entities.",

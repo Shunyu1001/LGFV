@@ -4,6 +4,7 @@ pilot_js_002,Jiangsu,Suzhou,苏州城市建设投资发展集团有限公司,hum
 expand_fj_fuzhou_chengtou,Fujian,Fuzhou,福州城市建设投资集团有限公司,human_validated,functional_transfer,medium,Fuzhou,Human-validated,Functional transfer,CHN.4.1_1,Fuzhou,福州市,24,11661.824,2548,1496,1464,218.49,128.28,125.54
 expand_fj_fuzhou_guozi,Fujian,Fuzhou,福州国有资本投资运营集团有限公司,human_validated,functional_transfer,medium,Fuzhou,Human-validated,Functional transfer,CHN.4.1_1,Fuzhou,福州市,24,11661.824,2548,1496,1464,218.49,128.28,125.54
 pilot_gd_001,Guangdong,Guangzhou,广州市城市建设投资集团有限公司,human_validated,substantive_exit,medium,Guangzhou,Human-validated,Substantive exit,CHN.6.4_1,Guangzhou,广州市,13,7156.715,1524,611,1093,212.95,85.37,152.72
+pilot_gd_001_alt_metro,Guangdong,Guangzhou,广州地铁集团有限公司,human_validated,nominal_exit,medium,Guangzhou,Human-validated,Nominal exit,CHN.6.4_1,Guangzhou,广州市,13,7156.715,1524,611,1093,212.95,85.37,152.72
 pilot_zj_002,Zhejiang,Ningbo,宁波开发投资集团有限公司,human_validated,substantive_exit,medium,Ningbo,Human-validated,Substantive exit,CHN.31.6_1,Ningbo,宁波市,21,8942.193,1760,1339,1025,196.82,149.74,114.63
 pilot_zj_001,Zhejiang,Hangzhou,杭州市城市建设投资集团有限公司,human_validated,functional_transfer,medium,Hangzhou,Human-validated,Functional transfer,CHN.31.1_1,Hangzhou,杭州市,38,17088.894,2716,1618,1500,158.93,94.68,87.78
 expand_js_zhenjiang_industry,Jiangsu,Zhenjiang,镇江产业投资控股集团有限公司,human_validated,nominal_exit,medium,Zhenjiang,Human-validated,Nominal exit,CHN.15.13_1,Zhenjiang,镇江市,9,3831.543,510,342,259,133.11,89.26,67.60

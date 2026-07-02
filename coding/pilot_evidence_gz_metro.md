@@ -4,7 +4,9 @@
 
 - Case ID: `pilot_gd_001_alt_metro`
 - Company: Guangzhou Metro Group Co., Ltd. (`广州地铁集团有限公司`)
-- Current status: source collection and evidence extraction, not final labeling
+- Current status: human-validated gold label
+- Final label: `nominal_exit`
+- Confidence: medium
 - Main source page: Shanghai Clearing House, `广州地铁集团有限公司2025年度第一期中期票据发行文件(更新)`, 2025-05-23
 - Source inventory row: `src_gd_gz_003`
 
@@ -66,23 +68,35 @@ Relevant extracted-text locations:
 
 ## Coding Implication
 
-Reviewed again on 2026-07-01. This case should not be promoted to the
-gold-standard label file yet. The packet contains strong evidence of continuing
-public infrastructure investment, financing, construction, operation, land
-development, fiscal support, and standard no-hidden-debt compliance language.
-It still lacks a direct official exit, transfer-out, marketization, or platform
-list removal event for Guangzhou Metro. Under the codebook, standard debt
-compliance language alone is not enough to define a validated exit case.
+Reviewed again on 2026-07-02 after the surrogate validation queue flagged the
+case for human review. The base prospectus contains direct compliance language:
+after consultation with the Guangzhou Finance Bureau, it states that the
+issuance will not create hidden local-government debt and that the company does
+not undertake government financing functions after January 1, 2015. This is
+sufficient for a gold-standard coding event under the current protocol, although
+the event is still issuer-disclosed rather than a separately collected
+platform-list transfer-out notice.
 
-For the first LLM-assisted coding pass, this case should be treated as a strong test of the difference between regulatory compliance language and actual functional role. The strongest current interpretation is:
+The final label is `nominal_exit`. The same issuer remains Guangzhou's sole
+urban rail construction and operation body, undertakes rail transit investment,
+financing, construction, and operation, receives municipal and district fiscal
+capital contributions, and continues to rely on government support, operating
+subsidies, land-reserve proceeds, and debt financing for rail construction.
+Official compliance therefore does not imply functional disappearance of the
+specialized rail-infrastructure finance role.
 
-- If an official exit or transformation document is later found for Guangzhou Metro, these sources would be strong evidence against `substantive_exit`.
-- The likely alternatives would be `nominal_exit` if the same entity continues the financing and construction function under a compliance narrative, or `functional_transfer` if a formal document shows the financing role moved to a different entity.
-- Without an official exit or transformation event, the case should remain `documents_found` rather than labeled.
+The most plausible alternative label is `substantive_exit` if one focuses on
+the negative legal-opinion evidence that the issuer has no land-preparation,
+affordable-housing, BT, government-purchase-service, government-guarantee, or
+project-advance-financing functions. I keep the nominal-exit label because the
+same entity still houses the municipal rail investment-financing and
+construction role.
 
 ## Next Collection Need
 
-Search specifically for Guangzhou Metro official exit, platform-list removal, market-oriented transformation, or hidden-debt cleanup documents. Suggested Chinese search terms:
+Search specifically for Guangzhou Metro platform-list removal, market-oriented
+transformation, or hidden-debt cleanup documents. Suggested Chinese search
+terms:
 
 - `广州地铁 融资平台 退出`
 - `广州地铁 政府融资职能`
