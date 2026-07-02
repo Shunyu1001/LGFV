@@ -183,6 +183,11 @@ MECHANISM_EVIDENCE = {
         "coordination": "The issuer is tied to Gaochun state-asset ownership and to district tourism-infrastructure project counterparties.",
         "project_asset_governance": "Tourism infrastructure, old-street redevelopment, forest-park, Cittaslow, transport-facility, and real-estate development functions remain inside the issuer group.",
     },
+    "sch_20260630_0068": {
+        "fiscal_absorption": "Fiscal subsidies, fiscal settlement, and government-related receivables remain central to project repayment and cash flow.",
+        "coordination": "The issuer, Xiuzhou government counterparties, district SOEs, and Jiaxing SASAC are linked through entrusted-construction and state-asset arrangements.",
+        "project_asset_governance": "Infrastructure, resettlement housing, land preparation, entrusted construction, and municipal project assets remain inside the issuer group.",
+    },
 }
 LATEX_TEXT_REPLACEMENTS = {
     "棚户区改造": "shantytown redevelopment",

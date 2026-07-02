@@ -1,4 +1,5 @@
 case_id,province,city,company_name,case_status,exit_type_or_status,final_confidence,display_city,display_case_status,display_exit_type_or_status,gadm_gid,prefecture_name,prefecture_name_chn,matched_cbdb_places,area_sqkm_approx,elite_persons,jinshi_persons,juren_persons,elite_per_1000_sqkm,jinshi_per_1000_sqkm,juren_per_1000_sqkm
+sch_20260630_0068,Zhejiang,Jiaxing,嘉兴市嘉秀发展投资控股集团有限公司,human_validated,nominal_exit,medium,Jiaxing,Human-validated,Nominal exit,CHN.31.3_1,Jiaxing,嘉兴市,20,3983.318,1840,1250,972,461.93,313.81,244.02
 pilot_js_002,Jiangsu,Suzhou,苏州城市建设投资发展集团有限公司,human_validated,nominal_exit,medium,Suzhou,Human-validated,Nominal exit,CHN.15.7_1,Suzhou,苏州市,26,8458.861,2659,1924,1424,314.34,227.45,168.34
 expand_fj_fuzhou_chengtou,Fujian,Fuzhou,福州城市建设投资集团有限公司,human_validated,functional_transfer,medium,Fuzhou,Human-validated,Functional transfer,CHN.4.1_1,Fuzhou,福州市,24,11661.824,2548,1496,1464,218.49,128.28,125.54
 expand_fj_fuzhou_guozi,Fujian,Fuzhou,福州国有资本投资运营集团有限公司,human_validated,functional_transfer,medium,Fuzhou,Human-validated,Functional transfer,CHN.4.1_1,Fuzhou,福州市,24,11661.824,2548,1496,1464,218.49,128.28,125.54
