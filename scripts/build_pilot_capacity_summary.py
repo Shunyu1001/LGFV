@@ -676,6 +676,7 @@ def write_tier_latex(rows: list[dict]) -> None:
         }
     )
     matched_count = len(validated_display_rows())
+    unmatched_count = max(human_count - matched_count, 0)
 
     OUT_TIER_TEX.parent.mkdir(parents=True, exist_ok=True)
     with OUT_TIER_TEX.open("w", encoding="utf-8") as handle:
@@ -707,7 +708,7 @@ def write_tier_latex(rows: list[dict]) -> None:
             "\\begin{minipage}{0.96\\linewidth}\n"
             "\\vspace{0.5em}\\footnotesize Notes: The historically matched subset is smaller\n"
             "than the full label file because the current CBDB-GADM crosswalk does not\n"
-            "yet contain usable historical-capacity matches for two Xinjiang cases.\n"
+            f"yet contain usable historical-capacity matches for {unmatched_count} validated cases.\n"
             "Candidate disclosures are issuer-disclosure rows rather than final\n"
             "city-platform labels.\n"
             "\\end{minipage}\n"

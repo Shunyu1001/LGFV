@@ -12,6 +12,7 @@ expand_js_yixing_chengfa,Jiangsu,Yixing,宜兴市城市发展投资有限公司,
 pilot_zj_002,Zhejiang,Ningbo,宁波开发投资集团有限公司,human_validated,substantive_exit,medium,Ningbo,Human-validated,Substantive exit,CHN.31.6_1,Ningbo,宁波市,21,8942.193,1760,1339,1025,196.82,149.74,114.63
 expand_zj_yuyao_chengtou,Zhejiang,Yuyao,余姚市城市建设投资发展有限公司,human_validated,nominal_exit,medium,Ningbo,Human-validated,Nominal exit,CHN.31.6_1,Ningbo,宁波市,21,8942.193,1760,1339,1025,196.82,149.74,114.63
 pilot_zj_001,Zhejiang,Hangzhou,杭州市城市建设投资集团有限公司,human_validated,functional_transfer,medium,Hangzhou,Human-validated,Functional transfer,CHN.31.1_1,Hangzhou,杭州市,38,17088.894,2716,1618,1500,158.93,94.68,87.78
+sch_20260630_0051,Beijing,Beijing,北京未来科学城发展集团有限公司,human_validated,nominal_exit,medium,Beijing,Human-validated,Nominal exit,CHN.2.1_1,Beijing,北京|北京,35,16375.931,2232,1291,1165,136.30,78.84,71.14
 expand_js_zhenjiang_industry,Jiangsu,Zhenjiang,镇江产业投资控股集团有限公司,human_validated,nominal_exit,medium,Zhenjiang,Human-validated,Nominal exit,CHN.15.13_1,Zhenjiang,镇江市,9,3831.543,510,342,259,133.11,89.26,67.60
 pilot_sd_001,Shandong,Jinan,济南城市投资集团有限公司,human_validated,nominal_exit,medium,Jinan,Human-validated,Nominal exit,CHN.23.5_1,Jinan,济南市,18,8130.954,944,541,519,116.10,66.54,63.83
 expand_sd_jinan_chengjian,Shandong,Jinan,济南城市建设集团有限公司,human_validated,nominal_exit,medium,Jinan,Human-validated,Nominal exit,CHN.23.5_1,Jinan,济南市,18,8130.954,944,541,519,116.10,66.54,63.83
@@ -56,6 +57,7 @@ expand_ah_suzhou_chengtou,Anhui,Suzhou,宿州市城市建设投资集团(控股)
 expand_hn_yiyang_jiaotou,Hunan,Yiyang,益阳市交通投资运营集团有限公司,human_validated,nominal_exit,medium,Yiyang,Human-validated,Nominal exit,CHN.14.10_1,Yiyang,益阳市|益陽市,6,12200.438,80,46,42,6.56,3.77,3.44
 expand_sc_leshan_guozi,Sichuan,Leshan,乐山国有资产投资运营(集团)有限公司,human_validated,nominal_exit,high,Leshan,Human-validated,Nominal exit,CHN.26.8_1,Leshan,乐山市,8,12022.207,75,49,41,6.24,4.08,3.41
 pilot_js_004,Jiangsu,Xuzhou,徐州市新盛投资控股集团有限公司,human_validated,nominal_exit,medium,Xuzhou,Human-validated,Nominal exit,CHN.15.10_1,Xuzhou,徐州市,13,11229.972,62,37,41,5.52,3.29,3.65
+sch_20260630_0015,Jiangsu,Xuzhou,徐州经济技术开发区国有资产经营有限责任公司,human_validated,nominal_exit,medium,Xuzhou,Human-validated,Nominal exit,CHN.15.10_1,Xuzhou,徐州市,13,11229.972,62,37,41,5.52,3.29,3.65
 expand_gx_nanning_chengtou,Guangxi,Nanning,南宁城市建设投资集团有限责任公司,human_validated,nominal_exit,medium,Nanning,Human-validated,Nominal exit,CHN.7.11_1,Nanning,南宁市,12,22160.663,80,32,56,3.61,1.44,2.53
 sch_20260630_0027,Anhui,Bozhou,建安投资控股集团有限公司,human_validated,nominal_exit,medium,Bozhou,Human-validated,Nominal exit,CHN.1.3_1,Bozhou,亳州市,5,8593.298,20,16,12,2.33,1.86,1.40
 pilot_js_003,Jiangsu,Yancheng,盐城市城市资产投资集团有限公司,human_validated,nominal_exit,medium,Yancheng,Human-validated,Nominal exit,CHN.15.11_1,Yancheng,盐城市,3,15378.447,34,28,10,2.21,1.82,0.65
