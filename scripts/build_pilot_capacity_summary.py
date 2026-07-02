@@ -40,7 +40,18 @@ STRONG_CANDIDATE_IDS = {"pilot_sc_003"}
 WEAK_CANDIDATE_IDS = {"pilot_gz_002", "pilot_gz_003"}
 CITY_NAME_FIXES = {
     "Gaochun": "Nanjing",
+    "Ganzhou Zhanggong": "Ganzhou",
     "Haian": "Nantong",
+    "Jinghai": "Tianjin",
+    "Nanjing Jiangning": "Nanjing",
+    "Suzhou Xiangcheng": "Suzhou",
+    "Tianjin Jinnan": "Tianjin",
+    "Yuyao": "Ningbo",
+    "Wenling": "Taizhou",
+    "Yixing": "Wuxi",
+    "Changshu": "Suzhou",
+    "Zhangjiagang": "Suzhou",
+    "Xinghua": "Taizhou",
     "Xian": "Xi'an",
 }
 CASE_STATUS_LABELS = {
@@ -496,12 +507,20 @@ def build_capacity_bin_rows() -> list[dict]:
             **{family: 0 for family in EXIT_FAMILY_ORDER[:-1]},
         }
 
-    for row in read_csv(PILOT_MATRIX):
-        if row["validation_tier"] != "human_validated":
-            continue
-        bin_name = row["historical_capacity_bin"]
-        family = row["exit_type_family"]
-        if bin_name not in grouped or family not in EXIT_FAMILY_ORDER[:-1]:
+    rows = [row for row in build_rows() if row["case_status"] == "human_validated"]
+    rows = sorted(rows, key=lambda row: float(row["elite_per_1000_sqkm"]), reverse=True)
+    total = len(rows)
+    for rank_desc, row in enumerate(rows, start=1):
+        percentile = 1.0 if total == 1 else 1.0 - ((rank_desc - 1) / (total - 1))
+        if percentile >= 2 / 3:
+            bin_name = "high"
+        elif percentile >= 1 / 3:
+            bin_name = "middle"
+        else:
+            bin_name = "low"
+
+        family = row["exit_type_or_status"]
+        if family not in EXIT_FAMILY_ORDER[:-1]:
             continue
         grouped[bin_name]["total"] = int(grouped[bin_name]["total"]) + 1
         grouped[bin_name][family] = int(grouped[bin_name][family]) + 1
@@ -656,9 +675,7 @@ def write_tier_latex(rows: list[dict]) -> None:
             row.get("human_review_status", ""),
         }
     )
-    matched_count = next(
-        int(row["total"]) for row in rows if row["validation_tier"] == "human_validated"
-    )
+    matched_count = len(validated_display_rows())
 
     OUT_TIER_TEX.parent.mkdir(parents=True, exist_ok=True)
     with OUT_TIER_TEX.open("w", encoding="utf-8") as handle:
@@ -689,9 +706,10 @@ def write_tier_latex(rows: list[dict]) -> None:
         handle.write(
             "\\begin{minipage}{0.96\\linewidth}\n"
             "\\vspace{0.5em}\\footnotesize Notes: The historically matched subset is smaller\n"
-            "than the full label file because newly added validation cases still need to be\n"
-            "merged into the historical-capacity crosswalk. Candidate disclosures are\n"
-            "issuer-disclosure rows rather than final city-platform labels.\n"
+            "than the full label file because the current CBDB-GADM crosswalk does not\n"
+            "yet contain usable historical-capacity matches for two Xinjiang cases.\n"
+            "Candidate disclosures are issuer-disclosure rows rather than final\n"
+            "city-platform labels.\n"
             "\\end{minipage}\n"
         )
         handle.write("\\end{table}\n")
@@ -804,8 +822,8 @@ def write_capacity_bin_latex(rows: list[dict]) -> None:
             "\\begin{minipage}{0.92\\linewidth}\n"
             "\\vspace{0.5em}\\footnotesize Notes: The table uses only the "
             f"{matched_total} historically matched human-validated pilot labels. Capacity bins are assigned "
-            "from the CBDB-GADM Ming-Qing elite-density measure in the pilot "
-            "case matrix. Counts are descriptive and are not population "
+            "from the CBDB-GADM Ming-Qing elite-density measure among matched "
+            "human-validated cases. Counts are descriptive and are not population "
             "estimates.\n"
             "\\end{minipage}\n"
         )
