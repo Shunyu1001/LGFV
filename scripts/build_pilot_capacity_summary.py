@@ -111,6 +111,7 @@ VALIDATED_EVENT_LABELS = {
     "pilot_sd_001": "2015 no-government-financing and non-platform-list disclosure",
     "pilot_js_003": "2015 no-government-financing with entrusted construction",
     "pilot_gd_003": "2018 non-platform-list disclosure with fiscal-settlement projects",
+    "pilot_js_001_alt_metro": "2015 no-government-financing with rail project finance",
 }
 MECHANISM_EVIDENCE = {
     "pilot_gd_001": {
@@ -122,6 +123,11 @@ MECHANISM_EVIDENCE = {
         "fiscal_absorption": "Municipal and district fiscal capital contributions fund rail construction, while the company still raises remaining project funds through debt financing.",
         "coordination": "The Guangzhou government, finance bureau, metro issuer, and rail-construction subsidiary are linked through municipal rail planning, fiscal contributions, and state ownership.",
         "project_asset_governance": "Urban rail construction, operation, property development around stations, land-reserve proceeds, subsidies, and injected assets remain inside the metro group.",
+    },
+    "pilot_js_001_alt_metro": {
+        "fiscal_absorption": "City and district fiscal funds and demolition funds provide rail project capital, while follow-on financing relies on syndicated loans and other debt financing.",
+        "coordination": "Nanjing SASAC, the finance bureau, the metro issuer, and PPP project entities are linked through municipal rail planning, fiscal contributions, and state ownership.",
+        "project_asset_governance": "Urban rail construction, operation, resource development, PPP project companies, subsidies, pledged income rights, and injected capital remain inside the metro group.",
     },
     "pilot_zj_001": {
         "fiscal_absorption": "Debt succession and asset transfer occurred through formal reorganization.",

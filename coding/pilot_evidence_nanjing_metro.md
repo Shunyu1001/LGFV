@@ -4,9 +4,9 @@
 
 - Case ID: `pilot_js_001_alt_metro`
 - Company: Nanjing Metro Group Co., Ltd. (`南京地铁集团有限公司`)
-- Status: high historical-capacity alternative platform evidence packet
-- Preliminary coding implication: `formal_fiscal_substitution_candidate`
-- Confidence: candidate only
+- Current status: human-validated gold label
+- Final label: `nominal_exit`
+- Confidence: medium
 - Main source page: Shanghai Clearing House,
   `南京地铁集团有限公司2025年度第二期中期票据发行文件`, 2025-06-17
 - Source inventory rows: `src_js_nj_001`, `src_js_nj_002`
@@ -14,23 +14,21 @@
 ## Why This Case Matters
 
 Nanjing is one of the highest historical elite-density cities in the current
-candidate pool. The original Nanjing row has not yet been tied to a core city
-investment platform, but the ChinaBond and Shanghai Clearing searches identify
-Nanjing Metro as a feasible alternative municipal infrastructure SOE. The case
-therefore helps test whether the coding scheme can separate an LGFV exit type
-from a broader process of formal fiscal substitution.
+candidate pool. Nanjing Metro is a specialized municipal rail infrastructure
+SOE rather than a generic city-investment platform, but the source packet gives
+direct evidence on both sides of the paper's coding rule. The issuer states
+that it does not undertake government financing functions and that post-2015
+debt is not local-government debt. At the same time, the same disclosure packet
+shows that the company continues to house the city's urban rail investment,
+construction, operation, resource-development, fiscal-support, and debt-finance
+functions.
 
-The current documents do not show that Nanjing Metro exited from a local
-government financing vehicle list, and they do not make the company a final
-exit-type label. They do, however, show a public infrastructure SOE that
-continues to build and operate urban rail transit while its bond disclosures
-make explicit legal and fiscal distinctions from local government debt. This is
-useful because the paper needs to distinguish three related objects. First,
-official LGFV exit is an administrative status. Second, substantive exit refers
-to the disappearance of quasi-fiscal financing functions from the platform.
-Third, formal fiscal substitution refers to the movement of public-project
-support into more explicit budgetary, capital-injection, subsidy, PPP, or
-regulated corporate-financing arrangements.
+The case therefore helps discipline the boundary between substantive exit and
+nominal exit. A narrow legal reading would treat the compliance language as
+evidence that the issuer is no longer a government financing vehicle. The
+paper's measurement framework asks a different question: whether the public
+infrastructure finance function disappears, moves, or remains in the same
+issuer group. On that criterion, Nanjing Metro is coded as nominal exit.
 
 ## Machine-Readable Documents
 
@@ -53,56 +51,23 @@ not usable without OCR.
 
 ## Evidence Themes
 
-### Rail-Transit Public Function
+### Formal No-Government-Financing Language
 
-The prospectus describes Nanjing Metro as a government-approved group that
-integrates metro construction, operation, and resource development. It also
-states that the projects have a public-welfare character as government
-investment projects. The issuer's business is therefore not a disappearing
-platform function but an ongoing urban public-infrastructure function.
-
-Relevant extracted-text locations:
-
-- `doc_js_nj_metro_2025_mtn2_004.txt`, lines 496-517
-- `doc_js_nj_metro_2025_mtn2_004.txt`, lines 10992-10998
-
-### Budgetary Support and Capital Injection
-
-The same prospectus states that the municipal government allocates fiscal
-subsidies each year according to metro construction progress and operating
-conditions. It also states that the municipal budget provides construction
-capital, operating subsidies, and other special funds. The prospectus reports
-government subsidies of 50.06, 50.59, and 58.12 yi yuan in 2022, 2023, and 2024,
-respectively, and later reports other income from comprehensive subsidies,
-operating-loss subsidies, and security-check subsidies.
-
-Relevant extracted-text locations:
-
-- `doc_js_nj_metro_2025_mtn2_004.txt`, lines 501-517
-- `doc_js_nj_metro_2025_mtn2_004.txt`, lines 11015-11020
-
-### No Government Financing Function
-
-The prospectus states that the Nanjing SASAC bears limited liability only up to
-its capital contribution, that the relevant debts are repaid by the local SOE as
-an independent legal person, that the company does not undertake government
-financing functions, and that new debt after January 1, 2015 is not local
-government debt.
+The prospectus states that Nanjing SASAC bears limited shareholder liability,
+that the relevant debt is repaid by the local SOE as an independent legal
+person, that the company does not undertake government financing functions, and
+that new debt after January 1, 2015 is not local-government debt.
 
 Relevant extracted-text location:
 
 - `doc_js_nj_metro_2025_mtn2_004.txt`, lines 1103-1110
 
-### No New Government or Hidden Debt
-
-The 2025 MTN proceeds are used to repay an existing debt-financing instrument,
-not to finance a new non-operating public-welfare project. The prospectus
-states that the issue will not increase government debt, will not involve false
-debt resolution or new hidden local government debt, will not be transferred to
-government or fiscal use, and will not be directly repaid with fiscal funds.
-The legal opinion repeats this compliance position and concludes that the MTN is
-the issuer's own repayment responsibility and will not increase government debt
-or hidden debt.
+The prospectus also states that the 2025 MTN proceeds are used to repay an
+existing debt-financing instrument. The proceeds are not to be transferred to
+government or fiscal use, and the government will not repay the instrument
+directly with fiscal funds. The legal opinion repeats the same compliance
+position and concludes that the issue will not increase government debt or
+hidden debt.
 
 Relevant extracted-text locations:
 
@@ -110,60 +75,93 @@ Relevant extracted-text locations:
 - `doc_js_nj_metro_2025_mtn2_002.txt`, lines 64-64
 - `doc_js_nj_metro_2025_mtn2_002.txt`, lines 113-118
 
-### Regulated Project Structure
+### Continued Rail-Infrastructure Function
 
-The prospectus states that Nanjing Metro Line 5 uses a concession-right PPP
-model and that the project was entered into the National Development and Reform
-Commission's national major construction project database. It also says that,
-apart from self-built projects, the remaining projects are financed and built by
-PPP project companies established by the issuer and social capital, and that
-these project-company debts do not constitute the issuer's own debt or appear in
-the issuer's consolidated financial statements. The text further states that the
-issuer has no government investment fund, BT, repurchase-of-other-entities'
-projects, government-purchase-of-service, or government advance-financing
-arrangements.
+The prospectus describes the issuer as a government-approved company that
+integrates metro construction, operation, and resource development. It also
+states that the projects are government investment projects with a public
+welfare character. Later sections describe the issuer as the leading enterprise
+for Nanjing urban rail transit projects and as holding a monopoly position in
+urban rail construction, operation, and management.
 
 Relevant extracted-text locations:
 
-- `doc_js_nj_metro_2025_mtn2_004.txt`, lines 1116-1131
-- `doc_js_nj_metro_2025_mtn2_002.txt`, lines 98-98
+- `doc_js_nj_metro_2025_mtn2_004.txt`, lines 496-517
+- `doc_js_nj_metro_2025_mtn2_004.txt`, lines 10992-10998
+- `doc_js_nj_metro_2025_mtn2_002.txt`, lines 69-69
 
-### Continuing Financing Need
+### Fiscal Absorption and Subsidy Support
 
-The prospectus still describes large ongoing capital needs. In-progress rail
-projects have project capital mainly from city- and district-level fiscal funds
-and demolition funds, with subsequent financing mainly from syndicated loans and
-similar financing. The document also reports that ongoing metro projects
-increase the company's financing needs and that shareholder capital injections
-help keep the asset-liability ratio stable.
+The same prospectus states that the municipal government allocates fiscal
+subsidies each year according to metro construction progress and operating
+conditions. It reports government subsidies of 50.06, 50.59, and 58.12 yi yuan
+in 2022, 2023, and 2024. It also states that the annual fiscal budget provides
+construction capital, operating subsidies, and other special funds. Other-income
+items include comprehensive subsidies, operating-loss subsidies, and
+security-check subsidies.
+
+Relevant extracted-text locations:
+
+- `doc_js_nj_metro_2025_mtn2_004.txt`, lines 501-517
+- `doc_js_nj_metro_2025_mtn2_004.txt`, lines 11015-11020
+
+### Project Finance and Debt-Finance Continuity
+
+In-progress rail projects have project capital mainly from city- and
+district-level fiscal funds and demolition funds, while later project financing
+comes mainly from syndicated loans and similar debt financing. The prospectus
+also reports that ongoing metro construction increases the company's financing
+needs, that financing cash inflows mainly reflect fiscal funds and bank
+borrowing, and that shareholder capital injections help keep leverage stable.
 
 Relevant extracted-text locations:
 
 - `doc_js_nj_metro_2025_mtn2_004.txt`, lines 2917-2919
-- `doc_js_nj_metro_2025_mtn2_004.txt`, lines 10855-10891
+- `doc_js_nj_metro_2025_mtn2_004.txt`, lines 10852-10864
+- `doc_js_nj_metro_2025_mtn2_004.txt`, lines 10888-10891
+- `doc_js_nj_metro_2025_mtn2_002.txt`, lines 103-103
+
+### Regulated Project Structure
+
+The prospectus and legal opinion provide negative evidence that matters for the
+alternative label. Nanjing Metro Line 5 uses a concession-right PPP model and
+was entered into the National Development and Reform Commission's major
+construction project database. The source packet states that the issuer has no
+BT, government-purchase-service, government-investment-fund, project repurchase,
+or government advance-financing arrangements. It also states that government
+receivables have normal business backgrounds and that the Nanjing Finance
+Bureau was consulted on these compliance statements.
+
+Relevant extracted-text locations:
+
+- `doc_js_nj_metro_2025_mtn2_004.txt`, lines 1114-1131
+- `doc_js_nj_metro_2025_mtn2_002.txt`, lines 98-118
 
 ## Coding Implication
 
-The case should remain a candidate evidence packet rather than a final label.
+The final label is `nominal_exit`.
 
-The strongest current interpretation is that Nanjing Metro is a
-formal-fiscal-substitution boundary case. It provides strong evidence that
-public infrastructure financing can continue through a formal SOE, explicit
-budgetary support, project capital, subsidies, PPP structures, and regulated
-corporate debt while the issuer denies government financing functions and
-local-government debt responsibility. It does not yet provide direct evidence
-that a named LGFV officially exited or that a former LGFV's functions were
-substantively removed.
+The formal event is strong enough for the gold-standard file because the
+prospectus contains direct post-2015 no-government-financing and
+no-local-government-debt language, and the legal opinion confirms that the
+current debt instrument does not create new government or hidden debt. The
+continued-function evidence is also strong. The same issuer remains the city's
+main rail-transit investment, construction, operation, and resource-development
+company. Project capital comes from city and district fiscal funds and
+demolition funds. Follow-on financing depends on syndicated loans and other
+debt financing. The issuer receives large fiscal subsidies and shareholder
+capital support.
 
-For the paper, the case is useful as a guardrail. It should prevent the coding
-scheme from classifying every subsidized infrastructure SOE as a failed LGFV
-exit. The relevant validation question is narrower: whether a city uses formal
-budgetary and SOE instruments to replace informal platform financing after LGFV
-exit, and whether this replacement is attached to the same platform or to a
-separate specialized infrastructure SOE.
+The most plausible alternative label is `substantive_exit`. That reading would
+emphasize the legal evidence that the issuer has no BT, government purchase
+service, government project advance-financing, illegal guarantee, fiscal direct
+repayment, land-reserve financing, or hidden-debt arrangement. The final label
+remains nominal because the same issuer still contains the specialized municipal
+rail infrastructure finance function. This case should be read alongside
+Guangzhou Metro as evidence that high-capacity cities can formalize rail
+finance without making the infrastructure-finance function disappear.
 
-Reviewed again on 2026-07-01, the packet is marked `boundary_reviewed` in the
-LLM candidate pool. It should not be promoted to the human gold-standard label
-file without a direct official exit, transfer, list-removal, or marketization
-event for a city-platform LGFV. Its value is as boundary evidence for formal
-fiscal substitution, not as a final exit-type observation.
+The case carries a medium confidence score because it is a specialized metro
+platform rather than a generic city-investment company, and because the formal
+event is based on prospectus and legal-opinion compliance language rather than
+an independently retrieved platform-list exit notice.
