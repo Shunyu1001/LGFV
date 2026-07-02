@@ -643,10 +643,18 @@ def write_tier_latex(rows: list[dict]) -> None:
     seed_rows = read_csv(LLM_SEED)
     seed_count = len(seed_rows)
     pending_count = sum(
-        1 for row in seed_rows if row.get("validation_status", "") == "not_validated"
+        1 for row in seed_rows if row.get("llm_label_status", "") == "pending"
     )
     boundary_count = sum(
-        1 for row in seed_rows if row.get("validation_status", "") == "boundary_reviewed"
+        1
+        for row in seed_rows
+        if "boundary_reviewed"
+        in {
+            row.get("validation_status", ""),
+            row.get("case_pool_status", ""),
+            row.get("llm_label_status", ""),
+            row.get("human_review_status", ""),
+        }
     )
     matched_count = next(
         int(row["total"]) for row in rows if row["validation_tier"] == "human_validated"

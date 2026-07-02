@@ -6,6 +6,8 @@ Company: 浙江省交通投资集团有限公司
 
 Status: `boundary_reviewed`
 
+Review date: 2026-07-02
+
 Coding implication: not a gold-standard city-platform LGFV exit label
 
 ## Boundary reason
@@ -62,3 +64,8 @@ Use this packet as boundary evidence for the distinction between formal
 infrastructure finance and LGFV exit. It should discipline the codebook by
 showing that not every subsidized infrastructure SOE with no-hidden-debt
 language is an LGFV exit case.
+
+The 2026-07-02 review keeps both `sch_20260630_0083` and the repeated
+`sch_20260630_0093` disclosure out of the gold-standard label file. The
+surrogate queue is therefore closed for this issuer without adding a new
+city-platform observation.
