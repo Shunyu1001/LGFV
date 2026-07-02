@@ -62,6 +62,18 @@ def score_label(row: dict[str, str]) -> tuple[int, int, int]:
     return coverage, function, confidence
 
 
+def usable_text_count(case_id: str, documents: list[dict[str, str]]) -> int:
+    count = 0
+    for row in documents:
+        local = row.get("local_file_path", "")
+        if not local:
+            continue
+        txt_path = ROOT / "data" / "processed" / case_id / f"{pathlib.Path(local).stem}.txt"
+        if txt_path.exists() and txt_path.stat().st_size > 200:
+            count += 1
+    return count
+
+
 def priority(row: dict[str, str], issuer_row: dict[str, str]) -> str:
     coverage, function, confidence = score_label(row)
     repeated = int(issuer_row.get("surrogate_rows", "1") or "1")
@@ -110,7 +122,7 @@ def main() -> int:
         case_id = selected.get("source_row_id", "")
         source = sources_by_case.get(case_id, {})
         documents = docs_by_case.get(case_id, [])
-        usable = [row for row in documents if row.get("text_extracted") == "yes"]
+        usable = usable_text_count(case_id, documents)
         output.append(
             {
                 "queue_id": f"svq_{len(output) + 1:03d}",
@@ -128,7 +140,7 @@ def main() -> int:
                 "source_url": source.get("source_url", ""),
                 "source_title": source.get("source_title", ""),
                 "document_count": str(len(documents)),
-                "usable_text_count": str(len(usable)),
+                "usable_text_count": str(usable),
                 "formal_event_example": selected.get("formal_event_summary", ""),
                 "continued_function_example": selected.get("continued_function_summary", ""),
                 "review_task": "Check original PDFs and extracted text; decide whether to promote to gold-standard label, mark as duplicate, or reject as boundary/non-LGFV.",
