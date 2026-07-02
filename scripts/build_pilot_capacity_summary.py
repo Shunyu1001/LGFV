@@ -39,6 +39,7 @@ OUT_FIG = ROOT / "paper" / "figures" / "pilot_case_historical_capacity.png"
 STRONG_CANDIDATE_IDS = {"pilot_sc_003"}
 WEAK_CANDIDATE_IDS = {"pilot_gz_002", "pilot_gz_003"}
 CITY_NAME_FIXES = {
+    "Haian": "Nantong",
     "Xian": "Xi'an",
 }
 CASE_STATUS_LABELS = {
@@ -170,6 +171,11 @@ MECHANISM_EVIDENCE = {
         "fiscal_absorption": "Fiscal settlement for entrusted construction and contract-based payments are documented.",
         "coordination": "SASAC-entrusted land preparation coexists with disclosure that the issuer was outside the 2018 platform directory.",
         "project_asset_governance": "Public project tasks are formalized through SASAC-owned land and contract settlement.",
+    },
+    "sch_20260630_0019": {
+        "fiscal_absorption": "Fiscal cash inflows, subsidies, and government-related current accounts remain central to repayment capacity.",
+        "coordination": "The development-zone committee, Kaisheng Group, and Tenghai are linked through state ownership and 2021 shareholder reorganization.",
+        "project_asset_governance": "Housing construction, municipal engineering, wastewater, industrial-park, and resettlement-housing project funds remain inside the issuer system.",
     },
 }
 LATEX_TEXT_REPLACEMENTS = {
