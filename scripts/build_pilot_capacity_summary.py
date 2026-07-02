@@ -39,6 +39,7 @@ OUT_FIG = ROOT / "paper" / "figures" / "pilot_case_historical_capacity.png"
 STRONG_CANDIDATE_IDS = {"pilot_sc_003"}
 WEAK_CANDIDATE_IDS = {"pilot_gz_002", "pilot_gz_003"}
 CITY_NAME_FIXES = {
+    "Gaochun": "Nanjing",
     "Haian": "Nantong",
     "Xian": "Xi'an",
 }
@@ -176,6 +177,11 @@ MECHANISM_EVIDENCE = {
         "fiscal_absorption": "Fiscal cash inflows, subsidies, and government-related current accounts remain central to repayment capacity.",
         "coordination": "The development-zone committee, Kaisheng Group, and Tenghai are linked through state ownership and 2021 shareholder reorganization.",
         "project_asset_governance": "Housing construction, municipal engineering, wastewater, industrial-park, and resettlement-housing project funds remain inside the issuer system.",
+    },
+    "sch_20260630_0142": {
+        "fiscal_absorption": "Government subsidies, government-related receivables, and payment timing from the tourism-zone management committee remain central to operations.",
+        "coordination": "The issuer is tied to Gaochun state-asset ownership and to district tourism-infrastructure project counterparties.",
+        "project_asset_governance": "Tourism infrastructure, old-street redevelopment, forest-park, Cittaslow, transport-facility, and real-estate development functions remain inside the issuer group.",
     },
 }
 LATEX_TEXT_REPLACEMENTS = {
