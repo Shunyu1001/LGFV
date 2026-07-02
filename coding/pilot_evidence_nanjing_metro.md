@@ -161,3 +161,9 @@ exit. The relevant validation question is narrower: whether a city uses formal
 budgetary and SOE instruments to replace informal platform financing after LGFV
 exit, and whether this replacement is attached to the same platform or to a
 separate specialized infrastructure SOE.
+
+Reviewed again on 2026-07-01, the packet is marked `boundary_reviewed` in the
+LLM candidate pool. It should not be promoted to the human gold-standard label
+file without a direct official exit, transfer, list-removal, or marketization
+event for a city-platform LGFV. Its value is as boundary evidence for formal
+fiscal substitution, not as a final exit-type observation.

@@ -216,6 +216,42 @@ def human_row(seed_row: dict[str, str], human_by_case: dict[str, dict[str, str]]
     }
 
 
+def boundary_row(seed_row: dict[str, str]) -> dict[str, str]:
+    note = norm(seed_row.get("notes"))
+    rationale = (
+        note
+        or "Human review retained this source packet as boundary evidence but excluded it from "
+        "the current gold-standard exit-case scope."
+    )
+    return {
+        "pool_id": seed_row["pool_id"],
+        "source_row_id": seed_row["source_row_id"],
+        "province": seed_row.get("province", ""),
+        "city": seed_row.get("city", ""),
+        "issuer_name": seed_row.get("issuer_name", ""),
+        "validation_status": seed_row.get("validation_status", ""),
+        "label_source": "human_reviewed_boundary",
+        "surrogate_status": "not_surrogate",
+        "formal_event_found": "false",
+        "formal_event_summary": "",
+        "continued_function_found": "",
+        "continued_function_summary": "",
+        "exit_type": "unclear",
+        "confidence": "low",
+        "source_coverage_score": norm(seed_row.get("source_doc_count")) or "1",
+        "continued_function_evidence_score": "",
+        "alternative_label": "",
+        "missing_information": (
+            "Boundary-reviewed packet excluded from gold labels because it is outside the "
+            "city-platform LGFV exit frame or lacks a direct official exit or transfer event."
+        ),
+        "classification_rationale": rationale,
+        "evidence_basis": norm(seed_row.get("source_url")) or norm(seed_row.get("announcement_title")),
+        "needs_human_review": "false",
+        "labeler": "human boundary review",
+    }
+
+
 def unresolved(seed_row: dict[str, str], reason: str, source_coverage: str = "1") -> dict[str, str]:
     return {
         "pool_id": seed_row["pool_id"],
@@ -348,6 +384,14 @@ def main() -> int:
     for row in seed:
         if row.get("llm_label_status") == "gold_standard":
             output.append(human_row(row, human_by_case))
+            continue
+        if "boundary_reviewed" in {
+            row.get("validation_status"),
+            row.get("case_pool_status"),
+            row.get("llm_label_status"),
+            row.get("human_review_status"),
+        }:
+            output.append(boundary_row(row))
             continue
         master = master_by_case.get(row.get("source_row_id", ""), {})
         output.append(surrogate_row(row, master, docs, sources_by_case))
