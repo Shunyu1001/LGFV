@@ -43,6 +43,7 @@ expand_ah_suzhou_chengtou,Anhui,Suzhou,宿州市城市建设投资集团(控股)
 expand_hn_yiyang_jiaotou,Hunan,Yiyang,益阳市交通投资运营集团有限公司,human_validated,nominal_exit,medium,Yiyang,Human-validated,Nominal exit,CHN.14.10_1,Yiyang,益阳市|益陽市,6,12200.438,80,46,42,6.56,3.77,3.44
 expand_sc_leshan_guozi,Sichuan,Leshan,乐山国有资产投资运营(集团)有限公司,human_validated,nominal_exit,high,Leshan,Human-validated,Nominal exit,CHN.26.8_1,Leshan,乐山市,8,12022.207,75,49,41,6.24,4.08,3.41
 pilot_js_004,Jiangsu,Xuzhou,徐州市新盛投资控股集团有限公司,human_validated,nominal_exit,medium,Xuzhou,Human-validated,Nominal exit,CHN.15.10_1,Xuzhou,徐州市,13,11229.972,62,37,41,5.52,3.29,3.65
+expand_gx_nanning_chengtou,Guangxi,Nanning,南宁城市建设投资集团有限责任公司,human_validated,nominal_exit,medium,Nanning,Human-validated,Nominal exit,CHN.7.11_1,Nanning,南宁市,12,22160.663,80,32,56,3.61,1.44,2.53
 sch_20260630_0027,Anhui,Bozhou,建安投资控股集团有限公司,human_validated,nominal_exit,medium,Bozhou,Human-validated,Nominal exit,CHN.1.3_1,Bozhou,亳州市,5,8593.298,20,16,12,2.33,1.86,1.40
 pilot_js_003,Jiangsu,Yancheng,盐城市城市资产投资集团有限公司,human_validated,nominal_exit,medium,Yancheng,Human-validated,Nominal exit,CHN.15.11_1,Yancheng,盐城市,3,15378.447,34,28,10,2.21,1.82,0.65
 expand_js_yancheng_chengnan,Jiangsu,Yancheng,盐城市城南新区开发建设投资有限公司,human_validated,nominal_exit,medium,Yancheng,Human-validated,Nominal exit,CHN.15.11_1,Yancheng,盐城市,3,15378.447,34,28,10,2.21,1.82,0.65

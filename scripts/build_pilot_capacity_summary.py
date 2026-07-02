@@ -188,6 +188,11 @@ MECHANISM_EVIDENCE = {
         "coordination": "The issuer, Xiuzhou government counterparties, district SOEs, and Jiaxing SASAC are linked through entrusted-construction and state-asset arrangements.",
         "project_asset_governance": "Infrastructure, resettlement housing, land preparation, entrusted construction, and municipal project assets remain inside the issuer group.",
     },
+    "expand_gx_nanning_chengtou": {
+        "fiscal_absorption": "Since 2018 some designated municipal project funds are arranged by municipal finance, while shantytown government-purchase-service receivables remain fiscal-payment dependent.",
+        "coordination": "Nanning SASAC, municipal finance, housing and construction authorities, and platform subsidiaries are linked through project-owner designation, government purchase service, and state-capital support.",
+        "project_asset_governance": "Urban roads, bridges, key municipal projects, shantytown redevelopment, affordable housing, tolling, receivables, and injected assets remain inside the issuer group.",
+    },
 }
 LATEX_TEXT_REPLACEMENTS = {
     "棚户区改造": "shantytown redevelopment",
