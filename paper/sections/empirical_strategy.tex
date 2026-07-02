@@ -92,16 +92,53 @@ Table \ref{tab:pilot-capacity-bin-exit-type} gives the simplest descriptive
 comparison between historical capacity and validated exit type. The table uses
 the historically matched validated labels. It does not estimate a population
 relationship, because the pilot is selected to build and audit the coding
-scheme and several expansion cases still need historical-capacity matching.
-Even with this limitation, the pattern is useful. The matched low-capacity
-cases are all nominal exits. The high-capacity cases contain all three observed
-types, including the two substantive-exit cases. This is the pattern implied by
-the theory: higher-capacity cities are not guaranteed to produce substantive
-exit, but substantive exit is more plausible where local officials can absorb
-fiscal functions, coordinate reorganizations, and govern projects and assets
-after the formal exit event.
+scheme. Even with this limitation, the pattern is useful. The matched
+low-capacity cases are all nominal exits. The high-capacity cases contain all
+three observed types, including the two substantive-exit cases. This is the
+pattern implied by the theory: higher-capacity cities are not guaranteed to
+produce substantive exit, but substantive exit is more plausible where local
+officials can absorb fiscal functions, coordinate reorganizations, and govern
+projects and assets after the formal exit event.
 
 \input{tables/pilot_capacity_bin_exit_type}
+
+Figure \ref{fig:pilot-exit-type-by-capacity-bin} presents the same comparison
+as shares rather than counts. The figure is more useful than a simple ranking
+of historical elite density because it puts the outcome categories at the
+center of the comparison. The low-capacity bin contains twenty nominal exits
+and no observed functional transfer or substantive exit. The middle bin
+contains five functional-transfer cases and fifteen nominal exits. The high bin
+contains thirteen nominal exits, five functional-transfer cases, and the two
+substantive-exit cases. The pilot pattern therefore supports a cautious
+interpretation: historical capacity is associated less with a universal shift
+to substantive exit than with a broader institutional menu beyond nominal
+compliance.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.82\linewidth]{figures/pilot_exit_type_by_capacity_bin.png}
+\caption{Exit type by historical-capacity bin}
+\label{fig:pilot-exit-type-by-capacity-bin}
+\end{figure}
+
+Table \ref{tab:pilot-lpm-institutional-change} reports a small exploratory
+linear probability model using the same matched pilot cases. The dependent
+variable equals one when a case is coded as substantive exit or functional
+transfer and zero when it is coded as nominal exit. This outcome does not treat
+functional transfer as equivalent to substantive exit. It simply separates
+cases in which the institutional form changes from cases in which the same
+issuer continues the public function under formal compliance language. Across
+three simple specifications, historical capacity is positively associated with
+this broader measure of institutional change. A one-standard-deviation
+increase in elite density is associated with a 12 percentage point higher
+probability of substantive exit or functional transfer. Membership in the high
+historical-capacity bin is associated with a 22.5 percentage point higher
+probability relative to the other bins. Moving from low to middle to high
+capacity is associated with a 17.5 percentage point increase at each step.
+These estimates remain descriptive, but they make the pilot evidence easier to
+compare with the paper's eventual full-sample analysis.
+
+\input{tables/pilot_lpm_institutional_change}
 
 Case comparisons clarify the mechanism. Guangzhou and Ningbo illustrate
 high-capacity substantive exit. In Guangzhou,
@@ -206,8 +243,7 @@ rather than a specialized infrastructure SOE.
 
 I then match sixty validated cases and three candidate cases to the CBDB-GADM
 elite-density measure \citep{cbdb2024,gadm2022}. Table
-\ref{tab:pilot-historical-capacity} and Figure
-\ref{fig:pilot-historical-capacity} show the resulting values. The descriptive
+\ref{tab:pilot-historical-capacity} shows the resulting values. The descriptive
 pattern is not a simple high-versus-low split. Guangzhou and Ningbo appear as
 substantive exit, while Hangzhou and Foshan appear as functional transfer, and
 Jinan and Chengdu appear as nominal exit. This variation is consistent with the
@@ -232,19 +268,13 @@ by clean exit-list documents.
 
 \input{tables/pilot_case_historical_capacity}
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.9\linewidth]{figures/pilot_case_historical_capacity.png}
-\caption{Historical elite density in pilot cases}
-\label{fig:pilot-historical-capacity}
-\end{figure}
-
 The pilot therefore makes a limited but useful empirical contribution. It does
-not yet support a regression estimate, and it should not be read as a
+not yet support a final population estimate, and it should not be read as a
 representative distribution of LGFV exit types. It does show that the proposed
 coding rule separates substantive exit, nominal exit, and functional transfer
-in real documents, and that the next stage of the project can target cases that
-vary sharply in historical administrative human capital.
+in real documents, that these categories vary with a historically rooted
+measure of local state capacity, and that the next stage of the project can
+scale the same measurement design to the larger LLM-coded candidate pool.
 
 \subsection{Inference with surrogate labels}
 
