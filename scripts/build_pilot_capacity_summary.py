@@ -19,7 +19,7 @@ except ModuleNotFoundError:  # pragma: no cover - depends on local environment
 ROOT = Path(__file__).resolve().parents[1]
 LABELS = ROOT / "data" / "processed" / "human_validated_labels.csv"
 CANDIDATES = ROOT / "data" / "candidate_city_plan.csv"
-LLM_SEED = ROOT / "data" / "analysis_inputs" / "llm_candidate_pool_seed_2026_06_30.csv"
+LLM_SEED = ROOT / "data" / "analysis_inputs" / "llm_candidate_pool_seed_2026_07_03_expanded.csv"
 PILOT_MATRIX = ROOT / "data" / "analysis_inputs" / "pilot_coding_matrix.csv"
 CAPACITY = ROOT / "data" / "analysis_inputs" / "cbdb_mingqing_elite_gadm_prefecture_counts.csv"
 OUT_CSV = ROOT / "data" / "analysis_inputs" / "pilot_case_historical_capacity.csv"

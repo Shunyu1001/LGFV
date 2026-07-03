@@ -35,6 +35,19 @@ DIRECT_COMPLIANCE_TERMS = [
     "经营性\\s*转型",
 ]
 
+DIRECT_COMPLIANCE_COMPACT_TERMS = [
+    "退出融资平台",
+    "不承担政府融资",
+    "不从事政府融资",
+    "不再承担政府融资",
+    "不再从事政府融资",
+    "无政府融资职能",
+    "剥离融资平台",
+    "不属于地方政府融资平台",
+    "新增债务依法不属于地方政府债务",
+    "新增债务不属于地方政府债务",
+]
+
 TRANSFER_EVENT_TERMS = [
     "整体划转",
     "无偿划转",
@@ -147,6 +160,15 @@ def any_term(text: str, terms: list[str]) -> bool:
     return any(re.search(term, text, flags=re.IGNORECASE) for term in terms)
 
 
+def compact_text(text: str) -> str:
+    return re.sub(r"\s+", "", text)
+
+
+def any_compact_term(text: str, terms: list[str]) -> bool:
+    compact = compact_text(text)
+    return any(term in compact for term in terms)
+
+
 def scrub_negated_event_context(text: str) -> str:
     scrubbed = text
     for pattern in NEGATED_EVENT_PATTERNS:
@@ -161,6 +183,17 @@ def first_snippet(text: str, terms: list[str], width: int = 80) -> str:
             start = max(0, match.start() - width)
             end = min(len(text), match.end() + width)
             return re.sub(r"\s+", " ", text[start:end]).strip()
+    return ""
+
+
+def first_compact_snippet(text: str, compact_terms: list[str], width: int = 120) -> str:
+    compact = compact_text(text)
+    for term in compact_terms:
+        position = compact.find(term)
+        if position >= 0:
+            start = max(0, position - width)
+            end = min(len(compact), position + len(term) + width)
+            return compact[start:end]
     return ""
 
 
@@ -294,7 +327,9 @@ def surrogate_row(
         return unresolved(seed_row, "No usable source text or source notes have been collected for this candidate.", "0")
 
     event_text = scrub_negated_event_context(combined)
-    direct_compliance = any_term(event_text, DIRECT_COMPLIANCE_TERMS)
+    direct_compliance = any_term(event_text, DIRECT_COMPLIANCE_TERMS) or any_compact_term(
+        event_text, DIRECT_COMPLIANCE_COMPACT_TERMS
+    )
     # Transfers are kept as evidence, but they do not create a surrogate label
     # without direct exit or compliance language. This avoids treating ordinary
     # historical equity transfers in prospectuses as LGFV exit events.
@@ -304,7 +339,9 @@ def surrogate_row(
     continued = any_term(combined, CONTINUED_TERMS)
     transfer = transfer_event and any_term(event_text, TRANSFER_TERMS)
 
-    formal_snip = first_snippet(event_text, DIRECT_COMPLIANCE_TERMS)
+    formal_snip = first_snippet(event_text, DIRECT_COMPLIANCE_TERMS) or first_compact_snippet(
+        event_text, DIRECT_COMPLIANCE_COMPACT_TERMS
+    )
     continued_snip = first_snippet(combined, CONTINUED_TERMS)
 
     if not formal:
@@ -382,7 +419,7 @@ def main() -> int:
 
     output: list[dict[str, str]] = []
     for row in seed:
-        if row.get("llm_label_status") == "gold_standard":
+        if row.get("validation_status") == "human_validated":
             output.append(human_row(row, human_by_case))
             continue
         if "boundary_reviewed" in {

@@ -119,7 +119,17 @@ def main() -> int:
     args = parser.parse_args()
 
     rows: list[dict[str, str]] = []
-    for index, row in enumerate(read_csv(args.master), start=1):
+    seen_master_ids: set[str] = set()
+    master_rows = []
+    for row in read_csv(args.master):
+        case_id = row.get("case_id", "")
+        if case_id and case_id in seen_master_ids:
+            continue
+        if case_id:
+            seen_master_ids.add(case_id)
+        master_rows.append(row)
+
+    for index, row in enumerate(master_rows, start=1):
         rows.append(master_row(row, index))
     for index, row in enumerate(read_csv(args.harvest), start=1):
         rows.append(harvest_row(row, index))

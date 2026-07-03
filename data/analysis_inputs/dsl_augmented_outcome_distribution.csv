@@ -1,4 +1,4 @@
 sample,observations,nominal_exit,institutional_change_or_error,nominal_share,note
 Gold standard only,87,75.00,12.00,0.862,Observed human labels.
-"Gold plus non-overlap surrogates, smoothed",114,101.64,12.36,0.892,Uses Jeffreys-smoothed surrogate nominal precision.
-"Gold plus non-overlap surrogates, conservative",114,99.46,14.54,0.872,Uses Wilson 95 percent lower bound for surrogate nominal precision.
+"Gold plus non-overlap surrogates, smoothed",131,118.60,12.40,0.905,Uses Jeffreys-smoothed surrogate nominal precision.
+"Gold plus non-overlap surrogates, conservative",131,116.08,14.92,0.886,Uses Wilson 95 percent lower bound for surrogate nominal precision.

@@ -1,0 +1,16 @@
+quantity,value
+candidate_pool_rows,303
+usable_llm_screening_rows,288
+usable_exit_type_rows,218
+usable_validation_adjustment_rows,288
+screening_status:gold_standard_exit_type,87
+screening_status:human_reviewed_boundary,4
+screening_status:llm_screened_no_direct_formal_event,66
+screening_status:llm_surrogate_exit_type,131
+screening_status:source_packet_missing,15
+screening_label:boundary_outside_core_frame,4
+screening_label:functional_transfer,10
+screening_label:no_direct_formal_event_observed,66
+screening_label:nominal_exit,206
+screening_label:source_missing,15
+screening_label:substantive_exit,2

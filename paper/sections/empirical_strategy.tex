@@ -51,7 +51,7 @@ human-validated labels from candidate cases throughout the analysis.
 
 Table \ref{tab:pilot-validation-tiers} summarizes the validation status of the
 current evidence packets. The human-validated label file now contains
-eighty-seven cases, and the broader screening file contains 257 disclosure rows.
+eighty-seven cases, and the broader screening file contains 303 disclosure rows.
 The descriptive tables in this section use the seventy-seven validated cases that can
 currently be matched to the CBDB-GADM historical-capacity crosswalk. Ten
 validated cases remain unmatched because the current crosswalk does not yet
@@ -234,13 +234,13 @@ formal compliance language as substantive exit, miss continuing public
 functions buried in bond documents, or produce no useful label when the
 candidate file contains only a disclosure-page title.
 
-The current screening file makes this separation explicit. It contains 257
-candidate rows, of which 242 are usable LLM screening observations. Table
+The current screening file makes this separation explicit. It contains 303
+candidate rows, of which 288 are usable LLM screening observations. Table
 \ref{tab:llm-screening-status} separates these rows from the narrower exit-type
 outcome sample. The outcome sample contains eighty-seven gold-standard labels
-and eighty-four LLM surrogate exit-type labels. The remaining usable screening
-rows include sixty-five source packets for which the model found no direct
-formal exit or compliance event and six human-reviewed boundary packets. These
+and 131 LLM surrogate exit-type labels. The remaining usable screening rows
+include sixty-six source packets for which the model found no direct formal
+exit or compliance event and four human-reviewed boundary packets. These
 rows are informative for source coverage and screening attrition, but they are
 not treated as exit-type outcomes.
 
@@ -248,23 +248,23 @@ The surrogate exit-type labels are medium-confidence nominal-exit cases because
 the source packets pair no-government-financing language with continued
 evidence of public development, infrastructure construction, entrusted
 projects, land development, fiscal support, or state-asset functions. They
-correspond to 64 unique issuers because repeated bond disclosures often
+correspond to 98 unique issuers because repeated bond disclosures often
 describe the same platform. The analysis therefore deduplicates them at the
-issuer level before using them as auxiliary labels. Thirty-seven of these
+issuer level before using them as auxiliary labels. Fifty-four of these
 issuers match platforms already present in the gold-standard file under
-different case IDs. All thirty-seven overlap cases have the same gold-standard
+different case IDs. All fifty-four overlap cases have the same gold-standard
 label as the surrogate label: nominal exit. This overlap is not counted as new
 validation expansion, but it provides a direct estimate of the precision of the
-current LLM rule. Twenty-seven non-overlap issuers remain queued for human
+current LLM rule. Forty-four non-overlap issuers remain queued for human
 review.
 
 Table \ref{tab:dsl-surrogate-validation} reports the first validation-adjusted
 diagnostic. The raw positive predictive value of the surrogate nominal-exit
-screen is 1.000 among the thirty-seven overlap issuers. I do not treat this as
+screen is 1.000 among the fifty-four overlap issuers. I do not treat this as
 literal certainty. With a Jeffreys correction, the implied nominal-exit
-precision is 0.987; using the Wilson 95 percent lower bound gives a more
-conservative precision of 0.906. Applied to the twenty-seven non-overlap
-surrogate issuers, these rates imply between 24.46 and 26.64 expected
+precision is 0.991; using the Wilson 95 percent lower bound gives a more
+conservative precision of 0.934. Applied to the forty-four non-overlap
+surrogate issuers, these rates imply between 41.08 and 43.60 expected
 nominal-exit cases. The result is substantively useful but narrow. It validates
 the current LLM rule as a high-precision screen for nominal exit. It does not
 yet validate the model as a full classifier for substantive exit, functional
