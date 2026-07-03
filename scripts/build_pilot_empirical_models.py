@@ -173,6 +173,7 @@ def model_specs(rows: list[dict[str, str]]) -> list[dict[str, object]]:
 
 
 def write_model_outputs(specs: list[dict[str, object]]) -> None:
+    matched_total = specs[0]["n"] if specs else 0
     rows: list[dict[str, str]] = []
     for spec in specs:
         variables = ["Intercept", *spec["variables"]]
@@ -246,7 +247,7 @@ def write_model_outputs(specs: list[dict[str, object]]) -> None:
             "\\begin{minipage}{0.94\\linewidth}\n"
             "\\vspace{0.5em}\\footnotesize Notes: The dependent variable equals one for "
             "substantive exit or functional transfer and zero for nominal exit. "
-            "The table uses the sixty human-validated cases currently matched to "
+            f"The table uses the {matched_total} human-validated cases currently matched to "
             "the CBDB-GADM historical-capacity measure. Coefficients are linear "
             "probability models with HC1 robust standard errors in parentheses. "
             "These estimates are exploratory pilot associations rather than "

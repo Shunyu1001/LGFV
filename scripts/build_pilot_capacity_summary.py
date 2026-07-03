@@ -467,10 +467,28 @@ def write_validated_latex(rows: list[dict]) -> None:
 
 
 def build_distribution_rows() -> list[dict]:
+    label_rows = read_csv(LABELS)
     matrix_rows = read_csv(PILOT_MATRIX)
     grouped: dict[str, dict[str, int | str]] = {}
+
+    grouped["human_validated"] = {
+        "validation_tier": "human_validated",
+        "display_tier": TIER_LABELS["human_validated"],
+        "analytic_use": TIER_USE["human_validated"],
+        "total": 0,
+        **{family: 0 for family in EXIT_FAMILY_ORDER},
+    }
+    for row in label_rows:
+        family = row["final_label"]
+        if family not in EXIT_FAMILY_ORDER:
+            family = "unclear"
+        grouped["human_validated"]["total"] = int(grouped["human_validated"]["total"]) + 1
+        grouped["human_validated"][family] = int(grouped["human_validated"][family]) + 1
+
     for row in matrix_rows:
         tier = row["validation_tier"]
+        if tier == "human_validated":
+            continue
         if tier not in grouped:
             grouped[tier] = {
                 "validation_tier": tier,
