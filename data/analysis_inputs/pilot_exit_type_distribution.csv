@@ -1,4 +1,4 @@
 validation_tier,display_tier,analytic_use,total,substantive_exit,nominal_exit,functional_transfer,unclear
-human_validated,Human-validated,Used as final pilot labels,85,2,73,10,0
+human_validated,Human-validated,Used as final pilot labels,87,2,75,10,0
 boundary_candidate,Boundary case,Used to define scope conditions,1,0,0,0,1
 source_only_candidate,Source-only candidate,Used to guide source collection,3,0,0,0,3

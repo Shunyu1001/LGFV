@@ -21,67 +21,29 @@ project. The output is a screening file, not a human-validated label file.
 
 The output contains 257 rows:
 
-- 85 human gold-standard labels
-- 166 pending candidate disclosures screened by Codex
-- 52 Codex surrogate disclosure-level labels
-- 114 unresolved candidate disclosures
+- 87 human gold-standard labels
+- 164 pending candidate disclosures screened by Codex
+- 84 Codex surrogate disclosure-level labels
+- 80 unresolved candidate disclosures
 
-The first pass produced two medium-confidence `nominal_exit` labels for
-Guangzhou Metro and Nanjing Metro. Later source-packet review showed that both
-metro packets are better treated as boundary evidence than as gold-standard
-city-platform exit cases. The Shanghai Clearing source-packet passes added
-source packets for the full priority range in the harvest file. After promoting
-validated packets into the gold-standard file and marking boundary packets as
-out of frame, the screening file contains 52 surrogate `nominal_exit` labels.
-These cases contain direct no-government-financing language together with
-continuing urban infrastructure, entrusted construction, land-development,
-fiscal-support, or public-project functions. They remain disclosure-level
-surrogate evidence and should not be counted as new gold-standard observations.
+After the missing-PDF recovery pass, the screening file contains 84 surrogate `nominal_exit` labels. These cases contain direct no-government-financing language together with continuing urban infrastructure, entrusted construction, land-development, fiscal-support, or public-project functions. They remain disclosure-level surrogate evidence and should not be counted as new gold-standard observations until validated against original line references.
 
-The 52 surrogate labels correspond to 33 unique issuers because several
-Shanghai Clearing rows are repeated bond disclosures for the same platform. All
-33 issuers exactly match issuers that already appear in the
-gold-standard human-validated label file under different case IDs. This overlap
-is useful as a consistency check, but it should not be counted as new sample
-expansion. No non-overlap issuer remains in the current validation queue. The
-analysis file therefore preserves the disclosure-level labels, while the next
-statistical step must aggregate or deduplicate them at the issuer or
-city-platform level. The issuer-level summary file performs this preliminary
-collapse and keeps evidence snippets for later human review.
+The 84 surrogate labels correspond to 64 unique issuers because several Shanghai Clearing rows are repeated bond disclosures for the same platform. Of these issuers, 37 already match the gold-standard human-validated file under another case ID. The remaining 27 non-overlap issuers form the current validation queue. The analysis file therefore preserves disclosure-level labels, while the statistical step must aggregate or deduplicate them at the issuer or city-platform level.
 
 ## Conservative Rule
 
-Codex only produces an exit-type surrogate when the source packet contains
-direct formal exit, no-government-financing, or market-oriented transformation
-language. Ordinary historical equity transfers, generic debt-restructuring
-discussion, subsidiary changes, and Shanghai Clearing disclosure titles do not
-create a surrogate outcome. Shanghai Clearing rows are classified only after
-their attached PDF source packets have been downloaded and converted to text.
+Codex only produces an exit-type surrogate when the source packet contains direct formal exit, no-government-financing, or market-oriented transformation language. Ordinary historical equity transfers, generic debt-restructuring discussion, subsidiary changes, and Shanghai Clearing disclosure titles do not create a surrogate outcome. Shanghai Clearing rows are classified only after their attached PDF source packets have been downloaded and converted to text.
 
-This conservative rule is intentional. The purpose of the first pass is to
-separate usable surrogate labels from cases that still need source-packet
-collection. A model-generated label is useful only when the underlying source
-packet supports the coding decision.
+This conservative rule is intentional. The purpose of the first pass is to separate usable surrogate labels from cases that still need source-packet collection. A model-generated label is useful only when the underlying source packet supports the coding decision.
 
 ## DSL Interpretation
 
-The current design follows the design-based supervised learning logic in
-Egami, Hinck, Stewart, and Wei. Human labels are gold-standard outcomes. Codex
-labels are imperfect surrogate labels. Unresolved cases are missing-label
-candidates, not negative outcomes.
+The current design follows the design-based supervised learning logic in Egami, Hinck, Stewart, and Wei. Human labels are gold-standard outcomes. Codex labels are imperfect surrogate labels. Unresolved cases are missing-label candidates, not negative outcomes.
 
-The next inference stage should use the human-validated sample to estimate
-surrogate-label error and then apply a validation-adjusted or doubly robust
-estimator to downstream relationships such as historical capacity and
-substantive exit.
+The next inference stage should use the human-validated sample to estimate surrogate-label error and then apply a validation-adjusted or doubly robust estimator to downstream relationships such as historical capacity and substantive exit.
 
-## Next Step
+## Current Collection Status
 
-The broad Shanghai Clearing source-packet workflow is now functional. The
-latest inventory expansion added 119 disclosure pages and 996 attached
-documents to the tracked source and document inventories. Local raw PDFs and
-extracted texts are ignored by git, but the current working collection contains
-1,170 downloaded PDFs and 1,058 extracted text files. Among the 166 pending
-candidate disclosures, 82 now have usable extracted text, 67 have downloaded
-PDF records without usable extracted text, and 17 have no collected document
-packet. The next collection task is no longer issuer-queue review. It is to continue a resumable extraction pass for the 67 PDF-record cases that still lack usable text and to decide whether the 82 usable-text unresolved packets contain formal exit evidence or should remain unlabeled.
+The broad Shanghai Clearing source-packet workflow is now functional. The latest recovery pass downloaded 338 additional key PDFs and reran text extraction for pending candidates. Local raw PDFs and extracted texts are ignored by git, but the current working collection contains 1,508 downloaded PDFs and 1,396 extracted text files. Among the 164 pending candidate disclosures, 146 now have usable extracted text, 1 has downloaded PDF records without usable extracted text, and 17 have no collected document packet.
+
+The next collection task is no longer broad PDF recovery. It is validation triage for the 27 non-overlap issuer queue, followed by closer review of the 80 unresolved candidates whose source packets still do not contain a direct formal exit or compliance event under the frozen codebook.
