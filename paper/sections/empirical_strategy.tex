@@ -242,45 +242,67 @@ unresolved candidates. The surrogate labels are medium-confidence nominal-exit
 cases because the source packets pair no-government-financing language with
 continued evidence of public development, infrastructure construction,
 entrusted projects, land development, fiscal support, or state-asset functions.
-They correspond to 64 unique issuers because repeated
-bond disclosures often describe the same platform. The analysis therefore
-treats them as disclosure-level surrogate labels until they are deduplicated
-or aggregated to the city-platform level. At the issuer level, thirty-seven of
-these issuers match platforms already present in the gold-standard file under
-different case IDs. This overlap is useful for checking whether the surrogate
-procedure recovers already validated nominal-exit cases, but it is not counted
-as new validation expansion. Twenty-seven non-overlap issuers remain queued for
-human review, including nine Priority B cases and eighteen Priority C cases.
-Six packets are retained as boundary-reviewed rather than gold labels
-because they are province-level or specialized infrastructure SOEs. The unresolved cases remain
-unresolved for two reasons: some have source packets but no direct formal exit
-or compliance event, while others still need source-packet collection. These
-rows are retained for source collection but are not treated as outcomes.
+They correspond to 64 unique issuers because repeated bond disclosures often
+describe the same platform. The analysis therefore deduplicates them at the
+issuer level before using them as auxiliary labels. Thirty-seven of these
+issuers match platforms already present in the gold-standard file under
+different case IDs. All thirty-seven overlap cases have the same
+gold-standard label as the surrogate label: nominal exit. This overlap is not
+counted as new validation expansion, but it provides a direct estimate of the
+precision of the current LLM rule. Twenty-seven non-overlap issuers remain
+queued for human review. Six packets are retained as boundary-reviewed rather
+than gold labels because they are province-level or specialized infrastructure
+SOEs. The unresolved cases remain unresolved for two reasons: some have source
+packets but no direct formal exit or compliance event, while others still need
+source-packet collection. These rows are retained for source collection but are
+not treated as outcomes.
+
+Table \ref{tab:dsl-surrogate-validation} reports the first validation-adjusted
+diagnostic. The raw positive predictive value of the surrogate nominal-exit
+screen is 1.000 among the thirty-seven overlap issuers. I do not treat this as
+literal certainty. With a Jeffreys correction, the implied nominal-exit
+precision is 0.987; using the Wilson 95 percent lower bound gives a more
+conservative precision of 0.906. Applied to the twenty-seven non-overlap
+surrogate issuers, these rates imply between 24.46 and 26.64 expected
+nominal-exit cases. The result is substantively useful but narrow. It validates
+the current LLM rule as a high-precision screen for nominal exit. It does not
+yet validate the model as a full classifier for substantive exit, functional
+transfer, or liquidation.
+
+\input{tables/dsl_surrogate_validation}
 
 For inference, I follow the design-based supervised learning logic of
 \citet{egami2023dsl}. Let $Y_i$ denote the unobserved gold-standard exit label,
 $S_i$ the LLM surrogate label, and $V_i$ an indicator for whether case $i$ is
-human validated. The validation sample is drawn with known sampling
-probabilities and oversamples low-capacity and high-debt localities, where
-measurement risk is greatest. A prediction model uses $S_i$, source coverage,
-document type, candidate priority, historical capacity, debt pressure, land
-finance dependence, and platform characteristics to estimate the gold-standard
-outcome. The downstream estimand, such as the association between historical
-capacity and substantive exit, is then estimated with a validation-adjusted or
-doubly robust correction rather than with raw surrogate labels.
+human validated. In the current implementation, $S_i$ should be interpreted as
+a one-sided screen. A surrogate nominal-exit label is informative because it
+has high validated precision, while an unresolved row is not evidence that
+nominal exit is absent. The next version will draw a validation sample with
+known sampling probabilities and oversample low-capacity and high-debt
+localities, where measurement risk is greatest. A prediction model can then
+use $S_i$, source coverage, document type, candidate priority, historical
+capacity, debt pressure, land finance dependence, and platform characteristics
+to estimate the gold-standard outcome. The downstream estimand, such as the
+association between historical capacity and substantive exit, is then estimated
+with a validation-adjusted or doubly robust correction rather than with raw
+surrogate labels.
 
 This procedure changes the role of the model. The LLM is not the final coder,
 and its accuracy is not the main quantity of interest. The model helps expand
 the candidate pool and provides auxiliary information for prediction. Human
 labels identify the outcome scale and estimate the error structure. Cases
 without usable source packets enter the workflow as missing-label candidates
-rather than as negative outcomes. For the binary specification, the corrected
-estimand is the relationship between historical capacity and
-$SubstantiveExit_i$. For the multinomial specification, I estimate
+rather than as negative outcomes. For the binary specification, the first
+corrected estimand is the relationship between historical capacity and a
+broader institutional-change outcome that combines substantive exit and
+functional transfer. This outcome is more stable in the present gold-standard
+sample than a substantive-exit-only model, because there are only two
+substantive-exit cases. For the multinomial specification, I estimate
 type-specific indicators for substantive exit, nominal exit, functional
-transfer, and liquidation. In both cases, uncertainty must reflect the
-validation design and the fact that the large candidate pool is measured
-through imperfect surrogates.
+transfer, and liquidation only after additional gold labels or validated
+surrogate labels recover enough non-nominal cases. In both cases, uncertainty
+must reflect the validation design and the fact that the large candidate pool
+is measured through imperfect surrogates.
 
 \subsection{Mechanism analyses}
 
