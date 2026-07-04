@@ -144,11 +144,11 @@ each step.
 
 These estimates should be read as descriptive associations, not as final
 causal estimates. The sample is a validated measurement sample, and several
-important controls are not yet fully merged at the case level. Even so, the
-models are useful for two reasons. They show that the theoretical pattern is
-not driven only by a few named examples, and they define the specification that
-the full sample will use once contemporary fiscal and debt controls are
-complete.
+important contemporary fiscal controls are not yet fully merged at the case
+level. Even so, the models are useful for two reasons. They show that the
+theoretical pattern is not driven only by a few named examples, and they define
+the specification that the full sample will use once city-level fiscal, debt,
+and land-finance controls are complete.
 
 \subsection{Alternative explanations and controls}
 
@@ -187,26 +187,59 @@ Pr(ExitType_i = k) = f(HistoricalCapacity_i, X_i, \delta_p),
 where $k$ indexes the four institutional fates. In the present version, I
 report the simpler institutional-change model because the validated sample has
 too few substantive-exit cases for a stable multinomial model. The controls
-and fixed-effects specification are included here to define the next
-estimating equation rather than to imply that all controls are already
-available for the current validated sample.
+and fixed-effects specification are included here to define the estimating
+equation. The present version can already estimate the parts of that equation
+that are available in the validated panel: source or bond-disclosure quality,
+capital or sub-provincial status, provisional platform hierarchy, and province
+fixed effects. It cannot yet estimate the full contemporary-fiscal
+specification because GDP per capita, fiscal self-sufficiency, local debt
+pressure, and land-finance dependence still need to be collected from
+city-level statistical communiques, fiscal final accounts, debt disclosures,
+and government-fund revenue tables.
+
+\input{tables/controlled_lpm_institutional_change}
+
+Table \ref{tab:controlled-lpm-institutional-change} reports the strongest
+available-controls models that can be estimated without imputing missing fiscal
+data. The dependent variable again equals one for substantive exit or
+functional transfer and zero for nominal exit. The historical-capacity
+coefficient remains positive after adding source coverage and
+capital/sub-provincial status, and it remains positive after adding provisional
+platform-hierarchy controls. With province fixed effects, the coefficient is
+smaller and no longer distinguishable from zero. I read this pattern
+cautiously. The validated sample is still small, the positive association is
+not mechanically driven by a few examples, and province-specific policy
+environments matter enough that the next version should prioritize a larger
+case pool with complete contemporary controls.
 
 Table \ref{tab:empirical-case-panel-coverage} reports the current case-panel
 coverage behind these specifications. The panel combines the ninety-four
 gold-standard cases with the ninety-seven non-overlap issuer-level surrogate
 cases used in the adjusted descriptive sample. The current validated-sample
 models use the eighty-four gold-standard rows with historical-capacity
-matches. The full-controls specification is deliberately not reported yet,
-because contemporary fiscal capacity, debt pressure, land finance dependence,
-and platform administrative level remain collection fields rather than
-measured controls. This table makes the gap explicit: the project now has a
-structured empirical panel, but it still needs contemporary controls before
-the full alternative-explanations model can be estimated. A separate collection
-queue now maps the gold-standard cases to city-level control units and
-platform-level hierarchy checks, so the next step is source collection rather
-than another redesign of the data structure.
+matches. The full-controls specification is not reported as a completed model
+because the core city-level contemporary controls are still collection fields
+rather than measured controls. This table makes the gap explicit: the project
+now has a structured empirical panel and an available-controls main
+regression, but it still needs source-backed contemporary fiscal, debt, and
+land-finance measures before the full alternative-explanations model can be
+estimated. A separate collection queue now maps the gold-standard cases to
+city-level control units and platform-level hierarchy checks, so the next step
+is source collection rather than another redesign of the data structure.
 
 \input{tables/empirical_case_panel_coverage}
+
+\input{tables/full_controls_model_diagnostics}
+
+Table \ref{tab:full-controls-model-diagnostics} separates controls that can be
+used now from controls that would have to be invented if they were forced into
+the current regression. Source quality, capital or sub-provincial status, and
+province identifiers are complete for the current model rows. Platform
+administrative level is partly available as a rule-based pre-code and should be
+audited against ownership and controller sections before being treated as a
+final control. GDP per capita, fiscal self-sufficiency, debt pressure, and land
+finance dependence are not imputed. Their absence is a data-collection task,
+not a modeling choice.
 
 \subsection{LLM surrogate labels and validation-adjusted inference}
 
