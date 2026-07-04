@@ -1,7 +1,7 @@
 model,variable,coefficient,robust_se,p_value,n,dependent_mean
-Elite density,Intercept,0.156,0.041,0.000,77,0.156
-Elite density,"Elite density, standardized",0.063,0.042,0.137,77,0.156
-High capacity,Intercept,0.098,0.042,0.020,77,0.156
-High capacity,High historical-capacity bin,0.171,0.098,0.080,77,0.156
-Capacity rank,Intercept,0.021,0.030,0.484,77,0.156
-Capacity rank,Capacity bin rank,0.135,0.044,0.002,77,0.156
+Elite density,Intercept,0.143,0.038,0.000,84,0.143
+Elite density,"Elite density, standardized",0.066,0.041,0.102,84,0.143
+High capacity,Intercept,0.089,0.039,0.021,84,0.143
+High capacity,High historical-capacity bin,0.161,0.091,0.079,84,0.143
+Capacity rank,Intercept,0.018,0.028,0.528,84,0.143
+Capacity rank,Capacity bin rank,0.125,0.041,0.003,84,0.143

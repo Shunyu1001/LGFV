@@ -1,116 +1,93 @@
-\section{Empirical Strategy}
+\section{Empirical Evidence}
 
-\subsection{Main specifications}
+This section turns the measurement framework into empirical evidence. The
+analysis has three aims. First, it shows that official exit is empirically
+different from functional fiscal change. Second, it examines whether the
+validated labels vary with historically rooted state capacity in the direction
+predicted by the theory. Third, it uses the LLM-assisted screening file as an
+auxiliary measurement device, while keeping human-validated labels as the
+gold-standard outcome.
 
-The baseline empirical analysis estimates whether historical state capacity
-predicts the probability of substantive exit. A simple specification is:
+The evidence is not yet presented as a final population estimate. The
+human-validated sample is designed to build and audit the outcome measure. The
+LLM surrogate sample is designed to expand coverage under a validation design.
+For that reason, the section separates three objects throughout: the
+gold-standard labels, the historically matched validated subset, and the
+issuer-level surrogate labels used for validation-adjusted descriptive
+counts.
 
-\begin{equation}
-SubstantiveExit_i = \alpha + \beta HistoricalCapacity_i + X_i'\gamma + \epsilon_i,
-\end{equation}
+\subsection{Gold-standard labels and source validation}
 
-where $SubstantiveExit_i$ indicates whether city-platform case $i$ achieved
-substantive exit, $HistoricalCapacity_i$ measures historically rooted state
-capacity in the relevant locality, and $X_i$ includes contemporary fiscal,
-economic, debt, and political controls.
+The current gold-standard file contains ninety-four human-validated
+city-platform cases. Each label is assigned from original or near-original
+source documents rather than from a single exit list or aggregate platform
+count. The file records the formal event, the post-event location of the
+relevant function, the final label, the plausible alternative label, the source
+coverage score, and the rationale for the coding decision. The broader
+screening file contains 361 candidate disclosure rows. These rows are useful
+for scaling the project, but they are not treated as final outcomes until they
+pass the coding rule and human review.
 
-The first version of $HistoricalCapacity_i$ will be constructed from CHGIS
-\citep{chgis2024}. The main measure is Qing administrative density: the number
-of late-imperial county or prefectural administrative units intersecting the
-contemporary prefecture-level city, scaled by land area. This measure captures
-the depth of historical administrative presence rather than contemporary fiscal
-strength. The main alternative measure will use CBDB to construct Ming-Qing
-elite density, especially the density of high-degree civil service examination
-holders by place of affiliation \citep{cbdb2024,bai2016elite}. The first
-operational version counts jinshi and juren records by historical place,
-assigns those places to contemporary prefecture-level cities using their
-coordinates and modern administrative boundaries, and scales the resulting
-counts by prefecture land area. This second measure captures local
-administrative human capital and elite formation. A third measure, based on
-Ming courier routes and stations, can be used as a robustness check for
-historical communication and transport infrastructure.
-
-A second specification uses exit type as a multinomial outcome:
-
-\begin{equation}
-Pr(ExitType_i = k) = f(HistoricalCapacity_i, X_i),
-\end{equation}
-
-where $k$ indexes substantive exit, nominal exit, functional transfer, and
-liquidation. This specification evaluates whether historical state capacity is
-associated with different institutional responses to the same central reform.
-
-\subsection{Pilot evidence}
-
-The first empirical step is an expanded pilot sample. The purpose of the pilot
-is not to estimate the main effect. The purpose is to show that the exit-type
-categories can be assigned from original documents, that the categories
-distinguish different institutional outcomes, and that the cases span
-meaningful variation in historical state capacity. For this reason, I separate
-human-validated labels from candidate cases throughout the analysis.
-
-Table \ref{tab:pilot-validation-tiers} summarizes the validation status of the
-current evidence packets. The human-validated label file now contains
-ninety-four cases, and the broader screening file contains 361 disclosure rows.
-The descriptive tables in this section use the eighty-four validated cases that can
+Table \ref{tab:pilot-validation-tiers} summarizes the measurement base used in
+the current analysis. Eighty-four of the ninety-four validated labels can
 currently be matched to the CBDB-GADM historical-capacity crosswalk. Ten
 validated cases remain unmatched because the current crosswalk does not yet
-provide a usable historical-capacity match for those city or county entries. This
-keeps the pilot evidence auditable while making clear that source collection
-has moved beyond the original twelve-case demonstration.
+provide a usable city or county match. The empirical tables that compare exit
+type to historical capacity use only the matched subset. The full label file
+remains the gold-standard outcome file for validation and future sample
+expansion.
 
 \input{tables/pilot_validation_tiers}
 
-Appendix Table \ref{tab:pilot-validated-labels} reports the current
-human-validated labels in the historically matched pilot subset. These cases
-recover three exit types. Guangzhou City Construction Investment Group and
-Ningbo Development Investment Group are coded as substantive exit because the
-available disclosures indicate a movement away from off-budget
-government-project financing. Hangzhou City Investment Group, Wenzhou
-Mingcheng Construction Investment Group, and Foshan Construction Development
-Group are coded as functional transfer because public project functions
-continue through reorganized municipal platform groups, guarantor structures,
-SASAC entrustment, or fiscal-settlement contracts. The nominal-exit cases show
-that formal exit or no-government-financing language can coexist with
-continuing evidence of infrastructure investment, entrusted construction,
-fiscal payment arrangements, land preparation, major project construction,
-government-linked repayment, or fiscal subsidies.
+The validated labels already show why the paper treats LGFV exit as a
+measurement problem. The full gold-standard file contains two substantive
+exits, eighty-two nominal exits, and ten functional transfers. No liquidation
+case has yet entered the gold-standard file. The distribution should not be
+read as a representative population share. It is better read as evidence that
+formal compliance language commonly coexists with continuing public-project,
+fiscal-support, land-development, entrusted-construction, repayment, or
+state-asset functions.
 
-The credibility of these labels rests on whether the formal event and the
-post-event function can be traced to original documents. Appendix Table
-\ref{tab:pilot-source-audit} makes that audit trail explicit for the
-historically matched pilot cases. The full label file is maintained separately
-as a machine-readable audit file. The table reports the primary source and line
-ranges used for each label, the formal exit or compliance event, the post-event
-functional evidence, and the final label. It does not substitute for the case
-packets. Its role is to make the measurement decision inspectable without
-turning the main text into a document inventory.
+The source audit is central to this claim. Appendix Table
+\ref{tab:pilot-source-audit} reports the primary source, formal event,
+continued-function evidence, and final label for the historically matched
+validated cases. The audit trail keeps the coding decision inspectable. A
+prospectus may state that new debt does not constitute local government debt,
+while other sections of the same document describe infrastructure investment,
+fiscal receivables, entrusted construction, or government-linked repayment.
+The label is therefore assigned from the joint reading of formal-event evidence
+and post-event functional evidence, not from the compliance sentence alone.
 
-Table \ref{tab:pilot-capacity-bin-exit-type} gives the simplest descriptive
-comparison between historical capacity and validated exit type. The table uses
-the historically matched validated labels. It does not estimate a population
-relationship, because the pilot is selected to build and audit the coding
-scheme. Even with this limitation, the pattern is useful. The matched
-low-capacity cases are all nominal exits. The high-capacity cases contain all
-three observed types, including the two substantive-exit cases. This is the
-pattern implied by the theory: higher-capacity cities are not guaranteed to
-produce substantive exit, but substantive exit is more plausible where local
-officials can absorb fiscal functions, coordinate reorganizations, and govern
-projects and assets after the formal exit event.
+\subsection{Descriptive patterns}
+
+Table \ref{tab:pilot-capacity-bin-exit-type} reports the core descriptive
+pattern in the historically matched validated sample. The table groups cases
+into low, middle, and high historical-capacity bins using the CBDB-GADM
+Ming-Qing elite-density measure. The low-capacity bin contains only nominal
+exits. The middle bin contains nominal exits and functional transfers. The
+high-capacity bin contains all three observed outcomes, including both
+substantive-exit cases.
 
 \input{tables/pilot_capacity_bin_exit_type}
 
+This pattern supports a restrained version of the theoretical claim.
+Historical state capacity does not mechanically produce substantive exit.
+Many high-capacity cases still receive nominal-exit labels. What changes is
+the feasible institutional menu. Higher-capacity localities are more likely to
+show some departure from pure formal compliance, either by absorbing former
+platform functions into fiscal channels or by reorganizing those functions
+through a local state-owned system. Lower-capacity cases in the current
+validated sample are dominated by formal compliance paired with continuing
+platform functions.
+
 Figure \ref{fig:pilot-exit-type-by-capacity-bin} presents the same comparison
-as shares rather than counts. The figure is more useful than a simple ranking
-of historical elite density because it puts the outcome categories at the
-center of the comparison. The low-capacity bin contains twenty-six nominal exits
-and no observed functional transfer or substantive exit. The middle bin
-contains five functional-transfer cases and twenty nominal exits. The high bin
-contains nineteen nominal exits, five functional-transfer cases, and the two
-substantive-exit cases. The pilot pattern therefore supports a cautious
-interpretation: historical capacity is associated less with a universal shift
-to substantive exit than with a broader institutional menu beyond nominal
-compliance.
+as shares. This figure replaces a simple ranking of historical elite density
+because the outcome categories, not the capacity measure alone, are the object
+of interest. The figure also makes the main empirical point visually clear:
+substantive exit is rare in the current validated sample, but when it appears
+it appears only in the high-capacity bin; functional transfer appears in the
+middle and high bins; nominal exit dominates all bins and fully dominates the
+low-capacity bin.
 
 \begin{figure}[htbp]
 \centering
@@ -119,222 +96,206 @@ compliance.
 \label{fig:pilot-exit-type-by-capacity-bin}
 \end{figure}
 
-Table \ref{tab:pilot-lpm-institutional-change} reports a small exploratory
-linear probability model using the same matched pilot cases. The dependent
-variable equals one when a case is coded as substantive exit or functional
-transfer and zero when it is coded as nominal exit. This outcome does not treat
-functional transfer as equivalent to substantive exit. It simply separates
-cases in which the institutional form changes from cases in which the same
-issuer continues the public function under formal compliance language. Across
-three simple specifications, historical capacity is positively associated with
-this broader measure of institutional change. A one-standard-deviation
-increase in elite density is associated with a 6.3 percentage point higher
-probability of substantive exit or functional transfer. Membership in the high
-historical-capacity bin is associated with a 17.1 percentage point higher
-probability relative to the other bins. Moving from low to middle to high
-capacity is associated with a 13.5 percentage point increase at each step.
-These estimates remain descriptive, but they make the pilot evidence easier to
-compare with the paper's eventual full-sample analysis.
+Case comparisons clarify the pattern. Guangzhou City Construction Investment
+and Ningbo Development Investment are coded as substantive exit because the
+reviewed documents indicate movement away from off-budget government-project
+financing. In Guangzhou, former government project work is described as
+fiscally funded entrusted management rather than platform financing. In
+Ningbo, the reviewed source packet does not show the continuing public project
+financing categories that would rule out substantive exit. Xuzhou, Yancheng,
+and Hengyang point in the opposite direction. Their documents contain formal
+exit or no-government-financing language, but the same issuers continue to
+show shantytown redevelopment, entrusted construction, land preparation,
+government settlement, fiscal subsidy, or public project repayment functions.
+
+The expanded validated cases prevent a deterministic interpretation. Nanjing
+Transportation Construction Investment, Shijiazhuang Transportation
+Investment, Haian Tenghai Investment, Gaochun International Cittaslow Cultural
+Tourism Investment, and Jiaxing Jiaxiu Development Investment all come from
+middle- or high-capacity settings, yet their source packets still support
+nominal-exit labels. These cases show that capacity expands the menu of
+possible responses rather than guaranteeing substantive exit. The central
+empirical distinction is not strong versus weak cities in a simple sense. It
+is whether an official exit event changes the institutional location of the
+public financing function.
+
+\subsection{Statistical association in the validated sample}
+
+The first statistical test uses the historically matched validated cases. The
+dependent variable is institutional change, which equals one for substantive
+exit or functional transfer and zero for nominal exit. This binary outcome is
+not meant to collapse the theory. Substantive exit and functional transfer are
+different institutional fates. The purpose of this specification is to ask
+whether historical capacity predicts movement away from the narrowest form of
+official compliance, given that the current gold-standard file contains only
+two substantive-exit cases.
 
 \input{tables/pilot_lpm_institutional_change}
 
-Case comparisons clarify the mechanism. Guangzhou and Ningbo illustrate
-high-capacity substantive exit. Guangzhou shifted away from new government
-project investment and financing toward fiscally funded project management and
-budgetary debt replacement. Ningbo pairs no-government-financing language with
-negative evidence on core platform functions: the reviewed documents do not
-show major PPP, BT, government purchase service, land preparation, advance
-financing, or fiscal repayment arrangements. Xuzhou, Yancheng, and Hengyang
-point in the opposite direction. Their documents contain formal exit or
-no-government-financing language, but the same issuers continued to show
-shantytown redevelopment, entrusted construction, land preparation, government
-settlement, public project repayment, or fiscal subsidy arrangements.
+Table \ref{tab:pilot-lpm-institutional-change} reports linear probability
+models with robust standard errors. Across three simple specifications,
+historical capacity is positively associated with institutional change. A
+one-standard-deviation increase in elite density is associated with a 6.3
+percentage point increase in the probability of substantive exit or functional
+transfer. Membership in the high historical-capacity bin is associated with a
+17.1 percentage point increase relative to other bins. Moving from low to
+middle to high capacity is associated with a 13.5 percentage point increase at
+each step.
 
-The expanded cases prevent a deterministic reading of the theory. Several
-high-capacity or middle-capacity platforms still receive nominal-exit labels.
-Nanjing Transportation Construction Investment, Shijiazhuang Transportation
-Investment, Haian Tenghai Investment, Gaochun International Cittaslow Cultural
-Tourism Investment, and Jiaxing Jiaxiu Development Investment all contain
-formal compliance language, yet their source packets continue to show
-transport, development-zone, cultural-tourism, resettlement-housing,
-land-preparation, entrusted-construction, fiscal-subsidy, or
-government-related receivable functions. These cases show why the paper treats
-historical capacity as shaping the feasible menu of responses rather than
-mechanically producing substantive exit. Substantive exit requires more than
-compliant language. Nominal exit can satisfy formal reporting demands while
-leaving the fiscal function institutionally present.
+These estimates should be read as descriptive associations, not as final
+causal estimates. The sample is a validated measurement sample, and several
+important controls are not yet fully merged at the case level. Even so, the
+models are useful for two reasons. They show that the theoretical pattern is
+not driven only by a few named examples, and they define the specification that
+the full sample will use once contemporary fiscal and debt controls are
+complete.
 
-Appendix Table \ref{tab:pilot-mechanism-evidence} connects these labels to the
-three mechanisms in the theory section. The entries are qualitative evidence
-notes rather than numerical scores. They show whether each case contains
-evidence of fiscal absorption, bureaucratic coordination, and project or
-state-asset governance. The substantive-exit cases display evidence that
-former platform functions were either absorbed into fiscal channels or no
-longer visible in the reviewed platform-function categories. The nominal-exit
-cases tend to preserve public project or repayment functions inside the same
-issuer. The functional-transfer cases show more coordination and
-reorganization, but the public function remains inside a local state-owned or
-platform-like system.
+\subsection{Alternative explanations and controls}
 
-Figure \ref{fig:pilot-exit-type-distribution} reports the exit-type
-distribution by validation tier. The figure is not a population estimate.
-Rather, it records the current evidence map for the historically matched pilot
-subset. The full human-validated label file now contains two substantive-exit
-cases, seventy-five nominal-exit cases, and ten functional-transfer cases. The
-strong candidates extend the same institutional range, but remain outside the
-final label file because they still require either a direct formal exit source
-or a scope decision about whether the issuer should be treated as a core LGFV
-rather than a specialized infrastructure SOE.
+The main alternative explanation is contemporary fiscal strength. Wealthier
+cities may be able to move platform functions onto budget, replace implicit
+debt with formal debt instruments, and maintain investment without relying on
+LGFVs, regardless of historical state capacity. A second explanation is debt
+pressure. Highly indebted cities may announce exit because central discipline
+requires it, while preserving platform functions because fiscal stress makes
+substantive exit difficult. A third explanation is land finance dependence:
+localities that rely heavily on land development may keep platform functions
+alive even after formal exit. Other concerns include province-level policy
+differences, bond market disclosure quality, platform administrative rank, and
+capital or sub-provincial status.
 
-\input{figures/pilot_exit_type_distribution}
+The full empirical specification therefore uses the following form:
 
-Appendix Table \ref{tab:pilot-historical-capacity} reports the case-level
-CBDB-GADM elite-density match for eighty-four validated cases and three candidate
-cases \citep{cbdb2024,gadm2022}. The descriptive pattern is not a simple
-high-versus-low split. Guangzhou and Ningbo appear as substantive exit, while
-Hangzhou and Foshan appear as functional transfer, and Jinan and Chengdu
-appear as nominal exit. This variation is consistent with the argument that
-historical capacity changes the feasible menu of institutional responses
-rather than mechanically determining one outcome. At the lower end of the
-historical-capacity distribution, the validated cases of Zhuzhou, Xuzhou, and
-Yancheng are all coded as nominal exit. Their documents contain formal exit or
-no-government-financing language, but the same issuers continued to perform
-land preparation, major project construction, shantytown redevelopment,
-infrastructure construction, entrusted construction, affordable housing, or
-fiscal-support functions. Luzhou, Zunyi, and Liupanshui remain candidate cases
-rather than final labels, but their source packets show why weak-capacity
-localities are central to the next round of data collection. The historical
-capacity bins in Table \ref{tab:pilot-capacity-bin-exit-type} sharpen this
-pattern: the high-capacity third contains both substantive-exit cases and five
-of the matched functional-transfer cases, while the low-capacity third contains
-only nominal exits. This is descriptive rather than causal, but it is exactly
-the pattern the measurement framework is meant to make visible. The
-documentary trail in lower-capacity cases is often dominated by debt-resolution
-pressure, fiscal support, and continuing public-project functions rather than
-by clean exit-list documents.
+\begin{equation}
+InstitutionalChange_i = \alpha + \beta HistoricalCapacity_i + X_i'\gamma +
+\delta_p + \epsilon_i,
+\end{equation}
 
-The pilot therefore makes a limited but useful empirical contribution. It does
-not yet support a final population estimate, and it should not be read as a
-representative distribution of LGFV exit types. It does show that the proposed
-coding rule separates substantive exit, nominal exit, and functional transfer
-in real documents, that these categories vary with a historically rooted
-measure of local state capacity, and that the next stage of the project can
-scale the same measurement design to the larger LLM-coded candidate pool.
+where $InstitutionalChange_i$ equals one for substantive exit or functional
+transfer, $HistoricalCapacity_i$ is measured with historical administrative or
+elite density, $X_i$ includes contemporary fiscal capacity, debt pressure, land
+finance dependence, bond disclosure quality, platform administrative level,
+and capital or sub-provincial status, and $\delta_p$ denotes province fixed
+effects when the sample supports them. The multinomial version uses
+substantive exit, nominal exit, functional transfer, and liquidation as
+separate outcomes:
 
-\subsection{Inference with surrogate labels}
+\begin{equation}
+Pr(ExitType_i = k) = f(HistoricalCapacity_i, X_i, \delta_p),
+\end{equation}
 
-The scaled version of the project separates three objects that are often
-collapsed in text-as-data applications. The first is the human-validated label,
-which is the gold-standard outcome. The second is the Codex or LLM-generated
-label, which is an imperfect surrogate for that outcome. The third is the
-source-packet status, which records whether a candidate disclosure contains
-enough source text to support any label at all. This distinction is important
-because measurement error is not likely to be random. A model may overread
-formal compliance language as substantive exit, miss continuing public
-functions buried in bond documents, or produce no useful label when the
-candidate file contains only a disclosure-page title.
+where $k$ indexes the four institutional fates. In the present version, I
+report the simpler institutional-change model because the validated sample has
+too few substantive-exit cases for a stable multinomial model. The controls
+and fixed-effects specification are included here to define the next
+estimating equation rather than to imply that all controls are already
+available for the current validated sample.
 
-The current screening file makes this separation explicit. It contains 361
-candidate rows, of which 346 are usable LLM screening observations. Table
-\ref{tab:llm-screening-status} separates these rows from the narrower exit-type
-outcome sample. The outcome sample contains ninety-four gold-standard labels
-and 203 LLM surrogate exit-type labels. The remaining usable screening rows
-include forty-four source packets for which the model found no direct formal
-exit or compliance event and five human-reviewed boundary packets. These
-rows are informative for source coverage and screening attrition, but they are
-not treated as exit-type outcomes.
+\subsection{LLM surrogate labels and validation-adjusted inference}
 
-The surrogate exit-type labels are medium-confidence nominal-exit cases because
-the source packets pair no-government-financing, no-new-government-debt, or
-no-hidden-debt compliance language with continued evidence of public
-development, infrastructure construction, entrusted projects, land development,
-fiscal support, or state-asset functions. They correspond to 158 unique issuers because repeated bond disclosures often
-describe the same platform. The analysis therefore deduplicates them at the
-issuer level before using them as auxiliary labels. Sixty-one of these
-issuers match platforms already present in the gold-standard file under
-different case IDs. All sixty-one overlap cases have the same gold-standard
-label as the surrogate label: nominal exit. This overlap is not counted as new
-validation expansion, but it provides a direct estimate of the precision of the
-current LLM rule. Ninety-seven non-overlap issuers remain queued for human
-review.
+The LLM-assisted screening file expands the measurement process beyond the
+gold-standard file. It contains 361 candidate disclosure rows, of which 346
+are usable screening observations. Table \ref{tab:llm-screening-status}
+separates the broader screening file from the narrower exit-type outcome
+sample. The outcome sample contains ninety-four gold-standard labels and 203
+LLM surrogate exit-type labels. The remaining usable screening rows include
+forty-four source packets for which the model found no direct formal exit or
+compliance event and five human-reviewed boundary packets. These rows are
+informative for source coverage and attrition, but they are not treated as
+exit-type outcomes.
 
-Table \ref{tab:dsl-surrogate-validation} reports the first validation-adjusted
-diagnostic. The raw positive predictive value of the surrogate nominal-exit
-screen is 1.000 among the sixty-one overlap issuers. I do not treat this as
-literal certainty. With a Jeffreys correction, the implied nominal-exit
-precision is 0.992; using the Wilson 95 percent lower bound gives a more
-conservative precision of 0.941. Applied to the ninety-seven non-overlap
-surrogate issuers, these rates imply between 91.25 and 96.22 expected
-nominal-exit cases. The result is substantively useful but narrow. It validates
-the current LLM rule as a high-precision screen for nominal exit. It does not
-yet validate the model as a full classifier for substantive exit, functional
+\input{tables/llm_screening_status}
+
+The current surrogate rule is intentionally narrow. It identifies
+medium-confidence nominal-exit cases where the source packet pairs formal
+compliance language with continuing public-project, land-development,
+entrusted-construction, fiscal-support, or state-asset functions. It is not a
+general classifier for all four exit types. The 203 disclosure-level
+surrogate labels correspond to 158 unique issuers because repeated bond
+disclosures often describe the same platform. Table
+\ref{tab:surrogate-empirical-flow} converts the disclosure-level screening
+file into the issuer-level object used for empirical analysis. Sixty-one
+issuer-level surrogates overlap independently validated gold-standard cases
+and are used only as validation checks. Ninety-seven non-overlap issuers enter
+the validation-adjusted descriptive sample as auxiliary labels.
+
+\input{tables/surrogate_empirical_flow}
+
+Table \ref{tab:dsl-surrogate-validation} reports the first validation
+diagnostic. All sixty-one overlap issuers match the gold-standard label:
+nominal exit. I do not interpret this raw precision of 1.000 as literal
+certainty. With a Jeffreys correction, the implied precision is 0.992. Using
+the Wilson 95 percent lower bound gives a more conservative rate of 0.941.
+Applied to the ninety-seven non-overlap surrogate issuers, these estimates
+imply between 91.25 and 96.22 expected nominal-exit cases. The result validates
+the current surrogate rule as a high-precision screen for nominal exit. It
+does not validate unresolved rows as negative outcomes, and it does not
+validate the model as a full classifier for substantive exit, functional
 transfer, or liquidation.
 
 \input{tables/dsl_surrogate_validation}
 
 Table \ref{tab:dsl-adjusted-outcomes} reports the corresponding adjusted
-outcome distribution. The observed gold-standard file contains ninety-four
-cases, of which eighty-two are nominal exits and twelve are substantive exits
-or functional transfers. Adding only the ninety-seven non-overlap
-issuer-level surrogate rows produces a 191-row adjusted descriptive sample.
-Under the Jeffreys-smoothed precision estimate, this implies 178.22 expected
-nominal exits. Under the conservative Wilson lower bound, it implies 173.25
-expected nominal exits. The difference between these rows is deliberately
-small because the current surrogate rule is narrow and high precision. The
-table should not be read as evidence that non-nominal outcomes are rare in the
-population; it shows that this particular screening rule is mainly useful for
-scaling nominal-exit detection.
+outcome distribution. The gold-standard file contains ninety-four cases, of
+which eighty-two are nominal exits and twelve are substantive exits or
+functional transfers. Adding only the ninety-seven non-overlap issuer-level
+surrogates produces a 191-row adjusted descriptive sample. Under the
+Jeffreys-smoothed precision estimate, the sample contains 178.22 expected
+nominal exits. Under the conservative Wilson lower bound, it contains 173.25
+expected nominal exits. Because the current surrogate rule is one-sided, the
+non-nominal column should be read as expected classification error or
+unobserved institutional change, not as directly observed non-nominal labels.
 
 \input{tables/dsl_adjusted_outcome_distribution}
 
 For inference, I follow the design-based supervised learning logic of
 \citet{egami2023dsl}. Let $Y_i$ denote the unobserved gold-standard exit label,
 $S_i$ the LLM screening outcome, and $V_i$ an indicator for whether case $i$ is
-human validated. In the current implementation, $S_i$ should be interpreted as
-a one-sided screen. A surrogate nominal-exit label is informative because it
-has high validated precision, while a screened no-formal-event row is a
-screening result rather than evidence that nominal exit is absent. The next
-version will draw a validation sample with
-known sampling probabilities and oversample low-capacity and high-debt
-localities, where measurement risk is greatest. A prediction model can then
-use $S_i$, source coverage, document type, candidate priority, historical
-capacity, debt pressure, land finance dependence, and platform characteristics
-to estimate the gold-standard outcome. The downstream estimand, such as the
-association between historical capacity and substantive exit, is then estimated
+human validated. In the current implementation, $S_i$ is a one-sided surrogate
+for nominal exit. The downstream estimand, such as the association between
+historical capacity and institutional change, should therefore be estimated
 with a validation-adjusted or doubly robust correction rather than with raw
 surrogate labels.
 
-This procedure changes the role of the model. The LLM is not the final coder,
-and its accuracy is not the main quantity of interest. The model helps expand
-the candidate pool and provides auxiliary information for prediction. Human
-labels identify the outcome scale and estimate the error structure. Cases
-without usable source packets enter the workflow as missing-label candidates
-rather than as negative outcomes. For the binary specification, the first
-corrected estimand is the relationship between historical capacity and a
-broader institutional-change outcome that combines substantive exit and
-functional transfer. This outcome is more stable in the present gold-standard
-sample than a substantive-exit-only model, because there are only two
-substantive-exit cases. For the multinomial specification, I estimate
-type-specific indicators for substantive exit, nominal exit, functional
-transfer, and liquidation only after additional gold labels or validated
-surrogate labels recover enough non-nominal cases. In both cases, uncertainty
-must reflect the validation design and the fact that the large candidate pool
-is measured through imperfect surrogates.
+The corrected design has three steps. First, draw a validation sample with
+known sampling probabilities, including oversamples of low-capacity and
+high-debt localities where source ambiguity is likely to be greatest. Second,
+estimate the relationship between surrogate labels and gold labels using
+source coverage, document type, historical capacity, debt pressure, land
+finance dependence, platform characteristics, and disclosure quality. Third,
+estimate the substantive relationship using gold labels where available and
+predicted or adjusted outcomes where only surrogate labels are available,
+propagating uncertainty from the validation design. The LLM is therefore an
+auxiliary measurement instrument. It expands the source review and helps model
+labeling error, but it does not replace the human-validated outcome scale.
 
-\subsection{Mechanism analyses}
+\subsection{Mechanism evidence}
 
-Mechanism analyses examine whether stronger historical state capacity is
-associated with greater formal fiscal substitution after exit. Relevant
-outcomes correspond to the three capacities in the theory section. Fiscal
-absorption can be measured through special-purpose bond use, on-budget
-infrastructure spending, and the movement of former platform projects into
-budgetary channels. Bureaucratic coordination can be measured through formal
-asset transfers, debt-succession arrangements, municipal platform-group
-reorganizations, and cross-agency implementation documents. Project and
-state-asset governance can be measured through eligible project preparation,
-fiscal-settlement rules, reductions in entrusted-construction receivables,
-changes in non-platform local SOE debt, and evidence that post-exit firms no
-longer recreate implicit government financing. These outcomes are not the main
-dependent variables of the paper; instead, they help explain why some
-localities are able to achieve substantive exit while others rely on responses
-such as nominal exit or functional transfer.
+The mechanism evidence connects the exit labels to the capacities specified in
+the theory. Fiscal absorption appears when former platform functions move into
+budgetary channels, special-purpose bonds, or fiscally funded project
+management. Bureaucratic coordination appears in asset transfers, debt
+succession, municipal platform-group reorganization, SASAC entrustment, and
+cross-agency implementation documents. Project and state-asset governance
+appears when the post-exit arrangement clarifies project preparation,
+repayment responsibility, fiscal settlement, asset operation, and the boundary
+between state-owned enterprise activity and implicit government financing.
+
+Appendix Table \ref{tab:pilot-mechanism-evidence} reports qualitative
+mechanism evidence for the historically matched validated cases. The
+substantive-exit cases show evidence that former platform functions were
+absorbed into formal fiscal channels or were no longer visible in the reviewed
+platform-function categories. The functional-transfer cases show coordination
+and reorganization, but the public function remains inside a local
+state-owned or platform-like system. The nominal-exit cases tend to preserve
+public project, repayment, land-development, entrusted-construction, or fiscal
+support functions inside the same issuer after the formal compliance event.
+
+The empirical implication is that the measurement framework is doing more than
+renaming official exit. It identifies where the fiscal function goes. In
+high-capacity substantive-exit cases, formal exit is paired with fiscal
+absorption or credible negative evidence of continued platform financing. In
+functional-transfer cases, formal exit is paired with reorganization inside the
+local state-owned system. In nominal-exit cases, formal exit is paired with
+continued platform-like fiscal functions. This is the institutional variation
+that aggregate exit counts obscure.
