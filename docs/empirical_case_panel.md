@@ -17,9 +17,10 @@ to the CBDB-GADM historical-capacity crosswalk. These rows support the current
 descriptive and linear-probability models that relate historical capacity to
 institutional change.
 
-The first-pass full-controls regression sample now has 16 rows. This is not a
-final journal sample. It comes from five source-backed city-control units
-currently covered by secondary public-data compilations. The dataset contains
+The first-pass full-controls regression sample now has 21 rows. This is not a
+final journal sample. It comes from eight source-backed city-control units
+covered by a mix of official statistical communiques, official budget reports,
+official budget tables, and secondary public-data compilations. The dataset contains
 fields for contemporary fiscal capacity, GDP per capita, fiscal
 self-sufficiency, debt pressure, land finance dependence, platform
 administrative level, capital or sub-provincial city status, province fixed

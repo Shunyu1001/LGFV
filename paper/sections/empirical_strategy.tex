@@ -167,16 +167,18 @@ capital or sub-provincial status.
 The full empirical specification therefore uses the following form:
 
 \begin{equation}
-InstitutionalChange_i = \alpha + \beta HistoricalCapacity_i + X_i'\gamma +
-\delta_p + \epsilon_i,
+\begin{aligned}
+InstitutionalChange_i ={}& \alpha + \beta HistoricalCapacity_i \\
+&+ X_i'\gamma + \delta_p + \epsilon_i ,
+\end{aligned}
 \end{equation}
 
-where $InstitutionalChange_i$ equals one for substantive exit or functional
-transfer, $HistoricalCapacity_i$ is measured with historical administrative or
-elite density, $X_i$ includes contemporary fiscal capacity, debt pressure, land
-finance dependence, bond disclosure quality, platform administrative level,
-and capital or sub-provincial status, and $\delta_p$ denotes province fixed
-effects when the sample supports them. The multinomial version uses
+The dependent variable equals one for substantive exit or functional transfer.
+Historical capacity is measured with historical administrative or elite
+density. The control vector includes contemporary fiscal capacity, debt
+pressure, land finance dependence, bond disclosure quality, platform
+administrative level, and capital or sub-provincial status. Province fixed
+effects are included when the sample supports them. The multinomial version uses
 substantive exit, nominal exit, functional transfer, and liquidation as
 separate outcomes:
 
@@ -195,11 +197,12 @@ capital or sub-provincial status, provisional platform hierarchy, and province
 fixed effects. Second, it reports a first-pass full-controls model for the
 subset of cities for which GDP per capita, fiscal self-sufficiency, local debt
 pressure, and a land-finance proxy have been collected from source-backed
-public-data compilations. These source-backed secondary compilations are useful
-for moving the empirical design from placeholder to estimable model, but they
-should be replaced with official statistical communiques, fiscal final
-accounts, debt disclosures, and government-fund revenue tables before the
-estimates are treated as final journal evidence.
+official statistical communiques, budget reports, budget tables, and
+public-data compilations. These source-backed controls are useful for moving
+the empirical design from placeholder to estimable model, but the
+compilation-based entries should still be replaced with official statistical
+communiques, fiscal final accounts, debt disclosures, and government-fund
+revenue tables before the estimates are treated as final journal evidence.
 
 \input{tables/controlled_lpm_institutional_change}
 
@@ -220,15 +223,17 @@ case pool with complete contemporary controls.
 
 Table \ref{tab:full-controls-lpm-institutional-change} reports the first-pass
 full-controls models. The sample is small because the contemporary controls are
-currently source-backed for only a subset of cities. It is also geographically
-concentrated in Jiangsu, where the first batch of city-level fiscal and debt
-controls could be collected from comparable public-data reports. The table is
+currently source-backed for only a subset of cities. The first batch remains
+heavily Jiangsu, but it now also includes Guangzhou and Fuzhou cases whose
+controls come from official statistical and budget reports. The table is
 therefore not the paper's final causal test. Its value is diagnostic. It shows
 that the data architecture can already estimate the intended model once
 contemporary controls are filled, and it shows why the final submission version
 needs broader source collection before making strong claims about adjusted
-effects. In the current small sample, the historical-capacity coefficient is
-unstable after adding contemporary fiscal, debt, and land-finance controls.
+effects. In the current small sample, the historical-capacity coefficient
+continues to move across specifications after adding contemporary fiscal,
+debt, and land-finance controls, which is why the next data task is wider
+coverage rather than a new estimator.
 
 Table \ref{tab:empirical-case-panel-coverage} reports the current case-panel
 coverage behind these specifications. The panel combines the ninety-four
@@ -255,8 +260,9 @@ Platform administrative level is partly available as a rule-based pre-code and
 should be audited against ownership and controller sections before being
 treated as a final control. GDP per capita, fiscal self-sufficiency, debt
 pressure, and land finance dependence now exist for the first source-backed
-city batch, but they are not imputed for the remaining cities. Their remaining
-absence is a data-collection task, not a modeling choice.
+city batch, including both official-source and compilation-source entries, but
+they are not imputed for the remaining cities. Their remaining absence is a
+data-collection task, not a modeling choice.
 
 \subsection{LLM surrogate labels and validation-adjusted inference}
 
