@@ -5,15 +5,15 @@ Measurement controls,Intercept,0.1364,0.0394,0.0005,84,0.1429,Source coverage; c
 Measurement controls,"Elite density, standardized",0.0561,0.0332,0.0915,84,0.1429,Source coverage; capital/sub-provincial,0
 Measurement controls,"Source coverage score, standardized",-0.1280,0.0527,0.0151,84,0.1429,Source coverage; capital/sub-provincial,0
 Measurement controls,Capital or sub-provincial city,0.0320,0.0942,0.7342,84,0.1429,Source coverage; capital/sub-provincial,0
-Platform controls,Intercept,0.0386,0.0888,0.6636,84,0.1429,Source coverage; capital/sub-provincial; platform hierarchy,0
-Platform controls,"Elite density, standardized",0.0586,0.0354,0.0976,84,0.1429,Source coverage; capital/sub-provincial; platform hierarchy,0
-Platform controls,"Source coverage score, standardized",-0.1382,0.0525,0.0085,84,0.1429,Source coverage; capital/sub-provincial; platform hierarchy,0
-Platform controls,Capital or sub-provincial city,0.0598,0.0993,0.5467,84,0.1429,Source coverage; capital/sub-provincial; platform hierarchy,0
-Platform controls,District/county platform,0.0796,0.0961,0.4079,84,0.1429,Source coverage; capital/sub-provincial; platform hierarchy,0
-Platform controls,Prefecture/municipal platform,0.1348,0.1018,0.1856,84,0.1429,Source coverage; capital/sub-provincial; platform hierarchy,0
-Province FE,Intercept,0.0577,0.1469,0.6946,84,0.1429,Available controls plus province fixed effects,9
-Province FE,"Elite density, standardized",0.0187,0.0521,0.7193,84,0.1429,Available controls plus province fixed effects,9
-Province FE,"Source coverage score, standardized",-0.1258,0.0610,0.0391,84,0.1429,Available controls plus province fixed effects,9
-Province FE,Capital or sub-provincial city,0.0058,0.1004,0.9540,84,0.1429,Available controls plus province fixed effects,9
-Province FE,District/county platform,0.0942,0.1135,0.4065,84,0.1429,Available controls plus province fixed effects,9
-Province FE,Prefecture/municipal platform,0.1377,0.1085,0.2044,84,0.1429,Available controls plus province fixed effects,9
+Platform controls,Intercept,0.0179,0.0630,0.7759,84,0.1429,Source coverage; capital/sub-provincial; platform hierarchy,0
+Platform controls,"Elite density, standardized",0.0547,0.0345,0.1135,84,0.1429,Source coverage; capital/sub-provincial; platform hierarchy,0
+Platform controls,"Source coverage score, standardized",-0.1378,0.0536,0.0102,84,0.1429,Source coverage; capital/sub-provincial; platform hierarchy,0
+Platform controls,Capital or sub-provincial city,0.0480,0.0926,0.6042,84,0.1429,Source coverage; capital/sub-provincial; platform hierarchy,0
+Platform controls,District/county platform,0.0945,0.0802,0.2385,84,0.1429,Source coverage; capital/sub-provincial; platform hierarchy,0
+Platform controls,Prefecture/municipal platform,0.1520,0.0842,0.0711,84,0.1429,Source coverage; capital/sub-provincial; platform hierarchy,0
+Province FE,Intercept,0.0808,0.0890,0.3638,84,0.1429,Available controls plus province fixed effects,9
+Province FE,"Elite density, standardized",0.0148,0.0519,0.7752,84,0.1429,Available controls plus province fixed effects,9
+Province FE,"Source coverage score, standardized",-0.1225,0.0637,0.0545,84,0.1429,Available controls plus province fixed effects,9
+Province FE,Capital or sub-provincial city,-0.0062,0.0968,0.9488,84,0.1429,Available controls plus province fixed effects,9
+Province FE,District/county platform,0.0388,0.0998,0.6972,84,0.1429,Available controls plus province fixed effects,9
+Province FE,Prefecture/municipal platform,0.1012,0.0836,0.2259,84,0.1429,Available controls plus province fixed effects,9

@@ -239,9 +239,9 @@ def infer_platform_level(row: dict[str, str]) -> tuple[str, str]:
         return "provincial_or_region_level", "rule_based_from_platform_name"
     if city and control and city != control:
         return "district_or_county_level", "rule_based_from_city_prefecture_mismatch"
-    if any(token in platform for token in ["区", "县", "高新", "经开", "开发区", "新城", "新区"]):
+    if any(token in platform for token in ["区", "县", "高新", "经开", "开发区", "新城", "新区", "知识城"]):
         return "district_or_development_zone_level", "rule_based_from_platform_name"
-    if any(token in platform for token in ["市", "城投", "交通", "建设", "国资"]):
+    if any(token in platform for token in ["市", "城投", "交通", "建设", "国资", "国有资本", "国有资产", "地铁"]):
         return "prefecture_or_municipal_level", "rule_based_from_platform_name"
     return "", ""
 
@@ -289,8 +289,11 @@ def write_doc(path: Path, city_rows: list[dict[str, str]], platform_rows: list[d
         handle.write("The platform-control queue currently has ")
         handle.write(str(len(platform_rows)))
         handle.write(" gold-standard case rows. Platform administrative level is pre-coded only ")
-        handle.write("when a conservative rule can infer it from the platform name or from a ")
-        handle.write("city-prefecture mismatch. These rule-based values remain pending human check.\n\n")
+        handle.write("when a conservative rule can infer it from the platform name, specialized ")
+        handle.write("sector, or from a city-prefecture mismatch. The current rules populate ")
+        handle.write(str(sum(1 for row in platform_rows if row.get("platform_administrative_level"))))
+        handle.write(" administrative-level pre-codes. These rule-based values remain pending ")
+        handle.write("human check.\n\n")
         handle.write("## Control Definitions\n\n")
         handle.write("- Fiscal self-sufficiency: general public budget revenue divided by general public budget expenditure.\n")
         handle.write("- Debt pressure: local government debt balance divided by general public budget revenue.\n")

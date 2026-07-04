@@ -17,8 +17,8 @@ to the CBDB-GADM historical-capacity crosswalk. These rows support the current
 descriptive and linear-probability models that relate historical capacity to
 institutional change.
 
-The first-pass full-controls regression sample now has 21 rows. This is not a
-final journal sample. It comes from eight source-backed city-control units
+The first-pass full-controls regression sample now has 28 rows. This is not a
+final journal sample. It comes from nine source-backed city-control units
 covered by a mix of official statistical communiques, official budget reports,
 official budget tables, and secondary public-data compilations. The dataset contains
 fields for contemporary fiscal capacity, GDP per capita, fiscal
@@ -27,7 +27,7 @@ administrative level, capital or sub-provincial city status, province fixed
 effects, and bond disclosure quality. Source coverage and city-status fields
 are populated systematically. `platform_control_coding_queue.csv` supplies
 rule-based platform administrative-level pre-codes for cases where the platform
-name or city-prefecture mismatch is informative, but these values remain
+name, specialized sector, or city-prefecture mismatch is informative, but these values remain
 pending human review. Debt, land-finance, and fiscal controls are retained as
 explicit collection fields and are merged only when source-backed values are
 available.
