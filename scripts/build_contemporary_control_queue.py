@@ -12,6 +12,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_PANEL = ROOT / "data" / "analysis_inputs" / "empirical_case_panel.csv"
 DEFAULT_CITY_CONTROLS = ROOT / "data" / "analysis_inputs" / "contemporary_city_controls.csv"
+DEFAULT_SOURCE_BACKED_CONTROLS = (
+    ROOT / "data" / "analysis_inputs" / "contemporary_city_controls_source_backed.csv"
+)
 DEFAULT_PLATFORM_CONTROLS = ROOT / "data" / "analysis_inputs" / "platform_control_coding_queue.csv"
 DEFAULT_DOC = ROOT / "docs" / "contemporary_controls.md"
 
@@ -207,6 +210,25 @@ def build_city_controls(panel_rows: list[dict[str, str]]) -> list[dict[str, str]
     return rows
 
 
+def merge_source_backed_controls(
+    city_rows: list[dict[str, str]], source_rows: list[dict[str, str]]
+) -> list[dict[str, str]]:
+    source_by_id = {norm(row.get("control_unit_id")): row for row in source_rows}
+    output: list[dict[str, str]] = []
+    for row in city_rows:
+        source = source_by_id.get(row["control_unit_id"])
+        if not source:
+            output.append(row)
+            continue
+        merged = row.copy()
+        for field in CITY_FIELDS:
+            value = norm(source.get(field))
+            if value:
+                merged[field] = value
+        output.append(merged)
+    return output
+
+
 def infer_platform_level(row: dict[str, str]) -> tuple[str, str]:
     city = norm(row.get("city"))
     control = control_city(row)
@@ -257,6 +279,7 @@ def write_doc(path: Path, city_rows: list[dict[str, str]], platform_rows: list[d
         handle.write("`scripts/build_contemporary_control_queue.py`.\n\n")
         handle.write("## Outputs\n\n")
         handle.write("- `data/analysis_inputs/contemporary_city_controls.csv`\n")
+        handle.write("- `data/analysis_inputs/contemporary_city_controls_source_backed.csv`\n")
         handle.write("- `data/analysis_inputs/platform_control_coding_queue.csv`\n\n")
         handle.write("The city-control file currently has ")
         handle.write(str(len(city_rows)))
@@ -275,20 +298,26 @@ def write_doc(path: Path, city_rows: list[dict[str, str]], platform_rows: list[d
         handle.write("- GDP per capita: GDP divided by resident population, preferably from the same official statistical communique.\n\n")
         handle.write("Preferred year is 2024, with 2023 as fallback. Values should come from official ")
         handle.write("city statistical communiques, budget final accounts, local debt disclosures, ")
-        handle.write("or finance-bureau final-account tables. The templates include Chinese search ")
-        handle.write("queries for each control unit to make source collection reproducible.\n")
+        handle.write("or finance-bureau final-account tables. When the first-pass source is a ")
+        handle.write("rating-agency compilation of public data, the status field marks it as ")
+        handle.write("`source_backed_secondary_compilation` so it can later be replaced by ")
+        handle.write("official source tables. The templates include Chinese search queries for ")
+        handle.write("each control unit to make source collection reproducible.\n")
 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--panel", type=Path, default=DEFAULT_PANEL)
     parser.add_argument("--city-controls", type=Path, default=DEFAULT_CITY_CONTROLS)
+    parser.add_argument("--source-backed-controls", type=Path, default=DEFAULT_SOURCE_BACKED_CONTROLS)
     parser.add_argument("--platform-controls", type=Path, default=DEFAULT_PLATFORM_CONTROLS)
     parser.add_argument("--doc", type=Path, default=DEFAULT_DOC)
     args = parser.parse_args()
 
     panel_rows = read_csv(args.panel)
     city_rows = build_city_controls(panel_rows)
+    if args.source_backed_controls.exists():
+        city_rows = merge_source_backed_controls(city_rows, read_csv(args.source_backed_controls))
     platform_rows = build_platform_controls(panel_rows)
     write_csv(args.city_controls, city_rows, CITY_FIELDS)
     write_csv(args.platform_controls, platform_rows, PLATFORM_FIELDS)

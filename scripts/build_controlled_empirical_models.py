@@ -21,6 +21,8 @@ ROOT = Path(__file__).resolve().parents[1]
 PANEL = ROOT / "data" / "analysis_inputs" / "empirical_case_panel.csv"
 OUT_CSV = ROOT / "data" / "analysis_inputs" / "controlled_lpm_institutional_change.csv"
 OUT_TEX = ROOT / "paper" / "tables" / "controlled_lpm_institutional_change.tex"
+FULL_OUT_CSV = ROOT / "data" / "analysis_inputs" / "full_controls_lpm_institutional_change.csv"
+FULL_OUT_TEX = ROOT / "paper" / "tables" / "full_controls_lpm_institutional_change.tex"
 DIAG_CSV = ROOT / "data" / "analysis_inputs" / "full_controls_model_diagnostics.csv"
 DIAG_TEX = ROOT / "paper" / "tables" / "full_controls_model_diagnostics.tex"
 
@@ -106,13 +108,37 @@ def current_model_rows(rows: list[dict[str, str]]) -> list[dict[str, str]]:
     ]
 
 
+def full_control_rows(rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    return [
+        row
+        for row in rows
+        if row.get("include_in_full_controls_regression_sample") == "1"
+        and nonempty(row.get("institutional_change"))
+        and nonempty(row.get("elite_per_1000_sqkm"))
+        and nonempty(row.get("gdp_per_capita_value"))
+        and nonempty(row.get("fiscal_self_sufficiency_value"))
+        and nonempty(row.get("debt_pressure_value"))
+        and nonempty(row.get("land_finance_dependence_value"))
+    ]
+
+
 def add_model_variables(rows: list[dict[str, str]]) -> None:
     elite_z = standardize([as_float(row["elite_per_1000_sqkm"]) for row in rows])
     source_z = standardize([as_float(row["source_coverage_score"] or "0") for row in rows])
-    for row, elite_value, source_value in zip(rows, elite_z, source_z):
+    gdp_pc_z = standardize([as_float(row.get("gdp_per_capita_value") or "0") for row in rows])
+    fiscal_z = standardize([as_float(row.get("fiscal_self_sufficiency_value") or "0") for row in rows])
+    debt_z = standardize([as_float(row.get("debt_pressure_value") or "0") for row in rows])
+    land_z = standardize([as_float(row.get("land_finance_dependence_value") or "0") for row in rows])
+    for row, elite_value, source_value, gdp_value, fiscal_value, debt_value, land_value in zip(
+        rows, elite_z, source_z, gdp_pc_z, fiscal_z, debt_z, land_z
+    ):
         level = row.get("platform_administrative_level", "")
         row["_elite_density_z"] = elite_value
         row["_source_coverage_z"] = source_value
+        row["_gdp_per_capita_z"] = gdp_value
+        row["_fiscal_self_sufficiency_z"] = fiscal_value
+        row["_debt_pressure_z"] = debt_value
+        row["_land_finance_dependence_z"] = land_value
         row["_capital_or_subprovincial"] = float(row.get("capital_or_subprovincial_city") == "1")
         row["_platform_level_known"] = float(nonempty(level))
         row["_district_platform"] = dummy_from_text(
@@ -346,6 +372,184 @@ def write_model_outputs(specs: list[dict[str, object]]) -> None:
         handle.write("\\end{table}\n")
 
 
+def full_control_specs(rows: list[dict[str, str]]) -> list[dict[str, object]]:
+    y = np.array([float(row["institutional_change"]) for row in rows], dtype=float)
+    specs = [
+        {
+            "name": "Full sample historical",
+            "variables": ["_elite_density_z"],
+            "variable_labels": ["Elite density, standardized"],
+            "controls": "No",
+        },
+        {
+            "name": "Economic and fiscal controls",
+            "variables": [
+                "_elite_density_z",
+                "_gdp_per_capita_z",
+                "_fiscal_self_sufficiency_z",
+            ],
+            "variable_labels": [
+                "Elite density, standardized",
+                "GDP per capita, standardized",
+                "Fiscal self-sufficiency, standardized",
+            ],
+            "controls": "GDP per capita; fiscal self-sufficiency",
+        },
+        {
+            "name": "Debt and land controls",
+            "variables": [
+                "_elite_density_z",
+                "_gdp_per_capita_z",
+                "_fiscal_self_sufficiency_z",
+                "_debt_pressure_z",
+                "_land_finance_dependence_z",
+            ],
+            "variable_labels": [
+                "Elite density, standardized",
+                "GDP per capita, standardized",
+                "Fiscal self-sufficiency, standardized",
+                "Debt pressure, standardized",
+                "Land-finance proxy, standardized",
+            ],
+            "controls": "Economic, fiscal, debt, and land-finance controls",
+        },
+        {
+            "name": "Full available controls",
+            "variables": [
+                "_elite_density_z",
+                "_gdp_per_capita_z",
+                "_fiscal_self_sufficiency_z",
+                "_debt_pressure_z",
+                "_land_finance_dependence_z",
+                "_source_coverage_z",
+                "_district_platform",
+                "_prefecture_platform",
+            ],
+            "variable_labels": [
+                "Elite density, standardized",
+                "GDP per capita, standardized",
+                "Fiscal self-sufficiency, standardized",
+                "Debt pressure, standardized",
+                "Land-finance proxy, standardized",
+                "Source coverage score, standardized",
+                "District/county platform",
+                "Prefecture/municipal platform",
+            ],
+            "controls": "Full first-pass controls",
+        },
+    ]
+    output = []
+    for spec in specs:
+        x = design_matrix(rows, spec["variables"], [])
+        beta, se, p_values = ols_hc1(y, x)
+        output.append(
+            {
+                **spec,
+                "beta": beta,
+                "se": se,
+                "p_values": p_values,
+                "n": len(rows),
+                "dep_mean": float(y.mean()),
+            }
+        )
+    return output
+
+
+def write_full_control_outputs(specs: list[dict[str, object]]) -> None:
+    rows: list[dict[str, str]] = []
+    for spec in specs:
+        variables = ["Intercept", *spec["variable_labels"]]
+        for variable, beta, se, p_value in zip(
+            variables, spec["beta"][: len(variables)], spec["se"][: len(variables)], spec["p_values"][: len(variables)]
+        ):
+            rows.append(
+                {
+                    "model": str(spec["name"]),
+                    "variable": str(variable),
+                    "coefficient": f"{float(beta):.4f}",
+                    "robust_se": f"{float(se):.4f}",
+                    "p_value": f"{float(p_value):.4f}",
+                    "n": str(spec["n"]),
+                    "dependent_mean": f"{float(spec['dep_mean']):.4f}",
+                    "controls": str(spec["controls"]),
+                }
+            )
+    write_csv(
+        FULL_OUT_CSV,
+        ["model", "variable", "coefficient", "robust_se", "p_value", "n", "dependent_mean", "controls"],
+        rows,
+    )
+
+    variable_order = [
+        "Elite density, standardized",
+        "GDP per capita, standardized",
+        "Fiscal self-sufficiency, standardized",
+        "Debt pressure, standardized",
+        "Land-finance proxy, standardized",
+        "Source coverage score, standardized",
+        "District/county platform",
+        "Prefecture/municipal platform",
+        "Intercept",
+    ]
+    FULL_OUT_TEX.parent.mkdir(parents=True, exist_ok=True)
+    with FULL_OUT_TEX.open("w", encoding="utf-8") as handle:
+        handle.write("% Auto-generated by scripts/build_controlled_empirical_models.py\n")
+        handle.write("\\begin{table}[htbp]\n")
+        handle.write("\\centering\n")
+        handle.write("\\caption{First-pass full-controls models of institutional change}\n")
+        handle.write("\\label{tab:full-controls-lpm-institutional-change}\n")
+        handle.write("\\scriptsize\n")
+        handle.write("\\setlength{\\tabcolsep}{3pt}\n")
+        handle.write("\\begin{tabular}{@{}lcccc@{}}\n")
+        handle.write("\\toprule\n")
+        handle.write(" & (1) & (2) & (3) & (4) \\\\\n")
+        handle.write(" & Historical & Econ./fiscal & Debt/land & Full controls \\\\\n")
+        handle.write("\\midrule\n")
+        for variable in variable_order:
+            coef_cells: list[str] = []
+            se_cells: list[str] = []
+            for spec in specs:
+                variables = ["Intercept", *spec["variable_labels"]]
+                if variable in variables:
+                    idx = variables.index(variable)
+                    beta = float(spec["beta"][idx])
+                    se = float(spec["se"][idx])
+                    p_value = float(spec["p_values"][idx])
+                    coef_cells.append(f"{beta:.3f}{stars(p_value)}")
+                    se_cells.append(f"({se:.3f})")
+                else:
+                    coef_cells.append("")
+                    se_cells.append("")
+            handle.write(f"{tex_escape(variable)} & {' & '.join(coef_cells)} \\\\\n")
+            handle.write(f" & {' & '.join(se_cells)} \\\\\n")
+        handle.write("\\midrule\n")
+        handle.write(
+            f"Observations & {specs[0]['n']} & {specs[1]['n']} & {specs[2]['n']} & {specs[3]['n']} \\\\\n"
+        )
+        handle.write(
+            f"Mean of dependent variable & {float(specs[0]['dep_mean']):.3f} & "
+            f"{float(specs[1]['dep_mean']):.3f} & {float(specs[2]['dep_mean']):.3f} & "
+            f"{float(specs[3]['dep_mean']):.3f} \\\\\n"
+        )
+        handle.write("\\bottomrule\n")
+        handle.write("\\end{tabular}\n")
+        handle.write("\\begin{minipage}{0.95\\linewidth}\n")
+        handle.write(
+            "\\vspace{0.5em}\\footnotesize Notes: The dependent variable equals one for "
+            "substantive exit or functional transfer and zero for nominal exit. "
+            "The sample is restricted to rows with source-backed first-pass "
+            "contemporary controls. Current city controls are secondary public-data "
+            "compilations and should be replaced with official statistical and "
+            "final-account tables before this specification is treated as a final "
+            "journal estimate. Land-finance proxy is government-fund revenue divided "
+            "by general public budget revenue. Coefficients are linear probability "
+            "models with HC1 robust standard errors in parentheses. $^{*}p<0.10$, "
+            "$^{**}p<0.05$, $^{***}p<0.01$.\n"
+        )
+        handle.write("\\end{minipage}\n")
+        handle.write("\\end{table}\n")
+
+
 def diagnostics(rows: list[dict[str, str]], model_rows: list[dict[str, str]]) -> list[dict[str, str]]:
     checks = [
         (
@@ -470,15 +674,23 @@ def write_diagnostics_outputs(rows: list[dict[str, str]]) -> None:
 def main() -> None:
     rows = read_csv(PANEL)
     model_rows = current_model_rows(rows)
+    full_rows = full_control_rows(rows)
     if not model_rows:
         raise SystemExit("No current validated model rows found.")
     add_model_variables(model_rows)
     specs = model_specs(model_rows)
     write_model_outputs(specs)
+    if full_rows:
+        add_model_variables(full_rows)
+        full_specs = full_control_specs(full_rows)
+        write_full_control_outputs(full_specs)
     diag_rows = diagnostics(rows, model_rows)
     write_diagnostics_outputs(diag_rows)
     print(f"Wrote {OUT_CSV.relative_to(ROOT)}")
     print(f"Wrote {OUT_TEX.relative_to(ROOT)}")
+    if full_rows:
+        print(f"Wrote {FULL_OUT_CSV.relative_to(ROOT)}")
+        print(f"Wrote {FULL_OUT_TEX.relative_to(ROOT)}")
     print(f"Wrote {DIAG_CSV.relative_to(ROOT)}")
     print(f"Wrote {DIAG_TEX.relative_to(ROOT)}")
 
