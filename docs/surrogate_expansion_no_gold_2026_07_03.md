@@ -11,15 +11,15 @@ After rebuilding the screening files, the current counts are:
 | Quantity | Count |
 |---|---:|
 | Human gold-standard labels | 94 |
-| Candidate disclosure rows | 317 |
-| Usable LLM screening rows | 302 |
-| LLM surrogate exit-type labels | 168 |
+| Candidate disclosure rows | 326 |
+| Usable LLM screening rows | 311 |
+| LLM surrogate exit-type labels | 177 |
 | Source-screened rows with no direct formal event | 35 |
 | Human-reviewed boundary packets | 5 |
 | Source-missing rows | 15 |
-| Usable exit-type rows | 262 |
-| Issuer-level surrogate rows | 123 |
+| Usable exit-type rows | 271 |
+| Issuer-level surrogate rows | 132 |
 | Surrogate issuers overlapping gold labels | 61 |
-| Non-overlap surrogate issuers queued for human review | 62 |
+| Non-overlap surrogate issuers queued for human review | 71 |
 
 The main caution is that the expanded surrogate pool is broader than the gold-standard sample. Some additional surrogate rows are specialized transportation, construction, state-capital, or provincial SOE packets. They are useful for screening and for DSL-style surrogate adjustment, but they should not be treated as final city-platform LGFV labels until the validation protocol checks scope and line-level evidence.
