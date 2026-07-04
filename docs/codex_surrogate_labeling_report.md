@@ -21,30 +21,30 @@ project. The output is a screening file, not a human-validated label file.
 - `data/analysis_inputs/llm_screening_sample_2026_07_03_expanded.csv`
 - `data/analysis_inputs/llm_screening_summary_2026_07_03_expanded.csv`
 
-The expanded surrogate-label file contains 339 rows:
+The expanded surrogate-label file contains 361 rows:
 
 - 94 human gold-standard labels
-- 240 pending candidate disclosures screened by Codex
-- 190 Codex surrogate disclosure-level labels
+- 262 pending candidate disclosures screened by Codex
+- 203 Codex surrogate disclosure-level labels
 - 50 unresolved candidate disclosures
 - 5 human-reviewed boundary packets
 
 The July 3 expanded screening sample converts this into a fuller LLM-coded
-screening file. It contains 324 usable screening rows:
+screening file. It contains 346 usable screening rows:
 
 - 94 gold-standard exit-type labels
-- 190 LLM surrogate exit-type labels
+- 203 LLM surrogate exit-type labels
 - 35 source packets screened as having no direct formal exit or compliance event
 - 5 human-reviewed boundary packets
 - 15 source-missing rows that remain unusable for screening
 
 The exit-type outcome sample is narrower than the screening sample. It contains
-284 rows: the 94 gold labels plus 190 LLM surrogate exit-type labels. The 35
+297 rows: the 94 gold labels plus 203 LLM surrogate exit-type labels. The 44
 screened no-formal-event rows are useful for source coverage and measurement
 attrition, but they are not treated as nominal, substantive, functional-transfer,
 or liquidation outcomes.
 
-After the July 3 validation pass, the screening file contains 190 surrogate
+After the latest screening pass, the screening file contains 203 surrogate
 `nominal_exit` labels. These cases contain direct no-government-financing,
 no-new-government-debt, no-hidden-debt, or equivalent formal compliance language
 together with continuing urban infrastructure, entrusted construction,
@@ -52,10 +52,10 @@ land-development, fiscal-support, or public-project functions. They remain
 disclosure-level surrogate evidence and should not be counted as new
 gold-standard observations until validated against original line references.
 
-The 190 surrogate labels correspond to 145 unique issuers because several
+The 203 surrogate labels correspond to 158 unique issuers because several
 Shanghai Clearing rows are repeated bond disclosures for the same platform. Of
 these issuers, 61 already match the gold-standard human-validated file under
-another case ID. The remaining 84 non-overlap issuers form the current
+another case ID. The remaining 97 non-overlap issuers form the current
 validation queue. The analysis file therefore preserves disclosure-level
 labels, while the statistical step must aggregate or deduplicate them at the
 issuer or city-platform level.
@@ -93,6 +93,6 @@ candidate disclosures in the expanded file, 208 are usable screening rows and
 15 remain source-missing.
 
 The next collection task is no longer broad PDF recovery. It is validation
-triage for the 84 non-overlap issuer queue, followed by closer review of the 35
+triage for the 97 non-overlap issuer queue, followed by closer review of the 44
 source-screened candidates that have usable source text but no direct formal
 exit or compliance event under the frozen codebook.
