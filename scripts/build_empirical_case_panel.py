@@ -14,6 +14,8 @@ DEFAULT_GOLD = ROOT / "data" / "processed" / "human_validated_labels.csv"
 DEFAULT_MASTER = ROOT / "data" / "analysis_inputs" / "master_case_pool.csv"
 DEFAULT_CAPACITY = ROOT / "data" / "analysis_inputs" / "pilot_case_historical_capacity.csv"
 DEFAULT_SURROGATE = ROOT / "data" / "analysis_inputs" / "issuer_level_surrogate_empirical_input.csv"
+DEFAULT_CITY_CONTROLS = ROOT / "data" / "analysis_inputs" / "contemporary_city_controls.csv"
+DEFAULT_PLATFORM_CONTROLS = ROOT / "data" / "analysis_inputs" / "platform_control_coding_queue.csv"
 DEFAULT_PANEL = ROOT / "data" / "analysis_inputs" / "empirical_case_panel.csv"
 DEFAULT_COVERAGE = ROOT / "data" / "analysis_inputs" / "empirical_case_panel_coverage.csv"
 DEFAULT_COVERAGE_TEX = ROOT / "paper" / "tables" / "empirical_case_panel_coverage.tex"
@@ -58,6 +60,8 @@ PANEL_FIELDS = [
     "confidence",
     "province",
     "city",
+    "control_city",
+    "control_unit_id",
     "platform",
     "company_name",
     "capital_or_subprovincial_city",
@@ -114,10 +118,16 @@ def read_csv(path: Path) -> list[dict[str, str]]:
         return list(csv.DictReader(handle))
 
 
+def read_csv_if_exists(path: Path) -> list[dict[str, str]]:
+    if not path.exists():
+        return []
+    return read_csv(path)
+
+
 def write_csv(path: Path, rows: list[dict[str, str]], fields: list[str]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -167,6 +177,25 @@ def index_by(rows: list[dict[str, str]], key: str) -> dict[str, dict[str, str]]:
     return {norm(row.get(key)): row for row in rows if norm(row.get(key))}
 
 
+def control_city_from_panel_row(row: dict[str, str]) -> str:
+    return norm(row.get("prefecture_name")) or norm(row.get("city"))
+
+
+def control_unit_id(province: str, city: str) -> str:
+    safe = (province + "_" + city).lower()
+    for old, new in {
+        " ": "_",
+        "'": "",
+        ".": "",
+        "-": "_",
+        "(": "",
+        ")": "",
+        "/": "_",
+    }.items():
+        safe = safe.replace(old, new)
+    return safe
+
+
 def merge_historical(row: dict[str, str], capacity: dict[str, str]) -> None:
     row["gadm_gid"] = norm(capacity.get("gadm_gid"))
     row["prefecture_name"] = norm(capacity.get("prefecture_name"))
@@ -205,6 +234,50 @@ def merge_master(row: dict[str, str], master: dict[str, str]) -> None:
             row[field] = norm(master.get(field))
 
 
+def merge_city_controls(row: dict[str, str], city_controls: dict[str, dict[str, str]]) -> None:
+    control_id = row.get("control_unit_id")
+    controls = city_controls.get(control_id, {})
+    if not controls:
+        return
+    row["gdp_per_capita_value"] = norm(controls.get("gdp_per_capita_value"))
+    row["gdp_per_capita_year"] = norm(controls.get("gdp_per_capita_year"))
+    row["gdp_per_capita_source"] = norm(controls.get("gdp_per_capita_source"))
+    row["gdp_per_capita_status"] = norm(controls.get("gdp_per_capita_status")) or row["gdp_per_capita_status"]
+    row["fiscal_self_sufficiency_value"] = norm(controls.get("fiscal_self_sufficiency_value"))
+    row["fiscal_self_sufficiency_year"] = norm(controls.get("fiscal_self_sufficiency_year"))
+    row["fiscal_self_sufficiency_source"] = norm(controls.get("fiscal_self_sufficiency_source"))
+    row["fiscal_self_sufficiency_status"] = (
+        norm(controls.get("fiscal_self_sufficiency_status")) or row["fiscal_self_sufficiency_status"]
+    )
+    row["contemporary_fiscal_capacity_value"] = row["fiscal_self_sufficiency_value"]
+    row["contemporary_fiscal_capacity_year"] = row["fiscal_self_sufficiency_year"]
+    row["contemporary_fiscal_capacity_source"] = row["fiscal_self_sufficiency_source"]
+    row["contemporary_fiscal_capacity_status"] = row["fiscal_self_sufficiency_status"]
+    row["debt_pressure_value"] = norm(controls.get("debt_pressure_value"))
+    row["debt_pressure_year"] = norm(controls.get("debt_pressure_year"))
+    row["debt_pressure_source"] = norm(controls.get("debt_pressure_source"))
+    row["debt_pressure_status"] = norm(controls.get("debt_pressure_status")) or row["debt_pressure_status"]
+    row["land_finance_dependence_value"] = norm(controls.get("land_finance_dependence_value"))
+    row["land_finance_dependence_year"] = norm(controls.get("land_finance_dependence_year"))
+    row["land_finance_dependence_source"] = norm(controls.get("land_finance_dependence_source"))
+    row["land_finance_dependence_status"] = (
+        norm(controls.get("land_finance_dependence_status")) or row["land_finance_dependence_status"]
+    )
+
+
+def merge_platform_controls(row: dict[str, str], platform_controls: dict[str, dict[str, str]]) -> None:
+    controls = platform_controls.get(row.get("case_id"), {})
+    if not controls:
+        return
+    for field in [
+        "platform_administrative_level",
+        "platform_administrative_level_source",
+        "platform_administrative_level_status",
+    ]:
+        if norm(controls.get(field)):
+            row[field] = norm(controls.get(field))
+
+
 def source_quality_status(row: dict[str, str]) -> str:
     score = norm(row.get("source_coverage_score"))
     if not score:
@@ -223,14 +296,18 @@ def source_quality_status(row: dict[str, str]) -> str:
 
 
 def default_control_status(row: dict[str, str]) -> None:
-    row["contemporary_fiscal_capacity_status"] = "to_collect"
-    row["gdp_per_capita_status"] = "to_collect"
-    row["fiscal_self_sufficiency_status"] = "to_collect"
+    if not row["contemporary_fiscal_capacity_status"]:
+        row["contemporary_fiscal_capacity_status"] = "to_collect"
+    if not row["gdp_per_capita_status"]:
+        row["gdp_per_capita_status"] = "to_collect"
+    if not row["fiscal_self_sufficiency_status"]:
+        row["fiscal_self_sufficiency_status"] = "to_collect"
     if not row["debt_pressure_status"]:
         row["debt_pressure_status"] = "to_collect"
     if not row["land_finance_dependence_status"]:
         row["land_finance_dependence_status"] = "to_collect"
-    row["platform_administrative_level_status"] = "to_code_from_source_packet"
+    if not row["platform_administrative_level_status"]:
+        row["platform_administrative_level_status"] = "to_code_from_source_packet"
     row["bond_disclosure_quality_status"] = source_quality_status(row)
 
 
@@ -238,6 +315,8 @@ def build_gold_rows(
     gold: list[dict[str, str]],
     master_by_case: dict[str, dict[str, str]],
     capacity_by_case: dict[str, dict[str, str]],
+    city_controls: dict[str, dict[str, str]],
+    platform_controls: dict[str, dict[str, str]],
 ) -> list[dict[str, str]]:
     rows: list[dict[str, str]] = []
     for index, source in enumerate(gold, start=1):
@@ -265,12 +344,24 @@ def build_gold_rows(
             merge_master(row, master_by_case[case_id])
         if case_id in capacity_by_case:
             merge_historical(row, capacity_by_case[case_id])
+        row["control_city"] = control_city_from_panel_row(row)
+        row["control_unit_id"] = control_unit_id(row["province"], row["control_city"])
+        default_control_status(row)
+        merge_city_controls(row, city_controls)
+        merge_platform_controls(row, platform_controls)
         row["include_in_historical_capacity_sample"] = "1" if row["elite_per_1000_sqkm"] else "0"
         row["include_in_current_validated_model_sample"] = (
             "1" if row["include_in_historical_capacity_sample"] == "1" else "0"
         )
-        row["include_in_full_controls_regression_sample"] = "0"
-        default_control_status(row)
+        row["include_in_full_controls_regression_sample"] = (
+            "1"
+            if row["include_in_current_validated_model_sample"] == "1"
+            and row["fiscal_self_sufficiency_value"]
+            and row["debt_pressure_value"]
+            and row["land_finance_dependence_value"]
+            and row["platform_administrative_level"]
+            else "0"
+        )
         rows.append(row)
     return rows
 
@@ -304,6 +395,8 @@ def build_surrogate_rows(
         row["city"] = norm(source.get("city"))
         row["platform"] = norm(source.get("issuer_name"))
         row["company_name"] = norm(source.get("issuer_name"))
+        row["control_city"] = norm(row.get("city"))
+        row["control_unit_id"] = control_unit_id(row["province"], row["control_city"]) if row["province"] and row["control_city"] else ""
         row["source_coverage_score"] = norm(source.get("source_coverage_score"))
         row["continued_function_evidence_score"] = norm(source.get("continued_function_evidence_score"))
         row["province_fixed_effect"] = row["province"]
@@ -390,7 +483,7 @@ def build_coverage(rows: list[dict[str, str]]) -> list[dict[str, str]]:
             "component": "Platform administrative level",
             "available": str(nonempty_count(rows, "platform_administrative_level")),
             "denominator": str(len(rows)),
-            "use": "Issuer-level scope and hierarchy control, to be coded",
+            "use": "Issuer-level hierarchy control, rule-based pre-codes pending human check",
         },
     ]
 
@@ -435,6 +528,8 @@ def main() -> None:
     parser.add_argument("--master", type=Path, default=DEFAULT_MASTER)
     parser.add_argument("--capacity", type=Path, default=DEFAULT_CAPACITY)
     parser.add_argument("--surrogate", type=Path, default=DEFAULT_SURROGATE)
+    parser.add_argument("--city-controls", type=Path, default=DEFAULT_CITY_CONTROLS)
+    parser.add_argument("--platform-controls", type=Path, default=DEFAULT_PLATFORM_CONTROLS)
     parser.add_argument("--panel", type=Path, default=DEFAULT_PANEL)
     parser.add_argument("--coverage", type=Path, default=DEFAULT_COVERAGE)
     parser.add_argument("--coverage-tex", type=Path, default=DEFAULT_COVERAGE_TEX)
@@ -444,11 +539,15 @@ def main() -> None:
     master = read_csv(args.master)
     capacity = read_csv(args.capacity)
     surrogate = read_csv(args.surrogate)
+    city_control_rows = read_csv_if_exists(args.city_controls)
+    platform_control_rows = read_csv_if_exists(args.platform_controls)
 
     master_by_case = index_by(master, "case_id")
     capacity_by_case = index_by(capacity, "case_id")
+    city_controls = index_by(city_control_rows, "control_unit_id")
+    platform_controls = index_by(platform_control_rows, "case_id")
 
-    rows = build_gold_rows(gold, master_by_case, capacity_by_case)
+    rows = build_gold_rows(gold, master_by_case, capacity_by_case, city_controls, platform_controls)
     rows.extend(build_surrogate_rows(surrogate, len(rows)))
     coverage_rows = build_coverage(rows)
 
