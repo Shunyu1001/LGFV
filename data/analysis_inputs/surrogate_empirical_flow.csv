@@ -1,0 +1,11 @@
+step,count,role
+Candidate disclosure rows,361,Initial source-packet pool
+Usable LLM screening rows,346,Rows with source text or validated status
+Exit-type outcome rows,297,Gold labels plus disclosure-level surrogate labels
+LLM surrogate disclosure labels,203,Medium-confidence nominal-exit screens
+Issuer-level surrogate rows,158,Deduplicated auxiliary labels
+Surrogate issuers overlapping gold labels,61,Validation checks only
+Non-overlap surrogate issuers,97,Auxiliary rows for adjusted descriptive counts
+Gold plus non-overlap issuer-level sample,191,Validation-adjusted descriptive sample
+Screened rows without direct formal event,44,"Screening attrition, not exit-type outcomes"
+Source-packet missing rows,15,Not used

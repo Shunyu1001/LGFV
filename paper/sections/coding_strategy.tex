@@ -227,6 +227,17 @@ nominal, functional-transfer, or liquidation labels.
 
 \input{tables/llm_screening_status}
 
+Table \ref{tab:surrogate-empirical-flow} then converts the disclosure-level
+screening file into the issuer-level object used in the empirical section.
+This step matters because repeated bond disclosures often describe the same
+platform. The paper therefore does not count 203 disclosure-level surrogate
+labels as 203 independent city-platform outcomes. It first deduplicates them
+to 158 issuer-level surrogate rows, then separates the 61 rows that overlap
+with the gold-standard file from the 97 non-overlap rows that can enter the
+validation-adjusted descriptive sample.
+
+\input{tables/surrogate_empirical_flow}
+
 Human validation compares the model's evidence claims with the original
 documents and removes claims that are not supported by the source text. It also
 evaluates whether the model has confused legal compliance language with

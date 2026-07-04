@@ -272,6 +272,21 @@ transfer, or liquidation.
 
 \input{tables/dsl_surrogate_validation}
 
+Table \ref{tab:dsl-adjusted-outcomes} reports the corresponding adjusted
+outcome distribution. The observed gold-standard file contains ninety-four
+cases, of which eighty-two are nominal exits and twelve are substantive exits
+or functional transfers. Adding only the ninety-seven non-overlap
+issuer-level surrogate rows produces a 191-row adjusted descriptive sample.
+Under the Jeffreys-smoothed precision estimate, this implies 178.22 expected
+nominal exits. Under the conservative Wilson lower bound, it implies 173.25
+expected nominal exits. The difference between these rows is deliberately
+small because the current surrogate rule is narrow and high precision. The
+table should not be read as evidence that non-nominal outcomes are rare in the
+population; it shows that this particular screening rule is mainly useful for
+scaling nominal-exit detection.
+
+\input{tables/dsl_adjusted_outcome_distribution}
+
 For inference, I follow the design-based supervised learning logic of
 \citet{egami2023dsl}. Let $Y_i$ denote the unobserved gold-standard exit label,
 $S_i$ the LLM screening outcome, and $V_i$ an indicator for whether case $i$ is

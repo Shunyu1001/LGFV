@@ -20,13 +20,15 @@ project. The output is a screening file, not a human-validated label file.
 - `data/analysis_inputs/surrogate_validation_queue_2026_07_03_expanded.csv`
 - `data/analysis_inputs/llm_screening_sample_2026_07_03_expanded.csv`
 - `data/analysis_inputs/llm_screening_summary_2026_07_03_expanded.csv`
+- `data/analysis_inputs/issuer_level_surrogate_empirical_input.csv`
+- `data/analysis_inputs/surrogate_empirical_flow.csv`
 
 The expanded surrogate-label file contains 361 rows:
 
 - 94 human gold-standard labels
 - 262 pending candidate disclosures screened by Codex
 - 203 Codex surrogate disclosure-level labels
-- 50 unresolved candidate disclosures
+- 59 unresolved candidate disclosures
 - 5 human-reviewed boundary packets
 
 The July 3 expanded screening sample converts this into a fuller LLM-coded
@@ -34,7 +36,7 @@ screening file. It contains 346 usable screening rows:
 
 - 94 gold-standard exit-type labels
 - 203 LLM surrogate exit-type labels
-- 35 source packets screened as having no direct formal exit or compliance event
+- 44 source packets screened as having no direct formal exit or compliance event
 - 5 human-reviewed boundary packets
 - 15 source-missing rows that remain unusable for screening
 
@@ -59,6 +61,13 @@ another case ID. The remaining 97 non-overlap issuers form the current
 validation queue. The analysis file therefore preserves disclosure-level
 labels, while the statistical step must aggregate or deduplicate them at the
 issuer or city-platform level.
+
+The issuer-level empirical input makes this separation explicit. It contains
+252 rows: 94 gold-standard outcomes, 61 surrogate overlap checks, and 97
+non-overlap surrogate auxiliary rows. Only the gold-standard rows and the
+non-overlap surrogate rows are flagged for the 191-row validation-adjusted
+descriptive sample. The overlap rows are retained only for estimating
+surrogate precision.
 
 ## Conservative Rule
 
@@ -85,12 +94,11 @@ the finite overlap sample as literal certainty.
 
 ## Current Collection Status
 
-The broad Shanghai Clearing source-packet workflow is now functional. The July
-3 expansion added three additional harvest files, incorporated new source packets,
-downloaded key PDFs, and reran text extraction for pending candidates. Local raw
-PDFs and extracted texts are ignored by git. Among the 223 pending or boundary
-candidate disclosures in the expanded file, 208 are usable screening rows and
-15 remain source-missing.
+The broad Shanghai Clearing source-packet workflow is now functional. The latest
+expansion incorporated 361 candidate disclosure rows, downloaded key PDFs for
+new source packets, and reran text extraction for pending candidates. Local raw
+PDFs and extracted texts are ignored by git. Of the 361 disclosure rows, 346
+are usable screening rows and 15 remain source-missing.
 
 The next collection task is no longer broad PDF recovery. It is validation
 triage for the 97 non-overlap issuer queue, followed by closer review of the 44
