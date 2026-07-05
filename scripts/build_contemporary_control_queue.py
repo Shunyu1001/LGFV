@@ -243,7 +243,19 @@ def infer_platform_level(row: dict[str, str]) -> tuple[str, str]:
         return "district_or_development_zone_level", "rule_based_from_platform_name"
     if any(
         token in platform
-        for token in ["市", "城投", "交通", "建设", "开发投资集团", "国资", "国有资本", "国有资产", "地铁"]
+        for token in [
+            "市",
+            "城投",
+            "城建",
+            "交通",
+            "建设",
+            "开发投资集团",
+            "投资控股集团",
+            "国资",
+            "国有资本",
+            "国有资产",
+            "地铁",
+        ]
     ):
         return "prefecture_or_municipal_level", "rule_based_from_platform_name"
     return "", ""

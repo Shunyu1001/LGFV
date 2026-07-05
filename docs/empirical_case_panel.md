@@ -17,8 +17,8 @@ to the CBDB-GADM historical-capacity crosswalk. These rows support the current
 descriptive and linear-probability models that relate historical capacity to
 institutional change.
 
-The first-pass full-controls regression sample now has 43 rows. This is not a
-final journal sample. It comes from seventeen source-backed city-control units
+The first-pass full-controls regression sample now has 45 rows. This is not a
+final journal sample. It comes from eighteen source-backed city-control units
 covered by a mix of official statistical communiques, official budget reports,
 official budget tables, official final-account reports, and secondary
 public-data compilations. Hangzhou and Foshan now bring functional-transfer
@@ -29,8 +29,13 @@ official municipal budget-execution and budget-draft report. Foshan's GDP and
 population values come from the 2024 statistical communique published by the
 Foshan Statistics Bureau and Foshan survey team in Foshan Daily, while its
 general-budget, debt, and government-fund values come from the official 2024
-municipal final-account disclosure. Qingdao is included from official budget
-and statistical-communique sources, and its SCO demonstration-zone platform is
+municipal final-account disclosure. Bozhou adds two nominal-exit cases. Its
+general-budget and debt fields come from a CCXI tracking-rating compilation,
+its expenditure value is calculated from the reported fiscal balance ratio, and
+its government-fund field uses a municipal audit-report figure as a transparent
+first-pass proxy because the rating report says full government-fund revenue
+was not published for 2022--2024. Qingdao is included from official budget and
+statistical-communique sources, and its SCO demonstration-zone platform is
 coded as a development-zone platform. Ningbo brings one substantive exit case
 and one nominal comparison case into the first-pass full-controls sample. Its
 fiscal fields come from local-government bond disclosure and tracking-report
@@ -48,8 +53,9 @@ administrative level, capital or sub-provincial city status, province fixed
 effects, and bond disclosure quality. Source coverage and city-status fields
 are populated systematically. `platform_control_coding_queue.csv` supplies
 rule-based platform administrative-level pre-codes for cases where the platform
-name, specialized sector, or city-prefecture mismatch is informative, but these
-values remain
+name, common municipal platform markers such as city-construction and
+investment-holding groups, specialized sector, or city-prefecture mismatch is
+informative, but these values remain
 pending human review. Debt, land-finance, and fiscal controls are retained as
 explicit collection fields and are merged only when source-backed values are
 available.
