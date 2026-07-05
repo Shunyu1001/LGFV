@@ -17,13 +17,15 @@ to the CBDB-GADM historical-capacity crosswalk. These rows support the current
 descriptive and linear-probability models that relate historical capacity to
 institutional change.
 
-The first-pass full-controls regression sample now has 32 rows. This is not a
-final journal sample. It comes from eleven source-backed city-control units
+The first-pass full-controls regression sample now has 35 rows. This is not a
+final journal sample. It comes from twelve source-backed city-control units
 covered by a mix of official statistical communiques, official budget reports,
-official budget tables, and secondary public-data compilations. Huangshi is
-included with a transparent city-direct government-fund proxy for the
-land-finance measure, while its GDP, population, general-budget, and debt
-values come from citywide official sources. The dataset contains
+official budget tables, and secondary public-data compilations. Xuzhou is
+included from a public rating-report compilation of the city's statistical
+communique and budget-execution report. Huangshi is included with a transparent
+city-direct government-fund proxy for the land-finance measure, while its GDP,
+population, general-budget, and debt values come from citywide official
+sources. The dataset contains
 fields for contemporary fiscal capacity, GDP per capita, fiscal
 self-sufficiency, debt pressure, land finance dependence, platform
 administrative level, capital or sub-provincial city status, province fixed
