@@ -17,21 +17,23 @@ to the CBDB-GADM historical-capacity crosswalk. These rows support the current
 descriptive and linear-probability models that relate historical capacity to
 institutional change.
 
-The first-pass full-controls regression sample now has 39 rows. This is not a
-final journal sample. It comes from fourteen source-backed city-control units
+The first-pass full-controls regression sample now has 41 rows. This is not a
+final journal sample. It comes from fifteen source-backed city-control units
 covered by a mix of official statistical communiques, official budget reports,
 official budget tables, official final-account reports, and secondary
-public-data compilations. Ningbo is now included, which brings one substantive
-exit case and one nominal comparison case into the first-pass full-controls
-sample. Its fiscal fields come from local-government bond disclosure and
-tracking-report compilations and should be OCR-checked against official
-final-account tables before journal submission. Jiaxing is included from
-official statistical communique and final-account sources. Xuzhou is included
-from a public rating-report compilation of the city's statistical communique
-and budget-execution report. Huangshi is included with a transparent
-city-direct government-fund proxy for the land-finance measure, while its GDP,
-population, general-budget, and debt values come from citywide official
-sources. The dataset contains
+public-data compilations. Qingdao is now included from official budget and
+statistical-communique sources, and its SCO demonstration-zone platform is
+coded as a development-zone platform. Ningbo brings one substantive exit case
+and one nominal comparison case into the first-pass full-controls sample. Its
+fiscal fields come from local-government bond disclosure and tracking-report
+compilations and should be OCR-checked against official final-account tables
+before journal submission. Jiaxing is included from official statistical
+communique and final-account sources. Xuzhou is included from a public
+rating-report compilation of the city's statistical communique and
+budget-execution report. Huangshi is included with a transparent city-direct
+government-fund proxy for the land-finance measure, while its GDP, population,
+general-budget, and debt values come from citywide official sources. The
+dataset contains
 fields for contemporary fiscal capacity, GDP per capita, fiscal
 self-sufficiency, debt pressure, land finance dependence, platform
 administrative level, capital or sub-provincial city status, province fixed
