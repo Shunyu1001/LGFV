@@ -17,11 +17,11 @@ to the CBDB-GADM historical-capacity crosswalk. These rows support the current
 descriptive and linear-probability models that relate historical capacity to
 institutional change.
 
-The first-pass full-controls regression sample now has 48 rows. This is not a
-final journal sample. It comes from twenty source-backed city-control units
+The first-pass full-controls regression sample now has 49 rows. This is not a
+final journal sample. It comes from twenty-one source-backed city-control units
 covered by a mix of official statistical communiques, official budget reports,
 official budget tables, official final-account reports, and secondary
-public-data compilations. Hangzhou, Foshan, and Wuxi now bring
+public-data compilations. Hangzhou, Foshan, Wuxi, and Wenzhou now bring
 functional-transfer cases into the first-pass full-controls sample. Hangzhou's
 GDP, population, and
 GDP-per-capita values come from a municipal statistical-communique reprint,
@@ -33,6 +33,10 @@ general-budget, debt, and government-fund values come from the official 2024
 municipal final-account disclosure. Wuxi brings the Yixing functional-transfer
 case into the model with prefecture-level controls from a Lianhe Ratings
 compilation of public 2024 economic, fiscal, fund-revenue, and debt data.
+Wenzhou brings a municipal construction-group functional-transfer case into
+the model, with GDP and population from the municipal statistical communique
+and general-budget, government-fund, and local-government debt values from the
+official municipal budget-execution report.
 Bozhou adds two nominal-exit cases. Its
 general-budget and debt fields come from a CCXI tracking-rating compilation,
 its expenditure value is calculated from the reported fiscal balance ratio, and
