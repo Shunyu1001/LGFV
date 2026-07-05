@@ -17,18 +17,23 @@ to the CBDB-GADM historical-capacity crosswalk. These rows support the current
 descriptive and linear-probability models that relate historical capacity to
 institutional change.
 
-The first-pass full-controls regression sample now has 41 rows. This is not a
-final journal sample. It comes from fifteen source-backed city-control units
+The first-pass full-controls regression sample now has 42 rows. This is not a
+final journal sample. It comes from sixteen source-backed city-control units
 covered by a mix of official statistical communiques, official budget reports,
 official budget tables, official final-account reports, and secondary
-public-data compilations. Qingdao is now included from official budget and
-statistical-communique sources, and its SCO demonstration-zone platform is
-coded as a development-zone platform. Ningbo brings one substantive exit case
-and one nominal comparison case into the first-pass full-controls sample. Its
-fiscal fields come from local-government bond disclosure and tracking-report
-compilations and should be OCR-checked against official final-account tables
-before journal submission. Jiaxing is included from official statistical
-communique and final-account sources. Xuzhou is included from a public
+public-data compilations. Hangzhou now brings a functional-transfer case into
+the first-pass full-controls sample. Its GDP, population, and GDP-per-capita
+values come from a municipal statistical-communique reprint, while its
+general-budget, debt, and government-fund values come from the official
+municipal budget-execution and budget-draft report. Qingdao is included from
+official budget and statistical-communique sources, and its SCO
+demonstration-zone platform is coded as a development-zone platform. Ningbo
+brings one substantive exit case and one nominal comparison case into the
+first-pass full-controls sample. Its fiscal fields come from local-government
+bond disclosure and tracking-report compilations and should be OCR-checked
+against official final-account tables before journal submission. Jiaxing is
+included from official statistical communique and final-account sources. Xuzhou
+is included from a public
 rating-report compilation of the city's statistical communique and
 budget-execution report. Huangshi is included with a transparent city-direct
 government-fund proxy for the land-finance measure, while its GDP, population,
