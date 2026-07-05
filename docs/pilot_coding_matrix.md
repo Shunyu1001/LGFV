@@ -36,9 +36,10 @@ being mistaken for validated data.
 
 The matrix suggests three patterns that are worth retaining in the research
 design. First, high-capacity cases are not homogeneous. Guangzhou and Ningbo
-currently supply substantive-exit evidence, while Hangzhou, Foshan, Wuxi, and
-Wenzhou show functional transfer or formalized public-project work inside
-municipal and county-level state-owned systems. Second, lower-capacity cases more often show compliance
+currently supply substantive-exit evidence, while Hangzhou, Foshan, Wuxi,
+Wenzhou, and Taizhou/Wenling show functional transfer or formalized
+public-project work inside municipal and county-level state-owned systems.
+Second, lower-capacity cases more often show compliance
 language alongside continuing public-project financing, fiscal settlements,
 receivables, subsidies, or debt-resolution pressure. Xuzhou and Yancheng add
 low historical-capacity nominal-exit labels, while Zhuzhou and Hengyang provide
