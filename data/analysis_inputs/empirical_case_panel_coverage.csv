@@ -3,9 +3,9 @@ Gold-standard labels,94,191,Outcome scale and human validation
 Adjusted descriptive sample,191,191,Gold labels plus non-overlap surrogate nominal-exit screens
 Historical capacity match,84,94,Validated-sample descriptive patterns and current regression
 Current validated-model rows,84,94,Rows with gold labels and historical capacity
-Full-controls regression rows,37,94,"Rows with gold labels, historical capacity, and contemporary controls"
+Full-controls regression rows,39,94,"Rows with gold labels, historical capacity, and contemporary controls"
 Source coverage score,191,191,Bond disclosure quality and measurement-quality control
-Debt pressure,38,191,"Contemporary alternative explanation, to be collected"
-Land finance dependence,38,191,"Contemporary alternative explanation, to be collected"
-Fiscal self-sufficiency,38,191,"Contemporary fiscal capacity, to be collected"
-Platform administrative level,80,191,"Issuer-level hierarchy control, rule-based pre-codes pending human check"
+Debt pressure,40,191,"Contemporary alternative explanation, to be collected"
+Land finance dependence,40,191,"Contemporary alternative explanation, to be collected"
+Fiscal self-sufficiency,40,191,"Contemporary fiscal capacity, to be collected"
+Platform administrative level,81,191,"Issuer-level hierarchy control, rule-based pre-codes pending human check"
