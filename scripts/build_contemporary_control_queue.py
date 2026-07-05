@@ -251,6 +251,7 @@ def infer_platform_level(row: dict[str, str]) -> tuple[str, str]:
             "建设",
             "开发投资集团",
             "投资控股集团",
+            "产业投资集团",
             "国资",
             "国有资本",
             "国有资产",

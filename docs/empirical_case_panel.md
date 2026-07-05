@@ -17,8 +17,8 @@ to the CBDB-GADM historical-capacity crosswalk. These rows support the current
 descriptive and linear-probability models that relate historical capacity to
 institutional change.
 
-The first-pass full-controls regression sample now has 45 rows. This is not a
-final journal sample. It comes from eighteen source-backed city-control units
+The first-pass full-controls regression sample now has 47 rows. This is not a
+final journal sample. It comes from nineteen source-backed city-control units
 covered by a mix of official statistical communiques, official budget reports,
 official budget tables, official final-account reports, and secondary
 public-data compilations. Hangzhou and Foshan now bring functional-transfer
@@ -43,7 +43,10 @@ compilations and should be OCR-checked against official final-account tables
 before journal submission. Jiaxing is included from official statistical
 communique and final-account sources. Xuzhou is included from a public
 rating-report compilation of the city's statistical communique and
-budget-execution report. Huangshi is included with a transparent city-direct
+budget-execution report. Shangrao adds two nominal-exit cases using a
+statistical-communique reprint for GDP and population and a Dagong active-rating
+report for general-budget, government-fund, and debt values. Huangshi is
+included with a transparent city-direct
 government-fund proxy for the land-finance measure, while its GDP, population,
 general-budget, and debt values come from citywide official sources. The
 dataset contains
@@ -53,9 +56,9 @@ administrative level, capital or sub-provincial city status, province fixed
 effects, and bond disclosure quality. Source coverage and city-status fields
 are populated systematically. `platform_control_coding_queue.csv` supplies
 rule-based platform administrative-level pre-codes for cases where the platform
-name, common municipal platform markers such as city-construction and
-investment-holding groups, specialized sector, or city-prefecture mismatch is
-informative, but these values remain
+name, common municipal platform markers such as city-construction,
+investment-holding, and industrial-investment groups, specialized sector, or
+city-prefecture mismatch is informative, but these values remain
 pending human review. Debt, land-finance, and fiscal controls are retained as
 explicit collection fields and are merged only when source-backed values are
 available.
