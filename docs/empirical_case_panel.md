@@ -17,8 +17,8 @@ to the CBDB-GADM historical-capacity crosswalk. These rows support the current
 descriptive and linear-probability models that relate historical capacity to
 institutional change.
 
-The first-pass full-controls regression sample now has 52 rows. This is not a
-final journal sample. It comes from twenty-four source-backed city-control units
+The first-pass full-controls regression sample now has 53 rows. This is not a
+final journal sample. It comes from twenty-five source-backed city-control units
 covered by a mix of official statistical communiques, official budget reports,
 official budget tables, official final-account reports, and secondary
 public-data compilations. Hangzhou, Foshan, Wuxi, Wenzhou, and Taizhou now
@@ -54,6 +54,13 @@ Huzhou Finance Bureau. The debt balance is cross-checked against a separate
 tracking-rating report. General-budget expenditure is calculated from the
 reported fiscal self-sufficiency ratio and should be replaced with the official
 final-account table before journal submission.
+Zhenjiang adds a high-debt Jiangsu nominal-exit case. Its GDP and
+GDP-per-capita values come from a Lianhe Ratings report, resident population is
+calculated from those two fields, and its general-budget, government-fund, and
+debt values come from a tracking-rating table sourced to Zhenjiang Finance
+Bureau. The row is useful for the alternative-explanations design because it
+adds a case with very high statutory debt pressure but no coded institutional
+change.
 Bozhou adds two nominal-exit cases. Its
 general-budget and debt fields come from a CCXI tracking-rating compilation,
 its expenditure value is calculated from the reported fiscal balance ratio, and
