@@ -17,8 +17,8 @@ to the CBDB-GADM historical-capacity crosswalk. These rows support the current
 descriptive and linear-probability models that relate historical capacity to
 institutional change.
 
-The first-pass full-controls regression sample now has 61 rows. This is not a
-final journal sample. It comes from thirty-three source-backed city-control units
+The first-pass full-controls regression sample now has 62 rows. This is not a
+final journal sample. It comes from thirty-four source-backed city-control units
 covered by a mix of official statistical communiques, official budget reports,
 official budget tables, official final-account reports, and secondary
 public-data compilations. Hangzhou, Foshan, Wuxi, Wenzhou, and Taizhou now
@@ -112,6 +112,14 @@ government-fund revenue, and local-government debt balance come from a Lianhe
 Ratings tracking report based on public materials. The row adds a high-debt
 central-province comparison with weak fiscal self-sufficiency and substantial
 government-fund dependence.
+Xi'an adds a western provincial-capital nominal-exit case centered on a
+high-tech-zone platform. GDP, resident population, GDP per capita,
+general-budget revenue, and general-budget expenditure come from the municipal
+statistical communique. Government-fund revenue and local-government debt
+balance come from a CCXI tracking report based on public materials. The row is
+useful because it adds a district-level development-zone platform inside a large
+western city rather than another ordinary prefecture-level city-investment
+group.
 Bozhou adds two nominal-exit cases. Its
 general-budget and debt fields come from a CCXI tracking-rating compilation,
 its expenditure value is calculated from the reported fiscal balance ratio, and
