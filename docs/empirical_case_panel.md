@@ -17,8 +17,8 @@ to the CBDB-GADM historical-capacity crosswalk. These rows support the current
 descriptive and linear-probability models that relate historical capacity to
 institutional change.
 
-The first-pass full-controls regression sample now has 50 rows. This is not a
-final journal sample. It comes from twenty-two source-backed city-control units
+The first-pass full-controls regression sample now has 51 rows. This is not a
+final journal sample. It comes from twenty-three source-backed city-control units
 covered by a mix of official statistical communiques, official budget reports,
 official budget tables, official final-account reports, and secondary
 public-data compilations. Hangzhou, Foshan, Wuxi, Wenzhou, and Taizhou now
@@ -41,6 +41,11 @@ Taizhou brings the Wenling county-level state-asset platform case into the
 model, with GDP and population from the municipal statistical communique and
 general-budget, government-fund, and debt values from the official municipal
 budget-execution report.
+Shaoxing adds a high-capacity development-zone nominal-exit case, with GDP and
+population from the municipal statistical communique, general-budget values
+from the official general-budget execution report, government-fund revenue
+from the official government-fund budget execution report, and debt balance
+from the official local-government debt limit and balance table.
 Bozhou adds two nominal-exit cases. Its
 general-budget and debt fields come from a CCXI tracking-rating compilation,
 its expenditure value is calculated from the reported fiscal balance ratio, and
