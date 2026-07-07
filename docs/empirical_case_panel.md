@@ -17,7 +17,7 @@ to the CBDB-GADM historical-capacity crosswalk. These rows support the current
 descriptive and linear-probability models that relate historical capacity to
 institutional change.
 
-The first-pass full-controls regression sample now has 67 rows. This is not a
+The first-pass full-controls regression sample now has 68 rows. This is not a
 final journal sample. It comes from thirty-nine source-backed city-control units
 covered by a mix of official statistical communiques, official budget reports,
 official budget tables, official final-account reports, and secondary
@@ -155,6 +155,14 @@ calculated from the reported revenue and fiscal self-sufficiency ratio. The row
 adds another inland comparison with moderate fiscal self-sufficiency, high
 statutory debt pressure, and continuing infrastructure, affordable-housing,
 land-sorting, and government-authorized project functions.
+Suzhou now uses official municipal sources rather than the earlier secondary
+public-data compilation. GDP, resident population, and GDP per capita come from
+the official 2024 municipal statistical communique. General-budget revenue,
+general-budget expenditure, government-fund revenue, and local-government debt
+balance come from the official 2024 budget-execution and 2025 budget-draft
+tables. The Wuzhong Guotai case is now coded as a district or development-zone
+platform, bringing one additional Suzhou nominal-exit observation into the
+full-controls regression without adding a new city-control unit.
 Bozhou adds two nominal-exit cases. Its
 general-budget and debt fields come from a CCXI tracking-rating compilation,
 its expenditure value is calculated from the reported fiscal balance ratio, and

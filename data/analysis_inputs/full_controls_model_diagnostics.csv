@@ -3,7 +3,7 @@ GDP per capita,68,84,68,191,partial,Contemporary economic capacity,Needed for th
 Fiscal self-sufficiency,68,84,68,191,partial,Contemporary fiscal capacity,Needed to distinguish historical capacity from present fiscal strength.
 Local debt pressure,68,84,68,191,partial,Contemporary fiscal stress,Needed to test whether exit type reflects debt pressure rather than capacity.
 Land finance dependence,68,84,68,191,partial,Land-finance alternative explanation,Needed to test whether platform persistence follows land-development dependence.
-Platform administrative level,80,84,89,191,provisional_pending_human_audit,Issuer hierarchy control,Usable as a provisional control after human audit of rule-based pre-codes.
+Platform administrative level,81,84,90,191,provisional_pending_human_audit,Issuer hierarchy control,Usable as a provisional control after human audit of rule-based pre-codes.
 Capital/sub-provincial status,84,84,191,191,available,Administrative-rank control,Already usable in the available-controls model.
 Province fixed effects,84,84,94,191,available,Province-level policy environment,Already usable where provinces have repeated observations.
 Source/bond disclosure quality,84,84,191,191,available,Measurement-quality control,Already usable in the available-controls model.
