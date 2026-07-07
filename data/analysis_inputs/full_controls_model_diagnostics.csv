@@ -1,8 +1,8 @@
 component,available_in_current_model_rows,current_model_rows,available_in_full_panel,full_panel_rows,status,role,implication
-GDP per capita,64,84,64,191,partial,Contemporary economic capacity,Needed for the full alternative-explanations model.
-Fiscal self-sufficiency,64,84,64,191,partial,Contemporary fiscal capacity,Needed to distinguish historical capacity from present fiscal strength.
-Local debt pressure,64,84,64,191,partial,Contemporary fiscal stress,Needed to test whether exit type reflects debt pressure rather than capacity.
-Land finance dependence,64,84,64,191,partial,Land-finance alternative explanation,Needed to test whether platform persistence follows land-development dependence.
+GDP per capita,65,84,65,191,partial,Contemporary economic capacity,Needed for the full alternative-explanations model.
+Fiscal self-sufficiency,65,84,65,191,partial,Contemporary fiscal capacity,Needed to distinguish historical capacity from present fiscal strength.
+Local debt pressure,65,84,65,191,partial,Contemporary fiscal stress,Needed to test whether exit type reflects debt pressure rather than capacity.
+Land finance dependence,65,84,65,191,partial,Land-finance alternative explanation,Needed to test whether platform persistence follows land-development dependence.
 Platform administrative level,80,84,89,191,provisional_pending_human_audit,Issuer hierarchy control,Usable as a provisional control after human audit of rule-based pre-codes.
 Capital/sub-provincial status,84,84,191,191,available,Administrative-rank control,Already usable in the available-controls model.
 Province fixed effects,84,84,94,191,available,Province-level policy environment,Already usable where provinces have repeated observations.
