@@ -17,8 +17,8 @@ to the CBDB-GADM historical-capacity crosswalk. These rows support the current
 descriptive and linear-probability models that relate historical capacity to
 institutional change.
 
-The first-pass full-controls regression sample now has 68 rows. This is not a
-final journal sample. It comes from thirty-nine source-backed city-control units
+The first-pass full-controls regression sample now has 69 rows. This is not a
+final journal sample. It comes from forty source-backed city-control units
 covered by a mix of official statistical communiques, official budget reports,
 official budget tables, official final-account reports, and secondary
 public-data compilations. Hangzhou, Foshan, Wuxi, Wenzhou, and Taizhou now
@@ -163,6 +163,13 @@ balance come from the official 2024 budget-execution and 2025 budget-draft
 tables. The Wuzhong Guotai case is now coded as a district or development-zone
 platform, bringing one additional Suzhou nominal-exit observation into the
 full-controls regression without adding a new city-control unit.
+Kunming adds a Yunnan provincial-capital nominal-exit case. GDP, GDP per
+capita, general-budget revenue, general-budget expenditure, government-fund
+revenue, and local-government debt balance come from a Lianhe Ratings tracking
+report based on public materials. Resident population is calculated from the
+reported GDP and per-capita GDP. The row adds the first Yunnan comparison, with
+moderate fiscal self-sufficiency, high statutory debt pressure, and continuing
+transport infrastructure and municipal development functions.
 Bozhou adds two nominal-exit cases. Its
 general-budget and debt fields come from a CCXI tracking-rating compilation,
 its expenditure value is calculated from the reported fiscal balance ratio, and
