@@ -1,22 +1,22 @@
 model,variable,coefficient,robust_se,p_value,n,dependent_mean,controls
-Full sample historical,Intercept,0.1692,0.0465,0.0003,65,0.1692,No
-Full sample historical,"Elite density, standardized",0.0675,0.0467,0.1484,65,0.1692,No
-Economic and fiscal controls,Intercept,0.1692,0.0464,0.0003,65,0.1692,GDP per capita; fiscal self-sufficiency
-Economic and fiscal controls,"Elite density, standardized",0.0105,0.0519,0.8401,65,0.1692,GDP per capita; fiscal self-sufficiency
-Economic and fiscal controls,"GDP per capita, standardized",0.0028,0.0864,0.9738,65,0.1692,GDP per capita; fiscal self-sufficiency
-Economic and fiscal controls,"Fiscal self-sufficiency, standardized",0.0871,0.0956,0.3622,65,0.1692,GDP per capita; fiscal self-sufficiency
-Debt and land controls,Intercept,0.1692,0.0469,0.0003,65,0.1692,"Economic, fiscal, debt, and land-finance controls"
-Debt and land controls,"Elite density, standardized",0.0029,0.0588,0.9609,65,0.1692,"Economic, fiscal, debt, and land-finance controls"
-Debt and land controls,"GDP per capita, standardized",-0.0411,0.1281,0.7485,65,0.1692,"Economic, fiscal, debt, and land-finance controls"
-Debt and land controls,"Fiscal self-sufficiency, standardized",0.1549,0.1713,0.3658,65,0.1692,"Economic, fiscal, debt, and land-finance controls"
-Debt and land controls,"Debt pressure, standardized",0.0210,0.0575,0.7145,65,0.1692,"Economic, fiscal, debt, and land-finance controls"
-Debt and land controls,"Land-finance proxy, standardized",0.0456,0.0644,0.4787,65,0.1692,"Economic, fiscal, debt, and land-finance controls"
-Full available controls,Intercept,0.1005,0.0255,0.0001,65,0.1692,Full first-pass controls
-Full available controls,"Elite density, standardized",-0.0104,0.0537,0.8469,65,0.1692,Full first-pass controls
-Full available controls,"GDP per capita, standardized",0.0352,0.1326,0.7903,65,0.1692,Full first-pass controls
-Full available controls,"Fiscal self-sufficiency, standardized",0.0796,0.1679,0.6356,65,0.1692,Full first-pass controls
-Full available controls,"Debt pressure, standardized",-0.0050,0.0725,0.9449,65,0.1692,Full first-pass controls
-Full available controls,"Land-finance proxy, standardized",0.0211,0.0524,0.6875,65,0.1692,Full first-pass controls
-Full available controls,"Source coverage score, standardized",-0.1348,0.0632,0.0329,65,0.1692,Full first-pass controls
-Full available controls,District/county platform,-0.0068,0.0539,0.8990,65,0.1692,Full first-pass controls
-Full available controls,Prefecture/municipal platform,0.1074,0.0575,0.0617,65,0.1692,Full first-pass controls
+Full sample historical,Intercept,0.1667,0.0458,0.0003,66,0.1667,No
+Full sample historical,"Elite density, standardized",0.0680,0.0464,0.1429,66,0.1667,No
+Economic and fiscal controls,Intercept,0.1667,0.0457,0.0003,66,0.1667,GDP per capita; fiscal self-sufficiency
+Economic and fiscal controls,"Elite density, standardized",0.0104,0.0509,0.8388,66,0.1667,GDP per capita; fiscal self-sufficiency
+Economic and fiscal controls,"GDP per capita, standardized",0.0028,0.0869,0.9739,66,0.1667,GDP per capita; fiscal self-sufficiency
+Economic and fiscal controls,"Fiscal self-sufficiency, standardized",0.0887,0.0952,0.3511,66,0.1667,GDP per capita; fiscal self-sufficiency
+Debt and land controls,Intercept,0.1667,0.0462,0.0003,66,0.1667,"Economic, fiscal, debt, and land-finance controls"
+Debt and land controls,"Elite density, standardized",0.0044,0.0568,0.9383,66,0.1667,"Economic, fiscal, debt, and land-finance controls"
+Debt and land controls,"GDP per capita, standardized",-0.0387,0.1258,0.7586,66,0.1667,"Economic, fiscal, debt, and land-finance controls"
+Debt and land controls,"Fiscal self-sufficiency, standardized",0.1514,0.1653,0.3600,66,0.1667,"Economic, fiscal, debt, and land-finance controls"
+Debt and land controls,"Debt pressure, standardized",0.0206,0.0572,0.7192,66,0.1667,"Economic, fiscal, debt, and land-finance controls"
+Debt and land controls,"Land-finance proxy, standardized",0.0433,0.0616,0.4821,66,0.1667,"Economic, fiscal, debt, and land-finance controls"
+Full available controls,Intercept,0.0984,0.0250,0.0001,66,0.1667,Full first-pass controls
+Full available controls,"Elite density, standardized",-0.0090,0.0522,0.8633,66,0.1667,Full first-pass controls
+Full available controls,"GDP per capita, standardized",0.0382,0.1301,0.7690,66,0.1667,Full first-pass controls
+Full available controls,"Fiscal self-sufficiency, standardized",0.0752,0.1621,0.6428,66,0.1667,Full first-pass controls
+Full available controls,"Debt pressure, standardized",-0.0056,0.0724,0.9383,66,0.1667,Full first-pass controls
+Full available controls,"Land-finance proxy, standardized",0.0189,0.0495,0.7032,66,0.1667,Full first-pass controls
+Full available controls,"Source coverage score, standardized",-0.1339,0.0628,0.0330,66,0.1667,Full first-pass controls
+Full available controls,District/county platform,-0.0082,0.0540,0.8793,66,0.1667,Full first-pass controls
+Full available controls,Prefecture/municipal platform,0.1066,0.0570,0.0617,66,0.1667,Full first-pass controls
