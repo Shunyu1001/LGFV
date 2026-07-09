@@ -17,8 +17,8 @@ to the CBDB-GADM historical-capacity crosswalk. These rows support the current
 descriptive and linear-probability models that relate historical capacity to
 institutional change.
 
-The first-pass full-controls regression sample now has 77 rows. This is not a
-final journal sample. It comes from forty-eight source-backed city-control units
+The first-pass full-controls regression sample now has 78 rows. This is not a
+final journal sample. It comes from forty-nine source-backed city-control units
 covered by a mix of official statistical communiques, official budget reports,
 official budget tables, official final-account reports, and secondary
 public-data compilations. Hangzhou, Foshan, Wuxi, Wenzhou, and Taizhou now
@@ -246,6 +246,16 @@ because it brings another non-Zhejiang functional-transfer case into the
 full-controls sample and links the label to fiscal-budget funding,
 project-management, entrusted-construction, and continuing government-linked
 public-project functions.
+Zhengzhou adds a provincial-capital functional-zone nominal-exit case centered
+on Henan Airport Investment Group. GDP, per-capita GDP, general-budget revenue,
+general-budget expenditure, government-fund revenue, and local-government debt
+balance come from a Lianhe Ratings research report on Zhengzhou local-government
+and city-investment debt risk. Resident population is calculated from the
+reported GDP and per-capita GDP. The row is useful because it adds a
+development-zone platform tied to the Zhengzhou Airport Economy Zone, where high
+contemporary fiscal capacity and high statutory debt pressure coexist with
+continued infrastructure, land-preparation, affordable-housing,
+public-capital-injection, and zone-development functions.
 Bozhou adds two nominal-exit cases. Its
 general-budget and debt fields come from a CCXI tracking-rating compilation,
 its expenditure value is calculated from the reported fiscal balance ratio, and

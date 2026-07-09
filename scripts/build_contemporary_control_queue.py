@@ -239,7 +239,7 @@ def infer_platform_level(row: dict[str, str]) -> tuple[str, str]:
         return "provincial_or_region_level", "rule_based_from_platform_name"
     if city and control and city != control:
         return "district_or_county_level", "rule_based_from_city_prefecture_mismatch"
-    if any(token in platform for token in ["区", "县", "高新", "经开", "开发区", "新城", "新区", "知识城", "科学城", "上合", "吴中"]):
+    if any(token in platform for token in ["区", "县", "高新", "经开", "开发区", "新城", "新区", "知识城", "科学城", "航空港", "上合", "吴中"]):
         return "district_or_development_zone_level", "rule_based_from_platform_name"
     if any(
         token in platform
