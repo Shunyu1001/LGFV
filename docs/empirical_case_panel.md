@@ -17,8 +17,8 @@ to the CBDB-GADM historical-capacity crosswalk. These rows support the current
 descriptive and linear-probability models that relate historical capacity to
 institutional change.
 
-The first-pass full-controls regression sample now has 76 rows. This is not a
-final journal sample. It comes from forty-seven source-backed city-control units
+The first-pass full-controls regression sample now has 77 rows. This is not a
+final journal sample. It comes from forty-eight source-backed city-control units
 covered by a mix of official statistical communiques, official budget reports,
 official budget tables, official final-account reports, and secondary
 public-data compilations. Hangzhou, Foshan, Wuxi, Wenzhou, and Taizhou now
@@ -235,6 +235,17 @@ available source-backed government-fund revenue value from 2023. The row is
 useful because weak historical capacity, weak fiscal self-sufficiency, high
 statutory debt pressure, and continued land-preparation and fiscal-settlement
 functions coexist with nominal rather than substantive exit.
+Xiaogan adds a Hubei functional-transfer case. GDP, resident population, GDP
+per capita, general-budget revenue, and general-budget expenditure come from
+the official municipal statistical communique. Because the 2024 local-government
+debt balance and government-fund revenue fields are not yet available in a clean
+official table, the first-pass row uses the latest source-backed 2023 debt
+balance from a Dongfang Jincheng tracking report and the latest source-backed
+2023 government-fund revenue from a Pengyuan tracking report. The row is useful
+because it brings another non-Zhejiang functional-transfer case into the
+full-controls sample and links the label to fiscal-budget funding,
+project-management, entrusted-construction, and continuing government-linked
+public-project functions.
 Bozhou adds two nominal-exit cases. Its
 general-budget and debt fields come from a CCXI tracking-rating compilation,
 its expenditure value is calculated from the reported fiscal balance ratio, and
