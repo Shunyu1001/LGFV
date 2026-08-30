@@ -1,0 +1,32 @@
+{
+  "all_eligible_units_have_nonzero_probability": true,
+  "all_geography_statuses": {
+    "source_supported_multiple": 2,
+    "source_supported_unique": 130,
+    "unresolved_after_search": 1
+  },
+  "all_scope_dispositions": {
+    "eligible": 66,
+    "ineligible": 66,
+    "unresolved_after_search": 1
+  },
+  "baseline_geography_gaps": 88,
+  "baseline_geography_multiple": 2,
+  "baseline_geography_resolved": 86,
+  "baseline_geography_unresolved": 0,
+  "baseline_scope_resolved": 98,
+  "baseline_scope_reviews": 98,
+  "baseline_scope_unresolved": 0,
+  "candidate_originating_disclosure_rows": 73,
+  "deterministic_random_seed": "20260830015",
+  "eligible_candidate_units": 66,
+  "eligible_screen_statuses": {
+    "screen_positive_nominal": 57,
+    "screened_no_direct_formal_event": 9
+  },
+  "frame_ready_to_freeze": false,
+  "frozen_strata": 23,
+  "originating_disclosure_rows": 157,
+  "proposed_issuer_units": 133,
+  "random_draw_executed": false
+}

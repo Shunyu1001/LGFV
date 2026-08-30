@@ -15,38 +15,24 @@ ROOT = Path(__file__).resolve().parents[1]
 FRAME_INPUT = ROOT / "data/validation/proposed_one_sided_validation_frame_enriched.csv"
 CROSSWALK_INPUT = ROOT / "data/validation/probability_validation_geography_scope_crosswalk.csv"
 SURROGATE_INPUT = ROOT / "data/analysis_inputs/codex_surrogate_labels_2026_07_03_expanded.csv"
+DOCUMENTS_INPUT = ROOT / "data/document_inventory.csv"
 HISTORICAL_INPUT = ROOT / "data/analysis_inputs/candidate_city_historical_capacity.csv"
-CONTROLS_INPUT = ROOT / "data/analysis_inputs/contemporary_city_controls_source_backed.csv"
+CONTROLS_INPUT = ROOT / "data/analysis_inputs/contemporary_city_controls.csv"
 
 CANDIDATE_OUTPUT = ROOT / "data/validation/probability_validation_frame_candidate.csv"
 ORIGIN_OUTPUT = ROOT / "data/validation/probability_validation_frame_origin_rows.csv"
 FLOW_OUTPUT = ROOT / "data/validation/probability_validation_frame_flow.csv"
 DESIGN_OUTPUT = ROOT / "data/validation/probability_validation_sampling_design.csv"
-METRICS_OUTPUT = ROOT / "experiments/EXP-20260830-015/metrics.json"
+METRICS_OUTPUT = ROOT / "experiments/EXP-20260831-001/metrics.json"
 
 SEED = "20260830015"
 POSITIVE_TARGET = 60
 NONPOSITIVE_TARGET = 36
 ALLOWED_SCREEN = {"screen_positive_nominal", "screened_no_direct_formal_event"}
 
-CONTROL_CITY_MAP = {
-    "北京市": "beijing_beijing",
-    "天津市": "tianjin_tianjin",
-    "南京市": "jiangsu_nanjing",
-    "南通市": "jiangsu_nantong",
-    "宁波市": "zhejiang_ningbo",
-    "常州市": "jiangsu_changzhou",
-    "广州市": "guangdong_guangzhou",
-    "昆明市": "yunnan_kunming",
-    "淮安市": "jiangsu_huaian",
-    "深圳市": "guangdong_shenzhen",
-    "盐城市": "jiangsu_yancheng",
-    "福州市": "fujian_fuzhou",
-    "苏州市": "jiangsu_suzhou",
-    "镇江市": "jiangsu_zhenjiang",
-    "长沙市": "hunan_changsha",
-    "青岛市": "shandong_qingdao",
-    "临沂市": "shandong_linyi",
+PREFECTURE_ROLLUPS = {
+    "太仓市": "苏州市",
+    "如皋市": "南通市",
 }
 
 HISTORICAL_ENGLISH_JOIN = {
@@ -102,19 +88,85 @@ def normalize_legal_name(value: str) -> str:
     return re.sub(r"[\s()（）·,，。]", "", value).casefold()
 
 
-def coverage_by_source_row() -> dict[str, float]:
-    """Read only the identifier and coverage columns from the surrogate file."""
+def surrogate_origin_lookup() -> tuple[dict[str, set[str]], dict[tuple[str, str], float]]:
+    """Read only origin identifiers and coverage from the surrogate file."""
     with SURROGATE_INPUT.open(encoding="utf-8-sig", newline="") as handle:
         reader = csv.reader(handle)
         header = next(reader)
         source_index = header.index("source_row_id")
+        pool_index = header.index("pool_id")
         coverage_index = header.index("source_coverage_score")
-        result: dict[str, float] = {}
+        pools: dict[str, set[str]] = defaultdict(set)
+        coverage: dict[tuple[str, str], float] = {}
         for values in reader:
             source_row_id = values[source_index]
+            pool_id = values[pool_index]
             score = float(values[coverage_index])
-            result[source_row_id] = max(score, result.get(source_row_id, score))
-    return result
+            pools[source_row_id].add(pool_id)
+            pair = (source_row_id, pool_id)
+            if pair in coverage and coverage[pair] != score:
+                raise ValueError(f"Conflicting source coverage for origin pair: {pair}")
+            coverage[pair] = score
+    return dict(pools), coverage
+
+
+def resolve_origin_pairs(
+    source_row_ids: list[str],
+    declared_pool_ids: list[str],
+    surrogate_pools: dict[str, set[str]],
+    context: str,
+) -> list[tuple[str, str]]:
+    """Resolve each source row to its uniquely declared pool without free text."""
+    missing_origins = [source_id for source_id in source_row_ids if source_id not in surrogate_pools]
+    if missing_origins:
+        raise ValueError(f"Origin rows are missing from the surrogate input: {context} {missing_origins}")
+    declared_pool_set = set(declared_pool_ids)
+    pool_choices = [surrogate_pools[source_id].intersection(declared_pool_set) for source_id in source_row_ids]
+    if any(len(choices) != 1 for choices in pool_choices):
+        raise ValueError(f"Origin pairs are not uniquely identified by safe surrogate columns: {context}")
+    resolved_pool_ids = [next(iter(choices)) for choices in pool_choices]
+    if Counter(resolved_pool_ids) != Counter(declared_pool_ids):
+        raise ValueError(f"Origin pool-ID membership mismatch: {context}")
+    return list(zip(source_row_ids, resolved_pool_ids))
+
+
+def coverage_for_origin_pairs(
+    origin_pairs: list[tuple[str, str]],
+    coverage: dict[tuple[str, str], float],
+    context: str,
+) -> float:
+    """Return coverage for the resolved origin pairs, never a cross-pool maximum."""
+    missing_pairs = [pair for pair in origin_pairs if pair not in coverage]
+    if missing_pairs:
+        raise ValueError(f"Source coverage is missing for {context}: {missing_pairs}")
+    return max(coverage[pair] for pair in origin_pairs)
+
+
+def document_ids_by_source_row() -> tuple[dict[str, list[str]], set[str]]:
+    """Index valid inventory documents without treating free text as an ID."""
+    by_source: dict[str, list[str]] = defaultdict(list)
+    valid_ids: set[str] = set()
+    for row in read_csv(DOCUMENTS_INPUT):
+        document_id = row["document_id"]
+        if not document_id:
+            continue
+        valid_ids.add(document_id)
+        if row["usable_for_labeling"] == "yes":
+            by_source[row["case_id"]].append(document_id)
+    return dict(by_source), valid_ids
+
+
+def origin_evidence_document_ids(
+    source_row_id: str,
+    aggregate_ids: str,
+    by_source: dict[str, list[str]],
+    valid_ids: set[str],
+) -> str:
+    direct = by_source.get(source_row_id, [])
+    if direct:
+        return ";".join(dict.fromkeys(direct))
+    fallback = [value for value in aggregate_ids.split(";") if value in valid_ids]
+    return ";".join(dict.fromkeys(fallback))
 
 
 def coverage_bin(score: float) -> str:
@@ -151,14 +203,30 @@ def historical_lookup() -> dict[str, dict[str, str]]:
     return result
 
 
-def debt_availability() -> dict[str, str]:
-    result: dict[str, str] = {}
+def analysis_prefecture_city(city: str) -> str:
+    return PREFECTURE_ROLLUPS.get(city, city)
+
+
+def canonical_control_city(city: str) -> str:
+    if city in {"北京", "天津", "上海", "重庆"}:
+        return f"{city}市"
+    return city
+
+
+def debt_availability() -> dict[str, tuple[str, str]]:
+    result: dict[str, tuple[str, str]] = {}
     for row in read_csv(CONTROLS_INPUT):
         status = row["debt_pressure_status"]
+        city = canonical_control_city(row["control_city_chn"])
+        if not city:
+            continue
         if status.startswith("source_backed") or status.startswith("latest_source_backed"):
-            result[row["control_unit_id"]] = "available"
+            value = (row["control_unit_id"], "available")
         else:
-            result[row["control_unit_id"]] = "not_available"
+            value = (row["control_unit_id"], "not_available")
+        if city in result and result[city] != value:
+            raise ValueError(f"Conflicting contemporary-control rows for {city}")
+        result[city] = value
     return result
 
 
@@ -175,7 +243,8 @@ def build() -> dict[str, object]:
     if len(frame) != 133 or len(crosswalk) != 133 or set(frame) != set(crosswalk):
         raise ValueError("The frame and completed crosswalk must contain the same 133 units")
 
-    coverage = coverage_by_source_row()
+    surrogate_pools, coverage = surrogate_origin_lookup()
+    documents_by_source, valid_document_ids = document_ids_by_source_row()
     historical = historical_lookup()
     debt = debt_availability()
     origins: list[dict[str, object]] = []
@@ -187,10 +256,13 @@ def build() -> dict[str, object]:
         if frame_row["design_stratum"] not in ALLOWED_SCREEN:
             raise ValueError(f"Unexpected screen status: {unit_id}")
         source_row_ids = [value for value in frame_row["source_row_ids"].split(";") if value]
-        pool_ids = [value for value in frame_row["pool_ids"].split(";") if value]
-        if len(source_row_ids) != len(pool_ids) or len(source_row_ids) != int(frame_row["disclosure_rows"]):
+        declared_pool_ids = [value for value in frame_row["pool_ids"].split(";") if value]
+        if len(source_row_ids) != len(declared_pool_ids) or len(source_row_ids) != int(frame_row["disclosure_rows"]):
             raise ValueError(f"Origin-row traceability mismatch: {unit_id}")
-        for position, (source_row_id, pool_id) in enumerate(zip(source_row_ids, pool_ids), start=1):
+        resolved_origin_pairs = resolve_origin_pairs(
+            source_row_ids, declared_pool_ids, surrogate_pools, unit_id
+        )
+        for position, (source_row_id, pool_id) in enumerate(resolved_origin_pairs, start=1):
             origins.append({
                 "validation_unit_id": unit_id,
                 "issuer_name": frame_row["issuer_name"],
@@ -200,18 +272,21 @@ def build() -> dict[str, object]:
                 "origin_position": position,
                 "source_row_id": source_row_id,
                 "pool_id": pool_id,
-                "evidence_document_ids": frame_row["evidence_document_ids"],
+                "evidence_document_ids": origin_evidence_document_ids(
+                    source_row_id,
+                    frame_row["evidence_document_ids"],
+                    documents_by_source,
+                    valid_document_ids,
+                ),
             })
 
         if review["scope_disposition"] != "eligible":
             continue
         if review["geography_status"] != "source_supported_unique":
             raise ValueError(f"Eligible unit lacks unique geography: {unit_id}")
-        missing_coverage = [source_id for source_id in source_row_ids if source_id not in coverage]
-        if missing_coverage:
-            raise ValueError(f"Source coverage is missing for {unit_id}: {missing_coverage}")
-        score = max(coverage[source_id] for source_id in source_row_ids)
-        historical_match = historical.get(review["city"])
+        score = coverage_for_origin_pairs(resolved_origin_pairs, coverage, unit_id)
+        prefecture_city = analysis_prefecture_city(review["city"])
+        historical_match = historical.get(prefecture_city)
         if historical_match:
             historical_bin = historical_match["historical_capacity_bin"]
             historical_status = "source_backed_match"
@@ -220,8 +295,7 @@ def build() -> dict[str, object]:
             historical_bin = "not_available"
             historical_status = "not_available"
             historical_cases = ""
-        control_unit_id = CONTROL_CITY_MAP.get(review["city"], "")
-        debt_status = debt.get(control_unit_id, "not_available") if control_unit_id else "not_available"
+        control_unit_id, debt_status = debt.get(prefecture_city, ("", "not_available"))
         screen_status = frame_row["design_stratum"]
         source_bin = coverage_bin(score)
         stratum_id = "__".join((
@@ -345,7 +419,8 @@ def build() -> dict[str, object]:
         "originating_disclosure_rows": len(origins),
         "baseline_geography_gaps": len(baseline_geography),
         "baseline_geography_resolved": sum(row["geography_status"] == "source_supported_unique" for row in baseline_geography),
-        "baseline_geography_unresolved": sum(row["geography_status"] != "source_supported_unique" for row in baseline_geography),
+        "baseline_geography_multiple": sum(row["geography_status"] == "source_supported_multiple" for row in baseline_geography),
+        "baseline_geography_unresolved": sum(row["geography_status"] == "unresolved_after_search" for row in baseline_geography),
         "baseline_scope_reviews": len(baseline_scope),
         "baseline_scope_resolved": sum(row["scope_disposition"] in {"eligible", "ineligible"} for row in baseline_scope),
         "baseline_scope_unresolved": sum(row["scope_disposition"] == "unresolved_after_search" for row in baseline_scope),

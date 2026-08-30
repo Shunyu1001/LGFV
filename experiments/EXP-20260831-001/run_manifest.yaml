@@ -1,0 +1,61 @@
+schema_version: 1
+experiment_id: EXP-20260831-001
+base_commit: 7dfa332c6d4c965605abe3337cf0bfd536f068cf
+registration_commit: 27767834a8a63ad810ffedf5c0fb90b4794d5259
+corrects_experiment_id: EXP-20260830-015
+branch: codex/geography-scope-probability-frame-ultra
+input_hash_algorithm: sha256
+inputs:
+  - path: data/validation/proposed_one_sided_validation_frame_enriched.csv
+    sha256: 9cc5822b69f548b4d6673d895b38f7c2c5a3196a87f41c29edbd49107d1bce26
+  - path: data/validation/source_supported_validation_geography_scope_crosswalk.csv
+    sha256: 50b1f286805aa6a745551aff0172885b53296db18d6fe41a5e9907bef602720a
+  - path: data/validation/validation_geography_conflict_log.csv
+    sha256: 56a7b77429b24ce42fdb378a21faef942faee4a278d33e7c89c82955870f5134
+  - path: data/validation/validation_geography_retrieval_manifest.csv
+    sha256: 669f8c7d7f9294760ecebdb1c1d8f32a1168737274b1730cc34801dd65b4d8bc
+  - path: data/analysis_inputs/codex_surrogate_labels_2026_07_03_expanded.csv
+    sha256: cfced00afd193fa68d95db10888d05069fab27e7c957832d29bf6260ac44dfbe
+  - path: data/analysis_inputs/candidate_city_historical_capacity.csv
+    sha256: eed33784ec5e1b9c3afee2eef8d8e993f503e8ddd066134236ed7c44a0e9493f
+  - path: data/analysis_inputs/contemporary_city_controls.csv
+    sha256: 3c5f03040ad9e1b881a7ee6b700e021d06a22713997fa4c7711e2f066c704fe4
+  - path: experiments/EXP-20260831-001/review_decisions.csv
+    sha256: b86381191c4373b4049bca1afe942c59b732c14fe368f032f7ca19412b042a8b
+  - path: data/document_inventory.csv
+    sha256: 8d5f13810f31a91b293ccc917153cf2e21f252445719de5a174604151dbd6d27
+  - path: data/source_inventory.csv
+    sha256: a83c47e7a8c1f8989d9d8e4289b16548c058b4b567ed4725e56310cb41dd8c8c
+  - path: coding/source_search_protocol.md
+    sha256: 6c1146dac712b58cb49cd64124f71a91d5e76d1baf76ca46f8e39c57f47d8c8c
+  - path: coding/codebook.md
+    sha256: 877a898bfc125e9bfd35c1f612b5034a00ab30cd3a9f9efaca7f10aab9dc9b66
+  - path: coding/label_provenance.md
+    sha256: fde96643b2038e571ef7f604af9d26cf08c142b7086f644696da825e5922e55f
+  - path: data/validation/label_role_registry.csv
+    sha256: 48b2610cc26c8f411d04fdabd692b9706fa3846a266b2f1509bfabcbc71b099b
+outputs:
+  - path: data/validation/probability_validation_geography_scope_crosswalk.csv
+    sha256: fc72c263dade64d3404d873fec0b40328429346661710d24988c448fbeb711d2
+  - path: data/validation/probability_validation_unresolved_log.csv
+    sha256: 5c9ede8c97b86add246ab99b2a6a052375f849f9be9fecc02abd4c95f368571c
+  - path: data/validation/probability_validation_source_manifest.csv
+    sha256: 5713057b161939748a334426bb41e5ed1ce59adc4519204ea0b1d31b0bb1d664
+  - path: data/validation/probability_validation_frame_candidate.csv
+    sha256: a31000f9896b86c6bbd9327716761fb28386ea08a57c7845b8884e1a36be168c
+  - path: data/validation/probability_validation_frame_origin_rows.csv
+    sha256: 2799dda51d7cbe05c1960ae35ae67354dbaedf0495d5315cbcca2038ba2fe2f7
+  - path: data/validation/probability_validation_frame_flow.csv
+    sha256: 57929324912b1ab3db7eb97c72709fdbcf5424783087c64baa433f385a22a423
+  - path: data/validation/probability_validation_sampling_design.csv
+    sha256: f525276471be1911b125f6e41d4ad870ad49f20b70f8cd09face4e80532c8abd
+  - path: experiments/EXP-20260831-001/metrics.json
+    sha256: bc8f8c2bec1412010a6085a49f38e61f2de540aa2712a74010e109b367a85e4c
+random_draw: false
+deterministic_random_seed: "20260830015"
+frame_ready_to_freeze: false
+raw_documents_committed: false
+working_reference_outcomes_accessed: false
+source_cache_complete: false
+cited_source_cache_complete: true
+independent_human_validation: false
