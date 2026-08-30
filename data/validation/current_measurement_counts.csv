@@ -1,0 +1,18 @@
+object_id,unit,quantity,value,note
+gold_cases,city-platform case,rows,94,Assembled human-reviewed file; not a probability sample.
+gold_substantive_exit,city-platform case,final_label count,2,Observed within the 94-case gold file.
+gold_nominal_exit,city-platform case,final_label count,82,Observed within the 94-case gold file.
+gold_functional_transfer,city-platform case,final_label count,10,Observed within the 94-case gold file.
+gold_liquidation,city-platform case,final_label count,0,"No liquidation case is present, so category-specific reliability is not observed."
+gold_codex_assisted_reviewer_field,city-platform case,rows,90,The field still identifies Shunyu Hao as the human reviewer; it does not document an independent second human.
+candidate_disclosures,candidate disclosure row,rows,262,Rows assigned to Codex screening rather than human gold or boundary review.
+surrogate_positive_disclosures,candidate disclosure row,rows,203,All current surrogate exit-type predictions are nominal_exit.
+screened_no_formal_event_disclosures,candidate disclosure row,rows,44,"These are screening outcomes, not negative exit-type labels."
+source_missing_disclosures,candidate disclosure row,rows,15,"Issuer names are blank, so these rows cannot be deduplicated to issuer units from this file."
+named_source_available_candidate_issuers,issuer,unique normalized issuer names,194,Excludes the 15 source-missing rows with blank issuer names.
+surrogate_positive_issuers,issuer,unique issuers,158,At least one disclosure received the one-sided nominal screen.
+screened_no_formal_event_issuers,issuer,unique issuers,36,No disclosure for the issuer received a surrogate exit-type label.
+selected_overlap_issuers,issuer,unique issuers,61,Post-hoc identity overlap between surrogate-positive and gold files.
+selected_overlap_nominal_matches,issuer,nominal surrogate and nominal gold,61,Descriptive agreement in selected overlap units.
+nonoverlap_positive_issuers,issuer,unique issuers,97,Current positive-screen validation queue.
+nonoverlap_nonpositive_issuers,issuer,unique issuers,36,Source-available issuers needed to measure false negatives and recall.

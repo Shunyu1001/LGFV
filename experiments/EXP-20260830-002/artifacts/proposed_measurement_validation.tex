@@ -1,0 +1,52 @@
+\subsection{Measurement validation}
+
+The current evidence supports three descriptive checks rather than a complete
+classifier validation. First, the tracked gold file contains ninety-four
+human-reviewed city-platform cases. Ninety of these rows record Codex-assisted
+review by the same identified human reviewer, and no case has been coded by an
+independent second human. We therefore do not report inter-coder agreement,
+category-specific agreement, Cohen's kappa, or adjudication counts. These
+quantities require an independent human coder to apply the frozen codebook
+without seeing the existing label.
+
+Second, the one-sided surrogate rule produces only nominal-exit labels. The
+current screening file contains 203 positive disclosure rows, which collapse
+to 158 issuers. Sixty-one issuers also appear in the gold file, and the
+surrogate and gold labels are nominal exit for all sixty-one. This quantity is
+the observed concordance among post-hoc overlap issuers. Because the overlap
+was not selected with known inclusion probabilities, it does not identify
+positive predictive value for the full surrogate-positive frame. A Jeffreys
+adjustment or Wilson interval changes the treatment of a boundary estimate but
+does not correct unknown validation selection.
+
+Third, the current data do not identify recall, calibration, or four-category
+error. The source-available candidate pool contains thirty-six named issuers
+for which the screen found no direct formal event, but none has an overlapping
+gold label. The surrogate output also contains no predicted probabilities and
+does not emit substantive-exit, functional-transfer, or liquidation labels.
+The current overlap therefore evaluates neither false-negative behavior nor a
+four-category confusion matrix.
+
+The next validation stage requires two separate forms of human work. To assess
+the one-sided screen, we propose a probability design for the 133 named,
+source-available, non-overlap candidate issuers. This frame contains 97
+screen-positive issuers and 36 issuers for which the screen found no direct
+formal event. Subject to approval of the validation design, we would draw 60
+positive issuers by simple random sampling without replacement and review all
+36 nonpositive issuers, yielding inclusion probabilities of (60/97) and 1.
+Human reviewers would receive the original packets and frozen codebook without
+the surrogate output. The resulting design-weighted quantities would identify
+positive predictive value and recall within this fixed candidate frame, not
+in a national LGFV population. Fifteen source-missing rows with blank issuer
+names would remain in a separate coverage audit until their identities and
+source packets are resolved.
+
+To assess human-label reliability, a second human coder must independently
+code the ninety-four frozen gold packets. The second coder must not see the
+existing human or LLM labels before recording the formal event, post-event
+function, final label, alternative label, and source references. The two
+coders would then adjudicate every disagreement and record which coding rule
+produced it. This procedure would permit raw and category-specific agreement,
+Cohen's kappa or an appropriate sparse-category alternative, and adjudication
+counts within the assembled gold sample. Because the current gold file has no
+liquidation case, liquidation-specific agreement would remain unobserved.
