@@ -255,11 +255,18 @@ both screen-positive and screen-negative issuers. The current proposed frame
 contains 133 unique issuers: the 97 nonoverlap nominal-exit candidates and 36
 issuers whose reviewed packets contain no direct formal event. Before a draw can
 be made, each issuer must be assigned an authoritative city, province,
-controlling owner, and city-platform scope status. At the most recent audit,
-128 of the 133 issuers lacked a verified geography and scope record, and exact
-joins to the existing city-platform files resolved none of those missing
-records. The frame is therefore quarantined. No random validation draw has been
-made.
+controlling owner, and city-platform scope status. A source audit of the 128
+previously unresolved issuers establishes a unique province-city pair for 40
+and leaves 88 unresolved. Controlling-owner level is supported for 61,
+platform role for 46, and all four required identity, geography, owner, and
+role elements for only five. The frame is therefore quarantined. No random
+validation draw has been made.
+
+The repository now contains a blinded 94-case second-coder packet and a
+separate 94-case adjudication template. All coder and adjudication fields are
+blank: no second coding or adjudication has occurred. A candidate packet
+contains four issuers that pass the current geography and provisional-scope
+gates, far too few to implement the proposed allocation.
 
 Once scope verification is complete, the draw will combine a probability
 sample from the full frame with prespecified oversampling of low historical-

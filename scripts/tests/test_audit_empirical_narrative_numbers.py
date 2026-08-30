@@ -18,8 +18,8 @@ from audit_empirical_narrative_numbers import audit  # noqa: E402
 class EmpiricalNarrativeNumberAuditTest(unittest.TestCase):
     def test_current_manuscript_matches_all_registered_quantities(self) -> None:
         rows, summary = audit()
-        self.assertEqual(summary["claims_audited"], 33)
-        self.assertEqual(summary["match"], 33)
+        self.assertEqual(summary["claims_audited"], 43)
+        self.assertEqual(summary["match"], 43)
         self.assertEqual(summary["mismatch"], 0)
         self.assertEqual(summary["missing_text"], 0)
         self.assertEqual(summary["ambiguous_text"], 0)
@@ -35,7 +35,7 @@ class EmpiricalNarrativeNumberAuditTest(unittest.TestCase):
         )
         self.assertEqual(completed.returncode, 0)
         summary = json.loads(completed.stdout)
-        self.assertEqual(summary["match"], 33)
+        self.assertEqual(summary["match"], 43)
 
     def test_report_files_are_written(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -57,8 +57,8 @@ class EmpiricalNarrativeNumberAuditTest(unittest.TestCase):
             )
             self.assertTrue(output.exists())
             summary = json.loads(summary_path.read_text())
-            self.assertEqual(summary["claims_audited"], 33)
-            self.assertEqual(summary["match"], 33)
+            self.assertEqual(summary["claims_audited"], 43)
+            self.assertEqual(summary["match"], 43)
 
 
 if __name__ == "__main__":

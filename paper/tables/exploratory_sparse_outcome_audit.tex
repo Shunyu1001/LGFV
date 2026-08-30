@@ -1,0 +1,31 @@
+% Publication-facing rendering of EXP-20260830-012.
+\begin{table}[htbp]
+\centering
+\caption{Exploratory sparse-outcome audit of historical capacity}
+\label{tab:exploratory-sparse-outcome-audit}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+ & Hist. LPM & Hist. Firth & Adj. LPM & Adj. Firth \\
+\midrule
+Elite-density effect & 0.066 & 0.056 & 0.005 & 0.003 \\
+ & (0.041) & (0.032) & (0.045) & (0.052) \\
+\midrule
+Observations & 84 & 84 & 78 & 78 \\
+Institutional-change events & 12 & 12 & 12 & 12 \\
+Contemporary controls & No & No & Yes & Yes \\
+Province fixed effects & No & No & No & No \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{0.94\linewidth}
+\vspace{0.5em}\footnotesize Notes: This table is an exploratory diagnostic, not
+a causal estimate. The outcome equals one for substantive exit or functional
+transfer and zero for nominal exit. Effects are probability-point changes for
+a one-sample-standard-deviation increase in elite density. LPM uncertainty is
+HC1. Firth effects are average marginal effects with curvature-based
+delta-method uncertainty shown only as a diagnostic. Adjusted models use
+district-and-county platforms as the reference category. All fixed models were
+reported without selection by sign or statistical significance.
+\end{minipage}
+\end{table}
