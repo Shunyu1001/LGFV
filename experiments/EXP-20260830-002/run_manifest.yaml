@@ -1,0 +1,16 @@
+experiment_id: EXP-20260830-002
+started_at: 2026-08-30T13:49:38+08:00
+agent: coordinator
+base_commit: e178e195704fe6ad6ec353a28081e444995350e7
+trial_commit: null
+python: 3.13.4
+random_seed: not_applicable
+input_identifiers:
+  gold_labels: data/processed/human_validated_labels.csv
+  document_inventory: data/document_inventory.csv
+  source_inventory: data/source_inventory.csv
+  evidence_memos: coding/pilot_evidence_*.md
+outputs:
+  case_audit: data/diagnostics/source_reconstruction_audit.csv
+  report: docs/reproducibility/source_reconstruction_audit.md
+result_direction_used_for_selection: false

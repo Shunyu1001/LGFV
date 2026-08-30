@@ -1,0 +1,10 @@
+{
+  "gold_cases": 94,
+  "cases_all_identifiers_resolved": 94,
+  "cases_all_evidence_files_local": 93,
+  "cases_some_evidence_file_local": 93,
+  "cases_all_documents_have_recovery_url": 94,
+  "cases_with_exact_evidence_memo_match": 62,
+  "cases_without_complete_local_packet": 1,
+  "cases_without_exact_evidence_memo_match": 32
+}
