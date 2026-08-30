@@ -40,16 +40,25 @@ The coding workflow is designed as LLM-assisted, human-validated coding. Large
 language models can generate preliminary labels using a fixed codebook, but final
 labels are assigned after human review of the original source documents.
 
-## Pilot Workflow
+## Current Workflow
 
-The first empirical step is a 20-30 case pilot. The pilot starts from
-`data/candidate_city_plan.csv`, records documents in
-`data/source_inventory_template.csv`, stores LLM-assisted preliminary labels in
-`data/labeling_template.csv`, and stores final human-reviewed labels in
-`data/processed/human_validated_labels.csv`. Run
-`python3 scripts/validate_labels.py` after editing the final label file.
-The current case-level synthesis is stored in
-`data/analysis_inputs/pilot_coding_matrix.csv`, with a short interpretation
-memo in `docs/pilot_coding_matrix.md`. Rows in that matrix distinguish
-human-validated labels from strong candidates, boundary cases, and source-only
-candidates.
+The current gold-standard file contains 94 human-reviewed city-platform cases.
+The historical-capacity analysis uses 84 matched gold cases. The expanded LLM
+screen contains 203 disclosure-level surrogate labels, which collapse to 158
+issuer-level rows. These surrogates are a one-sided screen for nominal exit and
+are not treated as a validated four-class classifier.
+
+## Autoresearch Quick Start
+
+1. Read `immutable/research_charter.md`, `AGENTS.md`, and `program.md`.
+2. Run `python3 scripts/validate_immutable.py`.
+3. Inspect `ledgers/research_state.yaml` and open critical issues in
+   `ledgers/reviewer_issues.tsv`.
+4. Create one pre-result experiment brief under `experiments/`.
+5. Run the fixed evaluation command in `AGENTS.md`.
+6. Append `ledgers/experiments.tsv` and update affected claims or sources.
+
+The measurement framework is the primary contribution. The historical-state-
+capacity results are currently exploratory and associational. Parallel work is
+performed in isolated `codex/` worktrees; only reviewed changes are merged to
+`main` and synchronized to Overleaf.

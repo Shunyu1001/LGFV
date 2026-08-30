@@ -1,0 +1,14 @@
+experiment_id: EXP-20260830-001
+started_at: 2026-08-30T11:58:36+08:00
+agent: coordinator
+base_commit: 8c5b4611d96fa1fe76dc77a87f6db816c7672b36
+trial_commit: null
+python: 3.13.4
+latexmk: 4.87
+random_seed: not_applicable
+input_identifiers:
+  gold_labels: data/processed/human_validated_labels.csv
+  expanded_surrogates: data/analysis_inputs/codex_surrogate_issuer_summary_2026_07_03_expanded.csv
+  empirical_panel: data/analysis_inputs/empirical_case_panel.csv
+budget: one baseline rebuild
+result_direction_used_for_selection: false

@@ -1,0 +1,48 @@
+schema_version: 1
+project_id: lgfv-exit-types
+baseline_commit: 8c5b4611d96fa1fe76dc77a87f6db816c7672b36
+updated_at: 2026-08-30T11:58:36+08:00
+stage: revision-exploratory
+
+authoritative_tracked_inputs:
+  gold_labels:
+    path: data/processed/human_validated_labels.csv
+    rows: 94
+    role: human-reviewed outcome snapshot
+  document_inventory:
+    path: data/document_inventory.csv
+    rows: 2742
+    role: document metadata manifest
+  source_inventory:
+    path: data/source_inventory.csv
+    rows: 361
+    role: candidate disclosure inventory
+  expanded_llm_screening:
+    path: data/analysis_inputs/llm_screening_sample_2026_07_03_expanded.csv
+    rows: 361
+    role: disclosure-level screening snapshot
+  expanded_surrogate_issuers:
+    path: data/analysis_inputs/codex_surrogate_issuer_summary_2026_07_03_expanded.csv
+    rows: 158
+    role: issuer-level one-sided nominal surrogate snapshot
+  historical_capacity_crosswalk:
+    path: data/analysis_inputs/cbdb_place_to_gadm_prefecture_crosswalk.csv
+    role: historical-place to contemporary-prefecture crosswalk
+  source_backed_controls:
+    path: data/analysis_inputs/contemporary_city_controls_source_backed.csv
+    rows: 49
+    role: first-pass contemporary city controls
+
+source_packet_status:
+  tracked_raw_documents: false
+  note: >-
+    The repository tracks inventories, extracted evidence memos, and URLs but
+    does not contain the underlying raw source packet archive. A submission
+    archive requires a rights-aware source manifest, stable retrieval fields,
+    and a documented reconstruction procedure.
+
+prohibited_actions:
+  - overwrite source documents or raw snapshots
+  - infer missing control values without a declared rule
+  - treat document rows as independent issuers
+  - treat LLM surrogates as human gold labels

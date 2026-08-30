@@ -1,0 +1,48 @@
+schema_version: 1
+project_id: lgfv-exit-types
+updated_at: 2026-08-30T12:00:00+08:00
+updated_by: coordinator
+stage: revision-exploratory
+current_best_commit: 8c5b4611d96fa1fe76dc77a87f6db816c7672b36
+immutable_version: charter-v1
+research_question: >-
+  How can researchers distinguish formal LGFV exit from functional fiscal
+  change, and what local conditions are associated with institutional fate?
+primary_contribution: measurement framework for institutional fate
+secondary_application: exploratory association with historical state capacity
+
+state:
+  literature:
+    status: red
+    main_gap: >-
+      The bibliography contains 21 entries and does not yet establish the
+      novelty boundary against recent LGFV, compliance, and text-measurement
+      work.
+  theory_identification:
+    status: yellow
+    main_gap: >-
+      Three mechanisms are stated, but discriminating observable implications
+      and the persistence link from historical capacity remain incomplete.
+  empirical_simulation:
+    status: red
+    main_gap: >-
+      The gold outcome is highly imbalanced, contemporary controls are partial,
+      and the DSL default input points to an older surrogate file.
+  claim_evidence:
+    status: red
+    main_gap: >-
+      Narrative effect sizes do not match the generated pilot regression table,
+      and measurement validation lacks independent agreement and recall.
+  reviewer:
+    status: red
+    top_risk: >-
+      The paper currently reads as an advanced measurement pilot rather than a
+      journal-ready national study.
+
+current_bottleneck: measurement validation and empirical credibility
+next_recommended_loops:
+  - empirical_simulation
+  - literature
+  - claim_evidence
+pending_human_decisions: []
+stop_conditions_met: false

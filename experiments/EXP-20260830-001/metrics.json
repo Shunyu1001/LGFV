@@ -1,0 +1,10 @@
+{
+  "gold_labels": 94,
+  "historically_matched_model_rows": 84,
+  "surrogate_gold_overlap_issuers": 61,
+  "surrogate_nonoverlap_issuers": 97,
+  "full_control_rows": 78,
+  "pdf_pages": 89,
+  "tracked_diff_after_authoritative_rebuild": false,
+  "dsl_default_input_matches_authoritative_input": false
+}
