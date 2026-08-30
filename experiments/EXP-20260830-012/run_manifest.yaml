@@ -1,0 +1,34 @@
+schema_version: 1
+experiment_id: EXP-20260830-012
+base_commit: 538d99ac0424e0814c88dab2b00b6ce7257ab6b8
+branch: codex/validation-geography-packet
+input_hash_algorithm: sha256
+inputs:
+  - path: data/processed/human_validated_labels.csv
+    sha256: 504f2147e742628a64a6ec2cf663a611b096df1d774ab676f3bb34ddbe233f36
+  - path: data/analysis_inputs/master_case_pool.csv
+    sha256: 1583819a1bcc099598bb925d3dbff23297ce0cea690d0adaf5b2e823c7fe9bf6
+  - path: data/document_inventory.csv
+    sha256: 8d5f13810f31a91b293ccc917153cf2e21f252445719de5a174604151dbd6d27
+  - path: data/validation/proposed_one_sided_validation_frame_enriched.csv
+    sha256: 9cc5822b69f548b4d6673d895b38f7c2c5a3196a87f41c29edbd49107d1bce26
+  - path: data/validation/source_supported_validation_geography_scope_crosswalk.csv
+    sha256: 50b1f286805aa6a745551aff0172885b53296db18d6fe41a5e9907bef602720a
+  - path: data/validation/validation_geography_retrieval_manifest.csv
+    sha256: 669f8c7d7f9294760ecebdb1c1d8f32a1168737274b1730cc34801dd65b4d8bc
+  - path: coding/codebook.md
+    sha256: 2a980b77ca7b0cc19761884dbe70590c0e8e7f311224bfdac9684d5c452d1057
+planned_outputs:
+  - data/validation/independent_coding/blinded_gold_second_coder_packet.csv
+  - data/validation/independent_coding/blinded_probability_validation_packet.csv
+  - data/validation/independent_coding/gold_adjudication_log_template.csv
+  - experiments/EXP-20260830-012/artifacts/coder_instructions.md
+  - experiments/EXP-20260830-012/metrics.json
+  - experiments/EXP-20260830-012/assessment.md
+  - experiments/EXP-20260830-012/execution_log.md
+  - experiments/EXP-20260830-012/artifacts/proposed_ledger_rows.tsv
+  - experiments/EXP-20260830-012/artifacts/proposed_manuscript_rows.md
+random_draw: false
+random_seed: null
+coding_executed: false
+adjudication_executed: false
