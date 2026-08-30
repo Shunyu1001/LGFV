@@ -1,0 +1,50 @@
+schema_version: 1
+experiment_id: EXP-20260830-015
+base_commit: 5a68bf10de84491ab39c47427d585099e2c34b49
+branch: codex/geography-scope-probability-frame-ultra
+input_hash_algorithm: sha256
+inputs:
+  - path: data/validation/proposed_one_sided_validation_frame_enriched.csv
+    sha256: 9cc5822b69f548b4d6673d895b38f7c2c5a3196a87f41c29edbd49107d1bce26
+  - path: data/validation/source_supported_validation_geography_scope_crosswalk.csv
+    sha256: 50b1f286805aa6a745551aff0172885b53296db18d6fe41a5e9907bef602720a
+  - path: data/validation/validation_geography_conflict_log.csv
+    sha256: 56a7b77429b24ce42fdb378a21faef942faee4a278d33e7c89c82955870f5134
+  - path: data/validation/validation_geography_retrieval_manifest.csv
+    sha256: 669f8c7d7f9294760ecebdb1c1d8f32a1168737274b1730cc34801dd65b4d8bc
+  - path: data/analysis_inputs/codex_surrogate_labels_2026_07_03_expanded.csv
+    sha256: cfced00afd193fa68d95db10888d05069fab27e7c957832d29bf6260ac44dfbe
+  - path: data/document_inventory.csv
+    sha256: 8d5f13810f31a91b293ccc917153cf2e21f252445719de5a174604151dbd6d27
+  - path: data/source_inventory.csv
+    sha256: a83c47e7a8c1f8989d9d8e4289b16548c058b4b567ed4725e56310cb41dd8c8c
+  - path: coding/source_search_protocol.md
+    sha256: 6c1146dac712b58cb49cd64124f71a91d5e76d1baf76ca46f8e39c57f47d8c8c
+  - path: coding/codebook.md
+    sha256: 877a898bfc125e9bfd35c1f612b5034a00ab30cd3a9f9efaca7f10aab9dc9b66
+  - path: coding/label_provenance.md
+    sha256: fde96643b2038e571ef7f604af9d26cf08c142b7086f644696da825e5922e55f
+  - path: data/validation/label_role_registry.csv
+    sha256: 48b2610cc26c8f411d04fdabd692b9706fa3846a266b2f1509bfabcbc71b099b
+outputs:
+  - path: data/validation/probability_validation_geography_scope_crosswalk.csv
+    sha256: 4908a98226766cd8d067c4086248f4d72ec8bcde60740f76efe1798374d815a1
+  - path: data/validation/probability_validation_unresolved_log.csv
+    sha256: c8b6312d1dc2ba9bb7729d7b5e74f0bf62f419dff4c09f6303f6382c9b882f30
+  - path: data/validation/probability_validation_source_manifest.csv
+    sha256: 159d37282110e551c55f7bd3754c60bbd623b1f9652199a4ea1aef72f5906eb7
+  - path: data/validation/probability_validation_frame_candidate.csv
+    sha256: 05a1e83451986eee55074bd23caff64d6966fee32bae10ed42c4aec29838f60d
+  - path: data/validation/probability_validation_frame_origin_rows.csv
+    sha256: c4582058c055f90d13b175fa4ea2215a6b9a2f35471cb3536e009418970f0790
+  - path: data/validation/probability_validation_frame_flow.csv
+    sha256: f98c50a346d7c1c4a1cef522d73777102ded85b39ff0dc52b9308120ec581107
+  - path: data/validation/probability_validation_sampling_design.csv
+    sha256: 0b34131d4d17dce0826030e82f318b665bc9bee16be38b0ba145d18acc56086e
+  - path: experiments/EXP-20260830-015/metrics.json
+    sha256: ee0d50b824de690458ddadb31c06b647fbc91dc595c070c0b2da3fd2edf226e5
+random_draw: false
+deterministic_random_seed: "20260830015"
+frame_ready_to_freeze: false
+raw_documents_committed: false
+working_reference_outcomes_accessed: false

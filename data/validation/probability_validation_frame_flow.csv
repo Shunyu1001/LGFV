@@ -1,0 +1,9 @@
+stage,disposition,issuer_unit_count,originating_disclosure_row_count,notes
+proposed_frame,all_legal_issuer_units,133,157,Frozen 133-unit input before geography and scope review.
+geography_gate,source_supported_unique,132,156,Completed source-supported geography review.
+geography_gate,unresolved_after_search,1,1,Completed source-supported geography review.
+scope_gate,eligible,54,58,Completed source-supported scope disposition; unresolved units are not in the candidate frame.
+scope_gate,ineligible,75,95,Completed source-supported scope disposition; unresolved units are not in the candidate frame.
+scope_gate,unresolved_after_search,4,4,Completed source-supported scope disposition; unresolved units are not in the candidate frame.
+eligible_screen_coverage,screen_positive_nominal,50,54,Eligible units retained from both pre-outcome screen strata.
+eligible_screen_coverage,screened_no_direct_formal_event,4,4,Eligible units retained from both pre-outcome screen strata.
