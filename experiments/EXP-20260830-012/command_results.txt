@@ -1,0 +1,48 @@
+Preregistration
+experiments/EXP-20260830-012/brief.md created before the first model run
+result: fixed samples, outcome, exposure, four-model set, reference category, diagnostics, success criteria, commands, and budget recorded
+
+Attempt 1
+python3 -m py_compile scripts/build_sparse_outcome_model_audit.py scripts/tests/test_sparse_outcome_model_audit.py
+exit: 0
+
+python3 scripts/build_sparse_outcome_model_audit.py --output-dir experiments/EXP-20260830-012/artifacts
+exit: 0
+result: 84 matched-gold rows and 12 events; 78 complete-control rows and 12 events; legacy adjusted rank 8 of 9; corrected adjusted rank 8 of 8; historical pilot LPM reproduced
+visual inspection: numerical artifacts were complete, but the plot headings overlapped and the table contained a literal line-break marker
+
+Mechanical retry 1
+same model-audit command after presentation-only corrections
+exit: 0
+result: model and diagnostic quantities unchanged; plot headings and generated table line break corrected
+visual inspection: coefficient plot is legible and clearly labeled exploratory
+
+python3 -m unittest discover -s scripts/tests -p 'test_sparse_outcome_model_audit.py'
+exit: 0
+result: 1 test passed; two independent temporary runs produced byte-identical artifacts and verified the fixed model set, frozen sample counts, rank repair, reference category, selection outputs, influence coverage, and exploratory labels
+
+python3 scripts/validate_immutable.py
+exit: 0
+result: four frozen immutable files validated
+
+python3 scripts/validate_ledgers.py
+exit: 0
+result: unchanged central ledgers validated with 9 claims, 10 experiments, 29 literature rows, and 10 reviewer issues
+
+python3 scripts/validate_labels.py
+exit: 0
+result: 94 rows and 94 cases validated; 89 existing warnings reported for extracted source text that is not present in the repository
+
+python3 scripts/validate_master_case_pool.py
+exit: 0
+result: 114 rows and 114 cases validated
+
+python3 -m unittest discover -s scripts/tests -p 'test_*.py'
+exit: 0
+result: all 6 repository tests passed
+
+python3 -m py_compile scripts/build_sparse_outcome_model_audit.py scripts/tests/test_sparse_outcome_model_audit.py
+exit: 0
+
+git diff --check
+exit: 0

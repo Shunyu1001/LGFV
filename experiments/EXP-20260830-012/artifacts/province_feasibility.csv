@@ -1,0 +1,2 @@
+candidate,observations,events,provinces,reference_province_for_diagnostic,columns,matrix_rank,condition_number,events_per_independent_column,provinces_with_outcome_variation,zero_event_provinces,all_event_provinces,eligible_for_estimation,reason_not_estimated,decision_rule
+corrected adjusted design plus saturated province indicators,78,12,18,Anhui,25,25,44.09759291,0.48000000,4,13,1,False,not every province has within-province outcome variation; fewer than 5 events per independent column,diagnostic only; province fixed effects are not estimated in EXP-20260830-012
