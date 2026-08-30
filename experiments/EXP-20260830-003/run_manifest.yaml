@@ -1,0 +1,27 @@
+schema_version: 1
+experiment_id: EXP-20260830-003
+base_commit: fe2c98b9e86d15603804e06cb564c19310cf561d
+branch: codex/measurement-validation
+input_hash_algorithm: sha256
+inputs:
+  - path: data/analysis_inputs/llm_screening_sample_2026_07_03_expanded.csv
+    sha256: 504d5e9264adc5db69e54342e6cb848e4757b2f9342a0c4fd25afb4914b809fa
+  - path: data/analysis_inputs/surrogate_validation_queue_2026_07_03_expanded.csv
+    sha256: a2a09c6dff82a64e825379a82281b4ad126170e9bcbd417dba85e18bdfb36824
+  - path: data/analysis_inputs/codex_surrogate_labels_2026_07_03_expanded.csv
+    sha256: cfced00afd193fa68d95db10888d05069fab27e7c957832d29bf6260ac44dfbe
+  - path: data/processed/human_validated_labels.csv
+    sha256: 504f2147e742628a64a6ec2cf663a611b096df1d774ab676f3bb34ddbe233f36
+  - path: data/validation/validation_design_requirements.csv
+    sha256: c009a949971c188346b16a54af3ff693d4b6a63f34df10ff618e6a30d1ef7bac
+planned_outputs:
+  - data/validation/proposed_one_sided_validation_frame.csv
+  - experiments/EXP-20260830-003/artifacts/blinded_review_template.csv
+  - experiments/EXP-20260830-003/metrics.json
+  - experiments/EXP-20260830-003/assessment.md
+  - experiments/EXP-20260830-003/artifacts/proposed_ledger_rows.tsv
+random_draw: false
+random_seed: null
+execution_notes:
+  - The first run stopped on the predeclared identifier gate because geography was missing.
+  - One mechanical retry serialized the incomplete frame and failure metrics without changing the hypothesis or criteria.
