@@ -1,0 +1,22 @@
+{
+  "experiment_id": "EXP-20260830-013",
+  "status": "keep",
+  "registered_narrative_quantities": 33,
+  "matching_narrative_quantities": 33,
+  "mismatching_narrative_quantities": 0,
+  "missing_narrative_mappings": 0,
+  "unit_tests_run": 5,
+  "unit_tests_passed": 5,
+  "bibliography_entries": 44,
+  "undefined_citations": 0,
+  "compiled_pdf_pages": 80,
+  "main_text_pages": 25,
+  "baseline_pdf_pages": 89,
+  "baseline_main_text_pages": 37,
+  "overfull_box_warnings": 4,
+  "measurement_contribution_primary": true,
+  "probability_validation_claimed_complete": false,
+  "independent_double_coding_claimed_complete": false,
+  "validation_adjusted_estimate_reported": false,
+  "data_or_labels_changed": false
+}

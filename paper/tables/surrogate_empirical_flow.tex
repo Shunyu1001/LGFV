@@ -11,17 +11,17 @@ Step & Count & Role \\
 \midrule
 Candidate disclosure rows & 361 & Initial source-packet pool \\
 Usable LLM screening rows & 346 & Rows with source text or validated status \\
-Exit-type outcome rows & 297 & Gold labels plus disclosure-level surrogate labels \\
+Exit-type rows & 297 & Reference labels plus provisional surrogate labels \\
 LLM surrogate disclosure labels & 203 & Medium-confidence nominal-exit screens \\
 Issuer-level surrogate rows & 158 & Deduplicated auxiliary labels \\
-Surrogate issuers overlapping gold labels & 61 & Validation checks only \\
-Non-overlap surrogate issuers & 97 & Auxiliary rows for adjusted descriptive counts \\
-Gold plus non-overlap issuer-level sample & 191 & Validation-adjusted descriptive sample \\
+Surrogate issuers overlapping reference labels & 61 & Selected-overlap consistency check \\
+Non-overlap surrogate issuers & 97 & Awaiting probability-frame validation \\
+Reference plus non-overlap issuer rows & 191 & Descriptive construction only \\
 Screened rows without direct formal event & 44 & Screening attrition, not exit-type outcomes \\
 Source-packet missing rows & 15 & Not used \\
 \bottomrule
 \end{tabular}
 \begin{minipage}{0.94\linewidth}
-\vspace{0.5em}\footnotesize Notes: Disclosure-level rows are source packets, while issuer-level rows deduplicate repeated bond disclosures for the same issuer. Surrogate issuers that already overlap gold-standard cases are used only to estimate surrogate precision. They are not counted as additional observations in the adjusted descriptive sample.
+\vspace{0.5em}\footnotesize Notes: Disclosure-level rows are source packets, while issuer-level rows deduplicate repeated bond disclosures for the same issuer. The 61 overlaps were formed after positive screening and therefore do not estimate population precision or recall. The 191-row construction is not used as a validation-adjusted outcome sample.
 \end{minipage}
 \end{table}

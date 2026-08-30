@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a full LLM screening sample from gold and surrogate labels.
+"""Build a full LLM screening sample from reference and surrogate labels.
 
 This file separates two concepts:
 
@@ -8,7 +8,8 @@ This file separates two concepts:
    reviewed but no direct formal exit or compliance event was found.
 
 The second object is the 200+ usable LLM-coded sample used to document source
-coverage, screening attrition, and measurement-error adjustment.
+coverage and screening attrition. Validation adjustment requires a separate
+probability validation design and is not inferred from selected overlaps.
 """
 
 from __future__ import annotations
@@ -195,8 +196,8 @@ def main() -> int:
         handle.write("Screening status & Rows & Use \\\\\n")
         handle.write("\\midrule\n")
         rows_for_table = [
-            ("Gold-standard exit type", status_counts["gold_standard_exit_type"], "Gold outcome"),
-            ("LLM surrogate exit type", status_counts["llm_surrogate_exit_type"], "Surrogate outcome"),
+            ("Author-reviewed reference label", status_counts["gold_standard_exit_type"], "Documentary outcome reference"),
+            ("LLM surrogate exit type", status_counts["llm_surrogate_exit_type"], "One-sided provisional nominal screen"),
             (
                 "LLM screened, no direct formal event",
                 status_counts["llm_screened_no_direct_formal_event"],
@@ -214,12 +215,11 @@ def main() -> int:
         handle.write("\\end{tabular}\n")
         handle.write(
             "\\begin{minipage}{0.94\\linewidth}\n"
-            "\\vspace{0.5em}\\footnotesize Notes: A usable LLM screening row has either a "
-            "gold-standard label, an LLM surrogate exit-type label, a human-reviewed boundary "
-            "decision, or source text that was screened and found to lack a direct formal "
-            "exit or compliance event. The exit-type outcome sample is narrower because "
-            "rows without a codable formal event are not assigned substantive, nominal, "
-            "functional-transfer, or liquidation labels.\n"
+            "\\vspace{0.5em}\\footnotesize Notes: A usable screening row has a reference "
+            "label, an LLM surrogate label, a human-reviewed boundary decision, or source "
+            "text screened as lacking a direct formal event. Surrogate rows are not final "
+            "four-category outcomes. Rows without a codable formal event are not assigned "
+            "substantive, nominal, functional-transfer, or liquidation labels.\n"
             "\\end{minipage}\n"
         )
         handle.write("\\end{table}\n")

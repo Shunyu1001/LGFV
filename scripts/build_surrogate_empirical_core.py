@@ -155,9 +155,9 @@ def write_flow_tex(path: Path, flow_rows: list[dict[str, str]]) -> None:
             "\\begin{minipage}{0.94\\linewidth}\n"
             "\\vspace{0.5em}\\footnotesize Notes: Disclosure-level rows are source packets, "
             "while issuer-level rows deduplicate repeated bond disclosures for the same issuer. "
-            "Surrogate issuers that already overlap gold-standard cases are used only to estimate "
-            "surrogate precision. They are not counted as additional observations in the adjusted "
-            "descriptive sample.\n"
+            "The 61 overlaps were formed after positive screening and therefore do not estimate "
+            "population precision or recall. The 191-row construction is not used as a "
+            "validation-adjusted outcome sample.\n"
             "\\end{minipage}\n"
         )
         handle.write("\\end{table}\n")
@@ -248,9 +248,9 @@ def main() -> int:
             "role": "Rows with source text or validated status",
         },
         {
-            "step": "Exit-type outcome rows",
+            "step": "Exit-type rows",
             "count": str(outcome_rows),
-            "role": "Gold labels plus disclosure-level surrogate labels",
+            "role": "Reference labels plus provisional surrogate labels",
         },
         {
             "step": "LLM surrogate disclosure labels",
@@ -263,19 +263,19 @@ def main() -> int:
             "role": "Deduplicated auxiliary labels",
         },
         {
-            "step": "Surrogate issuers overlapping gold labels",
+            "step": "Surrogate issuers overlapping reference labels",
             "count": str(len(overlap)),
-            "role": "Validation checks only",
+            "role": "Selected-overlap consistency check",
         },
         {
             "step": "Non-overlap surrogate issuers",
             "count": str(len(nonoverlap)),
-            "role": "Auxiliary rows for adjusted descriptive counts",
+            "role": "Awaiting probability-frame validation",
         },
         {
-            "step": "Gold plus non-overlap issuer-level sample",
+            "step": "Reference plus non-overlap issuer rows",
             "count": str(adjusted_rows),
-            "role": "Validation-adjusted descriptive sample",
+            "role": "Descriptive construction only",
         },
         {
             "step": "Screened rows without direct formal event",

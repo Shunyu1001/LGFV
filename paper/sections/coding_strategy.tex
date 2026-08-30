@@ -187,132 +187,95 @@ classification rests on equity transfer, debt succession, and the creation of a
 specialized housing-security group within a reorganized municipal platform
 system.
 
-\subsection{LLM-assisted labeling}
+\subsection{LLM-assisted screening}
 
-Large language models are used to produce preliminary labels from the same
-codebook and source excerpts. They do not assign final labels. The purpose of
-using LLMs is to make the source review more scalable and to force each case to
-be evaluated under a common decision rule. The model prompt asks for a proposed
-label, a confidence level, a short rationale, the exact pieces of evidence used
-for the classification, and the most plausible alternative label. The prompt
-also requires the model to return \texttt{unclear} when the source packet lacks
-a formal event or lacks evidence about the post-event function.
+Large language models are used as a screening device, not as final outcome
+coders. Each prompt applies the same codebook to a source excerpt and returns a
+proposed label, confidence level, evidence quotation, rationale, and most
+plausible alternative. It must return \texttt{unclear} when the packet lacks
+either a formal event or evidence about the post-event location of the
+function. This requirement reduces the temptation to infer institutional
+change from generic compliance language.
 
-The Codex screening pass follows this rule conservatively. It keeps the
-ninety-four human-validated labels as gold-standard observations and applies
-the codebook only to pending candidates. The expanded candidate file contains
-361 rows. Of these, 346 are now usable LLM screening observations:
-ninety-four gold-standard exit labels, 203 LLM surrogate exit-type labels,
-forty-four source packets screened as having no direct formal exit or
-compliance event, and five human-reviewed boundary packets. Fifteen rows
-remain unusable because the source packet is still missing. The exit-type
-outcome sample is narrower: it contains 297 rows, consisting of the
-ninety-four gold-standard labels and the 203 LLM surrogate exit-type labels.
+The expanded screening file contains 361 disclosure-level candidates. Fifteen
+lack a usable source packet. Among the remaining 346 rows, 94 belong to the
+human-reviewed reference set, 203 receive one-sided LLM surrogate labels for
+nominal exit, 44 contain no directly documented formal exit or compliance
+event, and five are human-reviewed boundary packets. The 203 surrogate rows
+correspond to 158 issuers because some platforms issue repeated disclosures.
+Sixty-one of these issuers also appear in the reference set, while 97 do not.
+Rows without a documented formal event remain screening observations rather
+than negative exit outcomes.
 
-The surrogate exit-type labels are nominal-exit cases. They contain direct
-no-government-financing, no-new-government-debt, or no-hidden-debt compliance
-language together with continuing evidence of urban infrastructure, entrusted
-construction, land development, fiscal support, or public-project functions.
-They correspond to 158 unique issuers because several
-labels come from repeated bond disclosures for the same platform. The
-statistical analysis will therefore aggregate or deduplicate them at the issuer
-or city-platform level. Sixty-one issuers match platforms that already
-appear in the gold-standard label file under different case IDs. These overlaps
-are treated as consistency checks rather than new observations. Ninety-seven
-non-overlap issuers remain in the current human-validation queue. The
-source-screened rows without a direct formal event are not negative outcomes.
-They are retained as screening observations because they document that usable
-source text was reviewed under the codebook. They do not receive substantive,
-nominal, functional-transfer, or liquidation labels. The empirical section
-reports the corresponding screening-flow and issuer-level deduplication tables.
+The current surrogate rule is intentionally narrow. It identifies nominal-exit
+candidates only when a document combines direct no-government-financing,
+no-new-government-debt, or no-hidden-debt language with evidence that the same
+issuer continues infrastructure financing, entrusted construction, land
+development, fiscal support, or another public-project function. The screen
+does not attempt to infer substantive exit, functional transfer, or liquidation
+from silence. It therefore expands source review for a common form of formal
+compliance, but it is not a four-category outcome measure.
 
-Human validation compares the model's evidence claims with the original
-documents and removes claims that are not supported by the source text. It also
-evaluates whether the model has confused legal compliance language with
-functional change. This error is especially likely in bond prospectuses because
-issuers often state that new debt is not local government debt while also
-describing public-project obligations and fiscal payment arrangements. The
-human-validated label file records the final label, alternative label,
-confidence level, source coverage score, key evidence, and remaining caveat.
-The final dataset is therefore not a set of model outputs. It is a set of
-human-reviewed case labels whose preliminary coding was assisted by LLMs.
+\subsection{Measurement audit}
 
-\subsection{Validation protocol}
+The reference file contains 94 cases reviewed by the project author under the
+frozen codebook. It is a reference set for documentary adjudication, not an
+independently double-coded gold standard. The labels comprise two substantive
+exits, 82 nominal exits, ten functional transfers, and no liquidations. Every
+evidence identifier in the file resolves to a source inventory record.
+Ninety-three cases have complete local copies of all cited documents, all 94
+have recovery URLs for every cited document, and 62 have an exact case-level
+evidence memo. These figures establish source traceability. They do not by
+themselves establish label accuracy or intercoder reliability.
 
-The scaled dataset will be built in two layers. The first layer is a candidate
-pool of at least 200 LLM-coded city-platform cases. A case enters this pool
-only after the source packet identifies the company, city, source type, source
-date, baseline platform function, formal event, and post-event functional
-evidence when such evidence is available. The second layer is a
-human-validated sample of at least 50 cases. These cases form the gold-standard
-label file used to evaluate measurement quality, estimate LLM error, and
-support the supervised-learning correction described in the empirical section.
+The 61 issuers that overlap the LLM screen and reference set receive a nominal
+label under both procedures. This 61-of-61 agreement is useful as a
+selected-overlap consistency check: the screen can recover documentary patterns
+that the codebook treats as nominal exit. It is not an estimate of population
+precision because the overlap was assembled after positive screening rather
+than drawn under known inclusion probabilities. No issuer screened as lacking
+a direct formal event currently overlaps the reference labels. The existing
+data therefore cannot estimate recall, four-category calibration, or the error
+rate among screen-negative cases. No second human coder has yet independently
+labeled a common subset, so the paper does not report an intercoder statistic.
 
-The validation sample is drawn before the final outcome analysis. I first take
-a random sample from the LLM-coded candidate pool. I then add a stratified
-oversample of cases from low historical-capacity cities and high-debt cities.
-The stratification is necessary because measurement errors are unlikely to be
-evenly distributed. Low-capacity and high-debt localities often have weaker
-source coverage, more debt-resolution language, and more ambiguous relations
-between formal compliance and continuing platform functions. If these cases
-were left to proportional sampling alone, the validation sample would be most
-precise for the easiest documents and least informative for the cases where
-measurement risk is highest. The sampling probabilities are recorded so that
-the validation design can later be used in design-based adjustment rather than
-treated as an informal audit.
+These boundaries also limit the use of surrogate-label estimators. The
+framework developed by \citet{egami2023dsl} treats predicted labels as noisy
+surrogates and uses a probability validation sample with human outcomes to
+adjust downstream estimates. That logic is appropriate for the intended design,
+but the present overlap does not supply the required validation probabilities
+or independent human labels. The paper therefore reports the LLM output as a
+screening flow and does not present a doubly robust or validation-adjusted
+effect estimate.
 
-Human validation follows pre-registered coding rules. Before cases are opened,
-the codebook freezes the inclusion rules, exclusion rules, exit-type
-definitions, edge-case rules, and scoring scales. Any later change to the
-rules must be versioned and applied either to all relevant cases or to none of
-them. Validators review original documents rather than model summaries. For
-each case, they record the formal event, baseline platform function,
-post-event function, final label, most plausible alternative label, confidence
-score, source coverage score, continued-function evidence score, key source
-references, and remaining caveat. Low-confidence cases remain in the candidate
-file and do not enter the gold-standard label file.
+\subsection{Prospective validation design}
 
-Inter-coder agreement is assessed on an overlapping validation subset. Two
-coders independently label the same cases using the frozen codebook. Agreement
-is calculated for the four-category exit type and for the binary distinction
-between substantive exit and non-substantive outcomes. Disagreements are not
-resolved by majority vote. They are adjudicated by returning to the original
-documents and recording which part of the rule produced the conflict: formal
-event, post-event function, related-entity scope, source hierarchy, or
-edge-case treatment. This procedure turns disagreement into information about
-where the codebook is fragile.
+A defensible next validation round requires a probability frame that includes
+both screen-positive and screen-negative issuers. The current proposed frame
+contains 133 unique issuers: the 97 nonoverlap nominal-exit candidates and 36
+issuers whose reviewed packets contain no direct formal event. Before a draw can
+be made, each issuer must be assigned an authoritative city, province,
+controlling owner, and city-platform scope status. At the most recent audit,
+128 of the 133 issuers lacked a verified geography and scope record, and exact
+joins to the existing city-platform files resolved none of those missing
+records. The frame is therefore quarantined. No random validation draw has been
+made.
 
-The source coverage score is part of the validation protocol rather than a
-descriptive afterthought. A score of 0 means that no usable original or
-near-original source is available. A score of 1 covers either the formal event
-or the post-event function, but not both. A score of 2 covers both elements
-with limited source type, date range, or issuer scope. A score of 3 requires
-multiple source types and at least one original or near-original document. A
-score of 4 requires a rich source packet with clear dates, issuer scope, and
-references for both the formal event and the post-event function. The final
-analysis can therefore report not only the distribution of exit types, but also
-the quality of the evidence supporting those labels.
+Once scope verification is complete, the draw will combine a probability
+sample from the full frame with prespecified oversampling of low historical-
+capacity and high-debt localities. Inclusion probabilities will be retained for
+design-based analysis. A second human coder, blinded to the LLM output and the
+first reviewer's decision, will independently apply the frozen codebook to the
+drawn packets. The analysis will then report four-category agreement, binary
+agreement for substantive versus non-substantive outcomes, disagreement types,
+and adjudicated labels. Only after these steps can the project estimate
+screening precision and recall or use the human outcomes to correct analyses of
+the larger surrogate-labeled pool.
 
-The audit trail is part of the measurement contribution. Each final label is
-linked to a case identifier, document identifiers, source types, line
-references where available, model rationales, human rationale, alternative
-label, ambiguity note, and source coverage score. This structure makes it
-possible to revise a label when new documents are found without changing the
-codebook. It also makes disagreement informative. When an LLM proposes
-substantive exit because a prospectus contains compliance language, while human
-review identifies continuing government-entrusted construction in the same
-document, the disagreement identifies exactly the distinction the paper seeks
-to measure.
-
-Candidate cases are kept separate from final labels. Luzhou Xinglu is a useful
-near-miss case. The source packet strongly rejects a substantive-exit
-interpretation: it shows infrastructure investment-financing,
-government-entrusted construction, fiscal receivables, project repayment, and
-government support across 2015, 2017, 2018, 2021, and 2023. The case
-nevertheless remains outside the final label table because the project has not
-found a direct platform-list exit source. Zunyi Daoqiao is treated similarly.
-Its documents strongly indicate continuing platform status and debt-resolution
-pressure, including a rating notice that places the company inside Guizhou's
-government-financing-platform debt-resolution pilot, but the case remains
-outside the final label table until a direct formal-exit or
-no-government-financing source is collected.
+The audit trail remains useful before that validation round. Each reference
+case links its label to document identifiers, source types, event and function
+evidence, an alternative label, an ambiguity note, and the three quality
+scores. Candidate cases remain outside the reference file until their formal
+event, issuer scope, and post-event function are documented. This separation
+allows new documents to change a case assessment without silently changing the
+decision rule.

@@ -19,8 +19,12 @@ INPUTS = ROOT / "data" / "analysis_inputs"
 NUMBER_WORDS = {
     "two": 2.0,
     "five": 5.0,
+    "six": 6.0,
+    "eight": 8.0,
+    "nine": 9.0,
     "ten": 10.0,
     "twelve": 12.0,
+    "fifteen": 15.0,
     "forty-four": 44.0,
     "sixty-one": 61.0,
     "seventy-eight": 78.0,
@@ -28,6 +32,8 @@ NUMBER_WORDS = {
     "eighty-four": 84.0,
     "ninety-four": 94.0,
     "ninety-seven": 97.0,
+    "no": 0.0,
+    "none": 0.0,
 }
 
 
@@ -47,6 +53,7 @@ class GeneratedMetrics:
         self.root = root
         self.inputs = root / "data" / "analysis_inputs"
         self._cache: dict[str, list[dict[str, str]]] = {}
+        self._json_cache: dict[str, object] = {}
 
     def rows(self, relative_path: str) -> list[dict[str, str]]:
         if relative_path not in self._cache:
@@ -54,6 +61,17 @@ class GeneratedMetrics:
             with path.open(newline="", encoding="utf-8") as handle:
                 self._cache[relative_path] = list(csv.DictReader(handle))
         return self._cache[relative_path]
+
+    def json_value(self, relative_path: str, *keys: str) -> float:
+        if relative_path not in self._json_cache:
+            path = self.root / relative_path
+            self._json_cache[relative_path] = json.loads(path.read_text(encoding="utf-8"))
+        value: object = self._json_cache[relative_path]
+        for key in keys:
+            if not isinstance(value, dict) or key not in value:
+                raise ValueError(f"Missing JSON key {key!r} in {relative_path}")
+            value = value[key]
+        return float(value)
 
     def value(
         self,
@@ -154,65 +172,113 @@ def adjusted_value(sample: str, column: str) -> Callable[[GeneratedMetrics], flo
 
 CLAIMS = [
     ClaimSpec(
-        "validated_gold_rows",
-        r"current gold-standard file contains (?P<reported>ninety-four) human-validated",
-        coverage_metric("Gold-standard labels"),
+        "reference_cases",
+        r"reference file contains\s+(?P<reported>94) city-platform cases",
+        lambda metrics: metrics.json_value(
+            "experiments/EXP-20260830-006/metrics.json", "gold", "cases"
+        ),
         0,
-        "data/analysis_inputs/empirical_case_panel_coverage.csv",
-        "component=Gold-standard labels, column=available",
+        "experiments/EXP-20260830-006/metrics.json",
+        "gold.cases",
     ),
     ClaimSpec(
-        "initial_candidate_disclosures",
-        r"broader screening file contains (?P<reported>361) candidate\s+disclosure rows",
-        flow_metric("Candidate disclosure rows"),
-        0,
-        "data/analysis_inputs/surrogate_empirical_flow.csv",
-        "step=Candidate disclosure rows, column=count",
-    ),
-    ClaimSpec(
-        "historically_matched_rows",
-        r"(?P<reported>Eighty-four) of the ninety-four validated labels can be matched",
-        coverage_metric("Historical capacity match"),
-        0,
-        "data/analysis_inputs/empirical_case_panel_coverage.csv",
-        "component=Historical capacity match, column=available",
-    ),
-    ClaimSpec(
-        "historically_unmatched_rows",
-        r"(?P<reported>Ten) validated cases remain unmatched",
-        lambda metrics: coverage_metric("Gold-standard labels")(metrics)
-        - coverage_metric("Historical capacity match")(metrics),
-        0,
-        "data/analysis_inputs/empirical_case_panel_coverage.csv",
-        "Gold-standard labels available minus Historical capacity match available",
-    ),
-    ClaimSpec(
-        "gold_substantive_exits",
-        r"contains (?P<reported>two) substantive exits",
+        "reference_substantive",
+        r"labels comprise\s+(?P<reported>two)\s+substantive",
         exit_count("substantive_exit"),
         0,
         "data/analysis_inputs/pilot_exit_type_distribution.csv",
         "validation_tier=human_validated, column=substantive_exit",
     ),
     ClaimSpec(
-        "gold_nominal_exits",
-        r"two substantive exits, (?P<reported>eighty-two) nominal\s+exits",
+        "reference_nominal",
+        r"substantive\s+exits, (?P<reported>82) nominal exits",
         exit_count("nominal_exit"),
         0,
         "data/analysis_inputs/pilot_exit_type_distribution.csv",
         "validation_tier=human_validated, column=nominal_exit",
     ),
     ClaimSpec(
-        "gold_functional_transfers",
-        r"eighty-two nominal\s+exits, and (?P<reported>ten) functional transfers",
+        "reference_transfer",
+        r"nominal exits, (?P<reported>ten) functional transfers",
         exit_count("functional_transfer"),
         0,
         "data/analysis_inputs/pilot_exit_type_distribution.csv",
         "validation_tier=human_validated, column=functional_transfer",
     ),
     ClaimSpec(
+        "reference_liquidation",
+        r"functional transfers, and (?P<reported>no)\s+liquidations",
+        lambda metrics: 0.0,
+        0,
+        "experiments/EXP-20260830-006/metrics.json",
+        "gold.label_counts has no liquidation row",
+    ),
+    ClaimSpec(
+        "historically_matched",
+        r"(?P<reported>Eighty-four) reference cases match",
+        coverage_metric("Historical capacity match"),
+        0,
+        "data/analysis_inputs/empirical_case_panel_coverage.csv",
+        "component=Historical capacity match, column=available",
+    ),
+    ClaimSpec(
+        "historically_unmatched",
+        r"The (?P<reported>ten) unmatched cases",
+        lambda metrics: metrics.json_value(
+            "experiments/EXP-20260830-006/metrics.json", "gold", "cases"
+        )
+        - coverage_metric("Historical capacity match")(metrics),
+        0,
+        "experiments/EXP-20260830-006/metrics.json",
+        "gold.cases minus Historical capacity match",
+    ),
+    ClaimSpec(
+        "source_identifiers_resolved",
+        r"All (?P<reported>94) evidence identifiers resolve",
+        lambda metrics: metrics.json_value(
+            "experiments/EXP-20260830-002/metrics.json",
+            "cases_all_identifiers_resolved",
+        ),
+        0,
+        "experiments/EXP-20260830-002/metrics.json",
+        "cases_all_identifiers_resolved",
+    ),
+    ClaimSpec(
+        "complete_local_packets",
+        r"(?P<reported>93) cases have\s+complete local copies",
+        lambda metrics: metrics.json_value(
+            "experiments/EXP-20260830-002/metrics.json",
+            "cases_all_evidence_files_local",
+        ),
+        0,
+        "experiments/EXP-20260830-002/metrics.json",
+        "cases_all_evidence_files_local",
+    ),
+    ClaimSpec(
+        "recovery_url_packets",
+        r"all (?P<reported>94) have recovery URLs",
+        lambda metrics: metrics.json_value(
+            "experiments/EXP-20260830-002/metrics.json",
+            "cases_all_documents_have_recovery_url",
+        ),
+        0,
+        "experiments/EXP-20260830-002/metrics.json",
+        "cases_all_documents_have_recovery_url",
+    ),
+    ClaimSpec(
+        "exact_evidence_memos",
+        r"and (?P<reported>62) have exact case-level evidence memos",
+        lambda metrics: metrics.json_value(
+            "experiments/EXP-20260830-002/metrics.json",
+            "cases_with_exact_evidence_memo_match",
+        ),
+        0,
+        "experiments/EXP-20260830-002/metrics.json",
+        "cases_with_exact_evidence_memo_match",
+    ),
+    ClaimSpec(
         "elite_density_effect_pp",
-        r"one-standard-deviation increase in elite density is\s+associated with a (?P<reported>[0-9.]+) percentage point increase",
+        r"elite\s+density is associated with a (?P<reported>[0-9.]+) percentage point increase",
         pilot_coefficient("Elite density", "Elite density, standardized"),
         1,
         "data/analysis_inputs/pilot_lpm_institutional_change.csv",
@@ -220,7 +286,7 @@ CLAIMS = [
     ),
     ClaimSpec(
         "high_capacity_effect_pp",
-        r"high\s+historical-capacity bin is associated with a (?P<reported>[0-9.]+) percentage point increase",
+        r"high-capacity bin is associated with a (?P<reported>[0-9.]+)\s+percentage point increase",
         pilot_coefficient("High capacity", "High historical-capacity bin"),
         1,
         "data/analysis_inputs/pilot_lpm_institutional_change.csv",
@@ -228,63 +294,142 @@ CLAIMS = [
     ),
     ClaimSpec(
         "capacity_rank_effect_pp",
-        r"low to middle to high capacity is\s+associated with a (?P<reported>[0-9.]+) percentage point increase",
+        r"low to middle to high\s+is associated with a (?P<reported>[0-9.]+) percentage point increase",
         pilot_coefficient("Capacity rank", "Capacity bin rank"),
         1,
         "data/analysis_inputs/pilot_lpm_institutional_change.csv",
         "model=Capacity rank, variable=Capacity bin rank, coefficient times 100",
     ),
     ClaimSpec(
-        "full_control_rows",
-        r"full-controls sample contains (?P<reported>seventy-eight) rows",
-        coverage_metric("Full-controls regression rows"),
+        "complete_control_rows",
+        r"controls are available for\s+(?P<reported>78) of the 84",
+        lambda metrics: metrics.json_value(
+            "experiments/EXP-20260830-005/metrics.json",
+            "complete_control_observations",
+        ),
         0,
-        "data/analysis_inputs/empirical_case_panel_coverage.csv",
-        "component=Full-controls regression rows, column=available",
+        "experiments/EXP-20260830-005/metrics.json",
+        "complete_control_observations",
     ),
     ClaimSpec(
-        "screening_candidate_rows",
-        r"It contains (?P<reported>361) candidate disclosure rows",
+        "excluded_nominal_rows",
+        r"restriction removes (?P<reported>six)\s+low-capacity nominal exits",
+        lambda metrics: metrics.json_value(
+            "experiments/EXP-20260830-005/metrics.json",
+            "excluded_matched_gold_observations",
+        ),
+        0,
+        "experiments/EXP-20260830-005/metrics.json",
+        "excluded_matched_gold_observations",
+    ),
+    ClaimSpec(
+        "complete_control_events",
+        r"retaining all (?P<reported>twelve) institutional-change\s+events",
+        lambda metrics: metrics.json_value(
+            "experiments/EXP-20260830-005/metrics.json",
+            "complete_control_events",
+        ),
+        0,
+        "experiments/EXP-20260830-005/metrics.json",
+        "complete_control_events",
+    ),
+    ClaimSpec(
+        "full_design_columns",
+        r"design also contains (?P<reported>nine) columns",
+        lambda metrics: metrics.json_value(
+            "experiments/EXP-20260830-005/metrics.json",
+            "complete_control_full_available_controls",
+            "observed_columns",
+        ),
+        0,
+        "experiments/EXP-20260830-005/metrics.json",
+        "complete_control_full_available_controls.observed_columns",
+    ),
+    ClaimSpec(
+        "full_design_rank",
+        r"nine columns with\s+rank (?P<reported>eight)",
+        lambda metrics: metrics.json_value(
+            "experiments/EXP-20260830-005/metrics.json",
+            "complete_control_full_available_controls",
+            "matrix_rank",
+        ),
+        0,
+        "experiments/EXP-20260830-005/metrics.json",
+        "complete_control_full_available_controls.matrix_rank",
+    ),
+    ClaimSpec(
+        "adjusted_sign_changes",
+        r"changes the\s+sign of the adjusted elite-density coefficient in (?P<reported>nine) of 78",
+        lambda metrics: metrics.json_value(
+            "experiments/EXP-20260830-005/metrics.json",
+            "complete_control_full_available_controls",
+            "leave_one_out_sign_changes",
+        ),
+        0,
+        "experiments/EXP-20260830-005/metrics.json",
+        "complete_control_full_available_controls.leave_one_out_sign_changes",
+    ),
+    ClaimSpec(
+        "historical_sign_changes",
+        r"historical-only coefficient changes sign in (?P<reported>none) of the 84",
+        lambda metrics: metrics.json_value(
+            "experiments/EXP-20260830-005/metrics.json",
+            "matched_gold_historical_only",
+            "leave_one_out_sign_changes",
+        ),
+        0,
+        "experiments/EXP-20260830-005/metrics.json",
+        "matched_gold_historical_only.leave_one_out_sign_changes",
+    ),
+    ClaimSpec(
+        "candidate_disclosures",
+        r"Among (?P<reported>361) candidate disclosure rows",
         flow_metric("Candidate disclosure rows"),
         0,
         "data/analysis_inputs/surrogate_empirical_flow.csv",
         "step=Candidate disclosure rows, column=count",
     ),
     ClaimSpec(
-        "usable_screening_rows",
-        r"of which (?P<reported>346)\s+are usable screening observations",
+        "usable_screening",
+        r"(?P<reported>346) have usable source",
         flow_metric("Usable LLM screening rows"),
         0,
         "data/analysis_inputs/surrogate_empirical_flow.csv",
         "step=Usable LLM screening rows, column=count",
     ),
     ClaimSpec(
-        "screening_gold_rows",
-        r"outcome sample contains (?P<reported>ninety-four) gold-standard labels",
-        coverage_metric("Gold-standard labels"),
+        "screening_reference_rows",
+        r"contains the (?P<reported>94) reference\s+labels",
+        lambda metrics: metrics.json_value(
+            "experiments/EXP-20260830-006/metrics.json", "gold", "cases"
+        ),
         0,
-        "data/analysis_inputs/empirical_case_panel_coverage.csv",
-        "component=Gold-standard labels, column=available",
+        "experiments/EXP-20260830-006/metrics.json",
+        "gold.cases",
     ),
     ClaimSpec(
-        "surrogate_disclosure_rows",
-        r"and (?P<reported>203)\s+LLM surrogate exit-type labels",
+        "surrogate_disclosures",
+        r"and (?P<reported>203) one-sided nominal-exit surrogates",
         flow_metric("LLM surrogate disclosure labels"),
         0,
         "data/analysis_inputs/surrogate_empirical_flow.csv",
         "step=LLM surrogate disclosure labels, column=count",
     ),
     ClaimSpec(
-        "no_formal_event_rows",
-        r"include\s+(?P<reported>forty-four) source packets for which the model found no direct formal exit",
-        flow_metric("Screened rows without direct formal event"),
+        "no_formal_rows",
+        r"(?P<reported>Forty-four) reviewed packets\s+lack a directly documented formal event",
+        lambda metrics: metrics.json_value(
+            "experiments/EXP-20260830-006/metrics.json",
+            "screening",
+            "no_direct_formal_event_disclosure_rows",
+        ),
         0,
-        "data/analysis_inputs/surrogate_empirical_flow.csv",
-        "step=Screened rows without direct formal event, column=count",
+        "experiments/EXP-20260830-006/metrics.json",
+        "screening.no_direct_formal_event_disclosure_rows",
     ),
     ClaimSpec(
-        "boundary_packet_rows",
-        r"and (?P<reported>five) human-reviewed boundary packets",
+        "boundary_rows",
+        r"(?P<reported>five) are boundary packets",
         source_value(
             "data/analysis_inputs/llm_screening_summary_2026_07_03_expanded.csv",
             "quantity",
@@ -296,141 +441,74 @@ CLAIMS = [
         "quantity=screening_status:human_reviewed_boundary, column=value",
     ),
     ClaimSpec(
-        "surrogate_disclosures_repeated",
-        r"The (?P<reported>203) disclosure-level surrogate labels",
-        flow_metric("LLM surrogate disclosure labels"),
+        "source_missing_rows",
+        r"and (?P<reported>fifteen)\s+lack a usable source packet",
+        lambda metrics: metrics.json_value(
+            "experiments/EXP-20260830-006/metrics.json",
+            "screening",
+            "source_missing_rows_with_blank_issuer",
+        ),
         0,
-        "data/analysis_inputs/surrogate_empirical_flow.csv",
-        "step=LLM surrogate disclosure labels, column=count",
+        "experiments/EXP-20260830-006/metrics.json",
+        "screening.source_missing_rows_with_blank_issuer",
     ),
     ClaimSpec(
-        "surrogate_unique_issuers",
-        r"correspond to (?P<reported>158) unique issuers",
-        dsl_metric("surrogate_unique_issuers"),
+        "surrogate_issuers",
+        r"203 surrogate rows to (?P<reported>158) issuers",
+        lambda metrics: metrics.json_value(
+            "experiments/EXP-20260830-006/metrics.json",
+            "screening",
+            "positive_issuers",
+        ),
         0,
-        "data/analysis_inputs/dsl_surrogate_diagnostics.csv",
-        "quantity=surrogate_unique_issuers, column=value",
+        "experiments/EXP-20260830-006/metrics.json",
+        "screening.positive_issuers",
     ),
     ClaimSpec(
-        "surrogate_overlap_issuers",
-        r"(?P<reported>Sixty-one) issuer-level surrogates overlap",
-        dsl_metric("surrogate_gold_overlap_issuers"),
+        "overlap_issuers",
+        r"(?P<reported>Sixty-one)\s+issuers also appear",
+        lambda metrics: metrics.json_value(
+            "experiments/EXP-20260830-006/metrics.json",
+            "overlap",
+            "selected_issuers",
+        ),
         0,
-        "data/analysis_inputs/dsl_surrogate_diagnostics.csv",
-        "quantity=surrogate_gold_overlap_issuers, column=value",
+        "experiments/EXP-20260830-006/metrics.json",
+        "overlap.selected_issuers",
     ),
     ClaimSpec(
-        "surrogate_nonoverlap_issuers",
-        r"(?P<reported>Ninety-seven) non-overlap issuers enter",
-        dsl_metric("nonoverlap_surrogate_issuers"),
+        "nonoverlap_issuers",
+        r"(?P<reported>97) do not",
+        lambda metrics: metrics.json_value(
+            "experiments/EXP-20260830-006/metrics.json",
+            "proposed_probability_design",
+            "positive_stratum_n",
+        ),
         0,
-        "data/analysis_inputs/dsl_surrogate_diagnostics.csv",
-        "quantity=nonoverlap_surrogate_issuers, column=value",
+        "experiments/EXP-20260830-006/metrics.json",
+        "proposed_probability_design.positive_stratum_n",
     ),
     ClaimSpec(
-        "raw_nominal_precision",
-        r"raw precision of (?P<reported>[0-9.]+)",
-        dsl_metric("raw_nominal_precision"),
-        3,
-        "data/analysis_inputs/dsl_surrogate_diagnostics.csv",
-        "quantity=raw_nominal_precision, column=value",
-    ),
-    ClaimSpec(
-        "jeffreys_nominal_precision",
-        r"implied precision is (?P<reported>[0-9.]+)",
-        dsl_metric("jeffreys_smoothed_nominal_precision"),
-        3,
-        "data/analysis_inputs/dsl_surrogate_diagnostics.csv",
-        "quantity=jeffreys_smoothed_nominal_precision, column=value",
-    ),
-    ClaimSpec(
-        "wilson_nominal_precision",
-        r"conservative rate of (?P<reported>[0-9.]+)",
-        dsl_metric("wilson_95_lower_nominal_precision"),
-        3,
-        "data/analysis_inputs/dsl_surrogate_diagnostics.csv",
-        "quantity=wilson_95_lower_nominal_precision, column=value",
-    ),
-    ClaimSpec(
-        "conservative_expected_nominal_nonoverlap",
-        r"imply between (?P<reported>[0-9.]+) and [0-9.]+ expected nominal-exit cases",
-        lambda metrics: adjusted_value(
-            "Gold plus non-overlap surrogates, conservative", "nominal_exit"
-        )(metrics)
-        - dsl_metric("human_gold_nominal_exit")(metrics),
-        2,
-        "data/analysis_inputs/dsl_augmented_outcome_distribution.csv",
-        "conservative nominal_exit minus human_gold_nominal_exit",
-    ),
-    ClaimSpec(
-        "smoothed_expected_nominal_nonoverlap",
-        r"imply between [0-9.]+ and (?P<reported>[0-9.]+) expected nominal-exit cases",
-        lambda metrics: adjusted_value(
-            "Gold plus non-overlap surrogates, smoothed", "nominal_exit"
-        )(metrics)
-        - dsl_metric("human_gold_nominal_exit")(metrics),
-        2,
-        "data/analysis_inputs/dsl_augmented_outcome_distribution.csv",
-        "smoothed nominal_exit minus human_gold_nominal_exit",
-    ),
-    ClaimSpec(
-        "adjusted_gold_rows",
-        r"gold-standard file contains (?P<reported>ninety-four) cases",
-        dsl_metric("human_gold_labels"),
+        "proposed_frame_rows",
+        r"proposed (?P<reported>133)-issuer frame",
+        lambda metrics: metrics.json_value(
+            "experiments/EXP-20260830-008/metrics.json", "frame_rows"
+        ),
         0,
-        "data/analysis_inputs/dsl_surrogate_diagnostics.csv",
-        "quantity=human_gold_labels, column=value",
+        "experiments/EXP-20260830-008/metrics.json",
+        "frame_rows",
     ),
     ClaimSpec(
-        "adjusted_gold_nominal",
-        r"of\s+which (?P<reported>eighty-two) are nominal exits",
-        dsl_metric("human_gold_nominal_exit"),
+        "unresolved_scope_rows",
+        r"but (?P<reported>128) still lack verified geography",
+        lambda metrics: metrics.json_value(
+            "experiments/EXP-20260830-008/metrics.json", "unresolved_units"
+        ),
         0,
-        "data/analysis_inputs/dsl_surrogate_diagnostics.csv",
-        "quantity=human_gold_nominal_exit, column=value",
-    ),
-    ClaimSpec(
-        "adjusted_gold_change",
-        r"and (?P<reported>twelve) are substantive exits or\s+functional transfers",
-        dsl_metric("human_gold_institutional_change"),
-        0,
-        "data/analysis_inputs/dsl_surrogate_diagnostics.csv",
-        "quantity=human_gold_institutional_change, column=value",
-    ),
-    ClaimSpec(
-        "adjusted_nonoverlap_rows",
-        r"Adding only the (?P<reported>ninety-seven) non-overlap issuer-level",
-        dsl_metric("nonoverlap_surrogate_issuers"),
-        0,
-        "data/analysis_inputs/dsl_surrogate_diagnostics.csv",
-        "quantity=nonoverlap_surrogate_issuers, column=value",
-    ),
-    ClaimSpec(
-        "adjusted_sample_rows",
-        r"produces a (?P<reported>191)-row adjusted descriptive sample",
-        adjusted_value("Gold plus non-overlap surrogates, smoothed", "observations"),
-        0,
-        "data/analysis_inputs/dsl_augmented_outcome_distribution.csv",
-        "sample=Gold plus non-overlap surrogates smoothed, column=observations",
-    ),
-    ClaimSpec(
-        "adjusted_smoothed_nominal",
-        r"sample contains (?P<reported>[0-9.]+) expected\s+nominal exits",
-        adjusted_value("Gold plus non-overlap surrogates, smoothed", "nominal_exit"),
-        2,
-        "data/analysis_inputs/dsl_augmented_outcome_distribution.csv",
-        "sample=Gold plus non-overlap surrogates smoothed, column=nominal_exit",
-    ),
-    ClaimSpec(
-        "adjusted_conservative_nominal",
-        r"conservative Wilson lower bound, it contains (?P<reported>[0-9.]+)\s+expected nominal exits",
-        adjusted_value("Gold plus non-overlap surrogates, conservative", "nominal_exit"),
-        2,
-        "data/analysis_inputs/dsl_augmented_outcome_distribution.csv",
-        "sample=Gold plus non-overlap surrogates conservative, column=nominal_exit",
+        "experiments/EXP-20260830-008/metrics.json",
+        "unresolved_units",
     ),
 ]
-
 
 def audit(
     manuscript: Path = MANUSCRIPT, root: Path = ROOT
