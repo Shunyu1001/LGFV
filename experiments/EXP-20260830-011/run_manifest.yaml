@@ -1,0 +1,26 @@
+schema_version: 1
+experiment_id: EXP-20260830-011
+base_commit: bf1bd7b99c7dd9261678015c9f050599ae862fe3
+branch: codex/validation-geography-packet
+input_hash_algorithm: sha256
+inputs:
+  - path: data/validation/proposed_one_sided_validation_frame_enriched.csv
+    sha256: 9cc5822b69f548b4d6673d895b38f7c2c5a3196a87f41c29edbd49107d1bce26
+  - path: data/document_inventory.csv
+    sha256: 8d5f13810f31a91b293ccc917153cf2e21f252445719de5a174604151dbd6d27
+  - path: coding/codebook.md
+    sha256: 2a980b77ca7b0cc19761884dbe70590c0e8e7f311224bfdac9684d5c452d1057
+  - path: immutable/data_manifest.yaml
+    sha256: c2b34c94a95421ac9f49982eee4565d5ab3c885d3263ba105eaedd78de052424
+planned_outputs:
+  - data/validation/source_supported_validation_geography_scope_crosswalk.csv
+  - data/validation/validation_geography_retrieval_manifest.csv
+  - data/validation/validation_geography_conflict_log.csv
+  - experiments/EXP-20260830-011/metrics.json
+  - experiments/EXP-20260830-011/assessment.md
+  - experiments/EXP-20260830-011/execution_log.md
+  - experiments/EXP-20260830-011/artifacts/proposed_ledger_rows.tsv
+  - experiments/EXP-20260830-011/artifacts/proposed_manuscript_rows.md
+random_draw: false
+random_seed: null
+raw_documents_committed: false
