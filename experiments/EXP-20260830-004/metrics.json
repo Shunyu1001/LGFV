@@ -1,0 +1,24 @@
+{
+  "claims_audited": 33,
+  "matching_claims": 30,
+  "mismatching_claims": 3,
+  "missing_text_mappings": 0,
+  "ambiguous_text_mappings": 0,
+  "mismatches": {
+    "elite_density_effect_pp": {
+      "reported": 6.3,
+      "generated": 6.6
+    },
+    "high_capacity_effect_pp": {
+      "reported": 17.1,
+      "generated": 16.1
+    },
+    "capacity_rank_effect_pp": {
+      "reported": 13.5,
+      "generated": 12.5
+    }
+  },
+  "unit_tests_run": 3,
+  "unit_tests_passed": 3,
+  "strict_check_exit_code": 1
+}

@@ -1,0 +1,10 @@
+{
+  "experiment_id": "EXP-20260830-009",
+  "plan": "experiments/EXP-20260830-009/search_plan.yaml",
+  "python": "3.13.4",
+  "script_version": "1.0",
+  "requests": 24,
+  "successful_requests": 24,
+  "candidate_rows": 1200,
+  "completed_at_utc": "2026-08-30T04:38:20.423787+00:00"
+}

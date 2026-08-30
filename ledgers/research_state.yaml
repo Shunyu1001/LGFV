@@ -13,11 +13,10 @@ secondary_application: exploratory association with historical state capacity
 
 state:
   literature:
-    status: red
+    status: yellow
     main_gap: >-
-      The bibliography contains 21 entries and does not yet establish the
-      novelty boundary against recent LGFV, compliance, and text-measurement
-      work.
+      A 24-source verified audit narrows the defensible novelty claim, but the
+      manuscript and bibliography have not yet incorporated that boundary.
   theory_identification:
     status: yellow
     main_gap: >-
@@ -26,20 +25,22 @@ state:
   empirical_simulation:
     status: red
     main_gap: >-
-      The gold outcome is highly imbalanced, contemporary controls are partial,
-      and the DSL default input points to an older surrogate file.
+      The gold outcome has 12 institutional-change cases, complete controls
+      exclude six low-capacity nominal exits, and the adjusted design is rank
+      deficient and deletion-sensitive.
   claim_evidence:
     status: red
     main_gap: >-
-      Narrative effect sizes do not match the generated pilot regression table,
-      and measurement validation lacks independent agreement and recall.
+      Three narrative effect sizes require correction, and measurement
+      validation lacks a probability sample, independent agreement, recall,
+      multiclass error, and traceable geography for most proposed issuers.
   reviewer:
     status: red
     top_risk: >-
       The paper currently reads as an advanced measurement pilot rather than a
       journal-ready national study.
 
-current_bottleneck: measurement validation and empirical credibility
+current_bottleneck: probability validation, independent coding, and sparse-outcome empirical credibility
 next_recommended_loops:
   - empirical_simulation
   - literature

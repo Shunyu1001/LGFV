@@ -1,0 +1,19 @@
+{
+  "base_commit": "45714fa884580f4a6c77e7fbce30d3c46f41e2c9",
+  "company_name_parsing_used": false,
+  "conflicting_units": 0,
+  "coverage_threshold_passed": false,
+  "exact_normalized_name_fallback_allowed": true,
+  "experiment_gate_passed": false,
+  "experiment_id": "EXP-20260830-008",
+  "external_lookup_used": false,
+  "frame_rows": 133,
+  "initial_incomplete_units": 128,
+  "join_sources_used": {},
+  "newly_resolved_units": 0,
+  "preexisting_complete_units": 5,
+  "random_draw_executed": false,
+  "random_seed": null,
+  "required_newly_resolved_units": 116,
+  "unresolved_units": 128
+}

@@ -1,0 +1,26 @@
+{
+  "base_commit": "fe2c98b9e86d15603804e06cb564c19310cf561d",
+  "blank_required_design_fields": 256,
+  "blinded_forbidden_fields": [],
+  "blinded_populated_coder_entry_cells": 0,
+  "blinded_template_rows": 133,
+  "experiment_id": "EXP-20260830-007",
+  "frame_gate_passed": false,
+  "frame_rows": 133,
+  "gold_overlap_rows": 0,
+  "positive_missing_queue_rows": 0,
+  "positive_queue_rows": 97,
+  "queue_rows_outside_positive_frame": 0,
+  "random_draw_executed": false,
+  "random_seed": null,
+  "strata": {
+    "screen_positive_nominal": 97,
+    "screened_no_direct_formal_event": 36
+  },
+  "unique_validation_unit_ids": 133,
+  "unresolved_identifier_field_counts": {
+    "city": 128,
+    "province": 128
+  },
+  "unresolved_identifier_fields": 256
+}

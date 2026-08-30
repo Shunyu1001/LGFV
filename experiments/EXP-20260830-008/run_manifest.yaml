@@ -1,0 +1,24 @@
+schema_version: 1
+experiment_id: EXP-20260830-008
+base_commit: 45714fa884580f4a6c77e7fbce30d3c46f41e2c9
+branch: codex/measurement-validation
+input_hash_algorithm: sha256
+inputs:
+  - path: data/validation/proposed_one_sided_validation_frame.csv
+    sha256: 32be8fc1d74849c64cb4a0f92352cb21620ed9f3d383e04d0266b04170b1e8be
+  - path: data/analysis_inputs/master_case_pool.csv
+    sha256: 1583819a1bcc099598bb925d3dbff23297ce0cea690d0adaf5b2e823c7fe9bf6
+  - path: data/analysis_inputs/llm_candidate_pool_seed_2026_07_03_expanded.csv
+    sha256: dfe81f1083dd56ce8d7406c10d83f734615c3154060cfef1ac57327602db55e7
+  - path: data/source_inventory.csv
+    sha256: a83c47e7a8c1f8989d9d8e4289b16548c058b4b567ed4725e56310cb41dd8c8c
+  - path: data/document_inventory.csv
+    sha256: 8d5f13810f31a91b293ccc917153cf2e21f252445719de5a174604151dbd6d27
+planned_outputs:
+  - data/validation/proposed_validation_geography_crosswalk.csv
+  - data/validation/proposed_one_sided_validation_frame_enriched.csv
+  - experiments/EXP-20260830-008/metrics.json
+  - experiments/EXP-20260830-008/assessment.md
+  - experiments/EXP-20260830-008/artifacts/proposed_ledger_rows.tsv
+random_draw: false
+random_seed: null

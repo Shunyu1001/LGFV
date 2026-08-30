@@ -1,0 +1,16 @@
+{
+  "experiment_id": "EXP-20260830-009",
+  "status": "keep",
+  "database_requests": 24,
+  "successful_database_requests": 24,
+  "candidate_rows": 1200,
+  "deduplicated_works": 1104,
+  "material_fulltexts_verified": 24,
+  "predeclared_query_families": 12,
+  "literatures": 4,
+  "hypothesis_result": "partly_falsified",
+  "broad_novelty_supported": false,
+  "bounded_lgfv_measurement_contribution_distinctive_within_audited_set": true,
+  "first_in_literature_claim_supported": false,
+  "central_files_changed": false
+}

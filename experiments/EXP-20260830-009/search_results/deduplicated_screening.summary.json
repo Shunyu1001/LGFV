@@ -1,0 +1,16 @@
+{
+  "candidate_rows": 1200,
+  "deduplicated_works": 1104,
+  "counts_by_literature_and_status": {
+    "compliance_functional_substitution:excluded_title_abstract": 200,
+    "compliance_functional_substitution:manual_review": 73,
+    "debt_resolution_recentralization:excluded_title_abstract": 229,
+    "debt_resolution_recentralization:manual_review": 52,
+    "lgfv_exit_transformation:excluded_title_abstract": 251,
+    "lgfv_exit_transformation:manual_review": 6,
+    "text_measurement_error:excluded_title_abstract": 233,
+    "text_measurement_error:manual_review": 60
+  },
+  "method": "conservative deterministic title-and-abstract metadata screen",
+  "note": "Manual full-text inclusion decisions are recorded separately; this screen does not treat metadata as evidence."
+}

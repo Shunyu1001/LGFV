@@ -1,0 +1,7 @@
+panel_id,case_id,province,city,exit_type,institutional_change,elite_per_1000_sqkm,historical_capacity_bin,source_coverage_score,missing_contemporary_controls,exclusion_basis
+gold_0024,expand_jx_zhanggong_jiantou,Jiangxi,Ganzhou Zhanggong,nominal_exit,0,10.48,,4,GDP per capita; Fiscal self-sufficiency; Debt pressure; Land-finance dependence,recorded complete-control flag and observed missing values
+gold_0040,expand_ah_luan_chengtou,Anhui,Lu'an,nominal_exit,0,8.64,,4,GDP per capita; Fiscal self-sufficiency; Debt pressure; Land-finance dependence,recorded complete-control flag and observed missing values
+gold_0043,expand_hb_jingmen_chengtou,Hubei,Jingmen,nominal_exit,0,18.19,,4,GDP per capita; Fiscal self-sufficiency; Debt pressure; Land-finance dependence,recorded complete-control flag and observed missing values
+gold_0048,expand_sc_leshan_guozi,Sichuan,Leshan,nominal_exit,0,6.24,,4,GDP per capita; Fiscal self-sufficiency; Debt pressure; Land-finance dependence,recorded complete-control flag and observed missing values
+gold_0055,sch_20260630_0151,Hebei,Shijiazhuang,nominal_exit,0,25.05,middle,4,GDP per capita; Fiscal self-sufficiency; Debt pressure; Land-finance dependence,recorded complete-control flag and observed missing values
+gold_0069,sch_20260630_0005,Hebei,Xingtai,nominal_exit,0,24.14,,4,GDP per capita; Fiscal self-sufficiency; Debt pressure; Land-finance dependence,recorded complete-control flag and observed missing values

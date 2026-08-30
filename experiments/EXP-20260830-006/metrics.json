@@ -1,0 +1,45 @@
+{
+  "base_commit": "e178e195704fe6ad6ec353a28081e444995350e7",
+  "declared_count_discrepancies": {},
+  "experiment_id": "EXP-20260830-006",
+  "gold": {
+    "cases": 94,
+    "codex_assisted_reviewer_rows": 90,
+    "independently_double_coded_cases_documented": 0,
+    "label_counts": {
+      "functional_transfer": 10,
+      "nominal_exit": 82,
+      "substantive_exit": 2
+    }
+  },
+  "overlap": {
+    "calibration_identified": false,
+    "codex_assisted_reviewer_rows": 61,
+    "descriptive_concordance": 1.0,
+    "four_category_error_identified": false,
+    "nominal_matches": 61,
+    "recall_identified": false,
+    "sampling_error_identified": false,
+    "selected_issuers": 61,
+    "target_population_ppv_identified": false
+  },
+  "proposed_probability_design": {
+    "draw_executed": false,
+    "nonpositive_inclusion_probability": 1.0,
+    "nonpositive_sample_n": 36,
+    "nonpositive_stratum_n": 36,
+    "positive_inclusion_probability": 0.618557,
+    "positive_sample_n": 60,
+    "positive_stratum_n": 97,
+    "target_named_source_available_nonoverlap_issuers": 133
+  },
+  "screening": {
+    "candidate_disclosure_rows": 262,
+    "named_source_available_candidate_issuers": 194,
+    "no_direct_formal_event_disclosure_rows": 44,
+    "no_direct_formal_event_issuers": 36,
+    "positive_disclosure_rows": 203,
+    "positive_issuers": 158,
+    "source_missing_rows_with_blank_issuer": 15
+  }
+}

@@ -1,0 +1,57 @@
+experiment_id: EXP-20260830-009
+started_at: 2026-08-30T04:37:53.110373+00:00
+agent: literature-theory-worktree
+branch: codex/literature-theory
+base_commit: e178e195704fe6ad6ec353a28081e444995350e7
+trial_commit: null
+python: 3.13.4
+search_script_version: 1.0
+random_seed: not_applicable
+inputs:
+  search_plan: experiments/EXP-20260830-009/search_plan.yaml
+  existing_bibliography: paper/references.bib
+  claims: ledgers/claims.csv
+  literature_ledger: ledgers/literature.csv
+databases:
+  crossref: https://api.crossref.org/works
+  openalex: https://api.openalex.org/works
+commands:
+  - >-
+    python3 literature/run_primary_searches.py --plan
+    experiments/EXP-20260830-009/search_plan.yaml --output
+    experiments/EXP-20260830-009/search_results
+  - >-
+    python3 literature/screen_search_results.py --candidates
+    experiments/EXP-20260830-009/search_results/candidates.csv --output
+    experiments/EXP-20260830-009/search_results/deduplicated_screening.csv
+execution_notes:
+  - >-
+    The first search command stopped before any network request because the
+    system Python did not include PyYAML. The plan was converted mechanically
+    to JSON syntax, which remains valid YAML, and the script was changed to use
+    the Python standard library. No query, criterion, or budget changed.
+  - >-
+    The first metadata-screen command stopped before writing a complete output
+    because CSV rows retained two source-only fields. The writer was changed to
+    ignore those already-consolidated fields and rerun without changing a
+    screening rule.
+  - Raw database responses are retained as compressed JSON.
+result_direction_used_for_selection: false
+raw_response_files: 24
+database_requests: 24
+successful_database_requests: 24
+candidate_rows: 1200
+deduplicated_works: 1104
+manual_fulltext_verification:
+  material_sources: 24
+  source_matrix: experiments/EXP-20260830-009/artifacts/verified_source_matrix.csv
+  original_text_register: experiments/EXP-20260830-009/artifacts/original_text_register.csv
+  supplemental_queries_and_exclusions: experiments/EXP-20260830-009/artifacts/supplemental_search_log.txt
+outcome:
+  status: keep
+  hypothesis: partly_falsified
+  broad_novelty_supported: false
+  first_in_literature_claim_supported: false
+  bounded_measurement_contribution: >-
+    Within the audited set, the event-plus-post-event-function-tracing
+    four-fate implementation remains distinctive.

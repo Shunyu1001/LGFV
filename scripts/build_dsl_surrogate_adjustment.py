@@ -19,7 +19,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 HUMAN_LABELS = ROOT / "data" / "processed" / "human_validated_labels.csv"
 SURROGATE_ISSUERS = (
-    ROOT / "data" / "analysis_inputs" / "codex_surrogate_issuer_summary_2026_07_02.csv"
+    ROOT
+    / "data"
+    / "analysis_inputs"
+    / "codex_surrogate_issuer_summary_2026_07_03_expanded.csv"
 )
 OUT_DIAGNOSTICS = ROOT / "data" / "analysis_inputs" / "dsl_surrogate_diagnostics.csv"
 OUT_AUGMENTED = ROOT / "data" / "analysis_inputs" / "dsl_augmented_outcome_distribution.csv"

@@ -1,0 +1,4 @@
+specification,observations,institutional_change,nominal_exit,substantive_exit,functional_transfer,event_share,parameters_including_intercept,events_per_parameter
+matched_gold_historical_only,84,12,72,2,10,0.142857,2,6.000000
+complete_control_historical_only,78,12,66,2,10,0.153846,2,6.000000
+complete_control_full_available_controls,78,12,66,2,10,0.153846,9,1.333333

@@ -1,0 +1,202 @@
+EXP-20260830-009 supplemental primary-source search log
+Date: 2026-08-30
+Interface: web search plus DOI, publisher, author-repository, and institutional-site follow-up
+Selection rule: relevance and verifiability, never agreement with C-007 or C-008
+
+The 12 predeclared Crossref/OpenAlex queries, request times, API URLs, and raw
+responses are recorded separately in search_plan.yaml, search_results/requests.csv,
+and search_results/*.json.gz. The exact supplemental queries below were used to
+recover original texts, authoritative records, adverse work, and adjacent work.
+
+[LGFV exit and transformation]
+"local government financing vehicle" exit transformation China academic
+site:doi.org "Market-Oriented Transformation and Development of Local Government Financing Platforms in China"
+site:sciencedirect.com "local government financing vehicle restructuring" implicit government guarantees
+"Market-Oriented Transformation and Development" "Local Government Financing Platforms"
+"exit the platform" LGFV academic
+地方政府融资平台 退出 转型 市场化 论文
+融资平台 退出 名单 功能 转移 研究
+"Local government financing vehicle restructuring" PDF Wan Fan Wang
+"融资平台转型、融资成本与地方政府隐性债务结构优化" PDF
+"融资平台转型、融资成本与地方政府隐性债务结构优化" 李小红 何青 艾爽
+"硬约束下沉、债务风险演化与基层融资平台退出治理" PDF
+"分类监管政策与地方融资平台绩效"
+"融资平台退出名单制管理系统" 方嘉宇 陆毅
+"Classification Regulation Policy" "financing platform" exit list China Fang Lu
+"The development of local government financial vehicles in China" PDF Jiaxing
+"LGFV restructuring" implicit guarantees PDF 2024 101179
+"Local government financing vehicle restructuring, implicit government guarantees" filetype:pdf
+"LGFV restructuring" "101179" PDF
+"Rui Wan" "Wencheng Fan" "Xiaoping Wang" LGFV PDF
+
+[Local debt resolution and fiscal recentralization]
+China local government debt resolution fiscal recentralization research paper
+site:imf.org local government financing vehicles China regulation public private partnerships
+site:rba.gov.au LGFV transformation market-driven entities 2024
+site:gov.cn 化解地方政府债务 2024 融资平台 转型 财政部
+site:mof.gov.cn 地方政府 隐性债务 置换 专项债 2024
+site:imf.org China local government debt resolution 2024 fiscal
+site:worldbank.org China local government debt financing vehicles debt resolution
+"China’s Local Government Debt: The Grand Bargain" PDF
+site:journals.uchicago.edu "China's Local Government Debt" "Grand Bargain"
+site:papers.ssrn.com China local government debt grand bargain Liu Oi Zhang
+site:imf.org China local government financing platforms fiscal absorption budget local debt full text PDF
+China local government debt bureaucratic coordination policy implementation original full text DOI
+China local state-owned asset governance local government financing vehicles restructuring full text PDF DOI
+"The Financing of Local Government in China" PDF Chen He Liu DOI
+China local government debt swap program municipal bond empirical paper PDF DOI
+"local government debt swap" China PDF fiscal capacity
+"Intergovernmental Fiscal Reform in China" Wingender DOI 2018 88
+site:elibrary.imf.org "Intergovernmental Fiscal Reform in China" DOI
+site:doi.org "Intergovernmental Fiscal Reform in China"
+"The financial value of the within-government political network" DOI journal
+"within-government political network" municipal corporate bonds published DOI
+"The financial value of within-government" PDF Chinese municipal
+
+[Organizational compliance and functional substitution]
+Bromley Powell 2012 From Smoke and Mirrors to Walking the Talk original article
+Edelman 1992 Legal Ambiguity and Symbolic Structures original article
+Short Toffel 2010 Making Self-Regulation More Than Merely Symbolic original article
+de and recoupling public regulation Organization Studies 2018 original article
+"From Smoke and Mirrors to Walking the Talk" PDF Bromley Powell 2012
+"Legal Ambiguity and Symbolic Structures" PDF Edelman 1992
+"Making Self-Regulation More Than Merely Symbolic" PDF Short Toffel 2010
+"De- and Recoupling and Public Regulation" PDF de Bree Stoopendaal
+Lauren Edelman 1992 1531 1576 pdf Berkeley
+site:law.berkeley.edu Edelman "Legal Ambiguity and Symbolic Structures" pdf
+site:scholarship.law.berkeley.edu "Legal Ambiguity and Symbolic Structures"
+"Legal Ambiguity and Symbolic Structures" filetype:pdf
+site:scholarship.law.georgetown.edu/facpub/461 "Making Self-Regulation"
+scholarship.law.georgetown.edu facpub 461 Short Toffel pdf
+SSRN 1743549 download PDF Short Toffel
+site:hbs.edu/faculty/Pages/item.aspx?num "Making Self-Regulation More Than Merely Symbolic"
+site:hbs.edu/faculty/Publication%20Files "Making Self-Regulation" Short Toffel
+site:law.ucsf.edu "Making Self-Regulation More Than Merely Symbolic" pdf
+"Making Self-Regulation" "361-396" pdf
+jstor 2781548 pdf
+"Legal Ambiguity and Symbolic Structures" 1531 1532 1543
+"Legal Ambiguity and Symbolic Structures" "1538" Edelman
+"Legal Ambiguity and Symbolic Structures" "1550"
+"53e29d510cf2b9d0d8328ac0"
+"Legal-Ambiguity-and-Symbolic-Structures-Organizational-Mediation-of-Civil-Rights-Law.pdf"
+University Wisconsin law repository "Legal ambiguity and symbolic structures"
+"Legal ambiguity and symbolic structures" "DPRP" 10-7 PDF
+"Legal ambiguity and symbolic structures" "Institute for Legal Studies" pdf
+"Organizational mediation of civil rights law" Lauren Edelman pdf
+"Decoupling practical and legal compliance" pdf Zhelyazkova Kaya Schrama
+site:research-portal.uu.nl "Decoupling practical and legal compliance"
+"Is Decoupling Becoming Decoupled from Institutional Theory" pdf Haack Schoeneborn
+site:researchgate.net "Is Decoupling Becoming Decoupled from Institutional Theory"
+"Decoupling practical and legal compliance" "managerial capacity"
+"Decoupling practical and legal compliance" "legitimacy" "Table"
+"Decoupling practical and legal compliance" "Findings" Zhelyazkova
+"Decoupling practical and legal compliance" "administrative capacity"
+site:hbs.edu/ris/download.aspx?name=Short+Toffel+2010+ASQ.pdf "Results"
+site:hbs.edu/ris/download.aspx?name=Short+Toffel+2010+ASQ.pdf "heavy regulatory surveillance"
+site:hbs.edu/ris/download.aspx?name=Short+Toffel+2010+ASQ.pdf "historically poor compliers"
+site:hbs.edu/ris/download.aspx?name=Short+Toffel+2010+ASQ.pdf "limitations"
+
+[Text measurement error]
+site:cambridge.org/core/journals/political-analysis "text as data" validation measurement
+site:arxiv.org "Using Imperfect Surrogates for Downstream Inference"
+site:cambridge.org/core/journals/political-analysis LLM annotations measurement error social science
+site:ajps.org automated content analysis validation hand coding social science
+Grimmer Stewart 2013 Text as Data PDF DOI
+Egami 2023 text measurement error downstream inference PDF
+Halterman Keith 2025 Codebook LLMs PDF
+LLM labels downstream inference classification error social science validation PDF
+site:annualreviews.org learned proxies measurement error causal theories Knox Lucas Cho 2022 DOI
+TeBlunthuis Hase Chan misclassification machine learning social science DOI PDF
+Gilardi Alizadeh Kubli 2023 ChatGPT outperforms crowd workers DOI full text
+Ziems Can Large Language Models Transform Computational Social Science DOI 2024
+Justin Grimmer Brandon Stewart 2013 text as data pdf site:stanford.edu
+"Text as Data" "mps028" pdf
+site:cambridge.org/core/services/aop-cambridge-core/content/view "Text as Data" Grimmer Stewart pdf
+site:annualreviews.org "Testing Causal Theories with Learned Proxies" pdf
+"Testing Causal Theories with Learned Proxies" filetype:pdf
+Dean Knox Christopher Lucas Wendy Tam Cho learned proxies pdf
+"Misclassification in Automated Content Analysis" filetype:pdf DOI
+"Codebook LLMs" Halterman Keith official PDF DOI 10.1017
+"ChatGPT outperforms crowd workers" pdf pnas 2305016120 full text
+pnas.2305016120.pdf
+PMC10372638 XML full text
+10.1080/19312458.2023.2293713 pages 278 2024 TeBlunthuis Hase Chan
+site:tandfonline.com/doi/full/10.1080/19312458.2023.2293713 "Limitations"
+"Misclassification in Automated Content Analysis Causes Bias in Regression" 278-294
+site:proceedings.neurips.cc/paper_files/paper/2023/hash d862f7f5445255090de13b825b880d59 Egami pages
+"Using Imperfect Surrogates for Downstream Inference" NeurIPS 2023 pages DOI
+Crossref "Using Imperfect Surrogates for Downstream Inference"
+
+[DOI metadata verification]
+The following identifiers were resolved individually through
+https://api.crossref.org/works/{percent-encoded-doi} on 2026-08-30:
+10.3390/systems10030065
+10.1086/717256
+10.5089/9781475536768.001
+10.1016/j.jfineco.2019.07.009
+10.1177/0097700409347970
+10.1016/j.landusepol.2020.104793
+10.1016/j.frl.2021.102552
+10.1093/ej/ueaa043
+10.1080/19416520.2012.684462
+10.1177/0170840618800115
+10.2189/asqu.2010.55.3.361
+10.1111/1475-6765.12154
+10.5465/amr.2014.0344
+10.1093/pan/mps028
+10.52202/075280-3000
+10.1017/pan.2025.10017
+10.1146/annurev-polisci-051120-111443
+10.1080/19312458.2023.2293713
+10.1073/pnas.2305016120
+
+The string 10.12012/CJoE2024-0011 did not resolve in Crossref and was removed
+from the proposed record for Li, He, and Ai. The verified journal article URL
+is https://www.jcejournal.com.cn/CN/abstract/abstract210.shtml.
+
+[Historical-capacity boundary]
+imperial examination persistence modern China elite density state capacity full text DOI
+"The Institutional Logic of Collusion Among Local Governments in China" PDF DOI
+"Long Live Keju" PDF imperial examination persistent effects DOI
+"Size and Dynastic Decline" PDF DOI Sng
+"Long Live Keju!" filetype:pdf "Economic Journal" 2020
+"Long Live Keju! The Persistent Effects" PDF Chen Kung Ma
+site:academic.oup.com/ej/article-pdf "Long Live Keju"
+"Size and Dynastic Decline" "Explorations in Economic History" DOI
+"Size and Dynastic Decline" 2014 PDF Sng final
+site:sciencedirect.com "Size and Dynastic Decline"
+"Elite Recruitment and Political Stability" PDF DOI Bai Jia 2016
+site:ruixuejia.com "Elite Recruitment and Political Stability" pdf
+site:econometricsociety.org "Elite Recruitment and Political Stability"
+
+EXCLUSIONS AND UNRESOLVED ITEMS
+
+- Search snippets, secondary summaries, news rewrites, and citation-only pages:
+  excluded because no original evidence could be inspected.
+- Duplicates: the published record was retained and an accessible author or
+  repository manuscript was used only to inspect the text.
+- Edelman (1992), Legal Ambiguity and Symbolic Structures: quarantined. The
+  publisher record was verified, but the located author upload returned access
+  errors; no page-level claim from it was used.
+- Wan, Fan, and Wang (2024), Local Government Financing Vehicle Restructuring,
+  Implicit Government Guarantees and Financing Costs: unresolved. Metadata and
+  abstract were verified, but no complete original text was accessible.
+- Sng (2014), Size and Dynastic Decline: excluded from the material set because
+  only a preliminary full version was accessible and Chen, Kung, and Ma is more
+  directly discriminating for the historical proxy used here.
+- Bai and Jia (2016): excluded from the material set because it concerns
+  revolutionary mobilization rather than contemporary administrative
+  continuity and is already represented in the repository.
+- Lu and Sun (2013): excluded because Wingender and Chen-He-Liu more directly
+  discriminate formal fiscal absorption from financing migration.
+- RBA (2024), The ABCs of LGFVs: opened as an authoritative synthesis but not
+  counted among the 24 material sources because it is less discriminating than
+  the primary studies selected.
+- Ziems et al. (2024): opened but excluded under the 24-source budget because
+  it is a broad roadmap rather than a dedicated validation or correction
+  design.
+- Hopkins and King and a later Halterman-Keith protest-codebook preprint:
+  excluded under the source budget because the selected peer-reviewed sources
+  more directly address four-class validation and downstream error.
+- No source was included or excluded because of citation count, statistical
+  significance, coefficient sign, or agreement with the manuscript.

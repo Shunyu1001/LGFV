@@ -1,0 +1,9 @@
+{
+  "surrogate_unique_issuers": 158,
+  "surrogate_gold_overlap_issuers": 61,
+  "surrogate_nonoverlap_issuers": 97,
+  "default_and_explicit_outputs_byte_identical": true,
+  "authoritative_generated_output_diff": false,
+  "regression_tests_run": 1,
+  "regression_tests_passed": 1
+}

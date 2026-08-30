@@ -1,0 +1,84 @@
+{
+  "experiment_id": "EXP-20260830-009",
+  "created_at": "2026-08-30T14:05:00+08:00",
+  "databases": ["crossref", "openalex"],
+  "rows_per_query": 50,
+  "mail_to": null,
+  "queries": [
+    {
+      "query_id": "LGFV-01",
+      "literature": "lgfv_exit_transformation",
+      "query": "\"local government financing vehicle\" exit transformation China"
+    },
+    {
+      "query_id": "LGFV-02",
+      "literature": "lgfv_exit_transformation",
+      "query": "\"local government financing platform\" market transformation China"
+    },
+    {
+      "query_id": "LGFV-03",
+      "literature": "lgfv_exit_transformation",
+      "query": "地方政府融资平台 退出 转型 市场化"
+    },
+    {
+      "query_id": "DEBT-01",
+      "literature": "debt_resolution_recentralization",
+      "query": "China local government debt resolution fiscal recentralization"
+    },
+    {
+      "query_id": "DEBT-02",
+      "literature": "debt_resolution_recentralization",
+      "query": "China hidden local debt swap special refinancing bonds"
+    },
+    {
+      "query_id": "DEBT-03",
+      "literature": "debt_resolution_recentralization",
+      "query": "China local government debt restructuring financing vehicles"
+    },
+    {
+      "query_id": "COMP-01",
+      "literature": "compliance_functional_substitution",
+      "query": "organizational decoupling formal compliance substantive practice regulation"
+    },
+    {
+      "query_id": "COMP-02",
+      "literature": "compliance_functional_substitution",
+      "query": "symbolic compliance functional substitution organizations regulation"
+    },
+    {
+      "query_id": "COMP-03",
+      "literature": "compliance_functional_substitution",
+      "query": "policy practice decoupling organizational compliance enforcement"
+    },
+    {
+      "query_id": "TEXT-01",
+      "literature": "text_measurement_error",
+      "query": "text as data measurement error downstream inference social science"
+    },
+    {
+      "query_id": "TEXT-02",
+      "literature": "text_measurement_error",
+      "query": "large language model labels measurement error social science validation"
+    },
+    {
+      "query_id": "TEXT-03",
+      "literature": "text_measurement_error",
+      "query": "automated text classification error regression validation social science"
+    }
+  ],
+  "inclusion_rules": [
+    "Original peer-reviewed article, book, chapter, working paper, or authoritative institutional document.",
+    "Directly addresses at least one query literature or supplies a measurement or mechanism boundary needed for C-007 or C-008.",
+    "Publication year is 1990 through 2026, except an earlier foundational organizational-compliance source may be retained when it is directly cited by recovered work.",
+    "Metadata can be verified and an original text or authoritative full record can be opened."
+  ],
+  "exclusion_rules": [
+    "Search snippets, generated summaries, news rewrites, course pages, and citation-only records.",
+    "Sources about central-government or sovereign debt with no local-government, organizational-compliance, or measurement-error connection.",
+    "Sources that use transformation only to mean financial performance, green transformation, or industrial upgrading without an LGFV institutional-status outcome.",
+    "Sources that discuss generic AI performance without a labeled-measurement, validation, or downstream-inference implication.",
+    "Duplicate versions of the same work; retain the published version when available and record an accessible working-paper URL separately.",
+    "Inaccessible items whose material claim cannot be checked in an original text; list them as excluded or unresolved rather than evidence."
+  ],
+  "selection_rule": "Screen for relevance to the predeclared measurement and mechanism boundaries. Do not select by whether a source supports novelty, a preferred mechanism, a coefficient sign, or a persuasive narrative."
+}

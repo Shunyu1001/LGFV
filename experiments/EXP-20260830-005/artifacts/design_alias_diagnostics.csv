@@ -1,0 +1,4 @@
+specification,columns,matrix_rank,rank_deficient,identified_exact_alias,maximum_absolute_alias_residual,platform_category_counts,proposed_mechanical_resolution,review_status
+matched_gold_historical_only,2,2,False,,,,not applicable,not applicable
+complete_control_historical_only,2,2,False,,,,not applicable,not applicable
+complete_control_full_available_controls,9,8,True,intercept equals district/county dummy plus prefecture/municipal dummy for every row,0.00000000,district_or_county=25;prefecture_or_municipal=53,use one platform category as the reference before interpreting the full-control model,coordinator review required; existing model outputs are not changed by this experiment

@@ -1,0 +1,12 @@
+metric,complete_control_subset,excluded_matched_gold,difference_complete_minus_excluded,complete_control_n,excluded_n,interpretation
+observation_count,78.000000,6.000000,72.000000,78,6,descriptive; no selection model or significance test
+institutional_change_share,0.153846,0.000000,0.153846,78,6,descriptive; no selection model or significance test
+substantive_exit_share,0.025641,0.000000,0.025641,78,6,descriptive; no selection model or significance test
+functional_transfer_share,0.128205,0.000000,0.128205,78,6,descriptive; no selection model or significance test
+elite_density_mean,103.735897,15.456667,88.279231,78,6,descriptive; no selection model or significance test
+elite_density_z_mean,0.055869,-0.726294,0.782163,78,6,descriptive; no selection model or significance test
+source_coverage_mean,3.871795,4.000000,-0.128205,78,6,descriptive; no selection model or significance test
+capacity_bin_low,0.089744,0.000000,0.089744,78,6,descriptive; no selection model or significance test
+capacity_bin_middle,0.064103,0.166667,-0.102564,78,6,descriptive; no selection model or significance test
+capacity_bin_high,0.166667,0.000000,0.166667,78,6,descriptive; no selection model or significance test
+capacity_bin_missing,0.679487,0.833333,-0.153846,78,6,descriptive; no selection model or significance test

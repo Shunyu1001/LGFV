@@ -1,0 +1,14 @@
+experiment_id: EXP-20260830-003
+started_at: 2026-08-30T12:38:48+08:00
+agent: empirical-identification-worktree
+branch: codex/empirical-identification
+base_commit: e178e195704fe6ad6ec353a28081e444995350e7
+trial_commit: null
+python: 3.13.4
+random_seed: not_applicable
+input_identifiers:
+  human_labels: data/processed/human_validated_labels.csv
+  default_surrogate_issuers: data/analysis_inputs/codex_surrogate_issuer_summary_2026_07_03_expanded.csv
+  explicit_surrogate_issuers: data/analysis_inputs/codex_surrogate_issuer_summary_2026_07_03_expanded.csv
+budget: one implementation pass and at most two minimal mechanical retries
+result_direction_used_for_selection: false

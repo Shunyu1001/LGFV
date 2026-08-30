@@ -1,0 +1,22 @@
+Attempt 1
+python3 scripts/audit_empirical_narrative_numbers.py --output experiments/EXP-20260830-004/artifacts/narrative_number_audit.csv --summary experiments/EXP-20260830-004/artifacts/narrative_number_audit.json
+exit: 1
+result: mechanical parse failure because a decimal at sentence end included the terminal period
+
+Mechanical retry 1
+same command
+exit: 0
+result: 25 matches, 3 mismatches, and 5 missing text mappings caused by line-wrapped LaTeX prose
+
+Mechanical retry 2
+same command
+exit: 0
+result: 30 matches, 3 mismatches, 0 missing mappings, and 0 ambiguous mappings
+
+python3 scripts/audit_empirical_narrative_numbers.py --check
+exit: 1
+result: expected strict-check failure for the three traceable manuscript mismatches
+
+python3 -m unittest discover -s scripts/tests -p 'test_audit_empirical_narrative_numbers.py'
+exit: 0
+result: 3 tests passed

@@ -1,0 +1,54 @@
+schema_version: 1
+experiment_id: EXP-20260830-006
+base_commit: e178e195704fe6ad6ec353a28081e444995350e7
+branch: codex/measurement-validation
+input_hash_algorithm: sha256
+inputs:
+  - path: coding/codebook.md
+    sha256: 2a980b77ca7b0cc19761884dbe70590c0e8e7f311224bfdac9684d5c452d1057
+  - path: paper/sections/coding_strategy.tex
+    sha256: b42062951050b57ba47e56528ff5bdd216b2fbc3eb50278cd664cd59fbeba862
+  - path: data/processed/human_validated_labels.csv
+    sha256: 504f2147e742628a64a6ec2cf663a611b096df1d774ab676f3bb34ddbe233f36
+  - path: data/analysis_inputs/llm_screening_sample_2026_07_03_expanded.csv
+    sha256: 504d5e9264adc5db69e54342e6cb848e4757b2f9342a0c4fd25afb4914b809fa
+  - path: data/analysis_inputs/codex_surrogate_issuer_summary_2026_07_03_expanded.csv
+    sha256: cccc43d76418b8d60d78cb177b8f0cddda128a498d2f8513a57c1641d1c05554
+  - path: data/analysis_inputs/codex_surrogate_labels_2026_07_03_expanded.csv
+    sha256: cfced00afd193fa68d95db10888d05069fab27e7c957832d29bf6260ac44dfbe
+  - path: data/analysis_inputs/surrogate_validation_queue_2026_07_03_expanded.csv
+    sha256: a2a09c6dff82a64e825379a82281b4ad126170e9bcbd417dba85e18bdfb36824
+  - path: data/analysis_inputs/validation_batch1_review.csv
+    sha256: 5cfa6cdbb5970ec5f9c43ec856c6e5b6727ca09b39c986a3bf062d1c77c7ab66
+  - path: docs/validation_memo_expanded_surrogate_batch_2026_07_03.md
+    sha256: 410a6fdd16a5ed45a07c752136201fbaa47cd1354e4604dfc26157b7ec1df69e
+  - path: docs/validation_memo_missing_pdf_recovery_2026_07_02.md
+    sha256: 8772a65797b8cbb450a90a58b505e3ef262d2626718a6cd9a213adf128f89e39
+  - path: docs/validation_memo_priority_b_batch_2026_07_02.md
+    sha256: 02a65d722c1e794cdee787c0c195667d674567adc59a85f1d638a17dc5141e97
+  - path: docs/validation_memo_priority_c_batch_2026_07_02.md
+    sha256: a1efa2f7ceb6eaf9ef971bac27c93f6e0b0c86ced081152e8ab2cccd1923ad94
+  - path: docs/validation_memo_remaining_queue_2026_07_02.md
+    sha256: 781ea08a27cf5e7872d27a8e865e9071f916d3f2bc1a30c22838f6f5875fc295
+  - path: docs/validation_memo_surrogate_batch_2026_07_02.md
+    sha256: 500f67ca1198ab34e94ed991b538f9a609131d25939f990a15a23aaec10d6032
+  - path: docs/validation_memo_zhuzhou_luzhou.md
+    sha256: 3f74b12f5dc970a18c296c34690610c597a73935ff2a7c1244b2d27842843b6b
+  - path: docs/surrogate_validation_queue.md
+    sha256: cc716a19166abcb636e071aa541ad63188dc91b255e9c46c3c4b1510b3e09c24
+  - path: docs/codex_surrogate_labeling_report.md
+    sha256: 9083badc6c19094c6aba9ce76ed7dc30eb28068a3eba35562bd4378d5a03dc74
+  - path: docs/surrogate_expansion_no_gold_2026_07_03.md
+    sha256: c32aeac967900abf1c334c58b20b4b52f8f9c9ebb25ff2db1668b23cc38fc591
+planned_outputs:
+  - data/validation/current_measurement_estimands.csv
+  - data/validation/current_measurement_counts.csv
+  - data/validation/validation_design_requirements.csv
+  - docs/measurement_validation/current_estimand_map.md
+  - experiments/EXP-20260830-006/metrics.json
+  - experiments/EXP-20260830-006/assessment.md
+  - experiments/EXP-20260830-006/artifacts/proposed_measurement_validation.tex
+  - experiments/EXP-20260830-006/artifacts/proposed_ledger_rows.tsv
+execution_notes:
+  - The initial GNU-style sha256sum command was unavailable on macOS.
+  - Input hashes were recorded with shasum -a 256 before the audit script ran.

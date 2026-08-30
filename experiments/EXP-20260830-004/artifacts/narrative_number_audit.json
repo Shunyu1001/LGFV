@@ -1,0 +1,14 @@
+{
+  "manuscript": "paper/sections/empirical_strategy.tex",
+  "claims_audited": 33,
+  "match": 30,
+  "mismatch": 3,
+  "missing_text": 0,
+  "ambiguous_text": 0,
+  "mismatch_claim_ids": [
+    "elite_density_effect_pp",
+    "high_capacity_effect_pp",
+    "capacity_rank_effect_pp"
+  ],
+  "selection_by_sign_or_significance": false
+}

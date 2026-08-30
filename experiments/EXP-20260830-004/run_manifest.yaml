@@ -1,0 +1,20 @@
+experiment_id: EXP-20260830-004
+started_at: 2026-08-30T12:43:29+08:00
+agent: empirical-identification-worktree
+branch: codex/empirical-identification
+base_commit: e178e195704fe6ad6ec353a28081e444995350e7
+trial_commit: null
+python: 3.13.4
+random_seed: not_applicable
+input_identifiers:
+  manuscript: paper/sections/empirical_strategy.tex
+  pilot_lpm: data/analysis_inputs/pilot_lpm_institutional_change.csv
+  screening_flow: data/analysis_inputs/surrogate_empirical_flow.csv
+  screening_summary: data/analysis_inputs/llm_screening_summary_2026_07_03_expanded.csv
+  dsl_diagnostics: data/analysis_inputs/dsl_surrogate_diagnostics.csv
+  dsl_adjusted_distribution: data/analysis_inputs/dsl_augmented_outcome_distribution.csv
+  panel_coverage: data/analysis_inputs/empirical_case_panel_coverage.csv
+  validated_exit_distribution: data/analysis_inputs/pilot_exit_type_distribution.csv
+budget: one audit implementation and at most two minimal mechanical retries
+mechanical_retries: 2
+result_direction_used_for_selection: false

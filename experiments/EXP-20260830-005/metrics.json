@@ -1,0 +1,42 @@
+{
+  "matched_gold_observations": 84,
+  "matched_gold_events": 12,
+  "matched_gold_substantive_exits": 2,
+  "matched_gold_functional_transfers": 10,
+  "complete_control_observations": 78,
+  "complete_control_events": 12,
+  "excluded_matched_gold_observations": 6,
+  "excluded_events": 0,
+  "matched_gold_historical_only": {
+    "lpm_probability_effect": 0.06637998,
+    "logit_average_marginal_effect": 0.05384502,
+    "firth_logit_average_marginal_effect": 0.0555409,
+    "leave_one_out_minimum": 0.04847717,
+    "leave_one_out_maximum": 0.08249685,
+    "leave_one_out_sign_changes": 0
+  },
+  "complete_control_historical_only": {
+    "lpm_probability_effect": 0.06182412,
+    "logit_average_marginal_effect": 0.05205768,
+    "firth_logit_average_marginal_effect": 0.05383863,
+    "leave_one_out_minimum": 0.04331015,
+    "leave_one_out_maximum": 0.07816634,
+    "leave_one_out_sign_changes": 0
+  },
+  "complete_control_full_available_controls": {
+    "observed_columns": 9,
+    "matrix_rank": 8,
+    "events_per_observed_column": 1.33333333,
+    "lpm_probability_effect": 0.00541842,
+    "logit_average_marginal_effect": -0.00026434,
+    "firth_logit_average_marginal_effect": 0.0034971,
+    "leave_one_out_minimum": -0.00945049,
+    "leave_one_out_maximum": 0.02300536,
+    "leave_one_out_sign_changes": 9,
+    "exact_alias": "intercept equals district/county dummy plus prefecture/municipal dummy"
+  },
+  "baseline_reproduced_at_pilot_precision": true,
+  "unit_tests_run": 1,
+  "unit_tests_passed": 1,
+  "selection_by_sign_or_significance": false
+}

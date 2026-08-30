@@ -1,0 +1,18 @@
+experiment_id: EXP-20260830-005
+started_at: 2026-08-30T12:50:18+08:00
+agent: empirical-identification-worktree
+branch: codex/empirical-identification
+base_commit: e178e195704fe6ad6ec353a28081e444995350e7
+trial_commit: null
+python: 3.13.4
+random_seed: not_applicable
+input_identifiers:
+  empirical_panel: data/analysis_inputs/empirical_case_panel.csv
+  pilot_lpm_reference: data/analysis_inputs/pilot_lpm_institutional_change.csv
+estimand:
+  outcome: one for substantive exit or functional transfer; zero for nominal exit
+  exposure: standardized Ming-Qing elite density matched to the contemporary prefecture
+  samples: recorded matched-gold and complete-control flags
+budget: one deterministic implementation and run with at most two minimal mechanical retries
+mechanical_retries: 0
+result_direction_used_for_selection: false

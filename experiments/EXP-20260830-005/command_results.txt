@@ -1,0 +1,24 @@
+python3 scripts/build_empirical_identification_diagnostics.py --output-dir experiments/EXP-20260830-005/artifacts
+exit: 0
+result: 84 matched-gold rows and 12 events; 78 complete-control rows and 12 events; pilot LPM coefficient reproduced at displayed precision
+
+python3 -m unittest discover -s scripts/tests -p 'test_empirical_identification_diagnostics.py'
+exit: 0
+result: 1 test passed; two independent temporary runs produced byte-identical artifacts
+
+Read-only alias trace used after the predeclared rank diagnostic identified a deficiency:
+python3 - <<'PY'
+import csv
+from collections import Counter
+from pathlib import Path
+rows=list(csv.DictReader(Path('data/analysis_inputs/empirical_case_panel.csv').open()))
+req=['institutional_change','elite_per_1000_sqkm','gdp_per_capita_value','fiscal_self_sufficiency_value','debt_pressure_value','land_finance_dependence_value']
+rows=[r for r in rows if r.get('include_in_full_controls_regression_sample')=='1' and all(r.get(f,'').strip() for f in req)]
+def d(r,needles):
+    t=r.get('platform_administrative_level','').lower()
+    return int(any(n in t for n in needles))
+patterns=Counter((d(r,{'district','county','development_zone','park'}),d(r,{'prefecture','municipal','city_level'})) for r in rows)
+print(dict(patterns))
+PY
+exit: 0
+result: {(1, 0): 25, (0, 1): 53}; the two exhaustive dummies sum to the intercept

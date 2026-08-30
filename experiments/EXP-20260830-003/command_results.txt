@@ -1,0 +1,25 @@
+python3 -m unittest discover -s scripts/tests -p 'test_build_dsl_surrogate_adjustment.py'
+exit: 0
+result: 1 test passed
+
+python3 scripts/build_dsl_surrogate_adjustment.py
+exit: 0
+human_gold=94
+validation_overlap=61
+raw_precision=1.000
+smoothed_precision=0.992
+wilson_lower=0.941
+nonoverlap_surrogate_issuers=97
+
+python3 scripts/build_dsl_surrogate_adjustment.py --issuers data/analysis_inputs/codex_surrogate_issuer_summary_2026_07_03_expanded.csv
+exit: 0
+human_gold=94
+validation_overlap=61
+raw_precision=1.000
+smoothed_precision=0.992
+wilson_lower=0.941
+nonoverlap_surrogate_issuers=97
+
+git diff --exit-code -- data/analysis_inputs/dsl_surrogate_diagnostics.csv data/analysis_inputs/dsl_augmented_outcome_distribution.csv paper/tables/dsl_surrogate_validation.tex
+exit: 0
+result: no authoritative generated-output diff

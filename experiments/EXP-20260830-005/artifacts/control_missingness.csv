@@ -1,0 +1,9 @@
+control,field,available,missing,matched_gold_rows,missing_share,imputed
+GDP per capita,gdp_per_capita_value,78,6,84,0.071429,False
+Fiscal self-sufficiency,fiscal_self_sufficiency_value,78,6,84,0.071429,False
+Debt pressure,debt_pressure_value,78,6,84,0.071429,False
+Land-finance dependence,land_finance_dependence_value,78,6,84,0.071429,False
+Source coverage,source_coverage_score,84,0,84,0.000000,False
+Platform administrative level,platform_administrative_level,83,1,84,0.011905,False
+Capital or sub-provincial status,capital_or_subprovincial_city,84,0,84,0.000000,False
+Province identifier,province_fixed_effect,84,0,84,0.000000,False

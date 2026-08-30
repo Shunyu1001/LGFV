@@ -1,0 +1,11 @@
+{
+  "experiment_id": "EXP-20260830-010",
+  "status": "keep",
+  "candidate_mechanisms": 3,
+  "mechanisms_with_distinct_positive_rules": 3,
+  "mechanisms_with_distinct_falsifiers": 3,
+  "mechanisms_distinguished_from_contemporary_fiscal_capacity": 3,
+  "historical_mediation_claim_supported": false,
+  "associational_process_interpretation_supported": true,
+  "central_files_changed": false
+}
