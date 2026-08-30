@@ -126,8 +126,8 @@ continued after the event. A high continued-function score does not
 mechanically imply nominal exit because the continued function may be located
 in a successor entity rather than the same issuer.
 
-Table~\ref{tab:pilot_cases} summarizes five illustrative human-validated
-cases. The full label file now contains ninety-four validated labels; this
+Table~\ref{tab:pilot_cases} summarizes five illustrative working-reference
+cases. The full file now contains ninety-four provisional reference labels; this
 table is not an empirical result or an exhaustive case list. Its purpose is to
 show how the same coding rule operates across different documentary patterns.
 
@@ -199,9 +199,9 @@ change from generic compliance language.
 
 The expanded screening file contains 361 disclosure-level candidates. Fifteen
 lack a usable source packet. Among the remaining 346 rows, 94 belong to the
-human-reviewed reference set, 203 receive one-sided LLM surrogate labels for
+working-reference set, 203 receive one-sided LLM surrogate labels for
 nominal exit, 44 contain no directly documented formal exit or compliance
-event, and five are human-reviewed boundary packets. The 203 surrogate rows
+event, and five are source-packet-reviewed boundary cases. The 203 surrogate rows
 correspond to 158 issuers because some platforms issue repeated disclosures.
 Sixty-one of these issuers also appear in the reference set, while 97 do not.
 Rows without a documented formal event remain screening observations rather
@@ -218,9 +218,10 @@ compliance, but it is not a four-category outcome measure.
 
 \subsection{Measurement audit}
 
-The reference file contains 94 cases reviewed by the project author under the
-frozen codebook. It is a reference set for documentary adjudication, not an
-independently double-coded gold standard. The labels comprise two substantive
+The working-reference file contains 94 cases assigned through Codex review of
+the retained source packets on behalf of the project author under the frozen
+codebook. These are provisional gold outcomes for workflow development, not
+human-confirmed or independently double-coded labels. The labels comprise two substantive
 exits, 82 nominal exits, ten functional transfers, and no liquidations. Every
 evidence identifier in the file resolves to a source inventory record.
 Ninety-three cases have complete local copies of all cited documents, all 94
@@ -236,15 +237,16 @@ precision because the overlap was assembled after positive screening rather
 than drawn under known inclusion probabilities. No issuer screened as lacking
 a direct formal event currently overlaps the reference labels. The existing
 data therefore cannot estimate recall, four-category calibration, or the error
-rate among screen-negative cases. No second human coder has yet independently
-labeled a common subset, so the paper does not report an intercoder statistic.
+rate among screen-negative cases. No human coder has yet independently
+confirmed the working labels, so the paper does not report an intercoder
+statistic or human-validation accuracy.
 
 These boundaries also limit the use of surrogate-label estimators. The
 framework developed by \citet{egami2023dsl} treats predicted labels as noisy
 surrogates and uses a probability validation sample with human outcomes to
 adjust downstream estimates. That logic is appropriate for the intended design,
 but the present overlap does not supply the required validation probabilities
-or independent human labels. The paper therefore reports the LLM output as a
+or human-confirmed outcomes. The paper therefore reports the LLM output as a
 screening flow and does not present a doubly robust or validation-adjusted
 effect estimate.
 
@@ -262,17 +264,17 @@ platform role for 46, and all four required identity, geography, owner, and
 role elements for only five. The frame is therefore quarantined. No random
 validation draw has been made.
 
-The repository now contains a blinded 94-case second-coder packet and a
-separate 94-case adjudication template. All coder and adjudication fields are
-blank: no second coding or adjudication has occurred. A candidate packet
+The repository now contains a blinded 94-case human-confirmation packet and a
+separate 94-case adjudication template. All human and adjudication fields are
+blank: no independent human confirmation or adjudication has occurred. A candidate packet
 contains four issuers that pass the current geography and provisional-scope
 gates, far too few to implement the proposed allocation.
 
 Once scope verification is complete, the draw will combine a probability
 sample from the full frame with prespecified oversampling of low historical-
 capacity and high-debt localities. Inclusion probabilities will be retained for
-design-based analysis. A second human coder, blinded to the LLM output and the
-first reviewer's decision, will independently apply the frozen codebook to the
+design-based analysis. A human coder, blinded to the LLM output and the working
+reference decision, will independently apply the frozen codebook to the
 drawn packets. The analysis will then report four-category agreement, binary
 agreement for substantive versus non-substantive outcomes, disagreement types,
 and adjudicated labels. Only after these steps can the project estimate

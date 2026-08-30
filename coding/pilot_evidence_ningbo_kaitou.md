@@ -4,7 +4,7 @@
 
 - Case ID: `pilot_zj_002`
 - Company: Ningbo Development Investment Group Co., Ltd. (`宁波开发投资集团有限公司`)
-- Status: human-validated pilot label
+- Status: working-reference pilot label
 - Final coding implication: `substantive_exit`
 - Confidence: medium
 - Main source page: Shanghai Clearing House, `宁波开发投资集团有限公司2026年度第四期中期票据发行文件`, 2026-06-10

@@ -3,7 +3,7 @@
 Date: 2026-07-02
 
 This memo records the first promotion batch from the Codex surrogate validation
-queue into the human gold-standard label file. The review rule was conservative:
+queue into the working-reference label file. The review rule was conservative:
 a case was promoted only when the source packet contained both formal
 no-government-financing or exit language and post-event evidence that public
 project, land-development, infrastructure, fiscal-support, or state-asset
@@ -31,7 +31,7 @@ greater confidence.
 
 ## Dataset Effect
 
-The batch raises the human gold-standard file from 62 to 68 cases. All six
+The batch raises the working-reference file from 62 to 68 cases. All six
 promoted rows are coded as `nominal_exit`. The candidate seed pool now contains
-68 gold-standard rows, 187 pending rows, and 2 boundary-reviewed rows. The
+68 working-reference rows, 187 pending rows, and 2 boundary-reviewed rows. The
 surrogate validation queue falls from 27 to 21 non-overlap issuers.

@@ -4,7 +4,7 @@
 
 - Case ID: `pilot_gd_001_alt_metro`
 - Company: Guangzhou Metro Group Co., Ltd. (`广州地铁集团有限公司`)
-- Current status: human-validated gold label
+- Current status: working-reference gold label
 - Final label: `nominal_exit`
 - Confidence: medium
 - Main source page: Shanghai Clearing House, `广州地铁集团有限公司2025年度第一期中期票据发行文件(更新)`, 2025-05-23
@@ -73,7 +73,7 @@ case for human review. The base prospectus contains direct compliance language:
 after consultation with the Guangzhou Finance Bureau, it states that the
 issuance will not create hidden local-government debt and that the company does
 not undertake government financing functions after January 1, 2015. This is
-sufficient for a gold-standard coding event under the current protocol, although
+sufficient for a working-reference coding event under the current protocol, although
 the event is still issuer-disclosed rather than a separately collected
 platform-list transfer-out notice.
 

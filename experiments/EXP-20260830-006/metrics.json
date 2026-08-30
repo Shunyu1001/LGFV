@@ -4,7 +4,7 @@
   "experiment_id": "EXP-20260830-006",
   "gold": {
     "cases": 94,
-    "codex_assisted_reviewer_rows": 90,
+    "codex_assisted_reviewer_rows": 94,
     "independently_double_coded_cases_documented": 0,
     "label_counts": {
       "functional_transfer": 10,

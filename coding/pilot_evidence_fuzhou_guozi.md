@@ -5,7 +5,7 @@
 - Case ID: `expand_fj_fuzhou_guozi`
 - Company: Fuzhou State Capital Investment and Operation Group Co., Ltd.
   (`福州国有资本投资运营集团有限公司`)
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `functional_transfer`
 - Confidence: medium
 - Main source page: Shanghai Clearing House,

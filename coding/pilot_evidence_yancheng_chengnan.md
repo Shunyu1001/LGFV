@@ -5,7 +5,7 @@
 - Case ID: `expand_js_yancheng_chengnan`
 - Company: Yancheng Chengnan New District Development and Construction
   Investment Co., Ltd. (`盐城市城南新区开发建设投资有限公司`)
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `nominal_exit`
 - Confidence: medium
 - Main source page: Shanghai Clearing House,

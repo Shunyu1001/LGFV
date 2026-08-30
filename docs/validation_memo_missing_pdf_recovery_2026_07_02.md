@@ -8,11 +8,11 @@ This memo records the source-packet recovery pass used to expand the Codex surro
 
 The recovery pass downloaded 338 additional local PDFs from candidate document URLs, then reran text extraction for key documents in the pending seed pool. After updating the source inventory, the local corpus contained 1,508 raw PDF files and 1,396 extracted text files. Among the 164 pending seed rows, 146 now have usable extracted text, one has a local PDF but no usable extracted text, and seventeen still lack a usable source packet.
 
-The expanded screening pass increased the Codex surrogate-label file from 52 to 86 nominal-exit disclosure labels before human promotion. After two Priority A issuers were promoted into the gold-standard label file, the active surrogate pool contains 84 medium-confidence nominal-exit disclosure labels and 80 unresolved candidates. The 84 surrogate labels correspond to 64 unique issuers. Thirty-seven issuers overlap with already validated gold-standard platforms, while twenty-seven non-overlap issuers remain in the human-validation queue.
+The expanded screening pass increased the Codex surrogate-label file from 52 to 86 nominal-exit disclosure labels before human promotion. After two Priority A issuers were promoted into the working-reference label file, the active surrogate pool contains 84 medium-confidence nominal-exit disclosure labels and 80 unresolved candidates. The 84 surrogate labels correspond to 64 unique issuers. Thirty-seven issuers overlap with already validated working-reference platforms, while twenty-seven non-overlap issuers remain in the human-validation queue.
 
 ## Priority A promotions
 
-Two Priority A non-overlap issuers were reviewed against the extracted original source text and promoted into the human-validated gold-standard file.
+Two Priority A non-overlap issuers were reviewed against the extracted original source text and promoted into the working-reference file.
 
 | Case ID | Issuer | City | Final label | Evidence basis |
 |---|---|---|---|---|
@@ -23,4 +23,4 @@ Both cases are coded as nominal exit because formal no-government-financing lang
 
 ## Current queue
 
-After the promotions, the non-overlap validation queue contains twenty-seven issuers: nine Priority B cases and eighteen Priority C cases. These rows are not gold-standard labels. The next validation batch should begin with the Priority B issuers because they combine usable source text with stronger issuer-level evidence and do not duplicate an existing gold-standard platform.
+After the promotions, the non-overlap validation queue contains twenty-seven issuers: nine Priority B cases and eighteen Priority C cases. These rows are not working-reference labels. The next validation batch should begin with the Priority B issuers because they combine usable source text with stronger issuer-level evidence and do not duplicate an existing working-reference platform.

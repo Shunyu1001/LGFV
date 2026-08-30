@@ -5,7 +5,7 @@
 - Case ID: `expand_tj_jinghai_chengtou`
 - Company: Tianjin Jinghai Urban Infrastructure Construction Investment Group
   Co., Ltd. (`天津市静海城市基础设施建设投资集团有限公司`)
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `nominal_exit`
 - Confidence: high
 - Main source page: Shanghai Clearing House,

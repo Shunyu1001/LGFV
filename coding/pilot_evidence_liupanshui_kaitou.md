@@ -6,14 +6,14 @@
 - Province: Guizhou
 - City: Liupanshui
 - Company: 六盘水市开发投资有限公司
-- Current coding status: candidate evidence packet, not yet human-validated
+- Current coding status: candidate evidence packet, not yet working-reference
 - Provisional interpretation: weak-capacity debt-continuity case, pending a direct formal exit or no-government-financing source
 
 ## Why This Case Matters
 
 Liupanshui Kaitou extends the Guizhou weak-capacity evidence beyond Zunyi. The case is useful because the available documents show a municipal platform whose public-project role continued over time while the surrounding fiscal and credit environment weakened. This makes the case valuable for the paper even before a final exit-type label is assigned.
 
-The current evidence does not yet contain direct formal exit language. For this reason, the case should not be entered into `data/processed/human_validated_labels.csv`. It should instead be used to test whether the codebook can handle cases where the documentary record emphasizes infrastructure obligations, fiscal dependence, rating pressure, and debt rollover stress rather than clean exit or transformation language.
+The current evidence does not yet contain direct formal exit language. For this reason, the case should not be entered into `data/processed/working_reference_labels.csv`. It should instead be used to test whether the codebook can handle cases where the documentary record emphasizes infrastructure obligations, fiscal dependence, rating pressure, and debt rollover stress rather than clean exit or transformation language.
 
 ## Source Set
 

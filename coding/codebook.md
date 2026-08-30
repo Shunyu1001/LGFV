@@ -57,7 +57,7 @@ Exclude a case from final labeling when any of the following applies:
   dates, issuer scope, related-entity structure, or source hierarchy.
 
 Cases that fail the final-label threshold can still be retained as candidate,
-boundary, or source-only cases. They should not enter the human-validated label
+boundary, or source-only cases. They should not enter the working reference label
 file.
 
 ## 4. Source Hierarchy
@@ -307,7 +307,7 @@ Low:
 - Formal event or post-event function is missing.
 - Documents conflict in a way that cannot be fully reconciled.
 
-Only high and medium confidence cases should enter the human-validated label
+Only high and medium confidence cases should enter the working reference label
 file. Low confidence cases should be retained as candidates or unclear cases.
 
 ### 8.2 Source Coverage Score
@@ -388,10 +388,21 @@ Assign labels in the following order:
 8. Mark the case as unclear if the formal event or post-event function cannot
    be established.
 
-## 10. Human Validation
+## 10. Label Provenance and Human Confirmation
 
-LLM labels are preliminary. The final label is assigned only after human
-review of the original source packet.
+The project maintains three distinct label roles. Working reference labels are
+assigned through case-by-case Codex review of the retained source packet on
+behalf of the project author. They may serve as provisional gold outcomes for
+workflow development and exploratory analysis, but their status remains
+pending human confirmation. LLM surrogate labels are generated through a
+separate high-throughput screening procedure and remain noisy one-sided
+predictions. Human-confirmed gold labels require an independent researcher to
+inspect the original packet and freeze a decision before adjudication.
+
+A second Codex pass may be used as a blinded model-audit label. It is not an
+independent human label and cannot establish intercoder reliability. The
+project must retain the producer, procedure, source packet, timestamp, and
+confirmation status for every label.
 
 Each final case record should include:
 
@@ -406,10 +417,10 @@ Each final case record should include:
 - Continued-function evidence score
 - Primary source and line references where available
 - Secondary source and line references where available
-- Human rationale
+- Reviewer rationale
 - Remaining caveat
 
-Human validators should check whether the LLM confused legal compliance
+Human validators should check whether either AI procedure confused legal compliance
 language with functional change, ignored related entities, treated project
 management as financing without evidence, or inferred exit from city wealth or
 administrative rank.

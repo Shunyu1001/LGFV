@@ -1,10 +1,10 @@
 # Source reconstruction audit
 
-This audit tests whether the evidence references recorded for each human-validated case resolve against the tracked inventories and whether the cited documents can be recovered from local files or stable URLs. It does not revalidate substantive labels.
+This audit tests whether the evidence references recorded for each working-reference case resolve against the tracked inventories and whether the cited documents can be recovered from local files or stable URLs. It does not revalidate substantive labels.
 
 ## Results
 
-- Human-validated cases: 94.
+- Working-reference cases: 94.
 - Cases with all document and source identifiers resolved: 94.
 - Cases with every cited evidence document stored locally: 93.
 - Cases with at least one cited evidence document stored locally: 93.

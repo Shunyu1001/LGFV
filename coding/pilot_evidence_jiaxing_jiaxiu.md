@@ -87,4 +87,4 @@ prefecture-level urban construction company. The formal event is based on
 prospectus and legal-opinion compliance language rather than an independently
 collected administrative platform-list exit notice. The same issuer also has
 two earlier June 2026 disclosure packets with consistent language; these are
-treated as repeated disclosures rather than separate gold-standard cases.
+treated as repeated disclosures rather than separate working-reference cases.

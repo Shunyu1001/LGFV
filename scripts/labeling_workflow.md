@@ -1,7 +1,7 @@
 # Labeling Workflow
 
 This workflow describes how to expand the validated sample from the current
-pilot to a 50-case human-validated dataset. The authoritative coding rules are
+pilot to a 50-case working-reference dataset. The authoritative coding rules are
 in `coding/codebook.md`. The source-search procedure is in
 `coding/source_search_protocol.md`. The LLM prompt for preliminary coding is in
 `coding/llm_labeling_prompt.md`.
@@ -76,7 +76,7 @@ evidence score, alternative label, and missing information.
 Human validation is a document review, not an agreement check. The reviewer
 should inspect the original or near-original sources and decide whether the
 case satisfies the minimum packet. If it does, enter the final label in
-`data/processed/human_validated_labels.csv`. If it does not, keep the case in
+`data/processed/working_reference_labels.csv`. If it does not, keep the case in
 `data/analysis_inputs/master_case_pool.csv` as `not_validated`,
 `source_started`, or `llm_candidate_ready`.
 
@@ -92,10 +92,10 @@ evidence document IDs, supplementary source IDs, and evidence-line syntax.
 ## Step 6: Reliability checks
 
 For the paper, report several checks once the sample reaches at least 50
-human-validated cases:
+working-reference cases:
 
 1. model agreement before human review;
-2. accuracy of LLM preliminary labels in a human-reviewed random sample;
+2. accuracy of LLM preliminary labels in a working-reference random sample;
 3. inter-coder agreement when a second human coder is available;
 4. sensitivity to excluding low-confidence cases;
 5. sensitivity to source coverage score; and
@@ -104,6 +104,6 @@ human-validated cases:
 ## Step 7: Analysis dataset
 
 After enough final labels are validated, derive the analysis dataset from
-`data/processed/human_validated_labels.csv` and merge it with historical
+`data/processed/working_reference_labels.csv` and merge it with historical
 capacity, debt pressure, land finance dependence, province fixed effects, and
 other covariates from `data/analysis_inputs/master_case_pool.csv`.

@@ -5,7 +5,7 @@
 - Case ID: `pilot_js_002`
 - Company: Suzhou City Construction Investment Development Group Co., Ltd.
   (`苏州城市建设投资发展（集团）有限公司`)
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `nominal_exit`
 - Confidence: medium
 - Main source page: Shanghai Clearing House,

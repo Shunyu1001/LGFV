@@ -8,11 +8,11 @@ Status: `boundary_reviewed`
 
 Review date: 2026-07-02
 
-Coding implication: not a gold-standard city-platform LGFV exit label
+Coding implication: not a working-reference city-platform LGFV exit label
 
 ## Boundary reason
 
-This packet is useful for the paper but should not enter the gold-standard
+This packet is useful for the paper but should not enter the working-reference
 city-platform label file. Zhejiang Provincial Communications Investment Group
 is a province-level transportation SOE, not a municipal LGFV or city platform
 in the current sampling frame. The documents contain strong evidence of
@@ -66,6 +66,6 @@ showing that not every subsidized infrastructure SOE with no-hidden-debt
 language is an LGFV exit case.
 
 The 2026-07-02 review keeps both `sch_20260630_0083` and the repeated
-`sch_20260630_0093` disclosure out of the gold-standard label file. The
+`sch_20260630_0093` disclosure out of the working-reference label file. The
 surrogate queue is therefore closed for this issuer without adding a new
 city-platform observation.

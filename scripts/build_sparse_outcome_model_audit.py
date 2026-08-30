@@ -127,7 +127,7 @@ def historical_design(rows: list[dict[str, str]]) -> Design:
     )
     return Design(
         design_id="matched_gold_historical",
-        sample_label="84 matched human-reviewed cases",
+        sample_label="84 matched working-reference cases",
         rows=rows,
         y=y,
         x=np.column_stack([np.ones(len(rows)), elite]),
@@ -159,7 +159,7 @@ def corrected_adjusted_design(rows: list[dict[str, str]]) -> Design:
     names.append("Prefecture/municipal platform")
     return Design(
         design_id="complete_control_adjusted",
-        sample_label="78 complete-control human-reviewed cases",
+        sample_label="78 complete-control working-reference cases",
         rows=rows,
         y=y,
         x=np.column_stack(columns),

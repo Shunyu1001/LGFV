@@ -17,7 +17,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-HUMAN_LABELS = ROOT / "data" / "processed" / "human_validated_labels.csv"
+HUMAN_LABELS = ROOT / "data" / "processed" / "working_reference_labels.csv"
 SURROGATE_ISSUERS = (
     ROOT
     / "data"
@@ -116,17 +116,17 @@ def main() -> None:
         {
             "quantity": "human_gold_labels",
             "value": str(len(human)),
-            "description": "Human-validated gold-standard labels.",
+            "description": "Codex source-packet working reference labels pending human confirmation.",
         },
         {
             "quantity": "human_gold_nominal_exit",
             "value": str(nominal_gold),
-            "description": "Gold-standard nominal-exit labels.",
+            "description": "Working-reference nominal-exit labels.",
         },
         {
             "quantity": "human_gold_institutional_change",
             "value": str(institutional_change),
-            "description": "Gold-standard substantive-exit plus functional-transfer labels.",
+            "description": "Working-reference substantive-exit plus functional-transfer labels.",
         },
         {
             "quantity": "surrogate_unique_issuers",
@@ -136,12 +136,12 @@ def main() -> None:
         {
             "quantity": "surrogate_gold_overlap_issuers",
             "value": str(validation_trials),
-            "description": "Surrogate issuers already matched to gold-standard validated cases.",
+            "description": "Surrogate issuers already matched to working reference cases.",
         },
         {
             "quantity": "surrogate_overlap_nominal_matches",
             "value": str(validation_successes),
-            "description": "Overlap issuers where surrogate nominal exit matches the gold label.",
+            "description": "Overlap issuers where the surrogate procedure matches the working reference label.",
         },
         {
             "quantity": "raw_nominal_precision",
@@ -161,22 +161,22 @@ def main() -> None:
         {
             "quantity": "nonoverlap_surrogate_issuers",
             "value": str(nonoverlap_issuers),
-            "description": "Surrogate issuers not yet in the gold-standard file.",
+            "description": "Surrogate issuers not yet in the working-reference file.",
         },
     ]
     write_csv(args.diagnostics, ["quantity", "value", "description"], diagnostics)
 
     augmented_rows = [
         {
-            "sample": "Gold standard only",
+            "sample": "Working reference only",
             "observations": f"{len(human):.0f}",
             "nominal_exit": f"{nominal_gold:.2f}",
             "institutional_change_or_error": f"{institutional_change:.2f}",
             "nominal_share": f"{nominal_gold / len(human):.3f}",
-            "note": "Observed human labels.",
+            "note": "Provisional working reference labels pending human confirmation.",
         },
         {
-            "sample": "Gold plus non-overlap surrogates, smoothed",
+            "sample": "Working reference plus non-overlap surrogates, smoothed diagnostic",
             "observations": f"{len(human) + nonoverlap_issuers:.0f}",
             "nominal_exit": f"{nominal_gold + expected_nominal_surrogate:.2f}",
             "institutional_change_or_error": f"{institutional_change + expected_error_surrogate:.2f}",
@@ -219,10 +219,10 @@ def main() -> None:
         handle.write("Quantity & Count & Rate & Adjusted count \\\\\n")
         handle.write("\\midrule\n")
         handle.write(
-            f"Gold-standard labels & {len(human)} &  &  \\\\\n"
-            f"Gold nominal exits & {nominal_gold} & {nominal_gold / len(human):.3f} &  \\\\\n"
-            f"Gold institutional change & {institutional_change} & {institutional_change / len(human):.3f} &  \\\\\n"
-            f"Surrogate issuers with gold overlap & {validation_trials} &  &  \\\\\n"
+            f"Working-reference labels & {len(human)} &  &  \\\\\n"
+            f"Working-reference nominal exits & {nominal_gold} & {nominal_gold / len(human):.3f} &  \\\\\n"
+            f"Working-reference institutional change & {institutional_change} & {institutional_change / len(human):.3f} &  \\\\\n"
+            f"Surrogate issuers with reference overlap & {validation_trials} &  &  \\\\\n"
             f"Nominal matches in overlap & {validation_successes} & {raw_precision:.3f} &  \\\\\n"
             f"Non-overlap surrogate issuers & {nonoverlap_issuers} &  &  \\\\\n"
             f"Smoothed expected nominal among non-overlap & {nonoverlap_issuers} & {smoothed_precision:.3f} & {expected_nominal_surrogate:.2f} \\\\\n"
@@ -233,12 +233,13 @@ def main() -> None:
         handle.write(
             "\\begin{minipage}{0.94\\linewidth}\n"
             "\\vspace{0.5em}\\footnotesize Notes: The validation sample consists of issuer-level "
-            "Codex surrogate nominal-exit labels that overlap with independently human-validated "
-            "gold-standard cases. The raw precision is the share of overlap issuers for which a "
-            "surrogate nominal-exit label matches the gold-standard label. The smoothed rate uses "
+            "Codex surrogate nominal-exit labels that overlap with Codex source-packet "
+            "working-reference cases. The raw concordance is the share of overlap issuers for which a "
+            "surrogate nominal-exit label matches the working-reference label. The smoothed rate uses "
             "a Jeffreys correction, $(x+0.5)/(n+1)$, and the conservative rate is the Wilson "
-            "95 percent lower bound. This table validates the current surrogate rule as a "
-            "high-precision nominal-exit screen. It does not treat unresolved rows as negative "
+            "95 percent lower bound. Because both label layers are AI-produced and the overlap is "
+            "selected, these quantities are diagnostics rather than population precision or "
+            "validation-adjusted estimates. The table does not treat unresolved rows as negative "
             "outcomes or use raw surrogate labels as final labels.\n"
             "\\end{minipage}\n"
         )

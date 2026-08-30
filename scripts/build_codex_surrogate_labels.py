@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Build Codex surrogate labels for the LLM candidate pool.
 
-The output is a screening artifact, not a human-validated label file. It keeps
-gold-standard human labels separate from Codex-generated surrogate labels and
+The output is a screening artifact, not a working-reference label file. It keeps
+source-packet working reference labels separate from Codex-generated surrogate labels and
 marks cases without usable source packets as unresolved.
 """
 
@@ -18,7 +18,7 @@ from datetime import date
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DEFAULT_SEED = ROOT / "data" / "analysis_inputs" / "llm_candidate_pool_seed_2026_06_30.csv"
 DEFAULT_MASTER = ROOT / "data" / "analysis_inputs" / "master_case_pool.csv"
-DEFAULT_HUMAN = ROOT / "data" / "processed" / "human_validated_labels.csv"
+DEFAULT_HUMAN = ROOT / "data" / "processed" / "working_reference_labels.csv"
 DEFAULT_DOCS = ROOT / "data" / "document_inventory.csv"
 DEFAULT_SOURCES = ROOT / "data" / "source_inventory.csv"
 DEFAULT_OUTPUT = ROOT / "data" / "analysis_inputs" / f"codex_surrogate_labels_{date.today():%Y_%m_%d}.csv"
@@ -273,7 +273,7 @@ def boundary_row(seed_row: dict[str, str]) -> dict[str, str]:
     rationale = (
         note
         or "Human review retained this source packet as boundary evidence but excluded it from "
-        "the current gold-standard exit-case scope."
+        "the current working-reference exit-case scope."
     )
     return {
         "pool_id": seed_row["pool_id"],
@@ -407,7 +407,7 @@ def surrogate_row(
         "source_coverage_score": coverage,
         "continued_function_evidence_score": function_score,
         "alternative_label": alt,
-        "missing_information": "Requires human validation against original PDF line references before entering the gold-standard label file.",
+        "missing_information": "Requires full source-packet review before entering the working-reference file; any resulting label still awaits independent human confirmation.",
         "classification_rationale": (
             "Codex applied the frozen codebook to collected source text and notes. "
             f"Formal event found={formal}; continued function found={continued}; transfer signal={transfer}; liquidation signal={liquidation}."

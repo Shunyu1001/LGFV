@@ -103,4 +103,4 @@ is now a validated `nominal_exit` case because it has both a formal exit event
 and evidence of continuing public-project functions. Luzhou is analytically
 important but still needs a formal-exit source. In the next source-collection
 round, Luzhou should receive targeted source search before it enters the final
-human-validated label table.
+working-reference label table.

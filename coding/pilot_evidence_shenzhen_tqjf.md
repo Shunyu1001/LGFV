@@ -154,7 +154,7 @@ Relevant extracted-text locations:
 ## Coding Implication
 
 This case should remain a boundary evidence packet rather than a final
-human-validated label.
+working-reference label.
 
 The strongest current interpretation is
 `formal_fiscal_substitution_boundary_candidate`. The issuer looks very

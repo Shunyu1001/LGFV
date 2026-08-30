@@ -16,7 +16,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 PILOT_CASES = ROOT / "data" / "analysis_inputs" / "pilot_case_historical_capacity.csv"
-LABELS = ROOT / "data" / "processed" / "human_validated_labels.csv"
+LABELS = ROOT / "data" / "processed" / "working_reference_labels.csv"
 OUT_MODEL_CSV = ROOT / "data" / "analysis_inputs" / "pilot_lpm_institutional_change.csv"
 OUT_MODEL_TEX = ROOT / "paper" / "tables" / "pilot_lpm_institutional_change.tex"
 OUT_BIN_FIG = ROOT / "paper" / "figures" / "pilot_exit_type_by_capacity_bin.png"
@@ -247,7 +247,7 @@ def write_model_outputs(specs: list[dict[str, object]]) -> None:
             "\\begin{minipage}{0.94\\linewidth}\n"
             "\\vspace{0.5em}\\footnotesize Notes: The dependent variable equals one for "
             "substantive exit or functional transfer and zero for nominal exit. "
-            f"The table uses the {matched_total} human-validated cases currently matched to "
+            f"The table uses the {matched_total} working-reference cases currently matched to "
             "the CBDB-GADM historical-capacity measure. Coefficients are linear "
             "probability models with HC1 robust standard errors in parentheses. "
             "These estimates are validated-sample descriptive associations rather than "

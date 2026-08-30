@@ -11,12 +11,12 @@ is still missing for each case.
 The matrix is stored in
 `data/analysis_inputs/pilot_coding_matrix.csv`. It should be read together with
 the case evidence packets in `coding/`, the codebook in `coding/codebook.md`,
-and the human-validated labels in `data/processed/human_validated_labels.csv`.
+and the working-reference labels in `data/processed/working_reference_labels.csv`.
 
 ## Validation tiers
 
 The current rows fall into four tiers. First, `human_validated` rows already
-have a reviewed label in `data/processed/human_validated_labels.csv`. These
+have a reviewed label in `data/processed/working_reference_labels.csv`. These
 cases can be used to illustrate the coding scheme and to test whether the
 categories are operational. Second, `strong_candidate` rows have enough primary
 or near-primary material to make a provisional classification, but still need
@@ -56,7 +56,7 @@ The matrix should be used in three ways. First, it provides a compact case map
 for the paper's empirical-design section. It shows that the pilot contains
 variation in historical capacity, document quality, and exit-type candidates.
 Second, it identifies the next validation targets. The June 28 expansion
-promoted seven additional cases into the human-validated file: Ningbo, Wenzhou,
+promoted seven additional cases into the working-reference file: Ningbo, Wenzhou,
 Xuzhou, Hengyang, Jinan, Yancheng, and Foshan. Luzhou remains the most useful
 low-capacity promotion target because it has strong evidence of functional
 persistence but still lacks direct formal-exit evidence. Third, it separates

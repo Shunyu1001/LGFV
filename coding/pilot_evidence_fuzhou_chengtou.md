@@ -5,7 +5,7 @@
 - Case ID: `expand_fj_fuzhou_chengtou`
 - Company: Fuzhou City Construction Investment Group Co., Ltd.
   (`福州城市建设投资集团有限公司`)
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `functional_transfer`
 - Confidence: medium
 - Main source page: Shanghai Clearing House,

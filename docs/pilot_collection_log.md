@@ -187,7 +187,7 @@ public backing. Because it is a media source, it should not replace disclosure
 documents for final coding, but it is useful external corroboration of the
 functional interpretation.
 
-The Xi'an Hi-tech case is now strong enough to use as the first human-validated
+The Xi'an Hi-tech case is now strong enough to use as the first working-reference
 `nominal_exit` pilot, while recording that the official exit event is supported
 by issuer disclosures and still lacks a directly retrieved government exit-list
 document.
@@ -220,7 +220,7 @@ government-repayment-responsibility debt and included in the 2018 fiscal budget
 for replacement.
 
 Based on these old and current sources, Guangzhou City Construction Investment
-Group has been entered into `data/processed/human_validated_labels.csv` as a
+Group has been entered into `data/processed/working_reference_labels.csv` as a
 medium-confidence `substantive_exit` case. It is especially useful as a contrast
 with Xi'an Hi-tech because it tests whether the codebook can distinguish
 continuing budgetary public-project management from continuing off-budget
@@ -242,7 +242,7 @@ Group's existing corporate bonds, enterprise bonds, and private-placement
 instruments. Third, Hangzhou Anju Group was created as the citywide
 housing-security investment, construction, and operation platform.
 
-This case has been entered into `data/processed/human_validated_labels.csv` as a
+This case has been entered into `data/processed/working_reference_labels.csv` as a
 medium-confidence `functional_transfer` case. More precisely, it is a
 functional-consolidation case within the functional-transfer family: the
 public-project and debt functions did not disappear, but were reorganized into a
@@ -275,14 +275,14 @@ debt-resolution pilot enterprises. The 2023 attention notice then reports a RMB
 post-restructuring maturity profile and continued reliance on provincial,
 municipal, and financial-institution support.
 
-This is not yet a human-validated exit-type case. The current evidence is
+This is not yet a working-reference exit-type case. The current evidence is
 strong for baseline platform function, continuing public-project function, and
 debt-continuity pressure, but it does not yet contain a direct formal-exit or
 no-government-financing statement. The case has therefore been recorded as
 `pilot_gz_002` with a separate evidence packet in
 `coding/pilot_evidence_zunyi_daoqiao.md`. It should be used as a candidate weak
 capacity case and should not be added to
-`data/processed/human_validated_labels.csv` until a direct exit or compliance
+`data/processed/working_reference_labels.csv` until a direct exit or compliance
 source is collected.
 
 ## 2026-06-22, Liupanshui weak-capacity candidate
@@ -311,7 +311,7 @@ construction, continued to undertake roads, environmental governance, water
 projects, sewage-treatment projects, and shantytown redevelopment, and still
 received asset injections and fiscal subsidies.
 
-This case is not yet a human-validated exit-type case. Like Zunyi, it is strong
+This case is not yet a working-reference exit-type case. Like Zunyi, it is strong
 for baseline platform function, continued public-project function, weak fiscal
 self-sufficiency, and debt pressure, but it lacks direct formal-exit or
 no-government-financing language. The case has therefore been recorded as
@@ -399,7 +399,7 @@ are finalized.
 ## 2026-06-22, pilot historical-capacity validation table and figure
 
 The first paper-facing historical-capacity artifact has been added. The script
-`scripts/build_pilot_capacity_summary.py` combines the four human-validated
+`scripts/build_pilot_capacity_summary.py` combines the four working-reference
 pilot labels with the two Guizhou weak-capacity candidate cases, then matches
 them to `data/analysis_inputs/cbdb_mingqing_elite_gadm_prefecture_counts.csv`.
 It writes a case-level summary file, an auto-generated LaTeX table, and a PNG
@@ -464,7 +464,7 @@ machine-readable text with the current extractor.
 
 The evidence packet is stored at
 `coding/pilot_evidence_suzhou_chengtou.md`. The case should remain a candidate
-rather than a final human-validated label. The current interpretation is
+rather than a final working-reference label. The current interpretation is
 `substantive_exit_or_functional_transfer`: the documents contain strong
 no-government-financing and no-new-hidden-debt compliance language, but they
 also describe a transformation from an earlier investment-financing platform
@@ -493,7 +493,7 @@ and should be treated as not usable without OCR.
 
 The evidence packet is stored at
 `coding/pilot_evidence_nanjing_metro.md`. This case should remain a candidate
-rather than a final human-validated label. The current interpretation is
+rather than a final working-reference label. The current interpretation is
 `formal_fiscal_substitution_candidate`: the documents show an ongoing
 rail-transit infrastructure SOE with explicit municipal fiscal support, project
 capital, subsidies, PPP arrangements, and corporate-debt disclosure, while also
@@ -523,7 +523,7 @@ current extractor.
 
 The evidence packet is stored at
 `coding/pilot_evidence_qingdao_chengtou.md`. This case should remain a candidate
-rather than a final human-validated label. The current interpretation is
+rather than a final working-reference label. The current interpretation is
 `formal_fiscal_substitution_or_functional_transfer_candidate`: the prospectus
 states that the issuer does not undertake government financing functions and
 that new debt after January 1, 2015 is not local government debt, but it also
@@ -555,7 +555,7 @@ extractor.
 
 The evidence packet is stored at
 `coding/pilot_evidence_zhuzhou_guotou.md`. This case should remain a candidate
-rather than a final human-validated label. The current interpretation is
+rather than a final working-reference label. The current interpretation is
 `nominal_exit_or_functional_transfer_candidate`: the prospectus explicitly says
 the issuer exited the government financing platform list in March 2013 and
 does not currently undertake government financing functions, but it also
@@ -591,7 +591,7 @@ the legal opinion produced only 21 characters.
 
 The evidence packet is stored at
 `coding/pilot_evidence_shenzhen_tqjf.md`. This case should remain a boundary
-case rather than a final human-validated label. The current interpretation is
+case rather than a final working-reference label. The current interpretation is
 `formal_fiscal_substitution_boundary_candidate`: the issuer operates as a
 municipal state-owned platform-like company with infrastructure, technology
 park, transport, marine-development, PPP, government assistance, and fiscal
@@ -674,7 +674,7 @@ project subsidies. The 2018 rating report further calls Xinglu Luzhou's largest
 platform company and records support through asset injections and fiscal
 subsidies.
 
-This does not convert the case into a final human-validated label, because no
+This does not convert the case into a final working-reference label, because no
 direct exit-list source has been found. It does make the preliminary
 interpretation stronger: the formal no-government-financing language and the
 continuing platform-like project-finance role coexist across time, not only in
@@ -765,4 +765,4 @@ receivables because the company performed the financing function, and that the
 company continued to receive government support. None of the new documents
 contains direct `退出融资平台` or `退出平台名单` language. Luzhou should therefore
 remain a strong `nominal_exit_or_functional_persistence` candidate rather than
-a final human-validated label.
+a final working-reference label.

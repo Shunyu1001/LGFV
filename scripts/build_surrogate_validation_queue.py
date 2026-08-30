@@ -143,7 +143,7 @@ def main() -> int:
                 "usable_text_count": str(usable),
                 "formal_event_example": selected.get("formal_event_summary", ""),
                 "continued_function_example": selected.get("continued_function_summary", ""),
-                "review_task": "Check original PDFs and extracted text; decide whether to promote to gold-standard label, mark as duplicate, or reject as boundary/non-LGFV.",
+                "review_task": "Check original PDFs and extracted text; decide whether to promote to working-reference label, mark as duplicate, or reject as boundary/non-LGFV.",
                 "gold_standard_overlap": issuer_row.get("gold_standard_overlap", ""),
                 "gold_case_id": issuer_row.get("gold_case_id", ""),
                 "validation_status": "queued_for_human_review",

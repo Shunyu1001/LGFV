@@ -130,7 +130,7 @@ def signal_strength(issuer: str) -> tuple[str, str]:
 
 
 def known_names() -> tuple[set[str], set[str]]:
-    validated = {compact(row.get("company_name", "")) for row in read_csv(ROOT / "data" / "processed" / "human_validated_labels.csv")}
+    validated = {compact(row.get("company_name", "")) for row in read_csv(ROOT / "data" / "processed" / "working_reference_labels.csv")}
     master = {
         compact(row.get("company_name", "") or row.get("platform", ""))
         for row in read_csv(ROOT / "data" / "analysis_inputs" / "master_case_pool.csv")

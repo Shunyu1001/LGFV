@@ -5,7 +5,7 @@
 - Case ID: `expand_js_changshu_invest`
 - Company: Changshu Investment Holding Group Co., Ltd.
   (`常熟市投资控股集团有限公司`)
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `functional_transfer`
 - Confidence: medium
 - Main source page: Shanghai Clearing House,

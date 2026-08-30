@@ -17,7 +17,7 @@ except ModuleNotFoundError:  # pragma: no cover - depends on local environment
 
 
 ROOT = Path(__file__).resolve().parents[1]
-LABELS = ROOT / "data" / "processed" / "human_validated_labels.csv"
+LABELS = ROOT / "data" / "processed" / "working_reference_labels.csv"
 CANDIDATES = ROOT / "data" / "candidate_city_plan.csv"
 LLM_SEED = ROOT / "data" / "analysis_inputs" / "llm_candidate_pool_seed_2026_07_03_expanded.csv"
 LLM_SCREENING_SUMMARY = ROOT / "data" / "analysis_inputs" / "llm_screening_summary_2026_07_03_expanded.csv"
@@ -56,7 +56,7 @@ CITY_NAME_FIXES = {
     "Xian": "Xi'an",
 }
 CASE_STATUS_LABELS = {
-    "human_validated": "Human-validated",
+    "human_validated": "Working-reference",
     "strong_candidate": "Strong candidate",
     "weak_capacity_candidate": "Weak-capacity candidate",
 }
@@ -69,7 +69,7 @@ EXIT_STATUS_LABELS = {
     "source_started": "Source started",
 }
 TIER_LABELS = {
-    "human_validated": "Human-validated",
+    "human_validated": "Working-reference",
     "strong_candidate": "Strong candidate",
     "boundary_candidate": "Boundary case",
     "source_only_candidate": "Source-only candidate",
@@ -412,9 +412,9 @@ def write_latex(rows: list[dict]) -> None:
             "of Ming-Qing jinshi and juren records matched from CBDB to GADM "
             "4.1 China ADM2 boundaries, scaled per 1,000 square kilometers. "
             "Luzhou is a strong near-miss candidate rather than a final "
-            "human-validated label because a direct platform-list exit source "
+            "working-reference label because a direct platform-list exit source "
             "has not yet been found. Zunyi and Liupanshui are weak-capacity "
-            "candidate cases rather than human-validated exit-type cases.\n"
+            "candidate cases rather than working-reference exit-type cases.\n"
             "\\end{minipage}\n"
         )
         handle.write("\\endgroup\n")
@@ -433,7 +433,7 @@ def write_validated_latex(rows: list[dict]) -> None:
             ">{\\raggedright\\arraybackslash}p{0.42\\linewidth}"
             ">{\\raggedright\\arraybackslash}p{0.19\\linewidth}r@{}}\n"
         )
-        handle.write("\\caption{Human-validated labels}\\label{tab:pilot-validated-labels}\\\\\n")
+        handle.write("\\caption{Working-reference labels}\\label{tab:pilot-validated-labels}\\\\\n")
         handle.write("\\toprule\n")
         handle.write("City & Event basis & Final label & Elite density \\\\\n")
         handle.write("\\midrule\n")
@@ -741,7 +741,7 @@ def write_source_audit_latex(rows: list[dict]) -> None:
                      ">{\\raggedright\\arraybackslash}p{0.23\\linewidth}"
                      ">{\\raggedright\\arraybackslash}p{0.34\\linewidth}"
                      ">{\\raggedright\\arraybackslash}p{0.10\\linewidth}@{}}\n")
-        handle.write("\\caption{Source audit for human-validated labels}\\label{tab:pilot-source-audit}\\\\\n")
+        handle.write("\\caption{Source audit for working-reference labels}\\label{tab:pilot-source-audit}\\\\\n")
         handle.write("\\toprule\n")
         handle.write("City & Primary source & Formal event & Post-event function & Label \\\\\n")
         handle.write("\\midrule\n")
@@ -777,7 +777,7 @@ def write_mechanism_latex(rows: list[dict]) -> None:
                      ">{\\raggedright\\arraybackslash}p{0.23\\linewidth}"
                      ">{\\raggedright\\arraybackslash}p{0.25\\linewidth}"
                      ">{\\raggedright\\arraybackslash}p{0.25\\linewidth}@{}}\n")
-        handle.write("\\caption{Mechanism evidence in human-validated cases}\\label{tab:pilot-mechanism-evidence}\\\\\n")
+        handle.write("\\caption{Mechanism evidence in working-reference cases}\\label{tab:pilot-mechanism-evidence}\\\\\n")
         handle.write("\\toprule\n")
         handle.write(
             "City & Label & Fiscal absorption & Bureaucratic coordination & "
@@ -833,9 +833,9 @@ def write_capacity_bin_latex(rows: list[dict]) -> None:
         handle.write(
             "\\begin{minipage}{0.92\\linewidth}\n"
             "\\vspace{0.5em}\\footnotesize Notes: The table uses only the "
-            f"{matched_total} historically matched human-validated labels. Capacity bins are assigned "
+            f"{matched_total} historically matched working-reference labels. Capacity bins are assigned "
             "from the CBDB-GADM Ming-Qing elite-density measure among matched "
-            "human-validated cases. Counts are descriptive and are not population "
+            "working-reference cases. Counts are descriptive and are not population "
             "estimates.\n"
             "\\end{minipage}\n"
         )

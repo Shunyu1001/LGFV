@@ -5,7 +5,7 @@
 - Case ID: `expand_jx_zhanggong_jiantou`
 - Company: Ganzhou Zhanggong District Construction Investment Group Co., Ltd.
   (`赣州市章贡区建设投资集团有限公司`)
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `nominal_exit`
 - Confidence: medium
 - Main source page: Shanghai Clearing House,

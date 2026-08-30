@@ -9,7 +9,7 @@
 \toprule
 Quantity & Count & Rate & Adjusted count \\
 \midrule
-Gold-standard labels & 94 &  &  \\
+Working reference labels & 94 &  &  \\
 Gold nominal exits & 82 & 0.872 &  \\
 Gold institutional change & 12 & 0.128 &  \\
 Surrogate issuers with gold overlap & 61 &  &  \\
@@ -20,6 +20,6 @@ Conservative expected nominal among non-overlap & 97 & 0.941 & 91.25 \\
 \bottomrule
 \end{tabular}
 \begin{minipage}{0.94\linewidth}
-\vspace{0.5em}\footnotesize Notes: The validation sample consists of issuer-level Codex surrogate nominal-exit labels that overlap with independently human-validated gold-standard cases. The raw precision is the share of overlap issuers for which a surrogate nominal-exit label matches the gold-standard label. The smoothed rate uses a Jeffreys correction, $(x+0.5)/(n+1)$, and the conservative rate is the Wilson 95 percent lower bound. This table validates the current surrogate rule as a high-precision nominal-exit screen. It does not treat unresolved rows as negative outcomes or use raw surrogate labels as final labels.
+\vspace{0.5em}\footnotesize Notes: The comparison consists of issuer-level Codex surrogate nominal-exit labels that overlap with Codex-reviewed working reference cases. The raw concordance is the share of overlap issuers for which the two procedures assign nominal exit. Because the reference labels await independent human confirmation and the overlap is selected, the table does not estimate population precision, recall, or human-label accuracy.
 \end{minipage}
 \end{table}

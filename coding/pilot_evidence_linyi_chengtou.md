@@ -4,7 +4,7 @@
 - Company: `临沂城市建设投资集团有限公司`
 - City/province: Linyi, Shandong
 - Source packet: Shanghai Clearing issuance disclosure, 2026 second CP
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `nominal_exit`
 - Confidence: medium
 

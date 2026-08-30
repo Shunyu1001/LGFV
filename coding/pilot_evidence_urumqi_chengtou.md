@@ -5,7 +5,7 @@
 - Case ID: `expand_xj_urumqi_chengtou`
 - Company: Urumqi City Construction Investment Group Co., Ltd.
   (`乌鲁木齐城市建设投资(集团)有限公司`)
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `nominal_exit`
 - Confidence: medium
 - Main source page: Shanghai Clearing House,

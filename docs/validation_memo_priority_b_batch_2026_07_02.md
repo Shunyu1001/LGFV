@@ -4,7 +4,7 @@ Date: 2026-07-02
 
 This memo records the second July 2 review batch from the surrogate validation
 queue. The batch reviewed all remaining Priority-B non-overlap issuers. Five
-cases were promoted to the human gold-standard label file and two were marked
+cases were promoted to the working-reference label file and two were marked
 as boundary-reviewed packets outside the current city-platform LGFV frame.
 
 ## Promoted Cases
@@ -27,12 +27,12 @@ municipal SOE rather than a clean city-platform LGFV case.
 `sch_20260630_0043`, 厦门港务控股集团有限公司, was also marked
 boundary-reviewed. The packet contains historical platform-list exit language,
 but the issuer is a specialized port group controlled through Fujian Port Group
-and is outside the current city-platform gold-standard frame.
+and is outside the current city-platform working-reference frame.
 
 ## Dataset Effect
 
-The batch raises the human gold-standard file from 68 to 73 cases. The
-candidate seed pool now contains 73 gold-standard rows, 180 pending rows, and 4
+The batch raises the working-reference file from 68 to 73 cases. The
+candidate seed pool now contains 73 working-reference rows, 180 pending rows, and 4
 boundary-reviewed rows. The Codex surrogate file now contains 66
 disclosure-level surrogate labels and 114 unresolved rows. The non-overlap
 validation queue falls from 21 to 14 issuers.

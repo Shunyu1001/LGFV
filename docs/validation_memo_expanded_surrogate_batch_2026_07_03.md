@@ -1,8 +1,8 @@
 # Expanded Surrogate Validation Batch, July 3 2026
 
-This memo records the first validation pass on the expanded Codex surrogate queue created after the July 3 candidate-pool expansion. Seven issuer packets were promoted from Codex surrogate labels to human gold-standard labels. One repeated Beijing Controls Group packet was marked boundary-reviewed and excluded from the core city-platform LGFV exit frame.
+This memo records the first validation pass on the expanded Codex surrogate queue created after the July 3 candidate-pool expansion. Seven issuer packets were promoted from Codex surrogate labels to working-reference labels. One repeated Beijing Controls Group packet was marked boundary-reviewed and excluded from the core city-platform LGFV exit frame.
 
-## Promoted Gold-Standard Cases
+## Promoted Working-Reference Cases
 
 | Case ID | Issuer | Final label | Key formal-event evidence | Key continued-function evidence |
 |---|---|---|---|---|
@@ -20,8 +20,8 @@ The labels are therefore coded as `nominal_exit`, not because the documents prov
 
 ## Boundary Decision
 
-`sch_20260630_0129`, 北京控股集团有限公司, was marked `boundary_reviewed`. The packet contains formal no-government-financing language, and a related repeated Beijing Controls Group packet had already been boundary-reviewed. The issuer is a large diversified Beijing municipal SOE with utilities and infrastructure exposure rather than a clean city-platform LGFV. The available continued-function evidence is also too generic for the core exit-type typology. The packet is useful for defining scope conditions, but it should not enter the gold-standard city-platform sample.
+`sch_20260630_0129`, 北京控股集团有限公司, was marked `boundary_reviewed`. The packet contains formal no-government-financing language, and a related repeated Beijing Controls Group packet had already been boundary-reviewed. The issuer is a large diversified Beijing municipal SOE with utilities and infrastructure exposure rather than a clean city-platform LGFV. The available continued-function evidence is also too generic for the core exit-type typology. The packet is useful for defining scope conditions, but it should not enter the working-reference city-platform sample.
 
 ## Dataset Effect
 
-After this batch, the human gold-standard label file contains 94 cases. The new cases raise the number of human-validated nominal-exit labels while preserving a separate boundary category for non-core issuers. Rebuilding the seed pool and Codex surrogate files should reduce the non-overlap surrogate queue, keep the usable surrogate sample above the current target range, and improve the DSL validation overlap between surrogate labels and gold-standard labels.
+After this batch, the working-reference label file contains 94 cases. The new cases raise the number of working-reference nominal-exit labels while preserving a separate boundary category for non-core issuers. Rebuilding the seed pool and Codex surrogate files should reduce the non-overlap surrogate queue, keep the usable surrogate sample above the current target range, and improve the DSL validation overlap between surrogate labels and working-reference labels.

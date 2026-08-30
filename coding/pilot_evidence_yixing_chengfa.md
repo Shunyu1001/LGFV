@@ -5,7 +5,7 @@
 - Case ID: `expand_js_yixing_chengfa`
 - Company: Yixing City Development Investment Co., Ltd.
   (`宜兴市城市发展投资有限公司`)
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `functional_transfer`
 - Confidence: medium
 - Main source page: Shanghai Clearing House,

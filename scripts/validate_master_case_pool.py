@@ -126,7 +126,7 @@ def main() -> int:
                 "exit_type",
                 "confidence",
                 "source_coverage_score",
-                "human_reviewer",
+                "reference_label_producer",
                 "validation_date",
             ]:
                 if not nonempty(row, column):

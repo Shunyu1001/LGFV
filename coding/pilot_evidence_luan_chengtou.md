@@ -4,7 +4,7 @@
 - Platform: 六安城市建设投资有限公司
 - City and province: Lu'an, Anhui
 - Source packet: Shanghai Clearing 2026 SCP disclosure page
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `nominal_exit`
 - Confidence: medium
 

@@ -1,11 +1,11 @@
 object_id,unit,quantity,value,note
-gold_cases,city-platform case,rows,94,Assembled human-reviewed file; not a probability sample.
-gold_substantive_exit,city-platform case,final_label count,2,Observed within the 94-case gold file.
-gold_nominal_exit,city-platform case,final_label count,82,Observed within the 94-case gold file.
-gold_functional_transfer,city-platform case,final_label count,10,Observed within the 94-case gold file.
+gold_cases,city-platform case,rows,94,Assembled working-reference file; not a probability sample.
+gold_substantive_exit,city-platform case,final_label count,2,Observed within the 94-case working-reference file.
+gold_nominal_exit,city-platform case,final_label count,82,Observed within the 94-case working-reference file.
+gold_functional_transfer,city-platform case,final_label count,10,Observed within the 94-case working-reference file.
 gold_liquidation,city-platform case,final_label count,0,"No liquidation case is present, so category-specific reliability is not observed."
-gold_codex_assisted_reviewer_field,city-platform case,rows,90,The field still identifies Shunyu Hao as the human reviewer; it does not document an independent second human.
-candidate_disclosures,candidate disclosure row,rows,262,Rows assigned to Codex screening rather than human gold or boundary review.
+working_reference_codex_producer_field,city-platform case,rows,94,All working labels record Codex source-packet review on behalf of the project author and await human confirmation.
+candidate_disclosures,candidate disclosure row,rows,262,Rows assigned to Codex screening rather than working-reference or boundary review.
 surrogate_positive_disclosures,candidate disclosure row,rows,203,All current surrogate exit-type predictions are nominal_exit.
 screened_no_formal_event_disclosures,candidate disclosure row,rows,44,"These are screening outcomes, not negative exit-type labels."
 source_missing_disclosures,candidate disclosure row,rows,15,"Issuer names are blank, so these rows cannot be deduplicated to issuer units from this file."

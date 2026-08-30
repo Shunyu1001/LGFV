@@ -13,7 +13,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
-GOLD_PATH = ROOT / "data/processed/human_validated_labels.csv"
+GOLD_PATH = ROOT / "data/processed/working_reference_labels.csv"
 POOL_PATH = ROOT / "data/analysis_inputs/master_case_pool.csv"
 DOCUMENTS_PATH = ROOT / "data/document_inventory.csv"
 FRAME_PATH = ROOT / "data/validation/proposed_one_sided_validation_frame_enriched.csv"

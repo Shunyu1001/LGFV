@@ -10,7 +10,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_GOLD = ROOT / "data" / "processed" / "human_validated_labels.csv"
+DEFAULT_GOLD = ROOT / "data" / "processed" / "working_reference_labels.csv"
 DEFAULT_MASTER = ROOT / "data" / "analysis_inputs" / "master_case_pool.csv"
 DEFAULT_CAPACITY = ROOT / "data" / "analysis_inputs" / "pilot_case_historical_capacity.csv"
 DEFAULT_SURROGATE = ROOT / "data" / "analysis_inputs" / "issuer_level_surrogate_empirical_input.csv"
@@ -426,7 +426,7 @@ def build_coverage(rows: list[dict[str, str]]) -> list[dict[str, str]]:
     ]
     return [
         {
-            "component": "Gold-standard labels",
+            "component": "Working-reference labels",
             "available": str(len(gold_rows)),
             "denominator": str(len(rows)),
             "use": "Outcome scale and human validation",
@@ -510,9 +510,9 @@ def write_coverage_tex(path: Path, rows: list[dict[str, str]]) -> None:
         handle.write("\\end{tabular}\n")
         handle.write("\\begin{minipage}{0.94\\linewidth}\n")
         handle.write(
-            "\\vspace{0.5em}\\footnotesize Notes: The panel combines human-validated "
+            "\\vspace{0.5em}\\footnotesize Notes: The panel combines working-reference "
             "gold labels with non-overlap issuer-level surrogate labels. Main regression-ready "
-            "rows are restricted to gold-standard cases with a historical-capacity match. "
+            "rows are restricted to working-reference cases with a historical-capacity match. "
             "Full-controls regression rows require contemporary controls in addition to the "
             "gold label and historical-capacity match. "
             "Contemporary fiscal, debt, land-finance, and platform-hierarchy controls are "

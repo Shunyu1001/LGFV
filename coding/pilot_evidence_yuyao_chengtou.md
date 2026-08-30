@@ -5,7 +5,7 @@
 - Case ID: `expand_zj_yuyao_chengtou`
 - Company: Yuyao City Construction Investment Development Co., Ltd.
   (`余姚市城市建设投资发展有限公司`)
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `nominal_exit`
 - Confidence: medium
 - Main source page: Shanghai Clearing House,

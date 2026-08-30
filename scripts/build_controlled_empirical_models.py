@@ -360,7 +360,7 @@ def write_model_outputs(specs: list[dict[str, object]]) -> None:
         handle.write(
             "\\vspace{0.5em}\\footnotesize Notes: The dependent variable equals one for "
             "substantive exit or functional transfer and zero for nominal exit. "
-            "All models use the human-validated rows currently matched to the "
+            "All models use the working-reference rows currently matched to the "
             "historical-capacity measure. Source coverage is a measurement-quality "
             "control; platform hierarchy is rule-based and remains pending human "
             "audit. Province fixed effects are included for provinces with at least "
@@ -666,7 +666,7 @@ def write_diagnostics_outputs(rows: list[dict[str, str]]) -> None:
         handle.write("\\end{tabular}\n")
         handle.write("\\begin{minipage}{0.94\\linewidth}\n")
         handle.write(
-            "\\vspace{0.5em}\\footnotesize Notes: Model rows are the human-validated "
+            "\\vspace{0.5em}\\footnotesize Notes: Model rows are the working-reference "
             "cases currently matched to the historical-capacity measure. The table "
             "distinguishes controls that can be used now from contemporary fiscal, "
             "debt, and land-finance controls that still require source-backed city "

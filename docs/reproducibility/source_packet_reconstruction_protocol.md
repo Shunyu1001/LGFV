@@ -2,7 +2,7 @@
 
 ## Scope
 
-This protocol reconstructs the evidence packet cited by each human-validated
+This protocol reconstructs the evidence packet cited by each working-reference
 LGFV case. It verifies reference integrity and file recovery. It does not
 recode outcomes or substitute for independent validation.
 

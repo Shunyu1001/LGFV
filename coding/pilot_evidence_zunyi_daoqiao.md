@@ -7,7 +7,7 @@
 - City: Zunyi
 - Company: 遵义道桥建设集团有限公司
 - Former name: 遵义市道路桥梁工程有限责任公司
-- Current coding status: candidate evidence packet, not yet human-validated
+- Current coding status: candidate evidence packet, not yet working-reference
 - Provisional interpretation: likely nominal-exit or debt-continuity case, pending a direct official exit or no-government-financing source
 
 ## Why This Case Matters

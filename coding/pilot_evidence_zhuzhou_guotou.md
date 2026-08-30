@@ -142,7 +142,7 @@ Relevant extracted-text location:
 ## Coding Implication
 
 The case should remain a candidate evidence packet rather than a final
-human-validated label.
+working-reference label.
 
 The strongest current interpretation is
 `nominal_exit_or_functional_transfer_candidate`. The case has stronger formal

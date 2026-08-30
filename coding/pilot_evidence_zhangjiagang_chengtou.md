@@ -4,7 +4,7 @@
 - Platform: 张家港市城市投资发展集团有限公司
 - City and province: Zhangjiagang, Jiangsu
 - Source packet: Shanghai Clearing 2026 SCP disclosure page
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `nominal_exit`
 - Confidence: medium
 

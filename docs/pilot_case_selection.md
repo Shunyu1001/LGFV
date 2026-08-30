@@ -128,7 +128,7 @@ The pilot should produce four outputs.
 First, it should produce a filled case plan indicating which city-platform cases
 were found, which were dropped, and why. Second, it should produce a source
 inventory with stable links or local file references. Third, it should produce
-preliminary LLM labels and final human-validated labels. Fourth, it should
+preliminary LLM labels and final working-reference labels. Fourth, it should
 produce a memo summarizing the main ambiguities discovered during coding.
 
 ## Current Candidate Balance
@@ -191,6 +191,6 @@ The current synthesis of collected evidence packets is stored in
 `data/analysis_inputs/pilot_coding_matrix.csv`, with an accompanying memo in
 `docs/pilot_coding_matrix.md`. The matrix should be treated as a coding log
 rather than a finished dataset. It separates four validation tiers:
-human-validated labels, strong candidates, boundary candidates, and source-only
+working-reference labels, strong candidates, boundary candidates, and source-only
 candidates. This separation allows the next coding round to focus on promotion
 and scope decisions before adding many new cases.

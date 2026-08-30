@@ -11,7 +11,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
-GOLD_INPUT = ROOT / "data/processed/human_validated_labels.csv"
+GOLD_INPUT = ROOT / "data/processed/working_reference_labels.csv"
 POOL_INPUT = ROOT / "data/analysis_inputs/master_case_pool.csv"
 DOCUMENTS_INPUT = ROOT / "data/document_inventory.csv"
 FRAME_INPUT = ROOT / "data/validation/proposed_one_sided_validation_frame_enriched.csv"
@@ -36,7 +36,7 @@ ADJUDICATION_ENTRY_FIELDS = [
     "second_coder_signature", "adjudicator_signature",
 ]
 FORBIDDEN_PACKET_HEADERS = {
-    "official_exit_year", "official_exit_event", "human_reviewer",
+    "official_exit_year", "official_exit_event", "reference_label_producer",
     "validation_date", "final_rationale", "notes", "llm_label",
     "llm_confidence", "llm_model", "screen_status", "design_stratum",
     "selection_stratum", "inclusion_probability", "design_weight",

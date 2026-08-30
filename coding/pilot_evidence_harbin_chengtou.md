@@ -5,7 +5,7 @@
 - Case ID: `expand_hlj_harbin_chengtou`
 - Company: Harbin City Construction Investment Group Co., Ltd.
   (`哈尔滨市城市建设投资集团有限公司`)
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `nominal_exit`
 - Confidence: high
 - Main source page: Shanghai Clearing House,

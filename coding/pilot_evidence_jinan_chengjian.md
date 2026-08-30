@@ -5,7 +5,7 @@
 - Case ID: `expand_sd_jinan_chengjian`
 - Company: Jinan City Construction Group Co., Ltd.
   (`济南城市建设集团有限公司`)
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `nominal_exit`
 - Confidence: medium
 - Main source page: Shanghai Clearing House,

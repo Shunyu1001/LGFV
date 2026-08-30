@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate human-reviewed LGFV exit-type labels.
+"""Validate working-reference LGFV exit-type labels.
 
 The script checks that the final label file is internally consistent with the
 codebook and tracked source inventories. It intentionally does not assign
@@ -32,7 +32,9 @@ REQUIRED_COLUMNS = [
     "official_exit_event",
     "final_label",
     "final_confidence",
-    "human_reviewer",
+    "reference_label_producer",
+    "label_role",
+    "human_confirmation_status",
     "validation_date",
     "primary_evidence_doc",
     "primary_evidence_lines",
@@ -77,7 +79,7 @@ def range_endpoints(value: str) -> list[int]:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--labels", default="data/processed/human_validated_labels.csv")
+    parser.add_argument("--labels", default="data/processed/working_reference_labels.csv")
     parser.add_argument("--documents", default="data/document_inventory.csv")
     parser.add_argument("--sources", default="data/source_inventory.csv")
     args = parser.parse_args()
@@ -112,6 +114,18 @@ def main() -> int:
         for column in REQUIRED_COLUMNS:
             if not row.get(column, "").strip():
                 errors.append(f"row {index} {case_id}: missing {column}")
+
+        if row.get("label_role") != "working_reference":
+            errors.append(f"row {index} {case_id}: invalid label_role")
+        if row.get("human_confirmation_status") not in {
+            "pending_human_confirmation",
+            "human_confirmed",
+            "human_revised",
+            "human_rejected",
+        }:
+            errors.append(
+                f"row {index} {case_id}: invalid human_confirmation_status"
+            )
 
         label = row.get("final_label", "").strip()
         if label not in ALLOWED_LABELS:

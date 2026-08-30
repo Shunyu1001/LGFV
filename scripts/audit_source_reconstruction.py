@@ -13,7 +13,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--gold",
-        default="data/processed/human_validated_labels.csv",
+        default="data/processed/working_reference_labels.csv",
     )
     parser.add_argument("--documents", default="data/document_inventory.csv")
     parser.add_argument("--sources", default="data/source_inventory.csv")
@@ -149,11 +149,11 @@ def main() -> int:
     report = [
         "# Source reconstruction audit",
         "",
-        "This audit tests whether the evidence references recorded for each human-validated case resolve against the tracked inventories and whether the cited documents can be recovered from local files or stable URLs. It does not revalidate substantive labels.",
+        "This audit tests whether the evidence references recorded for each working-reference case resolve against the tracked inventories and whether the cited documents can be recovered from local files or stable URLs. It does not revalidate substantive labels.",
         "",
         "## Results",
         "",
-        f"- Human-validated cases: {len(audit_rows)}.",
+        f"- Working-reference cases: {len(audit_rows)}.",
         f"- Cases with all document and source identifiers resolved: {count('all_identifiers_resolved')}.",
         f"- Cases with every cited evidence document stored locally: {count('all_evidence_files_local')}.",
         f"- Cases with at least one cited evidence document stored locally: {count('some_evidence_file_local')}.",

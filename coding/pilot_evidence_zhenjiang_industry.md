@@ -5,7 +5,7 @@
 - Case ID: `expand_js_zhenjiang_industry`
 - Company: Zhenjiang Industrial Investment Holding Group Co., Ltd.
   (`镇江产业投资控股集团有限公司`)
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `nominal_exit`
 - Confidence: medium
 - Main source page: Shanghai Clearing House,

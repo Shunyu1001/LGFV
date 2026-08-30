@@ -5,7 +5,7 @@
 - Case ID: `expand_hb_huangshi_chengfa`
 - Company: Huangshi Urban Development Investment Group Co., Ltd.
   (`黄石市城市发展投资集团有限公司`)
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `nominal_exit`
 - Confidence: medium
 - Main source page: Shanghai Clearing House,

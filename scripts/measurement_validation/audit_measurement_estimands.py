@@ -17,7 +17,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
-GOLD = ROOT / "data" / "processed" / "human_validated_labels.csv"
+GOLD = ROOT / "data" / "processed" / "working_reference_labels.csv"
 SCREENING = (
     ROOT
     / "data"
@@ -116,7 +116,7 @@ def output_texts() -> tuple[dict[Path, str], dict[str, object]]:
         ("nominal_exit", gold_by_issuer[key]["final_label"]) for key in overlap_keys
     )
     overlap_codex_assisted = sum(
-        "Codex-assisted" in gold_by_issuer[key]["human_reviewer"]
+        gold_by_issuer[key]["reference_label_producer"].startswith("Codex ")
         for key in overlap_keys
     )
     overlap_nominal_matches = overlap_pairs[("nominal_exit", "nominal_exit")]
@@ -186,7 +186,7 @@ def output_texts() -> tuple[dict[Path, str], dict[str, object]]:
             "unit": "city-platform case",
             "quantity": "rows",
             "value": len(gold),
-            "note": "Assembled human-reviewed file; not a probability sample.",
+            "note": "Assembled working-reference file; not a probability sample.",
         },
         *[
             {
@@ -194,7 +194,7 @@ def output_texts() -> tuple[dict[Path, str], dict[str, object]]:
                 "unit": "city-platform case",
                 "quantity": "final_label count",
                 "value": gold_counts[label],
-                "note": "Observed within the 94-case gold file.",
+            "note": "Observed within the 94-case working-reference file.",
             }
             for label in ("substantive_exit", "nominal_exit", "functional_transfer")
         ],
@@ -206,20 +206,20 @@ def output_texts() -> tuple[dict[Path, str], dict[str, object]]:
             "note": "No liquidation case is present, so category-specific reliability is not observed.",
         },
         {
-            "object_id": "gold_codex_assisted_reviewer_field",
+            "object_id": "working_reference_codex_producer_field",
             "unit": "city-platform case",
             "quantity": "rows",
             "value": sum(
-                "Codex-assisted" in row["human_reviewer"] for row in gold
+                row["reference_label_producer"].startswith("Codex ") for row in gold
             ),
-            "note": "The field still identifies Shunyu Hao as the human reviewer; it does not document an independent second human.",
+            "note": "All working labels record Codex source-packet review on behalf of the project author and await human confirmation.",
         },
         {
             "object_id": "candidate_disclosures",
             "unit": "candidate disclosure row",
             "quantity": "rows",
             "value": len(candidate_rows),
-            "note": "Rows assigned to Codex screening rather than human gold or boundary review.",
+            "note": "Rows assigned to Codex screening rather than working-reference or boundary review.",
         },
         {
             "object_id": "surrogate_positive_disclosures",
@@ -310,19 +310,19 @@ def output_texts() -> tuple[dict[Path, str], dict[str, object]]:
     ]
     estimand_rows: list[dict[str, object]] = [
         {
-            "estimand_id": "E01_gold_distribution",
-            "evidence_object": "human_validated_labels",
+            "estimand_id": "E01_working_reference_distribution",
+            "evidence_object": "working_reference_labels",
             "unit": "city-platform case",
-            "selection_mechanism": "assembled and human-reviewed cases",
-            "target_population": "the 94 cases in the tracked gold file",
-            "error_quantity": "none; descriptive label distribution",
+            "selection_mechanism": "Codex source-packet review on behalf of project author",
+            "target_population": "the 94 cases in the tracked working-reference file",
+            "error_quantity": "none; provisional descriptive label distribution",
             "current_value": "2 substantive; 82 nominal; 10 transfer; 0 liquidation",
             "numerator": "category-specific observed count",
             "denominator": "94",
-            "identification_status": "identified within assembled sample",
-            "uncertainty_status": "no population sampling design",
-            "limitation": "Does not estimate national prevalence or label accuracy.",
-            "required_new_data": "Probability frame for prevalence; independent coding for reliability.",
+            "identification_status": "identified within assembled working sample",
+            "uncertainty_status": "no population sampling design and no completed human confirmation",
+            "limitation": "Does not estimate national prevalence or human-confirmed label accuracy.",
+            "required_new_data": "Independent human confirmation plus a probability frame for prevalence.",
         },
         {
             "estimand_id": "E02_screening_flow",
@@ -331,7 +331,7 @@ def output_texts() -> tuple[dict[Path, str], dict[str, object]]:
             "selection_mechanism": "assembled disclosure pool and deterministic screening rules",
             "target_population": "the 361 tracked disclosure rows",
             "error_quantity": "none; screening and source-availability flow",
-            "current_value": "203 positive; 44 no direct formal event; 15 source missing; 99 human rows",
+            "current_value": "203 positive; 44 no direct formal event; 15 source missing; 99 reference or boundary rows",
             "numerator": "status-specific observed count",
             "denominator": "361",
             "identification_status": "identified within assembled disclosure pool",
@@ -341,17 +341,17 @@ def output_texts() -> tuple[dict[Path, str], dict[str, object]]:
         },
         {
             "estimand_id": "E03_selected_overlap_concordance",
-            "evidence_object": "issuer_summary joined to gold by normalized issuer name",
+            "evidence_object": "issuer_summary joined to working references by normalized issuer name",
             "unit": "issuer",
-            "selection_mechanism": "post-hoc overlap among surrogate-positive issuers and the gold file",
+            "selection_mechanism": "post-hoc overlap among surrogate-positive issuers and the working-reference file",
             "target_population": "the 61 observed overlap issuers",
-            "error_quantity": "conditional nominal-label concordance",
+            "error_quantity": "conditional nominal-label concordance between two Codex procedures",
             "current_value": f"{overlap_match_rate:.3f}",
             "numerator": str(overlap_nominal_matches),
             "denominator": str(len(overlap_keys)),
             "identification_status": "identified only as descriptive overlap concordance",
             "uncertainty_status": "no design-based population interval",
-            "limitation": f"Overlap was not probability sampled; all overlap labels are nominal and {overlap_codex_assisted} of {len(overlap_keys)} reviewer fields record Codex-assisted review.",
+            "limitation": f"Overlap was not probability sampled and {overlap_codex_assisted} of {len(overlap_keys)} reference labels were produced by Codex rather than independently confirmed by a human.",
             "required_new_data": "Probability-sampled positives with human coding blinded to the surrogate output.",
         },
         {
@@ -381,7 +381,7 @@ def output_texts() -> tuple[dict[Path, str], dict[str, object]]:
             "denominator": "all human nominal issuers in positive and nonpositive screen strata",
             "identification_status": "not identified",
             "uncertainty_status": "no estimable sampling error",
-            "limitation": "None of the 36 named no-formal-event issuers has a gold overlap in the current files.",
+            "limitation": "None of the 36 named no-formal-event issuers has a working-reference overlap in the current files.",
             "required_new_data": "Human labels from a probability sample that includes all screen statuses.",
         },
         {
@@ -411,27 +411,27 @@ def output_texts() -> tuple[dict[Path, str], dict[str, object]]:
             "denominator": "not observed in a common validation frame",
             "identification_status": "not identified",
             "uncertainty_status": "not applicable",
-            "limitation": "Substantive exit, functional transfer, and liquidation are never surrogate predictions; liquidation is also absent from gold.",
+            "limitation": "Substantive exit, functional transfer, and liquidation are never surrogate predictions; liquidation is also absent from the working references.",
             "required_new_data": "Frozen multiclass predictions and independent human labels sampled from the same eligible frame.",
         },
         {
-            "estimand_id": "E08_intercoder_agreement",
-            "evidence_object": "human gold labels",
+            "estimand_id": "E08_human_confirmation_agreement",
+            "evidence_object": "working reference labels",
             "unit": "city-platform case",
-            "selection_mechanism": "one identified human reviewer with Codex assistance on most rows",
-            "target_population": "the assembled gold cases",
-            "error_quantity": "raw agreement, category agreement, kappa, and adjudication count",
+            "selection_mechanism": "Codex source-packet review only",
+            "target_population": "the 94 assembled working-reference cases",
+            "error_quantity": "agreement between working reference and independent human decision; category agreement; adjudication count",
             "current_value": "not identified",
-            "numerator": "no independent coder pair observed",
-            "denominator": "no independently double-coded cases observed",
+            "numerator": "no independent human confirmation observed",
+            "denominator": "no independently human-coded cases observed",
             "identification_status": "not identified",
             "uncertainty_status": "not applicable",
-            "limitation": "LLM assistance is not an independent second human coder.",
-            "required_new_data": "A second human must code frozen packets without seeing current labels; disagreements must be adjudicated and logged.",
+            "limitation": "A second Codex procedure is a model audit rather than an independent human coder.",
+            "required_new_data": "A human must code frozen packets without seeing current or surrogate labels; disagreements must be adjudicated and logged.",
         },
         {
             "estimand_id": "E09_sampling_error",
-            "evidence_object": "gold and overlap files",
+            "evidence_object": "working-reference and overlap files",
             "unit": "case or issuer, depending on target",
             "selection_mechanism": "assembled samples with unknown inclusion probabilities",
             "target_population": "no probability target is currently defined",
@@ -505,17 +505,17 @@ def output_texts() -> tuple[dict[Path, str], dict[str, object]]:
             "review_gate": "No label change; any addition to the validation accuracy frame requires approved eligibility handling.",
         },
         {
-            "component": "human_label_reliability",
-            "target_frame": "94 frozen gold case packets",
+            "component": "human_label_confirmation",
+            "target_frame": "94 frozen working-reference packets",
             "unit": "city-platform case",
-            "stratum": "all current gold cases",
+            "stratum": "all current working-reference cases",
             "population_n": len(gold),
             "proposed_sample_n": len(gold),
             "inclusion_probability": "1.000000",
-            "selection_rule": "Independent census recoding by a second human, blind to current and LLM labels.",
-            "human_work": "A second human applies the frozen codebook to all 94 packets; the original reviewer and second coder adjudicate every disagreement afterward.",
-            "identified_quantity_after_completion": "Raw and category-specific agreement, kappa or an appropriate sparse-category alternative, and adjudication counts within the assembled gold cases.",
-            "review_gate": "Human approval and a real second coder are required; liquidation agreement remains unobservable with no liquidation cases.",
+            "selection_rule": "Independent human confirmation blind to working and surrogate labels.",
+            "human_work": "A human coder applies the frozen codebook to all 94 packets; working-reference and human decisions are compared and every disagreement is adjudicated afterward.",
+            "identified_quantity_after_completion": "Raw and category-specific agreement between the working procedure and human decisions plus adjudication counts; not intercoder reliability between two humans.",
+            "review_gate": "Human confirmation is required before these cases become human-confirmed gold labels; liquidation agreement remains unobservable with no liquidation cases.",
         },
         {
             "component": "future_multiclass_validation",
@@ -540,7 +540,7 @@ def output_texts() -> tuple[dict[Path, str], dict[str, object]]:
             "cases": len(gold),
             "label_counts": dict(sorted(gold_counts.items())),
             "codex_assisted_reviewer_rows": sum(
-                "Codex-assisted" in row["human_reviewer"] for row in gold
+                row["reference_label_producer"].startswith("Codex ") for row in gold
             ),
             "independently_double_coded_cases_documented": 0,
         },

@@ -4,7 +4,7 @@
 - Company: `吉安市城市建设投资开发有限公司`
 - City/province: Ji'an, Jiangxi
 - Source packet: Shanghai Clearing issuance disclosure, 2026 first CP
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `nominal_exit`
 - Confidence: medium
 

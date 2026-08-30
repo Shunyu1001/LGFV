@@ -7,12 +7,12 @@ file:
 - `data/analysis_inputs/empirical_case_panel_coverage.csv`
 - `paper/tables/empirical_case_panel_coverage.tex`
 
-The panel has 191 rows. It combines 94 human-validated gold-standard labels
+The panel has 191 rows. It combines 94 working-reference labels
 with 97 non-overlap issuer-level Codex surrogate nominal-exit labels. The
-surrogate rows are included only for validation-adjusted descriptive analysis.
-They are not treated as final human labels.
+surrogate rows are included only in a combined workflow diagnostic. They are
+not treated as final outcomes or as validation-adjusted observations.
 
-The current validated model uses the 84 gold-standard rows that can be matched
+The current exploratory model uses the 84 working-reference rows that can be matched
 to the CBDB-GADM historical-capacity crosswalk. These rows support the current
 descriptive and linear-probability models that relate historical capacity to
 institutional change.

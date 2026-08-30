@@ -13,7 +13,7 @@ from datetime import date
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DEFAULT_INPUT = ROOT / "data" / "analysis_inputs" / f"codex_surrogate_labels_{date.today():%Y_%m_%d}.csv"
-DEFAULT_HUMAN = ROOT / "data" / "processed" / "human_validated_labels.csv"
+DEFAULT_HUMAN = ROOT / "data" / "processed" / "working_reference_labels.csv"
 DEFAULT_OUTPUT = ROOT / "data" / "analysis_inputs" / f"codex_surrogate_issuer_summary_{date.today():%Y_%m_%d}.csv"
 
 FIELDS = [

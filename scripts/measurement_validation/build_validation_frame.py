@@ -26,7 +26,7 @@ QUEUE = (
     / "analysis_inputs"
     / "surrogate_validation_queue_2026_07_03_expanded.csv"
 )
-GOLD = ROOT / "data" / "processed" / "human_validated_labels.csv"
+GOLD = ROOT / "data" / "processed" / "working_reference_labels.csv"
 OUT_FRAME = (
     ROOT / "data" / "validation" / "proposed_one_sided_validation_frame.csv"
 )

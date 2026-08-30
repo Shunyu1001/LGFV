@@ -5,7 +5,7 @@
 - Case ID: `expand_hb_xiaogan_chengtou`
 - Company: Xiaogan City Construction Investment Company
   (`孝感市城市建设投资公司`)
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `functional_transfer`
 - Confidence: medium
 - Main source page: Shanghai Clearing House,

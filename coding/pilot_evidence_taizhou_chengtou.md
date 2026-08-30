@@ -4,7 +4,7 @@
 - Platform: 泰州市城市建设投资集团有限公司
 - City and province: Taizhou, Jiangsu
 - Source packet: Shanghai Clearing 2026 SCP disclosure page
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `nominal_exit`
 - Confidence: medium
 

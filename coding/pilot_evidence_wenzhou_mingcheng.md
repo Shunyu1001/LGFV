@@ -4,7 +4,7 @@
 
 - Case ID: `pilot_zj_003`
 - Company: Wenzhou Mingcheng Construction Investment Group Co., Ltd. (`温州市名城建设投资集团有限公司`)
-- Status: human-validated pilot label
+- Status: working-reference pilot label
 - Final coding implication: `functional_transfer`
 - Confidence: medium
 - Main source page: Shanghai Clearing House, `温州市名城建设投资集团有限公司2026年度第二期中期票据发行文件`, 2026-04-14

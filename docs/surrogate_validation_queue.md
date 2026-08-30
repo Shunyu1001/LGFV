@@ -2,7 +2,7 @@
 
 Date: 2026-07-02
 
-This note summarizes the current human-review queue generated from the Codex surrogate-labeling pass. After the missing-PDF recovery pass and promotion of the two Priority A cases, the queue contains 27 non-overlap issuers: 9 Priority B rows and 18 Priority C rows. These rows are not gold-standard labels. Each row must be checked against original PDF evidence before promotion.
+This note summarizes the current human-review queue generated from the Codex surrogate-labeling pass. After the missing-PDF recovery pass and promotion of the two Priority A cases, the queue contains 27 non-overlap issuers: 9 Priority B rows and 18 Priority C rows. These rows are not working-reference labels. Each row must be checked against original PDF evidence before promotion.
 
 The queue file is stored in `data/analysis_inputs/surrogate_validation_queue_2026_07_02.csv`. A row should be promoted only if the original source packet supports both the formal event and the post-event functional assessment. Rows should be marked as boundary if the issuer is a specialized industrial, energy, provincial, or otherwise non-core LGFV entity whose inclusion would blur the sampling frame.
 

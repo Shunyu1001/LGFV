@@ -4,7 +4,7 @@
 - Company: `苏州市相城城市建设投资(集团)有限公司`
 - City/province: Suzhou Xiangcheng, Jiangsu
 - Source packet: Shanghai Clearing issuance disclosure, 2026 third SCP
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `nominal_exit`
 - Confidence: medium
 

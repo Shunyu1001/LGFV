@@ -4,7 +4,7 @@
 
 - Case ID: `pilot_js_001_alt_metro`
 - Company: Nanjing Metro Group Co., Ltd. (`南京地铁集团有限公司`)
-- Current status: human-validated gold label
+- Current status: working-reference gold label
 - Final label: `nominal_exit`
 - Confidence: medium
 - Main source page: Shanghai Clearing House,
@@ -141,7 +141,7 @@ Relevant extracted-text locations:
 
 The final label is `nominal_exit`.
 
-The formal event is strong enough for the gold-standard file because the
+The formal event is strong enough for the working-reference file because the
 prospectus contains direct post-2015 no-government-financing and
 no-local-government-debt language, and the legal opinion confirms that the
 current debt instrument does not create new government or hidden debt. The

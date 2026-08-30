@@ -4,7 +4,7 @@
 
 - Case ID: `pilot_js_004`
 - Company: Xuzhou Xinsheng Investment Holding Group Co., Ltd. (`徐州市新盛投资控股集团有限公司`)
-- Status: human-validated pilot label
+- Status: working-reference pilot label
 - Final coding implication: `nominal_exit`
 - Confidence: medium
 - Main source page: Shanghai Clearing House, `徐州市新盛投资控股集团有限公司2026年度第六期中期票据发行文件`, 2026-06-18

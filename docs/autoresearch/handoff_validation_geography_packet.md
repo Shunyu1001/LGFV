@@ -17,7 +17,7 @@ Read `AGENTS.md`, `program.md`, every file under `immutable/`,
 
 ## Fixed boundaries
 
-- Do not edit `data/processed/human_validated_labels.csv`.
+- Do not edit `data/processed/working_reference_labels.csv`.
 - Do not assign or revise an exit-type label.
 - Do not draw the probability sample or choose a random seed.
 - Do not edit central ledgers, `paper/main.tex`, or existing manuscript

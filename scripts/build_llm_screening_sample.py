@@ -203,7 +203,7 @@ def main() -> int:
                 status_counts["llm_screened_no_direct_formal_event"],
                 "Screened non-outcome",
             ),
-            ("Human-reviewed boundary", status_counts["human_reviewed_boundary"], "Scope condition"),
+            ("Working-reference boundary", status_counts["human_reviewed_boundary"], "Scope condition"),
             ("Source packet missing", status_counts["source_packet_missing"], "Not usable"),
         ]
         for label, count, use in rows_for_table:
@@ -216,7 +216,7 @@ def main() -> int:
         handle.write(
             "\\begin{minipage}{0.94\\linewidth}\n"
             "\\vspace{0.5em}\\footnotesize Notes: A usable screening row has a reference "
-            "label, an LLM surrogate label, a human-reviewed boundary decision, or source "
+            "label, an LLM surrogate label, a working-reference boundary decision, or source "
             "text screened as lacking a direct formal event. Surrogate rows are not final "
             "four-category outcomes. Rows without a codable formal event are not assigned "
             "substantive, nominal, functional-transfer, or liquidation labels.\n"

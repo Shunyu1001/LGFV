@@ -2,7 +2,7 @@
 
 Date: 2026-07-02
 
-This memo records the review of the final seven non-overlap issuers in the Codex surrogate validation queue. Five source packets were promoted to the human gold-standard file as medium-confidence `nominal_exit` labels. Two packets were marked `boundary_reviewed` because they raise sampling-frame or negative-evidence issues that should not be pooled mechanically with core city-platform LGFV cases.
+This memo records the review of the final seven non-overlap issuers in the Codex surrogate validation queue. Five source packets were promoted to the working-reference file as medium-confidence `nominal_exit` labels. Two packets were marked `boundary_reviewed` because they raise sampling-frame or negative-evidence issues that should not be pooled mechanically with core city-platform LGFV cases.
 
 | Case ID | Issuer | Decision | Evidence basis | Rationale |
 | --- | --- | --- | --- | --- |
@@ -14,4 +14,4 @@ This memo records the review of the final seven non-overlap issuers in the Codex
 | `sch_20260630_0031` | 温州市工业与能源发展集团有限公司 | `boundary_reviewed` | doc_sch_20260630_0031_005, lines 1222-1229; doc_sch_20260630_0031_001, lines 526-548 | formal no-government-financing language exists, but the packet centers on industrial, energy, service, and state-capital investment functions rather than a core city-platform LGFV exit case. |
 | `sch_20260630_0041` | 西宁城市发展有限公司 | `boundary_reviewed` | doc_sch_20260630_0041_002, lines 1420-1483, 1578-1603, 120-146, 448-465, and 868-872 | formal no-government-financing and non-platform-list language is paired with unusually strong negative evidence on land development, infrastructure construction, PPP, BT, and shantytown functions; retain for scope and possible substantive-exit review rather than pooling as nominal exit. |
 
-After this batch, the human gold-standard label file contains 85 cases: 2 substantive exits, 73 nominal exits, and 10 functional transfers. The candidate seed pool contains 85 gold-standard rows, 166 pending rows, and 6 boundary-reviewed rows. The surrogate validation queue has zero non-overlap issuers remaining.
+After this batch, the working-reference label file contains 85 cases: 2 substantive exits, 73 nominal exits, and 10 functional transfers. The candidate seed pool contains 85 working-reference rows, 166 pending rows, and 6 boundary-reviewed rows. The surrogate validation queue has zero non-overlap issuers remaining.

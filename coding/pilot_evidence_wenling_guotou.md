@@ -5,7 +5,7 @@
 - Case ID: `expand_zj_wenling_guotou`
 - Company: Wenling State-Owned Assets Investment Group Co., Ltd.
   (`温岭市国有资产投资集团有限公司`)
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `functional_transfer`
 - Confidence: medium
 - Main source page: Shanghai Clearing House,

@@ -4,7 +4,7 @@
 
 - Case ID: `pilot_zj_001`
 - Company: Hangzhou City Investment Group Co., Ltd. (`杭州市城市建设投资集团有限公司`)
-- Status: third human-validated pilot label
+- Status: third working-reference pilot label
 - Final label: `functional_transfer`
 - Confidence: medium
 - Main source page: Shanghai Clearing House, `杭州市城市建设投资集团有限公司2024年度第一期中期票据发行文件`, 2024-01-08

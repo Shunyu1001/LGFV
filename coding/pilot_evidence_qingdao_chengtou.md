@@ -5,7 +5,7 @@
 - Case ID: `pilot_sd_002`
 - Company: Qingdao City Construction Investment Group Co., Ltd.
   (`青岛城市建设投资(集团)有限责任公司`)
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `nominal_exit`
 - Confidence: medium
 - Main source page: Shanghai Clearing House,

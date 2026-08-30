@@ -9,7 +9,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_GOLD = ROOT / "data" / "processed" / "human_validated_labels.csv"
+DEFAULT_GOLD = ROOT / "data" / "processed" / "working_reference_labels.csv"
 DEFAULT_SCREENING = ROOT / "data" / "analysis_inputs" / "llm_screening_sample_2026_07_03_expanded.csv"
 DEFAULT_ISSUERS = (
     ROOT / "data" / "analysis_inputs" / "codex_surrogate_issuer_summary_2026_07_03_expanded.csv"
@@ -99,7 +99,7 @@ def gold_input_row(row: dict[str, str], index: int) -> dict[str, str]:
         "continued_function_evidence_score": "",
         "confidence": row.get("final_confidence", ""),
         "include_in_adjusted_descriptive_sample": "true",
-        "notes": "Human-validated gold-standard outcome.",
+        "notes": "Working-reference outcome.",
     }
 
 
@@ -108,7 +108,7 @@ def surrogate_input_row(row: dict[str, str], role: str, index: int) -> dict[str,
     notes = (
         "Non-overlap issuer-level surrogate used only for validation-adjusted descriptive counts."
         if role == "surrogate_auxiliary_nonoverlap"
-        else "Issuer-level surrogate that overlaps a gold-standard case; retained only as a validation check."
+        else "Issuer-level surrogate that overlaps a working-reference case; retained only as a validation check."
     )
     return {
         "analytic_id": f"{role}_{index:04d}",
@@ -179,7 +179,7 @@ def write_adjusted_tex(path: Path, rows: list[dict[str, str]]) -> None:
         handle.write("\\midrule\n")
         for row in rows:
             sample = row["sample"]
-            if sample == "Gold standard only":
+            if sample == "Working reference only":
                 adjustment = "Observed"
             elif "smoothed" in sample:
                 adjustment = "Jeffreys"
@@ -194,7 +194,7 @@ def write_adjusted_tex(path: Path, rows: list[dict[str, str]]) -> None:
         handle.write(
             "\\begin{minipage}{0.94\\linewidth}\n"
             "\\vspace{0.5em}\\footnotesize Notes: The adjusted rows add only non-overlap "
-            "issuer-level surrogate labels to the gold-standard sample. Because the current "
+            "issuer-level surrogate labels to the working-reference sample. Because the current "
             "surrogate rule is a one-sided nominal-exit screen, non-nominal cases in this table "
             "should be interpreted as expected classification error or unobserved institutional "
             "change, not as directly labeled outcomes.\n"

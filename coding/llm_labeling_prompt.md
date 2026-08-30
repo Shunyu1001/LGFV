@@ -3,7 +3,7 @@
 Use this prompt for preliminary coding only. The model output is not a final
 label. A case becomes human validated only after the researcher checks the
 original documents and records the result in
-`data/processed/human_validated_labels.csv`.
+`data/processed/working_reference_labels.csv`.
 
 ```text
 You are assisting with an academic research project on local government

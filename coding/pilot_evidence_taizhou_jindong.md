@@ -5,7 +5,7 @@
 - Case ID: `expand_js_taizhou_jindong`
 - Company: Taizhou Jindong City Construction Investment Group Co., Ltd.
   (`泰州市金东城市建设投资集团有限公司`)
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `functional_transfer`
 - Confidence: medium
 - Main source page: Shanghai Clearing House,

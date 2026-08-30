@@ -4,7 +4,7 @@
 
 - Case ID: `pilot_sc_001`
 - Company: Chengdu City Construction Investment Management Group Co., Ltd. (`成都城建投资管理集团有限责任公司`)
-- Status: fourth human-validated pilot label
+- Status: fourth working-reference pilot label
 - Final label: `nominal_exit`
 - Confidence: medium
 - Main source page: Shanghai Clearing House, `成都城建投资管理集团有限责任公司2023年度第三期中期票据发行文件`, 2023-10-30

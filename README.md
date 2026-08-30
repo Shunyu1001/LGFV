@@ -13,15 +13,15 @@ exit, functional transfer, or liquidation.
   collection. This is a sampling plan, not an empirical dataset.
 - `data/source_inventory_template.csv`: document-level source tracking
   template.
-- `data/labeling_template.csv`: case-level LLM and human-validated labels.
+- `data/labeling_template.csv`: case-level labeling template.
 - `data/analysis_inputs/`: small tracked intermediate datasets used for
   empirical construction, including the pilot coding matrix.
 - `data/diagnostics/`: small tracked reports about downloaded source data,
   schemas, and coverage.
 - `data/raw/`: original source materials, such as announcements, bond
   prospectuses, rating reports, and registration records.
-- `data/processed/`: coded datasets and cleaned variables, including
-  `human_validated_labels.csv`.
+- `data/processed/`: coded datasets and cleaned variables, including the
+  provisional `working_reference_labels.csv`.
 - `scripts/`: workflow notes and future scripts for extraction, labeling, and
   validation.
 - `docs/`: notes, memos, and project documentation.
@@ -36,17 +36,26 @@ four institutional types:
 3. Functional transfer
 4. Liquidation
 
-The coding workflow is designed as LLM-assisted, human-validated coding. Large
-language models can generate preliminary labels using a fixed codebook, but final
-labels are assigned after human review of the original source documents.
+The coding workflow separates working reference labels, LLM surrogate labels,
+and human-confirmed gold labels. Codex produced the working reference labels by
+reviewing retained source packets on behalf of the project author. A separate
+Codex/ChatGPT screen produced the lower-cost surrogate labels. Independent human
+confirmation remains a future validation gate.
 
 ## Current Workflow
 
-The current gold-standard file contains 94 human-reviewed city-platform cases.
-The historical-capacity analysis uses 84 matched gold cases. The expanded LLM
+The current working-reference file contains 94 source-packet-reviewed
+city-platform cases. These labels serve as provisional gold outcomes for
+workflow development and exploratory analysis, but they remain pending human
+confirmation. The historical-capacity analysis uses 84 matched working
+reference cases. The expanded LLM
 screen contains 203 disclosure-level surrogate labels, which collapse to 158
 issuer-level rows. These surrogates are a one-sided screen for nominal exit and
 are not treated as a validated four-class classifier.
+
+See `coding/label_provenance.md` and
+`data/validation/label_role_registry.csv` for the allowed analytical role of
+each label layer.
 
 ## Autoresearch Quick Start
 

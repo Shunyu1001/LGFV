@@ -2,7 +2,7 @@
 """Build the master LGFV case-pool file.
 
 The master file is the case-level scaffold for scaling the project from pilot
-labels to a larger LLM-coded and human-validated dataset. It combines the
+labels to a larger LLM-coded and working-reference dataset. It combines the
 candidate city-platform list, validated labels, source-document inventory, and
 historical-capacity measures. Contemporary fiscal variables remain explicit
 placeholders until those data are collected.
@@ -68,7 +68,7 @@ OUTPUT_COLUMNS = [
     "llm_label",
     "llm_confidence",
     "llm_model",
-    "human_reviewer",
+    "reference_label_producer",
     "validation_date",
     "notes",
 ]
@@ -284,7 +284,7 @@ def build_rows(
             "llm_label": "",
             "llm_confidence": "",
             "llm_model": "",
-            "human_reviewer": (label or {}).get("human_reviewer", ""),
+            "reference_label_producer": (label or {}).get("reference_label_producer", ""),
             "validation_date": (label or {}).get("validation_date", ""),
             "notes": (label or {}).get("notes", "") or candidate.get("notes", ""),
         }
@@ -322,7 +322,7 @@ def build_rows(
                 "caveat": label.get("caveat", ""),
                 "debt_pressure_status": "not_collected",
                 "land_finance_dependence_status": "not_collected",
-                "human_reviewer": label.get("human_reviewer", ""),
+                "reference_label_producer": label.get("reference_label_producer", ""),
                 "validation_date": label.get("validation_date", ""),
                 "notes": label.get("notes", ""),
             }
@@ -337,7 +337,7 @@ def main() -> int:
         "--candidates",
         default="data/analysis_inputs/candidate_city_historical_capacity.csv",
     )
-    parser.add_argument("--labels", default="data/processed/human_validated_labels.csv")
+    parser.add_argument("--labels", default="data/processed/working_reference_labels.csv")
     parser.add_argument("--documents", default="data/document_inventory.csv")
     parser.add_argument("--output", default="data/analysis_inputs/master_case_pool.csv")
     args = parser.parse_args()

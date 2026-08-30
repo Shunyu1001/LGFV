@@ -4,7 +4,7 @@
 
 - Case ID: `pilot_js_003`
 - Company: Yancheng City Asset Investment Group Co., Ltd. (`盐城市城市资产投资集团有限公司`)
-- Status: human-validated pilot label
+- Status: working-reference pilot label
 - Final coding implication: `nominal_exit`
 - Confidence: medium
 - Main source page: Shanghai Clearing House, `盐城市城市资产投资集团有限公司2025年度第二期中期票据发行文件`, 2025-06-18

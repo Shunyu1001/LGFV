@@ -96,7 +96,7 @@ Relevant extracted-text locations:
 
 ## Preliminary Coding Implication
 
-The likely label is `nominal_exit`. The evidence is now strong enough for a first human-validated pilot label, though the final dataset should still record that the exit event itself is documented through issuer disclosures rather than a directly retrieved government list.
+The likely label is `nominal_exit`. The evidence is now strong enough for a first working-reference pilot label, though the final dataset should still record that the exit event itself is documented through issuer disclosures rather than a directly retrieved government list.
 
 The logic is:
 

@@ -4,7 +4,7 @@
 
 - Case ID: `pilot_gd_001`
 - Company: Guangzhou City Construction Investment Group Co., Ltd. (`广州市城市建设投资集团有限公司`)
-- Status: second human-validated pilot label
+- Status: second working-reference pilot label
 - Final label: `substantive_exit`
 - Confidence: medium
 - Main source page: Shanghai Clearing House, `广州市城市建设投资集团有限公司2026年度第四期中期票据发行文件`, 2026-04-07

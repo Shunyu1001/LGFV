@@ -1,7 +1,7 @@
 # Source Search Protocol
 
 This protocol governs the expansion from the pilot validated sample to a
-50-case human-validated sample. The goal is not to collect every document on a
+50-case working-reference sample. The goal is not to collect every document on a
 city platform. The goal is to build a source packet that can support one
 case-level classification under the fixed codebook.
 
@@ -178,7 +178,7 @@ the packet shows earlier platform-like functions.
 
 Each validated case should leave four records:
 
-1. a row in `data/processed/human_validated_labels.csv`;
+1. a row in `data/processed/working_reference_labels.csv`;
 2. a row in `data/analysis_inputs/master_case_pool.csv`;
 3. a case evidence note in `coding/pilot_evidence_<case>.md` or a successor
    `coding/validated_evidence_<case>.md` file; and

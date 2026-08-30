@@ -5,7 +5,7 @@
 - Case ID: `expand_js_jiangning_guozi`
 - Company: Nanjing Jiangning State-Owned Assets Operation Group Co., Ltd.
   (`南京江宁国有资产经营集团有限公司`)
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `nominal_exit`
 - Confidence: high
 - Main source page: Shanghai Clearing House,

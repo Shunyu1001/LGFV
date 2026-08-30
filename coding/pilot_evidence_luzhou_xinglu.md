@@ -5,7 +5,7 @@
 - Case ID: `pilot_sc_003`
 - Company: Luzhou Xinglu Investment Group Co., Ltd.
   (`泸州市兴泸投资集团有限公司`)
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `nominal_exit`
 - Confidence: medium
 - Main source page: Shanghai Clearing House,

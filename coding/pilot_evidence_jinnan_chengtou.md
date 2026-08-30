@@ -4,7 +4,7 @@
 - Platform: 天津津南城市建设投资有限公司
 - City and province: Tianjin Jinnan, Tianjin
 - Source packet: Shanghai Clearing 2026 SCP disclosure page
-- Status: human-validated evidence packet
+- Status: working-reference evidence packet
 - Final coding: `nominal_exit`
 - Confidence: medium
 

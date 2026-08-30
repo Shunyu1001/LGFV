@@ -4,7 +4,7 @@
 
 - Case ID: `pilot_hn_004`
 - Company: Hengyang City Construction Investment Co., Ltd. (`衡阳市城市建设投资有限公司`)
-- Status: human-validated pilot label
+- Status: working-reference pilot label
 - Final coding implication: `nominal_exit`
 - Confidence: high
 - Main source page: Shanghai Clearing House, `衡阳市城市建设投资有限公司2026年度第二期中期票据发行文件`, 2026-03-24

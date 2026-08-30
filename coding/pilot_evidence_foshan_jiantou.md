@@ -4,7 +4,7 @@
 
 - Case ID: `pilot_gd_003`
 - Company: Foshan Construction Development Group Co., Ltd. (`佛山市建设发展集团有限公司`)
-- Status: human-validated pilot label
+- Status: working-reference pilot label
 - Final coding implication: `functional_transfer`
 - Confidence: medium
 - Main source page: Shanghai Clearing House, `佛山市建设发展集团有限公司2025年度中期票据发行文件`, 2025-03-07

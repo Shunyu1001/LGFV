@@ -4,7 +4,7 @@
 
 - Case ID: `pilot_sd_001`
 - Company: Jinan City Investment Group Co., Ltd. (`济南城市投资集团有限公司`)
-- Status: human-validated pilot label
+- Status: working-reference pilot label
 - Final coding implication: `nominal_exit`
 - Confidence: medium
 - Main source page: Shanghai Clearing House, `济南城市投资集团有限公司2025年度第一期中期票据发行文件`, 2025-10-11
