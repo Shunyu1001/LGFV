@@ -1,9 +1,9 @@
 schema_version: 1
 project_id: lgfv-exit-types
-updated_at: 2026-08-30T18:38:34+08:00
+updated_at: 2026-08-30T21:59:36+08:00
 updated_by: coordinator
 stage: advanced-measurement-pilot
-current_best_commit: aefc54a
+current_best_commit: b6b8f22
 immutable_version: charter-v1
 research_question: >-
   How can researchers distinguish formal LGFV exit from functional fiscal
@@ -27,28 +27,31 @@ state:
   empirical_simulation:
     status: red
     main_gap: >-
-      The gold outcome has only 12 institutional-change events. The corrected
+      The working-reference outcome has only 12 institutional-change events. The corrected
       adjusted design has full rank, but its historical-capacity estimates are
       small and deletion-sensitive, and province fixed effects are unsupported.
   claim_evidence:
     status: red
     main_gap: >-
-      Measurement validation lacks a probability sample, completed independent
-      coding, recall, and multiclass error estimates. Geography remains
-      unresolved for 88 candidate issuers, and 98 require scope review.
+      The 94 working reference labels were produced through Codex source-packet
+      review and await independent human confirmation. Measurement validation
+      also lacks a probability sample, recall, and multiclass error estimates.
+      Geography remains unresolved for 88 candidate issuers, and 98 require
+      scope review.
   reviewer:
     status: red
     top_risk: >-
       The manuscript is a polished advanced measurement paper, but reviewers
-      can still reject national empirical claims because validation is not yet
-      independent or probability-based and the rare-outcome models are fragile.
+      can still reject national empirical claims because the working labels are
+      not yet human confirmed or probability validated and the rare-outcome
+      models are fragile.
 
-current_bottleneck: probability validation, independent coding, and sparse-outcome empirical credibility
+current_bottleneck: geography and scope completion for the probability frame, human confirmation, and sparse-outcome empirical credibility
 next_recommended_loops:
   - claim_evidence
   - empirical_simulation
 pending_human_decisions:
-  - approve source access and assign a genuine second coder for the blank 94-case packet
+  - assign an independent human confirmer for the blank 94-case packet
   - adjudicate scope and complete the 88 unresolved geography and 98 scope reviews
   - approve a probability validation draw only after the issuer frame passes its coverage gate
 stop_conditions_met: false
