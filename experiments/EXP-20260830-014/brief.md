@@ -2,7 +2,7 @@
 
 ## Experiment identity
 
-- Experiment ID: `EXP-20260830-012`
+- Experiment ID: `EXP-20260830-014`
 - Loop: `empirical_simulation`
 - Base commit: `538d99ac0424e0814c88dab2b00b6ce7257ab6b8`
 - Started at: `2026-08-30T16:41:42+08:00`
@@ -87,7 +87,7 @@ or pre-populated coding entry appears.
 
 - New scripts under `scripts/measurement_validation/`
 - New packet outputs under `data/validation/independent_coding/`
-- New files under `experiments/EXP-20260830-012/`
+- New files under `experiments/EXP-20260830-014/`
 
 Do not modify gold labels, raw source inventories, central ledgers, manuscript
 files, prior experiment outputs, or the proposed sampling design.

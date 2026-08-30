@@ -1,5 +1,5 @@
 schema_version: 1
-experiment_id: EXP-20260830-012
+experiment_id: EXP-20260830-014
 base_commit: 538d99ac0424e0814c88dab2b00b6ce7257ab6b8
 branch: codex/validation-geography-packet
 input_hash_algorithm: sha256
@@ -22,12 +22,12 @@ planned_outputs:
   - data/validation/independent_coding/blinded_gold_second_coder_packet.csv
   - data/validation/independent_coding/blinded_probability_validation_packet.csv
   - data/validation/independent_coding/gold_adjudication_log_template.csv
-  - experiments/EXP-20260830-012/artifacts/coder_instructions.md
-  - experiments/EXP-20260830-012/metrics.json
-  - experiments/EXP-20260830-012/assessment.md
-  - experiments/EXP-20260830-012/execution_log.md
-  - experiments/EXP-20260830-012/artifacts/proposed_ledger_rows.tsv
-  - experiments/EXP-20260830-012/artifacts/proposed_manuscript_rows.md
+  - experiments/EXP-20260830-014/artifacts/coder_instructions.md
+  - experiments/EXP-20260830-014/metrics.json
+  - experiments/EXP-20260830-014/assessment.md
+  - experiments/EXP-20260830-014/execution_log.md
+  - experiments/EXP-20260830-014/artifacts/proposed_ledger_rows.tsv
+  - experiments/EXP-20260830-014/artifacts/proposed_manuscript_rows.md
 random_draw: false
 random_seed: null
 coding_executed: false

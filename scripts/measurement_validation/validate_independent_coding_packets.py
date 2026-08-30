@@ -19,7 +19,7 @@ CROSSWALK_INPUT = ROOT / "data/validation/source_supported_validation_geography_
 GOLD_PACKET = ROOT / "data/validation/independent_coding/blinded_gold_second_coder_packet.csv"
 CANDIDATE_PACKET = ROOT / "data/validation/independent_coding/blinded_probability_validation_packet.csv"
 ADJUDICATION_PACKET = ROOT / "data/validation/independent_coding/gold_adjudication_log_template.csv"
-METRICS_PATH = ROOT / "experiments/EXP-20260830-012/metrics.json"
+METRICS_PATH = ROOT / "experiments/EXP-20260830-014/metrics.json"
 
 CODER_FIELDS = [
     "coder_id", "coding_date", "case_eligible", "formal_event_found",

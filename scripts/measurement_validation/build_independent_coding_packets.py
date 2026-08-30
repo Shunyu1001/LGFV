@@ -22,9 +22,9 @@ OUTPUT_DIR = ROOT / "data/validation/independent_coding"
 GOLD_PACKET_PATH = OUTPUT_DIR / "blinded_gold_second_coder_packet.csv"
 CANDIDATE_PACKET_PATH = OUTPUT_DIR / "blinded_probability_validation_packet.csv"
 ADJUDICATION_PATH = OUTPUT_DIR / "gold_adjudication_log_template.csv"
-METRICS_PATH = ROOT / "experiments/EXP-20260830-012/metrics.json"
+METRICS_PATH = ROOT / "experiments/EXP-20260830-014/metrics.json"
 
-EXPERIMENT_ID = "EXP-20260830-012"
+EXPERIMENT_ID = "EXP-20260830-014"
 BASE_COMMIT = "538d99ac0424e0814c88dab2b00b6ce7257ab6b8"
 PACKET_FIELDS = [
     "packet_case_id", "issuer_name", "province", "city",
