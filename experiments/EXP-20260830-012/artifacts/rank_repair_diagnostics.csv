@@ -1,0 +1,3 @@
+design,observations,columns,matrix_rank,rank_deficient,condition_number,district_count,prefecture_count,maximum_absolute_alias_residual,platform_reference_category,repair
+legacy_two_platform_indicators,78,9,8,True,4063462001457814.50000000,25,53,0.00000000,none,intercept equals district plus prefecture indicators
+corrected_single_platform_indicator,78,8,8,False,6.09786492,25,53,0.00000000,district/county platform,omit district/county indicator and retain prefecture/municipal indicator

@@ -1,0 +1,72 @@
+{
+  "matched_gold_observations": 84,
+  "matched_gold_events": 12,
+  "complete_control_observations": 78,
+  "complete_control_events": 12,
+  "excluded_matched_gold_observations": 6,
+  "excluded_events": 0,
+  "legacy_adjusted_design": {
+    "columns": 9,
+    "matrix_rank": 8,
+    "condition_number": 4063462001457814.5
+  },
+  "corrected_adjusted_design": {
+    "columns": 8,
+    "matrix_rank": 8,
+    "condition_number": 6.09786492,
+    "events_per_independent_column": 1.5,
+    "reference_category": "district/county platform"
+  },
+  "matched_gold_historical_lpm": {
+    "probability_effect": 0.06637998,
+    "standard_error": 0.04057049,
+    "ci95_low": -0.01313817,
+    "ci95_high": 0.14589814,
+    "leave_one_out_minimum": 0.04847717,
+    "leave_one_out_maximum": 0.08249685,
+    "leave_one_out_sign_changes": 0
+  },
+  "matched_gold_historical_firth": {
+    "average_marginal_effect": 0.0555409,
+    "delta_method_standard_error": 0.03237658,
+    "ci95_low": -0.00791718,
+    "ci95_high": 0.11899899,
+    "leave_one_out_minimum": 0.04336109,
+    "leave_one_out_maximum": 0.06712915,
+    "leave_one_out_sign_changes": 0
+  },
+  "complete_control_adjusted_lpm": {
+    "probability_effect": 0.00541842,
+    "standard_error": 0.04533248,
+    "ci95_low": -0.08343324,
+    "ci95_high": 0.09427008,
+    "leave_one_out_minimum": -0.00945049,
+    "leave_one_out_maximum": 0.02300536,
+    "leave_one_out_sign_changes": 9
+  },
+  "complete_control_adjusted_firth": {
+    "average_marginal_effect": 0.0034971,
+    "delta_method_standard_error": 0.0517477,
+    "ci95_low": -0.0979284,
+    "ci95_high": 0.1049226,
+    "leave_one_out_minimum": -0.00971133,
+    "leave_one_out_maximum": 0.01836307,
+    "leave_one_out_sign_changes": 11
+  },
+  "province_feasibility": {
+    "provinces": 18,
+    "provinces_with_outcome_variation": 4,
+    "candidate_columns": 25,
+    "candidate_rank": 25,
+    "events_per_independent_column": 0.48,
+    "eligible_for_estimation": false
+  },
+  "all_fixed_models_converged": true,
+  "all_leave_one_out_attempts_converged": true,
+  "baseline_reproduced_at_pilot_precision": true,
+  "selection_by_sign_or_significance": false,
+  "audit_specific_unit_tests_run": 1,
+  "audit_specific_unit_tests_passed": 1,
+  "full_regression_suite_tests_run": 6,
+  "full_regression_suite_tests_passed": 6
+}

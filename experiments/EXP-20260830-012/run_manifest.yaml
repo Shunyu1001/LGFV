@@ -1,0 +1,33 @@
+experiment_id: EXP-20260830-012
+started_at: 2026-08-30T16:13:40+08:00
+agent: sparse-outcome-model-worktree
+branch: codex/sparse-outcome-models
+base_commit: bf1bd7b99c7dd9261678015c9f050599ae862fe3
+trial_commit: null
+python: 3.13.4
+random_seed: not_applicable
+input_identifiers:
+  empirical_panel:
+    path: data/analysis_inputs/empirical_case_panel.csv
+    sha256: 4158ca8d313b3da4ad16325eb9192877b28b4fb638e417c849da232fa2df5bf0
+  pilot_lpm_reference:
+    path: data/analysis_inputs/pilot_lpm_institutional_change.csv
+    sha256: 97bdae8d85dc5f59cecb8c2e936db0fa7d89f94a72a3ffa1bcab877f71cc7748
+estimand:
+  outcome: one for substantive exit or functional transfer; zero for nominal exit
+  exposure: within-model-sample standardized Ming-Qing elite density
+  samples: recorded matched-gold and complete-control flags
+fixed_models:
+  - matched_gold_historical_lpm
+  - matched_gold_historical_firth
+  - complete_control_adjusted_lpm
+  - complete_control_adjusted_firth
+rank_repair:
+  omitted_indicator: district/county platform
+  retained_indicator: prefecture/municipal platform
+  reference_category: district/county platform
+province_fixed_effects: feasibility diagnostic only; not estimated
+budget: one deterministic implementation and run with at most two minimal mechanical retries
+mechanical_retries: 1
+mechanical_retry_reason: corrected plot heading overlap and a literal line-break marker in the generated table
+result_direction_used_for_selection: false
