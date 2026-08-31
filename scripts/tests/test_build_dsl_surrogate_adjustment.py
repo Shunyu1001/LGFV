@@ -61,9 +61,10 @@ class DslSurrogateAdjustmentDefaultTest(unittest.TestCase):
 
             values = diagnostic_values(default_outputs[0])
             self.assertEqual(values["surrogate_unique_issuers"], "158")
-            self.assertEqual(values["surrogate_gold_overlap_issuers"], "61")
+            self.assertEqual(values["surrogate_reference_overlap_issuers"], "61")
             self.assertEqual(values["nonoverlap_surrogate_issuers"], "97")
             self.assertIn("validation_overlap=61", default_run.stdout)
+            self.assertIn("working_reference=94", default_run.stdout)
             self.assertIn("nonoverlap_surrogate_issuers=97", default_run.stdout)
             self.assertEqual(default_run.stdout, explicit_run.stdout)
 

@@ -20,6 +20,16 @@ from collections import Counter
 from datetime import date
 from pathlib import Path
 
+from label_roles import (
+    INDEPENDENT_CONFIRMATION_NOTICE,
+    WORKING_REFERENCE_BOUNDARY_SOURCE,
+    WORKING_REFERENCE_BOUNDARY_STATUS,
+    WORKING_REFERENCE_LABEL_SOURCE,
+    WORKING_REFERENCE_SCREENING_STATUS,
+    is_boundary_source,
+    is_working_reference_source,
+)
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_INPUT = ROOT / "data" / "analysis_inputs" / "codex_surrogate_labels_2026_07_02.csv"
@@ -77,6 +87,13 @@ def is_true(value: str) -> bool:
     return str(value).strip().lower() in {"true", "1", "yes"}
 
 
+def append_notice(value: str, notice: str) -> str:
+    text = (value or "").strip()
+    if notice.lower() in text.lower():
+        return text
+    return " ".join(part for part in (text, notice) if part)
+
+
 def classify(row: dict[str, str]) -> dict[str, str]:
     label_source = row.get("label_source", "")
     surrogate_status = row.get("surrogate_status", "")
@@ -88,32 +105,57 @@ def classify(row: dict[str, str]) -> dict[str, str]:
     usable_exit_type = False
     usable_adjustment = False
 
-    if label_source == "human_gold_standard":
-        screening_status = "gold_standard_exit_type"
+    if is_working_reference_source(label_source):
+        output_label_source = WORKING_REFERENCE_LABEL_SOURCE
+        screening_status = WORKING_REFERENCE_SCREENING_STATUS
         screening_label = exit_type
         usable_exit_type = True
         usable_adjustment = True
-    elif label_source == "human_reviewed_boundary":
-        screening_status = "human_reviewed_boundary"
+        missing_information = append_notice(
+            row.get("missing_information", ""), INDEPENDENT_CONFIRMATION_NOTICE
+        )
+        needs_human_review = "true"
+    elif is_boundary_source(label_source):
+        output_label_source = WORKING_REFERENCE_BOUNDARY_SOURCE
+        screening_status = WORKING_REFERENCE_BOUNDARY_STATUS
         screening_label = "boundary_outside_core_frame"
         usable_adjustment = True
+        missing_information = append_notice(
+            row.get("missing_information", "").replace(
+                "gold labels", "working-reference labels"
+            ),
+            INDEPENDENT_CONFIRMATION_NOTICE,
+        )
+        needs_human_review = "true"
     elif label_source == "codex_surrogate" and surrogate_status == "labeled":
+        output_label_source = label_source
         screening_status = "llm_surrogate_exit_type"
         screening_label = exit_type
         usable_exit_type = True
         usable_adjustment = True
+        missing_information = row.get("missing_information", "")
+        needs_human_review = row.get("needs_human_review", "")
     elif label_source == "codex_surrogate" and surrogate_status == "unresolved" and source_coverage > 0:
+        output_label_source = label_source
         screening_status = "llm_screened_no_direct_formal_event"
         screening_label = "no_direct_formal_event_observed"
         usable_adjustment = True
+        missing_information = row.get("missing_information", "")
+        needs_human_review = row.get("needs_human_review", "")
     elif label_source == "codex_surrogate" and surrogate_status == "unresolved" and evidence_basis:
+        output_label_source = label_source
         screening_status = "llm_screened_no_direct_formal_event"
         screening_label = "no_direct_formal_event_observed"
         usable_adjustment = True
+        missing_information = row.get("missing_information", "")
+        needs_human_review = row.get("needs_human_review", "")
     else:
+        output_label_source = label_source
         screening_status = "source_packet_missing"
         screening_label = "source_missing"
         usable_screening = False
+        missing_information = row.get("missing_information", "")
+        needs_human_review = row.get("needs_human_review", "")
 
     return {
         "pool_id": row.get("pool_id", ""),
@@ -121,7 +163,7 @@ def classify(row: dict[str, str]) -> dict[str, str]:
         "province": row.get("province", ""),
         "city": row.get("city", ""),
         "issuer_name": row.get("issuer_name", ""),
-        "label_source": label_source,
+        "label_source": output_label_source,
         "surrogate_status": surrogate_status,
         "screening_status": screening_status,
         "screening_label": screening_label,
@@ -134,9 +176,9 @@ def classify(row: dict[str, str]) -> dict[str, str]:
         "usable_for_validation_adjustment": str(usable_adjustment).lower(),
         "formal_event_found": row.get("formal_event_found", ""),
         "continued_function_found": row.get("continued_function_found", ""),
-        "missing_information": row.get("missing_information", ""),
+        "missing_information": missing_information,
         "evidence_basis": row.get("evidence_basis", ""),
-        "needs_human_review": row.get("needs_human_review", ""),
+        "needs_human_review": needs_human_review,
     }
 
 
@@ -196,14 +238,22 @@ def main() -> int:
         handle.write("Screening status & Rows & Use \\\\\n")
         handle.write("\\midrule\n")
         rows_for_table = [
-            ("Author-reviewed reference label", status_counts["gold_standard_exit_type"], "Documentary outcome reference"),
+            (
+                "Codex source-packet working reference",
+                status_counts[WORKING_REFERENCE_SCREENING_STATUS],
+                "Provisional documentary outcome reference",
+            ),
             ("LLM surrogate exit type", status_counts["llm_surrogate_exit_type"], "One-sided provisional nominal screen"),
             (
                 "LLM screened, no direct formal event",
                 status_counts["llm_screened_no_direct_formal_event"],
                 "Screened non-outcome",
             ),
-            ("Working-reference boundary", status_counts["human_reviewed_boundary"], "Scope condition"),
+            (
+                "Codex source-packet boundary review",
+                status_counts[WORKING_REFERENCE_BOUNDARY_STATUS],
+                "Provisional scope condition",
+            ),
             ("Source packet missing", status_counts["source_packet_missing"], "Not usable"),
         ]
         for label, count, use in rows_for_table:
@@ -219,7 +269,8 @@ def main() -> int:
             "label, an LLM surrogate label, a working-reference boundary decision, or source "
             "text screened as lacking a direct formal event. Surrogate rows are not final "
             "four-category outcomes. Rows without a codable formal event are not assigned "
-            "substantive, nominal, functional-transfer, or liquidation labels.\n"
+            "substantive, nominal, functional-transfer, or liquidation labels. "
+            f"{INDEPENDENT_CONFIRMATION_NOTICE}\n"
             "\\end{minipage}\n"
         )
         handle.write("\\end{table}\n")

@@ -1,9 +1,9 @@
 component,available,denominator,use
-Gold-standard labels,94,191,Outcome scale and human validation
-Adjusted descriptive sample,191,191,Gold labels plus non-overlap surrogate nominal-exit screens
-Historical capacity match,84,94,Validated-sample descriptive patterns and current regression
-Current validated-model rows,84,94,Rows with gold labels and historical capacity
-Full-controls regression rows,78,94,"Rows with gold labels, historical capacity, and contemporary controls"
+Working-reference labels,94,191,Provisional outcome scale
+Adjusted descriptive sample,191,191,Working-reference labels plus non-overlap surrogate nominal-exit screens
+Historical capacity match,84,94,Working-reference descriptive patterns and current diagnostic regression
+Current validated-model rows,84,94,Rows with working-reference labels and historical capacity
+Full-controls regression rows,78,94,"Rows with working-reference labels, historical capacity, and contemporary controls"
 Source coverage score,191,191,Bond disclosure quality and measurement-quality control
 Debt pressure,78,191,"Contemporary alternative explanation, to be collected"
 Land finance dependence,78,191,"Contemporary alternative explanation, to be collected"

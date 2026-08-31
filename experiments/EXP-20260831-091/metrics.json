@@ -1,0 +1,19 @@
+{
+  "working_reference_rows": 94,
+  "working_reference_boundary_rows": 5,
+  "surrogate_disclosure_rows": 203,
+  "failed_isolated_rebuild_surrogate_rows": 0,
+  "empirical_panel_rows": 191,
+  "historical_diagnostic_rows": 84,
+  "full_controls_rows": 78,
+  "numeric_and_outcome_label_changes": 0,
+  "manuscript_quantities_matched": 43,
+  "manuscript_quantities_audited": 43,
+  "targeted_tests_passed": 6,
+  "paper_pages": 78,
+  "inherited_missing_extraction_warnings": 89,
+  "frozen_active_label_file_changed_final": false,
+  "independent_human_confirmation_complete": false,
+  "generated_artifact_diff_sha256": "348d2d49d61eae7f65e6e3e76c59044002c5657ad685169646611c1100be9f88",
+  "status": "keep"
+}

@@ -1,11 +1,11 @@
 quantity,value,description
-human_gold_labels,94,Human-validated gold-standard labels.
-human_gold_nominal_exit,82,Gold-standard nominal-exit labels.
-human_gold_institutional_change,12,Gold-standard substantive-exit plus functional-transfer labels.
+working_reference_labels,94,Codex source-packet working reference labels pending independent human confirmation.
+working_reference_nominal_exit,82,Working-reference nominal-exit labels.
+working_reference_institutional_change,12,Working-reference substantive-exit plus functional-transfer labels.
 surrogate_unique_issuers,158,Issuer-level Codex surrogate nominal-exit rows after deduplication.
-surrogate_gold_overlap_issuers,61,Surrogate issuers already matched to gold-standard validated cases.
-surrogate_overlap_nominal_matches,61,Overlap issuers where surrogate nominal exit matches the gold label.
+surrogate_reference_overlap_issuers,61,Surrogate issuers already matched to working reference cases.
+surrogate_overlap_nominal_matches,61,Overlap issuers where the surrogate procedure matches the working reference label.
 raw_nominal_precision,1.000,Unsmoothed positive predictive value for surrogate nominal-exit labels.
 jeffreys_smoothed_nominal_precision,0.992,Jeffreys-smoothed precision used for validation-adjusted descriptive counts.
 wilson_95_lower_nominal_precision,0.941,Conservative 95 percent Wilson lower bound for nominal-exit precision.
-nonoverlap_surrogate_issuers,97,Surrogate issuers not yet in the gold-standard file.
+nonoverlap_surrogate_issuers,97,Surrogate issuers not yet in the working-reference file.

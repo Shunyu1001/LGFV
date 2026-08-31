@@ -14,11 +14,20 @@ import pathlib
 import re
 from datetime import date
 
+from label_roles import (
+    INDEPENDENT_CONFIRMATION_NOTICE,
+    LLM_SURROGATE_LABEL_SOURCE,
+    WORKING_REFERENCE_BOUNDARY_SOURCE,
+    WORKING_REFERENCE_LABEL_SOURCE,
+    WORKING_REFERENCE_PRODUCER,
+    is_working_reference_status,
+)
+
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DEFAULT_SEED = ROOT / "data" / "analysis_inputs" / "llm_candidate_pool_seed_2026_06_30.csv"
 DEFAULT_MASTER = ROOT / "data" / "analysis_inputs" / "master_case_pool.csv"
-DEFAULT_HUMAN = ROOT / "data" / "processed" / "working_reference_labels.csv"
+DEFAULT_REFERENCE = ROOT / "data" / "processed" / "working_reference_labels.csv"
 DEFAULT_DOCS = ROOT / "data" / "document_inventory.csv"
 DEFAULT_SOURCES = ROOT / "data" / "source_inventory.csv"
 DEFAULT_OUTPUT = ROOT / "data" / "analysis_inputs" / f"codex_surrogate_labels_{date.today():%Y_%m_%d}.csv"
@@ -236,10 +245,12 @@ def processed_text(case_id: str, docs: list[dict[str, str]]) -> tuple[str, list[
     return "\n".join(parts), used
 
 
-def human_row(seed_row: dict[str, str], human_by_case: dict[str, dict[str, str]]) -> dict[str, str]:
+def reference_row(
+    seed_row: dict[str, str], reference_by_case: dict[str, dict[str, str]]
+) -> dict[str, str]:
     case_id = seed_row["source_row_id"]
-    human = human_by_case.get(case_id, {})
-    label = norm(human.get("final_label"))
+    reference = reference_by_case.get(case_id, {})
+    label = norm(reference.get("final_label"))
     return {
         "pool_id": seed_row["pool_id"],
         "source_row_id": case_id,
@@ -247,24 +258,33 @@ def human_row(seed_row: dict[str, str], human_by_case: dict[str, dict[str, str]]
         "city": seed_row.get("city", ""),
         "issuer_name": seed_row.get("issuer_name", ""),
         "validation_status": seed_row.get("validation_status", ""),
-        "label_source": "human_gold_standard",
+        "label_source": WORKING_REFERENCE_LABEL_SOURCE,
         "surrogate_status": "not_surrogate",
         "formal_event_found": "true",
-        "formal_event_summary": norm(human.get("official_exit_event")),
+        "formal_event_summary": norm(reference.get("official_exit_event")),
         "continued_function_found": "true" if label in {"nominal_exit", "functional_transfer"} else "",
-        "continued_function_summary": norm(human.get("final_rationale")),
+        "continued_function_summary": norm(reference.get("final_rationale")),
         "exit_type": label,
-        "confidence": norm(human.get("final_confidence")),
-        "source_coverage_score": norm(human.get("source_coverage_score")),
+        "confidence": norm(reference.get("final_confidence")),
+        "source_coverage_score": norm(reference.get("source_coverage_score")),
         "continued_function_evidence_score": "",
-        "alternative_label": norm(human.get("alternative_label")),
-        "missing_information": norm(human.get("caveat")),
-        "classification_rationale": norm(human.get("final_rationale")),
-        "evidence_basis": "; ".join(
-            x for x in [norm(human.get("primary_evidence_doc")), norm(human.get("secondary_evidence_doc"))] if x
+        "alternative_label": norm(reference.get("alternative_label")),
+        "missing_information": " ".join(
+            value
+            for value in [norm(reference.get("caveat")), INDEPENDENT_CONFIRMATION_NOTICE]
+            if value
         ),
-        "needs_human_review": "false",
-        "labeler": "human",
+        "classification_rationale": norm(reference.get("final_rationale")),
+        "evidence_basis": "; ".join(
+            x
+            for x in [
+                norm(reference.get("primary_evidence_doc")),
+                norm(reference.get("secondary_evidence_doc")),
+            ]
+            if x
+        ),
+        "needs_human_review": "true",
+        "labeler": WORKING_REFERENCE_PRODUCER,
     }
 
 
@@ -272,7 +292,7 @@ def boundary_row(seed_row: dict[str, str]) -> dict[str, str]:
     note = norm(seed_row.get("notes"))
     rationale = (
         note
-        or "Human review retained this source packet as boundary evidence but excluded it from "
+        or "Codex source-packet review retained this packet as boundary evidence but excluded it from "
         "the current working-reference exit-case scope."
     )
     return {
@@ -282,7 +302,7 @@ def boundary_row(seed_row: dict[str, str]) -> dict[str, str]:
         "city": seed_row.get("city", ""),
         "issuer_name": seed_row.get("issuer_name", ""),
         "validation_status": seed_row.get("validation_status", ""),
-        "label_source": "human_reviewed_boundary",
+        "label_source": WORKING_REFERENCE_BOUNDARY_SOURCE,
         "surrogate_status": "not_surrogate",
         "formal_event_found": "false",
         "formal_event_summary": "",
@@ -294,13 +314,13 @@ def boundary_row(seed_row: dict[str, str]) -> dict[str, str]:
         "continued_function_evidence_score": "",
         "alternative_label": "",
         "missing_information": (
-            "Boundary-reviewed packet excluded from gold labels because it is outside the "
+            "Boundary-reviewed packet excluded from the working-reference labels because it is outside the "
             "city-platform LGFV exit frame or lacks a direct official exit or transfer event."
         ),
         "classification_rationale": rationale,
         "evidence_basis": norm(seed_row.get("source_url")) or norm(seed_row.get("announcement_title")),
-        "needs_human_review": "false",
-        "labeler": "human boundary review",
+        "needs_human_review": "true",
+        "labeler": WORKING_REFERENCE_PRODUCER,
     }
 
 
@@ -312,7 +332,7 @@ def unresolved(seed_row: dict[str, str], reason: str, source_coverage: str = "1"
         "city": seed_row.get("city", ""),
         "issuer_name": seed_row.get("issuer_name", ""),
         "validation_status": seed_row.get("validation_status", ""),
-        "label_source": "codex_surrogate",
+        "label_source": LLM_SURROGATE_LABEL_SOURCE,
         "surrogate_status": "unresolved",
         "formal_event_found": "false",
         "formal_event_summary": "",
@@ -396,7 +416,7 @@ def surrogate_row(
         "city": seed_row.get("city", ""),
         "issuer_name": seed_row.get("issuer_name", ""),
         "validation_status": seed_row.get("validation_status", ""),
-        "label_source": "codex_surrogate",
+        "label_source": LLM_SURROGATE_LABEL_SOURCE,
         "surrogate_status": "labeled",
         "formal_event_found": "true",
         "formal_event_summary": formal_snip,
@@ -422,7 +442,13 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--seed", type=pathlib.Path, default=DEFAULT_SEED)
     parser.add_argument("--master", type=pathlib.Path, default=DEFAULT_MASTER)
-    parser.add_argument("--human", type=pathlib.Path, default=DEFAULT_HUMAN)
+    parser.add_argument(
+        "--reference",
+        "--human",
+        dest="reference",
+        type=pathlib.Path,
+        default=DEFAULT_REFERENCE,
+    )
     parser.add_argument("--docs", type=pathlib.Path, default=DEFAULT_DOCS)
     parser.add_argument("--sources", type=pathlib.Path, default=DEFAULT_SOURCES)
     parser.add_argument("--output", type=pathlib.Path, default=DEFAULT_OUTPUT)
@@ -430,7 +456,7 @@ def main() -> int:
 
     seed = read_csv(args.seed)
     master_by_case = {row["case_id"]: row for row in read_csv(args.master)}
-    human_by_case = {row["case_id"]: row for row in read_csv(args.human)}
+    reference_by_case = {row["case_id"]: row for row in read_csv(args.reference)}
     docs = read_csv(args.docs)
     sources_by_case: dict[str, list[dict[str, str]]] = {}
     for row in read_csv(args.sources):
@@ -438,8 +464,8 @@ def main() -> int:
 
     output: list[dict[str, str]] = []
     for row in seed:
-        if row.get("validation_status") == "human_validated":
-            output.append(human_row(row, human_by_case))
+        if is_working_reference_status(row.get("validation_status")):
+            output.append(reference_row(row, reference_by_case))
             continue
         if "boundary_reviewed" in {
             row.get("validation_status"),

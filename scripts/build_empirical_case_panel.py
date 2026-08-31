@@ -8,9 +8,16 @@ import csv
 from collections import Counter
 from pathlib import Path
 
+from label_roles import (
+    INDEPENDENT_CONFIRMATION_NOTICE,
+    LLM_SURROGATE_LABEL_SOURCE,
+    WORKING_REFERENCE_ANALYTIC_ROLE,
+    WORKING_REFERENCE_LABEL_SOURCE,
+)
+
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_GOLD = ROOT / "data" / "processed" / "working_reference_labels.csv"
+DEFAULT_REFERENCE = ROOT / "data" / "processed" / "working_reference_labels.csv"
 DEFAULT_MASTER = ROOT / "data" / "analysis_inputs" / "master_case_pool.csv"
 DEFAULT_CAPACITY = ROOT / "data" / "analysis_inputs" / "pilot_case_historical_capacity.csv"
 DEFAULT_SURROGATE = ROOT / "data" / "analysis_inputs" / "issuer_level_surrogate_empirical_input.csv"
@@ -311,24 +318,24 @@ def default_control_status(row: dict[str, str]) -> None:
     row["bond_disclosure_quality_status"] = source_quality_status(row)
 
 
-def build_gold_rows(
-    gold: list[dict[str, str]],
+def build_reference_rows(
+    reference: list[dict[str, str]],
     master_by_case: dict[str, dict[str, str]],
     capacity_by_case: dict[str, dict[str, str]],
     city_controls: dict[str, dict[str, str]],
     platform_controls: dict[str, dict[str, str]],
 ) -> list[dict[str, str]]:
     rows: list[dict[str, str]] = []
-    for index, source in enumerate(gold, start=1):
+    for index, source in enumerate(reference, start=1):
         case_id = norm(source.get("case_id"))
         exit_type = norm(source.get("final_label"))
         row = blank_panel_row()
-        row["panel_id"] = f"gold_{index:04d}"
+        row["panel_id"] = f"reference_{index:04d}"
         row["case_id"] = case_id
-        row["analytic_role"] = "gold_outcome"
+        row["analytic_role"] = WORKING_REFERENCE_ANALYTIC_ROLE
         row["include_in_gold_sample"] = "1"
         row["include_in_adjusted_descriptive_sample"] = "1"
-        row["label_source"] = "human_gold_standard"
+        row["label_source"] = WORKING_REFERENCE_LABEL_SOURCE
         row["exit_type"] = exit_type
         row.update(binary_outcomes(exit_type))
         row["confidence"] = norm(source.get("final_confidence"))
@@ -387,7 +394,7 @@ def build_surrogate_rows(
         row["include_in_adjusted_descriptive_sample"] = "1"
         row["include_in_current_validated_model_sample"] = "0"
         row["include_in_full_controls_regression_sample"] = "0"
-        row["label_source"] = "codex_surrogate"
+        row["label_source"] = LLM_SURROGATE_LABEL_SOURCE
         row["exit_type"] = exit_type
         row.update(binary_outcomes(exit_type))
         row["confidence"] = norm(source.get("confidence"))
@@ -416,7 +423,7 @@ def nonempty_count(rows: list[dict[str, str]], field: str) -> int:
 
 
 def build_coverage(rows: list[dict[str, str]]) -> list[dict[str, str]]:
-    gold_rows = [row for row in rows if row["include_in_gold_sample"] == "1"]
+    reference_rows = [row for row in rows if row["include_in_gold_sample"] == "1"]
     adjusted_rows = [row for row in rows if row["include_in_adjusted_descriptive_sample"] == "1"]
     current_model_rows = [
         row for row in rows if row["include_in_current_validated_model_sample"] == "1"
@@ -427,33 +434,33 @@ def build_coverage(rows: list[dict[str, str]]) -> list[dict[str, str]]:
     return [
         {
             "component": "Working-reference labels",
-            "available": str(len(gold_rows)),
+            "available": str(len(reference_rows)),
             "denominator": str(len(rows)),
-            "use": "Outcome scale and human validation",
+            "use": "Provisional outcome scale",
         },
         {
             "component": "Adjusted descriptive sample",
             "available": str(len(adjusted_rows)),
             "denominator": str(len(rows)),
-            "use": "Gold labels plus non-overlap surrogate nominal-exit screens",
+            "use": "Working-reference labels plus non-overlap surrogate nominal-exit screens",
         },
         {
             "component": "Historical capacity match",
-            "available": str(nonempty_count(gold_rows, "elite_per_1000_sqkm")),
-            "denominator": str(len(gold_rows)),
-            "use": "Validated-sample descriptive patterns and current regression",
+            "available": str(nonempty_count(reference_rows, "elite_per_1000_sqkm")),
+            "denominator": str(len(reference_rows)),
+            "use": "Working-reference descriptive patterns and current diagnostic regression",
         },
         {
             "component": "Current validated-model rows",
             "available": str(len(current_model_rows)),
-            "denominator": str(len(gold_rows)),
-            "use": "Rows with gold labels and historical capacity",
+            "denominator": str(len(reference_rows)),
+            "use": "Rows with working-reference labels and historical capacity",
         },
         {
             "component": "Full-controls regression rows",
             "available": str(len(full_controls_rows)),
-            "denominator": str(len(gold_rows)),
-            "use": "Rows with gold labels, historical capacity, and contemporary controls",
+            "denominator": str(len(reference_rows)),
+            "use": "Rows with working-reference labels, historical capacity, and contemporary controls",
         },
         {
             "component": "Source coverage score",
@@ -511,12 +518,13 @@ def write_coverage_tex(path: Path, rows: list[dict[str, str]]) -> None:
         handle.write("\\begin{minipage}{0.94\\linewidth}\n")
         handle.write(
             "\\vspace{0.5em}\\footnotesize Notes: The panel combines working-reference "
-            "gold labels with non-overlap issuer-level surrogate labels. Main regression-ready "
-            "rows are restricted to working-reference cases with a historical-capacity match. "
-            "Full-controls regression rows require contemporary controls in addition to the "
-            "gold label and historical-capacity match. "
+            "labels with non-overlap issuer-level surrogate labels. Main diagnostic rows are "
+            "restricted to working-reference cases with a historical-capacity match. "
+            "Full-controls rows require contemporary controls in addition to the "
+            "working-reference label and historical-capacity match. "
             "Contemporary fiscal, debt, land-finance, and platform-hierarchy controls are "
-            "explicitly retained as collection fields rather than imputed.\n"
+            "explicitly retained as collection fields rather than imputed. "
+            f"{INDEPENDENT_CONFIRMATION_NOTICE}\n"
         )
         handle.write("\\end{minipage}\n")
         handle.write("\\end{table}\n")
@@ -524,7 +532,13 @@ def write_coverage_tex(path: Path, rows: list[dict[str, str]]) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--gold", type=Path, default=DEFAULT_GOLD)
+    parser.add_argument(
+        "--reference",
+        "--gold",
+        dest="reference",
+        type=Path,
+        default=DEFAULT_REFERENCE,
+    )
     parser.add_argument("--master", type=Path, default=DEFAULT_MASTER)
     parser.add_argument("--capacity", type=Path, default=DEFAULT_CAPACITY)
     parser.add_argument("--surrogate", type=Path, default=DEFAULT_SURROGATE)
@@ -535,7 +549,7 @@ def main() -> None:
     parser.add_argument("--coverage-tex", type=Path, default=DEFAULT_COVERAGE_TEX)
     args = parser.parse_args()
 
-    gold = read_csv(args.gold)
+    reference = read_csv(args.reference)
     master = read_csv(args.master)
     capacity = read_csv(args.capacity)
     surrogate = read_csv(args.surrogate)
@@ -547,7 +561,9 @@ def main() -> None:
     city_controls = index_by(city_control_rows, "control_unit_id")
     platform_controls = index_by(platform_control_rows, "case_id")
 
-    rows = build_gold_rows(gold, master_by_case, capacity_by_case, city_controls, platform_controls)
+    rows = build_reference_rows(
+        reference, master_by_case, capacity_by_case, city_controls, platform_controls
+    )
     rows.extend(build_surrogate_rows(surrogate, len(rows)))
     coverage_rows = build_coverage(rows)
 
@@ -558,9 +574,9 @@ def main() -> None:
     role_counts = Counter(row["analytic_role"] for row in rows)
     label_counts = Counter(row["exit_type"] for row in rows)
     print(f"panel_rows={len(rows)}")
-    print(f"gold_rows={role_counts['gold_outcome']}")
+    print(f"working_reference_rows={role_counts[WORKING_REFERENCE_ANALYTIC_ROLE]}")
     print(f"surrogate_nonoverlap_rows={role_counts['surrogate_auxiliary_nonoverlap']}")
-    print(f"historical_capacity_gold_rows={nonempty_count([row for row in rows if row['include_in_gold_sample'] == '1'], 'elite_per_1000_sqkm')}")
+    print(f"historical_capacity_reference_rows={nonempty_count([row for row in rows if row['include_in_gold_sample'] == '1'], 'elite_per_1000_sqkm')}")
     print(f"current_validated_model_rows={sum(1 for row in rows if row['include_in_current_validated_model_sample'] == '1')}")
     print(f"full_controls_regression_rows={sum(1 for row in rows if row['include_in_full_controls_regression_sample'] == '1')}")
     print("exit_type_counts=" + ";".join(f"{key}:{value}" for key, value in sorted(label_counts.items())))

@@ -3,8 +3,8 @@
 
 The file combines the curated master case pool with newly harvested public
 disclosure pages. It is intentionally broader than the validated dataset. LLM
-labels should be treated as surrogate labels until checked against the human
-validation protocol.
+labels are surrogate labels. Source-packet working references remain
+provisional until independent human confirmation.
 """
 
 from __future__ import annotations
@@ -13,6 +13,12 @@ import argparse
 import csv
 import pathlib
 from datetime import date
+
+from label_roles import (
+    INDEPENDENT_CONFIRMATION_NOTICE,
+    WORKING_REFERENCE_POOL_STATUS,
+    is_working_reference_status,
+)
 
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -56,6 +62,7 @@ def read_csv(path: pathlib.Path) -> list[dict[str, str]]:
 
 def master_row(row: dict[str, str], index: int) -> dict[str, str]:
     validation_status = row.get("validation_status", "")
+    working_reference = is_working_reference_status(validation_status)
     return {
         "pool_id": f"master_{index:04d}",
         "pool_source": "master_case_pool",
@@ -75,11 +82,17 @@ def master_row(row: dict[str, str], index: int) -> dict[str, str]:
         "historical_capacity_bin": row.get("historical_capacity_bin", ""),
         "debt_pressure_status": row.get("debt_pressure_status", ""),
         "land_finance_dependence_status": row.get("land_finance_dependence_status", ""),
-        "llm_label_status": "gold_standard" if validation_status == "human_validated" else "pending",
+        "llm_label_status": WORKING_REFERENCE_POOL_STATUS if working_reference else "pending",
         "llm_label": row.get("llm_label", ""),
         "llm_confidence": row.get("llm_confidence", ""),
-        "human_review_status": validation_status,
-        "notes": row.get("notes", ""),
+        "human_review_status": (
+            "pending_independent_human_confirmation" if working_reference else "not_reviewed"
+        ),
+        "notes": " ".join(
+            value
+            for value in [row.get("notes", ""), INDEPENDENT_CONFIRMATION_NOTICE if working_reference else ""]
+            if value
+        ),
     }
 
 
@@ -141,10 +154,15 @@ def main() -> int:
         writer.writerows(rows)
 
     unique_issuers = {row["issuer_name"] for row in rows if row["issuer_name"]}
-    human_validated = sum(1 for row in rows if row["validation_status"] == "human_validated")
+    working_references = sum(
+        1 for row in rows if is_working_reference_status(row["validation_status"])
+    )
     pending_llm = sum(1 for row in rows if row["llm_label_status"] == "pending")
     print(f"wrote {len(rows)} rows to {args.output}")
-    print(f"unique_issuers={len(unique_issuers)} human_validated={human_validated} pending_llm={pending_llm}")
+    print(
+        f"unique_issuers={len(unique_issuers)} "
+        f"working_references={working_references} pending_llm={pending_llm}"
+    )
     return 0
 
 

@@ -1,11 +1,18 @@
 #!/usr/bin/env python3
-"""Build issuer-level empirical inputs from gold and surrogate labels."""
+"""Build issuer-level empirical inputs from working-reference and surrogate labels."""
 
 from __future__ import annotations
 
 import argparse
 import csv
 from pathlib import Path
+
+from label_roles import (
+    INDEPENDENT_CONFIRMATION_NOTICE,
+    LLM_SURROGATE_LABEL_SOURCE,
+    WORKING_REFERENCE_ANALYTIC_ROLE,
+    WORKING_REFERENCE_LABEL_SOURCE,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -81,16 +88,16 @@ def tex_escape(value: str) -> str:
     )
 
 
-def gold_input_row(row: dict[str, str], index: int) -> dict[str, str]:
+def reference_input_row(row: dict[str, str], index: int) -> dict[str, str]:
     return {
-        "analytic_id": f"gold_{index:04d}",
-        "analytic_role": "gold_outcome",
+        "analytic_id": f"reference_{index:04d}",
+        "analytic_role": WORKING_REFERENCE_ANALYTIC_ROLE,
         "issuer_name": row.get("company_name", ""),
         "province": row.get("province", ""),
         "city": row.get("city", ""),
         "source_row_ids": row.get("case_id", ""),
         "observed_or_surrogate_label": row.get("final_label", ""),
-        "label_source": "human_gold_standard",
+        "label_source": WORKING_REFERENCE_LABEL_SOURCE,
         "gold_standard_overlap": "true",
         "gold_case_id": row.get("case_id", ""),
         "gold_final_label": row.get("final_label", ""),
@@ -99,7 +106,7 @@ def gold_input_row(row: dict[str, str], index: int) -> dict[str, str]:
         "continued_function_evidence_score": "",
         "confidence": row.get("final_confidence", ""),
         "include_in_adjusted_descriptive_sample": "true",
-        "notes": "Working-reference outcome.",
+        "notes": f"Working-reference outcome. {INDEPENDENT_CONFIRMATION_NOTICE}",
     }
 
 
@@ -118,7 +125,7 @@ def surrogate_input_row(row: dict[str, str], role: str, index: int) -> dict[str,
         "city": "",
         "source_row_ids": row.get("source_row_ids", ""),
         "observed_or_surrogate_label": row.get("exit_type", ""),
-        "label_source": "codex_surrogate",
+        "label_source": LLM_SURROGATE_LABEL_SOURCE,
         "gold_standard_overlap": row.get("gold_standard_overlap", ""),
         "gold_case_id": row.get("gold_case_id", ""),
         "gold_final_label": row.get("gold_final_label", ""),
@@ -180,7 +187,7 @@ def write_adjusted_tex(path: Path, rows: list[dict[str, str]]) -> None:
         for row in rows:
             sample = row["sample"]
             if sample == "Working reference only":
-                adjustment = "Observed"
+                adjustment = "Provisional"
             elif "smoothed" in sample:
                 adjustment = "Jeffreys"
             else:
@@ -194,7 +201,8 @@ def write_adjusted_tex(path: Path, rows: list[dict[str, str]]) -> None:
         handle.write(
             "\\begin{minipage}{0.94\\linewidth}\n"
             "\\vspace{0.5em}\\footnotesize Notes: The adjusted rows add only non-overlap "
-            "issuer-level surrogate labels to the working-reference sample. Because the current "
+            "issuer-level surrogate labels to the working-reference sample. The working-reference "
+            "labels await independent human confirmation. Because the current "
             "surrogate rule is a one-sided nominal-exit screen, non-nominal cases in this table "
             "should be interpreted as expected classification error or unobserved institutional "
             "change, not as directly labeled outcomes.\n"
@@ -294,7 +302,7 @@ def main() -> int:
 
     input_rows: list[dict[str, str]] = []
     for index, row in enumerate(gold, start=1):
-        input_rows.append(gold_input_row(row, index))
+        input_rows.append(reference_input_row(row, index))
     overlap_index = 1
     nonoverlap_index = 1
     for row in issuers:

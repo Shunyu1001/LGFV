@@ -521,12 +521,12 @@ CLAIMS = [
         source_value(
             "data/analysis_inputs/llm_screening_summary_2026_07_03_expanded.csv",
             "quantity",
-            "screening_status:human_reviewed_boundary",
+            "screening_status:working_reference_boundary",
             "value",
         ),
         0,
         "data/analysis_inputs/llm_screening_summary_2026_07_03_expanded.csv",
-        "quantity=screening_status:human_reviewed_boundary, column=value",
+        "quantity=screening_status:working_reference_boundary, column=value",
     ),
     ClaimSpec(
         "source_missing_rows",

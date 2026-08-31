@@ -15,9 +15,11 @@ import argparse
 import math
 from pathlib import Path
 
+from label_roles import INDEPENDENT_CONFIRMATION_NOTICE
+
 
 ROOT = Path(__file__).resolve().parents[1]
-HUMAN_LABELS = ROOT / "data" / "processed" / "working_reference_labels.csv"
+REFERENCE_LABELS = ROOT / "data" / "processed" / "working_reference_labels.csv"
 SURROGATE_ISSUERS = (
     ROOT
     / "data"
@@ -71,36 +73,42 @@ def wilson_lower_bound(successes: int, trials: int, z: float = 1.96) -> float:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--human", type=Path, default=HUMAN_LABELS)
+    parser.add_argument(
+        "--reference",
+        "--human",
+        dest="reference",
+        type=Path,
+        default=REFERENCE_LABELS,
+    )
     parser.add_argument("--issuers", type=Path, default=SURROGATE_ISSUERS)
     parser.add_argument("--diagnostics", type=Path, default=OUT_DIAGNOSTICS)
     parser.add_argument("--augmented", type=Path, default=OUT_AUGMENTED)
     parser.add_argument("--tex", type=Path, default=OUT_TEX)
     args = parser.parse_args()
 
-    human = read_csv(args.human)
+    reference = read_csv(args.reference)
     issuers = read_csv(args.issuers)
 
-    human_counts: dict[str, int] = {}
-    for row in human:
+    reference_counts: dict[str, int] = {}
+    for row in reference:
         label = row["final_label"]
-        human_counts[label] = human_counts.get(label, 0) + 1
+        reference_counts[label] = reference_counts.get(label, 0) + 1
 
-    institutional_change = human_counts.get("substantive_exit", 0) + human_counts.get(
+    institutional_change = reference_counts.get("substantive_exit", 0) + reference_counts.get(
         "functional_transfer", 0
     )
-    nominal_gold = human_counts.get("nominal_exit", 0)
+    nominal_reference = reference_counts.get("nominal_exit", 0)
 
     overlap_rows = [row for row in issuers if is_true(row.get("gold_standard_overlap", ""))]
     nonoverlap_rows = [row for row in issuers if not is_true(row.get("gold_standard_overlap", ""))]
-    validated_nominal = [
+    matching_nominal = [
         row
         for row in overlap_rows
         if row.get("exit_type") == "nominal_exit" and row.get("gold_final_label") == "nominal_exit"
     ]
 
     validation_trials = len(overlap_rows)
-    validation_successes = len(validated_nominal)
+    validation_successes = len(matching_nominal)
     raw_precision = validation_successes / validation_trials if validation_trials else 0.0
     # Jeffreys smoothing avoids treating a finite validation sample as literal certainty.
     smoothed_precision = (validation_successes + 0.5) / (validation_trials + 1.0)
@@ -114,17 +122,17 @@ def main() -> None:
 
     diagnostics = [
         {
-            "quantity": "human_gold_labels",
-            "value": str(len(human)),
-            "description": "Codex source-packet working reference labels pending human confirmation.",
+            "quantity": "working_reference_labels",
+            "value": str(len(reference)),
+            "description": "Codex source-packet working reference labels pending independent human confirmation.",
         },
         {
-            "quantity": "human_gold_nominal_exit",
-            "value": str(nominal_gold),
+            "quantity": "working_reference_nominal_exit",
+            "value": str(nominal_reference),
             "description": "Working-reference nominal-exit labels.",
         },
         {
-            "quantity": "human_gold_institutional_change",
+            "quantity": "working_reference_institutional_change",
             "value": str(institutional_change),
             "description": "Working-reference substantive-exit plus functional-transfer labels.",
         },
@@ -134,7 +142,7 @@ def main() -> None:
             "description": "Issuer-level Codex surrogate nominal-exit rows after deduplication.",
         },
         {
-            "quantity": "surrogate_gold_overlap_issuers",
+            "quantity": "surrogate_reference_overlap_issuers",
             "value": str(validation_trials),
             "description": "Surrogate issuers already matched to working reference cases.",
         },
@@ -169,26 +177,26 @@ def main() -> None:
     augmented_rows = [
         {
             "sample": "Working reference only",
-            "observations": f"{len(human):.0f}",
-            "nominal_exit": f"{nominal_gold:.2f}",
+            "observations": f"{len(reference):.0f}",
+            "nominal_exit": f"{nominal_reference:.2f}",
             "institutional_change_or_error": f"{institutional_change:.2f}",
-            "nominal_share": f"{nominal_gold / len(human):.3f}",
-            "note": "Provisional working reference labels pending human confirmation.",
+            "nominal_share": f"{nominal_reference / len(reference):.3f}",
+            "note": INDEPENDENT_CONFIRMATION_NOTICE,
         },
         {
             "sample": "Working reference plus non-overlap surrogates, smoothed diagnostic",
-            "observations": f"{len(human) + nonoverlap_issuers:.0f}",
-            "nominal_exit": f"{nominal_gold + expected_nominal_surrogate:.2f}",
+            "observations": f"{len(reference) + nonoverlap_issuers:.0f}",
+            "nominal_exit": f"{nominal_reference + expected_nominal_surrogate:.2f}",
             "institutional_change_or_error": f"{institutional_change + expected_error_surrogate:.2f}",
-            "nominal_share": f"{(nominal_gold + expected_nominal_surrogate) / (len(human) + nonoverlap_issuers):.3f}",
+            "nominal_share": f"{(nominal_reference + expected_nominal_surrogate) / (len(reference) + nonoverlap_issuers):.3f}",
             "note": "Uses Jeffreys-smoothed surrogate nominal precision.",
         },
         {
-            "sample": "Gold plus non-overlap surrogates, conservative",
-            "observations": f"{len(human) + nonoverlap_issuers:.0f}",
-            "nominal_exit": f"{nominal_gold + conservative_nominal_surrogate:.2f}",
+            "sample": "Working reference plus non-overlap surrogates, conservative diagnostic",
+            "observations": f"{len(reference) + nonoverlap_issuers:.0f}",
+            "nominal_exit": f"{nominal_reference + conservative_nominal_surrogate:.2f}",
             "institutional_change_or_error": f"{institutional_change + conservative_error_surrogate:.2f}",
-            "nominal_share": f"{(nominal_gold + conservative_nominal_surrogate) / (len(human) + nonoverlap_issuers):.3f}",
+            "nominal_share": f"{(nominal_reference + conservative_nominal_surrogate) / (len(reference) + nonoverlap_issuers):.3f}",
             "note": "Uses Wilson 95 percent lower bound for surrogate nominal precision.",
         },
     ]
@@ -210,7 +218,7 @@ def main() -> None:
         handle.write("% Auto-generated by scripts/build_dsl_surrogate_adjustment.py\n")
         handle.write("\\begin{table}[htbp]\n")
         handle.write("\\centering\n")
-        handle.write("\\caption{Surrogate-label validation and adjusted nominal-exit counts}\n")
+        handle.write("\\caption{Surrogate-label concordance and adjusted nominal-exit counts}\n")
         handle.write("\\label{tab:dsl-surrogate-validation}\n")
         handle.write("\\small\n")
         handle.write("\\setlength{\\tabcolsep}{4pt}\n")
@@ -219,9 +227,9 @@ def main() -> None:
         handle.write("Quantity & Count & Rate & Adjusted count \\\\\n")
         handle.write("\\midrule\n")
         handle.write(
-            f"Working-reference labels & {len(human)} &  &  \\\\\n"
-            f"Working-reference nominal exits & {nominal_gold} & {nominal_gold / len(human):.3f} &  \\\\\n"
-            f"Working-reference institutional change & {institutional_change} & {institutional_change / len(human):.3f} &  \\\\\n"
+            f"Working-reference labels & {len(reference)} &  &  \\\\\n"
+            f"Working-reference nominal exits & {nominal_reference} & {nominal_reference / len(reference):.3f} &  \\\\\n"
+            f"Working-reference institutional change & {institutional_change} & {institutional_change / len(reference):.3f} &  \\\\\n"
             f"Surrogate issuers with reference overlap & {validation_trials} &  &  \\\\\n"
             f"Nominal matches in overlap & {validation_successes} & {raw_precision:.3f} &  \\\\\n"
             f"Non-overlap surrogate issuers & {nonoverlap_issuers} &  &  \\\\\n"
@@ -232,20 +240,20 @@ def main() -> None:
         handle.write("\\end{tabular}\n")
         handle.write(
             "\\begin{minipage}{0.94\\linewidth}\n"
-            "\\vspace{0.5em}\\footnotesize Notes: The validation sample consists of issuer-level "
+            "\\vspace{0.5em}\\footnotesize Notes: The selected concordance set consists of issuer-level "
             "Codex surrogate nominal-exit labels that overlap with Codex source-packet "
             "working-reference cases. The raw concordance is the share of overlap issuers for which a "
             "surrogate nominal-exit label matches the working-reference label. The smoothed rate uses "
             "a Jeffreys correction, $(x+0.5)/(n+1)$, and the conservative rate is the Wilson "
             "95 percent lower bound. Because both label layers are AI-produced and the overlap is "
-            "selected, these quantities are diagnostics rather than population precision or "
-            "validation-adjusted estimates. The table does not treat unresolved rows as negative "
+            "selected, these quantities are diagnostics rather than population precision, recall, "
+            "human-label accuracy, or validation-adjusted estimates. The table does not treat unresolved rows as negative "
             "outcomes or use raw surrogate labels as final labels.\n"
             "\\end{minipage}\n"
         )
         handle.write("\\end{table}\n")
 
-    print(f"human_gold={len(human)}")
+    print(f"working_reference={len(reference)}")
     print(f"validation_overlap={validation_trials}")
     print(f"raw_precision={raw_precision:.3f}")
     print(f"smoothed_precision={smoothed_precision:.3f}")
