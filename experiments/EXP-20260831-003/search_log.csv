@@ -1,0 +1,9 @@
+sequence,search_round,source_or_query,authority_class,opened,retained,disposition
+"1","registered inputs","Tracked ChinaBond bond inventory row and National Archives Administration cache","bond metadata and government","true","true","Origin identifier and current legal name"
+"2","paired names","Guiyang issuer 2022 company-bond interim report","issuer bond disclosure","true","true","Current issuer, old bond, abbreviation, address, controller, role, and bond code"
+"3","paired names","Guiyang 2023 bond-agent report","bond agent","true","true","Independent bond-code, current issuer, address, identifier, and role corroboration; contradictory old-name variant retained"
+"4","identifier and project","Gui'an New Area S1 environment report","government","true","true","Same identifier, Guiyang address, and rail project"
+"5","explicit former name","SSE-listed issuer arbitration announcement","exchange announcement","true","true","Explicit former name, identifier, and address; mirror provenance retained"
+"6","government reorganization","Ministry of Justice Guiyang regulation amendment","central government","true","false","Authoritative discovery corroboration; excluded because command-line retrieval loop prevented a reproducible raw hash"
+"7","related issuer check","SSE-hosted Guiyang City Construction bond document","exchange-hosted bond disclosure","true","false","Different focal issuer; no necessary identity fact"
+"8","supplementary discovery","Commercial registries and syndicated rename notices","discovery only","true","false","Not used as evidence"

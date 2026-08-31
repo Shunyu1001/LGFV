@@ -1,0 +1,13 @@
+{
+  "authoritative_records_retained": 5,
+  "contradictory_location_concepts_retained": true,
+  "evidence_gates_resolved_under_existing_rules": 1,
+  "evidence_gates_requiring_new_rule": 1,
+  "frame_ready_to_freeze": false,
+  "integrated_registered_frame_gates_closed": 0,
+  "location_gates_reviewed": 2,
+  "prospective_rebuild_experiment_registered": true,
+  "random_draw_executed": false,
+  "raw_sources_committed": false,
+  "units_reviewed": 2
+}

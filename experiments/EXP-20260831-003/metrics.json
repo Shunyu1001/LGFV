@@ -1,0 +1,14 @@
+{
+  "authoritative_or_near_original_records_retained": 6,
+  "contradictory_name_variants_retained": 4,
+  "evidence_gates_resolved_under_existing_rules": 2,
+  "evidence_gates_requiring_new_rule": 0,
+  "frame_ready_to_freeze": false,
+  "integrated_registered_frame_gates_closed": 0,
+  "legal_identity_geography_gates_reviewed": 1,
+  "prospective_rebuild_experiment_registered": true,
+  "random_draw_executed": false,
+  "raw_sources_committed": false,
+  "scope_gates_reviewed": 1,
+  "units_reviewed": 1
+}

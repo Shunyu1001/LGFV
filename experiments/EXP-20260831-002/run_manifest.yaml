@@ -1,0 +1,49 @@
+schema_version: 1
+experiment_id: EXP-20260831-002
+base_commit: 5de57d63a70b52cedc5223a7fa6f751bfc70cfe1
+registration_commit: 4d75edbbf53da5604f0798148d17ac4480d8c3f0
+branch: codex/lgfv-validation-frame-freeze
+input_hash_algorithm: sha256
+inputs:
+  - path: experiments/EXP-20260831-001/brief.md
+    sha256: 8f35d7e4f73c6f7725a8299c2f894112cd8c432e9b29a43cde491dfbc3db8abc
+  - path: experiments/EXP-20260831-001/assessment.md
+    sha256: b9cbc6cbe1d004437c9bc2680627d3f07c87969e99720b6b73a459571e5b6bbc
+  - path: experiments/EXP-20260831-001/ultra_audit.md
+    sha256: be09d57db965ffb0e0824579541959e6712d5f2899f2a2c5b074cf25c6035495
+  - path: experiments/EXP-20260831-001/review_decisions.csv
+    sha256: b86381191c4373b4049bca1afe942c59b732c14fe368f032f7ca19412b042a8b
+  - path: data/validation/probability_validation_geography_scope_crosswalk.csv
+    sha256: fc72c263dade64d3404d873fec0b40328429346661710d24988c448fbeb711d2
+  - path: data/validation/probability_validation_unresolved_log.csv
+    sha256: 5c9ede8c97b86add246ab99b2a6a052375f849f9be9fecc02abd4c95f368571c
+  - path: data/validation/probability_validation_source_manifest.csv
+    sha256: 5713057b161939748a334426bb41e5ed1ce59adc4519204ea0b1d31b0bb1d664
+outputs:
+  - path: experiments/EXP-20260831-002/source_manifest.csv
+    sha256: 88681dd1d7ea44236215e63773ff688458e0bbc88757195e019d8584872c9a63
+  - path: experiments/EXP-20260831-002/source_excerpts.csv
+    sha256: 117e7e18884d122adfaf11b3c1d6b3d9eac76e13e28509a9e517b4a63cd7f928
+  - path: experiments/EXP-20260831-002/case_decisions.csv
+    sha256: 09e5f883ecead7d150dd794b49e7d48386025da4658c60b62580e00cb96939ed
+  - path: experiments/EXP-20260831-002/metrics.json
+    sha256: 30167a6af41171d600bfac9736250f9e32837f0d06cd878e171725056f45972e
+  - path: experiments/EXP-20260831-002/decision.md
+    sha256: ebdb93f5ed4e57b4ca26cdf1e9147229f214d36c450b8daa48a5964e12faa75f
+  - path: experiments/EXP-20260831-002/assessment.md
+    sha256: 995f2e549bb47ad1b287562defcde760ffb78326d887b19dcf4a0740e7a16eb4
+  - path: experiments/EXP-20260831-002/execution_log.md
+    sha256: 050f59b184e2f00c2b648a71b083c627868bb6b92b76c1cdd386075ef6a2bb63
+  - path: experiments/EXP-20260831-002/search_log.csv
+    sha256: 820b25114e9a0e117ad7921ee55792d0d3591ce6537c5695dc99ea169a562747
+  - path: change_requests/CR-20260831-001.md
+    sha256: c4b4165bb2625b12a3fc4819a24434c5e33eafd7c5d79712c96f20d769697f2f
+raw_cache_hashes_verified: true
+relevant_pdf_page_text_hashes_verified: true
+visual_page_check_completed: true
+frame_files_changed: false
+labels_changed: false
+raw_documents_committed: false
+random_draw_executed: false
+working_reference_outcomes_accessed: false
+human_validation_claimed: false

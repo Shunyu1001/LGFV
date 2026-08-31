@@ -1,0 +1,7 @@
+sequence,validation_unit_id,source_or_query,authority_class,opened,retained,disposition
+"1","mv_2547f5fbc2e2","Registered 2026 Shanghai Clearing House prospectus cache","issuer disclosure","true","true","Current focal-issuer location and controller evidence"
+"2","mv_2547f5fbc2e2","Registered 2024 annual financial report cache","issuer disclosure","true","false","Corroborated Bermuda incorporation and PRC operations but added no dispositive field"
+"3","mv_2547f5fbc2e2","HKEX 2025 interim report","exchange-filed issuer report","true","true","Current corroboration of Bermuda, Hong Kong, and Shenzhen fields"
+"4","mv_940b87861065","Registered 2026 Shanghai Clearing House prospectus cache","issuer disclosure","true","true","Labels Shenzhen legal domicile and Dongguan disclosure contact separately"
+"5","mv_940b87861065","Registered rating-report cache","rating report","true","true","Corroborates Shenzhen registered address"
+"6","mv_940b87861065","ChinaMoney 2025 legal opinion","issuer legal disclosure","true","true","Corroborates legal entity, identifier, registration authority, and Shenzhen domicile"
