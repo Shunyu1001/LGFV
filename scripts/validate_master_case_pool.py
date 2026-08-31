@@ -21,6 +21,7 @@ REQUIRED_COLUMNS = [
     "continued_function",
     "exit_type",
     "confidence",
+    "reference_label_producer",
     "historical_capacity_bin",
     "debt_pressure_status",
     "land_finance_dependence_status",

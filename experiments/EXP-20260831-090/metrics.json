@@ -1,0 +1,15 @@
+{
+  "experiment_id": "EXP-20260831-090",
+  "status": "keep",
+  "master_rows": 114,
+  "working_reference_rows": 94,
+  "nonreference_rows": 20,
+  "validated_rows_missing_producer_before": 94,
+  "validated_rows_missing_producer_after": 0,
+  "nonreference_rows_with_producer_after": 0,
+  "preexisting_columns_compared": 54,
+  "preexisting_values_changed": 0,
+  "unit_tests_passed": 3,
+  "master_pool_validator_passed": true,
+  "independent_human_confirmation_added": false
+}
