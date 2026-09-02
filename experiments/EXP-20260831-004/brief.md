@@ -8,7 +8,7 @@
 - Base commit: `4d75edbbf53da5604f0798148d17ac4480d8c3f0`
 - Branch: `codex/lgfv-validation-frame-freeze`
 - Evidence predecessors: `EXP-20260831-002` and `EXP-20260831-003`
-- Status: prospective; not executed
+- Status: authorized prospective rebuild; not executed
 
 ## Falsifiable bottleneck
 
@@ -85,3 +85,40 @@ Do not execute this experiment in the freeze-decision workstream. Execution is
 permitted only after the coordinator accepts the two evidence packets and the
 PI decides whether the remaining Shenzhen International gate must be resolved,
 excluded, or governed by an approved rule.
+
+## PI authorization amendment
+
+This amendment was registered before execution on `2026-09-02`. The
+coordinator accepted the evidence findings in `EXP-20260831-002` and
+`EXP-20260831-003`. The PI approved the following three decisions:
+
+1. Integrate the Dongyangguang geography finding under the existing focal-
+   entity rule.
+2. Integrate the Guiyang identity, geography, ownership, role, and scope
+   findings under the existing rules.
+3. Adopt Alternative 3 in `CR-20260831-001`: an already ineligible unit need
+   not receive a unique city. Shenzhen International must retain the supported
+   Bermuda, Hong Kong, and Shenzhen location concepts, remain
+   `source_supported_multiple`, and remain outside the city-platform
+   probability-validation frame.
+
+Execution is authorized from base commit
+`9977dd752f911bfd07dc4d434301041ef485c9f2` on branch
+`codex/validation-frame-freeze-execution`. The amendment changes the original
+success criterion for the unresolved log: after the two evidence integrations
+and the approved scope-contingent geography rule, the log must contain zero
+blocking gates. The crosswalk may still report Shenzhen International as
+`source_supported_multiple`; that status is nonblocking because the unit is
+already ineligible and is not in the candidate frame.
+
+The rebuild must produce 67 eligible city-platform units, preserve all 157
+origin rows, preserve the exact scope and geography facts for Shenzhen
+International, and make no random draw. Only `mv_940b87861065` and
+`mv_dd84e076bf32` may change crosswalk fields relative to the frozen input.
+The policy decision for `mv_2547f5fbc2e2` changes gate interpretation, not its
+recorded location or scope fields.
+
+For this authorized execution, permitted files additionally include
+`change_requests/CR-20260831-001.md`, `ledgers/change_requests.tsv`, and
+`ledgers/decisions.md`. No manuscript or claim change is authorized by this
+experiment.
