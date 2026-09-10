@@ -77,3 +77,14 @@ The builder must refuse overwriting altered human-entry forms. Tests may use
 temporary directories for mutation fixtures, not edit historical inputs.
 Assessment uses keep only for the collection/audit artifact if hard gates pass;
 inference readiness may remain missing and all design approvals remain pending.
+
+## User clarification before evaluation
+
+The current 67 units meet platform scope; 10 have no direct formal-event screen.
+Platform scope does not establish codebook exit-case eligibility. Human entry
+fields separate exit-case eligibility, formal-event evidence, and post-event
+evidence. Without the necessary evidence the exit case stays unresolved or
+ineligible, with a missing label/outcome, not institutional-change zero and not
+a fifth exit label. Freeze/census authorization remains pending; an unanswered
+question is not authorization. This clarifies the original boundaries without
+changing the hypothesis, coverage target, or one-loop/two-retry budget.
