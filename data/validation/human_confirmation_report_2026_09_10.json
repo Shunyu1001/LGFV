@@ -1,0 +1,21 @@
+{
+  "report_id": "HC-20260910-001",
+  "reported_on": "2026-09-10",
+  "reported_by": "Shunyu Hao",
+  "basis": "author_report_of_completed_human_check",
+  "statement_en": "All current gold labels have been checked by a human and no problems were found.",
+  "statement_type": "English translation of the author's Chinese statement in the project task",
+  "thread_id": "019ee542-7eb1-7932-8fee-879ad1515cd4",
+  "source_snapshot": "data/processed/working_reference_labels.csv",
+  "source_snapshot_sha256": "c1e6bd66b7f498a6100422b9f4a66a61374eb47f65fc7fe5f0446f503e2afd18",
+  "case_count": 94,
+  "outcome_counts": {"substantive_exit": 2, "nominal_exit": 82, "functional_transfer": 10},
+  "confirmation_status": "human_checked_no_revision_author_reported",
+  "reviewer_identity": null,
+  "review_completed_on": null,
+  "blinding_status": "not_reported",
+  "independent_coder_decisions_received": false,
+  "signed_coding_forms_received": false,
+  "probability_validation_completed": false,
+  "scope_exclusions": ["surrogate labels", "probability-frame candidates", "control variables", "mechanism codes"]
+}
