@@ -44,21 +44,22 @@ class ProbabilityValidationFrameTests(unittest.TestCase):
         cls.crosswalk = read_csv("data/validation/probability_validation_geography_scope_crosswalk.csv")
 
     def test_registered_gaps_have_honest_dispositions(self):
-        self.assertEqual(self.summary["baseline_geography_resolved"], 86)
-        self.assertEqual(self.summary["baseline_geography_multiple"], 2)
+        self.assertEqual(self.summary["baseline_geography_resolved"], 87)
+        self.assertEqual(self.summary["baseline_geography_multiple"], 1)
         self.assertEqual(self.summary["baseline_geography_unresolved"], 0)
         self.assertEqual(self.summary["baseline_scope_resolved"], 98)
         self.assertEqual(self.summary["baseline_scope_unresolved"], 0)
         self.assertEqual(
             self.summary["all_scope_dispositions"],
-            {"eligible": 66, "ineligible": 66, "unresolved_after_search": 1},
+            {"eligible": 67, "ineligible": 66},
         )
 
-    def test_multiple_geographies_preserve_the_unique_assignment_failure(self):
+    def test_ineligible_multiple_geography_is_preserved_but_nonblocking(self):
         multiple = [row for row in self.crosswalk if row["geography_status"] == "source_supported_multiple"]
-        self.assertEqual(len(multiple), 2)
+        self.assertEqual(len(multiple), 1)
         for row in multiple:
             self.assertEqual((row["province"], row["city"]), ("", ""))
+            self.assertEqual(row["scope_disposition"], "ineligible")
             self.assertNotEqual(row["conflict_status"], "none_observed")
             self.assertTrue(row["geography_document_id"])
             self.assertTrue(row["geography_supporting_text"])
@@ -69,26 +70,30 @@ class ProbabilityValidationFrameTests(unittest.TestCase):
             if row["failed_gate"] == "geography_unique_assignment"
             and row["disposition"] == "source_supported_multiple"
         }
-        self.assertEqual(logged, {row["validation_unit_id"] for row in multiple})
+        self.assertEqual(logged, set())
+        self.assertEqual(
+            {row["validation_unit_id"] for row in multiple},
+            {"mv_2547f5fbc2e2"},
+        )
 
     def test_candidate_is_unique_and_eligible(self):
         unit_ids = [row["validation_unit_id"] for row in self.candidate]
         legal_keys = [row["normalized_legal_issuer_key"] for row in self.candidate]
         self.assertEqual(len(unit_ids), len(set(unit_ids)))
         self.assertEqual(len(legal_keys), len(set(legal_keys)))
-        self.assertEqual(len(unit_ids), 66)
+        self.assertEqual(len(unit_ids), 67)
         self.assertTrue(all(row["scope_disposition"] == "eligible" for row in self.candidate))
 
     def test_final_candidate_design_counts(self):
-        self.assertEqual(self.summary["candidate_units"], 66)
-        self.assertEqual(self.summary["frozen_strata"], 23)
+        self.assertEqual(self.summary["candidate_units"], 67)
+        self.assertEqual(self.summary["frozen_strata"], 24)
         self.assertEqual(
             {status: sum(row["screen_status"] == status for row in self.candidate) for status in {
                 "screen_positive_nominal", "screened_no_direct_formal_event"
             }},
-            {"screen_positive_nominal": 57, "screened_no_direct_formal_event": 9},
+            {"screen_positive_nominal": 57, "screened_no_direct_formal_event": 10},
         )
-        self.assertEqual(sum(row["historical_capacity_join_status"] == "source_backed_match" for row in self.candidate), 32)
+        self.assertEqual(sum(row["historical_capacity_join_status"] == "source_backed_match" for row in self.candidate), 33)
         self.assertEqual(sum(row["debt_pressure_availability"] == "available" for row in self.candidate), 39)
         self.assertTrue(all(row["inclusion_probability"] == "1" for row in self.candidate))
 
@@ -148,7 +153,7 @@ class ProbabilityValidationFrameTests(unittest.TestCase):
                 self.assertLessEqual(int(row[f"{prefix}_page"]), int(source["pages"]))
 
     def test_registered_geography_repairs_require_direct_focal_location_anchors(self):
-        self.assertEqual(len(self.validator.REPAIRED_GEOGRAPHY_EVIDENCE), 14)
+        self.assertEqual(len(self.validator.REPAIRED_GEOGRAPHY_EVIDENCE), 16)
         for unit_id, (document_id, page, city, anchors) in self.validator.REPAIRED_GEOGRAPHY_EVIDENCE.items():
             with self.subTest(unit_id=unit_id):
                 row = {
@@ -237,7 +242,7 @@ class ProbabilityValidationFrameTests(unittest.TestCase):
 
     def test_default_source_cache_verification_is_required(self):
         self.assertEqual(self.validator.DEFAULT_SOURCE_DIR, Path("/tmp/lgfv-exp015-sources"))
-        self.assertEqual(self.summary["verified_cited_evidence"], 485)
+        self.assertEqual(self.summary["verified_cited_evidence"], 488)
 
     def test_candidate_sampling_values_must_match_design_row(self):
         design = {row["frozen_stratum_id"]: row for row in self.design}
@@ -286,10 +291,13 @@ class ProbabilityValidationFrameTests(unittest.TestCase):
             row["validation_unit_id"]
             for row in self.crosswalk
             if row["scope_disposition"] == "unresolved_after_search"
-            or row["geography_status"] != "source_supported_unique"
+            or (
+                row["scope_disposition"] == "eligible"
+                and row["geography_status"] != "source_supported_unique"
+            )
         }
         candidate = {row["validation_unit_id"] for row in self.candidate}
-        self.assertTrue(unresolved)
+        self.assertEqual(unresolved, set())
         self.assertTrue(unresolved.isdisjoint(candidate))
 
 

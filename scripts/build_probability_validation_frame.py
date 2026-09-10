@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import csv
 import hashlib
 import json
@@ -24,6 +25,8 @@ ORIGIN_OUTPUT = ROOT / "data/validation/probability_validation_frame_origin_rows
 FLOW_OUTPUT = ROOT / "data/validation/probability_validation_frame_flow.csv"
 DESIGN_OUTPUT = ROOT / "data/validation/probability_validation_sampling_design.csv"
 METRICS_OUTPUT = ROOT / "experiments/EXP-20260831-001/metrics.json"
+UNRESOLVED_OUTPUT = ROOT / "data/validation/probability_validation_unresolved_log.csv"
+SOURCE_MANIFEST_OUTPUT = ROOT / "data/validation/probability_validation_source_manifest.csv"
 
 SEED = "20260830015"
 POSITIVE_TARGET = 60
@@ -70,6 +73,128 @@ FLOW_FIELDS = [
     "notes",
 ]
 
+UNRESOLVED_FIELDS = [
+    "validation_unit_id", "issuer_name", "failed_gate", "observed_values",
+    "source_document_ids", "disposition", "reason_code", "notes",
+    "review_required",
+]
+
+SOURCE_MANIFEST_FIELDS = [
+    "validation_unit_id", "issuer_name", "document_id", "document_type",
+    "publisher", "document_title", "document_date", "document_page_url",
+    "download_url", "retrieval_date", "access_status", "http_status",
+    "content_type", "retrieved_bytes", "sha256", "pages",
+    "text_extraction_status", "source_text_sha256", "extraction_profile",
+    "cache_verification_status", "raw_cache_filename",
+    "text_cache_filename", "rights_note", "local_copy_committed", "error",
+]
+
+EXP004_CROSSWALK_PATCHES = {
+    "mv_940b87861065": {
+        "province": "广东省",
+        "city": "深圳市",
+        "geography_status": "source_supported_unique",
+        "audit_note": (
+            "The focal issuer's legal domicile, registration authority, unified "
+            "social credit code, and issuer address identify Shenzhen. The Dongguan "
+            "field is retained as the disclosure officer's contact address and is "
+            "not treated as issuer geography. The issuer remains privately controlled "
+            "and outside scope."
+        ),
+        "geography_supporting_text": (
+            "统一社会信用代码：91440300279310232F 法定住所：深圳市南山区沙河街道东方社区"
+            "深南大道 9017 号东方花园 E-25 整套 邮政编码：518031 联系人：马雯靖 "
+            "联系电话：0769-88615888-2913 传真：0769-85370050 网址：www.hec.cn "
+            "信息披露事务负责人及联系方式 信息披露事务负责人：张维 联系地址：广东省东莞市"
+            "长安镇上沙社区振安中路 368 号"
+        ),
+        "conflict_status": "third_party_contact_excluded_from_issuer_geography",
+        "unresolved_reason": "",
+    },
+    "mv_dd84e076bf32": {
+        "supported_legal_issuer_name": "贵阳市公共交通投资运营集团有限公司",
+        "province": "贵州省",
+        "city": "贵阳市",
+        "geography_status": "source_supported_unique",
+        "administrative_level": "prefecture",
+        "controlling_owner": "贵阳市人民政府国有资产监督管理委员会",
+        "owner_level": "subprovincial_public",
+        "scope_disposition": "eligible",
+        "scope_reason_code": "local_public_platform_role",
+        "scope_basis": (
+            "Source-supported local public control and issuer-specific rail-transit "
+            "financing, investment, construction, operation, and land-development roles."
+        ),
+        "audit_note": (
+            "The origin's unique bond code and issuer abbreviation resolve to the "
+            "current legal issuer. Current issuer and bond-agent evidence identifies "
+            "Guiyang addresses, Guiyang SASAC control, and a qualifying public "
+            "infrastructure financing and project role. Old-name variants remain "
+            "recorded rather than silently harmonized."
+        ),
+        "identity_document_id": "web_guiyang_2022_midyear_bond_report",
+        "identity_page": "6",
+        "identity_supporting_text": (
+            "发行人/公司 指 贵阳市公共交通投资运营集团有限公司 本期债券 指 发行总额为"
+            "人民币20亿元的“2015年贵阳市城 市轨道交通有限公司可续期公司债券”，简称 "
+            "“15贵阳轨道可续期债”"
+        ),
+        "geography_document_id": "web_guiyang_2022_midyear_bond_report",
+        "geography_page": "7",
+        "geography_supporting_text": (
+            "中文名称 贵阳市公共交通投资运营集团有限公司 中文简称 贵阳市交通运营集团 "
+            "外文名称（如有） Guiyang Public Transport Investment and Operation Group Co., "
+            "Ltd 外文缩写（如有） - 法定代表人 王飞 注册资本（万元） 10,652,514,873.00 "
+            "实缴资本（万元） 10,652,514,873.00 注册地址 贵州省贵阳市 诚信南路533号 "
+            "办公地址 贵州省贵阳市 观山湖区腾祥迈德国际A1栋"
+        ),
+        "owner_document_id": "web_guiyang_2022_midyear_bond_report",
+        "owner_page": "8",
+        "owner_supporting_text": (
+            "报告期末控股股东名称：贵阳市人民政府国有资产监督管理委员会 "
+            "报告期末控股股东对发行人的股权（股份）质押占控股股东持股的百分比（%）：0 "
+            "报告期末实际控制人名称：贵阳市人民政府国有资产监督管理委员会"
+        ),
+        "role_document_id": "web_guiyang_2022_midyear_bond_report",
+        "role_page": "9",
+        "role_supporting_text": (
+            "公司主要业务包括：轨道交通项目的融资、投资、建设、运营管理和沿线土地一、二级开 "
+            "发；城市轨道交通相关广告设计、制作及发布；城市轨道交通相关物业管理、资产经营、 "
+            "业务咨询、大数据等相关综合资源开发；物流服务；宾馆、旅游、餐饮、娱乐、项目投资"
+        ),
+        "conflict_status": "frozen_abbreviation_and_old_name_variants_preserved",
+        "unresolved_reason": "",
+    },
+}
+
+EXP004_GUIYANG_SOURCE = {
+    "validation_unit_id": "mv_dd84e076bf32",
+    "issuer_name": "贵阳市交通运营集团有限公司",
+    "document_id": "web_guiyang_2022_midyear_bond_report",
+    "document_type": "issuer_bond_report",
+    "publisher": "Guiyang Public Transport Investment and Operation Group; public bond-disclosure mirror",
+    "document_title": "贵阳市公共交通投资运营集团有限公司公司债券中期报告（2022年）",
+    "document_date": "2022-08-31",
+    "document_page_url": "https://pdf.dfcfw.com/pdf/H2_AN202208311577899336_1.pdf",
+    "download_url": "https://pdf.dfcfw.com/pdf/H2_AN202208311577899336_1.pdf",
+    "retrieval_date": "2026-08-31",
+    "access_status": "retrieved_public_disclosure",
+    "http_status": "200",
+    "content_type": "application/pdf",
+    "retrieved_bytes": "964815",
+    "sha256": "68a8e82549591edb9a9ba710cddb198e5c7cd7c0aaffb51eee5441173f695c34",
+    "pages": "37",
+    "text_extraction_status": "cached_extracted_pages_available",
+    "source_text_sha256": "cd3c0b84f0543d5c3f40b8d7f2e4c05341a52d522bb8dbeaa8653154939f2dc2",
+    "extraction_profile": "pdfplumber_0.11.10_full_page_normalized_text_form_feed_v1",
+    "cache_verification_status": "raw_hash_verified_against_EXP-003_and_full_text_reextracted_2026-09-02",
+    "raw_cache_filename": "guiyang_2022_midyear_bond_report.pdf",
+    "text_cache_filename": "guiyang_2022_midyear_bond_report.txt",
+    "rights_note": "Public issuer bond disclosure; metadata and verified excerpts retained; raw file kept temporary and not redistributed.",
+    "local_copy_committed": "false",
+    "error": "",
+}
+
 
 def read_csv(path: Path) -> list[dict[str, str]]:
     with path.open(encoding="utf-8-sig", newline="") as handle:
@@ -82,6 +207,65 @@ def write_csv(path: Path, rows: list[dict[str, object]], fields: list[str]) -> N
         writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         writer.writerows({field: row.get(field, "") for field in fields} for row in rows)
+
+
+def integrate_exp004_decisions() -> dict[str, object]:
+    """Apply the two approved evidence repairs and the ineligible-unit policy."""
+    crosswalk_rows = read_csv(CROSSWALK_INPUT)
+    before = {row["validation_unit_id"]: dict(row) for row in crosswalk_rows}
+    crosswalk = {row["validation_unit_id"]: row for row in crosswalk_rows}
+    if len(crosswalk) != 133:
+        raise ValueError("EXP-004 integration requires the registered 133-unit crosswalk")
+
+    for unit_id, patch in EXP004_CROSSWALK_PATCHES.items():
+        if unit_id not in crosswalk:
+            raise ValueError(f"EXP-004 target is absent from the crosswalk: {unit_id}")
+        crosswalk[unit_id].update(patch)
+
+    changed_units = {
+        unit_id for unit_id, row in crosswalk.items() if row != before[unit_id]
+    }
+    allowed = set(EXP004_CROSSWALK_PATCHES)
+    if not changed_units.issubset(allowed):
+        raise ValueError(f"EXP-004 changed an unauthorized crosswalk unit: {changed_units - allowed}")
+    write_csv(CROSSWALK_INPUT, crosswalk_rows, list(crosswalk_rows[0]))
+
+    unresolved_rows = read_csv(UNRESOLVED_OUTPUT)
+    blocking_units = {
+        unit_id for unit_id, row in crosswalk.items()
+        if row["scope_disposition"] == "unresolved_after_search"
+        or (
+            row["scope_disposition"] == "eligible"
+            and row["geography_status"] != "source_supported_unique"
+        )
+    }
+    unresolved_rows = [
+        row for row in unresolved_rows if row["validation_unit_id"] in blocking_units
+    ]
+    if blocking_units != {row["validation_unit_id"] for row in unresolved_rows}:
+        raise ValueError("EXP-004 found a blocking gate without a registered unresolved-log row")
+    write_csv(UNRESOLVED_OUTPUT, unresolved_rows, UNRESOLVED_FIELDS)
+
+    manifest_rows = read_csv(SOURCE_MANIFEST_OUTPUT)
+    manifest_keys = {
+        (row["validation_unit_id"], row["document_id"]): row for row in manifest_rows
+    }
+    source_key = (
+        EXP004_GUIYANG_SOURCE["validation_unit_id"],
+        EXP004_GUIYANG_SOURCE["document_id"],
+    )
+    if source_key in manifest_keys:
+        if manifest_keys[source_key] != EXP004_GUIYANG_SOURCE:
+            raise ValueError("EXP-004 Guiyang source manifest row is not deterministic")
+    else:
+        manifest_rows.append(dict(EXP004_GUIYANG_SOURCE))
+    write_csv(SOURCE_MANIFEST_OUTPUT, manifest_rows, SOURCE_MANIFEST_FIELDS)
+
+    return {
+        "changed_crosswalk_units": sorted(changed_units),
+        "blocking_gate_units": sorted(blocking_units),
+        "source_manifest_rows": len(manifest_rows),
+    }
 
 
 def normalize_legal_name(value: str) -> str:
@@ -433,7 +617,14 @@ def build() -> dict[str, object]:
         "all_eligible_units_have_nonzero_probability": all(float(row["inclusion_probability"]) > 0 for row in candidate),
         "random_draw_executed": False,
         "deterministic_random_seed": SEED,
-        "frame_ready_to_freeze": not any(row["scope_disposition"] == "unresolved_after_search" or row["geography_status"] != "source_supported_unique" for row in crosswalk_rows),
+        "frame_ready_to_freeze": not any(
+            row["scope_disposition"] == "unresolved_after_search"
+            or (
+                row["scope_disposition"] == "eligible"
+                and row["geography_status"] != "source_supported_unique"
+            )
+            for row in crosswalk_rows
+        ),
     }
     METRICS_OUTPUT.write_text(json.dumps(metrics, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print(json.dumps(metrics, ensure_ascii=False, sort_keys=True))
@@ -441,4 +632,9 @@ def build() -> dict[str, object]:
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--integrate-exp004", action="store_true")
+    args = parser.parse_args()
+    if args.integrate_exp004:
+        print(json.dumps(integrate_exp004_decisions(), ensure_ascii=False, sort_keys=True))
     build()

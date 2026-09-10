@@ -234,7 +234,56 @@ REPAIRED_GEOGRAPHY_EVIDENCE = {
             "（八）住所：青海省西宁市城中区创业路 128 号中小企业创业园 5 楼 501 室",
         ),
     ),
+    "mv_940b87861065": (
+        "doc_sch_20260630_0135_010",
+        "33",
+        "深圳市",
+        (
+            "统一社会信用代码：91440300279310232F",
+            "法定住所：深圳市南山区沙河街道东方社区深南大道9017号东方花园E-25整套",
+        ),
+    ),
+    "mv_dd84e076bf32": (
+        "web_guiyang_2022_midyear_bond_report",
+        "7",
+        "贵阳市",
+        (
+            "中文名称 贵阳市公共交通投资运营集团有限公司",
+            "注册地址 贵州省贵阳市诚信南路533号",
+        ),
+    ),
 }
+EXP004_DECISION_OVERRIDES = {
+    "mv_940b87861065": {
+        "province": "广东省",
+        "city": "深圳市",
+        "geography_status": "source_supported_unique",
+        "audit_note": (
+            "The focal issuer's legal domicile, registration authority, unified "
+            "social credit code, and issuer address identify Shenzhen. The Dongguan "
+            "field is retained as the disclosure officer's contact address and is "
+            "not treated as issuer geography. The issuer remains privately controlled "
+            "and outside scope."
+        ),
+    },
+    "mv_dd84e076bf32": {
+        "province": "贵州省",
+        "city": "贵阳市",
+        "geography_status": "source_supported_unique",
+        "administrative_level": "prefecture",
+        "owner_level": "subprovincial_public",
+        "scope_disposition": "eligible",
+        "scope_reason_code": "local_public_platform_role",
+        "audit_note": (
+            "The origin's unique bond code and issuer abbreviation resolve to the "
+            "current legal issuer. Current issuer and bond-agent evidence identifies "
+            "Guiyang addresses, Guiyang SASAC control, and a qualifying public "
+            "infrastructure financing and project role. Old-name variants remain "
+            "recorded rather than silently harmonized."
+        ),
+    },
+}
+EXP004_POLICY_ONLY_MULTIPLE = {"mv_2547f5fbc2e2"}
 COURT_VENUE_GEOGRAPHY_PATTERN = re.compile(
     r"(?:住所地|注册地)[^。；]{0,80}(?:人民法院|法院)"
 )
@@ -637,6 +686,8 @@ def validate(source_dir: Path = DEFAULT_SOURCE_DIR) -> dict[str, object]:
     frame = {row["validation_unit_id"]: row for row in frame_rows}
     old = {row["validation_unit_id"]: row for row in old_rows}
     decision = {row["validation_unit_id"]: row for row in decisions}
+    for unit_id, patch in EXP004_DECISION_OVERRIDES.items():
+        decision[unit_id].update(patch)
     crosswalk = {row["validation_unit_id"]: row for row in crosswalk_rows}
     if any(len(rows) != len({row["validation_unit_id"] for row in rows}) for rows in (frame_rows, decisions, crosswalk_rows)):
         raise ValueError("Duplicate validation_unit_id in a unit-level input")
@@ -713,6 +764,8 @@ def validate(source_dir: Path = DEFAULT_SOURCE_DIR) -> dict[str, object]:
             raise ValueError(f"Unresolved geography retains a coerced place: {unit_id}")
 
         if row["scope_disposition"] == "eligible":
+            if row["geography_status"] != "source_supported_unique":
+                raise ValueError(f"Eligible unit lacks unique geography: {unit_id}")
             if row["owner_level"] not in LOCAL_OWNER:
                 raise ValueError(f"Eligible unit lacks local public control: {unit_id}")
             if not row["owner_document_id"] or not row["owner_supporting_text"] or not row["role_document_id"] or not row["role_supporting_text"]:
@@ -758,7 +811,7 @@ def validate(source_dir: Path = DEFAULT_SOURCE_DIR) -> dict[str, object]:
     baseline_geography_unique = sum(crosswalk[unit_id]["geography_status"] == "source_supported_unique" for unit_id in baseline_geography_ids)
     baseline_geography_multiple = sum(crosswalk[unit_id]["geography_status"] == "source_supported_multiple" for unit_id in baseline_geography_ids)
     baseline_geography_unresolved = sum(crosswalk[unit_id]["geography_status"] == "unresolved_after_search" for unit_id in baseline_geography_ids)
-    if (baseline_geography_unique, baseline_geography_multiple, baseline_geography_unresolved) != (86, 2, 0):
+    if (baseline_geography_unique, baseline_geography_multiple, baseline_geography_unresolved) != (87, 1, 0):
         raise ValueError(
             "Unexpected disposition of 88 baseline geography gaps: "
             f"{(baseline_geography_unique, baseline_geography_multiple, baseline_geography_unresolved)}"
@@ -770,9 +823,15 @@ def validate(source_dir: Path = DEFAULT_SOURCE_DIR) -> dict[str, object]:
 
     expected_failed_gates = Counter()
     for row in crosswalk_rows:
-        if row["geography_status"] == "source_supported_multiple":
+        if (
+            row["scope_disposition"] == "eligible"
+            and row["geography_status"] == "source_supported_multiple"
+        ):
             expected_failed_gates[(row["validation_unit_id"], "geography_unique_assignment")] += 1
-        elif row["geography_status"] == "unresolved_after_search":
+        elif (
+            row["scope_disposition"] == "eligible"
+            and row["geography_status"] == "unresolved_after_search"
+        ):
             expected_failed_gates[(row["validation_unit_id"], "geography_and_identity")] += 1
         if row["scope_disposition"] == "unresolved_after_search":
             expected_failed_gates[(row["validation_unit_id"], "scope")] += 1
@@ -783,6 +842,16 @@ def validate(source_dir: Path = DEFAULT_SOURCE_DIR) -> dict[str, object]:
         expected_disposition = "source_supported_multiple" if row["failed_gate"] == "geography_unique_assignment" else "unresolved_after_search"
         if row["review_required"] != "true" or row["disposition"] != expected_disposition or not row["source_document_ids"]:
             raise ValueError("An unresolved-log row lacks traceability or an explicit review gate")
+    observed_nonunique_ineligible = {
+        row["validation_unit_id"] for row in crosswalk_rows
+        if row["scope_disposition"] == "ineligible"
+        and row["geography_status"] == "source_supported_multiple"
+    }
+    if observed_nonunique_ineligible != EXP004_POLICY_ONLY_MULTIPLE:
+        raise ValueError(
+            "Unexpected ineligible units retain multiple geography: "
+            f"{observed_nonunique_ineligible}"
+        )
 
     eligible_ids = {unit_id for unit_id, row in crosswalk.items() if row["scope_disposition"] == "eligible"}
     candidate_ids = [row["validation_unit_id"] for row in candidate_rows]
@@ -911,9 +980,9 @@ def validate(source_dir: Path = DEFAULT_SOURCE_DIR) -> dict[str, object]:
 
     scope_counts = Counter(row["scope_disposition"] for row in crosswalk_rows)
     geography_counts = Counter(row["geography_status"] for row in crosswalk_rows)
-    if geography_counts != Counter({"source_supported_unique": 130, "source_supported_multiple": 2, "unresolved_after_search": 1}):
+    if geography_counts != Counter({"source_supported_unique": 132, "source_supported_multiple": 1}):
         raise ValueError(f"Unexpected full-frame geography dispositions: {geography_counts}")
-    if scope_counts != Counter({"eligible": 66, "ineligible": 66, "unresolved_after_search": 1}):
+    if scope_counts != Counter({"eligible": 67, "ineligible": 66}):
         raise ValueError(f"Unexpected full-frame scope dispositions: {scope_counts}")
     screen_counts = Counter(row["screen_status"] for row in candidate_rows)
     metrics = json.loads(METRICS.read_text(encoding="utf-8"))
@@ -940,7 +1009,7 @@ def validate(source_dir: Path = DEFAULT_SOURCE_DIR) -> dict[str, object]:
         "deterministic_random_seed": "20260830015",
         "all_eligible_units_have_nonzero_probability": True,
         "random_draw_executed": False,
-        "frame_ready_to_freeze": False,
+        "frame_ready_to_freeze": True,
     }
     mismatches = {key: (metrics.get(key), value) for key, value in expected_metrics.items() if metrics.get(key) != value}
     if mismatches:
@@ -958,8 +1027,8 @@ def validate(source_dir: Path = DEFAULT_SOURCE_DIR) -> dict[str, object]:
             raise ValueError(f"Frame-flow scope count mismatch: {disposition}")
 
     return {
-        "baseline_geography_resolved": 86,
-        "baseline_geography_multiple": 2,
+        "baseline_geography_resolved": 87,
+        "baseline_geography_multiple": 1,
         "baseline_geography_unresolved": 0,
         "baseline_scope_resolved": 98,
         "baseline_scope_unresolved": 0,
