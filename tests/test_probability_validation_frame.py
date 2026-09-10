@@ -3,10 +3,12 @@ import hashlib
 import importlib.util
 import tempfile
 import unittest
+import sys
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
 
 
 def load_validator():
@@ -100,6 +102,29 @@ class ProbabilityValidationFrameTests(unittest.TestCase):
     def test_every_origin_row_is_retained(self):
         self.assertEqual(len(self.origins), 157)
         self.assertEqual(len({(row["validation_unit_id"], row["origin_position"]) for row in self.origins}), 157)
+
+    def test_unrelated_crosswalk_fields_cannot_change(self):
+        mutated = [dict(row) for row in self.crosswalk]
+        mutated[0]["supported_legal_issuer_name"] = "Different legal issuer"
+        with self.assertRaisesRegex(ValueError, "Unauthorized crosswalk field"):
+            self.builder.validate_exp004_crosswalk(mutated)
+
+    def test_shenzhen_international_scope_reason_is_preserved(self):
+        mutated = [dict(row) for row in self.crosswalk]
+        row = next(row for row in mutated if row["validation_unit_id"] == "mv_2547f5fbc2e2")
+        self.assertEqual(row["scope_reason_code"], "excluded_commercial_no_platform_role")
+        row["scope_reason_code"] = "excluded_private"
+        with self.assertRaisesRegex(ValueError, "Unauthorized crosswalk field"):
+            self.builder.validate_exp004_crosswalk(mutated)
+
+    def test_partial_target_edits_and_dropped_units_are_rejected(self):
+        mutated = [dict(row) for row in self.crosswalk]
+        row = next(row for row in mutated if row["validation_unit_id"] == "mv_dd84e076bf32")
+        row["owner_level"] = "provincial_public"
+        with self.assertRaisesRegex(ValueError, "Unauthorized crosswalk field"):
+            self.builder.validate_exp004_crosswalk(mutated, require_integrated=False)
+        with self.assertRaisesRegex(ValueError, "membership or order"):
+            self.builder.validate_exp004_crosswalk(self.crosswalk[:-1])
 
     def test_origin_pairs_use_the_safe_surrogate_mapping(self):
         expected_repairs = {
@@ -299,6 +324,60 @@ class ProbabilityValidationFrameTests(unittest.TestCase):
         candidate = {row["validation_unit_id"] for row in self.candidate}
         self.assertEqual(unresolved, set())
         self.assertTrue(unresolved.isdisjoint(candidate))
+
+
+class RegisteredInputIntegrityTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.validator = load_validator()
+        cls.builder = load_builder()
+
+    def test_independent_crosswalk_and_manifest_fixtures(self):
+        validator = self.validator
+        crosswalk = read_csv("data/validation/probability_validation_geography_scope_crosswalk.csv")
+        manifest = read_csv("data/validation/probability_validation_source_manifest.csv")
+        validator.validate_registered_crosswalk(crosswalk)
+        validator.validate_registered_manifest(manifest)
+        for unit_id in validator.APPROVED_ROW_HASHES:
+            mutated = [dict(row) for row in crosswalk]
+            target = next(row for row in mutated if row["validation_unit_id"] == unit_id)
+            target["owner_level"] = "different_owner"
+            with self.assertRaisesRegex(ValueError, "approved-record hash"):
+                validator.validate_registered_crosswalk(mutated)
+        for position in (0, len(manifest) - 1):
+            with self.subTest(position=position):
+                mutated = [dict(row) for row in manifest]
+                mutated[position]["sha256"] = "0" * 64
+                mutated[position]["source_text_sha256"] = "1" * 64
+                with self.assertRaises(ValueError):
+                    validator.validate_registered_manifest(mutated)
+
+    def test_all_origin_metadata_and_old_records_are_protected(self):
+        candidates = read_csv("data/validation/probability_validation_frame_candidate.csv")
+        origins = read_csv("data/validation/probability_validation_frame_origin_rows.csv")
+        design = read_csv("data/validation/probability_validation_sampling_design.csv")
+        self.validator.validate_preserved_outputs(candidates, origins, design)
+        for field in origins[0]:
+            with self.subTest(field=field):
+                mutated = [dict(row) for row in origins]
+                mutated[0][field] = "tampered"
+                with self.assertRaisesRegex(ValueError, "origin records"):
+                    self.validator.validate_preserved_outputs(candidates, mutated, design)
+        mutated = [dict(row) for row in candidates]
+        mutated[0]["issuer_name"] = "different issuer"
+        with self.assertRaisesRegex(ValueError, "candidate records"):
+            self.validator.validate_preserved_outputs(mutated, origins, design)
+        mutated = [dict(row) for row in design]
+        mutated[0]["inclusion_probability"] = "0.5"
+        with self.assertRaisesRegex(ValueError, "stratum records"):
+            self.validator.validate_preserved_outputs(candidates, origins, mutated)
+
+    def test_protected_label_bytes_cannot_change(self):
+        relative = "data/processed/working_reference_labels.csv"
+        payload = (ROOT / relative).read_bytes()
+        self.builder.validate_protected_payload(relative, payload)
+        with self.assertRaises(ValueError):
+            self.builder.validate_protected_payload(relative, payload + b"\n")
 
 
 if __name__ == "__main__":

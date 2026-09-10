@@ -6,9 +6,12 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+import io
 import json
 import re
+import subprocess
 from collections import Counter, defaultdict
+from functools import lru_cache
 from pathlib import Path
 
 
@@ -24,9 +27,27 @@ CANDIDATE_OUTPUT = ROOT / "data/validation/probability_validation_frame_candidat
 ORIGIN_OUTPUT = ROOT / "data/validation/probability_validation_frame_origin_rows.csv"
 FLOW_OUTPUT = ROOT / "data/validation/probability_validation_frame_flow.csv"
 DESIGN_OUTPUT = ROOT / "data/validation/probability_validation_sampling_design.csv"
-METRICS_OUTPUT = ROOT / "experiments/EXP-20260831-001/metrics.json"
+METRICS_OUTPUT = ROOT / "experiments/EXP-20260910-001/metrics.json"
 UNRESOLVED_OUTPUT = ROOT / "data/validation/probability_validation_unresolved_log.csv"
 SOURCE_MANIFEST_OUTPUT = ROOT / "data/validation/probability_validation_source_manifest.csv"
+REGISTERED_BASE = "9977dd752f911bfd07dc4d434301041ef485c9f2"
+REGISTERED_CROSSWALK_SHA256 = "fc72c263dade64d3404d873fec0b40328429346661710d24988c448fbeb711d2"
+PROTECTED_PATHS = (
+    "immutable/research_charter.md", "immutable/analysis_plan.md",
+    "immutable/evaluation_protocol.md", "immutable/data_manifest.yaml",
+    "coding/codebook.md", "coding/label_provenance.md",
+    "data/validation/label_role_registry.csv",
+    "data/processed/working_reference_labels.csv",
+    "data/analysis_inputs/codex_surrogate_labels_2026_07_03_expanded.csv",
+    "data/analysis_inputs/candidate_city_historical_capacity.csv",
+    "data/analysis_inputs/contemporary_city_controls.csv",
+    "data/validation/proposed_one_sided_validation_frame_enriched.csv",
+    "data/document_inventory.csv", "data/source_inventory.csv",
+    "data/bond_inventory.csv", "experiments/EXP-20260831-001/metrics.json",
+    "experiments/EXP-20260831-001/review_decisions.csv",
+    *(f"experiments/EXP-20260831-{number}/{filename}" for number in ("002", "003")
+      for filename in ("assessment.md", "decision.md", "source_manifest.csv", "source_excerpts.csv", "case_decisions.csv", "run_manifest.yaml")),
+)
 
 SEED = "20260830015"
 POSITIVE_TARGET = 60
@@ -211,7 +232,9 @@ def write_csv(path: Path, rows: list[dict[str, object]], fields: list[str]) -> N
 
 def integrate_exp004_decisions() -> dict[str, object]:
     """Apply the two approved evidence repairs and the ineligible-unit policy."""
+    validate_protected_inputs()
     crosswalk_rows = read_csv(CROSSWALK_INPUT)
+    validate_exp004_crosswalk(crosswalk_rows, require_integrated=False)
     before = {row["validation_unit_id"]: dict(row) for row in crosswalk_rows}
     crosswalk = {row["validation_unit_id"]: row for row in crosswalk_rows}
     if len(crosswalk) != 133:
@@ -228,8 +251,6 @@ def integrate_exp004_decisions() -> dict[str, object]:
     allowed = set(EXP004_CROSSWALK_PATCHES)
     if not changed_units.issubset(allowed):
         raise ValueError(f"EXP-004 changed an unauthorized crosswalk unit: {changed_units - allowed}")
-    write_csv(CROSSWALK_INPUT, crosswalk_rows, list(crosswalk_rows[0]))
-
     unresolved_rows = read_csv(UNRESOLVED_OUTPUT)
     blocking_units = {
         unit_id for unit_id, row in crosswalk.items()
@@ -244,9 +265,10 @@ def integrate_exp004_decisions() -> dict[str, object]:
     ]
     if blocking_units != {row["validation_unit_id"] for row in unresolved_rows}:
         raise ValueError("EXP-004 found a blocking gate without a registered unresolved-log row")
-    write_csv(UNRESOLVED_OUTPUT, unresolved_rows, UNRESOLVED_FIELDS)
-
     manifest_rows = read_csv(SOURCE_MANIFEST_OUTPUT)
+    baseline_manifest = registered_csv("data/validation/probability_validation_source_manifest.csv")
+    if manifest_rows != baseline_manifest and manifest_rows != baseline_manifest + [EXP004_GUIYANG_SOURCE]:
+        raise ValueError("Source manifest differs from baseline plus the approved addition")
     manifest_keys = {
         (row["validation_unit_id"], row["document_id"]): row for row in manifest_rows
     }
@@ -259,6 +281,8 @@ def integrate_exp004_decisions() -> dict[str, object]:
             raise ValueError("EXP-004 Guiyang source manifest row is not deterministic")
     else:
         manifest_rows.append(dict(EXP004_GUIYANG_SOURCE))
+    write_csv(CROSSWALK_INPUT, crosswalk_rows, list(crosswalk_rows[0]))
+    write_csv(UNRESOLVED_OUTPUT, unresolved_rows, UNRESOLVED_FIELDS)
     write_csv(SOURCE_MANIFEST_OUTPUT, manifest_rows, SOURCE_MANIFEST_FIELDS)
 
     return {
@@ -266,6 +290,50 @@ def integrate_exp004_decisions() -> dict[str, object]:
         "blocking_gate_units": sorted(blocking_units),
         "source_manifest_rows": len(manifest_rows),
     }
+
+
+@lru_cache(maxsize=None)
+def baseline_bytes(relative: str) -> bytes:
+    return subprocess.run(
+        ["git", "show", f"{REGISTERED_BASE}:{relative}"],
+        cwd=ROOT, check=True, capture_output=True,
+    ).stdout
+
+
+def registered_csv(relative: str) -> list[dict[str, str]]:
+    return list(csv.DictReader(io.StringIO(baseline_bytes(relative).decode("utf-8-sig"))))
+
+
+def validate_protected_payload(relative: str, payload: bytes) -> None:
+    if hashlib.sha256(payload).digest() != hashlib.sha256(baseline_bytes(relative)).digest():
+        raise ValueError(f"Protected input changed: {relative}")
+
+
+def validate_protected_inputs() -> None:
+    for relative in PROTECTED_PATHS:
+        validate_protected_payload(relative, (ROOT / relative).read_bytes())
+
+
+def registered_crosswalk() -> list[dict[str, str]]:
+    payload = baseline_bytes("data/validation/probability_validation_geography_scope_crosswalk.csv")
+    if hashlib.sha256(payload).hexdigest() != REGISTERED_CROSSWALK_SHA256:
+        raise ValueError("Registered baseline crosswalk hash mismatch")
+    return list(csv.DictReader(io.StringIO(payload.decode("utf-8-sig"))))
+
+
+def validate_exp004_crosswalk(
+    rows: list[dict[str, str]], *, require_integrated: bool = True,
+) -> None:
+    baseline_rows = registered_crosswalk()
+    if [row["validation_unit_id"] for row in rows] != [
+        row["validation_unit_id"] for row in baseline_rows
+    ]:
+        raise ValueError("Registered crosswalk membership or order changed")
+    for row, baseline in zip(rows, baseline_rows):
+        unit_id = row["validation_unit_id"]
+        expected = {**baseline, **EXP004_CROSSWALK_PATCHES.get(unit_id, {})}
+        if row != expected and (require_integrated or row != baseline):
+            raise ValueError(f"Unauthorized crosswalk field change: {unit_id}")
 
 
 def normalize_legal_name(value: str) -> str:
@@ -420,8 +488,10 @@ def proposed_target(screen_status: str, population_n: int) -> int:
 
 
 def build() -> dict[str, object]:
+    validate_protected_inputs()
     frame_rows = read_csv(FRAME_INPUT)
     crosswalk_rows = read_csv(CROSSWALK_INPUT)
+    validate_exp004_crosswalk(crosswalk_rows)
     frame = {row["validation_unit_id"]: row for row in frame_rows}
     crosswalk = {row["validation_unit_id"]: row for row in crosswalk_rows}
     if len(frame) != 133 or len(crosswalk) != 133 or set(frame) != set(crosswalk):

@@ -1,0 +1,1097 @@
+{
+  "sources": 159,
+  "results": [
+    {
+      "document_id": "doc_exp9_20260704_0183_005",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp9_20260704_0183_005.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0183_008",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp9_20260704_0183_008.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0099_006",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0099_006.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0105_003",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0105_003.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0086_004",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0086_004.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0109_008",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0109_008.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0161_008",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0161_008.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0156_001",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0156_001.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0061_008",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0061_008.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "web_chinamoney_linyi_2026_rating",
+      "raw_status": "verified",
+      "text_status": "extraction_hash_unrecovered",
+      "raw_origin": "/tmp/lgfv-exp015-sources/web_chinamoney_linyi_2026_rating.pdf"
+    },
+    {
+      "document_id": "web_linyi_sasac_profile",
+      "raw_status": "verified",
+      "text_status": "verify_html_in_validator",
+      "raw_origin": "/tmp/lgfv-exp015-sources/web_linyi_sasac_profile.html"
+    },
+    {
+      "document_id": "doc_sch_20260630_0078_004",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0078_004.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0127_002",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0127_002.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0152_003",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp9_20260704_0152_003.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0152_009",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp9_20260704_0152_009.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp4_20260703_0013_005",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp4_20260703_0013_005.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0107_006",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0107_006.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_gz_lps_kaitou_2016_bond_prospectus",
+      "raw_status": "verified",
+      "text_status": "extraction_hash_unrecovered",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_gz_lps_kaitou_2016_bond_prospectus.pdf"
+    },
+    {
+      "document_id": "doc_exp2_20260703_0022_003",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp2_20260703_0022_003.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0150_006",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0150_006.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0170_009",
+      "raw_status": "verified",
+      "text_status": "extraction_hash_unrecovered",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0170_009.pdf"
+    },
+    {
+      "document_id": "doc_exp_20260703_0015_008",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp_20260703_0015_008.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0182_004",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp9_20260704_0182_004.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0193_007",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp9_20260704_0193_007.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0117_006",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp10_20260704_0117_006.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0247_001",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp9_20260704_0247_001.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp2_20260703_0002_009",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp2_20260703_0002_009.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0144_005",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0144_005.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0075_003",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0075_003.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0037_007",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp8_20260703_0037_007.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0042_004",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp8_20260703_0042_004.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0025_007",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp5_20260703_0025_007.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0160_003",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0160_003.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0074_002",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0074_002.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0089_002",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0089_002.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0290_001",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp9_20260704_0290_001.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0290_002",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp9_20260704_0290_002.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0004_011",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0004_011.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0004_008",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp5_20260703_0004_008.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0125_001",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0125_001.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0125_003",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0125_003.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "web_chinamoney_jinluling_2025_rating",
+      "raw_status": "verified",
+      "text_status": "extraction_hash_unrecovered",
+      "raw_origin": "/tmp/lgfv-exp015-sources/web_chinamoney_jinluling_2025_rating.pdf"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0268_001",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp10_20260704_0268_001.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0001_006",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0001_006.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0001_007",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0001_007.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0134_009",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0134_009.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp_20260703_0005_010",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp_20260703_0005_010.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp4_20260703_0027_010",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp4_20260703_0027_010.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0004_004",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp8_20260703_0004_004.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0139_005",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0139_005.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0035_005",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp9_20260704_0035_005.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0007_004",
+      "raw_status": "verified",
+      "text_status": "extraction_hash_unrecovered",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp5_20260703_0007_004.pdf"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0163_006",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp8_20260703_0163_006.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp2_20260703_0021_005",
+      "raw_status": "verified",
+      "text_status": "extraction_hash_unrecovered",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp2_20260703_0021_005.pdf"
+    },
+    {
+      "document_id": "web_hkex_anhui_transport_controller",
+      "raw_status": "verified",
+      "text_status": "extraction_hash_unrecovered",
+      "raw_origin": "/tmp/lgfv-exp015-sources/web_hkex_anhui_transport_controller.pdf"
+    },
+    {
+      "document_id": "doc_sch_20260630_0173_007",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0173_007.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0071_008",
+      "raw_status": "verified",
+      "text_status": "extraction_hash_unrecovered",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0071_008.pdf"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0001_009",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp5_20260703_0001_009.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0012_012",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0012_012.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0236_003",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp10_20260704_0236_003.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0062_002",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0062_002.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0101_008",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0101_008.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "web_sse_shanxi_construction_2025_annual",
+      "raw_status": "verified",
+      "text_status": "extraction_hash_unrecovered",
+      "raw_origin": "/tmp/lgfv-exp015-sources/web_sse_shanxi_construction_2025_annual.pdf"
+    },
+    {
+      "document_id": "doc_sch_20260630_0030_005",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0030_005.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0030_010",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0030_010.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp3_20260703_0018_001",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp3_20260703_0018_001.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0065_001",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0065_001.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0065_004",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0065_004.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp_20260703_0002_005",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp_20260703_0002_005.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp_20260703_0002_006",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp_20260703_0002_006.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "web_gz_gov_guangzhou_transport_profile",
+      "raw_status": "verified",
+      "text_status": "verify_html_in_validator",
+      "raw_origin": "/tmp/lgfv-exp015-sources/web_gz_gov_guangzhou_transport_profile.html"
+    },
+    {
+      "document_id": "doc_exp_20260703_0021_003",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp_20260703_0021_003.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp_20260703_0021_005",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp_20260703_0021_005.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "web_gz_gov_guangzhou_industry_profile",
+      "raw_status": "verified",
+      "text_status": "verify_html_in_validator",
+      "raw_origin": "/tmp/lgfv-exp015-sources/web_gz_gov_guangzhou_industry_profile.html"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0084_002",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp9_20260704_0084_002.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0084_005",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp9_20260704_0084_005.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0128_005",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0128_005.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp4_20260703_0049_008",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp4_20260703_0049_008.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0026_009",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0026_009.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp_20260703_0004_006",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp_20260703_0004_006.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0149_002",
+      "raw_status": "verified",
+      "text_status": "extraction_hash_unrecovered",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0149_002.pdf"
+    },
+    {
+      "document_id": "doc_sch_20260630_0121_005",
+      "raw_status": "verified",
+      "text_status": "extraction_hash_unrecovered",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0121_005.pdf"
+    },
+    {
+      "document_id": "doc_sch_20260630_0081_004",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0081_004.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0159_004",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0159_004.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0088_005",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0088_005.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0230_001",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp9_20260704_0230_001.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0230_007",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp9_20260704_0230_007.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0022_003",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0022_003.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0059_004",
+      "raw_status": "verified",
+      "text_status": "extraction_hash_unrecovered",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0059_004.pdf"
+    },
+    {
+      "document_id": "doc_exp2_20260703_0018_004",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp2_20260703_0018_004.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp_20260703_0007_003",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp_20260703_0007_003.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0009_007",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0009_007.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0098_006",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0098_006.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0127_001",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp9_20260704_0127_001.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0127_005",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp9_20260704_0127_005.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0141_007",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp9_20260704_0141_007.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0215_003",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp9_20260704_0215_003.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0012_004",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp8_20260703_0012_004.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0087_011",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0087_011.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0157_002",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0157_002.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0157_008",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0157_008.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp_20260703_0003_007",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp_20260703_0003_007.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0036_008",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0036_008.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp4_20260703_0009_006",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp4_20260703_0009_006.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0131_019",
+      "raw_status": "verified",
+      "text_status": "extraction_hash_unrecovered",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0131_019.pdf"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0156_004",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp10_20260704_0156_004.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp6_20260703_0005_006",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp6_20260703_0005_006.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0010_006",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0010_006.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0030_007",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp5_20260703_0030_007.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp2_20260703_0003_005",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp2_20260703_0003_005.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0018_001",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0018_001.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0018_002",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0018_002.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0013_006",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp10_20260704_0013_006.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0135_010",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0135_010.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0009_003",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp8_20260703_0009_003.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_gd_sz_tqjf_2025_mtn4_001",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_gd_sz_tqjf_2025_mtn4_001.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "web_shenzhen_sasac_special_zone_development",
+      "raw_status": "retrieved_hash_mismatch",
+      "text_status": "missing",
+      "retrieved_raw_sha256": "2d13b660ee1b469483ca81f79e7843140cce78814e8fc77b7f22c6aa7acb9550"
+    },
+    {
+      "document_id": "doc_sch_20260630_0066_003",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0066_003.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0031_005",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0031_005.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0192_002",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp10_20260704_0192_002.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0301_005",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp10_20260704_0301_005.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0110_001",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0110_001.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0064_007",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp10_20260704_0064_007.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0111_009",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp9_20260704_0111_009.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0084_005",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0084_005.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0003_003",
+      "raw_status": "verified",
+      "text_status": "extraction_hash_unrecovered",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0003_003.pdf"
+    },
+    {
+      "document_id": "doc_sch_20260630_0003_007",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0003_007.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0023_001",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0023_001.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0034_004",
+      "raw_status": "verified",
+      "text_status": "extraction_hash_unrecovered",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp5_20260703_0034_004.pdf"
+    },
+    {
+      "document_id": "doc_exp6_20260703_0039_002",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp6_20260703_0039_002.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp6_20260703_0025_004",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp6_20260703_0025_004.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0063_002",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0063_002.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0212_005",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp8_20260703_0212_005.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0087_004",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp8_20260703_0087_004.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0041_003",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0041_003.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0168_006",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0168_006.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0071_006",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp10_20260704_0071_006.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "web_chinamoney_guizhou_expressway_2024_base",
+      "raw_status": "verified",
+      "text_status": "extraction_hash_unrecovered",
+      "raw_origin": "/tmp/lgfv-exp015-sources/web_chinamoney_guizhou_expressway_2024_base.pdf"
+    },
+    {
+      "document_id": "doc_gz_zy_daoqiao_2015_bond_prospectus",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_gz_zy_daoqiao_2015_bond_prospectus.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "web_csrc_zunyi_daoqiao_current_name",
+      "raw_status": "verified",
+      "text_status": "verify_html_in_validator",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_csrc_zunyi_daoqiao_2023.html"
+    },
+    {
+      "document_id": "doc_sch_20260630_0119_002",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0119_002.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0167_006",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0167_006.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0094_001",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0094_001.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0034_005",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp8_20260703_0034_005.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0088_004",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp8_20260703_0088_004.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0088_007",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp8_20260703_0088_007.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0024_009",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0024_009.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0034_004",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0034_004.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0072_007",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0072_007.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0039_003",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0039_003.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0017_003",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp8_20260703_0017_003.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0145_004",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0145_004.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp3_20260703_0006_001",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp3_20260703_0006_001.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0114_001",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0114_001.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_sch_20260630_0120_008",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_sch_20260630_0120_008.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0021_003",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp8_20260703_0021_003.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0021_004",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp8_20260703_0021_004.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0250_011",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/doc_exp8_20260703_0250_011.pdf",
+      "text_origin": "pdftotext -layout"
+    },
+    {
+      "document_id": "web_guiyang_2022_midyear_bond_report",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/guiyang_2022_midyear_bond_report.pdf",
+      "text_origin": "/tmp/lgfv-exp015-sources/guiyang_2022_midyear_bond_report.txt"
+    }
+  ]
+}

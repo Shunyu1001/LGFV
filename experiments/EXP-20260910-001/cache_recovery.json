@@ -1,0 +1,1122 @@
+{
+  "sources": 159,
+  "results": [
+    {
+      "document_id": "doc_exp9_20260704_0183_005",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0183/doc_exp9_20260704_0183_005.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0183_008",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0183/doc_exp9_20260704_0183_008.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0099_006",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0099/doc_sch_20260630_0099_006.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0105_003",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0105/doc_sch_20260630_0105_003.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0086_004",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0086/doc_sch_20260630_0086_004.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0109_008",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0109/doc_sch_20260630_0109_008.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0161_008",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0161/doc_sch_20260630_0161_008.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0156_001",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0156/doc_sch_20260630_0156_001.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0061_008",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0061/doc_sch_20260630_0061_008.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "web_chinamoney_linyi_2026_rating",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "retrieved_raw_sha256": "94c6b0ee9da293a80679c8b7a56a93c067049c5f2bee7dc45b603da5e7a0dbff",
+      "raw_origin": "https://www.chinamoney.com.cn/dqs/cm-s-notice-query/fileDownLoad.do?contentId=3364219&mode=save&priority=0",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "web_linyi_sasac_profile",
+      "raw_status": "verified",
+      "text_status": "verify_html_in_validator",
+      "retrieved_raw_sha256": "cfd2850bb241b6225991c54fc9bdc3e44d4c94025debe90095803fa4d8070023",
+      "raw_origin": "https://lysgzw.linyi.gov.cn/info/1023/12434.htm"
+    },
+    {
+      "document_id": "doc_sch_20260630_0078_004",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0078/doc_sch_20260630_0078_004.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0127_002",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0127/doc_sch_20260630_0127_002.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0152_003",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0152/doc_exp9_20260704_0152_003.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0152_009",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0152/doc_exp9_20260704_0152_009.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp4_20260703_0013_005",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0013/doc_exp4_20260703_0013_005.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0107_006",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0107/doc_sch_20260630_0107_006.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_gz_lps_kaitou_2016_bond_prospectus",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/pilot_gz_003/doc_gz_lps_kaitou_2016_bond_prospectus.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp2_20260703_0022_003",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0022/doc_exp2_20260703_0022_003.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0150_006",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0150/doc_sch_20260630_0150_006.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0170_009",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0170/doc_sch_20260630_0170_009.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp_20260703_0015_008",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0015/doc_exp_20260703_0015_008.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0182_004",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0182/doc_exp9_20260704_0182_004.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0193_007",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0193/doc_exp9_20260704_0193_007.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0117_006",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp10_20260704_0117/doc_exp10_20260704_0117_006.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0247_001",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0247/doc_exp9_20260704_0247_001.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp2_20260703_0002_009",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0002/doc_exp2_20260703_0002_009.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0144_005",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0144/doc_sch_20260630_0144_005.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0075_003",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0075/doc_sch_20260630_0075_003.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0037_007",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0037/doc_exp8_20260703_0037_007.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0042_004",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0042/doc_exp8_20260703_0042_004.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0025_007",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0025/doc_exp5_20260703_0025_007.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0160_003",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0160/doc_sch_20260630_0160_003.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0074_002",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0074/doc_sch_20260630_0074_002.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0089_002",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0089/doc_sch_20260630_0089_002.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0290_001",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0290/doc_exp9_20260704_0290_001.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0290_002",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0290/doc_exp9_20260704_0290_002.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0004_011",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0004/doc_sch_20260630_0004_011.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0004_008",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0004/doc_exp5_20260703_0004_008.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0125_001",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0125/doc_sch_20260630_0125_001.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0125_003",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0125/doc_sch_20260630_0125_003.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "web_chinamoney_jinluling_2025_rating",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "retrieved_raw_sha256": "f0075460b7c6ec3adfe838aa9cf0d6d27a6edd93921397687f0663a5113206f0",
+      "raw_origin": "https://www.chinamoney.com.cn/dqs/cm-s-notice-query/fileDownLoad.do?contentId=3282967&mode=open&priority=0",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0268_001",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp10_20260704_0268/doc_exp10_20260704_0268_001.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0001_006",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0001/doc_sch_20260630_0001_006.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0001_007",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0001/doc_sch_20260630_0001_007.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0134_009",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0134/doc_sch_20260630_0134_009.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp_20260703_0005_010",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0005/doc_exp_20260703_0005_010.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp4_20260703_0027_010",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0027/doc_exp4_20260703_0027_010.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0004_004",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0004/doc_exp8_20260703_0004_004.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0139_005",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0139/doc_sch_20260630_0139_005.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0035_005",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0035/doc_exp9_20260704_0035_005.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0007_004",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0007/doc_exp5_20260703_0007_004.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0163_006",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0163/doc_exp8_20260703_0163_006.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp2_20260703_0021_005",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0021/doc_exp2_20260703_0021_005.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "web_hkex_anhui_transport_controller",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "retrieved_raw_sha256": "66cdbd9bffce3c52c1e183aca19138dd6ec1367b8ad165c9309cc0fe02532d9f",
+      "raw_origin": "https://www.hkexnews.hk/listedco/listconews/sehk/2023/0620/2023062001130_c.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0173_007",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0173/doc_sch_20260630_0173_007.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0071_008",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0071/doc_sch_20260630_0071_008.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0001_009",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0001/doc_exp5_20260703_0001_009.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0012_012",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0012/doc_sch_20260630_0012_012.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0236_003",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp10_20260704_0236/doc_exp10_20260704_0236_003.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0062_002",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0062/doc_sch_20260630_0062_002.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0101_008",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0101/doc_sch_20260630_0101_008.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "web_sse_shanxi_construction_2025_annual",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "retrieved_raw_sha256": "4d2a7bbbad9b227aaeb6e340462642c61a42de99151c9dc25eb5742e824ce6e6",
+      "raw_origin": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2026-04-29/244508_20260429_FIHX.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0030_005",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0030/doc_sch_20260630_0030_005.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0030_010",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0030/doc_sch_20260630_0030_010.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp3_20260703_0018_001",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp3_20260703_0018/doc_exp3_20260703_0018_001.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0065_001",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0065/doc_sch_20260630_0065_001.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0065_004",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0065/doc_sch_20260630_0065_004.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp_20260703_0002_005",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0002/doc_exp_20260703_0002_005.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp_20260703_0002_006",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0002/doc_exp_20260703_0002_006.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "web_gz_gov_guangzhou_transport_profile",
+      "raw_status": "verified",
+      "text_status": "verify_html_in_validator",
+      "retrieved_raw_sha256": "6a85f49f9ff52ce1ddc3da4156653abaef9be7442da850be51842bca85668024",
+      "raw_origin": "https://www.gz.gov.cn/zwgk/zdly/gqxx/jbxx/content/mpost_7793086.html"
+    },
+    {
+      "document_id": "doc_exp_20260703_0021_003",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0021/doc_exp_20260703_0021_003.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp_20260703_0021_005",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0021/doc_exp_20260703_0021_005.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "web_gz_gov_guangzhou_industry_profile",
+      "raw_status": "verified",
+      "text_status": "verify_html_in_validator",
+      "retrieved_raw_sha256": "3cd49cbd145440c18f9a7137fdc81fce5233b912918d2ed40c27b86d51431cb3",
+      "raw_origin": "https://www.gz.gov.cn/zwgk/zdly/gqxx/jbxx/content/post_7796298.html"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0084_002",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0084/doc_exp9_20260704_0084_002.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0084_005",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0084/doc_exp9_20260704_0084_005.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0128_005",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0128/doc_sch_20260630_0128_005.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp4_20260703_0049_008",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0049/doc_exp4_20260703_0049_008.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0026_009",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0026/doc_sch_20260630_0026_009.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp_20260703_0004_006",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0004/doc_exp_20260703_0004_006.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0149_002",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0149/doc_sch_20260630_0149_002.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0121_005",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0121/doc_sch_20260630_0121_005.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0081_004",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0081/doc_sch_20260630_0081_004.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0159_004",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0159/doc_sch_20260630_0159_004.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0088_005",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0088/doc_sch_20260630_0088_005.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0230_001",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0230/doc_exp9_20260704_0230_001.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0230_007",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0230/doc_exp9_20260704_0230_007.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0022_003",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0022/doc_sch_20260630_0022_003.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0059_004",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0059/doc_sch_20260630_0059_004.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp2_20260703_0018_004",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0018/doc_exp2_20260703_0018_004.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp_20260703_0007_003",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0007/doc_exp_20260703_0007_003.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0009_007",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0009/doc_sch_20260630_0009_007.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0098_006",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0098/doc_sch_20260630_0098_006.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0127_001",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0127/doc_exp9_20260704_0127_001.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0127_005",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0127/doc_exp9_20260704_0127_005.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0141_007",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0141/doc_exp9_20260704_0141_007.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0215_003",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0215/doc_exp9_20260704_0215_003.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0012_004",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0012/doc_exp8_20260703_0012_004.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0087_011",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0087/doc_sch_20260630_0087_011.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0157_002",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0157/doc_sch_20260630_0157_002.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0157_008",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0157/doc_sch_20260630_0157_008.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp_20260703_0003_007",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0003/doc_exp_20260703_0003_007.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0036_008",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0036/doc_sch_20260630_0036_008.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp4_20260703_0009_006",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0009/doc_exp4_20260703_0009_006.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0131_019",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0131/doc_sch_20260630_0131_019.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0156_004",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp10_20260704_0156/doc_exp10_20260704_0156_004.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp6_20260703_0005_006",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0005/doc_exp6_20260703_0005_006.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0010_006",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0010/doc_sch_20260630_0010_006.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0030_007",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0030/doc_exp5_20260703_0030_007.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp2_20260703_0003_005",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0003/doc_exp2_20260703_0003_005.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0018_001",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0018/doc_sch_20260630_0018_001.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0018_002",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0018/doc_sch_20260630_0018_002.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0013_006",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp10_20260704_0013/doc_exp10_20260704_0013_006.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0135_010",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0135/doc_sch_20260630_0135_010.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0009_003",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0009/doc_exp8_20260703_0009_003.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_gd_sz_tqjf_2025_mtn4_001",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/pilot_gd_002/doc_gd_sz_tqjf_2025_mtn4_001.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "web_shenzhen_sasac_special_zone_development",
+      "raw_status": "retrieved_hash_mismatch",
+      "text_status": "missing",
+      "retrieved_raw_sha256": "2d13b660ee1b469483ca81f79e7843140cce78814e8fc77b7f22c6aa7acb9550"
+    },
+    {
+      "document_id": "doc_sch_20260630_0066_003",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0066/doc_sch_20260630_0066_003.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0031_005",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0031/doc_sch_20260630_0031_005.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0192_002",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp10_20260704_0192/doc_exp10_20260704_0192_002.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0301_005",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp10_20260704_0301/doc_exp10_20260704_0301_005.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0110_001",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0110/doc_sch_20260630_0110_001.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0064_007",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp10_20260704_0064/doc_exp10_20260704_0064_007.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0111_009",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0111/doc_exp9_20260704_0111_009.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0084_005",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0084/doc_sch_20260630_0084_005.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0003_003",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0003/doc_sch_20260630_0003_003.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0003_007",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0003/doc_sch_20260630_0003_007.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0023_001",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0023/doc_sch_20260630_0023_001.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0034_004",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0034/doc_exp5_20260703_0034_004.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp6_20260703_0039_002",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0039/doc_exp6_20260703_0039_002.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp6_20260703_0025_004",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0025/doc_exp6_20260703_0025_004.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0063_002",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0063/doc_sch_20260630_0063_002.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0212_005",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0212/doc_exp8_20260703_0212_005.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0087_004",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0087/doc_exp8_20260703_0087_004.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0041_003",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0041/doc_sch_20260630_0041_003.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0168_006",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0168/doc_sch_20260630_0168_006.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0071_006",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp10_20260704_0071/doc_exp10_20260704_0071_006.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "web_chinamoney_guizhou_expressway_2024_base",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "retrieved_raw_sha256": "a53be900faacfb0c53110cb9f6d56eb263094b44eb08f4c903a2598f365a1fb8",
+      "raw_origin": "https://www.chinamoney.com.cn/dqs/cm-s-notice-query/fileDownLoad.do?contentId=2882938&mode=open&priority=0",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_gz_zy_daoqiao_2015_bond_prospectus",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/pilot_gz_002/doc_gz_zy_daoqiao_2015_bond_prospectus.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "web_csrc_zunyi_daoqiao_current_name",
+      "raw_status": "verified",
+      "text_status": "verify_html_in_validator",
+      "retrieved_raw_sha256": "803b44635d3a99668bdf8dcc3e932e4971c97a50c1b00db9f68d23fba89f521a",
+      "raw_origin": "https://www.csrc.gov.cn/guizhou/c104852/c7513192/content.shtml"
+    },
+    {
+      "document_id": "doc_sch_20260630_0119_002",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0119/doc_sch_20260630_0119_002.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0167_006",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0167/doc_sch_20260630_0167_006.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0094_001",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0094/doc_sch_20260630_0094_001.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0034_005",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0034/doc_exp8_20260703_0034_005.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0088_004",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0088/doc_exp8_20260703_0088_004.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0088_007",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0088/doc_exp8_20260703_0088_007.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0024_009",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0024/doc_sch_20260630_0024_009.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0034_004",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0034/doc_sch_20260630_0034_004.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0072_007",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0072/doc_sch_20260630_0072_007.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0039_003",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0039/doc_sch_20260630_0039_003.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0017_003",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0017/doc_exp8_20260703_0017_003.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0145_004",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0145/doc_sch_20260630_0145_004.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp3_20260703_0006_001",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp3_20260703_0006/doc_exp3_20260703_0006_001.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0114_001",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0114/doc_sch_20260630_0114_001.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_sch_20260630_0120_008",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0120/doc_sch_20260630_0120_008.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0021_003",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0021/doc_exp8_20260703_0021_003.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0021_004",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0021/doc_exp8_20260703_0021_004.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0250_011",
+      "raw_status": "verified",
+      "text_status": "missing",
+      "raw_origin": "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0250/doc_exp8_20260703_0250_011.pdf",
+      "error": "[Errno 2] No such file or directory: 'pdftotext'"
+    },
+    {
+      "document_id": "web_guiyang_2022_midyear_bond_report",
+      "raw_status": "verified",
+      "text_status": "verified",
+      "raw_origin": "/tmp/lgfv-exp015-sources/guiyang_2022_midyear_bond_report.pdf",
+      "text_origin": "pdfplumber normalized complete pages"
+    }
+  ]
+}

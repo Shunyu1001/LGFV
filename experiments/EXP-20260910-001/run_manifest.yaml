@@ -1,0 +1,18 @@
+experiment_id: EXP-20260910-001
+registered_at: 2026-09-10T08:38:13+08:00
+registration_commit: 50c4e0f
+base_commit: e9da7bf3dbac04eabcd615997fb026bf1b2b1379
+scientific_input_commit: 9977dd752f911bfd07dc4d434301041ef485c9f2
+status: quarantine
+commands_and_output_hashes: audit_attempt_1.json
+input_recovery_logs:
+  - cache_recovery.json
+  - cache_recovery_attempt_2.json
+  - cache_recovery_attempt_3.json
+outcome_changes: 0
+random_draw_executed: false
+human_confirmation_performed: false
+note: >-
+  Brief was committed before execution; this completion manifest records the
+  commands and failures afterward. Structural frame readiness is not source
+  acceptance or authority to draw a sample.

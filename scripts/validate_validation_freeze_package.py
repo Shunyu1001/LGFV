@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Validate the EXP-20260831-002/003 freeze-decision package.
 
-The default check uses only tracked files. Optional ``--cache-dir`` arguments
+The check preserves the historical pre-integration snapshot for mutable frame
+and decision files. Protected objects and evidence packets use current bytes.
+Optional ``--cache-dir`` arguments
 also verify the temporary raw caches and every registered PDF-page text hash.
 """
 
@@ -10,15 +12,41 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+import io
 import json
 import re
 import sys
+import subprocess
 from collections import Counter
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 HEX64 = re.compile(r"^[0-9a-f]{64}$")
+PREINTEGRATION_COMMIT = "9977dd752f911bfd07dc4d434301041ef485c9f2"
+HISTORICAL_FILES = {
+    "data/validation/probability_validation_geography_scope_crosswalk.csv",
+    "data/validation/probability_validation_unresolved_log.csv",
+    "data/validation/probability_validation_source_manifest.csv",
+    "data/validation/probability_validation_frame_candidate.csv",
+    "data/validation/probability_validation_frame_origin_rows.csv",
+    "data/validation/probability_validation_frame_flow.csv",
+    "data/validation/probability_validation_sampling_design.csv",
+    "change_requests/CR-20260831-001.md",
+    "experiments/EXP-20260831-004/brief.md",
+    "ledgers/experiments.tsv", "ledgers/change_requests.tsv",
+    "ledgers/reviewer_issues.tsv",
+}
+
+
+def historical_or_current_bytes(path: Path) -> bytes:
+    relative = path.relative_to(ROOT).as_posix()
+    if relative not in HISTORICAL_FILES:
+        return path.read_bytes()
+    return subprocess.run(
+        ["git", "show", f"{PREINTEGRATION_COMMIT}:{relative}"],
+        cwd=ROOT, check=True, capture_output=True,
+    ).stdout
 
 FROZEN_HASHES = {
     "immutable/research_charter.md": "6e649d8618856f9eb128ad8318759385375c04d4f860bbf61f513ba2cc368b4c",
@@ -71,7 +99,7 @@ def sha256(path: Path) -> str:
 
 
 def read_csv(path: Path, delimiter: str = ",") -> list[dict[str, str]]:
-    with path.open(encoding="utf-8-sig", newline="") as handle:
+    with io.StringIO(historical_or_current_bytes(path).decode("utf-8-sig")) as handle:
         return list(csv.DictReader(handle, delimiter=delimiter))
 
 
@@ -172,7 +200,7 @@ def main() -> int:
         path = ROOT / relative
         require(path.exists(), f"missing frozen input: {relative}", errors)
         if path.exists():
-            require(sha256(path) == expected, f"frozen input changed: {relative}", errors)
+            require(hashlib.sha256(historical_or_current_bytes(path)).hexdigest() == expected, f"frozen input changed: {relative}", errors)
 
     all_manifests: list[dict[str, str]] = []
     all_excerpts: list[dict[str, str]] = []
@@ -204,7 +232,7 @@ def main() -> int:
                 path = ROOT / relative
                 require(path.exists(), f"run-manifest file missing: {relative}", errors)
                 if path.exists():
-                    require(sha256(path) == expected, f"run-manifest hash mismatch: {relative}", errors)
+                    require(hashlib.sha256(historical_or_current_bytes(path)).hexdigest() == expected, f"run-manifest hash mismatch: {relative}", errors)
         all_manifests.extend(manifest)
         all_excerpts.extend(excerpts)
         all_decisions.extend(decisions)
@@ -219,10 +247,10 @@ def main() -> int:
     require(len(unresolved) == 4, "registered unresolved-log gate count is not four", errors)
     require(len({row["validation_unit_id"] for row in unresolved}) == 3, "registered unresolved-log unit count is not three", errors)
 
-    cr = (ROOT / "change_requests/CR-20260831-001.md").read_text(encoding="utf-8")
+    cr = historical_or_current_bytes(ROOT / "change_requests/CR-20260831-001.md").decode("utf-8")
     require("Status: proposed; PI decision required" in cr, "change request is not pending", errors)
     require("Implemented: no" in cr, "change request appears implemented", errors)
-    rebuild = (ROOT / "experiments/EXP-20260831-004/brief.md").read_text(encoding="utf-8")
+    rebuild = historical_or_current_bytes(ROOT / "experiments/EXP-20260831-004/brief.md").decode("utf-8")
     require("Status: prospective; not executed" in rebuild, "prospective rebuild status changed", errors)
     require("Do not execute this experiment" in rebuild, "prospective rebuild stop rule missing", errors)
 
@@ -252,6 +280,7 @@ def main() -> int:
             print(f"ERROR: {error}")
         return 1
     print("validation freeze package: PASS")
+    print(f"historical snapshot: {PREINTEGRATION_COMMIT}; current frame requires its separate validator")
     print("evidence gates: 3 resolved under existing rules; 1 rule-required; 0 integrated")
     print("registered frame: 4 open gates across 3 units; random draws: 0")
     return 0

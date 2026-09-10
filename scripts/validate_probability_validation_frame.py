@@ -7,11 +7,15 @@ import argparse
 import csv
 import hashlib
 import html
+import io
 import json
 import math
 import re
+import subprocess
 from collections import Counter, defaultdict
 from pathlib import Path
+
+from build_probability_validation_frame import validate_protected_inputs
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -25,7 +29,7 @@ CANDIDATE = ROOT / "data/validation/probability_validation_frame_candidate.csv"
 ORIGINS = ROOT / "data/validation/probability_validation_frame_origin_rows.csv"
 FLOW = ROOT / "data/validation/probability_validation_frame_flow.csv"
 DESIGN = ROOT / "data/validation/probability_validation_sampling_design.csv"
-METRICS = ROOT / "experiments/EXP-20260831-001/metrics.json"
+METRICS = ROOT / "experiments/EXP-20260910-001/metrics.json"
 SURROGATE = ROOT / "data/analysis_inputs/codex_surrogate_labels_2026_07_03_expanded.csv"
 DOCUMENTS = ROOT / "data/document_inventory.csv"
 HISTORICAL = ROOT / "data/analysis_inputs/candidate_city_historical_capacity.csv"
@@ -284,6 +288,13 @@ EXP004_DECISION_OVERRIDES = {
     },
 }
 EXP004_POLICY_ONLY_MULTIPLE = {"mv_2547f5fbc2e2"}
+REGISTERED_BASE = "9977dd752f911bfd07dc4d434301041ef485c9f2"
+# Independent acceptance fixtures, not imported from the implementation patches.
+APPROVED_ROW_HASHES = {
+    "mv_940b87861065": "c8da56162ddadee1b43a76507be4b6a4ec93d5cf910afe3751a3a1830affdd76",
+    "mv_dd84e076bf32": "68ab4bc79d58828de43b0f4093522ed9320ad50d2d784774a31b9192ddbcaf98",
+}
+APPROVED_SOURCE_HASH = "1353f4206a78342fa7b7281af47cc5e46a8539ade0c1be5826316d2c9ec99987"
 COURT_VENUE_GEOGRAPHY_PATTERN = re.compile(
     r"(?:住所地|注册地)[^。；]{0,80}(?:人民法院|法院)"
 )
@@ -305,6 +316,64 @@ def read_csv(path: Path) -> tuple[list[str], list[dict[str, str]]]:
     with path.open(encoding="utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle)
         return list(reader.fieldnames or []), list(reader)
+
+
+def registered_rows(path: Path) -> list[dict[str, str]]:
+    payload = subprocess.check_output(
+        ["git", "show", f"{REGISTERED_BASE}:{path.relative_to(ROOT).as_posix()}"],
+        cwd=ROOT,
+    )
+    return list(csv.DictReader(io.StringIO(payload.decode("utf-8-sig"), newline="")))
+
+
+def canonical_row_hash(row: dict[str, str]) -> str:
+    payload = json.dumps(row, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
+
+
+def validate_registered_crosswalk(rows: list[dict[str, str]]) -> None:
+    baseline = registered_rows(CROSSWALK)
+    if [row["validation_unit_id"] for row in rows] != [row["validation_unit_id"] for row in baseline]:
+        raise ValueError("Registered crosswalk membership or order changed")
+    for current, previous in zip(rows, baseline):
+        unit_id = current["validation_unit_id"]
+        expected_hash = APPROVED_ROW_HASHES.get(unit_id)
+        if expected_hash:
+            if canonical_row_hash(current) != expected_hash:
+                raise ValueError(f"Independent approved-record hash mismatch: {unit_id}")
+        elif current != previous:
+            raise ValueError(f"Unapproved crosswalk record changed: {unit_id}")
+
+
+def validate_registered_manifest(rows: list[dict[str, str]]) -> None:
+    baseline = registered_rows(SOURCE_MANIFEST)
+    if len(rows) != len(baseline) + 1 or rows[:-1] != baseline:
+        raise ValueError("Registered source manifest changed beyond the approved addition")
+    if canonical_row_hash(rows[-1]) != APPROVED_SOURCE_HASH:
+        raise ValueError("Independent approved-source hash mismatch")
+
+
+def validate_preserved_outputs(
+    candidates: list[dict[str, str]],
+    origins: list[dict[str, str]],
+    design: list[dict[str, str]],
+) -> None:
+    gui_yang = "mv_dd84e076bf32"
+    old_candidates = registered_rows(CANDIDATE)
+    retained = [row for row in candidates if row["validation_unit_id"] != gui_yang]
+    if len(candidates) != 67 or retained != old_candidates:
+        raise ValueError("Previously registered candidate records changed")
+    expected_origins = registered_rows(ORIGINS)
+    for row in expected_origins:
+        if row["validation_unit_id"] == gui_yang:
+            row.update(scope_disposition="eligible", eligibility_flag="true")
+    if origins != expected_origins:
+        raise ValueError("Registered origin records changed beyond Guiyang scope metadata")
+    old_design = registered_rows(DESIGN)
+    old_ids = {row["frozen_stratum_id"] for row in old_design}
+    retained_design = [row for row in design if row["frozen_stratum_id"] in old_ids]
+    if len(design) != 24 or retained_design != old_design:
+        raise ValueError("Previously registered stratum records changed")
 
 
 def validate_output_schemas(observed_schemas: dict[Path, list[str]]) -> None:
@@ -457,6 +526,15 @@ def verify_cited_source_cache(
                         raise ValueError(f"Cited extracted text is absent: {text_path}")
                     text_payload = text_path.read_bytes()
                     pages = read_extracted_pages(text_path)
+                    if document_id == "web_guiyang_2022_midyear_bond_report":
+                        import pdfplumber
+                        with pdfplumber.open(raw_path) as pdf:
+                            chunks = []
+                            for page in pdf.pages:
+                                value = (page.extract_text() or "").replace("\r\n", "\n").replace("\r", "\n")
+                                chunks.append("\n".join(line.rstrip() for line in value.split("\n")).strip() + "\n\f")
+                        if "".join(chunks).encode("utf-8") != text_payload:
+                            raise ValueError("Guiyang full-page extraction does not reproduce from the raw PDF")
                 else:
                     extracted_text = html_to_text(raw_payload)
                     text_payload = extracted_text.encode("utf-8")
@@ -655,16 +733,20 @@ def validate_member_design_consistency(
 
 
 def validate(source_dir: Path = DEFAULT_SOURCE_DIR) -> dict[str, object]:
+    validate_protected_inputs()
     frame_fields, frame_rows = read_csv(FRAME)
     old_fields, old_rows = read_csv(OLD_CROSSWALK)
     decision_fields, decisions = read_csv(DECISIONS)
     crosswalk_fields, crosswalk_rows = read_csv(CROSSWALK)
+    validate_registered_crosswalk(crosswalk_rows)
     unresolved_fields, unresolved_rows = read_csv(UNRESOLVED)
     manifest_fields, manifest_rows = read_csv(SOURCE_MANIFEST)
     candidate_fields, candidate_rows = read_csv(CANDIDATE)
     origin_fields, origin_rows = read_csv(ORIGINS)
     flow_fields, flow_rows = read_csv(FLOW)
     design_fields, design_rows = read_csv(DESIGN)
+    validate_registered_manifest(manifest_rows)
+    validate_preserved_outputs(candidate_rows, origin_rows, design_rows)
     del frame_fields, old_fields, decision_fields
 
     surrogate_pools, surrogate_coverage = surrogate_origin_lookup()
@@ -866,6 +948,8 @@ def validate(source_dir: Path = DEFAULT_SOURCE_DIR) -> dict[str, object]:
         unit_id = row["validation_unit_id"]
         frame_row = frame[unit_id]
         review = crosswalk[unit_id]
+        if row["issuer_name"] != frame_row["issuer_name"] or row["issuer_key"] != frame_row["issuer_key"]:
+            raise ValueError(f"Candidate frozen issuer identity mismatch: {unit_id}")
         if row["eligibility_flag"] != "true" or row["scope_disposition"] != "eligible":
             raise ValueError(f"Candidate contains a noneligible unit: {unit_id}")
         if row["normalized_legal_issuer_key"] != normalize(review["supported_legal_issuer_name"]):
@@ -971,6 +1055,15 @@ def validate(source_dir: Path = DEFAULT_SOURCE_DIR) -> dict[str, object]:
     if len(expected_origins) != 157 or observed_origins != expected_origins:
         raise ValueError("All 157 originating disclosure rows were not retained in stable order")
     for row in origin_rows:
+        unit_id = row["validation_unit_id"]
+        expected_scope = crosswalk[unit_id]["scope_disposition"]
+        if (
+            row["issuer_name"] != frame[unit_id]["issuer_name"]
+            or row["screen_status"] != frame[unit_id]["design_stratum"]
+            or row["scope_disposition"] != expected_scope
+            or row["eligibility_flag"] != ("true" if expected_scope == "eligible" else "false")
+        ):
+            raise ValueError(f"Origin row metadata diverges from the frozen frame and reviewed scope: {unit_id}")
         invalid_documents = [
             document_id for document_id in row["evidence_document_ids"].split(";")
             if document_id and document_id not in valid_document_ids
@@ -990,8 +1083,8 @@ def validate(source_dir: Path = DEFAULT_SOURCE_DIR) -> dict[str, object]:
         "proposed_issuer_units": 133,
         "originating_disclosure_rows": 157,
         "baseline_geography_gaps": 88,
-        "baseline_geography_resolved": 86,
-        "baseline_geography_multiple": 2,
+        "baseline_geography_resolved": 87,
+        "baseline_geography_multiple": 1,
         "baseline_geography_unresolved": 0,
         "baseline_scope_reviews": 98,
         "baseline_scope_resolved": 98,

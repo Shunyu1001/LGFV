@@ -8,6 +8,8 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+import validate_validation_freeze_package as package
 
 
 def rows(path: str):
@@ -37,7 +39,7 @@ class ValidationFreezePackageTests(unittest.TestCase):
         self.assertTrue(all(row["integrated_into_registered_frame"] == "false" for row in decisions))
 
     def test_registered_frame_remains_quarantined(self):
-        unresolved = rows("data/validation/probability_validation_unresolved_log.csv")
+        unresolved = package.read_csv(ROOT / "data/validation/probability_validation_unresolved_log.csv")
         self.assertEqual(len(unresolved), 4)
         self.assertEqual(len({row["validation_unit_id"] for row in unresolved}), 3)
 
@@ -50,10 +52,10 @@ class ValidationFreezePackageTests(unittest.TestCase):
             self.assertFalse(list((ROOT / "experiments" / experiment).rglob("*.pdf")))
 
     def test_change_request_and_rebuild_are_prospective(self):
-        change_request = (ROOT / "change_requests/CR-20260831-001.md").read_text()
+        change_request = package.historical_or_current_bytes(ROOT / "change_requests/CR-20260831-001.md").decode()
         self.assertIn("Status: proposed; PI decision required", change_request)
         self.assertIn("Implemented: no", change_request)
-        rebuild = (ROOT / "experiments/EXP-20260831-004/brief.md").read_text()
+        rebuild = package.historical_or_current_bytes(ROOT / "experiments/EXP-20260831-004/brief.md").decode()
         self.assertIn("Status: prospective; not executed", rebuild)
         self.assertIn("Do not execute this experiment", rebuild)
 
