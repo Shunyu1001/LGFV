@@ -39,15 +39,16 @@ four institutional types:
 The coding workflow separates working reference labels, LLM surrogate labels,
 and human-confirmed gold labels. Codex produced the working reference labels by
 reviewing retained source packets on behalf of the project author. A separate
-Codex/ChatGPT screen produced the lower-cost surrogate labels. Independent human
-confirmation remains a future validation gate.
+Codex/ChatGPT screen produced the lower-cost surrogate labels. On 10 September
+2026, the author reported that all 94 reference labels had been checked by a
+human without revision. Blind double coding is not documented by that report.
 
 ## Current Workflow
 
 The current working-reference file contains 94 source-packet-reviewed
-city-platform cases. These labels serve as provisional gold outcomes for
-workflow development and exploratory analysis, but they remain pending human
-confirmation. The historical-capacity analysis uses 84 matched working
+city-platform cases. All 94 now have a human-check confirmation record based
+on the author's report, while the original AI-produced snapshot remains
+unchanged for audit. The historical-capacity analysis uses 84 matched working
 reference cases. The expanded LLM
 screen contains 203 disclosure-level surrogate labels, which collapse to 158
 issuer-level rows. These surrogates are a one-sided screen for nominal exit and
@@ -56,6 +57,13 @@ are not treated as a validated four-class classifier.
 See `coding/label_provenance.md` and
 `data/validation/label_role_registry.csv` for the allowed analytical role of
 each label layer.
+
+The current human-check status is in
+`data/validation/human_confirmation_register.csv`, bound to the original
+snapshot by its SHA-256 hash. The author-report record supplies the confirmation
+basis; actual review date and reviewer identity remain unreported. No
+intercoder statistic, probability-validation completion, or final DSL estimate
+is implied by this update.
 
 ## Autoresearch Quick Start
 

@@ -20,6 +20,8 @@ from label_roles import (
     is_working_reference_status,
 )
 
+from human_confirmation import case_is_human_checked, confirmation_notice
+
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DEFAULT_MASTER = ROOT / "data" / "analysis_inputs" / "master_case_pool.csv"
@@ -86,11 +88,12 @@ def master_row(row: dict[str, str], index: int) -> dict[str, str]:
         "llm_label": row.get("llm_label", ""),
         "llm_confidence": row.get("llm_confidence", ""),
         "human_review_status": (
-            "pending_independent_human_confirmation" if working_reference else "not_reviewed"
+            ("human_checked_no_revision_author_reported" if case_is_human_checked(row.get("case_id", ""))
+             else "pending_independent_human_confirmation") if working_reference else "not_reviewed"
         ),
         "notes": " ".join(
             value
-            for value in [row.get("notes", ""), INDEPENDENT_CONFIRMATION_NOTICE if working_reference else ""]
+            for value in [row.get("notes", ""), confirmation_notice(row.get("case_id", "")) if working_reference else ""]
             if value
         ),
     }

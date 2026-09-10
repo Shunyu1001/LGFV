@@ -462,7 +462,7 @@ def write_validated_latex(rows: list[dict]) -> None:
             "\\begin{minipage}{0.96\\linewidth}\n"
             "\\vspace{0.5em}\\footnotesize Notes: Working-reference labels are assigned "
             "through Codex source-packet review and are not assigned to source-only "
-            "candidates. They await independent human confirmation. Elite density is measured as "
+            f"candidates. {INDEPENDENT_CONFIRMATION_NOTICE} Elite density is measured as "
             "Ming-Qing jinshi and juren records per 1,000 square kilometers "
             "in the matched contemporary prefecture.\n"
             "\\end{minipage}\n"
@@ -705,9 +705,9 @@ def write_tier_latex(rows: list[dict]) -> None:
         handle.write("\\midrule\n")
         tier_rows = [
             (
-                "Codex source-packet working-reference file",
+                "Human-checked reference file",
                 human_count,
-                "Provisional documentary outcome reference",
+                "Documentary outcome reference",
             ),
             (
                 "Historically matched reference subset",
@@ -725,8 +725,8 @@ def write_tier_latex(rows: list[dict]) -> None:
         handle.write(
             "\\begin{minipage}{0.96\\linewidth}\n"
             "\\vspace{0.5em}\\footnotesize Notes: Codex produced the working-reference labels\n"
-            "through source-packet review on behalf of the project author. They await independent\n"
-            "human confirmation and have not been independently double-coded. The\n"
+            "through source-packet review on behalf of the project author.\n"
+            f"{INDEPENDENT_CONFIRMATION_NOTICE} The\n"
             "historically matched subset is smaller because the current CBDB-GADM crosswalk\n"
             f"does not contain usable matches for {unmatched_count} reference cases. Candidate\n"
             "disclosures and surrogate rows are source packets rather than final city-platform labels.\n"

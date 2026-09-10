@@ -201,8 +201,8 @@ def write_adjusted_tex(path: Path, rows: list[dict[str, str]]) -> None:
         handle.write(
             "\\begin{minipage}{0.94\\linewidth}\n"
             "\\vspace{0.5em}\\footnotesize Notes: The adjusted rows add only non-overlap "
-            "issuer-level surrogate labels to the working-reference sample. The working-reference "
-            "labels await independent human confirmation. Because the current "
+            "issuer-level surrogate labels to the working-reference sample. "
+            f"{INDEPENDENT_CONFIRMATION_NOTICE} Because the current "
             "surrogate rule is a one-sided nominal-exit screen, non-nominal cases in this table "
             "should be interpreted as expected classification error or unobserved institutional "
             "change, not as directly labeled outcomes.\n"

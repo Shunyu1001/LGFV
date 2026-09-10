@@ -13,11 +13,9 @@ author and applied the frozen codebook. These labels are the project's working
 reference outcomes and may be used as provisional gold labels for workflow
 development, descriptive analysis, and model diagnostics.
 
-Their status is `pending_human_confirmation`. They are not independently human
-validated and may not be used to claim intercoder reliability, population
-accuracy, or an error-free gold standard. A future human review may confirm,
-revise, or reject each label. The frozen pre-confirmation label must remain in
-the audit trail after that review.
+The file is preserved as the pre-confirmation snapshot, including its historical
+`pending_human_confirmation` metadata. Current status comes from the dated
+confirmation register below rather than from overwriting that snapshot.
 
 ## LLM Surrogate Labels
 
@@ -29,15 +27,25 @@ emit all four outcome categories. They may be used to prioritize source review
 and, after a valid probability validation design exists, as noisy surrogate
 outcomes in design-based supervised learning.
 
-## Human-Confirmed Gold Labels
+## Human Check Confirmation
 
-Human-confirmed gold labels do not yet exist as a completed project artifact.
-They require a researcher to inspect the original source packet without seeing
-the surrogate label, record an independent decision, and freeze that decision
-before adjudication. The project will preserve the working reference label, the
-independent human label, disagreement type, adjudicated label, and signatures.
+On 10 September 2026, Shunyu Hao reported that all 94 existing gold labels had
+been checked by a human and no problems were found. The current reference
+outcomes are therefore human-checked without revision, based on the author's
+report. `data/validation/human_confirmation_report_2026_09_10.json` records
+that statement and the exact snapshot hash. The derived
+`data/validation/human_confirmation_register.csv` lists each covered case,
+unchanged label, original producer, and report identifier.
 
-Only this third layer can support claims of human validation and intercoder
-agreement. Until it is complete, DSL corrections are design specifications or
-provisional sensitivity exercises rather than final validation-adjusted
-estimates.
+The report date is not the actual review date. Reviewer identity, review date,
+blinding, signatures, and independent pre-adjudication responses were not
+provided and are not inferred. The blank independent-coding and adjudication
+templates remain blank. The existing protocol for independent human decisions
+and adjudication is unchanged. The author's confirmation records completion
+of human checking; it does not establish an independent intercoder statistic,
+error-free labels, or probability-sample accuracy.
+
+The confirmation covers only these 94 outcome labels. Surrogate labels,
+boundary cases, control variables, mechanism codes, and the separate 67-unit
+probability-frame candidate do not inherit it. Final DSL correction still
+requires an appropriate realized validation design and its outcome records.

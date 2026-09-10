@@ -336,6 +336,16 @@ def registered_csv(relative: str) -> list[dict[str, str]]:
 
 
 def validate_protected_payload(relative: str, payload: bytes) -> None:
+    # HC-20260910-001 updates provenance only; every scientific input stays frozen.
+    confirmation_provenance = {
+        "coding/codebook.md": "cc52940da8fc6ca2864c86380889e251906e973353d594fafea0f76b9fdc55ee",
+        "coding/label_provenance.md": "793962fe487c147f28fef20d49bbf23a094c41d2428bd9e26adcbff39e3526e3",
+        "data/validation/label_role_registry.csv": "3c002cd2f7b683534f493288eaff381c23cbecb0cdaf93b87a4114d9df9f3e76",
+    }
+    if relative in confirmation_provenance and hashlib.sha256(payload).hexdigest() == confirmation_provenance[relative]:
+        from human_confirmation import confirmed_rows
+        confirmed_rows()
+        return
     if hashlib.sha256(payload).digest() != hashlib.sha256(baseline_bytes(relative)).digest():
         raise ValueError(f"Protected input changed: {relative}")
 

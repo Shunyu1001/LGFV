@@ -56,3 +56,14 @@ Record all commands and outcomes in the execution log. Build with
 `latexmk -g -pdf -interaction=nonstopmode -halt-on-error paper/main.tex`.
 Only after acceptance may the coordinator merge, push, pull into Overleaf,
 and recompile there.
+
+## Compatibility amendment before frame-gate verification
+
+The frame verifier hashes current provenance documents in addition to scientific
+inputs. Permit a narrowly scoped compatibility update in
+`scripts/build_probability_validation_frame.py` and its tests: accept only the
+three exact reviewed provenance-document hashes from this experiment, alongside
+their prior baseline versions. Keep every scientific input and every other
+hash guard unchanged. Test rejection of any further payload mutation and verify
+the current frame using the existing durable source archive. This amendment
+does not modify candidate membership, frame approval, or sampling probabilities.

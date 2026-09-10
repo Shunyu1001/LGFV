@@ -55,3 +55,20 @@ failures and the unrecovered historical Shenzhen webpage remain recorded.
 Only the current dated source version is used for present evidence checking.
 The manuscript's older frame-progress paragraphs require a separately scoped
 claim update; no manuscript or empirical coefficient changed in this work.
+
+## 2026-09-10: Author reports completion of human label checking
+
+Shunyu Hao reports that all current gold labels have been checked by a human
+and no problems were found. This report covers the 94 existing reference
+outcomes, which remain unchanged. `HC-20260910-001` records the report date,
+reporting author, exact input hash, and scope. The case-level confirmation
+register is an overlay on the preserved pre-confirmation snapshot.
+
+The current status is human-checked without revision, on the basis of the
+author's report. Actual review date, reviewer identity, blinding, and signed
+independent decisions were not supplied. No signatures, case-level independent
+responses, kappa, or accuracy statistic may be invented. Original Codex
+provenance remains visible. The existing independent-coding protocol remains
+unchanged; the blank forms are templates, not evidence of completed blind
+double coding. The report does not extend to surrogates, controls, mechanism
+codes, or the 67-unit candidate frame, and authorizes no freeze or draw.

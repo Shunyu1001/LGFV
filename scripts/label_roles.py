@@ -8,6 +8,8 @@ roles below.
 
 from __future__ import annotations
 
+from human_confirmation import CONFIRMED_NOTICE
+
 
 WORKING_REFERENCE_ANALYTIC_ROLE = "working_reference_outcome"
 WORKING_REFERENCE_LABEL_SOURCE = "codex_source_packet_working_reference"
@@ -16,7 +18,8 @@ WORKING_REFERENCE_POOL_STATUS = "working_reference"
 WORKING_REFERENCE_BOUNDARY_SOURCE = "codex_source_packet_boundary_review"
 WORKING_REFERENCE_BOUNDARY_STATUS = "working_reference_boundary"
 WORKING_REFERENCE_PRODUCER = "Codex source-packet review on behalf of Shunyu Hao"
-INDEPENDENT_CONFIRMATION_NOTICE = "Working reference labels await independent human confirmation."
+# Historical import name retained for builders; producer roles remain unchanged.
+INDEPENDENT_CONFIRMATION_NOTICE = CONFIRMED_NOTICE
 
 LLM_SURROGATE_LABEL_SOURCE = "codex_surrogate"
 

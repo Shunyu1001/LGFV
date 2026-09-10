@@ -30,6 +30,8 @@ from label_roles import (
     is_working_reference_source,
 )
 
+from human_confirmation import PENDING_NOTICE, case_is_human_checked, replace_confirmation_notice
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_INPUT = ROOT / "data" / "analysis_inputs" / "codex_surrogate_labels_2026_07_02.csv"
@@ -111,10 +113,9 @@ def classify(row: dict[str, str]) -> dict[str, str]:
         screening_label = exit_type
         usable_exit_type = True
         usable_adjustment = True
-        missing_information = append_notice(
-            row.get("missing_information", ""), INDEPENDENT_CONFIRMATION_NOTICE
-        )
-        needs_human_review = "true"
+        case_id = row.get("source_row_id", "")
+        missing_information = replace_confirmation_notice(row.get("missing_information", ""), case_id)
+        needs_human_review = "false" if case_is_human_checked(case_id) else "true"
     elif is_boundary_source(label_source):
         output_label_source = WORKING_REFERENCE_BOUNDARY_SOURCE
         screening_status = WORKING_REFERENCE_BOUNDARY_STATUS
@@ -124,7 +125,7 @@ def classify(row: dict[str, str]) -> dict[str, str]:
             row.get("missing_information", "").replace(
                 "gold labels", "working-reference labels"
             ),
-            INDEPENDENT_CONFIRMATION_NOTICE,
+            PENDING_NOTICE,
         )
         needs_human_review = "true"
     elif label_source == "codex_surrogate" and surrogate_status == "labeled":

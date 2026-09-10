@@ -1,0 +1,22 @@
+{
+  "experiment_id": "EXP-20260910-003",
+  "decision": "keep",
+  "report_id": "HC-20260910-001",
+  "human_checked_reference_cases_author_reported": 94,
+  "label_revisions_reported": 0,
+  "independent_blinded_decisions_received": 0,
+  "reference_outcomes_changed": 0,
+  "surrogate_snapshot_changed": false,
+  "empirical_numeric_invariance": true,
+  "validation_frame_decisions_changed": 0,
+  "validation_candidate_units": 67,
+  "frame_frozen": false,
+  "draw_executed": false,
+  "attempt_1_commands_passed": 16,
+  "attempt_2_commands_passed": 18,
+  "targeted_tests_passed": 39,
+  "compiled_pages": 79,
+  "remaining_appendix_overflow_warnings": 3,
+  "reviewer_identity": null,
+  "actual_review_date": null
+}

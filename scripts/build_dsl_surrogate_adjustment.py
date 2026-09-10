@@ -124,7 +124,7 @@ def main() -> None:
         {
             "quantity": "working_reference_labels",
             "value": str(len(reference)),
-            "description": "Codex source-packet working reference labels pending independent human confirmation.",
+            "description": "Codex source-packet reference labels subsequently human-checked without revision according to the author's report.",
         },
         {
             "quantity": "working_reference_nominal_exit",
@@ -245,8 +245,9 @@ def main() -> None:
             "working-reference cases. The raw concordance is the share of overlap issuers for which a "
             "surrogate nominal-exit label matches the working-reference label. The smoothed rate uses "
             "a Jeffreys correction, $(x+0.5)/(n+1)$, and the conservative rate is the Wilson "
-            "95 percent lower bound. Because both label layers are AI-produced and the overlap is "
-            "selected, these quantities are diagnostics rather than population precision, recall, "
+            "95 percent lower bound. Codex produced both initial label layers. "
+            f"{INDEPENDENT_CONFIRMATION_NOTICE} Because the overlap is selected, these "
+            "quantities are diagnostics rather than population precision, recall, "
             "human-label accuracy, or validation-adjusted estimates. The table does not treat unresolved rows as negative "
             "outcomes or use raw surrogate labels as final labels.\n"
             "\\end{minipage}\n"

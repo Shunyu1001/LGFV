@@ -3,7 +3,7 @@ project_id: lgfv-exit-types
 updated_at: 2026-09-10
 updated_by: coordinator
 stage: advanced-measurement-pilot
-current_best_commit: d24bb12
+current_best_commit: 1669bd809b932106a697de3e0467b5393ccf52be
 immutable_version: charter-v1
 research_question: >-
   How can researchers distinguish formal LGFV exit from functional fiscal
@@ -33,21 +33,36 @@ state:
   claim_evidence:
     status: red
     main_gap: >-
-      The 94 working reference labels were produced through Codex source-packet
-      review and await independent human confirmation. Measurement validation
+      The 94 reference labels were produced through Codex source-packet review.
+      On 2026-09-10 the author reported that all had been human-checked without
+      revision. Reviewer identity, actual review date, blinding, and signed
+      independent decisions were not supplied. Measurement validation
       also lacks realized probability validation, recall, and multiclass error
       estimates. The current source-verified candidate contains 67 eligible
       issuers; all 98 inherited scope reviews are resolved. Of the 88 inherited
       geography gaps, 87 are unique and one already-ineligible issuer retains
       multiple geography under the approved rule. Final frame freeze and
-      independent human coding have not occurred.
+      probability-frame human coding have not occurred.
   reviewer:
     status: red
     top_risk: >-
       The manuscript is a polished advanced measurement paper, but reviewers
-      can still reject national empirical claims because the working labels are
-      not yet human confirmed or probability validated and the rare-outcome
-      models are fragile.
+      can still reject national empirical claims because author-reported human
+      checking does not establish probability validation or independent
+      intercoder reliability, and the rare-outcome models are fragile.
+
+reference_label_confirmation:
+  report_id: HC-20260910-001
+  reported_by: Shunyu Hao
+  reported_on: 2026-09-10
+  human_checked_cases: 94
+  label_revisions_reported: 0
+  basis: author_report_of_completed_human_check
+  register: data/validation/human_confirmation_register.csv
+  reviewer_identity: not_reported
+  actual_review_date: not_reported
+  blinding_status: not_reported
+  independent_coder_forms_received: false
 
 validation_frame:
   accepted_construction_experiment: EXP-20260910-002
@@ -71,12 +86,12 @@ validation_frame:
   historical_shenzhen_snapshot_recovered: false
   current_source_renewal_recorded: true
 
-current_bottleneck: final candidate-frame freeze approval, independent human confirmation, and sparse-outcome empirical credibility
+current_bottleneck: final candidate-frame freeze approval, realized probability validation, documented coding reliability, and sparse-outcome empirical credibility
 next_recommended_loops:
   - claim_evidence
   - empirical_simulation
 pending_human_decisions:
-  - assign an independent human confirmer for the blank 94-case packet
+  - supply reviewer metadata and independent decisions if claiming blind double coding or intercoder reliability
   - approve or revise final freeze of the source-verified 67-unit candidate and its census proposal
   - authorize independent coding of both screen strata before validation-adjusted inference
 next_coordinator_tasks:

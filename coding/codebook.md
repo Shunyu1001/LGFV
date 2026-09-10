@@ -393,11 +393,18 @@ Assign labels in the following order:
 The project maintains three distinct label roles. Working reference labels are
 assigned through case-by-case Codex review of the retained source packet on
 behalf of the project author. They may serve as provisional gold outcomes for
-workflow development and exploratory analysis, but their status remains
-pending human confirmation. LLM surrogate labels are generated through a
+workflow development and exploratory analysis. On 10 September 2026, the
+author reported that all 94 current reference labels had been checked by a
+human without revision. The dated confirmation register records this update
+separately from the preserved pre-confirmation snapshot. LLM surrogate labels are generated through a
 separate high-throughput screening procedure and remain noisy one-sided
 predictions. Human-confirmed gold labels require an independent researcher to
 inspect the original packet and freeze a decision before adjudication.
+
+The author's report does not document blinding, independent pre-adjudication
+decisions, or signed forms, so it does not by itself complete that independent
+coding protocol. No inclusion rule, category definition, or label changes as
+a result of the report. See `coding/label_provenance.md` for current status.
 
 A second Codex pass may be used as a blinded model-audit label. It is not an
 independent human label and cannot establish intercoder reliability. The

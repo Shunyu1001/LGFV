@@ -23,6 +23,8 @@ from label_roles import (
     is_working_reference_status,
 )
 
+from human_confirmation import case_is_human_checked, confirmation_notice
+
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DEFAULT_SEED = ROOT / "data" / "analysis_inputs" / "llm_candidate_pool_seed_2026_06_30.csv"
@@ -271,7 +273,7 @@ def reference_row(
         "alternative_label": norm(reference.get("alternative_label")),
         "missing_information": " ".join(
             value
-            for value in [norm(reference.get("caveat")), INDEPENDENT_CONFIRMATION_NOTICE]
+            for value in [norm(reference.get("caveat")), confirmation_notice(case_id)]
             if value
         ),
         "classification_rationale": norm(reference.get("final_rationale")),
@@ -283,8 +285,8 @@ def reference_row(
             ]
             if x
         ),
-        "needs_human_review": "true",
         "labeler": WORKING_REFERENCE_PRODUCER,
+        "needs_human_review": "false" if case_is_human_checked(case_id) else "true",
     }
 
 

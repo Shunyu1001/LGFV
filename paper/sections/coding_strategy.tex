@@ -220,8 +220,11 @@ compliance, but it is not a four-category outcome measure.
 
 The working-reference file contains 94 cases assigned through Codex review of
 the retained source packets on behalf of the project author under the frozen
-codebook. These are provisional working-reference outcomes for workflow
-development, not human-confirmed or independently double-coded labels. The
+codebook. On 10 September 2026, the author reported that all 94 labels had
+subsequently been checked by a human and required no revisions. The date
+records the author's confirmation, not the date on which checking occurred.
+The original Codex labels are preserved, and a case-level confirmation register
+links the human-check report to that exact snapshot. The
 labels comprise two substantive exits, 82 nominal exits, ten functional
 transfers, and no liquidations. Every
 evidence identifier in the file resolves to a source inventory record.
@@ -238,16 +241,20 @@ precision because the overlap was assembled after positive screening rather
 than drawn under known inclusion probabilities. No issuer screened as lacking
 a direct formal event currently overlaps the reference labels. The existing
 data therefore cannot estimate recall, four-category calibration, or the error
-rate among screen-negative cases. No human coder has yet independently
-confirmed the working labels, so the paper does not report an intercoder
-statistic or human-validation accuracy.
+rate among screen-negative cases. No independent pre-adjudication coding
+forms have been supplied. Reviewer identity, the actual review date, and
+blinding are not documented by the author's report, so the paper does not
+report an intercoder statistic or treat the reported absence of revisions as
+a measured accuracy rate.
 
 These boundaries also limit the use of surrogate-label estimators. The
 framework developed by \citet{egami2023dsl} treats predicted labels as noisy
 surrogates and uses a probability validation sample with human outcomes to
 adjust downstream estimates. That logic is appropriate for the intended design,
 but the present overlap does not supply the required validation probabilities
-or human-confirmed outcomes. The paper therefore reports the LLM output as a
+or independently recorded validation-sample outcomes. Human checking of the
+existing reference file does not remedy that selection problem. The paper
+therefore reports the LLM output as a
 screening flow and does not present a doubly robust or validation-adjusted
 effect estimate.
 
@@ -267,7 +274,9 @@ validation draw has been made.
 
 The repository now contains a blinded 94-case human-confirmation packet and a
 separate 94-case adjudication template. All human and adjudication fields are
-blank: no independent human confirmation or adjudication has occurred. A candidate packet
+blank. The author's subsequent report confirms human checking of all 94 labels
+without revision, but it does not document completion of these blinded coding
+forms or a separate adjudication round. A candidate packet
 contains four issuers that pass the current geography and provisional-scope
 gates, far too few to implement the proposed allocation.
 

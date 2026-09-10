@@ -1,4 +1,4 @@
 sample,observations,nominal_exit,institutional_change_or_error,nominal_share,note
-Working reference only,94,82.00,12.00,0.872,Working reference labels await independent human confirmation.
+Working reference only,94,82.00,12.00,0.872,"Reference labels were human-checked without revision, as reported by the author on 10 September 2026; blind double coding is not documented."
 "Working reference plus non-overlap surrogates, smoothed diagnostic",191,178.22,12.78,0.933,Uses Jeffreys-smoothed surrogate nominal precision.
 "Working reference plus non-overlap surrogates, conservative diagnostic",191,173.25,17.75,0.907,Uses Wilson 95 percent lower bound for surrogate nominal precision.
