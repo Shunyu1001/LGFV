@@ -3,7 +3,7 @@ project_id: lgfv-exit-types
 updated_at: 2026-09-10
 updated_by: coordinator
 stage: advanced-measurement-pilot
-current_best_commit: 4330c5728dec64ba30c1faec972fad0097622e9d
+current_best_commit: 0734ba985188f19ca258ff941b00978feb0fd0b8
 immutable_version: charter-v1
 research_question: >-
   How can researchers distinguish formal LGFV exit from functional fiscal
