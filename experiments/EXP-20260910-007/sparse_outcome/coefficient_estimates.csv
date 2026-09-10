@@ -1,0 +1,21 @@
+model_id,estimator,variable,coefficient_scale,coefficient,standard_error,ci95_low,ci95_high,uncertainty
+matched_gold_historical_lpm,lpm,Intercept,probability,0.14285714,0.03794976,0.06847561,0.21723868,HC1
+matched_gold_historical_lpm,lpm,"Elite density, standardized",probability,0.06637998,0.04057049,-0.01313817,0.14589814,HC1
+matched_gold_historical_firth,firth_logit,Intercept,log odds,-1.81016268,0.32329807,-2.44382690,-1.17649846,inverse-information curvature; diagnostic only
+matched_gold_historical_firth,firth_logit,"Elite density, standardized",log odds,0.45309080,0.27027490,-0.07664799,0.98282960,inverse-information curvature; diagnostic only
+complete_control_adjusted_lpm,lpm,Intercept,probability,0.06465155,0.05847148,-0.04995254,0.17925565,HC1
+complete_control_adjusted_lpm,lpm,"Elite density, standardized",probability,0.00541842,0.04533248,-0.08343324,0.09427008,HC1
+complete_control_adjusted_lpm,lpm,"GDP per capita, standardized",probability,0.05773023,0.09069684,-0.12003557,0.23549604,HC1
+complete_control_adjusted_lpm,lpm,"Fiscal self-sufficiency, standardized",probability,-0.00874968,0.12662418,-0.25693308,0.23943371,HC1
+complete_control_adjusted_lpm,lpm,"Debt pressure, standardized",probability,-0.05333032,0.06796710,-0.18654583,0.07988519,HC1
+complete_control_adjusted_lpm,lpm,"Land-finance dependence, standardized",probability,0.00665396,0.03110336,-0.05430862,0.06761654,HC1
+complete_control_adjusted_lpm,lpm,"Source coverage, standardized",probability,-0.12856475,0.05795889,-0.24216417,-0.01496533,HC1
+complete_control_adjusted_lpm,lpm,Prefecture/municipal platform,probability,0.13126753,0.10119406,-0.06707283,0.32960788,HC1
+complete_control_adjusted_firth,firth_logit,Intercept,log odds,-2.57956954,0.75896803,-4.06714687,-1.09199220,inverse-information curvature; diagnostic only
+complete_control_adjusted_firth,firth_logit,"Elite density, standardized",log odds,0.02886672,0.42724852,-0.80854038,0.86627382,inverse-information curvature; diagnostic only
+complete_control_adjusted_firth,firth_logit,"GDP per capita, standardized",log odds,0.30095254,0.78714944,-1.24186036,1.84376544,inverse-information curvature; diagnostic only
+complete_control_adjusted_firth,firth_logit,"Fiscal self-sufficiency, standardized",log odds,0.00004390,0.86046717,-1.68647176,1.68655956,inverse-information curvature; diagnostic only
+complete_control_adjusted_firth,firth_logit,"Debt pressure, standardized",log odds,-0.68929340,0.68015481,-2.02239683,0.64381002,inverse-information curvature; diagnostic only
+complete_control_adjusted_firth,firth_logit,"Land-finance dependence, standardized",log odds,0.26737236,0.42987513,-0.57518290,1.10992761,inverse-information curvature; diagnostic only
+complete_control_adjusted_firth,firth_logit,"Source coverage, standardized",log odds,-0.68343629,0.26591581,-1.20463128,-0.16224130,inverse-information curvature; diagnostic only
+complete_control_adjusted_firth,firth_logit,Prefecture/municipal platform,log odds,1.01474291,0.82334046,-0.59900440,2.62849021,inverse-information curvature; diagnostic only

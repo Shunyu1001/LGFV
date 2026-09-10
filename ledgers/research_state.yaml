@@ -3,7 +3,7 @@ project_id: lgfv-exit-types
 updated_at: 2026-09-10
 updated_by: coordinator
 stage: advanced-measurement-pilot
-current_best_commit: 1669bd809b932106a697de3e0467b5393ccf52be
+current_best_commit: 4330c5728dec64ba30c1faec972fad0097622e9d
 immutable_version: charter-v1
 research_question: >-
   How can researchers distinguish formal LGFV exit from functional fiscal
@@ -86,7 +86,32 @@ validation_frame:
   historical_shenzhen_snapshot_recovered: false
   current_source_renewal_recorded: true
 
-current_bottleneck: final candidate-frame freeze approval, realized probability validation, documented coding reliability, and sparse-outcome empirical credibility
+validation_collection:
+  experiment: EXP-20260910-004
+  packet_units: 67
+  source_locators: 689
+  unit_reference_comparisons: 6298
+  exact_issuer_event_reference_matches: 0
+  completed_human_entry_records: 0
+  source_linked_manifest_records: 138
+  manifest_records_verified_at_a_recorded_location: 135
+  units_with_at_least_one_hash_verified_source: 67
+  scope: collection materials only; source availability does not establish outcome sufficiency
+
+validation_inference:
+  experiments: [EXP-20260910-005, EXP-20260910-006, EXP-20260910-007]
+  implemented: finite-frame mean and fixed-X projection with fixed predictions
+  exhaustive_synthetic_design_combinations: 717
+  actual_current_frame_estimate: not_estimated
+  finite_screen_units: 158
+  linked_positive_reference_outcomes: 61
+  unknown_screen_outcomes: 97
+  conditional_nominal_membership_bounds: [0.3860759493670886, 1.0]
+  condition: linked reference outcomes are correct and applicable to the corresponding issuer/event
+  bounds_without_applicability: [0.0, 1.0]
+  uncertainty_scope: finite-frame identification bounds, not confidence intervals or national prevalence
+
+current_bottleneck: final frame authorization and actual eligible human outcomes for the new 67-unit collection, followed by realized-design inference; independent coding reliability remains undocumented
 next_recommended_loops:
   - claim_evidence
   - empirical_simulation
@@ -95,6 +120,7 @@ pending_human_decisions:
   - approve or revise final freeze of the source-verified 67-unit candidate and its census proposal
   - authorize independent coding of both screen strata before validation-adjusted inference
 next_coordinator_tasks:
-  - update the older manuscript frame-progress paragraphs under a separately scoped claim experiment
-  - synchronize Overleaf when the browser editor connection is available; do not claim a pull or compile from tab listing alone
+  - accept and verify returned human records against exact issuer-event identities without replacing preserved templates
+  - validate the approved frame, actual selection, responses, and fixed analysis inputs before any adjusted numerical result
+  - retain sparse-outcome limitations and conditional linkage assumptions in the manuscript
 stop_conditions_met: false

@@ -1,0 +1,5 @@
+model_id,deletion_attempts,converged_attempts,nonconvergent_or_rank_deficient_attempts,sign_changes,leave_one_out_minimum,leave_one_out_maximum,largest_absolute_delta,most_influential_case_id,most_influential_city,selection_role
+matched_gold_historical_lpm,84,84,0,0,0.04847717,0.08249685,0.01790281,expand_js_changshu_invest,Changshu,reported for stability; not used to choose a model by direction or significance
+matched_gold_historical_firth,84,84,0,0,0.04336109,0.06712915,0.01217981,expand_js_changshu_invest,Changshu,reported for stability; not used to choose a model by direction or significance
+complete_control_adjusted_lpm,78,78,0,9,-0.00945049,0.02300536,0.01758694,expand_js_taizhou_jindong,Taizhou,reported for stability; not used to choose a model by direction or significance
+complete_control_adjusted_firth,78,78,0,11,-0.00971133,0.01836307,0.01486597,pilot_gd_003,Foshan,reported for stability; not used to choose a model by direction or significance

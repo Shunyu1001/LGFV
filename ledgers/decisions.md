@@ -72,3 +72,29 @@ provenance remains visible. The existing independent-coding protocol remains
 unchanged; the blank forms are templates, not evidence of completed blind
 double coding. The report does not extend to surrogates, controls, mechanism
 codes, or the 67-unit candidate frame, and authorizes no freeze or draw.
+
+## 2026-09-10: Integrate validation collection and guarded inference
+
+The user's request authorizes parallel implementation and manuscript progress.
+The coordinator accepts the source-linked collection package, conditional
+finite-screen bounds, and tested finite-frame estimation engine from
+EXP-20260910-004 through 007. Three parallel workers handled collection,
+estimation, and identification bounds; the bounds worker separately reviewed
+the estimator and adapter. Its two software findings were corrected and all
+141 repository tests passed. The engine's 717 exhaustive artificial design
+checks do not supply LGFV observations.
+
+The 67-unit collection has zero exact issuer/event matches to the old 94-case
+human-check report and zero completed new human entries. No report is extended
+by geography or by AI review. The existing candidate and census allocation
+remain proposals. A question about final freeze authorization was sent to the
+author; no reply had been received when this integration was accepted. No
+freeze, draw, response record, or current-frame numerical DSL estimate is
+created. Default collection status remains not_estimated.
+
+The manuscript now displays the four predeclared historical/adjusted models
+in the main text, including the small, unstable adjusted results. The
+38.61--100 percent bounds are explicitly conditional on linked reference
+correctness and issuer/event applicability; absent that assumption they are
+0--100 percent. The working paper is not represented as having completed
+probability validation, independent reliability, or national inference.

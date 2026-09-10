@@ -1,7 +1,7 @@
 """Exhaustive finite-design checks; every numeric fixture is artificial."""
 
 import csv
-from dataclasses import replace
+from dataclasses import asdict, replace
 from itertools import combinations, product
 from pathlib import Path
 import sys
@@ -75,6 +75,48 @@ def change_response(request, index=0, **kwargs):
 
 
 class ExactDesignTests(unittest.TestCase):
+    def test_actual_schema_rejects_synthetic_provenance(self):
+        from build_validation_inference_status import decode_request
+
+        # Artificial schema-only fixture; never a record of actual human review.
+        def unmark(value):
+            if isinstance(value, str):
+                return value.removeprefix("synthetic:")
+            if isinstance(value, dict):
+                return {key: unmark(item) for key, item in value.items()}
+            if isinstance(value, (list, tuple)):
+                return [unmark(item) for item in value]
+            return value
+
+        raw = unmark(asdict(fixture()))
+        raw["mode"] = "actual"
+        for row in raw["responses"]:
+            row["label_origin"] = "human_coded"
+        request = decode_request(raw)
+        approved = replace(approval(request), approved_by="test-approver",
+                           approval_record_id="test-approval")
+        db.validate_sources(request, approvals=(approved,))
+        mutations = [
+            replace(request, frame=replace(request.frame, eligibility_record_id="synthetic:record")),
+            replace(request, design=replace(request.design, probability_record_id="synthetic:record")),
+        ]
+        for name in ("outcome_definition_record_id", "prediction_record_id", "covariate_record_id"):
+            mutations.append(replace(request, spec=replace(request.spec, **{name: "synthetic:record"})))
+        for name in ("selection_record_id", "verification_record_id"):
+            mutations.append(replace(request, selection=replace(request.selection, **{name: "synthetic:record"})))
+        for name in ("reviewer_id", "review_record_id"):
+            mutations.append(change_response(request, **{name: "SYNTHETIC:record"}))
+        for changed in mutations:
+            with self.subTest(changed=changed):
+                refreshed = replace(approved, spec_sha256=db.specification_sha256(changed))
+                with self.assertRaisesRegex(db.InputError, "synthetic provenance"):
+                    db.validate_sources(changed, approvals=(refreshed,))
+        for name in ("approved_by", "approval_record_id"):
+            with self.subTest(approval_field=name):
+                changed = replace(approved, **{name: "synthetic:record"})
+                with self.assertRaisesRegex(db.InputError, "synthetic provenance"):
+                    db.validate_sources(request, approvals=(changed,))
+
     def enumerate_design(self, sizes, y, predictions, x):
         base = fixture(sizes, y, predictions, x)
         choices = [list(combinations([u.unit_id for u in base.frame.units if u.stratum_id == h.stratum_id],
@@ -383,9 +425,8 @@ class GuardTests(unittest.TestCase):
         r = change_unit(r, index=2, unit_id="mv_real_unit")
         self.assertRejected(r, "synthetic requests")
 
-    def test_actual_path_schema_only_with_fabricated_non_lgfv_records(self):
-        # An artificial integration fixture checks accepted provenance forms.
-        # It intentionally demonstrates that documentary truth is external.
+    def test_actual_path_rejects_partially_relabelled_synthetic_records(self):
+        # Changing core IDs and label origins cannot authorize synthetic metadata.
         r = fixture()
         convert = lambda value: value.replace("synthetic:", "artificial-contract-check:")
         r = replace(r, mode="actual",
@@ -399,9 +440,7 @@ class GuardTests(unittest.TestCase):
                                             selection_id=convert(row.selection_id), label_origin="human_coded")
                                     for row in r.responses))
         r = change_response(r, label_origin="human_confirmed_ai")
-        result = run(r)
-        self.assertEqual(result.response_origins, (("human_coded", 3), ("human_confirmed_ai", 1)))
-        self.assertNotIn("independent", str(result.response_origins))
+        self.assertRejected(r, "synthetic provenance", approvals=(approval(r),))
         self.assertRejected(change_response(r, label_origin="ai_only"), "provenance")
         self.assertRejected(r, "separately vetted")
 

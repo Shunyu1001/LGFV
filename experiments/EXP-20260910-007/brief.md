@@ -84,3 +84,38 @@ reproduce its fixed model set in this experiment, not overwrite past results.
 Record actual commands and results in the run log. Source-derived DSL claims
 must be checked against the original NeurIPS paper; finite-population special
 cases are explicitly derived here rather than attributed as a new method.
+
+## Pre-correction compatibility amendment
+
+The independent estimator worker reproduced an inherited full-suite failure:
+the historical freeze-package validator does not recognize the three exact
+provenance hashes approved in EXP-20260910-003. Before correcting it, permit
+scripts/validate_validation_freeze_package.py and its tests to reuse the
+existing exact-hash provenance guard for those three documents only. Every
+other historical scientific hash remains unchanged. Add mutation checks and
+run the full tests/ suite. This repairs status compatibility rather than
+changing frame, source, label, or sampling decisions. Preserve the worker's
+original failing log.
+
+## Independent-review corrections
+
+The registered independent review found two status/provenance defects, not a
+mathematical estimator error. Permit a bounded correction to the integrated
+estimator and its tests to reject explicitly synthetic identifiers in every
+actual-request provenance field, including reviewer and approval metadata.
+Separate the current collection status from the optional requested-analysis
+status in the adapter. Add mutation and status-isolation tests, rerun the full
+suite, and retain the original review. No new estimates or design changes are
+authorized by these software checks.
+
+## Test-only integration follow-up
+
+Integrated attempts 2 and 3 retained failures in assertions and test fixtures:
+the old actual-mode fixture still expected acceptance of synthetic metadata;
+one rejection call passed approvals in the projection argument position; and
+a collection test read live coordinator state despite its baseline-only pin
+policy. Before the next run, permit one test-only consistency pass, including
+tests/test_validation_collection_package.py. This extends the original two
+mechanical-retry allowance only for those recorded integration failures. No
+estimator formula, observed value, scientific input hash, or acceptance
+criterion changes. All failed logs remain tracked.

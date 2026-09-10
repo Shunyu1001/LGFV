@@ -98,6 +98,17 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def validate_frozen_payload(relative: str, payload: bytes) -> None:
+    if hashlib.sha256(payload).hexdigest() == FROZEN_HASHES[relative]:
+        return
+    if relative in {"coding/codebook.md", "coding/label_provenance.md",
+                    "data/validation/label_role_registry.csv"}:
+        from build_probability_validation_frame import validate_protected_payload
+        validate_protected_payload(relative, payload)
+        return
+    raise ValueError(f"frozen input changed: {relative}")
+
+
 def read_csv(path: Path, delimiter: str = ",") -> list[dict[str, str]]:
     with io.StringIO(historical_or_current_bytes(path).decode("utf-8-sig")) as handle:
         return list(csv.DictReader(handle, delimiter=delimiter))
@@ -200,7 +211,10 @@ def main() -> int:
         path = ROOT / relative
         require(path.exists(), f"missing frozen input: {relative}", errors)
         if path.exists():
-            require(hashlib.sha256(historical_or_current_bytes(path)).hexdigest() == expected, f"frozen input changed: {relative}", errors)
+            try:
+                validate_frozen_payload(relative, historical_or_current_bytes(path))
+            except ValueError as exc:
+                errors.append(str(exc))
 
     all_manifests: list[dict[str, str]] = []
     all_excerpts: list[dict[str, str]] = []

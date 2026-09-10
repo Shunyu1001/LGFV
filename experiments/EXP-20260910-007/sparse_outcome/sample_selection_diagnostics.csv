@@ -1,0 +1,8 @@
+metric,complete_control_subset,excluded_matched_gold,difference_complete_minus_excluded,complete_control_n,excluded_n,interpretation
+institutional_change_share,0.15384615,0.00000000,0.15384615,78,6,descriptive only; no imputation or selection model
+elite_density_raw_mean,103.73589744,15.45666667,88.27923077,78,6,descriptive only; no imputation or selection model
+elite_density_matched_sample_z_mean,0.05586877,-0.72629397,0.78216273,78,6,descriptive only; no imputation or selection model
+source_coverage_mean,3.87179487,4.00000000,-0.12820513,78,6,descriptive only; no imputation or selection model
+prefecture_platform_share,0.67948718,0.66666667,0.01282051,78,6,descriptive only; no imputation or selection model
+district_platform_share,0.32051282,0.16666667,0.15384615,78,6,descriptive only; no imputation or selection model
+platform_level_missing_share,0.00000000,0.16666667,-0.16666667,78,6,descriptive only; no imputation or selection model

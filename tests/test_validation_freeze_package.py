@@ -18,6 +18,20 @@ def rows(path: str):
 
 
 class ValidationFreezePackageTests(unittest.TestCase):
+    def test_authorized_provenance_and_further_mutations(self):
+        for relative in ("coding/codebook.md", "coding/label_provenance.md",
+                         "data/validation/label_role_registry.csv"):
+            payload = (ROOT / relative).read_bytes()
+            package.validate_frozen_payload(relative, payload)
+            with self.assertRaises(ValueError):
+                package.validate_frozen_payload(relative, payload + b"\nunapproved change")
+
+    def test_outcome_snapshot_remains_protected(self):
+        relative = "data/processed/working_reference_labels.csv"
+        payload = (ROOT / relative).read_bytes()
+        with self.assertRaises(ValueError):
+            package.validate_frozen_payload(relative, payload.replace(b"nominal_exit", b"substantive_exit", 1))
+
     def test_validator_passes_without_temporary_caches(self):
         result = subprocess.run(
             [sys.executable, str(ROOT / "scripts/validate_validation_freeze_package.py")],

@@ -1,0 +1,56 @@
+{
+  "phase": "baseline",
+  "started_at": "2026-09-10T06:22:05.804720+00:00",
+  "commands": [
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/validate_immutable.py"
+      ],
+      "returncode": 0,
+      "stdout": "immutable_validation=ok\nfiles=4\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/build_human_confirmation_register.py",
+        "--check"
+      ],
+      "returncode": 0,
+      "stdout": "human_checked_reference_cases=94\nbasis=author_report; label_revisions=0; blind_double_coding=not_documented\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/validate_probability_validation_frame.py",
+        "--source-dir",
+        "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources"
+      ],
+      "returncode": 0,
+      "stdout": "{\"all_geography_statuses\": {\"source_supported_multiple\": 1, \"source_supported_unique\": 132}, \"all_scope_dispositions\": {\"eligible\": 67, \"ineligible\": 66}, \"baseline_geography_multiple\": 1, \"baseline_geography_resolved\": 87, \"baseline_geography_unresolved\": 0, \"baseline_scope_resolved\": 98, \"baseline_scope_unresolved\": 0, \"candidate_units\": 67, \"frozen_strata\": 24, \"originating_disclosure_rows\": 157, \"random_draw_executed\": false, \"verified_cited_evidence\": 488}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/build_sparse_outcome_model_audit.py",
+        "--output-dir",
+        "/Users/shunyuhao/.codex/worktrees/lgfv-validation-inference/LGFV/experiments/EXP-20260910-007/sparse_outcome"
+      ],
+      "returncode": 0,
+      "stdout": "{\"baseline_reproduced\": true, \"complete_control_events\": 12, \"complete_control_observations\": 78, \"corrected_rank\": 8, \"legacy_rank\": 8, \"matched_gold_events\": 12, \"matched_gold_observations\": 84}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/validate_label_role_rebuild.py"
+      ],
+      "returncode": 0,
+      "stdout": "label_role_rebuild_validation=ok\nworking_reference_rows=94 boundary_rows=5 surrogate_disclosure_rows=203\npanel_rows=191 diagnostic_rows=84 full_controls_rows=78\nnumeric_and_label_fields_changed=0\n",
+      "stderr": ""
+    }
+  ]
+}

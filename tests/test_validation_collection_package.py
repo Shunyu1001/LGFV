@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import copy
 import json
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -145,7 +146,9 @@ class ValidationCollectionTest(unittest.TestCase):
 
     def test_input_hashes_and_schema_mutations(self):
         for item in self.hashes:
-            raw = (ROOT / item["path"]).read_bytes()
+            raw = (subprocess.check_output(["git", "show", f"{item['base_commit']}:{item['path']}"], cwd=ROOT)
+                   if item["pin_policy"] == "baseline_snapshot_only"
+                   else (ROOT / item["path"]).read_bytes())
             self.assertEqual(package.sha256(raw), item["sha256"])
             self.assertEqual(len(raw), item["bytes"])
             with self.subTest(path=item["path"]), self.assertRaisesRegex(ValueError, "hash mismatch"):

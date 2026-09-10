@@ -1,0 +1,155 @@
+{
+  "phase": "integrated",
+  "started_at": "2026-09-10T06:56:06.877665+00:00",
+  "commands": [
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/build_validation_collection_package.py",
+        "--check"
+      ],
+      "returncode": 0,
+      "stdout": "collection_package=byte_identical\n{\n  \"added_current_units\": 64,\n  \"base_commit\": \"4330c5728dec64ba30c1faec972fad0097622e9d\",\n  \"blank_coder_rows_per_sheet\": 67,\n  \"coder_agreement\": null,\n  \"current_units\": 67,\n  \"document_locator_records\": 610,\n  \"draw_executed_by_this_package\": false,\n  \"eligible_origin_rows\": 74,\n  \"exact_issuer_event_mappings\": 0,\n  \"exact_issuer_pairs\": 0,\n  \"experiment_id\": \"EXP-20260910-004\",\n  \"freeze_executed_by_this_package\": false,\n  \"historical_capacity_linked_units_not_label_matches\": 33,\n  \"historical_only_units\": [\n    \"mv_83fa1cb2dc9e\"\n  ],\n  \"historical_packet_units\": 4,\n  \"human_coding_executed_by_this_package\": false,\n  \"human_labels\": null,\n  \"missing_historical_raw_records\": 59,\n  \"populated_human_entry_cells\": 0,\n  \"proposed_strata\": 24,\n  \"realized_inclusion_probabilities\": null,\n  \"realized_input_readiness\": \"blocked\",\n  \"realized_outcome_counts\": null,\n  \"reference_pairs_audited\": 6298,\n  \"report_covered_reference_cases\": 94,\n  \"retained_historical_units\": 3,\n  \"screen_counts_coordinator_only\": {\n    \"screen_positive_nominal\": 57,\n    \"screened_no_direct_formal_event\": 10\n  },\n  \"source_hash_mismatch_records\": 0,\n  \"source_locator_records\": 689,\n  \"units_with_missing_origin_document_ids\": 1,\n  \"units_with_public_locators\": 67,\n  \"units_with_verified_manifest_raw\": 67,\n  \"unmatched_reasons\": {\n    \"no_exact_issuer_in_report_scope\": 67\n  },\n  \"verified_manifest_raw_documents\": 79\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/build_validation_identification_bounds.py",
+        "--check"
+      ],
+      "returncode": 0,
+      "stdout": "validation_identification_bounds=verified; artifacts=10\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_validation_collection_package.py"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "....................\n----------------------------------------------------------------------\nRan 20 tests in 10.034s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_design_based_validation.py"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "FF...............E.............\n======================================================================\nERROR: test_actual_path_schema_only_with_fabricated_non_lgfv_records (test_design_based_validation.GuardTests.test_actual_path_schema_only_with_fabricated_non_lgfv_records)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/Users/shunyuhao/.codex/worktrees/lgfv-validation-inference/LGFV/tests/test_design_based_validation.py\", line 444, in test_actual_path_schema_only_with_fabricated_non_lgfv_records\n    result = run(r)\n  File \"/Users/shunyuhao/.codex/worktrees/lgfv-validation-inference/LGFV/tests/test_design_based_validation.py\", line 62, in run\n    return method(request, approvals=approvals)\n  File \"/Users/shunyuhao/.codex/worktrees/lgfv-validation-inference/LGFV/scripts/design_based_validation.py\", line 457, in estimate_mean\n    return _estimate(request, approvals, projection=False)\n  File \"/Users/shunyuhao/.codex/worktrees/lgfv-validation-inference/LGFV/scripts/design_based_validation.py\", line 403, in _estimate\n    approval = validate_sources(request, approvals=approvals)\n  File \"/Users/shunyuhao/.codex/worktrees/lgfv-validation-inference/LGFV/scripts/design_based_validation.py\", line 350, in validate_sources\n    _require(not _contains_synthetic_marker(asdict(request))\n    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n             and not _contains_synthetic_marker(asdict(approval)),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n             \"synthetic provenance cannot be used for actual-data estimates\")\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shunyuhao/.codex/worktrees/lgfv-validation-inference/LGFV/scripts/design_based_validation.py\", line 165, in _require\n    raise InputError(message)\ndesign_based_validation.InputError: synthetic provenance cannot be used for actual-data estimates\n\n======================================================================\nFAIL: test_actual_schema_rejects_synthetic_provenance (test_design_based_validation.ExactDesignTests.test_actual_schema_rejects_synthetic_provenance) (changed=Request(mode='actual', frame=Frame(frame_id='frame', status='frozen_approved', unit_type='issuer', outcome_eligibility_status='all_units_verified', eligibility_record_id='eligibility-record', covariate_names=('x0', 'x1'), units=(FrameUnit(unit_id='u000', stratum_id='h0', inclusion_probability=0.6666666666666666, prediction=-0.7, covariates=(1.0, 0.0)), FrameUnit(unit_id='u001', stratum_id='h0', inclusion_probability=0.6666666666666666, prediction=0.0, covariates=(1.0, 1.0)), FrameUnit(unit_id='u002', stratum_id='h0', inclusion_probability=0.6666666666666666, prediction=0.7, covariates=(1.0, 2.0)), FrameUnit(unit_id='u003', stratum_id='h1', inclusion_probability=1.0, prediction=-0.7, covariates=(1.0, 3.0)), FrameUnit(unit_id='u004', stratum_id='h1', inclusion_probability=1.0, prediction=0.0, covariates=(1.0, 4.0)))), design=Design(design_id='design', frame_id='frame', status='approved', strata=(Stratum(stratum_id='h0', population_n=3, sample_n=2, method='srswor'), Stratum(stratum_id='h1', population_n=2, sample_n=2, method='census')), independent_strata=True, probability_record_id='probability-record'), spec=AnalysisSpec(outcome_id='binary-outcome', outcome_definition_record_id='outcome-protocol', prediction_assumption='fixed_prespecified', prediction_record_id='prediction-record', covariate_record_id='x-record', inputs_fixed_before_selection=True), selection=Selection(frame_id='frame', design_id='design', selection_id='selection', status='realized_verified', selected_unit_ids=('u000', 'u001', 'u003', 'u004'), selection_record_id='selection-record', verification_record_id='selection-verification'), responses=(HumanResponse(unit_id='u000', frame_id='frame', selection_id='selection', outcome_id='binary-outcome', response_status='completed', outcome_status='known', downstream_eligible=True, value=0, label_origin='human_coded', reviewer_id=' SYNTHETIC:record', reviewed_at='2026-09-10', review_record_id='review-record-synthetic:u000'), HumanResponse(unit_id='u001', frame_id='frame', selection_id='selection', outcome_id='binary-outcome', response_status='completed', outcome_status='known', downstream_eligible=True, value=1, label_origin='human_coded', reviewer_id='reviewer', reviewed_at='2026-09-10', review_record_id='review-record-synthetic:u001'), HumanResponse(unit_id='u003', frame_id='frame', selection_id='selection', outcome_id='binary-outcome', response_status='completed', outcome_status='known', downstream_eligible=True, value=1, label_origin='human_coded', reviewer_id='reviewer', reviewed_at='2026-09-10', review_record_id='review-record-synthetic:u003'), HumanResponse(unit_id='u004', frame_id='frame', selection_id='selection', outcome_id='binary-outcome', response_status='completed', outcome_status='known', downstream_eligible=True, value=0, label_origin='human_coded', reviewer_id='reviewer', reviewed_at='2026-09-10', review_record_id='review-record-synthetic:u004'))))\n----------------------------------------------------------------------\ndesign_based_validation.InputError: reviewer_id must be an explicit nonmissing identifier\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/Users/shunyuhao/.codex/worktrees/lgfv-validation-inference/LGFV/tests/test_design_based_validation.py\", line 112, in test_actual_schema_rejects_synthetic_provenance\n    with self.assertRaisesRegex(db.InputError, \"synthetic provenance\"):\n         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: \"synthetic provenance\" does not match \"reviewer_id must be an explicit nonmissing identifier\"\n\n======================================================================\nFAIL: test_actual_schema_rejects_synthetic_provenance (test_design_based_validation.ExactDesignTests.test_actual_schema_rejects_synthetic_provenance) (changed=Request(mode='actual', frame=Frame(frame_id='frame', status='frozen_approved', unit_type='issuer', outcome_eligibility_status='all_units_verified', eligibility_record_id='eligibility-record', covariate_names=('x0', 'x1'), units=(FrameUnit(unit_id='u000', stratum_id='h0', inclusion_probability=0.6666666666666666, prediction=-0.7, covariates=(1.0, 0.0)), FrameUnit(unit_id='u001', stratum_id='h0', inclusion_probability=0.6666666666666666, prediction=0.0, covariates=(1.0, 1.0)), FrameUnit(unit_id='u002', stratum_id='h0', inclusion_probability=0.6666666666666666, prediction=0.7, covariates=(1.0, 2.0)), FrameUnit(unit_id='u003', stratum_id='h1', inclusion_probability=1.0, prediction=-0.7, covariates=(1.0, 3.0)), FrameUnit(unit_id='u004', stratum_id='h1', inclusion_probability=1.0, prediction=0.0, covariates=(1.0, 4.0)))), design=Design(design_id='design', frame_id='frame', status='approved', strata=(Stratum(stratum_id='h0', population_n=3, sample_n=2, method='srswor'), Stratum(stratum_id='h1', population_n=2, sample_n=2, method='census')), independent_strata=True, probability_record_id='probability-record'), spec=AnalysisSpec(outcome_id='binary-outcome', outcome_definition_record_id='outcome-protocol', prediction_assumption='fixed_prespecified', prediction_record_id='prediction-record', covariate_record_id='x-record', inputs_fixed_before_selection=True), selection=Selection(frame_id='frame', design_id='design', selection_id='selection', status='realized_verified', selected_unit_ids=('u000', 'u001', 'u003', 'u004'), selection_record_id='selection-record', verification_record_id='selection-verification'), responses=(HumanResponse(unit_id='u000', frame_id='frame', selection_id='selection', outcome_id='binary-outcome', response_status='completed', outcome_status='known', downstream_eligible=True, value=0, label_origin='human_coded', reviewer_id='reviewer', reviewed_at='2026-09-10', review_record_id=' SYNTHETIC:record'), HumanResponse(unit_id='u001', frame_id='frame', selection_id='selection', outcome_id='binary-outcome', response_status='completed', outcome_status='known', downstream_eligible=True, value=1, label_origin='human_coded', reviewer_id='reviewer', reviewed_at='2026-09-10', review_record_id='review-record-synthetic:u001'), HumanResponse(unit_id='u003', frame_id='frame', selection_id='selection', outcome_id='binary-outcome', response_status='completed', outcome_status='known', downstream_eligible=True, value=1, label_origin='human_coded', reviewer_id='reviewer', reviewed_at='2026-09-10', review_record_id='review-record-synthetic:u003'), HumanResponse(unit_id='u004', frame_id='frame', selection_id='selection', outcome_id='binary-outcome', response_status='completed', outcome_status='known', downstream_eligible=True, value=0, label_origin='human_coded', reviewer_id='reviewer', reviewed_at='2026-09-10', review_record_id='review-record-synthetic:u004'))))\n----------------------------------------------------------------------\ndesign_based_validation.InputError: review_record_id must be an explicit nonmissing identifier\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/Users/shunyuhao/.codex/worktrees/lgfv-validation-inference/LGFV/tests/test_design_based_validation.py\", line 112, in test_actual_schema_rejects_synthetic_provenance\n    with self.assertRaisesRegex(db.InputError, \"synthetic provenance\"):\n         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: \"synthetic provenance\" does not match \"review_record_id must be an explicit nonmissing identifier\"\n\n----------------------------------------------------------------------\nRan 30 tests in 0.489s\n\nFAILED (failures=2, errors=1)\n"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_validation_identification_bounds.py"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "...............................\n----------------------------------------------------------------------\nRan 31 tests in 1.301s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/build_validation_inference_status.py"
+      ],
+      "returncode": 0,
+      "stdout": "status=not_estimated; frame_units=67; untouched_human_entries=67; unresolved_entries=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_validation_inference_status.py"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.042s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/validate_immutable.py"
+      ],
+      "returncode": 0,
+      "stdout": "immutable_validation=ok\nfiles=4\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/validate_ledgers.py"
+      ],
+      "returncode": 0,
+      "stdout": "ledger_validation=ok\nchange_requests.tsv=1\nclaims.csv=14\nexperiments.tsv=40\nliterature.csv=29\nreviewer_issues.tsv=16\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/build_human_confirmation_register.py",
+        "--check"
+      ],
+      "returncode": 0,
+      "stdout": "human_checked_reference_cases=94\nbasis=author_report; label_revisions=0; blind_double_coding=not_documented\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/validate_label_role_rebuild.py"
+      ],
+      "returncode": 0,
+      "stdout": "label_role_rebuild_validation=ok\nworking_reference_rows=94 boundary_rows=5 surrogate_disclosure_rows=203\npanel_rows=191 diagnostic_rows=84 full_controls_rows=78\nnumeric_and_label_fields_changed=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "FF...............E............................................................................................................................\n======================================================================\nERROR: test_actual_path_schema_only_with_fabricated_non_lgfv_records (test_design_based_validation.GuardTests.test_actual_path_schema_only_with_fabricated_non_lgfv_records)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/Users/shunyuhao/.codex/worktrees/lgfv-validation-inference/LGFV/tests/test_design_based_validation.py\", line 444, in test_actual_path_schema_only_with_fabricated_non_lgfv_records\n    result = run(r)\n  File \"/Users/shunyuhao/.codex/worktrees/lgfv-validation-inference/LGFV/tests/test_design_based_validation.py\", line 62, in run\n    return method(request, approvals=approvals)\n  File \"/Users/shunyuhao/.codex/worktrees/lgfv-validation-inference/LGFV/scripts/design_based_validation.py\", line 457, in estimate_mean\n    return _estimate(request, approvals, projection=False)\n  File \"/Users/shunyuhao/.codex/worktrees/lgfv-validation-inference/LGFV/scripts/design_based_validation.py\", line 403, in _estimate\n    approval = validate_sources(request, approvals=approvals)\n  File \"/Users/shunyuhao/.codex/worktrees/lgfv-validation-inference/LGFV/scripts/design_based_validation.py\", line 350, in validate_sources\n    _require(not _contains_synthetic_marker(asdict(request))\n    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n             and not _contains_synthetic_marker(asdict(approval)),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n             \"synthetic provenance cannot be used for actual-data estimates\")\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/shunyuhao/.codex/worktrees/lgfv-validation-inference/LGFV/scripts/design_based_validation.py\", line 165, in _require\n    raise InputError(message)\ndesign_based_validation.InputError: synthetic provenance cannot be used for actual-data estimates\n\n======================================================================\nFAIL: test_actual_schema_rejects_synthetic_provenance (test_design_based_validation.ExactDesignTests.test_actual_schema_rejects_synthetic_provenance) (changed=Request(mode='actual', frame=Frame(frame_id='frame', status='frozen_approved', unit_type='issuer', outcome_eligibility_status='all_units_verified', eligibility_record_id='eligibility-record', covariate_names=('x0', 'x1'), units=(FrameUnit(unit_id='u000', stratum_id='h0', inclusion_probability=0.6666666666666666, prediction=-0.7, covariates=(1.0, 0.0)), FrameUnit(unit_id='u001', stratum_id='h0', inclusion_probability=0.6666666666666666, prediction=0.0, covariates=(1.0, 1.0)), FrameUnit(unit_id='u002', stratum_id='h0', inclusion_probability=0.6666666666666666, prediction=0.7, covariates=(1.0, 2.0)), FrameUnit(unit_id='u003', stratum_id='h1', inclusion_probability=1.0, prediction=-0.7, covariates=(1.0, 3.0)), FrameUnit(unit_id='u004', stratum_id='h1', inclusion_probability=1.0, prediction=0.0, covariates=(1.0, 4.0)))), design=Design(design_id='design', frame_id='frame', status='approved', strata=(Stratum(stratum_id='h0', population_n=3, sample_n=2, method='srswor'), Stratum(stratum_id='h1', population_n=2, sample_n=2, method='census')), independent_strata=True, probability_record_id='probability-record'), spec=AnalysisSpec(outcome_id='binary-outcome', outcome_definition_record_id='outcome-protocol', prediction_assumption='fixed_prespecified', prediction_record_id='prediction-record', covariate_record_id='x-record', inputs_fixed_before_selection=True), selection=Selection(frame_id='frame', design_id='design', selection_id='selection', status='realized_verified', selected_unit_ids=('u000', 'u001', 'u003', 'u004'), selection_record_id='selection-record', verification_record_id='selection-verification'), responses=(HumanResponse(unit_id='u000', frame_id='frame', selection_id='selection', outcome_id='binary-outcome', response_status='completed', outcome_status='known', downstream_eligible=True, value=0, label_origin='human_coded', reviewer_id=' SYNTHETIC:record', reviewed_at='2026-09-10', review_record_id='review-record-synthetic:u000'), HumanResponse(unit_id='u001', frame_id='frame', selection_id='selection', outcome_id='binary-outcome', response_status='completed', outcome_status='known', downstream_eligible=True, value=1, label_origin='human_coded', reviewer_id='reviewer', reviewed_at='2026-09-10', review_record_id='review-record-synthetic:u001'), HumanResponse(unit_id='u003', frame_id='frame', selection_id='selection', outcome_id='binary-outcome', response_status='completed', outcome_status='known', downstream_eligible=True, value=1, label_origin='human_coded', reviewer_id='reviewer', reviewed_at='2026-09-10', review_record_id='review-record-synthetic:u003'), HumanResponse(unit_id='u004', frame_id='frame', selection_id='selection', outcome_id='binary-outcome', response_status='completed', outcome_status='known', downstream_eligible=True, value=0, label_origin='human_coded', reviewer_id='reviewer', reviewed_at='2026-09-10', review_record_id='review-record-synthetic:u004'))))\n----------------------------------------------------------------------\ndesign_based_validation.InputError: reviewer_id must be an explicit nonmissing identifier\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/Users/shunyuhao/.codex/worktrees/lgfv-validation-inference/LGFV/tests/test_design_based_validation.py\", line 112, in test_actual_schema_rejects_synthetic_provenance\n    with self.assertRaisesRegex(db.InputError, \"synthetic provenance\"):\n         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: \"synthetic provenance\" does not match \"reviewer_id must be an explicit nonmissing identifier\"\n\n======================================================================\nFAIL: test_actual_schema_rejects_synthetic_provenance (test_design_based_validation.ExactDesignTests.test_actual_schema_rejects_synthetic_provenance) (changed=Request(mode='actual', frame=Frame(frame_id='frame', status='frozen_approved', unit_type='issuer', outcome_eligibility_status='all_units_verified', eligibility_record_id='eligibility-record', covariate_names=('x0', 'x1'), units=(FrameUnit(unit_id='u000', stratum_id='h0', inclusion_probability=0.6666666666666666, prediction=-0.7, covariates=(1.0, 0.0)), FrameUnit(unit_id='u001', stratum_id='h0', inclusion_probability=0.6666666666666666, prediction=0.0, covariates=(1.0, 1.0)), FrameUnit(unit_id='u002', stratum_id='h0', inclusion_probability=0.6666666666666666, prediction=0.7, covariates=(1.0, 2.0)), FrameUnit(unit_id='u003', stratum_id='h1', inclusion_probability=1.0, prediction=-0.7, covariates=(1.0, 3.0)), FrameUnit(unit_id='u004', stratum_id='h1', inclusion_probability=1.0, prediction=0.0, covariates=(1.0, 4.0)))), design=Design(design_id='design', frame_id='frame', status='approved', strata=(Stratum(stratum_id='h0', population_n=3, sample_n=2, method='srswor'), Stratum(stratum_id='h1', population_n=2, sample_n=2, method='census')), independent_strata=True, probability_record_id='probability-record'), spec=AnalysisSpec(outcome_id='binary-outcome', outcome_definition_record_id='outcome-protocol', prediction_assumption='fixed_prespecified', prediction_record_id='prediction-record', covariate_record_id='x-record', inputs_fixed_before_selection=True), selection=Selection(frame_id='frame', design_id='design', selection_id='selection', status='realized_verified', selected_unit_ids=('u000', 'u001', 'u003', 'u004'), selection_record_id='selection-record', verification_record_id='selection-verification'), responses=(HumanResponse(unit_id='u000', frame_id='frame', selection_id='selection', outcome_id='binary-outcome', response_status='completed', outcome_status='known', downstream_eligible=True, value=0, label_origin='human_coded', reviewer_id='reviewer', reviewed_at='2026-09-10', review_record_id=' SYNTHETIC:record'), HumanResponse(unit_id='u001', frame_id='frame', selection_id='selection', outcome_id='binary-outcome', response_status='completed', outcome_status='known', downstream_eligible=True, value=1, label_origin='human_coded', reviewer_id='reviewer', reviewed_at='2026-09-10', review_record_id='review-record-synthetic:u001'), HumanResponse(unit_id='u003', frame_id='frame', selection_id='selection', outcome_id='binary-outcome', response_status='completed', outcome_status='known', downstream_eligible=True, value=1, label_origin='human_coded', reviewer_id='reviewer', reviewed_at='2026-09-10', review_record_id='review-record-synthetic:u003'), HumanResponse(unit_id='u004', frame_id='frame', selection_id='selection', outcome_id='binary-outcome', response_status='completed', outcome_status='known', downstream_eligible=True, value=0, label_origin='human_coded', reviewer_id='reviewer', reviewed_at='2026-09-10', review_record_id='review-record-synthetic:u004'))))\n----------------------------------------------------------------------\ndesign_based_validation.InputError: review_record_id must be an explicit nonmissing identifier\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/Users/shunyuhao/.codex/worktrees/lgfv-validation-inference/LGFV/tests/test_design_based_validation.py\", line 112, in test_actual_schema_rejects_synthetic_provenance\n    with self.assertRaisesRegex(db.InputError, \"synthetic provenance\"):\n         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: \"synthetic provenance\" does not match \"review_record_id must be an explicit nonmissing identifier\"\n\n----------------------------------------------------------------------\nRan 141 tests in 16.714s\n\nFAILED (failures=2, errors=1)\n"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

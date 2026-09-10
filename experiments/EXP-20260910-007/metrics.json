@@ -1,0 +1,23 @@
+{
+  "decision": "keep",
+  "reference_human_confirmation_basis": "author_report",
+  "reference_human_checked_cases": 94,
+  "new_collection_units": 67,
+  "exact_reference_event_matches": 0,
+  "new_completed_human_entry_records": 0,
+  "actual_frame_frozen": false,
+  "actual_current_frame_estimate": null,
+  "synthetic_exhaustive_design_combinations": 717,
+  "final_repository_test_count": 141,
+  "final_repository_test_failures": 0,
+  "final_integrated_check_log": "checks_integrated_4.json",
+  "pdf_pages": 82,
+  "main_text_last_page": 27,
+  "final_local_build_log": "checks_build_2.json",
+  "numerical_scientific_inputs_changed": false,
+  "bounds_scope": "158 documentary-screen issuers conditional on reference correctness and issuer-event applicability",
+  "conditional_lower_bound": 0.3860759493670886,
+  "conditional_upper_bound": 1.0,
+  "unconditional_lower_bound": 0.0,
+  "unconditional_upper_bound": 1.0
+}

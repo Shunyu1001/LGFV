@@ -65,6 +65,28 @@ basis; actual review date and reviewer identity remain unreported. No
 intercoder statistic, probability-validation completion, or final DSL estimate
 is implied by this update.
 
+## Validation and Inference
+
+The current collection package contains 67 city-platform-scope candidates with
+source locators and two separate blank coder sheets. Exact issuer/event matching
+finds no reusable outcome from the 94-case human-check report. There are no
+completed human decisions in the new package. See
+`data/validation/collection_2026_09_10/README.md` and
+`docs/validation_inference_handoff.md` for the collection and analysis boundary.
+
+`scripts/design_based_validation.py` implements fixed-prediction finite-frame
+mean and linear-projection correction with design-based variance. It is tested
+by exhaustive finite-population enumeration, but mathematical implementation is
+not evidence that actual validation outcomes have been collected.
+
+Run `python3 scripts/build_validation_inference_status.py` to regenerate the
+current collection status. The default reports `not_estimated`, preserves the
+67 missing human outcomes, and emits no numerical DSL result. Separately vetted
+analysis requests are required for future estimator use. The conditional
+identification bounds are in
+`data/analysis_inputs/validation_identification_bounds.csv`; they are not
+confidence intervals or population-accuracy estimates.
+
 ## Autoresearch Quick Start
 
 1. Read `immutable/research_charter.md`, `AGENTS.md`, and `program.md`.

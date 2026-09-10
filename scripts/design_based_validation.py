@@ -346,9 +346,23 @@ def validate_sources(request: Request, *, approvals: Sequence[Approval] = ()) ->
     _require(approval.status == "approved", "external approval is not approved")
     _identifier(approval.approved_by, "approved_by")
     _identifier(approval.approval_record_id, "approval_record_id")
+    if request.mode == "actual":
+        _require(not _contains_synthetic_marker(asdict(request))
+                 and not _contains_synthetic_marker(asdict(approval)),
+                 "synthetic provenance cannot be used for actual-data estimates")
     _require(approval.spec_sha256 == specification_sha256(request),
              "frozen specification differs from the approved content hash")
     return approval
+
+
+def _contains_synthetic_marker(value):
+    if isinstance(value, str):
+        return value.strip().lower().startswith("synthetic:")
+    if isinstance(value, dict):
+        return any(_contains_synthetic_marker(item) for item in value.values())
+    if isinstance(value, (list, tuple)):
+        return any(_contains_synthetic_marker(item) for item in value)
+    return False
 
 
 def _linear_functional(request: Request, weights: np.ndarray):

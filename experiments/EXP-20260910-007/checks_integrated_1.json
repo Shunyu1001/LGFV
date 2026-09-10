@@ -1,0 +1,155 @@
+{
+  "phase": "integrated",
+  "started_at": "2026-09-10T06:44:55.269138+00:00",
+  "commands": [
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/build_validation_collection_package.py",
+        "--check"
+      ],
+      "returncode": 0,
+      "stdout": "collection_package=byte_identical\n{\n  \"added_current_units\": 64,\n  \"base_commit\": \"4330c5728dec64ba30c1faec972fad0097622e9d\",\n  \"blank_coder_rows_per_sheet\": 67,\n  \"coder_agreement\": null,\n  \"current_units\": 67,\n  \"document_locator_records\": 610,\n  \"draw_executed_by_this_package\": false,\n  \"eligible_origin_rows\": 74,\n  \"exact_issuer_event_mappings\": 0,\n  \"exact_issuer_pairs\": 0,\n  \"experiment_id\": \"EXP-20260910-004\",\n  \"freeze_executed_by_this_package\": false,\n  \"historical_capacity_linked_units_not_label_matches\": 33,\n  \"historical_only_units\": [\n    \"mv_83fa1cb2dc9e\"\n  ],\n  \"historical_packet_units\": 4,\n  \"human_coding_executed_by_this_package\": false,\n  \"human_labels\": null,\n  \"missing_historical_raw_records\": 59,\n  \"populated_human_entry_cells\": 0,\n  \"proposed_strata\": 24,\n  \"realized_inclusion_probabilities\": null,\n  \"realized_input_readiness\": \"blocked\",\n  \"realized_outcome_counts\": null,\n  \"reference_pairs_audited\": 6298,\n  \"report_covered_reference_cases\": 94,\n  \"retained_historical_units\": 3,\n  \"screen_counts_coordinator_only\": {\n    \"screen_positive_nominal\": 57,\n    \"screened_no_direct_formal_event\": 10\n  },\n  \"source_hash_mismatch_records\": 0,\n  \"source_locator_records\": 689,\n  \"units_with_missing_origin_document_ids\": 1,\n  \"units_with_public_locators\": 67,\n  \"units_with_verified_manifest_raw\": 67,\n  \"unmatched_reasons\": {\n    \"no_exact_issuer_in_report_scope\": 67\n  },\n  \"verified_manifest_raw_documents\": 79\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/build_validation_identification_bounds.py",
+        "--check"
+      ],
+      "returncode": 0,
+      "stdout": "validation_identification_bounds=verified; artifacts=10\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_validation_collection_package.py"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "....................\n----------------------------------------------------------------------\nRan 20 tests in 10.132s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_design_based_validation.py"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ".............................\n----------------------------------------------------------------------\nRan 29 tests in 0.474s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_validation_identification_bounds.py"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "...............................\n----------------------------------------------------------------------\nRan 31 tests in 1.019s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/build_validation_inference_status.py"
+      ],
+      "returncode": 0,
+      "stdout": "status=not_estimated; frame_units=67; untouched_human_entries=67; unresolved_entries=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_validation_inference_status.py"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.040s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/validate_immutable.py"
+      ],
+      "returncode": 0,
+      "stdout": "immutable_validation=ok\nfiles=4\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/validate_ledgers.py"
+      ],
+      "returncode": 0,
+      "stdout": "ledger_validation=ok\nchange_requests.tsv=1\nclaims.csv=14\nexperiments.tsv=28\nliterature.csv=29\nreviewer_issues.tsv=16\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/build_human_confirmation_register.py",
+        "--check"
+      ],
+      "returncode": 0,
+      "stdout": "human_checked_reference_cases=94\nbasis=author_report; label_revisions=0; blind_double_coding=not_documented\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/validate_label_role_rebuild.py"
+      ],
+      "returncode": 0,
+      "stdout": "label_role_rebuild_validation=ok\nworking_reference_rows=94 boundary_rows=5 surrogate_disclosure_rows=203\npanel_rows=191 diagnostic_rows=84 full_controls_rows=78\nnumeric_and_label_fields_changed=0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "..........................................................................................................................................\n----------------------------------------------------------------------\nRan 138 tests in 16.558s\n\nOK\n"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

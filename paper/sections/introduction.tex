@@ -66,9 +66,9 @@ Among the eighty-four reference cases matched to Ming-Qing elite density,
 simple specifications show a positive association between elite density and
 movement away from nominal exit. The outcome contains only twelve such events,
 however, and the complete-control subset contains seventy-eight observations.
-It excludes six low-capacity nominal exits, and the initial adjusted design is
-rank deficient and sensitive to individual case deletion. These diagnostics
-do not overturn the descriptive pattern, but they rule out a strong claim that
+It excludes six low-capacity nominal exits. After correcting the former rank
+deficiency, the adjusted effects remain close to zero and sensitive to
+individual case deletion. These diagnostics rule out a strong claim that
 historical capacity has a stable adjusted or causal effect. The empirical
 application is retained to show how the measure can be used and what a stronger
 design must solve.
@@ -82,10 +82,12 @@ precision. No screen-negative issuer has a reference-label overlap, so recall,
 calibration, and four-category error are not identified. Consistent with
 design-based supervised learning, downstream correction requires a validation
 sample with known inclusion probabilities and independently assigned human
-labels \citep{egami2023dsl}. Human checking of the existing reference labels
-does not supply the missing probability validation design. The paper
-reports this boundary instead of
-using the surrogate labels as if they were observed outcomes.
+labels \citep{egami2023dsl}. I report conditional finite-screen identification
+bounds, prepare a source-linked 67-issuer validation frame, and implement the
+finite-frame correction with explicit data requirements. The new frame has no
+exact issuer/event matches to the existing human-check report. Its missing
+human outcomes remain a collection requirement rather than being replaced by
+surrogate labels.
 
 The paper makes three ordered contributions. First, it provides an auditable
 measure of the institutional fate of LGFV exit. Second, it uses that measure to
