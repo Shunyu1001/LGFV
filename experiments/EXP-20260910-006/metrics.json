@@ -1,0 +1,53 @@
+{
+  "all_disclosure_rows": 361,
+  "arithmetic_issuer_union": 191,
+  "base_commit": "4330c5728dec64ba30c1faec972fad0097622e9d",
+  "candidate": {
+    "candidate_origin_rows": 74,
+    "candidate_reference_overlap": 0,
+    "candidate_screen_counts": {
+      "screen_positive_nominal": 57,
+      "screened_no_direct_formal_event": 10
+    },
+    "candidate_units": 67,
+    "existing_blank_packet_rows": 4,
+    "existing_packet_candidate_overlap": 3,
+    "final_freeze_approved": false,
+    "nonoverlap_scope_counts": {
+      "eligible": 57,
+      "ineligible": 40
+    },
+    "origin_rows": 157,
+    "origin_rows_without_legacy_document_ids": 2,
+    "origin_units": 133,
+    "proposal_only": true,
+    "proposal_strata": 24,
+    "random_draw_executed": false,
+    "scope_counts": {
+      "eligible": 67,
+      "ineligible": 66
+    }
+  },
+  "city_platform_union_bounds_reported": false,
+  "experiment_id": "EXP-20260910-006",
+  "historical_reference_rows_with_empty_issuer": 0,
+  "independent_same_event_pairing_established": false,
+  "issuer_rows": 158,
+  "nominal_predictions": 158,
+  "nonoverlap_issuers": 97,
+  "overlap_issuers": 61,
+  "overlap_with_reference_case_as_source": 41,
+  "overlap_with_shared_documents": 41,
+  "reference_ambiguous_issuers": 0,
+  "reference_cases": 94,
+  "reference_counts": {
+    "functional_transfer": 10,
+    "nominal_exit": 82,
+    "substantive_exit": 2
+  },
+  "reference_unique_issuers": 94,
+  "report_id": "HC-20260910-001",
+  "resolved_document_identifiers": 1839,
+  "selected_disclosure_rows": 203,
+  "source_ids_repeated_across_roles": 41
+}

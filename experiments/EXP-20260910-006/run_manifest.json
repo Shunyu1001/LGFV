@@ -1,0 +1,39 @@
+{
+  "base_commit": "4330c5728dec64ba30c1faec972fad0097622e9d",
+  "brief_sha256": "8d3e0278d0f2ef001f67ecd2e581a554bda89ffe1a9732838786303b971819b8",
+  "command": "python3 scripts/build_validation_identification_bounds.py",
+  "dependencies_sha256": {
+    "scripts/collapse_codex_surrogate_labels.py": "5626130a2f87d88c129aa94bcb552875e992ff7a0f9f1dc0401396be98a4723c",
+    "scripts/human_confirmation.py": "b6f81b1ba99183ac77456f09f634caf6d9b58012e21bb396de58a29bcf1af6f3"
+  },
+  "experiment_id": "EXP-20260910-006",
+  "input_sha256": {
+    "data/analysis_inputs/codex_surrogate_issuer_summary_2026_07_03_expanded.csv": "cccc43d76418b8d60d78cb177b8f0cddda128a498d2f8513a57c1641d1c05554",
+    "data/analysis_inputs/codex_surrogate_labels_2026_07_03_expanded.csv": "cfced00afd193fa68d95db10888d05069fab27e7c957832d29bf6260ac44dfbe",
+    "data/document_inventory.csv": "8d5f13810f31a91b293ccc917153cf2e21f252445719de5a174604151dbd6d27",
+    "data/processed/working_reference_labels.csv": "c1e6bd66b7f498a6100422b9f4a66a61374eb47f65fc7fe5f0446f503e2afd18",
+    "data/source_inventory.csv": "a83c47e7a8c1f8989d9d8e4289b16548c058b4b567ed4725e56310cb41dd8c8c",
+    "data/validation/human_confirmation_register.csv": "8f34068171a88f5e234caac0638b48f5febb3076043384882fd2d39599015780",
+    "data/validation/human_confirmation_report_2026_09_10.json": "bfac77843e06de458b548973fa03cc3e01528d29c087b4be9eecc3336b99b541",
+    "data/validation/independent_coding/blinded_probability_validation_packet.csv": "d4e2e374d2ae059d6f0838bdcd2400bba8d582770974ca15e3d78e661a5f5df9",
+    "data/validation/probability_validation_frame_candidate.csv": "7488b4ae04daf3db1c4a8cf471dd896a51039fbec05896ce7b4b410b72d934eb",
+    "data/validation/probability_validation_frame_flow.csv": "c8e449f5123817078996be47ce4c2935c80060b8dd546bd3e30af1b4fd75644c",
+    "data/validation/probability_validation_frame_origin_rows.csv": "c68a5757cff2b2769f23907bef61391c8877afcd56bc821da7f12127a3939de5",
+    "data/validation/probability_validation_geography_scope_crosswalk.csv": "7b7d04cee5968070fa1d67266507e6e05b3ba6977a3fb0a21d98d5ee169f51ab",
+    "data/validation/probability_validation_sampling_design.csv": "dcd5fb832563026a61bc36eda3183ad5c4cacc34a03df2733ac95a4a29e32812",
+    "data/validation/probability_validation_source_manifest.csv": "79c3de7b327460db4d1c8a0ca4dc0d7c1f6c51efbe0a2b6086978a7a5e763098"
+  },
+  "output_sha256": {
+    "data/analysis_inputs/validation_identification_bounds.csv": "09e4c9a6a56377d768dc3be1646607b9da03cfc73aa1cf97ea662c204cabce2c",
+    "experiments/EXP-20260910-006/candidate_audit.csv": "2dd3c5871ff813863b39ba63a3d117cae9be7e20e45bf0243d3db95e593d2042",
+    "experiments/EXP-20260910-006/disclosure_audit.csv": "e5a676115dcafab7e57bb2c3b040ffb47ae534fe0aee9d1fda02ccc0fe649bf4",
+    "experiments/EXP-20260910-006/document_links.csv": "5ee50bdd49e592627dd4488c954db7f68d392a2b3cd3369a29d0a9b7f58fac76",
+    "experiments/EXP-20260910-006/issuer_audit.csv": "e2e9c76a0a9d01e8c1f63be35643b648521f08d719e19eb7a5d8cac10af99494",
+    "experiments/EXP-20260910-006/metrics.json": "042b2774c315c7d49b6a15ff3cb4877968342f52a95b7610011714f4dce35a06",
+    "experiments/EXP-20260910-006/notes.md": "6a60c019a7e6badef9e0e643783f1134bc53c6b9677b85c5053b54c95a127e18",
+    "experiments/EXP-20260910-006/reference_audit.csv": "cca8876eb688dfa9031e6dad63eb70688a0caac25b6bdebad06ae7a94e2d1884",
+    "paper/tables/validation_identification_bounds.tex": "016d8b15177b19841d1a2628fdc731e4a02089f7dbcadd80da04e66569aabb6f"
+  },
+  "producer_sha256": "368f5bf4c69f584b612e15f116c9c372900744b7820de7e2d4c2bd9175a3d225",
+  "uncertainty": "deterministic missing-outcome bounds conditional on retained reference labels"
+}
