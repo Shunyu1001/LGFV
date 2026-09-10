@@ -29,7 +29,7 @@ CANDIDATE = ROOT / "data/validation/probability_validation_frame_candidate.csv"
 ORIGINS = ROOT / "data/validation/probability_validation_frame_origin_rows.csv"
 FLOW = ROOT / "data/validation/probability_validation_frame_flow.csv"
 DESIGN = ROOT / "data/validation/probability_validation_sampling_design.csv"
-METRICS = ROOT / "experiments/EXP-20260910-001/metrics.json"
+METRICS = ROOT / "experiments/EXP-20260910-002/metrics.json"
 SURROGATE = ROOT / "data/analysis_inputs/codex_surrogate_labels_2026_07_03_expanded.csv"
 DOCUMENTS = ROOT / "data/document_inventory.csv"
 HISTORICAL = ROOT / "data/analysis_inputs/candidate_city_historical_capacity.csv"
@@ -194,7 +194,7 @@ REPAIRED_GEOGRAPHY_EVIDENCE = {
         ),
     ),
     "mv_bbc98d5aa00c": (
-        "web_shenzhen_sasac_special_zone_development",
+        "web_shenzhen_sasac_special_zone_development_20260910",
         "1",
         "深圳市",
         (
@@ -293,8 +293,10 @@ REGISTERED_BASE = "9977dd752f911bfd07dc4d434301041ef485c9f2"
 APPROVED_ROW_HASHES = {
     "mv_940b87861065": "c8da56162ddadee1b43a76507be4b6a4ec93d5cf910afe3751a3a1830affdd76",
     "mv_dd84e076bf32": "68ab4bc79d58828de43b0f4093522ed9320ad50d2d784774a31b9192ddbcaf98",
+    "mv_bbc98d5aa00c": "15b9d662716a0c12cce32046805976e17d2be0cfdbc1fd4db26220399f836099",
 }
 APPROVED_SOURCE_HASH = "1353f4206a78342fa7b7281af47cc5e46a8539ade0c1be5826316d2c9ec99987"
+RENEWED_SOURCE_HASH = "f3056a9548d210c3fce9ab44caef8309124aa0d051624fa85514a659f7b1e026"
 COURT_VENUE_GEOGRAPHY_PATTERN = re.compile(
     r"(?:住所地|注册地)[^。；]{0,80}(?:人民法院|法院)"
 )
@@ -347,10 +349,12 @@ def validate_registered_crosswalk(rows: list[dict[str, str]]) -> None:
 
 def validate_registered_manifest(rows: list[dict[str, str]]) -> None:
     baseline = registered_rows(SOURCE_MANIFEST)
-    if len(rows) != len(baseline) + 1 or rows[:-1] != baseline:
+    if len(rows) != len(baseline) + 2 or rows[:-2] != baseline:
         raise ValueError("Registered source manifest changed beyond the approved addition")
-    if canonical_row_hash(rows[-1]) != APPROVED_SOURCE_HASH:
+    if canonical_row_hash(rows[-2]) != APPROVED_SOURCE_HASH:
         raise ValueError("Independent approved-source hash mismatch")
+    if canonical_row_hash(rows[-1]) != RENEWED_SOURCE_HASH:
+        raise ValueError("Independent renewed-source hash mismatch")
 
 
 def validate_preserved_outputs(

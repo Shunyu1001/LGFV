@@ -1,0 +1,27 @@
+{
+  "old_source_id": "web_shenzhen_sasac_special_zone_development",
+  "new_source_id": "web_shenzhen_sasac_special_zone_development_20260910",
+  "old_raw_snapshot_recovered": false,
+  "old_raw_sha256": "9b6232467e0f605517f8e73c5741dbf1e05d0f5c7891f198b6f59105bbd88407",
+  "new_raw_sha256": "2d13b660ee1b469483ca81f79e7843140cce78814e8fc77b7f22c6aa7acb9550",
+  "old_text_sha256": "20d1f69ff3a75da64a79d7e7b28e0c4dba57a7f7d7623d14d7af0adc0dd20ced",
+  "new_text_sha256": "c70b2a1924488b4fd503b9bad3e0ce3c3dbdb999a1144d362779b295fb159747",
+  "source_canonical_hash": "f3056a9548d210c3fce9ab44caef8309124aa0d051624fa85514a659f7b1e026",
+  "crosswalk_canonical_hash": "15b9d662716a0c12cce32046805976e17d2be0cfdbc1fd4db26220399f836099",
+  "source_manifest_file_sha256": "42a01d9bf11a6295faffff58dbae5667a429920c4c4d7f775bffe325a6cd62dd",
+  "evidence_patch_file_sha256": "26140bd92d33114f031c264c255396eced2ed346082d455c375e6666857613a9",
+  "changed_fields": [
+    "geography_document_id",
+    "geography_supporting_text",
+    "owner_document_id",
+    "owner_supporting_text",
+    "role_document_id",
+    "role_supporting_text"
+  ],
+  "scope_or_outcome_decisions_changed": false,
+  "publication_date_correction_on_new_record_only": [
+    "2026-01-01",
+    "2026-08-03"
+  ],
+  "owner_evidence_limitation": "Municipal public status and SASAC oversight, not an ownership percentage or post-exit financing-function finding."
+}

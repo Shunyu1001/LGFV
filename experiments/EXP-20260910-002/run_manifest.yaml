@@ -1,0 +1,22 @@
+experiment_id: EXP-20260910-002
+registered_at: 2026-09-10
+registration_commit: 4c0d5de
+base_commit: cfee3b9
+scientific_input_commit: 9977dd752f911bfd07dc4d434301041ef485c9f2
+status: keep
+scope: current source renewal and candidate construction only
+current_source_review: source_review.json
+commands_and_output_hashes:
+  - audit_attempt_1.json
+  - audit_attempt_2.json
+source_archives:
+  - source_archive_attempt_1.json
+  - source_archive_attempt_2.json
+outcome_changes: 0
+random_draw_executed: false
+human_confirmation_performed: false
+national_probability_sample: false
+source_history_note: >-
+  The prior Shenzhen raw snapshot remains unavailable. It was not overwritten
+  or declared recovered. Current citations use a separately dated official
+  source record, preserving all prior metadata and the quarantine result.

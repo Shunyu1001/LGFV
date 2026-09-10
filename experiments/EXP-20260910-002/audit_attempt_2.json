@@ -1,0 +1,247 @@
+{
+  "started_at": "2026-09-10T01:06:08.467075+00:00",
+  "commands": [
+    {
+      "args": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/build_probability_validation_frame.py",
+        "--integrate-exp004",
+        "--renew-source"
+      ],
+      "cwd": "/Users/shunyuhao/.codex/worktrees/validation-freeze-exec/LGFV",
+      "returncode": 0,
+      "stdout": "{\"blocking_gate_units\": [], \"changed_crosswalk_units\": [], \"source_manifest_rows\": 274}\n{\"all_eligible_units_have_nonzero_probability\": true, \"all_geography_statuses\": {\"source_supported_multiple\": 1, \"source_supported_unique\": 132}, \"all_scope_dispositions\": {\"eligible\": 67, \"ineligible\": 66}, \"baseline_geography_gaps\": 88, \"baseline_geography_multiple\": 1, \"baseline_geography_resolved\": 87, \"baseline_geography_unresolved\": 0, \"baseline_scope_resolved\": 98, \"baseline_scope_reviews\": 98, \"baseline_scope_unresolved\": 0, \"candidate_originating_disclosure_rows\": 74, \"deterministic_random_seed\": \"20260830015\", \"eligible_candidate_units\": 67, \"eligible_screen_statuses\": {\"screen_positive_nominal\": 57, \"screened_no_direct_formal_event\": 10}, \"frame_ready_to_freeze\": true, \"frozen_strata\": 24, \"originating_disclosure_rows\": 157, \"proposed_issuer_units\": 133, \"random_draw_executed\": false}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/build_probability_validation_frame.py",
+        "--integrate-exp004",
+        "--renew-source"
+      ],
+      "cwd": "/Users/shunyuhao/.codex/worktrees/validation-freeze-exec/LGFV",
+      "returncode": 0,
+      "stdout": "{\"blocking_gate_units\": [], \"changed_crosswalk_units\": [], \"source_manifest_rows\": 274}\n{\"all_eligible_units_have_nonzero_probability\": true, \"all_geography_statuses\": {\"source_supported_multiple\": 1, \"source_supported_unique\": 132}, \"all_scope_dispositions\": {\"eligible\": 67, \"ineligible\": 66}, \"baseline_geography_gaps\": 88, \"baseline_geography_multiple\": 1, \"baseline_geography_resolved\": 87, \"baseline_geography_unresolved\": 0, \"baseline_scope_resolved\": 98, \"baseline_scope_reviews\": 98, \"baseline_scope_unresolved\": 0, \"candidate_originating_disclosure_rows\": 74, \"deterministic_random_seed\": \"20260830015\", \"eligible_candidate_units\": 67, \"eligible_screen_statuses\": {\"screen_positive_nominal\": 57, \"screened_no_direct_formal_event\": 10}, \"frame_ready_to_freeze\": true, \"frozen_strata\": 24, \"originating_disclosure_rows\": 157, \"proposed_issuer_units\": 133, \"random_draw_executed\": false}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "git",
+        "clone",
+        "--quiet",
+        "--shared",
+        "--no-checkout",
+        "/Users/shunyuhao/.codex/worktrees/validation-freeze-exec/LGFV",
+        "/var/folders/7d/f3dl9lhj2959910ck1krz_dc0000gn/T/lgfv-renewal-zz66fjgu/clean"
+      ],
+      "cwd": "/Users/shunyuhao/.codex/worktrees/validation-freeze-exec/LGFV",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "git",
+        "checkout",
+        "--quiet",
+        "--detach",
+        "9977dd752f911bfd07dc4d434301041ef485c9f2"
+      ],
+      "cwd": "/var/folders/7d/f3dl9lhj2959910ck1krz_dc0000gn/T/lgfv-renewal-zz66fjgu/clean",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/build_probability_validation_frame.py",
+        "--integrate-exp004",
+        "--renew-source"
+      ],
+      "cwd": "/var/folders/7d/f3dl9lhj2959910ck1krz_dc0000gn/T/lgfv-renewal-zz66fjgu/clean",
+      "returncode": 0,
+      "stdout": "{\"blocking_gate_units\": [], \"changed_crosswalk_units\": [\"mv_940b87861065\", \"mv_dd84e076bf32\"], \"source_manifest_rows\": 273}\n{\"all_eligible_units_have_nonzero_probability\": true, \"all_geography_statuses\": {\"source_supported_multiple\": 1, \"source_supported_unique\": 132}, \"all_scope_dispositions\": {\"eligible\": 67, \"ineligible\": 66}, \"baseline_geography_gaps\": 88, \"baseline_geography_multiple\": 1, \"baseline_geography_resolved\": 87, \"baseline_geography_unresolved\": 0, \"baseline_scope_resolved\": 98, \"baseline_scope_reviews\": 98, \"baseline_scope_unresolved\": 0, \"candidate_originating_disclosure_rows\": 74, \"deterministic_random_seed\": \"20260830015\", \"eligible_candidate_units\": 67, \"eligible_screen_statuses\": {\"screen_positive_nominal\": 57, \"screened_no_direct_formal_event\": 10}, \"frame_ready_to_freeze\": true, \"frozen_strata\": 24, \"originating_disclosure_rows\": 157, \"proposed_issuer_units\": 133, \"random_draw_executed\": false}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/validate_probability_validation_frame.py"
+      ],
+      "cwd": "/Users/shunyuhao/.codex/worktrees/validation-freeze-exec/LGFV",
+      "returncode": 0,
+      "stdout": "{\"all_geography_statuses\": {\"source_supported_multiple\": 1, \"source_supported_unique\": 132}, \"all_scope_dispositions\": {\"eligible\": 67, \"ineligible\": 66}, \"baseline_geography_multiple\": 1, \"baseline_geography_resolved\": 87, \"baseline_geography_unresolved\": 0, \"baseline_scope_resolved\": 98, \"baseline_scope_unresolved\": 0, \"candidate_units\": 67, \"frozen_strata\": 24, \"originating_disclosure_rows\": 157, \"random_draw_executed\": false, \"verified_cited_evidence\": 488}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/validate_validation_freeze_package.py"
+      ],
+      "cwd": "/Users/shunyuhao/.codex/worktrees/validation-freeze-exec/LGFV",
+      "returncode": 0,
+      "stdout": "validation freeze package: PASS\nhistorical snapshot: 9977dd752f911bfd07dc4d434301041ef485c9f2; current frame requires its separate validator\nevidence gates: 3 resolved under existing rules; 1 rule-required; 0 integrated\nregistered frame: 4 open gates across 3 units; random draws: 0\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_probability_validation_frame.py",
+        "-v"
+      ],
+      "cwd": "/Users/shunyuhao/.codex/worktrees/validation-freeze-exec/LGFV",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_all_origin_evidence_document_ids_are_valid (test_probability_validation_frame.ProbabilityValidationFrameTests.test_all_origin_evidence_document_ids_are_valid) ... ok\ntest_both_screen_strata_and_nonzero_probabilities (test_probability_validation_frame.ProbabilityValidationFrameTests.test_both_screen_strata_and_nonzero_probabilities) ... ok\ntest_candidate_is_unique_and_eligible (test_probability_validation_frame.ProbabilityValidationFrameTests.test_candidate_is_unique_and_eligible) ... ok\ntest_candidate_sampling_values_must_match_design_row (test_probability_validation_frame.ProbabilityValidationFrameTests.test_candidate_sampling_values_must_match_design_row) ... ok\ntest_default_source_cache_verification_is_required (test_probability_validation_frame.ProbabilityValidationFrameTests.test_default_source_cache_verification_is_required) ... ok\ntest_every_cited_source_has_extracted_text_provenance (test_probability_validation_frame.ProbabilityValidationFrameTests.test_every_cited_source_has_extracted_text_provenance) ... ok\ntest_every_origin_row_is_retained (test_probability_validation_frame.ProbabilityValidationFrameTests.test_every_origin_row_is_retained) ... ok\ntest_exact_output_schemas_reject_added_outcome_fields (test_probability_validation_frame.ProbabilityValidationFrameTests.test_exact_output_schemas_reject_added_outcome_fields) ... ok\ntest_final_candidate_design_counts (test_probability_validation_frame.ProbabilityValidationFrameTests.test_final_candidate_design_counts) ... ok\ntest_geography_repair_rejects_court_venue_boilerplate (test_probability_validation_frame.ProbabilityValidationFrameTests.test_geography_repair_rejects_court_venue_boilerplate) ... ok\ntest_geography_repair_rejects_third_party_address (test_probability_validation_frame.ProbabilityValidationFrameTests.test_geography_repair_rejects_third_party_address) ... ok\ntest_ineligible_multiple_geography_is_preserved_but_nonblocking (test_probability_validation_frame.ProbabilityValidationFrameTests.test_ineligible_multiple_geography_is_preserved_but_nonblocking) ... ok\ntest_no_random_draw_or_outcome_fields (test_probability_validation_frame.ProbabilityValidationFrameTests.test_no_random_draw_or_outcome_fields) ... ok\ntest_origin_pairs_use_the_safe_surrogate_mapping (test_probability_validation_frame.ProbabilityValidationFrameTests.test_origin_pairs_use_the_safe_surrogate_mapping) ... ok\ntest_partial_target_edits_and_dropped_units_are_rejected (test_probability_validation_frame.ProbabilityValidationFrameTests.test_partial_target_edits_and_dropped_units_are_rejected) ... ok\ntest_prefecture_and_taizhou_control_joins (test_probability_validation_frame.ProbabilityValidationFrameTests.test_prefecture_and_taizhou_control_joins) ... ok\ntest_registered_gaps_have_honest_dispositions (test_probability_validation_frame.ProbabilityValidationFrameTests.test_registered_gaps_have_honest_dispositions) ... ok\ntest_registered_geography_repairs_require_direct_focal_location_anchors (test_probability_validation_frame.ProbabilityValidationFrameTests.test_registered_geography_repairs_require_direct_focal_location_anchors) ... ok\ntest_resolved_pair_coverage_does_not_borrow_another_pool_score (test_probability_validation_frame.ProbabilityValidationFrameTests.test_resolved_pair_coverage_does_not_borrow_another_pool_score) ... ok\ntest_shenzhen_international_scope_reason_is_preserved (test_probability_validation_frame.ProbabilityValidationFrameTests.test_shenzhen_international_scope_reason_is_preserved) ... ok\ntest_source_cache_hash_mutation_is_rejected (test_probability_validation_frame.ProbabilityValidationFrameTests.test_source_cache_hash_mutation_is_rejected) ... ok\ntest_unrelated_crosswalk_fields_cannot_change (test_probability_validation_frame.ProbabilityValidationFrameTests.test_unrelated_crosswalk_fields_cannot_change) ... ok\ntest_unresolved_units_are_not_silently_included (test_probability_validation_frame.ProbabilityValidationFrameTests.test_unresolved_units_are_not_silently_included) ... ok\ntest_all_origin_metadata_and_old_records_are_protected (test_probability_validation_frame.RegisteredInputIntegrityTests.test_all_origin_metadata_and_old_records_are_protected) ... ok\ntest_independent_crosswalk_and_manifest_fixtures (test_probability_validation_frame.RegisteredInputIntegrityTests.test_independent_crosswalk_and_manifest_fixtures) ... ok\ntest_protected_label_bytes_cannot_change (test_probability_validation_frame.RegisteredInputIntegrityTests.test_protected_label_bytes_cannot_change) ... ok\ntest_source_renewal_preserves_decisions_and_uses_focal_evidence (test_probability_validation_frame.RegisteredInputIntegrityTests.test_source_renewal_preserves_decisions_and_uses_focal_evidence) ... ok\n\n----------------------------------------------------------------------\nRan 27 tests in 3.169s\n\nOK\n"
+    },
+    {
+      "args": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_validation_freeze_package.py",
+        "-v"
+      ],
+      "cwd": "/Users/shunyuhao/.codex/worktrees/validation-freeze-exec/LGFV",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_change_request_and_rebuild_are_prospective (test_validation_freeze_package.ValidationFreezePackageTests.test_change_request_and_rebuild_are_prospective) ... ok\ntest_codex_is_not_described_as_human_validation (test_validation_freeze_package.ValidationFreezePackageTests.test_codex_is_not_described_as_human_validation) ... ok\ntest_exact_evidence_gate_counts (test_validation_freeze_package.ValidationFreezePackageTests.test_exact_evidence_gate_counts) ... ok\ntest_no_draw_and_no_raw_source_commit (test_validation_freeze_package.ValidationFreezePackageTests.test_no_draw_and_no_raw_source_commit) ... ok\ntest_registered_frame_remains_quarantined (test_validation_freeze_package.ValidationFreezePackageTests.test_registered_frame_remains_quarantined) ... ok\ntest_validator_passes_without_temporary_caches (test_validation_freeze_package.ValidationFreezePackageTests.test_validator_passes_without_temporary_caches) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.256s\n\nOK\n"
+    },
+    {
+      "args": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/validate_immutable.py"
+      ],
+      "cwd": "/Users/shunyuhao/.codex/worktrees/validation-freeze-exec/LGFV",
+      "returncode": 0,
+      "stdout": "immutable_validation=ok\nfiles=4\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/validate_ledgers.py"
+      ],
+      "cwd": "/Users/shunyuhao/.codex/worktrees/validation-freeze-exec/LGFV",
+      "returncode": 0,
+      "stdout": "ledger_validation=ok\nchange_requests.tsv=1\nclaims.csv=9\nexperiments.tsv=25\nliterature.csv=29\nreviewer_issues.tsv=11\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/validate_labels.py"
+      ],
+      "cwd": "/Users/shunyuhao/.codex/worktrees/validation-freeze-exec/LGFV",
+      "returncode": 0,
+      "stdout": "validation_status=ok\nrows=94\ncases=94\nWARNING: row 2 pilot_sn_xian_hightech: extracted text not found for doc_sn_xa_hightech_2026_mtn6_006\nWARNING: row 3 pilot_gd_001: extracted text not found for doc_gd_gz_chengtou_2026_mtn4_004\nWARNING: row 4 pilot_zj_001: extracted text not found for doc_zj_hz_chengtou_2024_mtn1_prospectus\nWARNING: row 5 pilot_sc_001: extracted text not found for doc_sc_cd_chengtou_2023_mtn3_prospectus\nWARNING: row 6 pilot_hn_002: extracted text not found for doc_hn_zz_guotou_2026_scp1_003\nWARNING: row 7 pilot_zj_002: extracted text not found for doc_zj_nb_kaitou_2026_mtn4_prospectus\nWARNING: row 8 pilot_zj_003: extracted text not found for doc_zj_wz_mingcheng_2026_mtn2_prospectus\nWARNING: row 9 pilot_js_004: extracted text not found for doc_js_xz_xinsheng_2026_mtn6_prospectus\nWARNING: row 10 pilot_hn_004: extracted text not found for doc_hn_hy_chengtou_2026_mtn2_prospectus\nWARNING: row 11 pilot_sd_001: extracted text not found for doc_sd_jn_chengtou_2025_mtn1_prospectus\nWARNING: row 12 pilot_js_003: extracted text not found for doc_js_yc_chengzi_2025_mtn2_prospectus\nWARNING: row 13 pilot_gd_003: extracted text not found for doc_gd_fs_jiantou_2025_mtn_prospectus\nWARNING: row 14 pilot_js_002: extracted text not found for doc_js_sz_chengtou_2026_mtn1_009\nWARNING: row 15 pilot_sd_002: extracted text not found for doc_sd_qd_chengtou_2026_mtn2_001\nWARNING: row 17 expand_sd_jinan_chengjian: extracted text not found for doc_sd_jn_chengjian_2026_scp4_007\nWARNING: row 18 expand_fj_fuzhou_chengtou: extracted text not found for doc_fj_fz_chengtou_2026_scp2_005\nWARNING: row 19 expand_xj_urumqi_chengtou: extracted text not found for doc_xj_wlmq_chengtou_2026_mtn2_003\nWARNING: row 20 expand_zj_yuyao_chengtou: extracted text not found for doc_zj_yuyao_chengtou_2026_mtn1_001\nWARNING: row 21 expand_js_taizhou_jindong: extracted text not found for doc_js_tz_jindong_2026_mtn1_002\nWARNING: row 22 expand_hlj_harbin_chengtou: extracted text not found for doc_hlj_hrb_chengtou_2026_mtn1_003\nWARNING: row 23 expand_hb_xiaogan_chengtou: extracted text not found for doc_hb_xg_chengtou_2026_mtn2_004\nWARNING: row 24 expand_tj_jinghai_chengtou: extracted text not found for doc_tj_jh_chengtou_2026_mtn1_002\nWARNING: row 25 expand_jx_zhanggong_jiantou: extracted text not found for doc_jx_zg_jiantou_2026_mtn1_003\nWARNING: row 26 expand_zj_wenling_guotou: extracted text not found for doc_zj_wl_guotou_2026_mtn2_005\nWARNING: row 27 expand_js_yixing_chengfa: extracted text not found for doc_js_yx_chengfa_2026_mtn1_003\nWARNING: row 28 expand_fj_fuzhou_guozi: extracted text not found for doc_fj_fz_guozi_2026_scp1_006\nWARNING: row 29 expand_js_zhenjiang_industry: extracted text not found for doc_js_zhenjiang_industry_2026_cp3_003\nWARNING: row 30 expand_js_jiangning_guozi: extracted text not found for doc_js_jiangning_guozi_2026_mtn1_004\nWARNING: row 31 expand_js_changshu_invest: extracted text not found for doc_js_changshu_invest_2026_mtn3_001\nWARNING: row 32 expand_ah_suzhou_chengtou: extracted text not found for doc_ah_suzhou_chengtou_2026_mtn3_005\nWARNING: row 33 expand_hb_huangshi_chengfa: extracted text not found for doc_hb_huangshi_chengfa_2026_cp8_001\nWARNING: row 34 expand_js_yancheng_chengnan: extracted text not found for doc_js_yancheng_chengnan_2026_mtn2_003\nWARNING: row 35 expand_js_suzhou_xiangcheng: extracted text not found for doc_js_suzhou_xiangcheng_2026_scp3_008\nWARNING: row 36 expand_sd_linyi_chengtou: extracted text not found for doc_sd_linyi_chengtou_2026_cp2_004\nWARNING: row 37 expand_jx_jian_chengtou: extracted text not found for doc_jx_jian_chengtou_2026_cp1_002\nWARNING: row 38 expand_hen_luoyang_chengxiang: extracted text not found for doc_hen_luoyang_chengxiang_2026_cp2_010\nWARNING: row 39 expand_js_zhangjiagang_chengtou: extracted text not found for doc_js_zhangjiagang_chengtou_2026_scp2_005\nWARNING: row 40 expand_tj_jinnan_chengtou: extracted text not found for doc_tj_jinnan_chengtou_2026_scp6_009\nWARNING: row 41 expand_ah_luan_chengtou: extracted text not found for doc_ah_luan_chengtou_2026_scp3_001\nWARNING: row 42 expand_js_taizhou_chengtou: extracted text not found for doc_js_taizhou_chengtou_2026_scp5_007\nWARNING: row 43 expand_jx_jingdezhen_chengtou: extracted text not found for doc_jx_jingdezhen_chengtou_2026_cp1_006\nWARNING: row 44 expand_hb_jingmen_chengtou: extracted text not found for doc_hb_jingmen_chengtou_2026_cp1_002\nWARNING: row 45 expand_jx_shangrao_chengtou: extracted text not found for doc_jx_shangrao_chengtou_2026_cp1_007\nWARNING: row 46 expand_js_huaian_touzi: extracted text not found for doc_js_huaian_touzi_2026_scp3_007\nWARNING: row 47 expand_hn_yiyang_jiaotou: extracted text not found for doc_hn_yiyang_jiaotou_2026_mtn1_004\nWARNING: row 48 expand_js_xinghua_guotou: extracted text not found for doc_js_xinghua_guotou_2026_mtn2_004\nWARNING: row 49 expand_sc_leshan_guozi: extracted text not found for doc_sc_leshan_guozi_2026_scp2_004\nWARNING: row 50 expand_sd_dezhou_deda: extracted text not found for doc_sd_dezhou_deda_2026_cp1_001\nWARNING: row 51 expand_jx_fuzhou_guozi: extracted text not found for doc_jx_fuzhou_guozi_2026_cp1_006\nWARNING: row 52 sch_20260630_0155: extracted text not found for doc_sch_20260630_0155_003\nWARNING: row 53 sch_20260630_0117: extracted text not found for doc_sch_20260630_0117_005\nWARNING: row 54 sch_20260630_0027: extracted text not found for doc_sch_20260630_0027_003\nWARNING: row 55 sch_20260630_0055: extracted text not found for doc_sch_20260630_0055_001\nWARNING: row 56 sch_20260630_0151: extracted text not found for doc_sch_20260630_0151_001\nWARNING: row 57 sch_20260630_0052: extracted text not found for doc_sch_20260630_0052_007\nWARNING: row 58 sch_20260630_0019: extracted text not found for doc_sch_20260630_0019_007\nWARNING: row 59 sch_20260630_0142: extracted text not found for doc_sch_20260630_0142_003\nWARNING: row 60 sch_20260630_0068: extracted text not found for doc_sch_20260630_0068_003\nWARNING: row 61 expand_gx_nanning_chengtou: extracted text not found for doc_gx_nanning_chengtou_2023_cp_prospectus\nWARNING: row 62 pilot_gd_001_alt_metro: extracted text not found for doc_gd_gz_metro_2025_mtn_009\nWARNING: row 63 pilot_js_001_alt_metro: extracted text not found for doc_js_nj_metro_2025_mtn2_004\nWARNING: row 64 sch_20260630_0035: extracted text not found for doc_sch_20260630_0035_005\nWARNING: row 65 sch_20260630_0015: extracted text not found for doc_sch_20260630_0015_007\nWARNING: row 66 sch_20260630_0029: extracted text not found for doc_sch_20260630_0029_002\nWARNING: row 67 sch_20260630_0047: extracted text not found for doc_sch_20260630_0047_006\nWARNING: row 68 sch_20260630_0051: extracted text not found for doc_sch_20260630_0051_003\nWARNING: row 69 sch_20260630_0056: extracted text not found for doc_sch_20260630_0056_005\nWARNING: row 70 sch_20260630_0005: extracted text not found for doc_sch_20260630_0005_005\nWARNING: row 75 sch_20260630_0044: extracted text not found for doc_sch_20260630_0044_004\nWARNING: row 76 sch_20260630_0006: extracted text not found for doc_sch_20260630_0006_007\nWARNING: row 77 sch_20260630_0007: extracted text not found for doc_sch_20260630_0007_008\nWARNING: row 78 sch_20260630_0032: extracted text not found for doc_sch_20260630_0032_008\nWARNING: row 79 sch_20260630_0057: extracted text not found for doc_sch_20260630_0057_004\nWARNING: row 80 sch_20260630_0033: extracted text not found for doc_sch_20260630_0033_004\nWARNING: row 81 sch_20260630_0054: extracted text not found for doc_sch_20260630_0054_005\nWARNING: row 82 sch_20260630_0028: extracted text not found for doc_sch_20260630_0028_004\nWARNING: row 83 sch_20260630_0017: extracted text not found for doc_sch_20260630_0017_002\nWARNING: row 84 sch_20260630_0013: extracted text not found for doc_sch_20260630_0013_009\nWARNING: row 85 sch_20260630_0025: extracted text not found for doc_sch_20260630_0025_004\nWARNING: row 86 sch_20260630_0008: extracted text not found for doc_sch_20260630_0008_011\nWARNING: row 87 sch_20260630_0137: extracted text not found for doc_sch_20260630_0137_006\nWARNING: row 88 sch_20260630_0069: extracted text not found for doc_sch_20260630_0069_004\nWARNING: row 89 exp_20260703_0008: extracted text not found for doc_exp_20260703_0008_007\nWARNING: row 90 exp2_20260703_0009: extracted text not found for doc_exp2_20260703_0009_007\nWARNING: row 91 sch_20260630_0132: extracted text not found for doc_sch_20260630_0132_009\nWARNING: row 92 sch_20260630_0175: extracted text not found for doc_sch_20260630_0175_001\nWARNING: row 93 sch_20260630_0073: extracted text not found for doc_sch_20260630_0073_003\nWARNING: row 94 exp_20260703_0001: extracted text not found for doc_exp_20260703_0001_005\nWARNING: row 95 exp2_20260703_0001: extracted text not found for doc_exp2_20260703_0001_013\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+        "scripts/validate_master_case_pool.py"
+      ],
+      "cwd": "/Users/shunyuhao/.codex/worktrees/validation-freeze-exec/LGFV",
+      "returncode": 0,
+      "stdout": "master_case_pool_validation=ok\nrows=114\ncases=114\n",
+      "stderr": ""
+    }
+  ],
+  "integrated_hashes": {
+    "data/validation/probability_validation_geography_scope_crosswalk.csv": "7b7d04cee5968070fa1d67266507e6e05b3ba6977a3fb0a21d98d5ee169f51ab",
+    "data/validation/probability_validation_unresolved_log.csv": "82751a00e139ba502d2925db8dbb9a181fa883b1c96d2851112bcb74d54849ed",
+    "data/validation/probability_validation_source_manifest.csv": "79c3de7b327460db4d1c8a0ca4dc0d7c1f6c51efbe0a2b6086978a7a5e763098",
+    "data/validation/probability_validation_frame_candidate.csv": "7488b4ae04daf3db1c4a8cf471dd896a51039fbec05896ce7b4b410b72d934eb",
+    "data/validation/probability_validation_frame_origin_rows.csv": "c68a5757cff2b2769f23907bef61391c8877afcd56bc821da7f12127a3939de5",
+    "data/validation/probability_validation_frame_flow.csv": "c8e449f5123817078996be47ce4c2935c80060b8dd546bd3e30af1b4fd75644c",
+    "data/validation/probability_validation_sampling_design.csv": "dcd5fb832563026a61bc36eda3183ad5c4cacc34a03df2733ac95a4a29e32812",
+    "experiments/EXP-20260910-002/metrics.json": "c19f4bc98f716fa3659d719bcd21cc1264aabf93da5d02b4c8a47b0c40550934"
+  },
+  "rerun_identical": true,
+  "prior_artifact_hashes": {
+    "data/validation/probability_validation_frame_candidate.csv": {
+      "expected": "7488b4ae04daf3db1c4a8cf471dd896a51039fbec05896ce7b4b410b72d934eb",
+      "observed": "7488b4ae04daf3db1c4a8cf471dd896a51039fbec05896ce7b4b410b72d934eb"
+    },
+    "data/validation/probability_validation_frame_origin_rows.csv": {
+      "expected": "c68a5757cff2b2769f23907bef61391c8877afcd56bc821da7f12127a3939de5",
+      "observed": "c68a5757cff2b2769f23907bef61391c8877afcd56bc821da7f12127a3939de5"
+    },
+    "data/validation/probability_validation_frame_flow.csv": {
+      "expected": "c8e449f5123817078996be47ce4c2935c80060b8dd546bd3e30af1b4fd75644c",
+      "observed": "c8e449f5123817078996be47ce4c2935c80060b8dd546bd3e30af1b4fd75644c"
+    },
+    "data/validation/probability_validation_sampling_design.csv": {
+      "expected": "dcd5fb832563026a61bc36eda3183ad5c4cacc34a03df2733ac95a4a29e32812",
+      "observed": "dcd5fb832563026a61bc36eda3183ad5c4cacc34a03df2733ac95a4a29e32812"
+    },
+    "experiments/EXP-20260910-001/assessment.md": {
+      "expected": "f5b797f56b196d4563d71fa780289696b5f2ed369217a2a42fe2e2d2433d8ad4",
+      "observed": "f5b797f56b196d4563d71fa780289696b5f2ed369217a2a42fe2e2d2433d8ad4"
+    },
+    "experiments/EXP-20260910-001/audit_attempt_1.json": {
+      "expected": "fe1e543c0ff5c714fe75c5ee5e018248245b5adfee321c16cfa937171c41ae1b",
+      "observed": "fe1e543c0ff5c714fe75c5ee5e018248245b5adfee321c16cfa937171c41ae1b"
+    },
+    "experiments/EXP-20260910-001/brief.md": {
+      "expected": "df6a97be3f5a7012fa9196efedaee2b51c4c39fa935936fbbda5eb770ff4294e",
+      "observed": "df6a97be3f5a7012fa9196efedaee2b51c4c39fa935936fbbda5eb770ff4294e"
+    },
+    "experiments/EXP-20260910-001/cache_recovery.json": {
+      "expected": "d81e39de0d56b0cfb65edcfa1f31e1807bc35b665dc6836558226fb725b10f34",
+      "observed": "d81e39de0d56b0cfb65edcfa1f31e1807bc35b665dc6836558226fb725b10f34"
+    },
+    "experiments/EXP-20260910-001/cache_recovery_attempt_2.json": {
+      "expected": "749523ac8c3d2f676ee812b2f74f524d2f1c0848a5030512bc6bb420eae5f208",
+      "observed": "749523ac8c3d2f676ee812b2f74f524d2f1c0848a5030512bc6bb420eae5f208"
+    },
+    "experiments/EXP-20260910-001/cache_recovery_attempt_3.json": {
+      "expected": "e44dc26884ff99e458becac099b3c449c915697a6bd024c15e8d570e6eecc146",
+      "observed": "e44dc26884ff99e458becac099b3c449c915697a6bd024c15e8d570e6eecc146"
+    },
+    "experiments/EXP-20260910-001/metrics.json": {
+      "expected": "c19f4bc98f716fa3659d719bcd21cc1264aabf93da5d02b4c8a47b0c40550934",
+      "observed": "c19f4bc98f716fa3659d719bcd21cc1264aabf93da5d02b4c8a47b0c40550934"
+    },
+    "experiments/EXP-20260910-001/recover_cache.py": {
+      "expected": "71ab936b79a4253b7164db8945fa4b8088c43c068e61c146b0f5828aa8d470bb",
+      "observed": "71ab936b79a4253b7164db8945fa4b8088c43c068e61c146b0f5828aa8d470bb"
+    },
+    "experiments/EXP-20260910-001/run_audit.py": {
+      "expected": "17b33ca0cd14dc5ee0fbb7ec0e4b600ca2d57497b0670eb6501d86d8f9e0b84f",
+      "observed": "17b33ca0cd14dc5ee0fbb7ec0e4b600ca2d57497b0670eb6501d86d8f9e0b84f"
+    },
+    "experiments/EXP-20260910-001/run_manifest.yaml": {
+      "expected": "46d09aaa2d6d2dd75c5c5d58b6486f139619801856d81f3919a0a62afdd1f327",
+      "observed": "46d09aaa2d6d2dd75c5c5d58b6486f139619801856d81f3919a0a62afdd1f327"
+    }
+  },
+  "prior_artifacts_unchanged": true,
+  "clean_reconstruction_hashes": {
+    "data/validation/probability_validation_geography_scope_crosswalk.csv": "7b7d04cee5968070fa1d67266507e6e05b3ba6977a3fb0a21d98d5ee169f51ab",
+    "data/validation/probability_validation_unresolved_log.csv": "82751a00e139ba502d2925db8dbb9a181fa883b1c96d2851112bcb74d54849ed",
+    "data/validation/probability_validation_source_manifest.csv": "79c3de7b327460db4d1c8a0ca4dc0d7c1f6c51efbe0a2b6086978a7a5e763098",
+    "data/validation/probability_validation_frame_candidate.csv": "7488b4ae04daf3db1c4a8cf471dd896a51039fbec05896ce7b4b410b72d934eb",
+    "data/validation/probability_validation_frame_origin_rows.csv": "c68a5757cff2b2769f23907bef61391c8877afcd56bc821da7f12127a3939de5",
+    "data/validation/probability_validation_frame_flow.csv": "c8e449f5123817078996be47ce4c2935c80060b8dd546bd3e30af1b4fd75644c",
+    "data/validation/probability_validation_sampling_design.csv": "dcd5fb832563026a61bc36eda3183ad5c4cacc34a03df2733ac95a4a29e32812",
+    "experiments/EXP-20260910-002/metrics.json": "c19f4bc98f716fa3659d719bcd21cc1264aabf93da5d02b4c8a47b0c40550934"
+  },
+  "clean_reconstruction_identical": true,
+  "all_passed": true,
+  "archive_manifest": "source_archive_attempt_2.json",
+  "finished_at": "2026-09-10T01:06:19.015463+00:00"
+}

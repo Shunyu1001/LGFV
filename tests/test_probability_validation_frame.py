@@ -344,13 +344,29 @@ class RegisteredInputIntegrityTests(unittest.TestCase):
             target["owner_level"] = "different_owner"
             with self.assertRaisesRegex(ValueError, "approved-record hash"):
                 validator.validate_registered_crosswalk(mutated)
-        for position in (0, len(manifest) - 1):
+        for position in (0, len(manifest) - 2, len(manifest) - 1):
             with self.subTest(position=position):
                 mutated = [dict(row) for row in manifest]
                 mutated[position]["sha256"] = "0" * 64
                 mutated[position]["source_text_sha256"] = "1" * 64
                 with self.assertRaises(ValueError):
                     validator.validate_registered_manifest(mutated)
+
+    def test_source_renewal_preserves_decisions_and_uses_focal_evidence(self):
+        current = read_csv("data/validation/probability_validation_geography_scope_crosswalk.csv")
+        before = self.validator.registered_rows(self.validator.CROSSWALK)
+        unit = "mv_bbc98d5aa00c"
+        row = next(row for row in current if row["validation_unit_id"] == unit)
+        previous = next(row for row in before if row["validation_unit_id"] == unit)
+        allowed = {f"{prefix}_{field}" for prefix in ("geography", "owner", "role") for field in ("document_id", "supporting_text")}
+        self.assertEqual({field for field in row if row[field] != previous[field]}, allowed)
+        for prefix in ("geography", "owner", "role"):
+            excerpt = row[f"{prefix}_supporting_text"]
+            self.assertIn(row["issuer_name"], excerpt)
+            self.assertIn("市属综合性投融资平台公司", excerpt)
+            self.assertNotIn("常用下载", excerpt)
+        self.assertIn("市国资委的决策部署及要求", row["owner_supporting_text"])
+        self.assertIn("地址：深圳市福田区福华一路大中华国际交易广场裙楼7楼", row["geography_supporting_text"])
 
     def test_all_origin_metadata_and_old_records_are_protected(self):
         candidates = read_csv("data/validation/probability_validation_frame_candidate.csv")

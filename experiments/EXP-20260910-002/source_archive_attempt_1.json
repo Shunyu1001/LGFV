@@ -1,0 +1,1572 @@
+{
+  "directory": "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources",
+  "cited_sources": 159,
+  "verified_cache_files": [
+    {
+      "document_id": "doc_exp9_20260704_0183_005",
+      "filename": "doc_exp9_20260704_0183_005.pdf",
+      "sha256": "83d35cba5a6adb2baf103ff4bb23e53f72cb7cd8f0229e44a2da3773a1842276"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0183_005",
+      "filename": "doc_exp9_20260704_0183_005.txt",
+      "sha256": "c2fc8f3a700f2baa7499a0161717119f86c91e6aa98d13a5d2d9a9ff971e5610"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0183_008",
+      "filename": "doc_exp9_20260704_0183_008.pdf",
+      "sha256": "404e026b2a1202b1ce12ffcfdda6dcda7c1c208085675c846a3fcdeb13cf8f23"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0183_008",
+      "filename": "doc_exp9_20260704_0183_008.txt",
+      "sha256": "692d0bd88e6aa22ae8ef9d50865292eca7fbecbba5c50e5193d9d6b94b535f64"
+    },
+    {
+      "document_id": "doc_sch_20260630_0099_006",
+      "filename": "doc_sch_20260630_0099_006.pdf",
+      "sha256": "e34c869ed9808d0190b0fa324f70ee4437c1473a2c473eae6c9b060f5b900344"
+    },
+    {
+      "document_id": "doc_sch_20260630_0099_006",
+      "filename": "doc_sch_20260630_0099_006.txt",
+      "sha256": "ff65c0c323d71de7648e28f093f2f4e4a480020dee2412163001be8e50dfefd7"
+    },
+    {
+      "document_id": "doc_sch_20260630_0105_003",
+      "filename": "doc_sch_20260630_0105_003.pdf",
+      "sha256": "d320662556ff810b431fe6a5a012cf42435769de3a3df96e22f087019c5a96f9"
+    },
+    {
+      "document_id": "doc_sch_20260630_0105_003",
+      "filename": "doc_sch_20260630_0105_003.txt",
+      "sha256": "17f725db161fb7f3ca0d53f8a0d1386292e613e77fe1349426fd2d9f87f1cc79"
+    },
+    {
+      "document_id": "doc_sch_20260630_0086_004",
+      "filename": "doc_sch_20260630_0086_004.pdf",
+      "sha256": "b0b3406f567cf1d49334a9662064d87518066d9d7e7ae2ef890172ca22719553"
+    },
+    {
+      "document_id": "doc_sch_20260630_0086_004",
+      "filename": "doc_sch_20260630_0086_004.txt",
+      "sha256": "416f97df6fe4aff73d19f71c47dc20173ff85da26e7e066c8a2d8c46e1636997"
+    },
+    {
+      "document_id": "doc_sch_20260630_0109_008",
+      "filename": "doc_sch_20260630_0109_008.pdf",
+      "sha256": "fe9f8ceac87bafff60b6e5e7fa83c8222812e64fa52f750d147969883a2f96d0"
+    },
+    {
+      "document_id": "doc_sch_20260630_0109_008",
+      "filename": "doc_sch_20260630_0109_008.txt",
+      "sha256": "03d92f58177be108b685173c46d844a11b25c941f1f48d4b10749cc9bcbc6a6d"
+    },
+    {
+      "document_id": "doc_sch_20260630_0161_008",
+      "filename": "doc_sch_20260630_0161_008.pdf",
+      "sha256": "cfbf7efdc340fcc805bb810594719cf89f36aacfa9d993c206c03e1cbe49b779"
+    },
+    {
+      "document_id": "doc_sch_20260630_0161_008",
+      "filename": "doc_sch_20260630_0161_008.txt",
+      "sha256": "3aca4ff14c9795d550a3917be7de31f07d8af7b9832c602485886c488fc4a631"
+    },
+    {
+      "document_id": "doc_sch_20260630_0156_001",
+      "filename": "doc_sch_20260630_0156_001.pdf",
+      "sha256": "f661dd19f225daf98dbf45a4599f0d1ee6c4d95ae7555b58b83c74cf2c1181a0"
+    },
+    {
+      "document_id": "doc_sch_20260630_0156_001",
+      "filename": "doc_sch_20260630_0156_001.txt",
+      "sha256": "6c3399da23d2534a821d2e25fa6e23c5aa5daa28d8c4fc63c76a723d8dcfaa5e"
+    },
+    {
+      "document_id": "doc_sch_20260630_0061_008",
+      "filename": "doc_sch_20260630_0061_008.pdf",
+      "sha256": "64654f193c03e3596f7813704b46de020e373c2db234dcca1558654def0337eb"
+    },
+    {
+      "document_id": "doc_sch_20260630_0061_008",
+      "filename": "doc_sch_20260630_0061_008.txt",
+      "sha256": "2f97cdd3a461dabb193b12f203674c5d86614d21da7979777e25c380c4d3a8c8"
+    },
+    {
+      "document_id": "web_chinamoney_linyi_2026_rating",
+      "filename": "web_chinamoney_linyi_2026_rating.pdf",
+      "sha256": "94c6b0ee9da293a80679c8b7a56a93c067049c5f2bee7dc45b603da5e7a0dbff"
+    },
+    {
+      "document_id": "web_chinamoney_linyi_2026_rating",
+      "filename": "web_chinamoney_linyi_2026_rating.txt",
+      "sha256": "70f3f98a57dd4b9bf3f0de143381737107fe2cf701d701378403977e8675f1f6"
+    },
+    {
+      "document_id": "web_linyi_sasac_profile",
+      "filename": "web_linyi_sasac_profile.html",
+      "sha256": "cfd2850bb241b6225991c54fc9bdc3e44d4c94025debe90095803fa4d8070023"
+    },
+    {
+      "document_id": "doc_sch_20260630_0078_004",
+      "filename": "doc_sch_20260630_0078_004.pdf",
+      "sha256": "a9f9812d0e5646b820783729cee3c4139d1e95417e674ad95547add7c7bcf9fd"
+    },
+    {
+      "document_id": "doc_sch_20260630_0078_004",
+      "filename": "doc_sch_20260630_0078_004.txt",
+      "sha256": "01cf49ee595e262c652291c65c70f1c418119031d2f75900e0a974dc229bbb7a"
+    },
+    {
+      "document_id": "doc_sch_20260630_0127_002",
+      "filename": "doc_sch_20260630_0127_002.pdf",
+      "sha256": "c31cbeb5063ee7df0d1513161a435a51a21a476225ad3c0805ffb9e2bc1ca3b1"
+    },
+    {
+      "document_id": "doc_sch_20260630_0127_002",
+      "filename": "doc_sch_20260630_0127_002.txt",
+      "sha256": "5e96c84f946b4053b3308b562bf8ee2448ddad4b7ddc1b8b042e5668023afce7"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0152_003",
+      "filename": "doc_exp9_20260704_0152_003.pdf",
+      "sha256": "17b1568adae59453ac0038b83aa8285823c283a4e067ba24f4b427b657ac35ad"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0152_003",
+      "filename": "doc_exp9_20260704_0152_003.txt",
+      "sha256": "91aabdf7d0451ac20f1aee9617e65d3f29fb5df51301b1742953ff7d3a95e331"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0152_009",
+      "filename": "doc_exp9_20260704_0152_009.pdf",
+      "sha256": "9935cf6f180db1fc85b31a816ce68292b75cb554cbfc0ccbe800c4fbf8d2dfe5"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0152_009",
+      "filename": "doc_exp9_20260704_0152_009.txt",
+      "sha256": "42c5b52b41ac3389a4a8f2f7297e6b0cdf6abf4ddeb4ea52ef45eef06e8dfda0"
+    },
+    {
+      "document_id": "doc_exp4_20260703_0013_005",
+      "filename": "doc_exp4_20260703_0013_005.pdf",
+      "sha256": "fac8a3dfef8c54f6b6cf12b0010e5b8cc879f4017e5d176795e56ef55fe4e140"
+    },
+    {
+      "document_id": "doc_exp4_20260703_0013_005",
+      "filename": "doc_exp4_20260703_0013_005.txt",
+      "sha256": "5ef6e6bc685f23c0c3d18abd9731b9c2971bd58ef8473d01d6ac6be06749d5fd"
+    },
+    {
+      "document_id": "doc_sch_20260630_0107_006",
+      "filename": "doc_sch_20260630_0107_006.pdf",
+      "sha256": "cd1574cfb68c3a3806e205eb3f8ab2a2a37b8dfaf0f43622ab13b674e6b264f6"
+    },
+    {
+      "document_id": "doc_sch_20260630_0107_006",
+      "filename": "doc_sch_20260630_0107_006.txt",
+      "sha256": "e13c6d856d6215a84f18a3a49bed62af76f2998115adf2ee6437fd0d57639c9a"
+    },
+    {
+      "document_id": "doc_gz_lps_kaitou_2016_bond_prospectus",
+      "filename": "doc_gz_lps_kaitou_2016_bond_prospectus.pdf",
+      "sha256": "b12c643c177eee93e12003a0aac7b1acff0bb147d3d8fa1ea86fbf4687877ee7"
+    },
+    {
+      "document_id": "doc_gz_lps_kaitou_2016_bond_prospectus",
+      "filename": "doc_gz_lps_kaitou_2016_bond_prospectus.txt",
+      "sha256": "4f745dfd617ec699b0901bbf007d0616ff4be5dfeb88f77b4c7c70bc6b7b4d84"
+    },
+    {
+      "document_id": "doc_exp2_20260703_0022_003",
+      "filename": "doc_exp2_20260703_0022_003.pdf",
+      "sha256": "2c0f7f94f744c70ba61c5d89dd96ccef6dde2c81646b239d0556bc610e0783f8"
+    },
+    {
+      "document_id": "doc_exp2_20260703_0022_003",
+      "filename": "doc_exp2_20260703_0022_003.txt",
+      "sha256": "5d999581420ab7c35de8c2a622a31625cc9c4d26446600488b60c07597a331a6"
+    },
+    {
+      "document_id": "doc_sch_20260630_0150_006",
+      "filename": "doc_sch_20260630_0150_006.pdf",
+      "sha256": "136990b171f0daa04b5f8e02907c88316856fb13ca63ecabda47d0662c212f84"
+    },
+    {
+      "document_id": "doc_sch_20260630_0150_006",
+      "filename": "doc_sch_20260630_0150_006.txt",
+      "sha256": "812f5154d8990e0a4af9c8e71aa99f2a7fda2e87bd05898a102511bb97224059"
+    },
+    {
+      "document_id": "doc_sch_20260630_0170_009",
+      "filename": "doc_sch_20260630_0170_009.pdf",
+      "sha256": "895c2e50de0238744043c441010ab72723e4ea30cfd87916634d2e208422acbc"
+    },
+    {
+      "document_id": "doc_sch_20260630_0170_009",
+      "filename": "doc_sch_20260630_0170_009.txt",
+      "sha256": "d6bec15539a715237e0c90d5f941495b1016890dcbfd35e194077d8755fb970d"
+    },
+    {
+      "document_id": "doc_exp_20260703_0015_008",
+      "filename": "doc_exp_20260703_0015_008.pdf",
+      "sha256": "59e77a655181b5433a668efe0acccb0de27b0302ee66879cc98fd8b35e8135ec"
+    },
+    {
+      "document_id": "doc_exp_20260703_0015_008",
+      "filename": "doc_exp_20260703_0015_008.txt",
+      "sha256": "7b00ab349f50bd201592b52535b5965f5ad327a73ed2f13449f36d1f0896b5a9"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0182_004",
+      "filename": "doc_exp9_20260704_0182_004.pdf",
+      "sha256": "ab3f44d788a55bc95cd524962544a6a80b7b8cc9b34c7e7025c41420a28d62d2"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0182_004",
+      "filename": "doc_exp9_20260704_0182_004.txt",
+      "sha256": "7c8f22e2e4af21de7c5bc3afb8ba9329f3f288fa276a903420cbbad4464f5df2"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0193_007",
+      "filename": "doc_exp9_20260704_0193_007.pdf",
+      "sha256": "740b4a509b05a1e5fd21aa1a16413e7cb3a07acfca1ba7fbb1dc9f7b26b4ffbe"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0193_007",
+      "filename": "doc_exp9_20260704_0193_007.txt",
+      "sha256": "863c80d78d22a98607e000f3a0d6c20a2756ffa2c7dcf4a0a36b60f6d945bc95"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0117_006",
+      "filename": "doc_exp10_20260704_0117_006.pdf",
+      "sha256": "52882982089607d85ab2cfc8c254bdacb351e910847bcbc1dd7d5ce0e3611e1e"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0117_006",
+      "filename": "doc_exp10_20260704_0117_006.txt",
+      "sha256": "027d92a7d8e0c06dfb14e7174117666b54ce059edddf9ede014a0974175c8f7e"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0247_001",
+      "filename": "doc_exp9_20260704_0247_001.pdf",
+      "sha256": "83058185f3257abc88120697f4c7b002945e310a43b700103ce2021b389bf95c"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0247_001",
+      "filename": "doc_exp9_20260704_0247_001.txt",
+      "sha256": "377dcc5d19985fea169401af7bb49da12ef3c8787729dfe4b522a7a478cf73a0"
+    },
+    {
+      "document_id": "doc_exp2_20260703_0002_009",
+      "filename": "doc_exp2_20260703_0002_009.pdf",
+      "sha256": "82cbf48e65d152c4c4d40a9c41bc3ef7813d558b44327bb8747df6c71cd09a04"
+    },
+    {
+      "document_id": "doc_exp2_20260703_0002_009",
+      "filename": "doc_exp2_20260703_0002_009.txt",
+      "sha256": "6164d18f0cf11d3ceb0866b28c44a3fa2109c482cda23455333f0ba9c09ba56a"
+    },
+    {
+      "document_id": "doc_sch_20260630_0144_005",
+      "filename": "doc_sch_20260630_0144_005.pdf",
+      "sha256": "baedbbd37a9ea34c2c8bfb723ff3dac47e33eece70ef8cd8ab9c281f5397cc25"
+    },
+    {
+      "document_id": "doc_sch_20260630_0144_005",
+      "filename": "doc_sch_20260630_0144_005.txt",
+      "sha256": "e6d19cfb97e499d1aeb12b816a4f9d2cc6d5f56b711e39e3305b452ba69afac9"
+    },
+    {
+      "document_id": "doc_sch_20260630_0075_003",
+      "filename": "doc_sch_20260630_0075_003.pdf",
+      "sha256": "04901337f52cf7eaa6487b5950a234542bb39d0de1fbcf57180e9a52c6912791"
+    },
+    {
+      "document_id": "doc_sch_20260630_0075_003",
+      "filename": "doc_sch_20260630_0075_003.txt",
+      "sha256": "e982f8e4e7e0cea3de8bf3377df528ed68a06d80d4a8fcd86d459125a1c8cb82"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0037_007",
+      "filename": "doc_exp8_20260703_0037_007.pdf",
+      "sha256": "b5e36f7da218a0cff1a5e9e8a0301976e8db2c2dd995ecfbc1f1ac3e8f02cbe5"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0037_007",
+      "filename": "doc_exp8_20260703_0037_007.txt",
+      "sha256": "a9715ad3518046227c921af7f31e3cac910b31ebb59fb8edb9a7b92f9d6ed36a"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0042_004",
+      "filename": "doc_exp8_20260703_0042_004.pdf",
+      "sha256": "63ea5b4ccd3145323cbfc156851c647337a1d0885dc0001cfd0db4fc950e45ed"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0042_004",
+      "filename": "doc_exp8_20260703_0042_004.txt",
+      "sha256": "0bc1ee2d18c17c15674c7f1e2f0f57784a02d943f09c4e0118eed6b50e527061"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0025_007",
+      "filename": "doc_exp5_20260703_0025_007.pdf",
+      "sha256": "4bf362bba85d944068c272f502cfbde631462746c83ea9777977a75e690ae50a"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0025_007",
+      "filename": "doc_exp5_20260703_0025_007.txt",
+      "sha256": "f7d48bb447880b20bc1d6ecfeeb3cb0b168cee698c69812ddfd3f8c47484202e"
+    },
+    {
+      "document_id": "doc_sch_20260630_0160_003",
+      "filename": "doc_sch_20260630_0160_003.pdf",
+      "sha256": "8e413a9b55e40b63d19a8f61e743ff2e1901afbfdb04ee140319163061ead961"
+    },
+    {
+      "document_id": "doc_sch_20260630_0160_003",
+      "filename": "doc_sch_20260630_0160_003.txt",
+      "sha256": "60bb9d62c302cd371d26d95f0687bfc550cefff3d00c5dc85f7c4d05c37b8b6c"
+    },
+    {
+      "document_id": "doc_sch_20260630_0074_002",
+      "filename": "doc_sch_20260630_0074_002.pdf",
+      "sha256": "26b2912d58e1d2788b264bd3cfdabcc70c3b991ccda368cdc67e34a836ad970f"
+    },
+    {
+      "document_id": "doc_sch_20260630_0074_002",
+      "filename": "doc_sch_20260630_0074_002.txt",
+      "sha256": "4999272d894869b681553b151cffcb7575599bdbc7195fd3a9801482d601e0ec"
+    },
+    {
+      "document_id": "doc_sch_20260630_0089_002",
+      "filename": "doc_sch_20260630_0089_002.pdf",
+      "sha256": "b4a466c33cd94db2908f9b0ed60bc7b3163dbc7390a90e38329cbad7de9d76db"
+    },
+    {
+      "document_id": "doc_sch_20260630_0089_002",
+      "filename": "doc_sch_20260630_0089_002.txt",
+      "sha256": "99fd093361cd8af0f2735dff50c764b033fc1b6a55349d4f4655a45403611b1c"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0290_001",
+      "filename": "doc_exp9_20260704_0290_001.pdf",
+      "sha256": "46c9bdafb10ca703df348b9dc43327601d5bdf741bae7ef9177dd4d49f6503b1"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0290_001",
+      "filename": "doc_exp9_20260704_0290_001.txt",
+      "sha256": "2c74fe9fa20b682ef3b208aff5b77b60f6be8330bb53d78faaafdbf4696d292c"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0290_002",
+      "filename": "doc_exp9_20260704_0290_002.pdf",
+      "sha256": "61cd0e4e83b0febf98473f15cd970943cc8c1428efe03f91524e3a2e9f9556e2"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0290_002",
+      "filename": "doc_exp9_20260704_0290_002.txt",
+      "sha256": "a09721409c63dd8545084ddc6a49481004bce14095f5889e72d99f337adcf20a"
+    },
+    {
+      "document_id": "doc_sch_20260630_0004_011",
+      "filename": "doc_sch_20260630_0004_011.pdf",
+      "sha256": "7e3837ee1fbbbb69b24567142c0aec39cfa4ca2b58032905157fb9fb70ca0aa3"
+    },
+    {
+      "document_id": "doc_sch_20260630_0004_011",
+      "filename": "doc_sch_20260630_0004_011.txt",
+      "sha256": "e152f13b749f187d4e327206cc0e6000a5df7ea5ea3921d9184380d23847a663"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0004_008",
+      "filename": "doc_exp5_20260703_0004_008.pdf",
+      "sha256": "604ff4688150b0892ca4464f04e7bace3117dbfc198221cecc9c18f187ae799b"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0004_008",
+      "filename": "doc_exp5_20260703_0004_008.txt",
+      "sha256": "f14c0054bf9c40581011443656b6d506ea18f91ba1b919343ccbc23f20029951"
+    },
+    {
+      "document_id": "doc_sch_20260630_0125_001",
+      "filename": "doc_sch_20260630_0125_001.pdf",
+      "sha256": "eef4da6eabbe586c4a437e652e02875316f39b82685833849e5315bf4c4b8e9c"
+    },
+    {
+      "document_id": "doc_sch_20260630_0125_001",
+      "filename": "doc_sch_20260630_0125_001.txt",
+      "sha256": "283d57bbb334957d76371565605267077e494587ab28a32cc9ee48aa6e1e9c43"
+    },
+    {
+      "document_id": "doc_sch_20260630_0125_003",
+      "filename": "doc_sch_20260630_0125_003.pdf",
+      "sha256": "c238b5599fe16470ccdeb9d4720440b120938ec1709af03152f502dd741ea2c1"
+    },
+    {
+      "document_id": "doc_sch_20260630_0125_003",
+      "filename": "doc_sch_20260630_0125_003.txt",
+      "sha256": "db2810f71f557e3047066e347265af55a6b9a0f4dd8a19965431e9b60359bdf6"
+    },
+    {
+      "document_id": "web_chinamoney_jinluling_2025_rating",
+      "filename": "web_chinamoney_jinluling_2025_rating.pdf",
+      "sha256": "f0075460b7c6ec3adfe838aa9cf0d6d27a6edd93921397687f0663a5113206f0"
+    },
+    {
+      "document_id": "web_chinamoney_jinluling_2025_rating",
+      "filename": "web_chinamoney_jinluling_2025_rating.txt",
+      "sha256": "ba9b36b10c58d7ecba1aad539c55214bc8f595aef67596805340564dd66689a0"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0268_001",
+      "filename": "doc_exp10_20260704_0268_001.pdf",
+      "sha256": "661131227eceba7fb047ad2ce43c7ebc748382b03dd07e3fa24008584e4fc294"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0268_001",
+      "filename": "doc_exp10_20260704_0268_001.txt",
+      "sha256": "36eb19009a7d15cbc6fbe9bb9bdc646a0ddaa04e3c15dd1cf61bca35394661f4"
+    },
+    {
+      "document_id": "doc_sch_20260630_0001_006",
+      "filename": "doc_sch_20260630_0001_006.pdf",
+      "sha256": "30e6d80c9ecbc87fd3f6adf94baa6e7130b6c2a07d67f2f9b1155ee3020b9e9e"
+    },
+    {
+      "document_id": "doc_sch_20260630_0001_006",
+      "filename": "doc_sch_20260630_0001_006.txt",
+      "sha256": "978cc0e6cae18852380722f3c7fcd3e7cb41e7be56236d9dbd252215ca747e02"
+    },
+    {
+      "document_id": "doc_sch_20260630_0001_007",
+      "filename": "doc_sch_20260630_0001_007.pdf",
+      "sha256": "2b4e1bd91a759c291c16203124b4be3fa32bdd0679349328663400fbfc627979"
+    },
+    {
+      "document_id": "doc_sch_20260630_0001_007",
+      "filename": "doc_sch_20260630_0001_007.txt",
+      "sha256": "95d88d4c4df93b3d316735eb5580fedc3f91e9c390f9c72653cbc473a320c888"
+    },
+    {
+      "document_id": "doc_sch_20260630_0134_009",
+      "filename": "doc_sch_20260630_0134_009.pdf",
+      "sha256": "43b4c2187f89bb4e2c9c0dd8d81517c5340d4c53c77becc69ed1e55c81cdea1a"
+    },
+    {
+      "document_id": "doc_sch_20260630_0134_009",
+      "filename": "doc_sch_20260630_0134_009.txt",
+      "sha256": "1b6aaeef3d4ebfa0038c78e5c68ffb64ea70fd7fc9b23b5a83ec75c119924447"
+    },
+    {
+      "document_id": "doc_exp_20260703_0005_010",
+      "filename": "doc_exp_20260703_0005_010.pdf",
+      "sha256": "ea7c247fc5ec74a1b07f56148b8181448d7fb46eaec026385f15db42a40b31b0"
+    },
+    {
+      "document_id": "doc_exp_20260703_0005_010",
+      "filename": "doc_exp_20260703_0005_010.txt",
+      "sha256": "d7d785180c87acc767569a98a9ddd1bde14f1aa19d9fc1cdb293936d3372ce0a"
+    },
+    {
+      "document_id": "doc_exp4_20260703_0027_010",
+      "filename": "doc_exp4_20260703_0027_010.pdf",
+      "sha256": "8a0083f15350e0d253fda033295bd16f6a1780db68a508f223feafbed1528ee9"
+    },
+    {
+      "document_id": "doc_exp4_20260703_0027_010",
+      "filename": "doc_exp4_20260703_0027_010.txt",
+      "sha256": "b9ec42b95b10af3df16f880f704faabcc6577ba7de5dae02ac8dc2e92721d29f"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0004_004",
+      "filename": "doc_exp8_20260703_0004_004.pdf",
+      "sha256": "8d2eeb3497ed87dc017346d8074870600d2a83ca5bd222c8a94791042394764f"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0004_004",
+      "filename": "doc_exp8_20260703_0004_004.txt",
+      "sha256": "4ce6dc583ed3d928e6c9bbcf224eae4079c42d0981e569931e5c5b6ff7bc9722"
+    },
+    {
+      "document_id": "doc_sch_20260630_0139_005",
+      "filename": "doc_sch_20260630_0139_005.pdf",
+      "sha256": "26239d30417e1efab9b48cbe722ccb45b882e1f8e291f8eb77c86203ca5db27a"
+    },
+    {
+      "document_id": "doc_sch_20260630_0139_005",
+      "filename": "doc_sch_20260630_0139_005.txt",
+      "sha256": "f4858c28a0e14f2e1652d8d321e3a18c6c5b23878415d1f1e24b1d4606e6f4c7"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0035_005",
+      "filename": "doc_exp9_20260704_0035_005.pdf",
+      "sha256": "96460b1facf59d6fc57d35efa85bae59839247d5bbd3ca25a01833bb24d551e2"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0035_005",
+      "filename": "doc_exp9_20260704_0035_005.txt",
+      "sha256": "38fb1a177ca720c428d3dacd8d184532198a61fe60f92cfa1068790bdd521ac5"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0007_004",
+      "filename": "doc_exp5_20260703_0007_004.pdf",
+      "sha256": "c0a31c404c54675d2af5722fe998a7cef85cb1950265489acd3f09e75a25c4de"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0007_004",
+      "filename": "doc_exp5_20260703_0007_004.txt",
+      "sha256": "32dd9a3619926ba409dbd769ab7520d9a3416091a452be66e1cb4df4f5c0d579"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0163_006",
+      "filename": "doc_exp8_20260703_0163_006.pdf",
+      "sha256": "9fb0cc0d7cdc2e2f52178e757e48413c61f240572014726b39d3c873c325e5d7"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0163_006",
+      "filename": "doc_exp8_20260703_0163_006.txt",
+      "sha256": "34150d396af9d2f40a716889a09b14f1d959b6efa5ff54d76abe938195afc124"
+    },
+    {
+      "document_id": "doc_exp2_20260703_0021_005",
+      "filename": "doc_exp2_20260703_0021_005.pdf",
+      "sha256": "05e58b4742b29ac5cbb1fc91a6d5421ef1a7596c87facaa142dc588681d85f60"
+    },
+    {
+      "document_id": "doc_exp2_20260703_0021_005",
+      "filename": "doc_exp2_20260703_0021_005.txt",
+      "sha256": "2456d745729e834f68847e3c9dbd9f4f65fd383b5ebfa59cdc1aeacda30767a3"
+    },
+    {
+      "document_id": "web_hkex_anhui_transport_controller",
+      "filename": "web_hkex_anhui_transport_controller.pdf",
+      "sha256": "66cdbd9bffce3c52c1e183aca19138dd6ec1367b8ad165c9309cc0fe02532d9f"
+    },
+    {
+      "document_id": "web_hkex_anhui_transport_controller",
+      "filename": "web_hkex_anhui_transport_controller.txt",
+      "sha256": "9741ce786e196c24937a76f4bded4097ff83e35bf0a9eb6f9d3483d305fe1925"
+    },
+    {
+      "document_id": "doc_sch_20260630_0173_007",
+      "filename": "doc_sch_20260630_0173_007.pdf",
+      "sha256": "b4376dbc0f85c270951969395190001db2e338d70e4cd4708426bcf381f87547"
+    },
+    {
+      "document_id": "doc_sch_20260630_0173_007",
+      "filename": "doc_sch_20260630_0173_007.txt",
+      "sha256": "166a14582c9c7ee3c6a475bb67500bec4cfe9acc2af8351956a262bd51e8f09e"
+    },
+    {
+      "document_id": "doc_sch_20260630_0071_008",
+      "filename": "doc_sch_20260630_0071_008.pdf",
+      "sha256": "0aa61222172228ed4bab3ea5cec2015971c997cc62a8065dc6c949b59e269679"
+    },
+    {
+      "document_id": "doc_sch_20260630_0071_008",
+      "filename": "doc_sch_20260630_0071_008.txt",
+      "sha256": "0c109128da5dc300da49adf2d9e6ab01772f100c876daeb892dba935b2922c64"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0001_009",
+      "filename": "doc_exp5_20260703_0001_009.pdf",
+      "sha256": "5748b5d90ce298cc9ae0460209cd2593c2d2ad09d16c6a5399df94b1dc0c7858"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0001_009",
+      "filename": "doc_exp5_20260703_0001_009.txt",
+      "sha256": "e4cb18b431cc24527c674d428d4407ca6136206be69c0d134a29caa49229f73d"
+    },
+    {
+      "document_id": "doc_sch_20260630_0012_012",
+      "filename": "doc_sch_20260630_0012_012.pdf",
+      "sha256": "d2e572e21f4f1310de09089f4d7fa48624e8c62337274c7ed75f4bee248d461d"
+    },
+    {
+      "document_id": "doc_sch_20260630_0012_012",
+      "filename": "doc_sch_20260630_0012_012.txt",
+      "sha256": "eed431545744185f9b5f3529e52095c6a329e52274878598f4c2069b327e292b"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0236_003",
+      "filename": "doc_exp10_20260704_0236_003.pdf",
+      "sha256": "cde66d6ba937a1b51b876b69e5aaf3ec083ec561e2172702670b19383e8e7008"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0236_003",
+      "filename": "doc_exp10_20260704_0236_003.txt",
+      "sha256": "9f91ad938944f14168a8cfd35927aba1036b8ddc9c4a1dd0a849c160ea6d0ab1"
+    },
+    {
+      "document_id": "doc_sch_20260630_0062_002",
+      "filename": "doc_sch_20260630_0062_002.pdf",
+      "sha256": "8611077808624a8a7b1dcf762ab2576220d9a991d81e1cb52c5c192f50d2d7a0"
+    },
+    {
+      "document_id": "doc_sch_20260630_0062_002",
+      "filename": "doc_sch_20260630_0062_002.txt",
+      "sha256": "0e96169364f300d8fa836dfca4959aa73d8aef038e1e66f9378fba48d6a47db7"
+    },
+    {
+      "document_id": "doc_sch_20260630_0101_008",
+      "filename": "doc_sch_20260630_0101_008.pdf",
+      "sha256": "b8b829c001a67b31daf7a84e9182ca64476f0af8d3db53cfc6b5bf73bee8f0e6"
+    },
+    {
+      "document_id": "doc_sch_20260630_0101_008",
+      "filename": "doc_sch_20260630_0101_008.txt",
+      "sha256": "ef4a1a43ca6dad96f3ef1f237e43af7b9f1b7553f2fae58a41be9c630d616e2f"
+    },
+    {
+      "document_id": "web_sse_shanxi_construction_2025_annual",
+      "filename": "web_sse_shanxi_construction_2025_annual.pdf",
+      "sha256": "4d2a7bbbad9b227aaeb6e340462642c61a42de99151c9dc25eb5742e824ce6e6"
+    },
+    {
+      "document_id": "web_sse_shanxi_construction_2025_annual",
+      "filename": "web_sse_shanxi_construction_2025_annual.txt",
+      "sha256": "7da5c5e1407666e735ee59c7d67fe1944171f61f86297cb4c1df8b0ad7a8ab2f"
+    },
+    {
+      "document_id": "doc_sch_20260630_0030_005",
+      "filename": "doc_sch_20260630_0030_005.pdf",
+      "sha256": "a0d5609f4db8df2cff51302b48210feee46293fc910bfbee8efd666d511d7973"
+    },
+    {
+      "document_id": "doc_sch_20260630_0030_005",
+      "filename": "doc_sch_20260630_0030_005.txt",
+      "sha256": "77089d1d9f608a0fb9ef81bd7ddb2caceec93529ce35d112f59f2b8203fb51f5"
+    },
+    {
+      "document_id": "doc_sch_20260630_0030_010",
+      "filename": "doc_sch_20260630_0030_010.pdf",
+      "sha256": "5490b792fc24f9022d6d51eea5a0e01263a9096d9cb9b2d25b93f416ba3c282b"
+    },
+    {
+      "document_id": "doc_sch_20260630_0030_010",
+      "filename": "doc_sch_20260630_0030_010.txt",
+      "sha256": "72dcf3b7e790e430a74b8493552e984a3ef6388153551283fb46a1b54048dcc6"
+    },
+    {
+      "document_id": "doc_exp3_20260703_0018_001",
+      "filename": "doc_exp3_20260703_0018_001.pdf",
+      "sha256": "951c30583a20b2ac7b8287f20ae424d16a3751c9237091ef7dab9e83c1aaa593"
+    },
+    {
+      "document_id": "doc_exp3_20260703_0018_001",
+      "filename": "doc_exp3_20260703_0018_001.txt",
+      "sha256": "0db5c4ba308411c55e439a81779969d0a5b9b36f0a3ffea7a5cbbc4f58c6614c"
+    },
+    {
+      "document_id": "doc_sch_20260630_0065_001",
+      "filename": "doc_sch_20260630_0065_001.pdf",
+      "sha256": "136623d15124f7a739a19790b0f7c605cef49f8efa971a47ac5fb4deb6093986"
+    },
+    {
+      "document_id": "doc_sch_20260630_0065_001",
+      "filename": "doc_sch_20260630_0065_001.txt",
+      "sha256": "1f61152de0385915b8e6ae163031a606bb93c926a5654f9ac6e47a980d0d53ff"
+    },
+    {
+      "document_id": "doc_sch_20260630_0065_004",
+      "filename": "doc_sch_20260630_0065_004.pdf",
+      "sha256": "9d3a2b0696f346dd3886b4845072d63147cd47e7cf8a9d72af32b2b7a8df7fc6"
+    },
+    {
+      "document_id": "doc_sch_20260630_0065_004",
+      "filename": "doc_sch_20260630_0065_004.txt",
+      "sha256": "cbd563651938bf152cbd5612910dccc4c6e91fdb12c8435c85fd9db636df5922"
+    },
+    {
+      "document_id": "doc_exp_20260703_0002_005",
+      "filename": "doc_exp_20260703_0002_005.pdf",
+      "sha256": "44f58c3f1c942e815e1176ea3bc3ffbcba1860d2915759b05ef82c77bb821dcf"
+    },
+    {
+      "document_id": "doc_exp_20260703_0002_005",
+      "filename": "doc_exp_20260703_0002_005.txt",
+      "sha256": "28c277ea94170a8d5482335879dd58f548aa56dc76e14f49627b58bd8034427b"
+    },
+    {
+      "document_id": "doc_exp_20260703_0002_006",
+      "filename": "doc_exp_20260703_0002_006.pdf",
+      "sha256": "1338fd32a52d510e29525fa90ee45304810efb16b8a21d1f2acd7fa975306e8a"
+    },
+    {
+      "document_id": "doc_exp_20260703_0002_006",
+      "filename": "doc_exp_20260703_0002_006.txt",
+      "sha256": "4d45f1fae6eaa41beccf5a401e22e18caba9237a0df602f4c7f3f9350694be8a"
+    },
+    {
+      "document_id": "web_gz_gov_guangzhou_transport_profile",
+      "filename": "web_gz_gov_guangzhou_transport_profile.html",
+      "sha256": "6a85f49f9ff52ce1ddc3da4156653abaef9be7442da850be51842bca85668024"
+    },
+    {
+      "document_id": "doc_exp_20260703_0021_003",
+      "filename": "doc_exp_20260703_0021_003.pdf",
+      "sha256": "4cd97f5189d0b913ae0ecca2d5f1aa5c713524024041700ac75d766f5761e276"
+    },
+    {
+      "document_id": "doc_exp_20260703_0021_003",
+      "filename": "doc_exp_20260703_0021_003.txt",
+      "sha256": "3b66c2b31b14eddfe095485a0675647b9132367dd68c1927e1feda3c184b4d02"
+    },
+    {
+      "document_id": "doc_exp_20260703_0021_005",
+      "filename": "doc_exp_20260703_0021_005.pdf",
+      "sha256": "6c848983281603952405ab21d8ac85cf858a9cee7996086bda7c19668d3a511e"
+    },
+    {
+      "document_id": "doc_exp_20260703_0021_005",
+      "filename": "doc_exp_20260703_0021_005.txt",
+      "sha256": "fe7a65805b3f6b7829913320ca6e1899de7a6d6520ee0b303ad4e6ad0c692bb1"
+    },
+    {
+      "document_id": "web_gz_gov_guangzhou_industry_profile",
+      "filename": "web_gz_gov_guangzhou_industry_profile.html",
+      "sha256": "3cd49cbd145440c18f9a7137fdc81fce5233b912918d2ed40c27b86d51431cb3"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0084_002",
+      "filename": "doc_exp9_20260704_0084_002.pdf",
+      "sha256": "666549eb9691906ce58ad91c45de19bce70331d3b407aa8e257077d9d1a4757b"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0084_002",
+      "filename": "doc_exp9_20260704_0084_002.txt",
+      "sha256": "025f03dfdc69d3ecd1c7bd25940f8c270ab30d35f09c161dee6412d328afb873"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0084_005",
+      "filename": "doc_exp9_20260704_0084_005.pdf",
+      "sha256": "5526796c2a91db315749159826bd210af1acb8f60cd58685d0a819aa5d99dc8c"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0084_005",
+      "filename": "doc_exp9_20260704_0084_005.txt",
+      "sha256": "bd811df9b913c55bfd938a2ace20b96ed607b00285dd205ba0c71b6882bf79bf"
+    },
+    {
+      "document_id": "doc_sch_20260630_0128_005",
+      "filename": "doc_sch_20260630_0128_005.pdf",
+      "sha256": "0d204120c76c8d0084d414d09838d5d04e8fd2b340b7fb070dfa3f63fca96d94"
+    },
+    {
+      "document_id": "doc_sch_20260630_0128_005",
+      "filename": "doc_sch_20260630_0128_005.txt",
+      "sha256": "64837ab24a7b9cfc98475d0c3b3fae06ae09f89c3b0b824041b680f334657263"
+    },
+    {
+      "document_id": "doc_exp4_20260703_0049_008",
+      "filename": "doc_exp4_20260703_0049_008.pdf",
+      "sha256": "25019e7c092f0acdba22971ebe334c8bbcadf116262ea06874a53e61b67289a3"
+    },
+    {
+      "document_id": "doc_exp4_20260703_0049_008",
+      "filename": "doc_exp4_20260703_0049_008.txt",
+      "sha256": "c0e314e1f3f7dd3d88385ef7f83b42cde7a698e32346fc45a8154ac5b28ba604"
+    },
+    {
+      "document_id": "doc_sch_20260630_0026_009",
+      "filename": "doc_sch_20260630_0026_009.pdf",
+      "sha256": "dcbfebd8dd26fa6389844721af2573ca6d1ef1f8a60fce5172356b82adb1fefb"
+    },
+    {
+      "document_id": "doc_sch_20260630_0026_009",
+      "filename": "doc_sch_20260630_0026_009.txt",
+      "sha256": "19ac00423b205d59344e9e5956df3ce326acb9648e83a60abb749855122a3324"
+    },
+    {
+      "document_id": "doc_exp_20260703_0004_006",
+      "filename": "doc_exp_20260703_0004_006.pdf",
+      "sha256": "c3b777ab16f8ed4d4141cacb52f1571cf0d7f7530ddef9e903e47a27392b2f9b"
+    },
+    {
+      "document_id": "doc_exp_20260703_0004_006",
+      "filename": "doc_exp_20260703_0004_006.txt",
+      "sha256": "5860b841e71d2311e9793248242faf5d68ea11e718a49e9c40aed97636f97b02"
+    },
+    {
+      "document_id": "doc_sch_20260630_0149_002",
+      "filename": "doc_sch_20260630_0149_002.pdf",
+      "sha256": "3ac385dd0ff55149a7766ab8d3c4605b52a27afc64f63dd7cfa6ae7c98d59bf4"
+    },
+    {
+      "document_id": "doc_sch_20260630_0149_002",
+      "filename": "doc_sch_20260630_0149_002.txt",
+      "sha256": "ed9da7cd63dc93f6dfb03cfb544600ed5ef1ee4d0d64c5953214c30f52c83749"
+    },
+    {
+      "document_id": "doc_sch_20260630_0121_005",
+      "filename": "doc_sch_20260630_0121_005.pdf",
+      "sha256": "0d4bb7a5fd0fb8f448f179c9417fab18468e442da6a0cbbf80223a793acad9e8"
+    },
+    {
+      "document_id": "doc_sch_20260630_0121_005",
+      "filename": "doc_sch_20260630_0121_005.txt",
+      "sha256": "c097cbe3ce5d3e5af985b19276554aec6085b2b039d88f6a0bb63bdc28ca11ee"
+    },
+    {
+      "document_id": "doc_sch_20260630_0081_004",
+      "filename": "doc_sch_20260630_0081_004.pdf",
+      "sha256": "8211e044bdc3e5bd097963288f42d8a4d62cc8e746dd66db0583983a9485754e"
+    },
+    {
+      "document_id": "doc_sch_20260630_0081_004",
+      "filename": "doc_sch_20260630_0081_004.txt",
+      "sha256": "4bf6bb186fd946290c68f8b5957390cabaa7b28a1c468e298484de2a17f64447"
+    },
+    {
+      "document_id": "doc_sch_20260630_0159_004",
+      "filename": "doc_sch_20260630_0159_004.pdf",
+      "sha256": "53bd5a91eb7239d7da501a6ec8e2aeb126cafc294b66ab7a785c2258a5004343"
+    },
+    {
+      "document_id": "doc_sch_20260630_0159_004",
+      "filename": "doc_sch_20260630_0159_004.txt",
+      "sha256": "154c77a17d01ef3e31958cf780ad764adb06a5963e0997cd41e317b139c79d5c"
+    },
+    {
+      "document_id": "doc_sch_20260630_0088_005",
+      "filename": "doc_sch_20260630_0088_005.pdf",
+      "sha256": "21f59a837ee16220d58aabe1e3080e0beb5804f6b6bfe1fa827f2f00e51323c8"
+    },
+    {
+      "document_id": "doc_sch_20260630_0088_005",
+      "filename": "doc_sch_20260630_0088_005.txt",
+      "sha256": "f1711e6a27b60773f0199251d492700f41038ced9d503ba168a7affc5425dec8"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0230_001",
+      "filename": "doc_exp9_20260704_0230_001.pdf",
+      "sha256": "217276eb9709303d584a6c9aa053d38d46b45ac2526c8d4c6f14bb7719990c07"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0230_001",
+      "filename": "doc_exp9_20260704_0230_001.txt",
+      "sha256": "97e8930b88f3f4b6e79d19d39a370996d393eec8b1bd0f9c7895afe45a2787cd"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0230_007",
+      "filename": "doc_exp9_20260704_0230_007.pdf",
+      "sha256": "68107951dc8c12d779a3a25aeeb083df5371a078900971a7043d216cfc776d09"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0230_007",
+      "filename": "doc_exp9_20260704_0230_007.txt",
+      "sha256": "377a1b1b4ddcebec996d465af30f4311ddebb34f522a7cebb4d85606b10c59ef"
+    },
+    {
+      "document_id": "doc_sch_20260630_0022_003",
+      "filename": "doc_sch_20260630_0022_003.pdf",
+      "sha256": "0108a9651c11d93a9bf5cb598272412acef8c459153e283a21b33b3b1cd8e57d"
+    },
+    {
+      "document_id": "doc_sch_20260630_0022_003",
+      "filename": "doc_sch_20260630_0022_003.txt",
+      "sha256": "1509b3d15a487dec7a1d91fc50083d4c672cdc953b13141042982a416a570019"
+    },
+    {
+      "document_id": "doc_sch_20260630_0059_004",
+      "filename": "doc_sch_20260630_0059_004.pdf",
+      "sha256": "ae12249ac33c6ea5c0b02b0477eae28b6b4f9d11f479ae8d8e9ec3e26579b2c1"
+    },
+    {
+      "document_id": "doc_sch_20260630_0059_004",
+      "filename": "doc_sch_20260630_0059_004.txt",
+      "sha256": "4891c0b26973e35ce7dddc87031c54cf2f61f5d3c345204f7debf79ee3534175"
+    },
+    {
+      "document_id": "doc_exp2_20260703_0018_004",
+      "filename": "doc_exp2_20260703_0018_004.pdf",
+      "sha256": "95cd0c22cc18d4988e41a246339914ee2b1392c3d57b3651b761040dfd69d151"
+    },
+    {
+      "document_id": "doc_exp2_20260703_0018_004",
+      "filename": "doc_exp2_20260703_0018_004.txt",
+      "sha256": "01fb3ae9a8a3d4916f1e52a4a33b7a92147dfd860ee6248c6ee6e07f9926f86b"
+    },
+    {
+      "document_id": "doc_exp_20260703_0007_003",
+      "filename": "doc_exp_20260703_0007_003.pdf",
+      "sha256": "aee6130f66667c58d4b29aa9dfe84949819c5c4a2113d40f453d6fea4eaa4e72"
+    },
+    {
+      "document_id": "doc_exp_20260703_0007_003",
+      "filename": "doc_exp_20260703_0007_003.txt",
+      "sha256": "e49e75aa07c1478d709bc7afe5da24c8ed4145ade8d8196398bcb28118fa3b8b"
+    },
+    {
+      "document_id": "doc_sch_20260630_0009_007",
+      "filename": "doc_sch_20260630_0009_007.pdf",
+      "sha256": "a6a14edf8e70a1386539db75ecb1f9826f83008792fe5cb4f9bdcd9d504e63c5"
+    },
+    {
+      "document_id": "doc_sch_20260630_0009_007",
+      "filename": "doc_sch_20260630_0009_007.txt",
+      "sha256": "7455c9fd20f02001a6a9018878ca9c4f46c7a6522b62324e8fc59b59484b58cb"
+    },
+    {
+      "document_id": "doc_sch_20260630_0098_006",
+      "filename": "doc_sch_20260630_0098_006.pdf",
+      "sha256": "61eff601ecf582b9d5117f41608941cdcf7862a035279a4316d96d7693c82282"
+    },
+    {
+      "document_id": "doc_sch_20260630_0098_006",
+      "filename": "doc_sch_20260630_0098_006.txt",
+      "sha256": "4d7e9b0e3a5c01b8c5035728f1e73f8ef1cc737f30bb817cbbcdd6a65bf4884f"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0127_001",
+      "filename": "doc_exp9_20260704_0127_001.pdf",
+      "sha256": "018d3e773709c8a06e08d29d3696e126fce638b2cf53fac534f5fa8c2664f1dd"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0127_001",
+      "filename": "doc_exp9_20260704_0127_001.txt",
+      "sha256": "d6ea89011585d09ce57652815f7882b1137ed46d3452cc05cb27d6e9b659e9fc"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0127_005",
+      "filename": "doc_exp9_20260704_0127_005.pdf",
+      "sha256": "1cd1a5b53de5803b0719c7440f4005cc65b3dc48c38ef2cbb91548f3da3d6c32"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0127_005",
+      "filename": "doc_exp9_20260704_0127_005.txt",
+      "sha256": "117f9c5d7f8cf82404c91512d7ad6e79f91c385352a7a81fd4c222e57af69007"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0141_007",
+      "filename": "doc_exp9_20260704_0141_007.pdf",
+      "sha256": "d617155ec66afc891ee55eb1fd5ec3f3a2ba229d1cf6c6a3b90f63a4db34fa29"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0141_007",
+      "filename": "doc_exp9_20260704_0141_007.txt",
+      "sha256": "830997b4b19c92c00a43ce28516a6ee03a3a83cc94580dade2f66263d1529ae7"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0215_003",
+      "filename": "doc_exp9_20260704_0215_003.pdf",
+      "sha256": "42a5c2719686a9d5ab53897f0d2ee0217aa882520b523fe9b124fc1ea64449d3"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0215_003",
+      "filename": "doc_exp9_20260704_0215_003.txt",
+      "sha256": "5bd8393d10a6e7b5de212228c5b07efcf237a8802ff002e8cc5db6f338865ac0"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0012_004",
+      "filename": "doc_exp8_20260703_0012_004.pdf",
+      "sha256": "ec28b0b2198c7d3ae696771314f7154ce4d6131c719d05be2aeffe991f448ae9"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0012_004",
+      "filename": "doc_exp8_20260703_0012_004.txt",
+      "sha256": "71670d2ff060a2f05b6194742caedad19f786c4d91b83020da52f5a838f2d861"
+    },
+    {
+      "document_id": "doc_sch_20260630_0087_011",
+      "filename": "doc_sch_20260630_0087_011.pdf",
+      "sha256": "30f86f8c761bd20ecff92d681740cfd544ce2e70cf69998ee9c04cf3f50f5989"
+    },
+    {
+      "document_id": "doc_sch_20260630_0087_011",
+      "filename": "doc_sch_20260630_0087_011.txt",
+      "sha256": "2786c7bc297818e7f3043e27ba2f9c83f6268d5667d35cad89489b5c92703eea"
+    },
+    {
+      "document_id": "doc_sch_20260630_0157_002",
+      "filename": "doc_sch_20260630_0157_002.pdf",
+      "sha256": "43a57a4018807e0f1d8d9ace995a84bee98f3d886dbec4398361fc30a515e27f"
+    },
+    {
+      "document_id": "doc_sch_20260630_0157_002",
+      "filename": "doc_sch_20260630_0157_002.txt",
+      "sha256": "d7ec076cc087eb3c15bf733f787253b583f93f8cbae4fe4e33d2bae93fc21dc7"
+    },
+    {
+      "document_id": "doc_sch_20260630_0157_008",
+      "filename": "doc_sch_20260630_0157_008.pdf",
+      "sha256": "5f64f97dbe5f29ff7384ac781aeb27fd3aad462784eefa4017af7eb5423b5fb7"
+    },
+    {
+      "document_id": "doc_sch_20260630_0157_008",
+      "filename": "doc_sch_20260630_0157_008.txt",
+      "sha256": "196399f5bc52e95d80afb03829dd7e46e7d577eee1cbd42d1df696b713ed5575"
+    },
+    {
+      "document_id": "doc_exp_20260703_0003_007",
+      "filename": "doc_exp_20260703_0003_007.pdf",
+      "sha256": "317582b4e96f84ffd0b93eb08dc07543cea604b474be349308f6148aadab4e01"
+    },
+    {
+      "document_id": "doc_exp_20260703_0003_007",
+      "filename": "doc_exp_20260703_0003_007.txt",
+      "sha256": "4d5e60b8e83701bb4dc3414d29f08c791e2b744500ed2e67616e356e508537b3"
+    },
+    {
+      "document_id": "doc_sch_20260630_0036_008",
+      "filename": "doc_sch_20260630_0036_008.pdf",
+      "sha256": "6b5634d61562283dc9b72eb2cf29a5399eea0f754e6d1eedca438baa177c336d"
+    },
+    {
+      "document_id": "doc_sch_20260630_0036_008",
+      "filename": "doc_sch_20260630_0036_008.txt",
+      "sha256": "e9811b820ad1d9772dc9c89407e2e5b10cfe4ab855429009eea95fdd933857a7"
+    },
+    {
+      "document_id": "doc_exp4_20260703_0009_006",
+      "filename": "doc_exp4_20260703_0009_006.pdf",
+      "sha256": "accb49f5c4605bf9e78b1a3d966c2a31ba4e982ed51d1df6d43d84d5cf3c25c2"
+    },
+    {
+      "document_id": "doc_exp4_20260703_0009_006",
+      "filename": "doc_exp4_20260703_0009_006.txt",
+      "sha256": "b653d7d3fdcafc62ca8c0bfaa93ba060dba060e8f8bb6bf73fb08f932316594b"
+    },
+    {
+      "document_id": "doc_sch_20260630_0131_019",
+      "filename": "doc_sch_20260630_0131_019.pdf",
+      "sha256": "69049c777e643aa75e8e10fe2d563e9f03d6ce680a12b203332544a610f4b2ca"
+    },
+    {
+      "document_id": "doc_sch_20260630_0131_019",
+      "filename": "doc_sch_20260630_0131_019.txt",
+      "sha256": "39326c910d815c882aefa4dba9c4c79df04c6f6bdcbf99ee0bb56befd3719d70"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0156_004",
+      "filename": "doc_exp10_20260704_0156_004.pdf",
+      "sha256": "2da10141d0c633c7d92d7e060addf737fee9b690050c84955306cf270f248f4d"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0156_004",
+      "filename": "doc_exp10_20260704_0156_004.txt",
+      "sha256": "03a00632b7002e5f615d4a322e1b5e0c1044926b4dd09dd2530d3dc0635ef079"
+    },
+    {
+      "document_id": "doc_exp6_20260703_0005_006",
+      "filename": "doc_exp6_20260703_0005_006.pdf",
+      "sha256": "8952f58b09cf6d957cc514dab6bdefda30bcdfcb8027c764c60e6bf3af3cac02"
+    },
+    {
+      "document_id": "doc_exp6_20260703_0005_006",
+      "filename": "doc_exp6_20260703_0005_006.txt",
+      "sha256": "d8c67aa73b118ccf7a4e1134f8581be06227f9886c4128cba6fef2f7f425db55"
+    },
+    {
+      "document_id": "doc_sch_20260630_0010_006",
+      "filename": "doc_sch_20260630_0010_006.pdf",
+      "sha256": "c973b4c31915272706f845277ea64f4eac45c3bacee5cb50012187350ef9fa7f"
+    },
+    {
+      "document_id": "doc_sch_20260630_0010_006",
+      "filename": "doc_sch_20260630_0010_006.txt",
+      "sha256": "043566708a391eca5ee430833cc6dec52034b938a0bcd514cd949758a74eed91"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0030_007",
+      "filename": "doc_exp5_20260703_0030_007.pdf",
+      "sha256": "5f91eefde9a59391b1e9acb4d879e162f24f7943711665358cbc801da8065e5c"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0030_007",
+      "filename": "doc_exp5_20260703_0030_007.txt",
+      "sha256": "b9537ee77eb0bd4e1480a5c001bccb38a8eca9ded7b75965080ea26824ab9ead"
+    },
+    {
+      "document_id": "doc_exp2_20260703_0003_005",
+      "filename": "doc_exp2_20260703_0003_005.pdf",
+      "sha256": "0985edf2fa1f95addcb0ef33d83d290dc2e366e07028dbbfadb40b40d4a96d5b"
+    },
+    {
+      "document_id": "doc_exp2_20260703_0003_005",
+      "filename": "doc_exp2_20260703_0003_005.txt",
+      "sha256": "22a76fa37d28edcd8172e046ab4aa5acea8a503dde8904828a67bd4f4d9c7f24"
+    },
+    {
+      "document_id": "doc_sch_20260630_0018_001",
+      "filename": "doc_sch_20260630_0018_001.pdf",
+      "sha256": "cd13cd04ee39d5c732e240e4f004eaa957f985c8249abf63f9af09651f96aa98"
+    },
+    {
+      "document_id": "doc_sch_20260630_0018_001",
+      "filename": "doc_sch_20260630_0018_001.txt",
+      "sha256": "66eac4ffe8827ad0f982f33ae103ac87ee02ca06abef248058d086ddb5f0a0ee"
+    },
+    {
+      "document_id": "doc_sch_20260630_0018_002",
+      "filename": "doc_sch_20260630_0018_002.pdf",
+      "sha256": "699f02f96a93b58a3e2a577760f02c2208e55dbaa0815d45a048564e5abbc52a"
+    },
+    {
+      "document_id": "doc_sch_20260630_0018_002",
+      "filename": "doc_sch_20260630_0018_002.txt",
+      "sha256": "26ddf49f47c4ca7d2a3aa1f87b973cbdfb02b8e44695a83a85456174fda44d32"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0013_006",
+      "filename": "doc_exp10_20260704_0013_006.pdf",
+      "sha256": "ca68563057c10e33c4005ea5b47cb2d17be23a480a6af0140d058c5799ed9890"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0013_006",
+      "filename": "doc_exp10_20260704_0013_006.txt",
+      "sha256": "c01048ae166358689916e3847cd785b9b4d8147d954b8c2f01034854e64882c3"
+    },
+    {
+      "document_id": "doc_sch_20260630_0135_010",
+      "filename": "doc_sch_20260630_0135_010.pdf",
+      "sha256": "09b98dbf6078e0e94eabc2d74d0a9e7081b9020b4787b1ff8870db30c4be8337"
+    },
+    {
+      "document_id": "doc_sch_20260630_0135_010",
+      "filename": "doc_sch_20260630_0135_010.txt",
+      "sha256": "e441f7ff80d7bda27e8dc8941f7910efed59482db2e24cadccba267fda4f44a1"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0009_003",
+      "filename": "doc_exp8_20260703_0009_003.pdf",
+      "sha256": "3129f230e3bd5a446f31b929729d2524913c0482665d9c2ef70d35a1af1f4cc1"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0009_003",
+      "filename": "doc_exp8_20260703_0009_003.txt",
+      "sha256": "583deea7909b7a32791b32d22149e92aa484ca31e01331dae41da9ddee5dcdbf"
+    },
+    {
+      "document_id": "doc_gd_sz_tqjf_2025_mtn4_001",
+      "filename": "doc_gd_sz_tqjf_2025_mtn4_001.pdf",
+      "sha256": "9e78d3a9233623d7952ca7814ffc405871a8f890aef71225d0746d2096339ba1"
+    },
+    {
+      "document_id": "doc_gd_sz_tqjf_2025_mtn4_001",
+      "filename": "doc_gd_sz_tqjf_2025_mtn4_001.txt",
+      "sha256": "7f54b3e841dd1f48151abee41c8deb3dd6c45e526f17d0acee77b6410db48dfe"
+    },
+    {
+      "document_id": "doc_sch_20260630_0066_003",
+      "filename": "doc_sch_20260630_0066_003.pdf",
+      "sha256": "51a3f02499e2999c11a9f187e54215b2a356a5dc917e28b2d76fbf7c768d7030"
+    },
+    {
+      "document_id": "doc_sch_20260630_0066_003",
+      "filename": "doc_sch_20260630_0066_003.txt",
+      "sha256": "e6371c99ddf216d1aa57edf6dbfa71a46579ba81b91e339a5f1fe4de3bdbc27f"
+    },
+    {
+      "document_id": "doc_sch_20260630_0031_005",
+      "filename": "doc_sch_20260630_0031_005.pdf",
+      "sha256": "74cc2a231b29a648094a8a8ad3428092d5ea3df5de3445692e2d986d9f506685"
+    },
+    {
+      "document_id": "doc_sch_20260630_0031_005",
+      "filename": "doc_sch_20260630_0031_005.txt",
+      "sha256": "bafc8a6a1b5b1e321dc9dd0606dcb90a42761fc2de2e8da80772aceb67eac857"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0192_002",
+      "filename": "doc_exp10_20260704_0192_002.pdf",
+      "sha256": "5ab095ef4dfd550fc27a18a6952d8fdf0e84d6075f9709920851a2f39a6c126f"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0192_002",
+      "filename": "doc_exp10_20260704_0192_002.txt",
+      "sha256": "c8b1e6949362931ab00757c92cff4b2c0bf4c722735665e2248b0c4f7af8e212"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0301_005",
+      "filename": "doc_exp10_20260704_0301_005.pdf",
+      "sha256": "2a60e02c79ea631a0d11e39c4882f2878d0dcd909cdb8b788a8b22239e7de28b"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0301_005",
+      "filename": "doc_exp10_20260704_0301_005.txt",
+      "sha256": "ced88cba3be5d4ecdb0aed6ffc95683cf8fa89df58ed1e986855a3f7b6420ded"
+    },
+    {
+      "document_id": "doc_sch_20260630_0110_001",
+      "filename": "doc_sch_20260630_0110_001.pdf",
+      "sha256": "00636ff25e72d45768912b49fa00a99e6b7732c9b9f8c48a2caa42acecdc3d39"
+    },
+    {
+      "document_id": "doc_sch_20260630_0110_001",
+      "filename": "doc_sch_20260630_0110_001.txt",
+      "sha256": "e2df360918b416d9a5773b5e5ebfc2d0dac7383f09b4bd44731097d1ec5f0d49"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0064_007",
+      "filename": "doc_exp10_20260704_0064_007.pdf",
+      "sha256": "52a61b02d6fb01dd10e6d5ae3796db85159ee0c1e227c8a96ab4fd92436e739a"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0064_007",
+      "filename": "doc_exp10_20260704_0064_007.txt",
+      "sha256": "4289a52cb54c4c7d41eacac27a857d120c8ba79a0c3a4e0cc6f3105862482493"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0111_009",
+      "filename": "doc_exp9_20260704_0111_009.pdf",
+      "sha256": "6e5ca7109409c6b104d96d3dbcf13c62c0457bbb5e96b9b9dad63f0baeca405b"
+    },
+    {
+      "document_id": "doc_exp9_20260704_0111_009",
+      "filename": "doc_exp9_20260704_0111_009.txt",
+      "sha256": "c77412eaf3797d1066dc3fbe0e1e91ebce6deb94105dc0e4030ad693964e5f30"
+    },
+    {
+      "document_id": "doc_sch_20260630_0084_005",
+      "filename": "doc_sch_20260630_0084_005.pdf",
+      "sha256": "22b96153f78af2205fc772be55fb7dc5666f05eed08226909d6ad11a0eea852a"
+    },
+    {
+      "document_id": "doc_sch_20260630_0084_005",
+      "filename": "doc_sch_20260630_0084_005.txt",
+      "sha256": "17c6c93eaa721933e692a36179060c0e3d9600594bb06ff153de26d738e04e9b"
+    },
+    {
+      "document_id": "doc_sch_20260630_0003_003",
+      "filename": "doc_sch_20260630_0003_003.pdf",
+      "sha256": "ea8ecbd06952a6c8566902ead9ead7b98f1304eca833d407eb042793618679d0"
+    },
+    {
+      "document_id": "doc_sch_20260630_0003_003",
+      "filename": "doc_sch_20260630_0003_003.txt",
+      "sha256": "ecffa5655b7b9183b85f0582cb44dd070442f9494ef4ca9753addff5c9a679eb"
+    },
+    {
+      "document_id": "doc_sch_20260630_0003_007",
+      "filename": "doc_sch_20260630_0003_007.pdf",
+      "sha256": "ff8ba85c0b469f403fa73f65a92477ed11db504a15eccd30b7a9432c89a5185f"
+    },
+    {
+      "document_id": "doc_sch_20260630_0003_007",
+      "filename": "doc_sch_20260630_0003_007.txt",
+      "sha256": "3a2f3482070c762eb3ba8dab186f429e26408866771af950fe32ad296501b7e0"
+    },
+    {
+      "document_id": "doc_sch_20260630_0023_001",
+      "filename": "doc_sch_20260630_0023_001.pdf",
+      "sha256": "3402d091372333b634d4059f6339f4b6db648a60ab5eda198759de5bfc2fbcd8"
+    },
+    {
+      "document_id": "doc_sch_20260630_0023_001",
+      "filename": "doc_sch_20260630_0023_001.txt",
+      "sha256": "ca1c7ba708597708adf0618f87e3720f1bb09935d7574bdbf98a13cd33202893"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0034_004",
+      "filename": "doc_exp5_20260703_0034_004.pdf",
+      "sha256": "0fc5b83c9f2f86c3c9af700a861d9c212360e55d75569a77b254d4715d4d2784"
+    },
+    {
+      "document_id": "doc_exp5_20260703_0034_004",
+      "filename": "doc_exp5_20260703_0034_004.txt",
+      "sha256": "7d18907c9716de44475723bea83e168e7c73f03b6a95116fdff7b5aa2b3afc9b"
+    },
+    {
+      "document_id": "doc_exp6_20260703_0039_002",
+      "filename": "doc_exp6_20260703_0039_002.pdf",
+      "sha256": "a9674510d98dd5fe69b1679193c7da30829b848908b84587901f778ae192c684"
+    },
+    {
+      "document_id": "doc_exp6_20260703_0039_002",
+      "filename": "doc_exp6_20260703_0039_002.txt",
+      "sha256": "14f29397365a98bcc10ea350b6f141f7dd72b0979e332445d3dbd361d044e086"
+    },
+    {
+      "document_id": "doc_exp6_20260703_0025_004",
+      "filename": "doc_exp6_20260703_0025_004.pdf",
+      "sha256": "a359b95122a50d466f5ebce577a4427f2764bd047f6ef5e16070ac5556f7dc6d"
+    },
+    {
+      "document_id": "doc_exp6_20260703_0025_004",
+      "filename": "doc_exp6_20260703_0025_004.txt",
+      "sha256": "0b68979f75c367cf9685371f529a77471ebe212764ad6a911c41f1f31703dca5"
+    },
+    {
+      "document_id": "doc_sch_20260630_0063_002",
+      "filename": "doc_sch_20260630_0063_002.pdf",
+      "sha256": "bdf35d14b82a71d2a500085d50822ade48076d43d720ada79dad7d6c7f6b494a"
+    },
+    {
+      "document_id": "doc_sch_20260630_0063_002",
+      "filename": "doc_sch_20260630_0063_002.txt",
+      "sha256": "e5afc77e9e2e05c29539110851fb826a4e7f2e0db5d4b43d2845737f8428ecb6"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0212_005",
+      "filename": "doc_exp8_20260703_0212_005.pdf",
+      "sha256": "fda5063308d4e7ffb3b6a36c1e8321152dd68d3b9a91fcc815722f2fa97f789b"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0212_005",
+      "filename": "doc_exp8_20260703_0212_005.txt",
+      "sha256": "2333f5af0805458661d35686ead675c74974b3f0c7b65a979fa2df0d59f1cd73"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0087_004",
+      "filename": "doc_exp8_20260703_0087_004.pdf",
+      "sha256": "7095b731d99001896edc193af711a1f132acce107010fbcae0146542fcca9d99"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0087_004",
+      "filename": "doc_exp8_20260703_0087_004.txt",
+      "sha256": "6fdd2e86238c16211a2d6dc2c7250818e0ceac9a732e11a1053b79be061298d1"
+    },
+    {
+      "document_id": "doc_sch_20260630_0041_003",
+      "filename": "doc_sch_20260630_0041_003.pdf",
+      "sha256": "4d617138f8e8675a5c9dec12dc50594eeb2f75d8aba793fc6d3d6cee8cb88d1a"
+    },
+    {
+      "document_id": "doc_sch_20260630_0041_003",
+      "filename": "doc_sch_20260630_0041_003.txt",
+      "sha256": "f721b6ab39a05804eb0c0dee1c35b9e7c32e3d5f9d8406dc0c382a9ac77e86ba"
+    },
+    {
+      "document_id": "doc_sch_20260630_0168_006",
+      "filename": "doc_sch_20260630_0168_006.pdf",
+      "sha256": "c908fc44e7434cff33f188e8fc457dc36524fd31d6cbece599ccb538034a250e"
+    },
+    {
+      "document_id": "doc_sch_20260630_0168_006",
+      "filename": "doc_sch_20260630_0168_006.txt",
+      "sha256": "224eb2deba6f0ce85a4c903f7f830fe8adca345b18c0f956fc1f8bfc08a2c14a"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0071_006",
+      "filename": "doc_exp10_20260704_0071_006.pdf",
+      "sha256": "da0e4d59eb9bad33ae653b7b59b85ee84b9fa3c864541716cf5ea8c75dc8b3e9"
+    },
+    {
+      "document_id": "doc_exp10_20260704_0071_006",
+      "filename": "doc_exp10_20260704_0071_006.txt",
+      "sha256": "9087edd5d9f2b45946cef3379a23c45970167aa4aab85a2029931cf0dd3144d9"
+    },
+    {
+      "document_id": "web_chinamoney_guizhou_expressway_2024_base",
+      "filename": "web_chinamoney_guizhou_expressway_2024_base.pdf",
+      "sha256": "a53be900faacfb0c53110cb9f6d56eb263094b44eb08f4c903a2598f365a1fb8"
+    },
+    {
+      "document_id": "web_chinamoney_guizhou_expressway_2024_base",
+      "filename": "web_chinamoney_guizhou_expressway_2024_base.txt",
+      "sha256": "246fd9e9324aff2f9ca6253ce2c83a4d71d3d51859cef202cd99c09a81b43fd5"
+    },
+    {
+      "document_id": "doc_gz_zy_daoqiao_2015_bond_prospectus",
+      "filename": "doc_gz_zy_daoqiao_2015_bond_prospectus.pdf",
+      "sha256": "282e56437d92b67fa7c7eb903bdb58754fd531a384aef7f148f4f3e40452e0f2"
+    },
+    {
+      "document_id": "doc_gz_zy_daoqiao_2015_bond_prospectus",
+      "filename": "doc_gz_zy_daoqiao_2015_bond_prospectus.txt",
+      "sha256": "70f9e9235a0dba62a8286802cf42b1d500aef793ed120778c19000e1e53b60d5"
+    },
+    {
+      "document_id": "web_csrc_zunyi_daoqiao_current_name",
+      "filename": "doc_csrc_zunyi_daoqiao_2023.html",
+      "sha256": "803b44635d3a99668bdf8dcc3e932e4971c97a50c1b00db9f68d23fba89f521a"
+    },
+    {
+      "document_id": "doc_sch_20260630_0119_002",
+      "filename": "doc_sch_20260630_0119_002.pdf",
+      "sha256": "168c7017dc70dfa4e971b399728757f7100c0ce14cb9389dbe68c32c88c0834d"
+    },
+    {
+      "document_id": "doc_sch_20260630_0119_002",
+      "filename": "doc_sch_20260630_0119_002.txt",
+      "sha256": "6685f81574ae227afd828b06ef392819c6945e08790b08d7fd24dd0c2f7dae91"
+    },
+    {
+      "document_id": "doc_sch_20260630_0167_006",
+      "filename": "doc_sch_20260630_0167_006.pdf",
+      "sha256": "4e4059d8a03c03ae92785696af52d999f9c6177d8f1664578b991c116f8d3310"
+    },
+    {
+      "document_id": "doc_sch_20260630_0167_006",
+      "filename": "doc_sch_20260630_0167_006.txt",
+      "sha256": "f2513f26cb460dde489c5899f85e5f052b7984fa43c22f5f606e69017baed56f"
+    },
+    {
+      "document_id": "doc_sch_20260630_0094_001",
+      "filename": "doc_sch_20260630_0094_001.pdf",
+      "sha256": "196fe703a31cf4aff6706f5b909e7574ea1323d12dc9bff29bb40c9b1b438046"
+    },
+    {
+      "document_id": "doc_sch_20260630_0094_001",
+      "filename": "doc_sch_20260630_0094_001.txt",
+      "sha256": "7f6d5fc35d8ca670b281977a1ee163dfce3e5d46aee8015cf4510707ca4abd24"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0034_005",
+      "filename": "doc_exp8_20260703_0034_005.pdf",
+      "sha256": "4a51803f633e20bfee8cd48c0ab396aa37b37d3f3dcce1799237d17f945511f0"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0034_005",
+      "filename": "doc_exp8_20260703_0034_005.txt",
+      "sha256": "d39e0a78d986a8f42f241c1af507d5b2a1fd7be24763f3865ce4b4c6f6376537"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0088_004",
+      "filename": "doc_exp8_20260703_0088_004.pdf",
+      "sha256": "57c72acb1c8cd5542e1cbd76b71a3e3309b1da934eb02f9bb23b457a0733a7b1"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0088_004",
+      "filename": "doc_exp8_20260703_0088_004.txt",
+      "sha256": "3f6944fc2968925c9dc6d0cb4d2e72c85fd8932dde0ae03fc449aa2ec1b27384"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0088_007",
+      "filename": "doc_exp8_20260703_0088_007.pdf",
+      "sha256": "9a84ad0e5e1110c2db599d958edfd484c8978d60ef3184525935bd110555a228"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0088_007",
+      "filename": "doc_exp8_20260703_0088_007.txt",
+      "sha256": "9969061900ea69e52b19978c2d653e509caf0f506409702a30131f47000b17b1"
+    },
+    {
+      "document_id": "doc_sch_20260630_0024_009",
+      "filename": "doc_sch_20260630_0024_009.pdf",
+      "sha256": "6d5afffa742ab79df20dd8b70fcf10c4fa5ca8d9198a46a7c8ae5eca5e6a7b40"
+    },
+    {
+      "document_id": "doc_sch_20260630_0024_009",
+      "filename": "doc_sch_20260630_0024_009.txt",
+      "sha256": "0514c632cdc24f3c312879df15fd5a95ac09b1cacd1e3540738956b9f8269ac8"
+    },
+    {
+      "document_id": "doc_sch_20260630_0034_004",
+      "filename": "doc_sch_20260630_0034_004.pdf",
+      "sha256": "f8ac09490136ee9d4cd8611e84f145a681a5e0014fc78a0a5c31ed2bdd4bc8fa"
+    },
+    {
+      "document_id": "doc_sch_20260630_0034_004",
+      "filename": "doc_sch_20260630_0034_004.txt",
+      "sha256": "6516601c0a548120c3bd01802a2ee0bb07ebaa19b418edca407338764903086f"
+    },
+    {
+      "document_id": "doc_sch_20260630_0072_007",
+      "filename": "doc_sch_20260630_0072_007.pdf",
+      "sha256": "9df2b2469e1c9e62f4a2910a5f190c1359b8b7d1f176133e1a394966a20e9c8f"
+    },
+    {
+      "document_id": "doc_sch_20260630_0072_007",
+      "filename": "doc_sch_20260630_0072_007.txt",
+      "sha256": "08a9ffd2c08e9f978d496256c19ede9ca3edc83592954fd2f0dd815cd1569ac7"
+    },
+    {
+      "document_id": "doc_sch_20260630_0039_003",
+      "filename": "doc_sch_20260630_0039_003.pdf",
+      "sha256": "d6bedbdb60a13604f9c4364c8ee94761d0e07e4831b6843ec6601174de8d1d03"
+    },
+    {
+      "document_id": "doc_sch_20260630_0039_003",
+      "filename": "doc_sch_20260630_0039_003.txt",
+      "sha256": "0a9f6c6007de89a8f1f2775b3ac6776d19d42b8b4e2b328238f06b212e17b1cc"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0017_003",
+      "filename": "doc_exp8_20260703_0017_003.pdf",
+      "sha256": "92ab5fb51cf4c2e31d8dba534b77da89ff709536b17180ff5efcd6b2dbf8628d"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0017_003",
+      "filename": "doc_exp8_20260703_0017_003.txt",
+      "sha256": "e3adcb9f5a58ed57e98c06ca3b4a996b2df251404bc7f6b46510dedb4d57eeed"
+    },
+    {
+      "document_id": "doc_sch_20260630_0145_004",
+      "filename": "doc_sch_20260630_0145_004.pdf",
+      "sha256": "b20d87cbb4ae33784f2d3cfbfeb09b761c1ff64080f883f463c44442fb74f78c"
+    },
+    {
+      "document_id": "doc_sch_20260630_0145_004",
+      "filename": "doc_sch_20260630_0145_004.txt",
+      "sha256": "ba2984b243ccecac7ba232a8b2b72f9cbf62303c707b9db9169c0aa761a951a0"
+    },
+    {
+      "document_id": "doc_exp3_20260703_0006_001",
+      "filename": "doc_exp3_20260703_0006_001.pdf",
+      "sha256": "aa3ca5c2c80127ccde6d592ff2dd9710fb4e9a2ee882761b9748953a366005e1"
+    },
+    {
+      "document_id": "doc_exp3_20260703_0006_001",
+      "filename": "doc_exp3_20260703_0006_001.txt",
+      "sha256": "6145f012ef2ea15f5c1e09c3560d15e45d78dc28ad9034f24c25b68f27d07a93"
+    },
+    {
+      "document_id": "doc_sch_20260630_0114_001",
+      "filename": "doc_sch_20260630_0114_001.pdf",
+      "sha256": "600d1b32d8d0c53e886b6e5bfb307a7212591489b45878d1aac45b72af42a044"
+    },
+    {
+      "document_id": "doc_sch_20260630_0114_001",
+      "filename": "doc_sch_20260630_0114_001.txt",
+      "sha256": "f07658b36855cecca0b347cd0f2813dd285dc20f5ad6076406e22f188deaeec3"
+    },
+    {
+      "document_id": "doc_sch_20260630_0120_008",
+      "filename": "doc_sch_20260630_0120_008.pdf",
+      "sha256": "3ca120a96707e2c8446ccf1242fad85401e79faa85552f538c8278d55717791d"
+    },
+    {
+      "document_id": "doc_sch_20260630_0120_008",
+      "filename": "doc_sch_20260630_0120_008.txt",
+      "sha256": "60e6185298cf2b6baae066781b3d83ef7ea24e56c84a8c4b8336b018e7ed9d11"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0021_003",
+      "filename": "doc_exp8_20260703_0021_003.pdf",
+      "sha256": "cc7c6f5168d823f95a00cc83870297ec5e52c08229740173adec0e91bce80621"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0021_003",
+      "filename": "doc_exp8_20260703_0021_003.txt",
+      "sha256": "6e72f2fa86251aefea1140f667b0cad3a768a4c8f505a1e3cd186284ed70369f"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0021_004",
+      "filename": "doc_exp8_20260703_0021_004.pdf",
+      "sha256": "a5d7faf6a0427368cf7eee21c9ed5e0a6969361398421e1b384ce3d78dbb1aee"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0021_004",
+      "filename": "doc_exp8_20260703_0021_004.txt",
+      "sha256": "f5e968e1c929ad2235ed97c073a754f21e22d7eaf20f8cc1b044c2f574ff55d0"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0250_011",
+      "filename": "doc_exp8_20260703_0250_011.pdf",
+      "sha256": "5cbece1c2b82eb82eeb2bd85a828c9044f623d285c81b7d9a62a3911823bdd0c"
+    },
+    {
+      "document_id": "doc_exp8_20260703_0250_011",
+      "filename": "doc_exp8_20260703_0250_011.txt",
+      "sha256": "ba64684e7ea549f2fafe4101dc72b125558e5c62813b50b00524971fb1b654d5"
+    },
+    {
+      "document_id": "web_guiyang_2022_midyear_bond_report",
+      "filename": "guiyang_2022_midyear_bond_report.pdf",
+      "sha256": "68a8e82549591edb9a9ba710cddb198e5c7cd7c0aaffb51eee5441173f695c34"
+    },
+    {
+      "document_id": "web_guiyang_2022_midyear_bond_report",
+      "filename": "guiyang_2022_midyear_bond_report.txt",
+      "sha256": "cd3c0b84f0543d5c3f40b8d7f2e4c05341a52d522bb8dbeaa8653154939f2dc2"
+    },
+    {
+      "document_id": "web_shenzhen_sasac_special_zone_development_20260910",
+      "filename": "web_shenzhen_sasac_special_zone_development.retrieved_20260910.html",
+      "sha256": "2d13b660ee1b469483ca81f79e7843140cce78814e8fc77b7f22c6aa7acb9550"
+    }
+  ],
+  "raw_files_committed": false
+}

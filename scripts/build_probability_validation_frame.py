@@ -27,7 +27,13 @@ CANDIDATE_OUTPUT = ROOT / "data/validation/probability_validation_frame_candidat
 ORIGIN_OUTPUT = ROOT / "data/validation/probability_validation_frame_origin_rows.csv"
 FLOW_OUTPUT = ROOT / "data/validation/probability_validation_frame_flow.csv"
 DESIGN_OUTPUT = ROOT / "data/validation/probability_validation_sampling_design.csv"
-METRICS_OUTPUT = ROOT / "experiments/EXP-20260910-001/metrics.json"
+METRICS_OUTPUT = ROOT / "experiments/EXP-20260910-002/metrics.json"
+RENEWAL_DIR = ROOT / "experiments/EXP-20260910-002"
+RENEWAL_UNIT = "mv_bbc98d5aa00c"
+RENEWAL_INPUT_HASHES = {
+    "renewed_source_manifest.csv": "42a01d9bf11a6295faffff58dbae5667a429920c4c4d7f775bffe325a6cd62dd",
+    "crosswalk_evidence_patch.json": "26140bd92d33114f031c264c255396eced2ed346082d455c375e6666857613a9",
+}
 UNRESOLVED_OUTPUT = ROOT / "data/validation/probability_validation_unresolved_log.csv"
 SOURCE_MANIFEST_OUTPUT = ROOT / "data/validation/probability_validation_source_manifest.csv"
 REGISTERED_BASE = "9977dd752f911bfd07dc4d434301041ef485c9f2"
@@ -267,7 +273,8 @@ def integrate_exp004_decisions() -> dict[str, object]:
         raise ValueError("EXP-004 found a blocking gate without a registered unresolved-log row")
     manifest_rows = read_csv(SOURCE_MANIFEST_OUTPUT)
     baseline_manifest = registered_csv("data/validation/probability_validation_source_manifest.csv")
-    if manifest_rows != baseline_manifest and manifest_rows != baseline_manifest + [EXP004_GUIYANG_SOURCE]:
+    _, renewed_source = renewal_inputs()
+    if manifest_rows not in (baseline_manifest, baseline_manifest + [EXP004_GUIYANG_SOURCE], baseline_manifest + [EXP004_GUIYANG_SOURCE, renewed_source]):
         raise ValueError("Source manifest differs from baseline plus the approved addition")
     manifest_keys = {
         (row["validation_unit_id"], row["document_id"]): row for row in manifest_rows
@@ -300,6 +307,30 @@ def baseline_bytes(relative: str) -> bytes:
     ).stdout
 
 
+def renewal_inputs() -> tuple[dict[str, str], dict[str, str]]:
+    for filename, expected in RENEWAL_INPUT_HASHES.items():
+        if hashlib.sha256((RENEWAL_DIR / filename).read_bytes()).hexdigest() != expected:
+            raise ValueError(f"Registered source-renewal input changed: {filename}")
+    patch = json.loads((RENEWAL_DIR / "crosswalk_evidence_patch.json").read_text())
+    return patch, read_csv(RENEWAL_DIR / "renewed_source_manifest.csv")[0]
+
+
+def integrate_renewed_source() -> None:
+    validate_protected_inputs()
+    rows = read_csv(CROSSWALK_INPUT)
+    validate_exp004_crosswalk(rows)
+    patch, source = renewal_inputs()
+    manifest = read_csv(SOURCE_MANIFEST_OUTPUT)
+    expected = registered_csv("data/validation/probability_validation_source_manifest.csv") + [EXP004_GUIYANG_SOURCE]
+    if manifest not in (expected, expected + [source]):
+        raise ValueError("Source renewal would change existing manifest rows")
+    for row in rows:
+        if row["validation_unit_id"] == RENEWAL_UNIT:
+            row.update(patch)
+    write_csv(CROSSWALK_INPUT, rows, list(rows[0]))
+    write_csv(SOURCE_MANIFEST_OUTPUT, expected + [source], SOURCE_MANIFEST_FIELDS)
+
+
 def registered_csv(relative: str) -> list[dict[str, str]]:
     return list(csv.DictReader(io.StringIO(baseline_bytes(relative).decode("utf-8-sig"))))
 
@@ -323,6 +354,7 @@ def registered_crosswalk() -> list[dict[str, str]]:
 
 def validate_exp004_crosswalk(
     rows: list[dict[str, str]], *, require_integrated: bool = True,
+    require_renewed: bool = False,
 ) -> None:
     baseline_rows = registered_crosswalk()
     if [row["validation_unit_id"] for row in rows] != [
@@ -332,7 +364,12 @@ def validate_exp004_crosswalk(
     for row, baseline in zip(rows, baseline_rows):
         unit_id = row["validation_unit_id"]
         expected = {**baseline, **EXP004_CROSSWALK_PATCHES.get(unit_id, {})}
-        if row != expected and (require_integrated or row != baseline):
+        allowed = [expected] if require_integrated else [expected, baseline]
+        if unit_id == RENEWAL_UNIT:
+            patch, _ = renewal_inputs()
+            renewed = {**expected, **patch}
+            allowed = [renewed] if require_renewed else allowed + [renewed]
+        if row not in allowed:
             raise ValueError(f"Unauthorized crosswalk field change: {unit_id}")
 
 
@@ -491,7 +528,7 @@ def build() -> dict[str, object]:
     validate_protected_inputs()
     frame_rows = read_csv(FRAME_INPUT)
     crosswalk_rows = read_csv(CROSSWALK_INPUT)
-    validate_exp004_crosswalk(crosswalk_rows)
+    validate_exp004_crosswalk(crosswalk_rows, require_renewed=True)
     frame = {row["validation_unit_id"]: row for row in frame_rows}
     crosswalk = {row["validation_unit_id"]: row for row in crosswalk_rows}
     if len(frame) != 133 or len(crosswalk) != 133 or set(frame) != set(crosswalk):
@@ -704,7 +741,10 @@ def build() -> dict[str, object]:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--integrate-exp004", action="store_true")
+    parser.add_argument("--renew-source", action="store_true")
     args = parser.parse_args()
     if args.integrate_exp004:
         print(json.dumps(integrate_exp004_decisions(), ensure_ascii=False, sort_keys=True))
+    if args.renew_source:
+        integrate_renewed_source()
     build()

@@ -36,3 +36,22 @@ The PI also accepted the existing-rule Dongyangguang and Guiyang evidence
 findings and authorized the prospective deterministic rebuild in
 `EXP-20260831-004`. The authorization does not permit a sample draw, label
 change, or manuscript claim change.
+
+## 2026-09-10: Current candidate passes the approved integration
+
+The coordinator accepts `EXP-20260910-002` for source provenance and candidate
+construction following independent AI review and deterministic verification.
+The 133-unit input yields 67 eligible units and 66 exclusions. All 98 inherited
+scope reviews are resolved; 87 of 88 geography gaps receive a unique location,
+while the already-ineligible Shenzhen International retains its multiple
+locations under the PI-approved rule. The candidate has 24 proposed strata,
+57 positive-screen issuers and 10 issuers without a direct formal event, and
+proposed inclusion probability one for every eligible unit.
+
+This acceptance neither freezes the frame nor authorizes a draw. It does not
+convert the 94 Codex working references into independently human-confirmed
+labels or establish a national probability sample. The pre-integration
+failures and the unrecovered historical Shenzhen webpage remain recorded.
+Only the current dated source version is used for present evidence checking.
+The manuscript's older frame-progress paragraphs require a separately scoped
+claim update; no manuscript or empirical coefficient changed in this work.
