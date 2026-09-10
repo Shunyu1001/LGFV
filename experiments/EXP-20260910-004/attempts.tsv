@@ -1,0 +1,4 @@
+experiment_id	attempt	base_commit	status	artifact_path	description
+EXP-20260910-004	1	4330c5728dec64ba30c1faec972fad0097622e9d	crash	experiments/EXP-20260910-004/attempt_1.json	Builder and integrity checks passed; one historical-membership test fixture assertion failed; failure preserved.
+EXP-20260910-004	2	4330c5728dec64ba30c1faec972fad0097622e9d	keep	experiments/EXP-20260910-004/attempt_2.json	First mechanical retry corrected exact historical/current set comparison; all 19 tests and commands passed.
+EXP-20260910-004	3	4330c5728dec64ba30c1faec972fad0097622e9d	keep	experiments/EXP-20260910-004/attempt_3.json	Final mechanical retry incorporated coordinator metadata-layer clarification; all 20 tests and commands passed; keep collection artifact only, realized validation remains blocked.

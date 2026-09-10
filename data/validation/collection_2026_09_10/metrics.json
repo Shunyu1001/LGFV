@@ -1,0 +1,43 @@
+{
+  "added_current_units": 64,
+  "base_commit": "4330c5728dec64ba30c1faec972fad0097622e9d",
+  "blank_coder_rows_per_sheet": 67,
+  "coder_agreement": null,
+  "current_units": 67,
+  "document_locator_records": 610,
+  "draw_executed_by_this_package": false,
+  "eligible_origin_rows": 74,
+  "exact_issuer_event_mappings": 0,
+  "exact_issuer_pairs": 0,
+  "experiment_id": "EXP-20260910-004",
+  "freeze_executed_by_this_package": false,
+  "historical_capacity_linked_units_not_label_matches": 33,
+  "historical_only_units": [
+    "mv_83fa1cb2dc9e"
+  ],
+  "historical_packet_units": 4,
+  "human_coding_executed_by_this_package": false,
+  "human_labels": null,
+  "missing_historical_raw_records": 59,
+  "populated_human_entry_cells": 0,
+  "proposed_strata": 24,
+  "realized_inclusion_probabilities": null,
+  "realized_input_readiness": "blocked",
+  "realized_outcome_counts": null,
+  "reference_pairs_audited": 6298,
+  "report_covered_reference_cases": 94,
+  "retained_historical_units": 3,
+  "screen_counts_coordinator_only": {
+    "screen_positive_nominal": 57,
+    "screened_no_direct_formal_event": 10
+  },
+  "source_hash_mismatch_records": 0,
+  "source_locator_records": 689,
+  "units_with_missing_origin_document_ids": 1,
+  "units_with_public_locators": 67,
+  "units_with_verified_manifest_raw": 67,
+  "unmatched_reasons": {
+    "no_exact_issuer_in_report_scope": 67
+  },
+  "verified_manifest_raw_documents": 79
+}

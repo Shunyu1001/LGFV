@@ -1,0 +1,4337 @@
+{
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0002/doc_exp2_20260703_0002_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0002/doc_exp2_20260703_0002_002.pdf": {
+    "bytes": 5352765,
+    "sha256": "c1652034471505761a38c5eba67574a68141912640589db0331d7aaecab2be80",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0002/doc_exp2_20260703_0002_003.pdf": {
+    "bytes": 31504,
+    "sha256": "6632647ec058458dcaad75da822f25d8e9fef51b6bb7338c7463e4e49f0bcf89",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0002/doc_exp2_20260703_0002_004.pdf": {
+    "bytes": 213738,
+    "sha256": "1bbac0fda2d0f6a4bcd4040c9a6d881f1b233d6faccd9032466aae7e33e8a616",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0002/doc_exp2_20260703_0002_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0002/doc_exp2_20260703_0002_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0002/doc_exp2_20260703_0002_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0002/doc_exp2_20260703_0002_008.pdf": {
+    "bytes": 535654,
+    "sha256": "6e32bc1784ffe513bead5c68639d5e84717d4730ba7031732ba239b6eded48f5",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0002/doc_exp2_20260703_0002_009.pdf": {
+    "bytes": 2788675,
+    "sha256": "82cbf48e65d152c4c4d40a9c41bc3ef7813d558b44327bb8747df6c71cd09a04",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0002/doc_exp2_20260703_0002_010.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0002/doc_exp2_20260703_0002_011.pdf": {
+    "bytes": 56756,
+    "sha256": "7960d92905b1c3920f667d434bfc993c07bf248cc9564eb5968c9b8facc7ec9c",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0002/doc_exp2_20260703_0002_012.pdf": {
+    "bytes": 344480,
+    "sha256": "af1e64599d925a59bd1279cb14b70960d247d26e60942d69f8999b501ac58112",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0002/doc_exp2_20260703_0002_013.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0002/doc_exp2_20260703_0002_014.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0002/doc_exp2_20260703_0002_015.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0003/doc_exp2_20260703_0003_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0003/doc_exp2_20260703_0003_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0003/doc_exp2_20260703_0003_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0003/doc_exp2_20260703_0003_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0003/doc_exp2_20260703_0003_005.pdf": {
+    "bytes": 1872281,
+    "sha256": "0985edf2fa1f95addcb0ef33d83d290dc2e366e07028dbbfadb40b40d4a96d5b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0003/doc_exp2_20260703_0003_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0003/doc_exp2_20260703_0003_007.pdf": {
+    "bytes": 438352,
+    "sha256": "cc70dc1c387d24552925a8c9328e26c46f10a956ed5a8bd0e8ee0caa8a0b01e1",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0018/doc_exp2_20260703_0018_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0018/doc_exp2_20260703_0018_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0018/doc_exp2_20260703_0018_003.pdf": {
+    "bytes": 23764904,
+    "sha256": "a1e538f663d8171303fa82932fd155c964b28ffe3f8b029286ccd077cd156bed",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0018/doc_exp2_20260703_0018_004.pdf": {
+    "bytes": 4593341,
+    "sha256": "95cd0c22cc18d4988e41a246339914ee2b1392c3d57b3651b761040dfd69d151",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0018/doc_exp2_20260703_0018_005.pdf": {
+    "bytes": 16097217,
+    "sha256": "ecfb0df7d0daba0443941b2835541378e043f002912b6ed0d84e4d5e9351eab8",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0018/doc_exp2_20260703_0018_006.pdf": {
+    "bytes": 10633846,
+    "sha256": "da5388dace80729e9d7dbb7b78eb81f304707c0afd436f81fa67803824857808",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp2_20260703_0018/doc_exp2_20260703_0018_007.pdf": {
+    "bytes": 5384503,
+    "sha256": "8be4092686b88dd30ed757d209d3e87194bac44bc8d6cc08e935772074ca1dfb",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp3_20260703_0018/doc_exp3_20260703_0018_001.pdf": {
+    "bytes": 1850272,
+    "sha256": "951c30583a20b2ac7b8287f20ae424d16a3751c9237091ef7dab9e83c1aaa593",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp3_20260703_0018/doc_exp3_20260703_0018_002.pdf": {
+    "bytes": 16778654,
+    "sha256": "6e5f58c1699ce0a8c72dcb00f90e5aeca6c0b43fd9e4b93d022c40c654f2a35c",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp3_20260703_0018/doc_exp3_20260703_0018_003.pdf": {
+    "bytes": 3688138,
+    "sha256": "31bf0aa7f7982aebfae3b6930db1b529dccac0bdb107496935dd7f8f74ac32c4",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp3_20260703_0018/doc_exp3_20260703_0018_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp3_20260703_0018/doc_exp3_20260703_0018_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp3_20260703_0018/doc_exp3_20260703_0018_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp3_20260703_0018/doc_exp3_20260703_0018_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp3_20260703_0018/doc_exp3_20260703_0018_008.pdf": {
+    "bytes": 771125,
+    "sha256": "3b730acaee9be2b667fbaf0263f511e20e60c82f789437e2818b36a6f8c54e6e",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp3_20260703_0018/doc_exp3_20260703_0018_009.pdf": {
+    "bytes": 6226808,
+    "sha256": "c41531c46e95e427cb81c3d4b8d495099dce3135af42a574f15aceda9a78d64a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0009/doc_exp4_20260703_0009_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0009/doc_exp4_20260703_0009_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0009/doc_exp4_20260703_0009_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0009/doc_exp4_20260703_0009_004.pdf": {
+    "bytes": 3580676,
+    "sha256": "2fe52f51a23858cc075c2961a717f383b45082f73d8daed176f12b64db1f87e3",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0009/doc_exp4_20260703_0009_005.pdf": {
+    "bytes": 7225558,
+    "sha256": "cc07ffdb5fd7e52a5364a36aa6af06e63358d3bee86166040d65690a0d376615",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0009/doc_exp4_20260703_0009_006.pdf": {
+    "bytes": 1666134,
+    "sha256": "accb49f5c4605bf9e78b1a3d966c2a31ba4e982ed51d1df6d43d84d5cf3c25c2",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0009/doc_exp4_20260703_0009_007.pdf": {
+    "bytes": 3593796,
+    "sha256": "07a0b75a05ea5a5ca3d35d52b459c76c0c67054414245a277a34f65d7b1d1ce8",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0009/doc_exp4_20260703_0009_008.pdf": {
+    "bytes": 4198482,
+    "sha256": "41617b0258901f25b6c50530a7542eda450d64fb2720791cd5922cd539909c55",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0009/doc_exp4_20260703_0009_009.pdf": {
+    "bytes": 20098110,
+    "sha256": "c48e7dd1d8ce3ddf8468bde8ca4086a625d278c73314e22d25eee20e3608519f",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0009/doc_exp4_20260703_0009_010.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0013/doc_exp4_20260703_0013_001.pdf": {
+    "bytes": 24996015,
+    "sha256": "4d512375eb05d2b47b052567ca7b83dc4061090c18e226ab0f842d5e4d09ee63",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0013/doc_exp4_20260703_0013_002.pdf": {
+    "bytes": 673168,
+    "sha256": "7364ab56d23f9735d562c2a408ce6759d1241f52ff6ebf2b493ca2bd3174a907",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0013/doc_exp4_20260703_0013_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0013/doc_exp4_20260703_0013_004.pdf": {
+    "bytes": 10903353,
+    "sha256": "a348648996583cdf5c103b45b66a3a32043c268b0462cb6f49acacddaa291bcc",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0013/doc_exp4_20260703_0013_005.pdf": {
+    "bytes": 2119754,
+    "sha256": "fac8a3dfef8c54f6b6cf12b0010e5b8cc879f4017e5d176795e56ef55fe4e140",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0013/doc_exp4_20260703_0013_006.pdf": {
+    "bytes": 10065651,
+    "sha256": "bea2b4f1203b61d9d45c232ac305eb3637e99da55b8f811ebd1412f00c61ed7a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0013/doc_exp4_20260703_0013_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0027/doc_exp4_20260703_0027_001.pdf": {
+    "bytes": 803275,
+    "sha256": "31f929035d3f9e0c7c9063a6bac80c28f60fdb58e130896ed72001238f677795",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0027/doc_exp4_20260703_0027_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0027/doc_exp4_20260703_0027_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0027/doc_exp4_20260703_0027_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0027/doc_exp4_20260703_0027_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0027/doc_exp4_20260703_0027_006.pdf": {
+    "bytes": 30617072,
+    "sha256": "f37d66494a3d9a38102441e5d7ef53c6a68895929b3473bb2685502be4397ab8",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0027/doc_exp4_20260703_0027_007.pdf": {
+    "bytes": 10850777,
+    "sha256": "b9d1d455f774a8c083c4105bb3762365b6cecbfedbd025b3651c821daa0bbd5a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0027/doc_exp4_20260703_0027_008.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0027/doc_exp4_20260703_0027_009.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0027/doc_exp4_20260703_0027_010.pdf": {
+    "bytes": 3955761,
+    "sha256": "8a0083f15350e0d253fda033295bd16f6a1780db68a508f223feafbed1528ee9",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp4_20260703_0027/doc_exp4_20260703_0027_011.pdf": {
+    "bytes": 25251658,
+    "sha256": "8c32a3ad410eb5274953db96533cccd4b35fc9b5e25c13d483a24e3ea8a171df",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0001/doc_exp5_20260703_0001_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0001/doc_exp5_20260703_0001_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0001/doc_exp5_20260703_0001_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0001/doc_exp5_20260703_0001_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0001/doc_exp5_20260703_0001_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0001/doc_exp5_20260703_0001_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0001/doc_exp5_20260703_0001_007.pdf": {
+    "bytes": 737935,
+    "sha256": "e98982403c8f1054469a801c7c7c79646ebf607481bee96df52908c00e490f39",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0001/doc_exp5_20260703_0001_008.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0001/doc_exp5_20260703_0001_009.pdf": {
+    "bytes": 3541315,
+    "sha256": "5748b5d90ce298cc9ae0460209cd2593c2d2ad09d16c6a5399df94b1dc0c7858",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0001/doc_exp5_20260703_0001_010.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0001/doc_exp5_20260703_0001_011.pdf": {
+    "bytes": 210041,
+    "sha256": "4b1a2a45be008bba35dae66ca2b324e738fd0b384e9329afd193f27f5044e5b4",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0004/doc_exp5_20260703_0004_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0004/doc_exp5_20260703_0004_002.pdf": {
+    "bytes": 7054638,
+    "sha256": "fa8382aaa407fff345f56aad1e48ee8a1860d22ff07ebaebcb310d1774239d16",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0004/doc_exp5_20260703_0004_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0004/doc_exp5_20260703_0004_004.pdf": {
+    "bytes": 2498056,
+    "sha256": "032851e97c3afbe13f8c43ab7e456e5348e207a3659a1fdbe38808d5cf930403",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0004/doc_exp5_20260703_0004_005.pdf": {
+    "bytes": 17736719,
+    "sha256": "28811e3a24daba23552fedef41c7c5df82653c69d5ff3d9300ff41815d6e0da7",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0004/doc_exp5_20260703_0004_006.pdf": {
+    "bytes": 42206655,
+    "sha256": "148d49ab54df91bd4df4e5569e9206fac587c0f2b0fa3d9bd0876d9d29d35d68",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0004/doc_exp5_20260703_0004_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0004/doc_exp5_20260703_0004_008.pdf": {
+    "bytes": 1696140,
+    "sha256": "604ff4688150b0892ca4464f04e7bace3117dbfc198221cecc9c18f187ae799b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0004/doc_exp5_20260703_0004_009.pdf": {
+    "bytes": 1040856,
+    "sha256": "60f91a7c098e786561ccfb75b7f0e6119ed8ed1fc48c62fc827c4f420e70baf3",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0004/doc_exp5_20260703_0004_010.pdf": {
+    "bytes": 16533792,
+    "sha256": "b42f7c6b4ddf82e8c9c126ee9edc329cc049ef3e7bc7c3f490fb5ad7ff52e122",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0007/doc_exp5_20260703_0007_001.pdf": {
+    "bytes": 9079066,
+    "sha256": "ef7f9368cef6c2f168a1ce060337d1babafc6617983ceede7a4492b1a5b36291",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0007/doc_exp5_20260703_0007_002.pdf": {
+    "bytes": 4926491,
+    "sha256": "d057dca15d6d718894a98028a34687ae3098ae903a2f2a0b49fc283ddb91486e",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0007/doc_exp5_20260703_0007_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0007/doc_exp5_20260703_0007_004.pdf": {
+    "bytes": 1703988,
+    "sha256": "c0a31c404c54675d2af5722fe998a7cef85cb1950265489acd3f09e75a25c4de",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0007/doc_exp5_20260703_0007_005.pdf": {
+    "bytes": 5392034,
+    "sha256": "8eabd880aa40344d31a0e773010964511a793516e68b9f98d96a3f43ff5ab066",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0007/doc_exp5_20260703_0007_006.pdf": {
+    "bytes": 2528076,
+    "sha256": "6a7fbd59380f387c5977aa16021c2ad97d06c8151616f65489c0fc0879cdff54",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0007/doc_exp5_20260703_0007_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0007/doc_exp5_20260703_0007_008.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0007/doc_exp5_20260703_0007_009.pdf": {
+    "bytes": 11030501,
+    "sha256": "d71ed984ada06e55a4a0488e1f84ad04cc1a4d466537df9631858d0d8e14eedc",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0025/doc_exp5_20260703_0025_001.pdf": {
+    "bytes": 4988991,
+    "sha256": "fa0cfd71131063735803944cb3a46cbbc69145b7dd2c14c8225f4abd2379e3cf",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0025/doc_exp5_20260703_0025_002.pdf": {
+    "bytes": 4660423,
+    "sha256": "347ba79ff6c917e0ff47b62180080dd705fc36be95594302ba9889a01e334bf9",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0025/doc_exp5_20260703_0025_003.pdf": {
+    "bytes": 7709726,
+    "sha256": "11ab4315e1be757881ff85345da5d6792c0c9fbf2889075a2eaf252645b45396",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0025/doc_exp5_20260703_0025_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0025/doc_exp5_20260703_0025_005.pdf": {
+    "bytes": 7013851,
+    "sha256": "d15f07cc0e367aa4c460c0afe924d086bebe32eaf67d87f952bfe46b3461b21b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0025/doc_exp5_20260703_0025_006.pdf": {
+    "bytes": 5631169,
+    "sha256": "07eeb96201a37316eafa365c6b44122640728e21848bd0523ab2606cf206bf44",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0025/doc_exp5_20260703_0025_007.pdf": {
+    "bytes": 1333217,
+    "sha256": "4bf362bba85d944068c272f502cfbde631462746c83ea9777977a75e690ae50a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0025/doc_exp5_20260703_0025_008.pdf": {
+    "bytes": 377085,
+    "sha256": "f6e5871f839c0b06479fc3dcab96b728c0c886b6e5aab09e2d6d8ccab7ea85d1",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0025/doc_exp5_20260703_0025_009.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0030/doc_exp5_20260703_0030_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0030/doc_exp5_20260703_0030_002.pdf": {
+    "bytes": 17003380,
+    "sha256": "1e0df020c9287652b1d8016b2e684e4c5a84e192ad16eb0846e2b70f74b5363e",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0030/doc_exp5_20260703_0030_003.pdf": {
+    "bytes": 11186078,
+    "sha256": "df71e0d6955bf7de4b5ea5191bf7e2c5cb1a398e8e958728ba6758940cd27cf2",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0030/doc_exp5_20260703_0030_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0030/doc_exp5_20260703_0030_005.pdf": {
+    "bytes": 17567228,
+    "sha256": "bc83f35f7c5dab820a7fe411dccba62baafa55e57dd06a1f142cf4d655740646",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0030/doc_exp5_20260703_0030_006.pdf": {
+    "bytes": 504863,
+    "sha256": "aef1a27bd3e0be830103b5ffab17c3318fdf0d491dcc134832282aaba2760924",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0030/doc_exp5_20260703_0030_007.pdf": {
+    "bytes": 2003061,
+    "sha256": "5f91eefde9a59391b1e9acb4d879e162f24f7943711665358cbc801da8065e5c",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0034/doc_exp5_20260703_0034_001.pdf": {
+    "bytes": 13347866,
+    "sha256": "c2d825d7ed696e9d6c933c2a654eac1b788358b3dffba4e130b295145300aff0",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0034/doc_exp5_20260703_0034_002.pdf": {
+    "bytes": 447719,
+    "sha256": "059c770e9aa9f65991f3ace8d15e91cb8bd353a0760bd74b273ea921615b46f0",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0034/doc_exp5_20260703_0034_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0034/doc_exp5_20260703_0034_004.pdf": {
+    "bytes": 1862353,
+    "sha256": "0fc5b83c9f2f86c3c9af700a861d9c212360e55d75569a77b254d4715d4d2784",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0034/doc_exp5_20260703_0034_005.pdf": {
+    "bytes": 29814615,
+    "sha256": "e5e44f35fed1d1d0f1e3719ffbbb3d7794d742132b44dcef22ab94caa29f4001",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp5_20260703_0034/doc_exp5_20260703_0034_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0005/doc_exp6_20260703_0005_001.pdf": {
+    "bytes": 18152853,
+    "sha256": "12adf90669f280a73c7b38ab39aafdd5a12ecd3967b44a6dd1a2d03f54ca2f20",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0005/doc_exp6_20260703_0005_002.pdf": {
+    "bytes": 7074454,
+    "sha256": "d7cbda32115c2bf1ab6e2a0d7df92d82b3d64bcb9cab0d16250ca2a7863997ce",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0005/doc_exp6_20260703_0005_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0005/doc_exp6_20260703_0005_004.pdf": {
+    "bytes": 8840058,
+    "sha256": "e696e24fedb4ab16ffadba223c36a0ed1974d8bc753f1a7b0aebaa7e973a60cd",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0005/doc_exp6_20260703_0005_005.pdf": {
+    "bytes": 865138,
+    "sha256": "8370bfe421518a9e329671d93bb7e65902b352c615c4ebd7888a944481c68310",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0005/doc_exp6_20260703_0005_006.pdf": {
+    "bytes": 5847499,
+    "sha256": "8952f58b09cf6d957cc514dab6bdefda30bcdfcb8027c764c60e6bf3af3cac02",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0005/doc_exp6_20260703_0005_007.pdf": {
+    "bytes": 29295226,
+    "sha256": "edbd75cb5af5bc641844b33819a9a7603041af09ba127ae6973dbdd1bf458d93",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0025/doc_exp6_20260703_0025_001.pdf": {
+    "bytes": 661289,
+    "sha256": "7689efd61a0ed09d017af996f0da94dd00f99e98c031f8a0148174d3e5763028",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0025/doc_exp6_20260703_0025_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0025/doc_exp6_20260703_0025_003.pdf": {
+    "bytes": 9416733,
+    "sha256": "851cba753fa31fcd63ad06bb569fc08a7e4d67a78814caba95d34c20905bac1f",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0025/doc_exp6_20260703_0025_004.pdf": {
+    "bytes": 1201703,
+    "sha256": "a359b95122a50d466f5ebce577a4427f2764bd047f6ef5e16070ac5556f7dc6d",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0025/doc_exp6_20260703_0025_005.pdf": {
+    "bytes": 11321793,
+    "sha256": "05fff3a2f88f900e4912d0c6ec18abecf5b4bcbb693d85f1da7a20dc05c3770d",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0025/doc_exp6_20260703_0025_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0025/doc_exp6_20260703_0025_007.pdf": {
+    "bytes": 3301590,
+    "sha256": "917c49584f1f9fd31966451ac648852af133b5e6c0470b3d5d26ebd2dfb717fb",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0039/doc_exp6_20260703_0039_001.pdf": {
+    "bytes": 549019,
+    "sha256": "caa352e9990d88cb5edf5eb8be924b94028aa51d41f8756bad80290b023ab8ff",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0039/doc_exp6_20260703_0039_002.pdf": {
+    "bytes": 2071939,
+    "sha256": "a9674510d98dd5fe69b1679193c7da30829b848908b84587901f778ae192c684",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0039/doc_exp6_20260703_0039_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0039/doc_exp6_20260703_0039_004.pdf": {
+    "bytes": 40654964,
+    "sha256": "e6df44a2492e4e9a1f35ee7cd129ae382cd36c651cc67332040878507ed4e3ed",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0039/doc_exp6_20260703_0039_005.pdf": {
+    "bytes": 12139729,
+    "sha256": "939d1585c309a7d0d2d7d16bed0b9edf9bc3bc5d6cc79edc76075d5325db1da3",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0039/doc_exp6_20260703_0039_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0039/doc_exp6_20260703_0039_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0039/doc_exp6_20260703_0039_008.pdf": {
+    "bytes": 11317453,
+    "sha256": "e0db4e1e660f036ece1073e4f9ab707dcc1802b7ec00456fb3a3c6770354d843",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp6_20260703_0039/doc_exp6_20260703_0039_009.pdf": {
+    "bytes": 2304012,
+    "sha256": "1d0bb1304bea31f798a6f6c5ff4ff4eab9b457b386775c76d74c7571fc9c75b7",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0004/doc_exp8_20260703_0004_001.pdf": {
+    "bytes": 2595243,
+    "sha256": "bebbdd439efb7d396a487061357234fea9ebf112b78745da51dff4ab86aa5125",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0004/doc_exp8_20260703_0004_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0004/doc_exp8_20260703_0004_003.pdf": {
+    "bytes": 643721,
+    "sha256": "09d86ed53acec5e5ea1ee0f4e87ffa13830d53d6a0f7da611049d3c4ae6522d6",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0004/doc_exp8_20260703_0004_004.pdf": {
+    "bytes": 2555016,
+    "sha256": "8d2eeb3497ed87dc017346d8074870600d2a83ca5bd222c8a94791042394764f",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0004/doc_exp8_20260703_0004_005.pdf": {
+    "bytes": 7145714,
+    "sha256": "ce43b1c96d2f7af7fabbce40217443bb3718dd3c7ec2f55cd456776bfb028e4c",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0004/doc_exp8_20260703_0004_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0004/doc_exp8_20260703_0004_007.pdf": {
+    "bytes": 15230220,
+    "sha256": "d0efac867ab0ea61b2ca37f8bb0482b8afb17f9b4ae806542539ed284c56b383",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0009/doc_exp8_20260703_0009_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0009/doc_exp8_20260703_0009_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0009/doc_exp8_20260703_0009_003.pdf": {
+    "bytes": 2115862,
+    "sha256": "3129f230e3bd5a446f31b929729d2524913c0482665d9c2ef70d35a1af1f4cc1",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0009/doc_exp8_20260703_0009_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0009/doc_exp8_20260703_0009_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0009/doc_exp8_20260703_0009_006.pdf": {
+    "bytes": 3049316,
+    "sha256": "d1e5bd3cee989182de49ce3e5d09dca896865b4e90b0f3eb65d355e7e789d0a2",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0009/doc_exp8_20260703_0009_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0009/doc_exp8_20260703_0009_008.pdf": {
+    "bytes": 5445806,
+    "sha256": "04b690c703a2c1df5cc5bf7e40cabfcecc6fc8040bb84d6ee943c511224cc072",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0009/doc_exp8_20260703_0009_009.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0009/doc_exp8_20260703_0009_010.pdf": {
+    "bytes": 3795196,
+    "sha256": "e8513d3d5f77ebaafee9e1235a025f59d6bc26977bdcd1a202435ff0651cd139",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0009/doc_exp8_20260703_0009_011.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0012/doc_exp8_20260703_0012_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0012/doc_exp8_20260703_0012_002.pdf": {
+    "bytes": 39423629,
+    "sha256": "947c82d467070fa52c924fc6412b549c812f7e245a5c3da86390e3e23d0b9c18",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0012/doc_exp8_20260703_0012_003.pdf": {
+    "bytes": 684340,
+    "sha256": "f3a73af7546b219ba19d1e7e27b7f8dabe45159e73f0a38d671f7edb6259ecea",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0012/doc_exp8_20260703_0012_004.pdf": {
+    "bytes": 1429394,
+    "sha256": "ec28b0b2198c7d3ae696771314f7154ce4d6131c719d05be2aeffe991f448ae9",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0012/doc_exp8_20260703_0012_005.pdf": {
+    "bytes": 6594366,
+    "sha256": "65f4eb8a8512f41d0f25c5d3f029803df479d813870ccd838924599c53608ba3",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0012/doc_exp8_20260703_0012_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0012/doc_exp8_20260703_0012_007.pdf": {
+    "bytes": 6526604,
+    "sha256": "878a261513ee187c8b30b97c9fe8870cc40df86090d912164eeb81332cd15047",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0017/doc_exp8_20260703_0017_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0017/doc_exp8_20260703_0017_002.pdf": {
+    "bytes": 17822205,
+    "sha256": "6daf2737ab06762a45d26bd6ffb29b03587ac462d5212523e84fc2248f934ab8",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0017/doc_exp8_20260703_0017_003.pdf": {
+    "bytes": 2801487,
+    "sha256": "92ab5fb51cf4c2e31d8dba534b77da89ff709536b17180ff5efcd6b2dbf8628d",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0017/doc_exp8_20260703_0017_004.pdf": {
+    "bytes": 14168182,
+    "sha256": "e17ef03d0a7e6905fcf857e0a3d9898d42eae6761890803b68d6cd6c254b59b0",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0017/doc_exp8_20260703_0017_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0017/doc_exp8_20260703_0017_006.pdf": {
+    "bytes": 590984,
+    "sha256": "24c50dcee7d08e8a52cc0fa9e9c162a3bd2a97aa31138f479a2a262160f38db3",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0017/doc_exp8_20260703_0017_007.pdf": {
+    "bytes": 14691130,
+    "sha256": "43df5f6d922784193cf2f64d409e420e65ea3e13ca74c62e2a3aa6650d65cec2",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0021/doc_exp8_20260703_0021_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0021/doc_exp8_20260703_0021_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0021/doc_exp8_20260703_0021_003.pdf": {
+    "bytes": 10809587,
+    "sha256": "cc7c6f5168d823f95a00cc83870297ec5e52c08229740173adec0e91bce80621",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0021/doc_exp8_20260703_0021_004.pdf": {
+    "bytes": 3982774,
+    "sha256": "a5d7faf6a0427368cf7eee21c9ed5e0a6969361398421e1b384ce3d78dbb1aee",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0021/doc_exp8_20260703_0021_005.pdf": {
+    "bytes": 2467343,
+    "sha256": "a56917aab19957f958fa51f9808018f047823d1780e9a655c632795010c0f698",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0021/doc_exp8_20260703_0021_006.pdf": {
+    "bytes": 11125617,
+    "sha256": "bfe9a079396b93d3358126f8264a34f9703a351f5ec2305364c20823dec857db",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0021/doc_exp8_20260703_0021_007.pdf": {
+    "bytes": 3757474,
+    "sha256": "16cb902fc9ca9c678f28d4c2181b1b40808536bd0885ea25ff1ddf75b0281d44",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0037/doc_exp8_20260703_0037_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0037/doc_exp8_20260703_0037_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0037/doc_exp8_20260703_0037_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0037/doc_exp8_20260703_0037_004.pdf": {
+    "bytes": 1944045,
+    "sha256": "a0b07c79f0de3d0e1da33645c293d5b129608a01f8aac52c322e685773da10b9",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0037/doc_exp8_20260703_0037_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0037/doc_exp8_20260703_0037_006.pdf": {
+    "bytes": 1445245,
+    "sha256": "a7f9d3013dc1d9d1de6f4d88679890cd71777698176904d24140fd464fd2176c",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0037/doc_exp8_20260703_0037_007.pdf": {
+    "bytes": 19351817,
+    "sha256": "b5e36f7da218a0cff1a5e9e8a0301976e8db2c2dd995ecfbc1f1ac3e8f02cbe5",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0037/doc_exp8_20260703_0037_008.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0042/doc_exp8_20260703_0042_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0042/doc_exp8_20260703_0042_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0042/doc_exp8_20260703_0042_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0042/doc_exp8_20260703_0042_004.pdf": {
+    "bytes": 1954025,
+    "sha256": "63ea5b4ccd3145323cbfc156851c647337a1d0885dc0001cfd0db4fc950e45ed",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0042/doc_exp8_20260703_0042_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0042/doc_exp8_20260703_0042_006.pdf": {
+    "bytes": 708286,
+    "sha256": "34cf267516bfe4958825b4d896c17daaa4e6c70716d9b21ddba00e2c61737a78",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0042/doc_exp8_20260703_0042_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0087/doc_exp8_20260703_0087_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0087/doc_exp8_20260703_0087_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0087/doc_exp8_20260703_0087_003.pdf": {
+    "bytes": 7547253,
+    "sha256": "3949f315c40b3cbb844349c11a209c2c402f6d734b5fdd9f088abfd1c71de8da",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0087/doc_exp8_20260703_0087_004.pdf": {
+    "bytes": 2747130,
+    "sha256": "7095b731d99001896edc193af711a1f132acce107010fbcae0146542fcca9d99",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0087/doc_exp8_20260703_0087_005.pdf": {
+    "bytes": 7055068,
+    "sha256": "0d149d32fb0f558ccb76686b24af3596a04657b647fc2ce395bfc41f934c4b35",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0087/doc_exp8_20260703_0087_006.pdf": {
+    "bytes": 1563445,
+    "sha256": "c5519c83c484ead8effac980bc3bd993069ee707eacf3bd70dd75718c100fc3b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0087/doc_exp8_20260703_0087_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0087/doc_exp8_20260703_0087_008.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0087/doc_exp8_20260703_0087_009.pdf": {
+    "bytes": 13056152,
+    "sha256": "e93c6bb99ff26d672ef2b028c77e4c9d3fe0b7b69ed112e4527cd0b7622d2a89",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0088/doc_exp8_20260703_0088_001.pdf": {
+    "bytes": 22894427,
+    "sha256": "e37f9511d3833c4e1c1296c02198164bdf82a868cf55b73a3f6736458231599a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0088/doc_exp8_20260703_0088_002.pdf": {
+    "bytes": 18751076,
+    "sha256": "a692e2e4467e37b86a5da631c6c7fdcb4ebf01437556c26cb4170c12bce28d92",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0088/doc_exp8_20260703_0088_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0088/doc_exp8_20260703_0088_004.pdf": {
+    "bytes": 672394,
+    "sha256": "57c72acb1c8cd5542e1cbd76b71a3e3309b1da934eb02f9bb23b457a0733a7b1",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0088/doc_exp8_20260703_0088_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0088/doc_exp8_20260703_0088_006.pdf": {
+    "bytes": 32373939,
+    "sha256": "a53e11d7a3de0e2c22681930f1f2c2d9e8adc7f3ad1ce083d13fb41b4e1e701f",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0088/doc_exp8_20260703_0088_007.pdf": {
+    "bytes": 1585738,
+    "sha256": "9a84ad0e5e1110c2db599d958edfd484c8978d60ef3184525935bd110555a228",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0163/doc_exp8_20260703_0163_001.pdf": {
+    "bytes": 13339610,
+    "sha256": "5b87dc4c873c8fa50ca28c3b182dd868633ae58d6b9743da8f72e549b3818fbb",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0163/doc_exp8_20260703_0163_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0163/doc_exp8_20260703_0163_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0163/doc_exp8_20260703_0163_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0163/doc_exp8_20260703_0163_005.pdf": {
+    "bytes": 6745706,
+    "sha256": "7f67edb1c48de47e3a7a362535672fda219c4545a59f29a69af60763f5e58dde",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0163/doc_exp8_20260703_0163_006.pdf": {
+    "bytes": 1776736,
+    "sha256": "9fb0cc0d7cdc2e2f52178e757e48413c61f240572014726b39d3c873c325e5d7",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0163/doc_exp8_20260703_0163_007.pdf": {
+    "bytes": 351689,
+    "sha256": "08c9e2b59b32b2807951e66e97cec1872192c9486e2ba4ec65c220c41472b915",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0163/doc_exp8_20260703_0163_008.pdf": {
+    "bytes": 17401184,
+    "sha256": "9ae80711f93432eb6ad0985be5fe74887749db70e107f146ebc5e0bc8e4d6ef1",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0212/doc_exp8_20260703_0212_001.pdf": {
+    "bytes": 29452276,
+    "sha256": "90476b5a81906337c6d1045014d10cd1b680af55610630b5d870705d36ef7e24",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0212/doc_exp8_20260703_0212_002.pdf": {
+    "bytes": 7826503,
+    "sha256": "67c0d6020e706f79f3d1d41b0adee321e976b043889e438d78d6a66c39cdd777",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0212/doc_exp8_20260703_0212_003.pdf": {
+    "bytes": 507208,
+    "sha256": "7d2685fb7bd31fbd08d614dc886d394472992806c08f7930aff63d2d81013e5f",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0212/doc_exp8_20260703_0212_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0212/doc_exp8_20260703_0212_005.pdf": {
+    "bytes": 1751169,
+    "sha256": "fda5063308d4e7ffb3b6a36c1e8321152dd68d3b9a91fcc815722f2fa97f789b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0212/doc_exp8_20260703_0212_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0212/doc_exp8_20260703_0212_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0212/doc_exp8_20260703_0212_008.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp8_20260703_0212/doc_exp8_20260703_0212_009.pdf": {
+    "bytes": 12677428,
+    "sha256": "4f2cf5100814c252274fbad2b8459c92f9e99af18e4cc57042e058cb6f43e7dc",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0035/doc_exp9_20260704_0035_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0035/doc_exp9_20260704_0035_002.pdf": {
+    "bytes": 19802388,
+    "sha256": "2ed7632e72efb7ecef99367dba3d0139dac5d07f3b856742a50150d73fe25f31",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0035/doc_exp9_20260704_0035_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0035/doc_exp9_20260704_0035_004.pdf": {
+    "bytes": 532441,
+    "sha256": "52ac0307795cc9f0d67d06a7c24744c9e66a7bb36cf1af41405ad2ddf1be8977",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0035/doc_exp9_20260704_0035_005.pdf": {
+    "bytes": 1653076,
+    "sha256": "96460b1facf59d6fc57d35efa85bae59839247d5bbd3ca25a01833bb24d551e2",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0035/doc_exp9_20260704_0035_006.pdf": {
+    "bytes": 13230570,
+    "sha256": "eceb55e8dc5d1c1806d50004141b5cc7051d44964a92732842f4f73f33f2f97d",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0035/doc_exp9_20260704_0035_007.pdf": {
+    "bytes": 2981373,
+    "sha256": "5d71207bf98bc6ad26c8a93c394eb20f4276f4ae0b7bdf8432941c66d3521b31",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0111/doc_exp9_20260704_0111_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0111/doc_exp9_20260704_0111_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0111/doc_exp9_20260704_0111_003.pdf": {
+    "bytes": 2100449,
+    "sha256": "59cdbee6987cffa2e013ba434efff3acc8f4f50bd5434f18bac4283b08c4a873",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0111/doc_exp9_20260704_0111_004.pdf": {
+    "bytes": 10234002,
+    "sha256": "08ae08a151c56aad2ccdaf8cca27c424c438eebc374b8602b0c29134a840cc63",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0111/doc_exp9_20260704_0111_005.pdf": {
+    "bytes": 609879,
+    "sha256": "0c09c8367069ce577f4f1712c34bbe58184d87e0eeffb670fb1a70b0ca891455",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0111/doc_exp9_20260704_0111_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0111/doc_exp9_20260704_0111_007.pdf": {
+    "bytes": 7604137,
+    "sha256": "1e52802cffe86a7f0d757aa1d12ca5ed3b0539e3cd6b7d08f91fe625f721e251",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0111/doc_exp9_20260704_0111_008.pdf": {
+    "bytes": 5724597,
+    "sha256": "f02d8c8cb587ad174a24566de394eff70c24a8b1acc3356de24f9e1fda76c82d",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0111/doc_exp9_20260704_0111_009.pdf": {
+    "bytes": 1390270,
+    "sha256": "6e5ca7109409c6b104d96d3dbcf13c62c0457bbb5e96b9b9dad63f0baeca405b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0183/doc_exp9_20260704_0183_001.pdf": {
+    "bytes": 7778085,
+    "sha256": "a1c984b61e92584487d987d28ebb0daf41f4af35bdcf16f3efe038396706bb38",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0183/doc_exp9_20260704_0183_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0183/doc_exp9_20260704_0183_003.pdf": {
+    "bytes": 565384,
+    "sha256": "25e9f5f53e45552965b10750bc5499b344b9623f6231ed61c3c23a38923d0640",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0183/doc_exp9_20260704_0183_004.pdf": {
+    "bytes": 10566677,
+    "sha256": "a747e76b4ca8a2be71e81a2fd3ea83c410dc825be7625475b0304b921c77607c",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0183/doc_exp9_20260704_0183_005.pdf": {
+    "bytes": 1545581,
+    "sha256": "83d35cba5a6adb2baf103ff4bb23e53f72cb7cd8f0229e44a2da3773a1842276",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0183/doc_exp9_20260704_0183_006.pdf": {
+    "bytes": 30506491,
+    "sha256": "4341e206141370a5ba9917952f4e5e64fe884579dfc918497cb53a8487612d05",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0183/doc_exp9_20260704_0183_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp9_20260704_0183/doc_exp9_20260704_0183_008.pdf": {
+    "bytes": 2349892,
+    "sha256": "404e026b2a1202b1ce12ffcfdda6dcda7c1c208085675c846a3fcdeb13cf8f23",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0002/doc_exp_20260703_0002_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0002/doc_exp_20260703_0002_002.pdf": {
+    "bytes": 5260362,
+    "sha256": "9d696cc931cb3867a805a18c0f060a19c6a14d864e841b554b879551032be1e7",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0002/doc_exp_20260703_0002_003.pdf": {
+    "bytes": 399881,
+    "sha256": "2ba9d7811edb45657768a0a969e212b05f7e9c747403295c0c42b40b449775e5",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0002/doc_exp_20260703_0002_004.pdf": {
+    "bytes": 2766593,
+    "sha256": "9e4b7842a98bd1d6af1963328b3dcc87e44e7c534ad8329916a99b1506d43166",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0002/doc_exp_20260703_0002_005.pdf": {
+    "bytes": 972336,
+    "sha256": "44f58c3f1c942e815e1176ea3bc3ffbcba1860d2915759b05ef82c77bb821dcf",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0002/doc_exp_20260703_0002_006.pdf": {
+    "bytes": 2579590,
+    "sha256": "1338fd32a52d510e29525fa90ee45304810efb16b8a21d1f2acd7fa975306e8a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0002/doc_exp_20260703_0002_007.pdf": {
+    "bytes": 3657578,
+    "sha256": "b8b331e67b2e04b95fa11a699a2a14beec06c5e8b3f6bf678c469dd4bd10d95c",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0002/doc_exp_20260703_0002_008.pdf": {
+    "bytes": 5023784,
+    "sha256": "1030c06257da21693d28c07aa65e678222a5f460b0e5764341108259210a68d8",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0002/doc_exp_20260703_0002_009.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0002/doc_exp_20260703_0002_010.pdf": {
+    "bytes": 17189577,
+    "sha256": "c6b5bc2962cffe99d1aaabca64d890f07287500e399304a0222c69306ca732b9",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0004/doc_exp_20260703_0004_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0004/doc_exp_20260703_0004_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0004/doc_exp_20260703_0004_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0004/doc_exp_20260703_0004_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0004/doc_exp_20260703_0004_005.pdf": {
+    "bytes": 373674,
+    "sha256": "251f55068918c2afb626dc03757bdf4a6eb593461072074b8de9c8666f87d2c3",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0004/doc_exp_20260703_0004_006.pdf": {
+    "bytes": 1540709,
+    "sha256": "c3b777ab16f8ed4d4141cacb52f1571cf0d7f7530ddef9e903e47a27392b2f9b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0004/doc_exp_20260703_0004_007.pdf": {
+    "bytes": 3085487,
+    "sha256": "89a5e4cddf883493d1e8b7536f9a4040a9a17daa3c65fb92ede6b9292ca8c859",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0004/doc_exp_20260703_0004_008.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0004/doc_exp_20260703_0004_009.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0007/doc_exp_20260703_0007_001.pdf": {
+    "bytes": 10302489,
+    "sha256": "1a59c49a4cd5e84f18f2a3407cb404c7ab11470972210c3e1cf4f9cbef06e147",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0007/doc_exp_20260703_0007_002.pdf": {
+    "bytes": 6514991,
+    "sha256": "80b985d2b7b0231bcd806be95554ea2564c664a8745c33990fcbf2314cb65dc3",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0007/doc_exp_20260703_0007_003.pdf": {
+    "bytes": 3131771,
+    "sha256": "aee6130f66667c58d4b29aa9dfe84949819c5c4a2113d40f453d6fea4eaa4e72",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0007/doc_exp_20260703_0007_004.pdf": {
+    "bytes": 2001235,
+    "sha256": "278d717651fe4fedd10e3f6ab2c2fd8691fdb314380ffc96787c7bbab73a473d",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0007/doc_exp_20260703_0007_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0007/doc_exp_20260703_0007_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0007/doc_exp_20260703_0007_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0007/doc_exp_20260703_0007_008.pdf": {
+    "bytes": 24899292,
+    "sha256": "b4ece4f09742f3f628e339c08aa495b6895b1c94f7ddebaa6f2aadd59a2b743b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0007/doc_exp_20260703_0007_009.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0015/doc_exp_20260703_0015_001.pdf": {
+    "bytes": 2256342,
+    "sha256": "a17e5ac3579e8e75fbfe3281459fb3ed83bd7218897cbb30e5a3b0452e322225",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0015/doc_exp_20260703_0015_002.pdf": {
+    "bytes": 9944035,
+    "sha256": "162dd75ec7ff158b481212de1fee15b0abde62c1338932130a9b2d61b777472a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0015/doc_exp_20260703_0015_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0015/doc_exp_20260703_0015_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0015/doc_exp_20260703_0015_005.pdf": {
+    "bytes": 3540752,
+    "sha256": "48dcdbbcd4201019e520c99dd97921288268139b3c5971c54f504df75938cce0",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0015/doc_exp_20260703_0015_006.pdf": {
+    "bytes": 25608717,
+    "sha256": "93fd7456657fc486e283d0116747962041584c3ee94de7e98012df3713a150fb",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0015/doc_exp_20260703_0015_007.pdf": {
+    "bytes": 609538,
+    "sha256": "764ee971f642ded5fe0d7b0a5d5ce902e12ea902021ce4606831a605a0d4a729",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0015/doc_exp_20260703_0015_008.pdf": {
+    "bytes": 2347474,
+    "sha256": "59e77a655181b5433a668efe0acccb0de27b0302ee66879cc98fd8b35e8135ec",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0015/doc_exp_20260703_0015_009.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0015/doc_exp_20260703_0015_010.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0018/doc_exp_20260703_0018_001.pdf": {
+    "bytes": 607911,
+    "sha256": "d25d7208a1af5a8476d22f7b662a244a7dd1858b0ab23bc9a54a08624209bba7",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0018/doc_exp_20260703_0018_002.pdf": {
+    "bytes": 2256340,
+    "sha256": "4dc74e3e5d6f7396d4ba277154981d5fa7fda8d70d3f2a2f1abc206499fcb5d2",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0018/doc_exp_20260703_0018_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0018/doc_exp_20260703_0018_004.pdf": {
+    "bytes": 3293489,
+    "sha256": "ad861ee4ffd8457b0e37fa8e8d2e350bffb6b4cc63b20a94418de51c0756d133",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0018/doc_exp_20260703_0018_005.pdf": {
+    "bytes": 16722814,
+    "sha256": "d1c6929da987aa0a7e88bcba1bedcaca7bcc5e50579de6932036e6862905c4a9",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0018/doc_exp_20260703_0018_006.pdf": {
+    "bytes": 3540754,
+    "sha256": "18d460a700a28c0143e30620053bd366a55f86473e18318109fd657e1952c2ba",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0018/doc_exp_20260703_0018_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0018/doc_exp_20260703_0018_008.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0018/doc_exp_20260703_0018_009.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0018/doc_exp_20260703_0018_010.pdf": {
+    "bytes": 1588682,
+    "sha256": "0e5811dea5ecf3045b0dfb0b329d67d498741ff7791c26b5127ec61ca12c0e5d",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0021/doc_exp_20260703_0021_001.pdf": {
+    "bytes": 5811310,
+    "sha256": "0f3448191d77389118b80b9420e61729bae0176c3da35038c12ad86f7fabbe22",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0021/doc_exp_20260703_0021_002.pdf": {
+    "bytes": 8815088,
+    "sha256": "f32aaacec4d853f461945e841a4442e9afe4b576b8477a10001af8ce56784c68",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0021/doc_exp_20260703_0021_003.pdf": {
+    "bytes": 467145,
+    "sha256": "4cd97f5189d0b913ae0ecca2d5f1aa5c713524024041700ac75d766f5761e276",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0021/doc_exp_20260703_0021_004.pdf": {
+    "bytes": 731415,
+    "sha256": "ccaef7bae112b24964a7d44547b047bc70fe6bad0f3d484501d3e178a935da29",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0021/doc_exp_20260703_0021_005.pdf": {
+    "bytes": 2719425,
+    "sha256": "6c848983281603952405ab21d8ac85cf858a9cee7996086bda7c19668d3a511e",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0021/doc_exp_20260703_0021_006.pdf": {
+    "bytes": 8132287,
+    "sha256": "973e078b1a480f87a10bdfe3b270c2ba1e63c96260588e2b1a9a40bae8372c0a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0021/doc_exp_20260703_0021_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0021/doc_exp_20260703_0021_008.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0022/doc_exp_20260703_0022_001.pdf": {
+    "bytes": 5811310,
+    "sha256": "0f3448191d77389118b80b9420e61729bae0176c3da35038c12ad86f7fabbe22",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0022/doc_exp_20260703_0022_002.pdf": {
+    "bytes": 8815088,
+    "sha256": "f32aaacec4d853f461945e841a4442e9afe4b576b8477a10001af8ce56784c68",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0022/doc_exp_20260703_0022_003.pdf": {
+    "bytes": 2719425,
+    "sha256": "6c848983281603952405ab21d8ac85cf858a9cee7996086bda7c19668d3a511e",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0022/doc_exp_20260703_0022_004.pdf": {
+    "bytes": 8132283,
+    "sha256": "eabd66e054f7280da70c13ea47e94e159a75b32aeb2c73767480661004dcdc7b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0022/doc_exp_20260703_0022_005.pdf": {
+    "bytes": 1022626,
+    "sha256": "6bdf2e8425f14b1ec6c695bfd8e2575dc624b03ada2cc543d823d2138ce0b001",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0022/doc_exp_20260703_0022_006.pdf": {
+    "bytes": 1395777,
+    "sha256": "208db53c518ee8f7ac64191526c95726d9121c2d45e4a63958bd7e330c35005d",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0022/doc_exp_20260703_0022_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0022/doc_exp_20260703_0022_008.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/exp_20260703_0022/doc_exp_20260703_0022_009.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/pilot_gd_002/doc_gd_sz_tqjf_2025_mtn4_001.pdf": {
+    "bytes": 1022699,
+    "sha256": "9e78d3a9233623d7952ca7814ffc405871a8f890aef71225d0746d2096339ba1",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/pilot_gd_002/doc_gd_sz_tqjf_2025_mtn4_002.pdf": {
+    "bytes": 5424755,
+    "sha256": "bc413b62a5f71e56b9225b30d6e67ba676d3c96a10b0ecc27e251933c32b211d",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/pilot_gd_002/doc_gd_sz_tqjf_2025_mtn4_003.pdf": {
+    "bytes": 10480220,
+    "sha256": "d1498ccd9f09e8a32c9a8e9b53510d5b8a3a1b88848297c2a7ccc8ac81ab6fda",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/pilot_gd_002/doc_gd_sz_tqjf_2025_mtn4_004.pdf": {
+    "bytes": 1272203,
+    "sha256": "fabece4ddfe6c52876c5f2e3e2ed97b690faf1c86d734abb1baa68ad0c054eed",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/pilot_gd_002/doc_gd_sz_tqjf_2025_mtn4_005.pdf": {
+    "bytes": 4739120,
+    "sha256": "0f672928fafb83d9cb27afa1d3a2d14b9766cceb350d55078812bd09f28bb7c2",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/pilot_gd_002/doc_gd_sz_tqjf_2025_mtn4_008.pdf": {
+    "bytes": 10484905,
+    "sha256": "3eeb94ea0dff3df99222d75d014c78d752b3bc783099dd11b29c9a78dbfec42c",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/pilot_gz_002/doc_gz_zy_daoqiao_2015_bond_prospectus.pdf": {
+    "bytes": 543825,
+    "sha256": "282e56437d92b67fa7c7eb903bdb58754fd531a384aef7f148f4f3e40452e0f2",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/pilot_gz_002/doc_gz_zy_daoqiao_2015_bond_rating.pdf": {
+    "bytes": 2011241,
+    "sha256": "f5f399271a34186c766df57907a674c0c51860bd691beb7b91953df599f7151f",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/pilot_gz_002/doc_gz_zy_daoqiao_2017_asset_restructuring_special_rating.pdf": {
+    "bytes": 2165630,
+    "sha256": "8350a7226c5a42895522a50fe205c13431d49e303741ed7dc2dbd825255c28db",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/pilot_gz_002/doc_gz_zy_daoqiao_2017_restructuring_notice.pdf": {
+    "bytes": 525714,
+    "sha256": "1570c467335b7257bf529a065d37fd045fd941950ac86b18800b59f47f78cde2",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/pilot_gz_002/doc_gz_zy_daoqiao_2022_debt_restructuring_media_notice.pdf": {
+    "bytes": 565302,
+    "sha256": "a2587d1b96815361aeed08e03b249c039400ef2a748b9c2787840e46c64f85d6",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/pilot_gz_002/doc_gz_zy_daoqiao_2022_tracking_rating.pdf": {
+    "bytes": 2422765,
+    "sha256": "b32531c65b87be9eef6d0d42c5c69fb65bae01b61a1197b0ee90d572519dd8f5",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/pilot_gz_002/doc_gz_zy_daoqiao_2023_bank_restructuring_notice.pdf": {
+    "bytes": 636740,
+    "sha256": "ed420cdd59fd7e7dc2a229a675b394149411c4493d4b5f7edd37eadde9dc961e",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/pilot_gz_003/doc_gz_lps_kaitou_2016_bond_prospectus.pdf": {
+    "bytes": 891156,
+    "sha256": "b12c643c177eee93e12003a0aac7b1acff0bb147d3d8fa1ea86fbf4687877ee7",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/pilot_gz_003/doc_gz_lps_kaitou_2016_bond_rating.pdf": {
+    "bytes": 3068917,
+    "sha256": "b8388ef7e3f5accd61b7f21d6cb9a5e400a96add2c49ca2420af94e233b36643",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/pilot_gz_003/doc_gz_lps_kaitou_2021_enforcement_notice.pdf": {
+    "bytes": 304290,
+    "sha256": "a789505d95bb9cff9d1b8c4ab2683ba3eb444a474d31c3c94fcc604922b4a3e5",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/pilot_gz_003/doc_gz_lps_kaitou_2022_tracking_rating.pdf": {
+    "bytes": 1184721,
+    "sha256": "4d278fa9b5787ac814fe364972b161a4f4eeefefe2cf7bf01073061d0faa6394",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/pilot_gz_003/doc_gz_lps_kaitou_2023_rating_watch_notice.pdf": {
+    "bytes": 442427,
+    "sha256": "ac51ff6d5c73739649a3706ba3f98437a7c169f86bc7360e6f45383472a36b5d",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_csrc_zunyi_daoqiao_2023.html": {
+    "bytes": 13618,
+    "sha256": "803b44635d3a99668bdf8dcc3e932e4971c97a50c1b00db9f68d23fba89f521a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp2_20260703_0002_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp2_20260703_0002_002.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp2_20260703_0002_009.pdf": {
+    "bytes": 2788675,
+    "sha256": "82cbf48e65d152c4c4d40a9c41bc3ef7813d558b44327bb8747df6c71cd09a04",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp2_20260703_0002_009.txt": {
+    "bytes": 588140,
+    "sha256": "6164d18f0cf11d3ceb0866b28c44a3fa2109c482cda23455333f0ba9c09ba56a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp2_20260703_0003_005.pdf": {
+    "bytes": 1872281,
+    "sha256": "0985edf2fa1f95addcb0ef33d83d290dc2e366e07028dbbfadb40b40d4a96d5b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp2_20260703_0003_005.txt": {
+    "bytes": 779618,
+    "sha256": "22a76fa37d28edcd8172e046ab4aa5acea8a503dde8904828a67bd4f4d9c7f24",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp2_20260703_0003_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp2_20260703_0003_007.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp2_20260703_0018_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp2_20260703_0018_003.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp2_20260703_0018_004.pdf": {
+    "bytes": 4593341,
+    "sha256": "95cd0c22cc18d4988e41a246339914ee2b1392c3d57b3651b761040dfd69d151",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp2_20260703_0018_004.txt": {
+    "bytes": 993163,
+    "sha256": "01fb3ae9a8a3d4916f1e52a4a33b7a92147dfd860ee6248c6ee6e07f9926f86b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp3_20260703_0018_001.pdf": {
+    "bytes": 1850272,
+    "sha256": "951c30583a20b2ac7b8287f20ae424d16a3751c9237091ef7dab9e83c1aaa593",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp3_20260703_0018_001.txt": {
+    "bytes": 659986,
+    "sha256": "0db5c4ba308411c55e439a81779969d0a5b9b36f0a3ffea7a5cbbc4f58c6614c",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp3_20260703_0018_008.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp3_20260703_0018_008.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp4_20260703_0009_006.pdf": {
+    "bytes": 1666134,
+    "sha256": "accb49f5c4605bf9e78b1a3d966c2a31ba4e982ed51d1df6d43d84d5cf3c25c2",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp4_20260703_0009_006.txt": {
+    "bytes": 713337,
+    "sha256": "b653d7d3fdcafc62ca8c0bfaa93ba060dba060e8f8bb6bf73fb08f932316594b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp4_20260703_0013_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp4_20260703_0013_002.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp4_20260703_0013_005.pdf": {
+    "bytes": 2119754,
+    "sha256": "fac8a3dfef8c54f6b6cf12b0010e5b8cc879f4017e5d176795e56ef55fe4e140",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp4_20260703_0013_005.txt": {
+    "bytes": 697111,
+    "sha256": "5ef6e6bc685f23c0c3d18abd9731b9c2971bd58ef8473d01d6ac6be06749d5fd",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp4_20260703_0027_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp4_20260703_0027_001.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp4_20260703_0027_010.pdf": {
+    "bytes": 3955761,
+    "sha256": "8a0083f15350e0d253fda033295bd16f6a1780db68a508f223feafbed1528ee9",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp4_20260703_0027_010.txt": {
+    "bytes": 775608,
+    "sha256": "b9ec42b95b10af3df16f880f704faabcc6577ba7de5dae02ac8dc2e92721d29f",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0001_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0001_007.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0001_009.pdf": {
+    "bytes": 3541315,
+    "sha256": "5748b5d90ce298cc9ae0460209cd2593c2d2ad09d16c6a5399df94b1dc0c7858",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0001_009.txt": {
+    "bytes": 608043,
+    "sha256": "e4cb18b431cc24527c674d428d4407ca6136206be69c0d134a29caa49229f73d",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0004_008.pdf": {
+    "bytes": 1696140,
+    "sha256": "604ff4688150b0892ca4464f04e7bace3117dbfc198221cecc9c18f187ae799b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0004_008.txt": {
+    "bytes": 610000,
+    "sha256": "f14c0054bf9c40581011443656b6d506ea18f91ba1b919343ccbc23f20029951",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0004_009.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0004_009.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0007_004.pdf": {
+    "bytes": 1703988,
+    "sha256": "c0a31c404c54675d2af5722fe998a7cef85cb1950265489acd3f09e75a25c4de",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0007_004.txt": {
+    "bytes": 411187,
+    "sha256": "32dd9a3619926ba409dbd769ab7520d9a3416091a452be66e1cb4df4f5c0d579",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0007_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0007_006.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0025_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0025_001.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0025_007.pdf": {
+    "bytes": 1333217,
+    "sha256": "4bf362bba85d944068c272f502cfbde631462746c83ea9777977a75e690ae50a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0025_007.txt": {
+    "bytes": 461640,
+    "sha256": "f7d48bb447880b20bc1d6ecfeeb3cb0b168cee698c69812ddfd3f8c47484202e",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0030_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0030_006.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0030_007.pdf": {
+    "bytes": 2003061,
+    "sha256": "5f91eefde9a59391b1e9acb4d879e162f24f7943711665358cbc801da8065e5c",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0030_007.txt": {
+    "bytes": 599055,
+    "sha256": "b9537ee77eb0bd4e1480a5c001bccb38a8eca9ded7b75965080ea26824ab9ead",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0034_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0034_002.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0034_004.pdf": {
+    "bytes": 1862353,
+    "sha256": "0fc5b83c9f2f86c3c9af700a861d9c212360e55d75569a77b254d4715d4d2784",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp5_20260703_0034_004.txt": {
+    "bytes": 736030,
+    "sha256": "7d18907c9716de44475723bea83e168e7c73f03b6a95116fdff7b5aa2b3afc9b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp6_20260703_0005_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp6_20260703_0005_005.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp6_20260703_0005_006.pdf": {
+    "bytes": 5847499,
+    "sha256": "8952f58b09cf6d957cc514dab6bdefda30bcdfcb8027c764c60e6bf3af3cac02",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp6_20260703_0005_006.txt": {
+    "bytes": 1095521,
+    "sha256": "d8c67aa73b118ccf7a4e1134f8581be06227f9886c4128cba6fef2f7f425db55",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp6_20260703_0025_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp6_20260703_0025_001.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp6_20260703_0025_004.pdf": {
+    "bytes": 1201703,
+    "sha256": "a359b95122a50d466f5ebce577a4427f2764bd047f6ef5e16070ac5556f7dc6d",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp6_20260703_0025_004.txt": {
+    "bytes": 406600,
+    "sha256": "0b68979f75c367cf9685371f529a77471ebe212764ad6a911c41f1f31703dca5",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp6_20260703_0039_002.pdf": {
+    "bytes": 2071939,
+    "sha256": "a9674510d98dd5fe69b1679193c7da30829b848908b84587901f778ae192c684",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp6_20260703_0039_002.txt": {
+    "bytes": 838154,
+    "sha256": "14f29397365a98bcc10ea350b6f141f7dd72b0979e332445d3dbd361d044e086",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp6_20260703_0039_009.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp6_20260703_0039_009.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0004_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0004_003.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0004_004.pdf": {
+    "bytes": 2555016,
+    "sha256": "8d2eeb3497ed87dc017346d8074870600d2a83ca5bd222c8a94791042394764f",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0004_004.txt": {
+    "bytes": 487237,
+    "sha256": "4ce6dc583ed3d928e6c9bbcf224eae4079c42d0981e569931e5c5b6ff7bc9722",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0009_003.pdf": {
+    "bytes": 2115862,
+    "sha256": "3129f230e3bd5a446f31b929729d2524913c0482665d9c2ef70d35a1af1f4cc1",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0009_003.txt": {
+    "bytes": 843842,
+    "sha256": "583deea7909b7a32791b32d22149e92aa484ca31e01331dae41da9ddee5dcdbf",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0009_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0009_006.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0012_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0012_003.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0012_004.pdf": {
+    "bytes": 1429394,
+    "sha256": "ec28b0b2198c7d3ae696771314f7154ce4d6131c719d05be2aeffe991f448ae9",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0012_004.txt": {
+    "bytes": 586966,
+    "sha256": "71670d2ff060a2f05b6194742caedad19f786c4d91b83020da52f5a838f2d861",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0017_003.pdf": {
+    "bytes": 2801487,
+    "sha256": "92ab5fb51cf4c2e31d8dba534b77da89ff709536b17180ff5efcd6b2dbf8628d",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0017_003.txt": {
+    "bytes": 648039,
+    "sha256": "e3adcb9f5a58ed57e98c06ca3b4a996b2df251404bc7f6b46510dedb4d57eeed",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0017_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0017_006.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0021_003.pdf": {
+    "bytes": 10809587,
+    "sha256": "cc7c6f5168d823f95a00cc83870297ec5e52c08229740173adec0e91bce80621",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0021_003.txt": {
+    "bytes": 269119,
+    "sha256": "6e72f2fa86251aefea1140f667b0cad3a768a4c8f505a1e3cd186284ed70369f",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0021_004.pdf": {
+    "bytes": 3982774,
+    "sha256": "a5d7faf6a0427368cf7eee21c9ed5e0a6969361398421e1b384ce3d78dbb1aee",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0021_004.txt": {
+    "bytes": 900311,
+    "sha256": "f5e968e1c929ad2235ed97c073a754f21e22d7eaf20f8cc1b044c2f574ff55d0",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0037_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0037_006.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0037_007.pdf": {
+    "bytes": 19351817,
+    "sha256": "b5e36f7da218a0cff1a5e9e8a0301976e8db2c2dd995ecfbc1f1ac3e8f02cbe5",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0037_007.txt": {
+    "bytes": 970172,
+    "sha256": "a9715ad3518046227c921af7f31e3cac910b31ebb59fb8edb9a7b92f9d6ed36a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0042_004.pdf": {
+    "bytes": 1954025,
+    "sha256": "63ea5b4ccd3145323cbfc156851c647337a1d0885dc0001cfd0db4fc950e45ed",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0042_004.txt": {
+    "bytes": 858752,
+    "sha256": "0bc1ee2d18c17c15674c7f1e2f0f57784a02d943f09c4e0118eed6b50e527061",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0042_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0042_006.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0087_004.pdf": {
+    "bytes": 2747130,
+    "sha256": "7095b731d99001896edc193af711a1f132acce107010fbcae0146542fcca9d99",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0087_004.txt": {
+    "bytes": 593124,
+    "sha256": "6fdd2e86238c16211a2d6dc2c7250818e0ceac9a732e11a1053b79be061298d1",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0087_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0087_006.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0088_004.pdf": {
+    "bytes": 672394,
+    "sha256": "57c72acb1c8cd5542e1cbd76b71a3e3309b1da934eb02f9bb23b457a0733a7b1",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0088_004.txt": {
+    "bytes": 58849,
+    "sha256": "3f6944fc2968925c9dc6d0cb4d2e72c85fd8932dde0ae03fc449aa2ec1b27384",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0088_007.pdf": {
+    "bytes": 1585738,
+    "sha256": "9a84ad0e5e1110c2db599d958edfd484c8978d60ef3184525935bd110555a228",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0088_007.txt": {
+    "bytes": 609726,
+    "sha256": "9969061900ea69e52b19978c2d653e509caf0f506409702a30131f47000b17b1",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0163_006.pdf": {
+    "bytes": 1776736,
+    "sha256": "9fb0cc0d7cdc2e2f52178e757e48413c61f240572014726b39d3c873c325e5d7",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0163_006.txt": {
+    "bytes": 565949,
+    "sha256": "34150d396af9d2f40a716889a09b14f1d959b6efa5ff54d76abe938195afc124",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0163_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0163_007.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0212_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0212_003.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0212_005.pdf": {
+    "bytes": 1751169,
+    "sha256": "fda5063308d4e7ffb3b6a36c1e8321152dd68d3b9a91fcc815722f2fa97f789b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp8_20260703_0212_005.txt": {
+    "bytes": 668454,
+    "sha256": "2333f5af0805458661d35686ead675c74974b3f0c7b65a979fa2df0d59f1cd73",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp9_20260704_0035_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp9_20260704_0035_004.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp9_20260704_0035_005.pdf": {
+    "bytes": 1653076,
+    "sha256": "96460b1facf59d6fc57d35efa85bae59839247d5bbd3ca25a01833bb24d551e2",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp9_20260704_0035_005.txt": {
+    "bytes": 723602,
+    "sha256": "38fb1a177ca720c428d3dacd8d184532198a61fe60f92cfa1068790bdd521ac5",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp9_20260704_0111_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp9_20260704_0111_003.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp9_20260704_0111_009.pdf": {
+    "bytes": 1390270,
+    "sha256": "6e5ca7109409c6b104d96d3dbcf13c62c0457bbb5e96b9b9dad63f0baeca405b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp9_20260704_0111_009.txt": {
+    "bytes": 559506,
+    "sha256": "c77412eaf3797d1066dc3fbe0e1e91ebce6deb94105dc0e4030ad693964e5f30",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp9_20260704_0183_005.pdf": {
+    "bytes": 1545581,
+    "sha256": "83d35cba5a6adb2baf103ff4bb23e53f72cb7cd8f0229e44a2da3773a1842276",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp9_20260704_0183_005.txt": {
+    "bytes": 454647,
+    "sha256": "c2fc8f3a700f2baa7499a0161717119f86c91e6aa98d13a5d2d9a9ff971e5610",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp9_20260704_0183_008.pdf": {
+    "bytes": 2349892,
+    "sha256": "404e026b2a1202b1ce12ffcfdda6dcda7c1c208085675c846a3fcdeb13cf8f23",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp9_20260704_0183_008.txt": {
+    "bytes": 67794,
+    "sha256": "692d0bd88e6aa22ae8ef9d50865292eca7fbecbba5c50e5193d9d6b94b535f64",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp_20260703_0002_005.pdf": {
+    "bytes": 972336,
+    "sha256": "44f58c3f1c942e815e1176ea3bc3ffbcba1860d2915759b05ef82c77bb821dcf",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp_20260703_0002_005.txt": {
+    "bytes": 58860,
+    "sha256": "28c277ea94170a8d5482335879dd58f548aa56dc76e14f49627b58bd8034427b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp_20260703_0002_006.pdf": {
+    "bytes": 2579590,
+    "sha256": "1338fd32a52d510e29525fa90ee45304810efb16b8a21d1f2acd7fa975306e8a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp_20260703_0002_006.txt": {
+    "bytes": 107531,
+    "sha256": "4d45f1fae6eaa41beccf5a401e22e18caba9237a0df602f4c7f3f9350694be8a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp_20260703_0004_006.pdf": {
+    "bytes": 1540709,
+    "sha256": "c3b777ab16f8ed4d4141cacb52f1571cf0d7f7530ddef9e903e47a27392b2f9b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp_20260703_0004_006.txt": {
+    "bytes": 568034,
+    "sha256": "5860b841e71d2311e9793248242faf5d68ea11e718a49e9c40aed97636f97b02",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp_20260703_0004_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp_20260703_0004_007.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp_20260703_0007_003.pdf": {
+    "bytes": 3131771,
+    "sha256": "aee6130f66667c58d4b29aa9dfe84949819c5c4a2113d40f453d6fea4eaa4e72",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp_20260703_0007_003.txt": {
+    "bytes": 609969,
+    "sha256": "e49e75aa07c1478d709bc7afe5da24c8ed4145ade8d8196398bcb28118fa3b8b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp_20260703_0007_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp_20260703_0007_004.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp_20260703_0015_008.pdf": {
+    "bytes": 2347474,
+    "sha256": "59e77a655181b5433a668efe0acccb0de27b0302ee66879cc98fd8b35e8135ec",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp_20260703_0015_008.txt": {
+    "bytes": 657539,
+    "sha256": "7b00ab349f50bd201592b52535b5965f5ad327a73ed2f13449f36d1f0896b5a9",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp_20260703_0018_010.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp_20260703_0018_010.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp_20260703_0021_003.pdf": {
+    "bytes": 467145,
+    "sha256": "4cd97f5189d0b913ae0ecca2d5f1aa5c713524024041700ac75d766f5761e276",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp_20260703_0021_003.txt": {
+    "bytes": 26436,
+    "sha256": "3b66c2b31b14eddfe095485a0675647b9132367dd68c1927e1feda3c184b4d02",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp_20260703_0021_005.pdf": {
+    "bytes": 2719425,
+    "sha256": "6c848983281603952405ab21d8ac85cf858a9cee7996086bda7c19668d3a511e",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp_20260703_0021_005.txt": {
+    "bytes": 108217,
+    "sha256": "fe7a65805b3f6b7829913320ca6e1899de7a6d6520ee0b303ad4e6ad0c692bb1",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp_20260703_0022_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_exp_20260703_0022_006.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_gd_sz_tqjf_2025_mtn4_001.pdf": {
+    "bytes": 1022699,
+    "sha256": "9e78d3a9233623d7952ca7814ffc405871a8f890aef71225d0746d2096339ba1",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_gd_sz_tqjf_2025_mtn4_001.txt": {
+    "bytes": 41362,
+    "sha256": "7f54b3e841dd1f48151abee41c8deb3dd6c45e526f17d0acee77b6410db48dfe",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_gz_lps_kaitou_2016_bond_prospectus.pdf": {
+    "bytes": 891156,
+    "sha256": "b12c643c177eee93e12003a0aac7b1acff0bb147d3d8fa1ea86fbf4687877ee7",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_gz_lps_kaitou_2016_bond_prospectus.txt": {
+    "bytes": 260317,
+    "sha256": "4f745dfd617ec699b0901bbf007d0616ff4be5dfeb88f77b4c7c70bc6b7b4d84",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_gz_zy_daoqiao_2015_bond_prospectus.pdf": {
+    "bytes": 543825,
+    "sha256": "282e56437d92b67fa7c7eb903bdb58754fd531a384aef7f148f4f3e40452e0f2",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_gz_zy_daoqiao_2015_bond_prospectus.txt": {
+    "bytes": 123774,
+    "sha256": "70f9e9235a0dba62a8286802cf42b1d500aef793ed120778c19000e1e53b60d5",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0009_007.pdf": {
+    "bytes": 4053937,
+    "sha256": "a6a14edf8e70a1386539db75ecb1f9826f83008792fe5cb4f9bdcd9d504e63c5",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0009_007.txt": {
+    "bytes": 645324,
+    "sha256": "7455c9fd20f02001a6a9018878ca9c4f46c7a6522b62324e8fc59b59484b58cb",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0009_008.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0009_008.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0010_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0010_002.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0010_006.pdf": {
+    "bytes": 2287978,
+    "sha256": "c973b4c31915272706f845277ea64f4eac45c3bacee5cb50012187350ef9fa7f",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0010_006.txt": {
+    "bytes": 1048403,
+    "sha256": "043566708a391eca5ee430833cc6dec52034b938a0bcd514cd949758a74eed91",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0024_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0024_007.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0024_009.pdf": {
+    "bytes": 2608249,
+    "sha256": "6d5afffa742ab79df20dd8b70fcf10c4fa5ca8d9198a46a7c8ae5eca5e6a7b40",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0024_009.txt": {
+    "bytes": 481098,
+    "sha256": "0514c632cdc24f3c312879df15fd5a95ac09b1cacd1e3540738956b9f8269ac8",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0031_005.pdf": {
+    "bytes": 1661473,
+    "sha256": "74cc2a231b29a648094a8a8ad3428092d5ea3df5de3445692e2d986d9f506685",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0031_005.txt": {
+    "bytes": 603080,
+    "sha256": "bafc8a6a1b5b1e321dc9dd0606dcb90a42761fc2de2e8da80772aceb67eac857",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0040_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0040_002.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0041_003.pdf": {
+    "bytes": 1477737,
+    "sha256": "4d617138f8e8675a5c9dec12dc50594eeb2f75d8aba793fc6d3d6cee8cb88d1a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0041_003.txt": {
+    "bytes": 386650,
+    "sha256": "f721b6ab39a05804eb0c0dee1c35b9e7c32e3d5f9d8406dc0c382a9ac77e86ba",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0041_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0041_006.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0050_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0050_002.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0063_002.pdf": {
+    "bytes": 2029853,
+    "sha256": "bdf35d14b82a71d2a500085d50822ade48076d43d720ada79dad7d6c7f6b494a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0063_002.txt": {
+    "bytes": 483947,
+    "sha256": "e5afc77e9e2e05c29539110851fb826a4e7f2e0db5d4b43d2845737f8428ecb6",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0063_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0063_004.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0074_002.pdf": {
+    "bytes": 4759960,
+    "sha256": "26b2912d58e1d2788b264bd3cfdabcc70c3b991ccda368cdc67e34a836ad970f",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0074_002.txt": {
+    "bytes": 1101756,
+    "sha256": "4999272d894869b681553b151cffcb7575599bdbc7195fd3a9801482d601e0ec",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0074_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0074_006.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0075_003.pdf": {
+    "bytes": 1870595,
+    "sha256": "04901337f52cf7eaa6487b5950a234542bb39d0de1fbcf57180e9a52c6912791",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0075_003.txt": {
+    "bytes": 693213,
+    "sha256": "e982f8e4e7e0cea3de8bf3377df528ed68a06d80d4a8fcd86d459125a1c8cb82",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0075_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0075_005.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0089_002.pdf": {
+    "bytes": 6083700,
+    "sha256": "b4a466c33cd94db2908f9b0ed60bc7b3163dbc7390a90e38329cbad7de9d76db",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0089_002.txt": {
+    "bytes": 848122,
+    "sha256": "99fd093361cd8af0f2735dff50c764b033fc1b6a55349d4f4655a45403611b1c",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0089_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0089_007.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0094_001.pdf": {
+    "bytes": 1448437,
+    "sha256": "196fe703a31cf4aff6706f5b909e7574ea1323d12dc9bff29bb40c9b1b438046",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0094_001.txt": {
+    "bytes": 472029,
+    "sha256": "7f6d5fc35d8ca670b281977a1ee163dfce3e5d46aee8015cf4510707ca4abd24",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0094_008.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0094_008.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0095_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0095_004.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0099_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0099_004.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0099_006.pdf": {
+    "bytes": 2584282,
+    "sha256": "e34c869ed9808d0190b0fa324f70ee4437c1473a2c473eae6c9b060f5b900344",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0099_006.txt": {
+    "bytes": 705777,
+    "sha256": "ff65c0c323d71de7648e28f093f2f4e4a480020dee2412163001be8e50dfefd7",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0110_001.pdf": {
+    "bytes": 3818512,
+    "sha256": "00636ff25e72d45768912b49fa00a99e6b7732c9b9f8c48a2caa42acecdc3d39",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0110_001.txt": {
+    "bytes": 959704,
+    "sha256": "e2df360918b416d9a5773b5e5ebfc2d0dac7383f09b4bd44731097d1ec5f0d49",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0110_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0110_003.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0119_002.pdf": {
+    "bytes": 2473616,
+    "sha256": "168c7017dc70dfa4e971b399728757f7100c0ce14cb9389dbe68c32c88c0834d",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0119_002.txt": {
+    "bytes": 831412,
+    "sha256": "6685f81574ae227afd828b06ef392819c6945e08790b08d7fd24dd0c2f7dae91",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0121_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0121_003.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0121_005.pdf": {
+    "bytes": 2219039,
+    "sha256": "0d4bb7a5fd0fb8f448f179c9417fab18468e442da6a0cbbf80223a793acad9e8",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0121_005.txt": {
+    "bytes": 697286,
+    "sha256": "c097cbe3ce5d3e5af985b19276554aec6085b2b039d88f6a0bb63bdc28ca11ee",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0125_001.pdf": {
+    "bytes": 1524324,
+    "sha256": "eef4da6eabbe586c4a437e652e02875316f39b82685833849e5315bf4c4b8e9c",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0125_001.txt": {
+    "bytes": 479512,
+    "sha256": "283d57bbb334957d76371565605267077e494587ab28a32cc9ee48aa6e1e9c43",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0125_003.pdf": {
+    "bytes": 678261,
+    "sha256": "c238b5599fe16470ccdeb9d4720440b120938ec1709af03152f502dd741ea2c1",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0125_003.txt": {
+    "bytes": 74920,
+    "sha256": "db2810f71f557e3047066e347265af55a6b9a0f4dd8a19965431e9b60359bdf6",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0126_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0126_007.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0127_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0127_001.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0127_002.pdf": {
+    "bytes": 1668919,
+    "sha256": "c31cbeb5063ee7df0d1513161a435a51a21a476225ad3c0805ffb9e2bc1ca3b1",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0127_002.txt": {
+    "bytes": 838600,
+    "sha256": "5e96c84f946b4053b3308b562bf8ee2448ddad4b7ddc1b8b042e5668023afce7",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0134_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0134_004.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0134_009.pdf": {
+    "bytes": 1591551,
+    "sha256": "43b4c2187f89bb4e2c9c0dd8d81517c5340d4c53c77becc69ed1e55c81cdea1a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0134_009.txt": {
+    "bytes": 562315,
+    "sha256": "1b6aaeef3d4ebfa0038c78e5c68ffb64ea70fd7fc9b23b5a83ec75c119924447",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0139_005.pdf": {
+    "bytes": 3228792,
+    "sha256": "26239d30417e1efab9b48cbe722ccb45b882e1f8e291f8eb77c86203ca5db27a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0139_005.txt": {
+    "bytes": 607597,
+    "sha256": "f4858c28a0e14f2e1652d8d321e3a18c6c5b23878415d1f1e24b1d4606e6f4c7",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0139_008.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0139_008.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0144_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0144_002.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0144_005.pdf": {
+    "bytes": 1738065,
+    "sha256": "baedbbd37a9ea34c2c8bfb723ff3dac47e33eece70ef8cd8ab9c281f5397cc25",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0144_005.txt": {
+    "bytes": 702869,
+    "sha256": "e6d19cfb97e499d1aeb12b816a4f9d2cc6d5f56b711e39e3305b452ba69afac9",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0145_004.pdf": {
+    "bytes": 1710493,
+    "sha256": "b20d87cbb4ae33784f2d3cfbfeb09b761c1ff64080f883f463c44442fb74f78c",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0145_004.txt": {
+    "bytes": 782911,
+    "sha256": "ba2984b243ccecac7ba232a8b2b72f9cbf62303c707b9db9169c0aa761a951a0",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0145_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0145_006.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0150_006.pdf": {
+    "bytes": 1769953,
+    "sha256": "136990b171f0daa04b5f8e02907c88316856fb13ca63ecabda47d0662c212f84",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0150_006.txt": {
+    "bytes": 726746,
+    "sha256": "812f5154d8990e0a4af9c8e71aa99f2a7fda2e87bd05898a102511bb97224059",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0159_004.pdf": {
+    "bytes": 4521931,
+    "sha256": "53bd5a91eb7239d7da501a6ec8e2aeb126cafc294b66ab7a785c2258a5004343",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0159_004.txt": {
+    "bytes": 736565,
+    "sha256": "154c77a17d01ef3e31958cf780ad764adb06a5963e0997cd41e317b139c79d5c",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0159_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0159_006.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0160_003.pdf": {
+    "bytes": 1789782,
+    "sha256": "8e413a9b55e40b63d19a8f61e743ff2e1901afbfdb04ee140319163061ead961",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0160_003.txt": {
+    "bytes": 874295,
+    "sha256": "60bb9d62c302cd371d26d95f0687bfc550cefff3d00c5dc85f7c4d05c37b8b6c",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0160_008.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0160_008.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0167_006.pdf": {
+    "bytes": 5684259,
+    "sha256": "4e4059d8a03c03ae92785696af52d999f9c6177d8f1664578b991c116f8d3310",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0167_006.txt": {
+    "bytes": 749421,
+    "sha256": "f2513f26cb460dde489c5899f85e5f052b7984fa43c22f5f606e69017baed56f",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0167_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0167_007.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0168_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0168_001.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0168_006.pdf": {
+    "bytes": 2512237,
+    "sha256": "c908fc44e7434cff33f188e8fc457dc36524fd31d6cbece599ccb538034a250e",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0168_006.txt": {
+    "bytes": 1272175,
+    "sha256": "224eb2deba6f0ce85a4c903f7f830fe8adca345b18c0f956fc1f8bfc08a2c14a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0170_009.pdf": {
+    "bytes": 1896511,
+    "sha256": "895c2e50de0238744043c441010ab72723e4ea30cfd87916634d2e208422acbc",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0170_009.txt": {
+    "bytes": 723925,
+    "sha256": "d6bec15539a715237e0c90d5f941495b1016890dcbfd35e194077d8755fb970d",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0173_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0173_003.txt": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0173_007.pdf": {
+    "bytes": 2088656,
+    "sha256": "b4376dbc0f85c270951969395190001db2e338d70e4cd4708426bcf381f87547",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/doc_sch_20260630_0173_007.txt": {
+    "bytes": 745488,
+    "sha256": "166a14582c9c7ee3c6a475bb67500bec4cfe9acc2af8351956a262bd51e8f09e",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/guiyang_2022_midyear_bond_report.pdf": {
+    "bytes": 964815,
+    "sha256": "68a8e82549591edb9a9ba710cddb198e5c7cd7c0aaffb51eee5441173f695c34",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/guiyang_2022_midyear_bond_report.txt": {
+    "bytes": 66779,
+    "sha256": "cd3c0b84f0543d5c3f40b8d7f2e4c05341a52d522bb8dbeaa8653154939f2dc2",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/web_chinamoney_jinluling_2025_rating.pdf": {
+    "bytes": 1777905,
+    "sha256": "f0075460b7c6ec3adfe838aa9cf0d6d27a6edd93921397687f0663a5113206f0",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/web_chinamoney_jinluling_2025_rating.txt": {
+    "bytes": 159000,
+    "sha256": "ba9b36b10c58d7ecba1aad539c55214bc8f595aef67596805340564dd66689a0",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/web_chinamoney_linyi_2026_rating.pdf": {
+    "bytes": 1054965,
+    "sha256": "94c6b0ee9da293a80679c8b7a56a93c067049c5f2bee7dc45b603da5e7a0dbff",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/web_chinamoney_linyi_2026_rating.txt": {
+    "bytes": 200613,
+    "sha256": "70f3f98a57dd4b9bf3f0de143381737107fe2cf701d701378403977e8675f1f6",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/web_gz_gov_guangzhou_industry_profile.html": {
+    "bytes": 77395,
+    "sha256": "3cd49cbd145440c18f9a7137fdc81fce5233b912918d2ed40c27b86d51431cb3",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/web_gz_gov_guangzhou_transport_profile.html": {
+    "bytes": 38211,
+    "sha256": "6a85f49f9ff52ce1ddc3da4156653abaef9be7442da850be51842bca85668024",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/web_linyi_sasac_profile.html": {
+    "bytes": 23847,
+    "sha256": "cfd2850bb241b6225991c54fc9bdc3e44d4c94025debe90095803fa4d8070023",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/web_ndrc_jian_jinluling.html": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/web_saac_guiyang_public_transport_current_name.html": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/web_shenzhen_sasac_special_zone_development.html": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/probability_validation_sources/web_shenzhen_sasac_special_zone_development.retrieved_20260910.html": {
+    "bytes": 76974,
+    "sha256": "2d13b660ee1b469483ca81f79e7843140cce78814e8fc77b7f22c6aa7acb9550",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0009/doc_sch_20260630_0009_001.pdf": {
+    "bytes": 33272686,
+    "sha256": "c2b22b3e67f2f59d56e0b060ad05ee0dd15b3d6b981a49b890f8e01546a4c30c",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0009/doc_sch_20260630_0009_002.pdf": {
+    "bytes": 10624117,
+    "sha256": "bd60e142b64896d8a1ded15c85083f3f771547588c413dcf7234b1c8e73b2578",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0009/doc_sch_20260630_0009_003.pdf": {
+    "bytes": 378115,
+    "sha256": "58c94a7bd861e68f9348288df577ec9cd05b36db0a3d713ac0afcbf96e0add1b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0009/doc_sch_20260630_0009_004.pdf": {
+    "bytes": 735239,
+    "sha256": "ff14618b5341f57e3f74fe35305eec12d8c867f703f0094f69c685ff1ac77257",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0009/doc_sch_20260630_0009_005.pdf": {
+    "bytes": 514246,
+    "sha256": "3812c89d1372ed115c545173b54c55936b653cc4c97e3babae11f5556380d67d",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0009/doc_sch_20260630_0009_006.pdf": {
+    "bytes": 15195042,
+    "sha256": "d7d93c59ff03601807e338a2b7a72e0b866088c95914060f07ea32bb61abcc47",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0009/doc_sch_20260630_0009_007.pdf": {
+    "bytes": 4053937,
+    "sha256": "a6a14edf8e70a1386539db75ecb1f9826f83008792fe5cb4f9bdcd9d504e63c5",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0009/doc_sch_20260630_0009_008.pdf": {
+    "bytes": 1302497,
+    "sha256": "a9ba705b8d8ff84a485f9300d695dd3d2b2024b510df061def2b6640702d0f5d",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0009/doc_sch_20260630_0009_009.pdf": {
+    "bytes": 2314042,
+    "sha256": "23598417f9543e3b0fd800bdccacbca87baebdc48eec37f22d78a998fe4f571a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0010/doc_sch_20260630_0010_001.pdf": {
+    "bytes": 6702525,
+    "sha256": "1fff1e69893ee750d3f1d3b70a3aebefca4ef3c1583ee15a750e2fabf61c6623",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0010/doc_sch_20260630_0010_002.pdf": {
+    "bytes": 387825,
+    "sha256": "3b1e64f2cb3289d56100afa5493257e2fac578122bccccde2b3d054e9376db21",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0010/doc_sch_20260630_0010_003.pdf": {
+    "bytes": 6300600,
+    "sha256": "b6cdd68b21ed5d2dbfd21fd205005da7337cc200a12a627698f112b97a5e5032",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0010/doc_sch_20260630_0010_004.pdf": {
+    "bytes": 18981698,
+    "sha256": "5320168acbaf1127b958def03a59fbb559bbbb49d9f4748c26edbb86a488155d",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0010/doc_sch_20260630_0010_005.pdf": {
+    "bytes": 1564159,
+    "sha256": "5366c5d17603a3cd137ffe5d811b2bca145a1540cd82783bf52c0fed04b843af",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0010/doc_sch_20260630_0010_006.pdf": {
+    "bytes": 2287978,
+    "sha256": "c973b4c31915272706f845277ea64f4eac45c3bacee5cb50012187350ef9fa7f",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0010/doc_sch_20260630_0010_007.pdf": {
+    "bytes": 218731,
+    "sha256": "3875e962fba16a19aaeb13c7858b03a6301db85e9f8946e54822aa49f2a2691a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0010/doc_sch_20260630_0010_008.pdf": {
+    "bytes": 932913,
+    "sha256": "97e802ba9e065afd2cbee82e96aba8fbe2b86c51f50ef810e15fd78be270928b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0010/doc_sch_20260630_0010_009.pdf": {
+    "bytes": 272830,
+    "sha256": "be0f3a62163052cd9574dc754bd9553940d3fa3a3e20ff0965fea64bd404bbaf",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0011/doc_sch_20260630_0011_001.pdf": {
+    "bytes": 342512,
+    "sha256": "3b33a2423550d7373ef38c188defad77e83e8a4df05f21d8f01bc461f1ae47a0",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0011/doc_sch_20260630_0011_002.pdf": {
+    "bytes": 236945,
+    "sha256": "2201237919187db449a70399855bbb510e2f0df7089f46ab7bcddc000f67afe5",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0024/doc_sch_20260630_0024_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0024/doc_sch_20260630_0024_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0024/doc_sch_20260630_0024_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0024/doc_sch_20260630_0024_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0024/doc_sch_20260630_0024_005.pdf": {
+    "bytes": 9897374,
+    "sha256": "e5075783221046dd2088934ea4b9b77c036f273bf6cd55c69e33d9b8e5ed60c6",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0024/doc_sch_20260630_0024_006.pdf": {
+    "bytes": 13375999,
+    "sha256": "2d4de98cacb22c0ba646e1fda81bd52cdc65e4e80f272505f2ad2983d3e56753",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0024/doc_sch_20260630_0024_007.pdf": {
+    "bytes": 893725,
+    "sha256": "f3d0f8debcecaecf4855d37eea474d76091a7c12fbc460b2443c3ddd83fb8cdc",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0024/doc_sch_20260630_0024_008.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0024/doc_sch_20260630_0024_009.pdf": {
+    "bytes": 2608249,
+    "sha256": "6d5afffa742ab79df20dd8b70fcf10c4fa5ca8d9198a46a7c8ae5eca5e6a7b40",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0024/doc_sch_20260630_0024_010.pdf": {
+    "bytes": 2613051,
+    "sha256": "8bd9db2d56411124c7b33d542d2abb0d4c721cc09a072b1926c02783db1153f5",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0031/doc_sch_20260630_0031_001.pdf": {
+    "bytes": 438458,
+    "sha256": "11a69c2a66584b3e992d9871bf6c8558ce77a091ccc264fd34ee33c2af685d3c",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0031/doc_sch_20260630_0031_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0031/doc_sch_20260630_0031_003.pdf": {
+    "bytes": 20899135,
+    "sha256": "a6582c097b12ab448b172aa14b0ac9acf8fe8832960dcb0d848926fe55556cba",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0031/doc_sch_20260630_0031_004.pdf": {
+    "bytes": 4510392,
+    "sha256": "b20daba9f8494c35b34d95f51a2e383d118a461cd536b075847cdcc9f90ef7ea",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0031/doc_sch_20260630_0031_005.pdf": {
+    "bytes": 1661473,
+    "sha256": "74cc2a231b29a648094a8a8ad3428092d5ea3df5de3445692e2d986d9f506685",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0031/doc_sch_20260630_0031_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0031/doc_sch_20260630_0031_007.pdf": {
+    "bytes": 17633091,
+    "sha256": "deb01071d444cdb34b739f78e54ac05bf6f46cf5c83a7fd4b7ed7139c388a6c9",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0031/doc_sch_20260630_0031_008.pdf": {
+    "bytes": 11371173,
+    "sha256": "d40f44a90ba8c853b597fdd4d90e267d324e6be06102ad927bc66f7fbecd4476",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0040/doc_sch_20260630_0040_001.pdf": {
+    "bytes": 1923808,
+    "sha256": "2de8bc82dc25c8d7d2076366f9efbb473c82612f909a7ffbc4433edd08822e35",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0040/doc_sch_20260630_0040_002.pdf": {
+    "bytes": 459953,
+    "sha256": "2134e1875d765c586832b23c6f9feadb26402c0da42e727fed605ead54cc2583",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0041/doc_sch_20260630_0041_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0041/doc_sch_20260630_0041_002.pdf": {
+    "bytes": 595086,
+    "sha256": "face46e84f1af405d7ab53acb80a467e0a3ec3f4d5a138f37c61c49c26916901",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0041/doc_sch_20260630_0041_003.pdf": {
+    "bytes": 1477737,
+    "sha256": "4d617138f8e8675a5c9dec12dc50594eeb2f75d8aba793fc6d3d6cee8cb88d1a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0041/doc_sch_20260630_0041_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0041/doc_sch_20260630_0041_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0041/doc_sch_20260630_0041_006.pdf": {
+    "bytes": 1369779,
+    "sha256": "f26e1c6ab26821a68325bd3c47a535fe0739e0f7c8c9fd9f46649c4d1ea5dc34",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0041/doc_sch_20260630_0041_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0041/doc_sch_20260630_0041_008.pdf": {
+    "bytes": 804478,
+    "sha256": "284c200c3fb0d779fde15f27617692039e07f799a3618881cc08d1aa215b8123",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0050/doc_sch_20260630_0050_001.pdf": {
+    "bytes": 772118,
+    "sha256": "f57cdc094bc3b3c0f2eba748a2a42d82d12eaadbfb72f0b5721598feaa4c3d3b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0050/doc_sch_20260630_0050_002.pdf": {
+    "bytes": 1789004,
+    "sha256": "a435e523038238cc5600d6c4fd40fe701aee76fef62a084857f7f38bbb1c3fc2",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0050/doc_sch_20260630_0050_003.pdf": {
+    "bytes": 3580680,
+    "sha256": "958a100aa1a860a8061b76bec5ad6087feb2274f26b5d1ddb083f4fbe918a0ea",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0050/doc_sch_20260630_0050_004.pdf": {
+    "bytes": 12982957,
+    "sha256": "e759a42646e4af8c299746b1587e92aad8f6c1958a669e1ad5b167aa17e7da36",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0050/doc_sch_20260630_0050_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0050/doc_sch_20260630_0050_006.pdf": {
+    "bytes": 7312849,
+    "sha256": "fc5c2776bb993e32e3fb4d0325cbc9764ee961c9bf6aea39dc1552ee8d2b5e9a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0050/doc_sch_20260630_0050_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0050/doc_sch_20260630_0050_008.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0050/doc_sch_20260630_0050_009.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0050/doc_sch_20260630_0050_010.pdf": {
+    "bytes": 3593796,
+    "sha256": "07a0b75a05ea5a5ca3d35d52b459c76c0c67054414245a277a34f65d7b1d1ce8",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0063/doc_sch_20260630_0063_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0063/doc_sch_20260630_0063_002.pdf": {
+    "bytes": 2029853,
+    "sha256": "bdf35d14b82a71d2a500085d50822ade48076d43d720ada79dad7d6c7f6b494a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0063/doc_sch_20260630_0063_003.pdf": {
+    "bytes": 47386673,
+    "sha256": "a0010867d6850298341bcc16d151cd029e11a226acde02496cbb7de63af67c51",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0063/doc_sch_20260630_0063_004.pdf": {
+    "bytes": 456014,
+    "sha256": "5be2314c7dae535a135d48910eab72cbd7125b02b09a36fdf5f6a434a64bbedf",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0063/doc_sch_20260630_0063_005.pdf": {
+    "bytes": 27764999,
+    "sha256": "8c06e6eb10f82be53c608696aeafea2775b9fa86c29de43000e53ec66dc7f03b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0063/doc_sch_20260630_0063_006.pdf": {
+    "bytes": 5848430,
+    "sha256": "1f6fcd20d237c84726c71d52f8172c5025bbb872d512e9fd78f0d272b482be96",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0063/doc_sch_20260630_0063_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0063/doc_sch_20260630_0063_008.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0063/doc_sch_20260630_0063_009.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0063/doc_sch_20260630_0063_010.pdf": {
+    "bytes": 11272246,
+    "sha256": "6868f56ce515a5998e31277a368a687fb719d8cafb2be5de32674cbcb8c6e417",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0074/doc_sch_20260630_0074_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0074/doc_sch_20260630_0074_002.pdf": {
+    "bytes": 4759960,
+    "sha256": "26b2912d58e1d2788b264bd3cfdabcc70c3b991ccda368cdc67e34a836ad970f",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0074/doc_sch_20260630_0074_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0074/doc_sch_20260630_0074_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0074/doc_sch_20260630_0074_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0074/doc_sch_20260630_0074_006.pdf": {
+    "bytes": 1067765,
+    "sha256": "db20061651b713638173318ae4895a676b581642b95732f70f07064a3e44e466",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0074/doc_sch_20260630_0074_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0075/doc_sch_20260630_0075_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0075/doc_sch_20260630_0075_002.pdf": {
+    "bytes": 16537313,
+    "sha256": "63245fbaf17554ea7b3098afb774921195d66ce8b651340da7f404ee78def09a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0075/doc_sch_20260630_0075_003.pdf": {
+    "bytes": 1870595,
+    "sha256": "04901337f52cf7eaa6487b5950a234542bb39d0de1fbcf57180e9a52c6912791",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0075/doc_sch_20260630_0075_004.pdf": {
+    "bytes": 12154100,
+    "sha256": "372c66596b3651a413a534db98d0f1f09613d9d49092969439fe32ead1e102ef",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0075/doc_sch_20260630_0075_005.pdf": {
+    "bytes": 515969,
+    "sha256": "c3b67b1c87d58ed12dad2747e0b30c95c03a46f060320f98bcfe9ffdcc45ab1b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0075/doc_sch_20260630_0075_006.pdf": {
+    "bytes": 17845173,
+    "sha256": "a2e16ac31a035cef399956ccec2de579fb5412cb90b612683830bcac1ae51481",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0075/doc_sch_20260630_0075_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0089/doc_sch_20260630_0089_001.pdf": {
+    "bytes": 2760864,
+    "sha256": "6ddd6822a892931458b690c76d8af3589139cda5b3920bfaad67e63b94d0fdfc",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0089/doc_sch_20260630_0089_002.pdf": {
+    "bytes": 6083700,
+    "sha256": "b4a466c33cd94db2908f9b0ed60bc7b3163dbc7390a90e38329cbad7de9d76db",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0089/doc_sch_20260630_0089_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0089/doc_sch_20260630_0089_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0089/doc_sch_20260630_0089_005.pdf": {
+    "bytes": 11847741,
+    "sha256": "c2460c0af31a97b59656e7f908014f4ba0ed0b14a93ba79bd72eda2fd9b01caf",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0089/doc_sch_20260630_0089_006.pdf": {
+    "bytes": 8323400,
+    "sha256": "22b28aef356ea3b9b231946f31eb34dcc000261525c7361995aae4303a50faed",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0089/doc_sch_20260630_0089_007.pdf": {
+    "bytes": 1183657,
+    "sha256": "a5de8562cc2f1d3377447253f5fadcee76d32dd73829739ef82678149b5d66f7",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0094/doc_sch_20260630_0094_001.pdf": {
+    "bytes": 1448437,
+    "sha256": "196fe703a31cf4aff6706f5b909e7574ea1323d12dc9bff29bb40c9b1b438046",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0094/doc_sch_20260630_0094_002.pdf": {
+    "bytes": 17053999,
+    "sha256": "d9bdd60c06b60d7079c6e400ff90e5a10778285d575a2d985ebf946c6cf9ed18",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0094/doc_sch_20260630_0094_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0094/doc_sch_20260630_0094_004.pdf": {
+    "bytes": 19385366,
+    "sha256": "7db5cf4715dfe1e3c16b40587a7b819e15c3c573c7cc6c5e818d4c86b36bc0f0",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0094/doc_sch_20260630_0094_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0094/doc_sch_20260630_0094_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0094/doc_sch_20260630_0094_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0094/doc_sch_20260630_0094_008.pdf": {
+    "bytes": 578479,
+    "sha256": "67bb6c919cc82ae30669dd8e4bddd3af928c9ff1499efb1e798ce40a503a0366",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0094/doc_sch_20260630_0094_009.pdf": {
+    "bytes": 6686434,
+    "sha256": "ffcfd13abc956295259ec71f80dc7ffdbeaf80a8df4f27dc1f1e44418f727709",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0095/doc_sch_20260630_0095_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0095/doc_sch_20260630_0095_002.pdf": {
+    "bytes": 659825,
+    "sha256": "3e0dea40d03e97b5506452a2fdd4b91f368ed05a50cc2f6c0d66a9f9c10f167b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0095/doc_sch_20260630_0095_003.pdf": {
+    "bytes": 20899137,
+    "sha256": "73915b82eb58b32b1f921e96b072391709d94188d4af99135f3af38860313bb5",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0095/doc_sch_20260630_0095_004.pdf": {
+    "bytes": 1772552,
+    "sha256": "9760c0c99801e7adcdfa8e8d984c1e016d158978f881427f073defa5ef6c9556",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0095/doc_sch_20260630_0095_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0095/doc_sch_20260630_0095_006.pdf": {
+    "bytes": 17633091,
+    "sha256": "deb01071d444cdb34b739f78e54ac05bf6f46cf5c83a7fd4b7ed7139c388a6c9",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0095/doc_sch_20260630_0095_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0095/doc_sch_20260630_0095_008.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0095/doc_sch_20260630_0095_009.pdf": {
+    "bytes": 11371175,
+    "sha256": "94b3e36493dcfe4e4faf5731b84f5675e08f3ce94d7ea70f579cf0bf3725580d",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0099/doc_sch_20260630_0099_001.pdf": {
+    "bytes": 10871597,
+    "sha256": "53f80de8b5589c1f32dea4680e3a558dce8912acb308c4bc466fa9bca0377e3c",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0099/doc_sch_20260630_0099_002.pdf": {
+    "bytes": 860855,
+    "sha256": "48a8d11986f624d0b28863e402217799d591a6420121e87a4f85a53008dd1a42",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0099/doc_sch_20260630_0099_003.pdf": {
+    "bytes": 24548229,
+    "sha256": "158c38f7ad4453ab0762a754010b23fe002ef361694f5f1dd529a55fcf79ff35",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0099/doc_sch_20260630_0099_004.pdf": {
+    "bytes": 3526865,
+    "sha256": "df802707fba779ea1cd9b7bcf50dd60866096bd12ae056e8bc6e6a0beb2c3df3",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0099/doc_sch_20260630_0099_005.pdf": {
+    "bytes": 997543,
+    "sha256": "3707dcd14f338a334eabf6445a6b273605993dccdec5dcd84637483c3d0fa335",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0099/doc_sch_20260630_0099_006.pdf": {
+    "bytes": 2584282,
+    "sha256": "e34c869ed9808d0190b0fa324f70ee4437c1473a2c473eae6c9b060f5b900344",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0099/doc_sch_20260630_0099_007.pdf": {
+    "bytes": 12047239,
+    "sha256": "e9512d305a17c13428ee6c838dd011b7ba1e32af6fe6e18c366015c41efdbcac",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0099/doc_sch_20260630_0099_008.pdf": {
+    "bytes": 4326137,
+    "sha256": "ba7abe78a613aaf0127a2fe8365842ddcaf5a9f2dcbac8b3aadf2270fcb32e8a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0106/doc_sch_20260630_0106_001.pdf": {
+    "bytes": 403304,
+    "sha256": "bba3822c055a3ec85a91871639030ab3bbd807eb595b90cad8339fada05ed8e6",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0106/doc_sch_20260630_0106_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0106/doc_sch_20260630_0106_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0106/doc_sch_20260630_0106_004.pdf": {
+    "bytes": 3580680,
+    "sha256": "958a100aa1a860a8061b76bec5ad6087feb2274f26b5d1ddb083f4fbe918a0ea",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0106/doc_sch_20260630_0106_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0106/doc_sch_20260630_0106_006.pdf": {
+    "bytes": 12982957,
+    "sha256": "e759a42646e4af8c299746b1587e92aad8f6c1958a669e1ad5b167aa17e7da36",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0106/doc_sch_20260630_0106_007.pdf": {
+    "bytes": 7312849,
+    "sha256": "fc5c2776bb993e32e3fb4d0325cbc9764ee961c9bf6aea39dc1552ee8d2b5e9a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0106/doc_sch_20260630_0106_008.pdf": {
+    "bytes": 1755272,
+    "sha256": "b2f7a20e1ca7d9809500d0062268f6add20fa26d3d3c353b9f37716b3e3a8321",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0106/doc_sch_20260630_0106_009.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0106/doc_sch_20260630_0106_010.pdf": {
+    "bytes": 3593796,
+    "sha256": "07a0b75a05ea5a5ca3d35d52b459c76c0c67054414245a277a34f65d7b1d1ce8",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0110/doc_sch_20260630_0110_001.pdf": {
+    "bytes": 3818512,
+    "sha256": "00636ff25e72d45768912b49fa00a99e6b7732c9b9f8c48a2caa42acecdc3d39",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0110/doc_sch_20260630_0110_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0110/doc_sch_20260630_0110_003.pdf": {
+    "bytes": 38708019,
+    "sha256": "cbf0355de52741f2ec86faee9c74a821e3af53ee1e96415961d45a5814d3aac1",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0110/doc_sch_20260630_0110_004.pdf": {
+    "bytes": 38636679,
+    "sha256": "5d56ce5143f9ff60c76ecb04d072a38b28a1ffe4aec0af80b958a905f3ae82bd",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0110/doc_sch_20260630_0110_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0110/doc_sch_20260630_0110_006.pdf": {
+    "bytes": 21946515,
+    "sha256": "aafca88486a7f8175ea248c8bb239a8b5111ca92e75582a5ac7215903c032d13",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0110/doc_sch_20260630_0110_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0110/doc_sch_20260630_0110_008.pdf": {
+    "bytes": 8651500,
+    "sha256": "962867ff15f242349a67e97c833e486c8660e61cd9f901b7136af17d57384554",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0110/doc_sch_20260630_0110_009.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0119/doc_sch_20260630_0119_001.pdf": {
+    "bytes": 12196959,
+    "sha256": "2e059cf0b22032c7aff5b1cb840c59d6df8743fab6cfc211a84aa3b659d3f574",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0119/doc_sch_20260630_0119_002.pdf": {
+    "bytes": 2473616,
+    "sha256": "168c7017dc70dfa4e971b399728757f7100c0ce14cb9389dbe68c32c88c0834d",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0119/doc_sch_20260630_0119_003.pdf": {
+    "bytes": 5601566,
+    "sha256": "03526eea226122b31e79c8c1a07c10cc738acc58780a253465692d1c4bd657f4",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0119/doc_sch_20260630_0119_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0119/doc_sch_20260630_0119_005.pdf": {
+    "bytes": 789820,
+    "sha256": "1f190c6d5266649303c64d4fb94eac0b5d0737d45ed515247a49cd0908fe1d9c",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0119/doc_sch_20260630_0119_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0119/doc_sch_20260630_0119_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0121/doc_sch_20260630_0121_001.pdf": {
+    "bytes": 4945952,
+    "sha256": "e6274f928b9241d5aa3da0a8e1debc2b973cdc3f3fe7fbdbbe3974026ad24b89",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0121/doc_sch_20260630_0121_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0121/doc_sch_20260630_0121_003.pdf": {
+    "bytes": 631868,
+    "sha256": "12537c352799d1bde3caacf87dcf94c8b50ec5d8088994612b767fba60e8a7e8",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0121/doc_sch_20260630_0121_004.pdf": {
+    "bytes": 19892915,
+    "sha256": "8ce421798b9636d6c67e8865e8d5b32ac3197ee691fe896c5bed9d6a99a5e019",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0121/doc_sch_20260630_0121_005.pdf": {
+    "bytes": 2219039,
+    "sha256": "0d4bb7a5fd0fb8f448f179c9417fab18468e442da6a0cbbf80223a793acad9e8",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0121/doc_sch_20260630_0121_006.pdf": {
+    "bytes": 2284786,
+    "sha256": "b52200113d9f45a03dc9b22b0a801677016be471595555210dbf695d3cc5800c",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0121/doc_sch_20260630_0121_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0125/doc_sch_20260630_0125_001.pdf": {
+    "bytes": 1524324,
+    "sha256": "eef4da6eabbe586c4a437e652e02875316f39b82685833849e5315bf4c4b8e9c",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0125/doc_sch_20260630_0125_002.pdf": {
+    "bytes": 6177693,
+    "sha256": "8964cb73a5ea6226e4f69d21cc22b07bfccf4738cd2308b0aba59876869a714c",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0125/doc_sch_20260630_0125_003.pdf": {
+    "bytes": 678261,
+    "sha256": "c238b5599fe16470ccdeb9d4720440b120938ec1709af03152f502dd741ea2c1",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0125/doc_sch_20260630_0125_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0125/doc_sch_20260630_0125_005.pdf": {
+    "bytes": 7471070,
+    "sha256": "211d0694347f02be84fa4a3bb562076997616cb79b1a84f1d4813f98d3aa6807",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0125/doc_sch_20260630_0125_006.pdf": {
+    "bytes": 26315730,
+    "sha256": "c31786e64f397d6adff2dfbd6ca9733485918cf350d252e731dda2179670b617",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0125/doc_sch_20260630_0125_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0126/doc_sch_20260630_0126_001.pdf": {
+    "bytes": 5601566,
+    "sha256": "03526eea226122b31e79c8c1a07c10cc738acc58780a253465692d1c4bd657f4",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0126/doc_sch_20260630_0126_002.pdf": {
+    "bytes": 12196959,
+    "sha256": "2e059cf0b22032c7aff5b1cb840c59d6df8743fab6cfc211a84aa3b659d3f574",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0126/doc_sch_20260630_0126_003.pdf": {
+    "bytes": 787418,
+    "sha256": "53393a3cd05e1f629c7e4e5e6b4fede19b20aa162a775997be78df06cd149293",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0126/doc_sch_20260630_0126_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0126/doc_sch_20260630_0126_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0126/doc_sch_20260630_0126_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0126/doc_sch_20260630_0126_007.pdf": {
+    "bytes": 2154532,
+    "sha256": "d5641ba978480d8a3f331d0bba763bb402a5fe0c65f762db9282501c29ebf814",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0127/doc_sch_20260630_0127_001.pdf": {
+    "bytes": 541621,
+    "sha256": "63f1e8cb71f688e9fa873b69a791468dd0f8b8d685aed3155853b8b2ca6403ce",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0127/doc_sch_20260630_0127_002.pdf": {
+    "bytes": 1668919,
+    "sha256": "c31cbeb5063ee7df0d1513161a435a51a21a476225ad3c0805ffb9e2bc1ca3b1",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0127/doc_sch_20260630_0127_003.pdf": {
+    "bytes": 39883923,
+    "sha256": "49e5653906eec5e7499402990d4bda4eabdf6e5b66ff2de6c5824d17a47fe570",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0127/doc_sch_20260630_0127_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0127/doc_sch_20260630_0127_005.pdf": {
+    "bytes": 10376380,
+    "sha256": "5f414e73a60a28155f7d676e1b78c4d34005eaec0e54595ad7a8cc5f9f080820",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0127/doc_sch_20260630_0127_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0127/doc_sch_20260630_0127_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0127/doc_sch_20260630_0127_008.pdf": {
+    "bytes": 11731968,
+    "sha256": "8cfd47004af8f5a17b38060abb58f079662bcf649f500e3ac223e9a8200726ca",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0134/doc_sch_20260630_0134_001.pdf": {
+    "bytes": 8155174,
+    "sha256": "71af173566a5f4df2b1a2a196cb78f94188d8b7346c8abb950793f3d89bbda96",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0134/doc_sch_20260630_0134_002.pdf": {
+    "bytes": 7343556,
+    "sha256": "32c6cea9502094d2a520e4e398f79caf635cd64dba4753a999a0901865bbabde",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0134/doc_sch_20260630_0134_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0134/doc_sch_20260630_0134_004.pdf": {
+    "bytes": 781151,
+    "sha256": "2cef1ed0ef9a56012fc592411a46a0412966486635a4e34ee2b16ab95d25328a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0134/doc_sch_20260630_0134_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0134/doc_sch_20260630_0134_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0134/doc_sch_20260630_0134_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0134/doc_sch_20260630_0134_008.pdf": {
+    "bytes": 4241216,
+    "sha256": "ba32afd2a5d9c030e17c73b7573d4855a8b7b1018102a7368f69f715fc65516b",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0134/doc_sch_20260630_0134_009.pdf": {
+    "bytes": 1591551,
+    "sha256": "43b4c2187f89bb4e2c9c0dd8d81517c5340d4c53c77becc69ed1e55c81cdea1a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0134/doc_sch_20260630_0134_010.pdf": {
+    "bytes": 7600564,
+    "sha256": "7ec9de71912ed4952c08dee4f5a6b8062a9e1ee81aa9574938aa32a05d4bec00",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0139/doc_sch_20260630_0139_001.pdf": {
+    "bytes": 7211884,
+    "sha256": "6a1d9fdcf780d3c49e55aa9cc9ee00cbe88307c7926a2992af7f39ddb38980ce",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0139/doc_sch_20260630_0139_002.pdf": {
+    "bytes": 6014180,
+    "sha256": "262c49144071555a149d8063928f9e3f3af804ec99b8456649809129f8f3bb8d",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0139/doc_sch_20260630_0139_003.pdf": {
+    "bytes": 12313315,
+    "sha256": "358e8018a4743dce1b1f335b22f9b137188b71ab1cb211f702bd99dae158b179",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0139/doc_sch_20260630_0139_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0139/doc_sch_20260630_0139_005.pdf": {
+    "bytes": 3228792,
+    "sha256": "26239d30417e1efab9b48cbe722ccb45b882e1f8e291f8eb77c86203ca5db27a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0139/doc_sch_20260630_0139_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0139/doc_sch_20260630_0139_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0139/doc_sch_20260630_0139_008.pdf": {
+    "bytes": 870117,
+    "sha256": "f927036d07fa3df9f55311a8d156dce50a0d28bdf61201ca0b2846542b93feb4",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0139/doc_sch_20260630_0139_009.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0144/doc_sch_20260630_0144_001.pdf": {
+    "bytes": 9447438,
+    "sha256": "97a98a6723bc401f9dc8b03f89055d239158d12b4c2ea09436bd318d4086b0c6",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0144/doc_sch_20260630_0144_002.pdf": {
+    "bytes": 1447166,
+    "sha256": "c3fafcb49050f098523728767daf591c5320469495aa370095ff79d299c5db05",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0144/doc_sch_20260630_0144_003.pdf": {
+    "bytes": 8092230,
+    "sha256": "4d647667c31fea0da19523fcab10947ae9895ed27a5fc99d4f98993d7719bb25",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0144/doc_sch_20260630_0144_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0144/doc_sch_20260630_0144_005.pdf": {
+    "bytes": 1738065,
+    "sha256": "baedbbd37a9ea34c2c8bfb723ff3dac47e33eece70ef8cd8ab9c281f5397cc25",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0144/doc_sch_20260630_0144_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0144/doc_sch_20260630_0144_007.pdf": {
+    "bytes": 7049253,
+    "sha256": "ec40c28bbe9336e37ed2a4b97c939fa90b832ab11b6b3b918ac7e29d62a9d374",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0145/doc_sch_20260630_0145_001.pdf": {
+    "bytes": 18283925,
+    "sha256": "8d68e3ece206d2dccd55df8a3108f10b49de736e0ba111c91f3ad7f2b56cf267",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0145/doc_sch_20260630_0145_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0145/doc_sch_20260630_0145_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0145/doc_sch_20260630_0145_004.pdf": {
+    "bytes": 1710493,
+    "sha256": "b20d87cbb4ae33784f2d3cfbfeb09b761c1ff64080f883f463c44442fb74f78c",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0145/doc_sch_20260630_0145_005.pdf": {
+    "bytes": 27753846,
+    "sha256": "0d29a6e4c414e8a78f52f31ce05fbfb370e0fa3547d89033031fc51c7303c420",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0145/doc_sch_20260630_0145_006.pdf": {
+    "bytes": 695340,
+    "sha256": "a1ee609034ad04a1d168abc8287f261daf6580b42df057d56ff66647962f600d",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0145/doc_sch_20260630_0145_007.pdf": {
+    "bytes": 26338050,
+    "sha256": "4059fbfd8fbd1fdb22ae8b6a783ebc83c5bae0f535a9f50c95100a0a4ef6a2ce",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0145/doc_sch_20260630_0145_008.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0150/doc_sch_20260630_0150_001.pdf": {
+    "bytes": 5685299,
+    "sha256": "a08b8b878d1ca07dcbf86e25783970749f7a28519d76be13011365bfa20a2664",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0150/doc_sch_20260630_0150_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0150/doc_sch_20260630_0150_003.pdf": {
+    "bytes": 12672184,
+    "sha256": "55986c49e90087f2231947126d5dd5553c52d3e0537cc408ed55c3a8049569b9",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0150/doc_sch_20260630_0150_004.pdf": {
+    "bytes": 11027111,
+    "sha256": "39cc71d167594c42139947865d507a63bcf209903c13124ebdda2d0a328f0080",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0150/doc_sch_20260630_0150_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0150/doc_sch_20260630_0150_006.pdf": {
+    "bytes": 1769953,
+    "sha256": "136990b171f0daa04b5f8e02907c88316856fb13ca63ecabda47d0662c212f84",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0150/doc_sch_20260630_0150_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0150/doc_sch_20260630_0150_008.pdf": {
+    "bytes": 14848919,
+    "sha256": "b688ce3e61ac038eeaaec4f884641e003bd79f3525b23b249ed6909d094bb4d5",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0150/doc_sch_20260630_0150_009.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0159/doc_sch_20260630_0159_001.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0159/doc_sch_20260630_0159_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0159/doc_sch_20260630_0159_003.pdf": {
+    "bytes": 16954712,
+    "sha256": "b62e77f0d4e824f342cce267b190d21ecea05a71b67307831188f772e99048f3",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0159/doc_sch_20260630_0159_004.pdf": {
+    "bytes": 4521931,
+    "sha256": "53bd5a91eb7239d7da501a6ec8e2aeb126cafc294b66ab7a785c2258a5004343",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0159/doc_sch_20260630_0159_005.pdf": {
+    "bytes": 16212971,
+    "sha256": "7c86553cdc0dd4e9ef9d2ce12c01e8e4c31e3eef592deaaea79bc1551ac1c357",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0159/doc_sch_20260630_0159_006.pdf": {
+    "bytes": 712844,
+    "sha256": "ebd9c20c166c408e99b8a141dfefddf5a6660965294987d6b4de151653689c60",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0159/doc_sch_20260630_0159_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0159/doc_sch_20260630_0159_008.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0159/doc_sch_20260630_0159_009.pdf": {
+    "bytes": 16554596,
+    "sha256": "42559d359cbde7f04c424a881db70f14e47950af2d103f855fe5a0e68a58eda3",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0160/doc_sch_20260630_0160_001.pdf": {
+    "bytes": 14541234,
+    "sha256": "61bb60b0fe899ac888c421221cf64e4ff579dcb8c95f374f40a186690e3ac44f",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0160/doc_sch_20260630_0160_002.pdf": {
+    "bytes": 4495285,
+    "sha256": "2ba109400fc604ed650ab9bc235610930b7917e6646ab812c6c01c4c58e8a579",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0160/doc_sch_20260630_0160_003.pdf": {
+    "bytes": 1789782,
+    "sha256": "8e413a9b55e40b63d19a8f61e743ff2e1901afbfdb04ee140319163061ead961",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0160/doc_sch_20260630_0160_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0160/doc_sch_20260630_0160_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0160/doc_sch_20260630_0160_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0160/doc_sch_20260630_0160_007.pdf": {
+    "bytes": 6816335,
+    "sha256": "eeb777e4c6763bcd29d476d5a21ccc71a8bb7ee81fed69486e10209271005f58",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0160/doc_sch_20260630_0160_008.pdf": {
+    "bytes": 783163,
+    "sha256": "b7a370a0df2ae96db8762f04c587e89a3dbfd352b22b4ca86f08b5ca830fada2",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0167/doc_sch_20260630_0167_001.pdf": {
+    "bytes": 1185042,
+    "sha256": "0197c23354187c774da6adaa529416d4b200e711330c1bee631cb74cf1c364ec",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0167/doc_sch_20260630_0167_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0167/doc_sch_20260630_0167_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0167/doc_sch_20260630_0167_004.pdf": {
+    "bytes": 3174218,
+    "sha256": "ab550a6ce4483d7a8cd22acb1e79d3b65f6894f9039b4de714df9a82e363f331",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0167/doc_sch_20260630_0167_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0167/doc_sch_20260630_0167_006.pdf": {
+    "bytes": 5684259,
+    "sha256": "4e4059d8a03c03ae92785696af52d999f9c6177d8f1664578b991c116f8d3310",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0167/doc_sch_20260630_0167_007.pdf": {
+    "bytes": 715211,
+    "sha256": "b0630a35ce5d5dbfa772e36d2caff44da847a9e585284bb6b845767bdff6c3df",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0167/doc_sch_20260630_0167_008.pdf": {
+    "bytes": 19575658,
+    "sha256": "02006de4769a70c66fbdc90581a5ccd492732006028d51b717544f7eaa53cfb6",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0167/doc_sch_20260630_0167_009.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0167/doc_sch_20260630_0167_010.pdf": {
+    "bytes": 7499518,
+    "sha256": "99c92b7ba1d48fe0e1f8f12970e2a7d84ade376cdcfe654222d15016611d59e6",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0168/doc_sch_20260630_0168_001.pdf": {
+    "bytes": 1257703,
+    "sha256": "56c815508ed989e2b15be9ef75778c08047fd011202c84486d3ae4731647b95d",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0168/doc_sch_20260630_0168_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0168/doc_sch_20260630_0168_003.pdf": {
+    "bytes": 20280421,
+    "sha256": "65035692dde5d1c20a35153463ff02b14ce1d4ee473db0a30aa45e284d9d8cd6",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0168/doc_sch_20260630_0168_004.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0168/doc_sch_20260630_0168_005.pdf": {
+    "bytes": 19111443,
+    "sha256": "395e2c524920158a46f6dfa1d9c86f1509e2714d9780c886066070c613ffe365",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0168/doc_sch_20260630_0168_006.pdf": {
+    "bytes": 2512237,
+    "sha256": "c908fc44e7434cff33f188e8fc457dc36524fd31d6cbece599ccb538034a250e",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0168/doc_sch_20260630_0168_007.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0170/doc_sch_20260630_0170_001.pdf": {
+    "bytes": 12672184,
+    "sha256": "55986c49e90087f2231947126d5dd5553c52d3e0537cc408ed55c3a8049569b9",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0170/doc_sch_20260630_0170_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0170/doc_sch_20260630_0170_003.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0170/doc_sch_20260630_0170_004.pdf": {
+    "bytes": 11027111,
+    "sha256": "39cc71d167594c42139947865d507a63bcf209903c13124ebdda2d0a328f0080",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0170/doc_sch_20260630_0170_005.pdf": {
+    "bytes": 5211255,
+    "sha256": "0aa5ac37ac8d6e359e2faa91bec4b5570deda3e79b7c857326732e767d55b4cc",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0170/doc_sch_20260630_0170_006.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0170/doc_sch_20260630_0170_007.pdf": {
+    "bytes": 14848919,
+    "sha256": "b688ce3e61ac038eeaaec4f884641e003bd79f3525b23b249ed6909d094bb4d5",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0170/doc_sch_20260630_0170_008.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0170/doc_sch_20260630_0170_009.pdf": {
+    "bytes": 1896511,
+    "sha256": "895c2e50de0238744043c441010ab72723e4ea30cfd87916634d2e208422acbc",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0173/doc_sch_20260630_0173_001.pdf": {
+    "bytes": 10722958,
+    "sha256": "f88ffd7764fa7d4401cb4b9d224c6a318455d312effb35fb1cc6bfb931325987",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0173/doc_sch_20260630_0173_002.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0173/doc_sch_20260630_0173_003.pdf": {
+    "bytes": 682078,
+    "sha256": "1b37f466ed7ec48c65a42b7e1b071246920ea2512538f2addd83287f954ac37a",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0173/doc_sch_20260630_0173_004.pdf": {
+    "bytes": 14464808,
+    "sha256": "3c610d68601c57ebeb54d0cc98b990e0ca99716a133f65142bc3c4d9aaa31cc3",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0173/doc_sch_20260630_0173_005.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0173/doc_sch_20260630_0173_006.pdf": {
+    "bytes": 17966941,
+    "sha256": "62486679e27b33c40c50f64e526ebc083466657cf64313a4dd37e303a1e882b4",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0173/doc_sch_20260630_0173_007.pdf": {
+    "bytes": 2088656,
+    "sha256": "b4376dbc0f85c270951969395190001db2e338d70e4cd4708426bcf381f87547",
+    "state": "present_unanchored"
+  },
+  "/Users/shunyuhao/Documents/LGFV/data/raw/sch_20260630_0173/doc_sch_20260630_0173_008.pdf": {
+    "bytes": null,
+    "sha256": null,
+    "state": "missing_file"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "adjudication_columns": [
+    "packet_case_id",
+    "coder_1_decision_reference",
+    "coder_2_decision_reference",
+    "agreement_status",
+    "adjudicated_label",
+    "adjudication_rationale",
+    "adjudication_source_references",
+    "adjudicator_id",
+    "adjudication_date",
+    "adjudicator_signature"
+  ],
+  "allowed_final_labels": [
+    "substantive_exit",
+    "nominal_exit",
+    "functional_transfer",
+    "liquidation"
+  ],
+  "authority_rule": "HC-20260910-001 applies to 94 original reference cases only; no new independent label is authorized",
+  "blank_entry_columns": [
+    "coder_id",
+    "coding_date",
+    "exit_case_eligibility",
+    "formal_event_found",
+    "post_event_evidence_found",
+    "formal_event_year",
+    "formal_event_summary",
+    "formal_event_source_references",
+    "baseline_platform_function",
+    "post_event_function",
+    "post_event_source_references",
+    "final_label",
+    "alternative_label",
+    "confidence",
+    "source_coverage_score",
+    "continued_function_evidence_score",
+    "rationale",
+    "ambiguity_note",
+    "remaining_caveat",
+    "coder_signature"
+  ],
+  "blinded_packet_columns": [
+    "packet_case_id",
+    "issuer_name",
+    "province",
+    "city",
+    "source_record_ids"
+  ],
+  "blinded_source_columns": [
+    "packet_case_id",
+    "source_record_id",
+    "document_id",
+    "source_id",
+    "document_title",
+    "document_type",
+    "document_date",
+    "document_page_url",
+    "download_url",
+    "inventory_archive_path",
+    "manifest_archive_path",
+    "manifest_text_archive_path",
+    "expected_raw_sha256",
+    "expected_text_sha256"
+  ],
+  "entry_import_rule": "Submitted fields remain unverified; this builder cannot authorize labels or realized design",
+  "event_identity_rule": "exact origin source_row_id == reference case_id AND primary event document in that origin; reference event/year nonempty",
+  "evidence_decision_values": [
+    "yes",
+    "no",
+    "unresolved",
+    ""
+  ],
+  "exit_case_eligibility_values": [
+    "eligible",
+    "unresolved",
+    "ineligible",
+    ""
+  ],
+  "input_record_locator_rule": "#record=N is the 1-based CSV data record, excluding header",
+  "institutional_change_mapping": {
+    "": null,
+    "functional_transfer": 1,
+    "liquidation": null,
+    "nominal_exit": 0,
+    "substantive_exit": 1
+  },
+  "issuer_identity_rule": "literal full issuer-name equality; no normalization or aliases",
+  "missing_csv_value": "",
+  "missing_json_value": null,
+  "schema_version": 1,
+  "source_record_id_rule": "validation_unit_id + :document:/:source: + exact inventory/manifest ID"
+}

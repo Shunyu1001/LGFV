@@ -1,0 +1,100 @@
+[
+  {
+    "base_commit": "4330c5728dec64ba30c1faec972fad0097622e9d",
+    "bytes": 30402,
+    "path": "data/validation/probability_validation_frame_candidate.csv",
+    "rows": 67,
+    "sha256": "7488b4ae04daf3db1c4a8cf471dd896a51039fbec05896ce7b4b410b72d934eb"
+  },
+  {
+    "base_commit": "4330c5728dec64ba30c1faec972fad0097622e9d",
+    "bytes": 56440,
+    "path": "data/validation/probability_validation_frame_origin_rows.csv",
+    "rows": 157,
+    "sha256": "c68a5757cff2b2769f23907bef61391c8877afcd56bc821da7f12127a3939de5"
+  },
+  {
+    "base_commit": "4330c5728dec64ba30c1faec972fad0097622e9d",
+    "bytes": 5716,
+    "path": "data/validation/probability_validation_sampling_design.csv",
+    "rows": 24,
+    "sha256": "dcd5fb832563026a61bc36eda3183ad5c4cacc34a03df2733ac95a4a29e32812"
+  },
+  {
+    "base_commit": "4330c5728dec64ba30c1faec972fad0097622e9d",
+    "bytes": 329487,
+    "path": "data/validation/probability_validation_source_manifest.csv",
+    "rows": 274,
+    "sha256": "79c3de7b327460db4d1c8a0ca4dc0d7c1f6c51efbe0a2b6086978a7a5e763098"
+  },
+  {
+    "base_commit": "4330c5728dec64ba30c1faec972fad0097622e9d",
+    "bytes": 2203380,
+    "path": "data/document_inventory.csv",
+    "rows": 2742,
+    "sha256": "8d5f13810f31a91b293ccc917153cf2e21f252445719de5a174604151dbd6d27"
+  },
+  {
+    "base_commit": "4330c5728dec64ba30c1faec972fad0097622e9d",
+    "bytes": 192928,
+    "path": "data/source_inventory.csv",
+    "rows": 361,
+    "sha256": "a83c47e7a8c1f8989d9d8e4289b16548c058b4b567ed4725e56310cb41dd8c8c"
+  },
+  {
+    "base_commit": "4330c5728dec64ba30c1faec972fad0097622e9d",
+    "bytes": 155981,
+    "path": "data/processed/working_reference_labels.csv",
+    "rows": 94,
+    "sha256": "c1e6bd66b7f498a6100422b9f4a66a61374eb47f65fc7fe5f0446f503e2afd18"
+  },
+  {
+    "base_commit": "4330c5728dec64ba30c1faec972fad0097622e9d",
+    "bytes": 1100,
+    "path": "data/validation/human_confirmation_report_2026_09_10.json",
+    "rows": null,
+    "sha256": "bfac77843e06de458b548973fa03cc3e01528d29c087b4be9eecc3336b99b541"
+  },
+  {
+    "base_commit": "4330c5728dec64ba30c1faec972fad0097622e9d",
+    "bytes": 26931,
+    "path": "data/validation/human_confirmation_register.csv",
+    "rows": 94,
+    "sha256": "8f34068171a88f5e234caac0638b48f5febb3076043384882fd2d39599015780"
+  },
+  {
+    "base_commit": "4330c5728dec64ba30c1faec972fad0097622e9d",
+    "bytes": 11027,
+    "path": "data/validation/independent_coding/blinded_probability_validation_packet.csv",
+    "rows": 4,
+    "sha256": "d4e2e374d2ae059d6f0838bdcd2400bba8d582770974ca15e3d78e661a5f5df9"
+  },
+  {
+    "base_commit": "4330c5728dec64ba30c1faec972fad0097622e9d",
+    "bytes": 62649,
+    "path": "experiments/EXP-20260910-002/source_archive_attempt_2.json",
+    "rows": null,
+    "sha256": "fdfd1d11ef7197e006353878cca62b62d2ae4f003e95e7d1bc1ec426c2a075a8"
+  },
+  {
+    "base_commit": "4330c5728dec64ba30c1faec972fad0097622e9d",
+    "bytes": 16933,
+    "path": "coding/codebook.md",
+    "rows": null,
+    "sha256": "cc52940da8fc6ca2864c86380889e251906e973353d594fafea0f76b9fdc55ee"
+  },
+  {
+    "base_commit": "4330c5728dec64ba30c1faec972fad0097622e9d",
+    "bytes": 3311,
+    "path": "immutable/analysis_plan.md",
+    "rows": null,
+    "sha256": "5a8c5527bfbc0d604d31631c8eb0e48f86021ff33c0ce9ed717f2d01724f5f16"
+  },
+  {
+    "base_commit": "4330c5728dec64ba30c1faec972fad0097622e9d",
+    "bytes": 4503,
+    "path": "ledgers/research_state.yaml",
+    "rows": null,
+    "sha256": "324900f58ce0e1599bd50c1720a88cf2a3f75ad794ca87b34e039a4c52a54c40"
+  }
+]
