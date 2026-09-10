@@ -1,0 +1,43 @@
+schema_version: 1
+experiment_id: EXP-20260910-005
+base_commit: 4330c5728dec64ba30c1faec972fad0097622e9d
+pre_result_brief_commit: 0af09d6c94bcea3ab999caa97194ebfa2e0bb760
+branch: codex/design-estimator-20260910
+worktree: /Users/shunyuhao/.codex/worktrees/lgfv-design-estimator/LGFV
+implementation_checked_at: 2026-09-10T14:36:54+08:00
+python_version: 3.13.4
+numpy_version: 2.2.6
+budget_hours: 3
+actual_data_estimation: false
+synthetic_test_data_only: true
+new_dependencies_installed: false
+inputs:
+  - path: data/validation/probability_validation_frame_candidate.csv
+    sha256: 7488b4ae04daf3db1c4a8cf471dd896a51039fbec05896ce7b4b410b72d934eb
+    role: read-only rejection check; not estimation input
+  - path: data/validation/probability_validation_sampling_design.csv
+    sha256: dcd5fb832563026a61bc36eda3183ad5c4cacc34a03df2733ac95a4a29e32812
+    role: read-only unapproved-proposal status check
+outputs:
+  - path: scripts/design_based_validation.py
+    sha256: 20aa49aa1fbf3a5135fc839107d07ddbdcd71af4828292734c4d8c751a1c5c78
+  - path: tests/test_design_based_validation.py
+    sha256: bf8197a98f2abae68e14b68343cb24359c764651ee2a413f10822b2e56d0a9fe
+  - path: experiments/EXP-20260910-005/brief.md
+    sha256: f5c4e54f789406e6f0a3582104f258f729de7b671d29e6a6cbc0b58cda5e214c
+  - path: experiments/EXP-20260910-005/method.md
+    sha256: 200a4ebbc185c38d877633acab932c8eaa28f14a2dfde7e68cb9d9469e5ada4a
+  - path: experiments/EXP-20260910-005/paper_review.md
+    sha256: 916186ea8cd4eda94e5e238b3a04517d7d2b968c0edf7f0608bac4fa5cf54e3b
+external_read_only_review:
+  path: /Users/shunyuhao/.codex/worktrees/lgfv-validation-inference/LGFV/paper/sections/empirical_strategy.tex
+  sha256: 59b78e4d17cc9f9386669348aa32dca4f87dd41ee9d3145c0bc4d061ec0f11be
+  section: Design-based estimation
+  edited: false
+verified_primary_source:
+  url: https://proceedings.neurips.cc/paper_files/paper/2023/file/d862f7f5445255090de13b825b880d59-Paper-Conference.pdf
+  checked_on: 2026-09-10
+  locations: Section 4, Equation 4, Algorithm 1, Proposition 1
+  local_source_copy_created: false
+command_records: experiments/EXP-20260910-005/attempts.tsv
+global_ledger_integration: deferred to coordinator under explicit worker scope

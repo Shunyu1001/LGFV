@@ -1,0 +1,45 @@
+Command: python3 -m unittest discover -s tests -p 'test_design_based_validation.py' -v
+Exit: 1
+test_all_binary_populations_all_allocations_two_strata (test_design_based_validation.ExactDesignTests.test_all_binary_populations_all_allocations_two_strata) ... ok
+test_census_large_bad_predictions_no_cancellation (test_design_based_validation.ExactDesignTests.test_census_large_bad_predictions_no_cancellation) ... ok
+test_constant_residual_zero_mean_variance_not_zero_slope_variance (test_design_based_validation.ExactDesignTests.test_constant_residual_zero_mean_variance_not_zero_slope_variance) ... ok
+test_crossfit_alone_counterexample_under_fixed_size_sampling (test_design_based_validation.ExactDesignTests.test_crossfit_alone_counterexample_under_fixed_size_sampling) ... ok
+test_external_training_allowed_only_as_explicit_fixed_assumption (test_design_based_validation.ExactDesignTests.test_external_training_allowed_only_as_explicit_fixed_assumption) ... ok
+test_intercept_only_equals_mean_including_variance (test_design_based_validation.ExactDesignTests.test_intercept_only_equals_mean_including_variance) ... ok
+test_negative_and_above_one_points_are_not_clipped (test_design_based_validation.ExactDesignTests.test_negative_and_above_one_points_are_not_clipped) ... ok
+test_perfect_predictions_all_samples_zero_covariance (test_design_based_validation.ExactDesignTests.test_perfect_predictions_all_samples_zero_covariance) ... ok
+test_row_order_invariance_and_hashes (test_design_based_validation.ExactDesignTests.test_row_order_invariance_and_hashes) ... ok
+test_sample_x_need_not_be_full_rank_and_no_implicit_intercept (test_design_based_validation.ExactDesignTests.test_sample_x_need_not_be_full_rank_and_no_implicit_intercept) ... ok
+test_single_unit_census_and_empty_x_mean (test_design_based_validation.ExactDesignTests.test_single_unit_census_and_empty_x_mean) ... ok
+test_singleton_does_not_borrow_or_assume_zero_variance (test_design_based_validation.ExactDesignTests.test_singleton_does_not_borrow_or_assume_zero_variance) ... ok
+test_unequal_fractions_multicolumn_x_and_census_singleton (test_design_based_validation.ExactDesignTests.test_unequal_fractions_multicolumn_x_and_census_singleton) ... ok
+test_zero_predictions_horvitz_thompson_special_case (test_design_based_validation.ExactDesignTests.test_zero_predictions_horvitz_thompson_special_case) ... ok
+test_actual_current_67_proposal_rejected_without_inventing_labels (test_design_based_validation.GuardTests.test_actual_current_67_proposal_rejected_without_inventing_labels) ... ok
+test_actual_path_schema_only_with_fabricated_non_lgfv_records (test_design_based_validation.GuardTests.test_actual_path_schema_only_with_fabricated_non_lgfv_records) ... ok
+test_default_has_no_approval_or_actual_data_loader (test_design_based_validation.GuardTests.test_default_has_no_approval_or_actual_data_loader) ... ok
+test_duplicate_unit_stratum_sample_response_and_covariate_ids (test_design_based_validation.GuardTests.test_duplicate_unit_stratum_sample_response_and_covariate_ids) ... ok
+test_frame_covariates_predictions_and_prediction_assumptions (test_design_based_validation.GuardTests.test_frame_covariates_predictions_and_prediction_assumptions) ... ok
+test_missing_mismatched_duplicate_and_stale_approvals (test_design_based_validation.GuardTests.test_missing_mismatched_duplicate_and_stale_approvals) ... ok
+test_nonresponse_never_becomes_unsampled_and_extras_rejected (test_design_based_validation.GuardTests.test_nonresponse_never_becomes_unsampled_and_extras_rejected) ... ok
+test_numeric_and_point_errors_propagate (test_design_based_validation.GuardTests.test_numeric_and_point_errors_propagate) ... FAIL
+test_pi_not_guessed_rounded_or_substituted (test_design_based_validation.GuardTests.test_pi_not_guessed_rounded_or_substituted) ... ok
+test_proposals_and_outcome_eligibility (test_design_based_validation.GuardTests.test_proposals_and_outcome_eligibility) ... ok
+test_provenance_and_synthetic_actual_separation (test_design_based_validation.GuardTests.test_provenance_and_synthetic_actual_separation) ... ok
+test_rank_and_numerical_condition_rejection_no_silent_ridge (test_design_based_validation.GuardTests.test_rank_and_numerical_condition_rejection_no_silent_ridge) ... ok
+test_stratum_counts_methods_and_dependence_guards (test_design_based_validation.GuardTests.test_stratum_counts_methods_and_dependence_guards) ... ok
+test_unit_ids_not_silently_normalized_or_joined_to_other_units (test_design_based_validation.GuardTests.test_unit_ids_not_silently_normalized_or_joined_to_other_units) ... ok
+test_unknown_censored_or_categorical_outcomes_never_recode_to_zero (test_design_based_validation.GuardTests.test_unknown_censored_or_categorical_outcomes_never_recode_to_zero) ... ok
+
+======================================================================
+FAIL: test_numeric_and_point_errors_propagate (test_design_based_validation.GuardTests.test_numeric_and_point_errors_propagate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/shunyuhao/.codex/worktrees/lgfv-design-estimator/LGFV/tests/test_design_based_validation.py", line 368, in test_numeric_and_point_errors_propagate
+    with self.assertRaises(db.NumericalError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+AssertionError: NumericalError not raised
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.485s
+
+FAILED (failures=1)

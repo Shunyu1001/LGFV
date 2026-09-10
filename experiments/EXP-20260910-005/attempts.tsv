@@ -1,0 +1,10 @@
+attempt_id	phase	command_or_activity	status	result	artifact
+001	baseline	Five validators declared in brief	keep	All five exit zero; 89 existing label-extraction warnings; 67 candidate units and no draw	assessment.md
+002	implementation_check	python3 -m unittest discover -s tests -p 'test_design_based_validation.py' -v	discard	28/29 pass; extreme constant predictions can lose binary residual precision without overflow	test_attempt_01.log
+003	implementation_check	python3 -m unittest discover -s tests -p 'test_design_based_validation.py' -v	keep	29/29 pass after explicit binary-residual precision guard	test_attempt_02.log
+004	repository_suite	python3 -m unittest discover -s tests -v	quarantine	76/77 pass; inherited freeze-package validator rejects three stale hashes	full_suite_attempt_01.log
+005	baseline_failure_audit	Read-only git-object SHA-256 comparisons at base commit	keep	Validator and three files unchanged from base; expected historical hashes already differ at base	baseline_failure_check.log
+006	repository_checks	Five validators declared in brief	keep	All five exit zero; same 89 existing label-extraction warnings	repository_checks.log
+007	method_review	Official NeurIPS 2023 publication and PDF Section 4 opened	keep	Verified published attribution; exact finite-design proof stated separately	method.md
+008	paper_review	Coordinator empirical_strategy.tex Design-based estimation subsection read only	keep	Mean and projection agree; clarify singleton census zero contribution convention	paper_review.md
+009	final_verification	python3 -m unittest discover -s tests -p 'test_design_based_validation.py' -v	keep	29/29 pass after documentation and audit completion	test_final.log
